@@ -8,7 +8,7 @@ openai.apikey.txt
 Reference/
 Datasets/
 data/
-
+gittoken.txt
 
 # Ignore OS-generated files
 .DS_Store
