@@ -30,3 +30,19 @@ README.md
 multipage design 
 
 https://dash.plotly.com/urls
+
+Mapbox map styles 
+"open-street-map"
+"carto-positron"
+"carto-darkmatter"
+"stamen-terrain"
+"stamen-toner"
+"stamen-watercolor"
+"white-bg"
+"basic"
+"streets"
+"outdoors"
+"light"
+"dark"
+"satellite"
+"satellite-streets"

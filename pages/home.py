@@ -7,6 +7,10 @@ from textwrap import dedent
 import plotly.graph_objs as go
 import networkx as nx
 import os
+from interactivemap import create_map
+
+openmapbox = create_map()
+
 G = nx.Graph()
 
 # Add nodes and edges
@@ -149,7 +153,14 @@ def create_home():
             dbc.Button("Submit", id="submit")
         ]
     )
-    
+
+    raw_query_box = dbc.InputGroup(
+        children=[
+            dbc.Input(id="user-input", placeholder="Write raw query input...", type="text"),
+            dbc.Button("Submit", id="submit")
+        ]
+    )
+
     chatbox = html.Div(
         dbc.Container(
             fluid=True,
@@ -162,6 +173,7 @@ def create_home():
                 dbc.Spinner(html.Div(id="loading-component")),
             ],
         )
+        
     )
     
 
@@ -169,9 +181,14 @@ def create_home():
 
     place_holder = html.Div(
         [
-            dbc.Placeholder(xl=10),
-            html.Br(),
-            dbc.Placeholder(xs=4, button=True),
+            dbc.Placeholder(color="primary", className="me-1 mt-1 w-100",button=True),
+            dbc.Placeholder(color="secondary", className="me-1 mt-1 w-100",button=True),
+            dbc.Placeholder(color="success", className="me-1 mt-1 w-100",button=True),
+            dbc.Placeholder(color="warning", className="me-1 mt-1 w-100",button=True),
+            dbc.Placeholder(color="danger", className="me-1 mt-1 w-100",button=True),
+            dbc.Placeholder(color="info", className="me-1 mt-1 w-100",button=True),
+            dbc.Placeholder(color="light", className="me-1 mt-1 w-100",button=True),
+            dbc.Placeholder(color="dark", className="me-1 mt-1 w-100",button=True),
         ]
     )
     home = html.Div(
@@ -181,12 +198,13 @@ def create_home():
 					dbc.Col(
 						[
 							html.Div([
-								html.H3("Google Map",className='mt-auto'),
-								html.Iframe(
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497695.0212663337!2d-74.25986413519108!3d40.697589547260245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1621073910982!5m2!1sen!2sus",
-									width="100%",
-									height="400"
-								)
+								html.H3("Open street map",className='mt-auto'),
+								# html.Iframe(
+								# 	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497695.0212663337!2d-74.25986413519108!3d40.697589547260245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1621073910982!5m2!1sen!2sus",
+								# 	width="100%",
+								# 	height="500"
+								# )
+                                openmapbox
 							],className="border rounded")
 					
 						],
@@ -195,6 +213,8 @@ def create_home():
 					),
 					dbc.Col(
 						[
+                        raw_query_box,
+                        html.Hr(),
 						chatbox
 						],
 						md=5,
@@ -207,7 +227,7 @@ def create_home():
             dbc.Row(
                 [
                     dbc.Col([html.H3("Service provided by selected treatment agency",className='h3'),
-                            graph
+                             place_holder
                             ],
                             md=7,
                             className="border rounded",
