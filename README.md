@@ -31,7 +31,8 @@ multipage design
 
 https://dash.plotly.com/urls
 
-Mapbox map styles 
+Mapbox map styles change to the following in the fig.update()
+```
 "open-street-map"
 "carto-positron"
 "carto-darkmatter"
@@ -46,3 +47,4 @@ Mapbox map styles
 "dark"
 "satellite"
 "satellite-streets"
+```
