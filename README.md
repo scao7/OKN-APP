@@ -47,4 +47,20 @@ Mapbox map styles change to the following in the fig.update()
 "dark"
 "satellite"
 "satellite-streets"
+
+
+```
+USDA rural 2013 rural
+```
+https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/
+```
+
+usa-state.geojson
+```
+https://github.com/PublicaMundi/MappingAPI/blob/master/data/geojson/us-states.json
+```
+
+usa-county.geojson
+```
+https://gist.github.com/sdwfrost/d1c73f91dd9d175998ed166eb216994a#file-counties-geojson
 ```

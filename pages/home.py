@@ -9,6 +9,7 @@ import networkx as nx
 import os
 from interactivemap import create_map
 
+
 openmapbox = create_map()
 
 G = nx.Graph()
@@ -198,13 +199,25 @@ def create_home():
 					dbc.Col(
 						[
 							html.Div([
-								html.H3("Open street map",className='mt-auto'),
+								html.H3("rural vs urban",className='mt-auto'),
 								# html.Iframe(
 								# 	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497695.0212663337!2d-74.25986413519108!3d40.697589547260245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1621073910982!5m2!1sen!2sus",
 								# 	width="100%",
 								# 	height="500"
 								# )
-                                openmapbox
+                                
+                                dcc.Loading(
+                                    id="loading",
+                                    type="circle",
+                                    children=[
+                                        openmapbox,
+                                        
+                                    ],
+                                    overlay_style={"visibility":"visible", "opacity": .5, "backgroundColor": "white"},
+                                    custom_spinner=html.H2(["My Custom Spinner", dbc.Spinner(color="danger")]),
+                                    
+                                ),
+                                
 							],className="border rounded")
 					
 						],
