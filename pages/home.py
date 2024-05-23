@@ -143,24 +143,29 @@ def create_home():
         style={
             "overflow-y": "auto",
             "display": "flex",
-            "height": "calc(50vh - 132px)",
+            "height": "calc(55vh - 132px)",
             "flex-direction": "column-reverse",
         },
     )
 
     controls = dbc.InputGroup(
-        children=[
-            dbc.Input(id="user-input", placeholder="Write to the chatbot...", type="text"),
-            dbc.Button("Submit", id="submit")
+        children=[  
+            dbc.Input(id="user-input", placeholder="Write to the chatbox...", type="text"),
+            dbc.Button("Ask AI", id="submit"),
         ]
     )
-
-    raw_query_box = dbc.InputGroup(
+    controls_query =dbc.InputGroup(
         children=[
-            dbc.Input(id="user-input", placeholder="Write raw query input...", type="text"),
-            dbc.Button("Submit", id="submit")
+            dbc.Input(id="query-input", placeholder="Write to the qeury...", type="text"),
+            dbc.Button("Query",id = "submit_query",color="secondary"),
         ]
     )
+    # raw_query_box = dbc.InputGroup(
+    #     children=[
+    #         dbc.Input(id="user-input", placeholder="Write raw query input...", type="text"),
+    #         dbc.Button("Submit", id="submit")
+    #     ]
+    # )
 
     chatbox = html.Div(
         dbc.Container(
@@ -171,14 +176,13 @@ def create_home():
                 dcc.Store(id="store-conversation", data=""),
                 conversation,
                 controls,
+                controls_query,
                 dbc.Spinner(html.Div(id="loading-component")),
             ],
         )
         
     )
     
-
-
 
     place_holder = html.Div(
         [
@@ -199,13 +203,12 @@ def create_home():
 					dbc.Col(
 						[
 							html.Div([
-								html.H3("rural vs urban",className='mt-auto'),
+								html.H3("MAP",className="h3"),
 								# html.Iframe(
 								# 	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497695.0212663337!2d-74.25986413519108!3d40.697589547260245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1621073910982!5m2!1sen!2sus",
 								# 	width="100%",
 								# 	height="500"
 								# )
-                                
                                 dcc.Loading(
                                     id="loading",
                                     type="circle",
@@ -214,26 +217,23 @@ def create_home():
                                         
                                     ],
                                     overlay_style={"visibility":"visible", "opacity": .5, "backgroundColor": "white"},
-                                    custom_spinner=html.H2(["My Custom Spinner", dbc.Spinner(color="danger")]),
-                                    
+                                    custom_spinner=html.H2(["My Custom Spinner", dbc.Spinner(color="danger")]), 
                                 ),
                                 
-							],className="border rounded")
-					
+							],
+                            className="border rounded")
 						],
 						md=7,
-                        className="mt-auto"
 					),
 					dbc.Col(
 						[
-                        raw_query_box,
-                        html.Hr(),
+                        # raw_query_box,
+                        # html.Hr(),
 						chatbox
 						],
 						md=5,
 						className="border rounded"
-			
-					)
+					) 
 				]
 			),
             html.Hr(),
@@ -250,7 +250,6 @@ def create_home():
                             place_holder,
                             ],
                             md=5,
-                            
                             className="border rounded"),
                 ],
             
@@ -272,19 +271,33 @@ def create_home():
 
 
     @dash.callback(
-        Output("user-input", "value"),
-        [Input("submit", "n_clicks"), Input("user-input", "n_submit")],
+        [Output("user-input", "value"), Output("query-input", "value")],
+        [Input("submit", "n_clicks"), Input("user-input", "n_submit"),Input("submit_query", "n_clicks"),Input("query-input", "n_submit")],
+        
     )
-    def clear_input(n_clicks, n_submit):
-        return ""
-
+    def clear_input(n_clicks1, n_submit,n_clicks_query,n_submit_query):
+        return "",""
 
     @dash.callback(
         [Output("store-conversation", "data"), Output("loading-component", "children")],
-        [Input("submit", "n_clicks"), Input("user-input", "n_submit")],
-        [State("user-input", "value"), State("store-conversation", "data")],
+        [Input("submit", "n_clicks"), Input("user-input", "n_submit"),Input("submit_query", "n_clicks"),Input("query-input", "n_submit")],
+        [State("user-input", "value"),State("query-input", "value"), State("store-conversation", "data")],
     )
-    def run_chatbot(n_clicks, n_submit, user_input, chat_history):
+    def dialog(n_clicks, n_submit,n_clicks2,n_submit2,user_input, query_input,chat_history):
+        ctx = dash.callback_context
+        button_id = None
+        if ctx.triggered:
+            button_id = ctx.triggered[0]['prop_id'].split('.')[0]
+
+        result = "",None
+        if button_id == 'submit':
+            result= run_chatbot(n_clicks, n_submit,user_input, chat_history)
+        elif button_id == 'submit_query':
+            result= run_query(n_clicks2, n_submit2,query_input, chat_history)
+        return result
+        # return 'Unexpected button clicked',None
+
+    def run_chatbot(n_clicks, n_submit,user_input, chat_history):
         if n_clicks == 0 and n_submit is None:
             return "", None
 
@@ -317,6 +330,33 @@ def create_home():
             model="gpt-3.5-turbo",
         )
         model_output = response.choices[0].message.content.strip()
+
+        chat_history += f"{model_output}<split>"
+
+        return chat_history, None
+
+    def run_query(n_clicks, n_submit,user_input, chat_history):
+        if n_clicks == 0 and n_submit is None:
+            return "", None
+
+        if user_input is None or user_input == "":
+            return chat_history, None
+
+        name = "OKN"
+
+        prompt = dedent(
+            f"""
+        {description}
+
+        You: Hello {name}!
+        {name}: Hello! Glad to be talking to you today.
+        """
+        )
+
+        # First add the user input to the chat history
+        chat_history += f"You: {user_input}<split>{name}:"
+
+        model_output = "the query is "
 
         chat_history += f"{model_output}<split>"
 

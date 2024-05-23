@@ -2,7 +2,6 @@ create environment with
 ```
 conda create -n OKN python=3.10
 ```
-
 install dash 
 ```
 pip install dash 
@@ -64,3 +63,22 @@ usa-county.geojson
 ```
 https://gist.github.com/sdwfrost/d1c73f91dd9d175998ed166eb216994a#file-counties-geojson
 ```
+
+
+PostgreSQL setup
+```
+pip install dash psycopg2 sqlalchemy
+```
+
+connecting to database 
+```
+postgresql+psycopg2://username:password@host:port/database
+```
+
+set password in envrionment variable 
+```
+import os
+os.['okn_database'] = "password"
+os.[OPENAI_API_KEY] = "password"
+```
+or in windows open the edit the system environment variable and restart the treminal	
