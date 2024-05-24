@@ -1,0 +1,5 @@
+"CTYPEOP: Facility offers outpatient day treatment or partial hospitalization (Q.11a)ValueLabelFrequency%.Logical skip2,90518.1%0No10,88467.7%1Yes2,27714.2%Total16,066100%Variable Type: numeric135",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+.,Logical skip,"2,905",18.1%
+1,Yes,"2,277",14.2%
+,Total,"16,066",100%

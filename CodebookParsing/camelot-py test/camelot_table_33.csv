@@ -1,0 +1,8 @@
+"LOCS: Type of hospital (Q.24a)","","",""
+"Value","Label","Frequency","%"
+".","Logical skip","14,723","91.6%"
+"M","Missing","1","0.0%"
+"1","General hospital (including VA hospitals)","970","6.0%"
+"2","Psychiatric hospital","305","1.9%"
+"3","Other specialty hospital","67","0.4%"
+"","Total","16,066","100%"

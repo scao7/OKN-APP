@@ -1,0 +1,7 @@
+"ONLYDUI: Facility serves only DUI/DWI clients (Q.16a)","","",""
+"Value","Label","Frequency","%"
+".","Logical skip","12,364","77.0%"
+"M","Missing","6","0.0%"
+"0","No","3,604","22.4%"
+"1","Yes","92","0.6%"
+"","Total","16,066","100%"

@@ -1,0 +1,8 @@
+"MEDICAL: Number of medical services offered by this facility (Q.12)","","","","",""
+"","Value","Label","","Frequency","%"
+"","0","0 medical services offered","","14,137","88.0%"
+"","1","1 medical service offered","","304","1.9%"
+"","2","2 medical services offered","","1,625","10.1%"
+"","","Total","","16,066","100%"
+"V","ariable Type: numeric","","","",""
+"","","","33","",""

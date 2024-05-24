@@ -1,0 +1,7 @@
+"FEESCALE: Facility uses a sliding fee scale (Q.20)","","",""
+"Value","Label","Frequency","%"
+".","Logical skip","228","1.4%"
+"M","Missing","79","0.5%"
+"0","No","6,578","40.9%"
+"1","Yes","9,181","57.1%"
+"","Total","16,066","100%"

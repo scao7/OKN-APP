@@ -1,0 +1,7 @@
+"A_PCT: Percent of clients treated for only alcohol abuse (Q.34)ValueLabelFrequency%.Logical skip6,96443.3%MMissing1821.1%NNot applicable4502.8%10–104,02125.0%211–201,4599.1%321–258275.1%426–401,0236.4%541+1,1407.1%Total16,066100%Variable Type: numeric213",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+.,Logical skip,"6,964",43.3%
+N,Not applicable,450,2.8%
+2,11–20,"1,459",9.1%
+4,26–40,"1,023",6.4%
+,Total,"16,066",100%

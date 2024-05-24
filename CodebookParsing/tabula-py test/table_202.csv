@@ -1,0 +1,5 @@
+"ACCRED: Facility is licensed, certified, or accredited to provide substance abuseservices by any of the organizations referenced (Q.27)ValueLabelFrequency%VLogical skip/missing/unknown/incomplete/not applicable880.5%0Not licensed, certified, or accredited by any of these organizations7,23745.0%1Licensed, certified, or accredited by any of these organizations8,74154.4%Total16,066100%Variable Type: numeric202",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+V,Logical skip/missing/unknown/incomplete/not applicable,88,0.5%
+1,"Licensed, certified, or accredited by any of these organizations","8,741",54.4%
+,Total,"16,066",100%

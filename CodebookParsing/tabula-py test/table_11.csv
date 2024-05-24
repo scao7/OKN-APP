@@ -1,0 +1,6 @@
+"FEDOWN: Federal government agency that operates the facility (Q.8a)ValueLabelFrequency%.Logical skip15,74398.0%1Dept of Veterans Affairs2281.4%2Dept of Defense570.4%3Indian Health Service290.2%4Other90.1%Total16,066100%Variable Type: numeric26",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+.,Logical skip,"15,743",98.0%
+2,Dept of Defense,57,0.4%
+4,Other,9,0.1%
+,Total,"16,066",100%

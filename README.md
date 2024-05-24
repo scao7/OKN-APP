@@ -82,3 +82,49 @@ os.['okn_database'] = "password"
 os.[OPENAI_API_KEY] = "password"
 ```
 or in windows open the edit the system environment variable and restart the treminal	
+
+
+table extracting script in the CodebookParsing 
+```
+pip install tabula-py
+```
+install java to run the tabula-py
+https://www.oracle.com/java/technologies/downloads/#jdk22-windows
+
+tabula-py need jpype install it using 
+```
+pip install jpype1
+```
+
+
+
+
+
+
+previous method requires many dependencis for java 
+
+try to use the following package
+```
+pip install camelot-py[cv]
+pip install 'PyPDF2<3.0' # the PyPDF latest version not working
+
+```
+example usage
+```
+import camelot
+
+# Specify the path to your PDF file
+pdf_path = "path/to/your/pdf_file.pdf"
+
+# Extract tables from the PDF
+tables = camelot.read_pdf(pdf_path, pages='all')
+
+# Print the tables or save them to CSV files
+for i, table in enumerate(tables):
+    print(f"Table {i}")
+    print(table.df)
+    table.to_csv(f"table_{i}.csv")
+
+```
+
+Looks like both package need java

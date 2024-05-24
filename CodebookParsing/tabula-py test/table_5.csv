@@ -1,0 +1,18 @@
+"STFIPS: Census state FIPS codeValueLabelFrequency%1Alabama1551.0%2Alaska1050.7%4Arizona4472.8%5Arkansas1711.1%6California1,73410.8%8Colorado3932.4%9Connecticut2101.3%10Delaware490.3%11District of Columbia280.2%12Florida7124.4%13Georgia3482.2%15Hawaii1611.0%16Idaho1100.7%17Illinois7134.4%18Indiana4162.6%19Iowa1851.2%20Kansas1701.1%21Kentucky4773.0%22Louisiana1551.0%23Maine1961.2%24Maryland4322.7%25Massachusetts4402.7%26Michigan4552.8%27Minnesota4012.5%28Mississippi1050.7%29Missouri2781.7%30Montana1290.8%31Nebraska1230.8%32Nevada1090.7%33New Hampshire1090.7%34New Jersey3832.4%35New Mexico1621.0%20",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+1,Alabama,155,1.0%
+4,Arizona,447,2.8%
+6,California,"1,734",10.8%
+9,Connecticut,210,1.3%
+11,District of Columbia,28,0.2%
+13,Georgia,348,2.2%
+16,Idaho,110,0.7%
+18,Indiana,416,2.6%
+20,Kansas,170,1.1%
+22,Louisiana,155,1.0%
+24,Maryland,432,2.7%
+26,Michigan,455,2.8%
+28,Mississippi,105,0.7%
+30,Montana,129,0.8%
+32,Nevada,109,0.7%
+34,New Jersey,383,2.4%

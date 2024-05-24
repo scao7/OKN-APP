@@ -1,0 +1,7 @@
+"RECOVERY: Number of recovery support services offered by this facility (Q.12)ValueLabelFrequency%00 recovery support services offered1,77411.0%11 recovery support service offered1,74310.8%22 recovery support services offered2,30614.4%33 recovery support services offered2,73717.0%44 recovery support services offered2,84117.7%55 recovery support services offered2,99018.6%66 recovery support services offered1,67510.4%Total16,066100%Variable Type: numeric35",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+0,0 recovery support services offered,"1,774",11.0%
+2,2 recovery support services offered,"2,306",14.4%
+4,4 recovery support services offered,"2,841",17.7%
+6,6 recovery support services offered,"1,675",10.4%
+,Total,"16,066",100%

@@ -1,0 +1,6 @@
+"LOCS: Type of hospital (Q.24a)ValueLabelFrequency%.Logical skip14,72391.6%MMissing10.0%1General hospital (including VA hospitals)9706.0%2Psychiatric hospital3051.9%3Other specialty hospital670.4%Total16,066100%Variable Type: numeric28",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+.,Logical skip,"14,723",91.6%
+1,General hospital (including VA hospitals),970,6.0%
+3,Other specialty hospital,67,0.4%
+,Total,"16,066",100%

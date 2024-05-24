@@ -1,0 +1,7 @@
+"OPDISNUM: Outpatient clients, disulfiram dispensed or prescribed for alcohol usedisorder (Q.33d)ValueLabelFrequency%.Logical skip8,64953.8%MMissing40.0%10–17,10544.2%22890.6%33–4660.4%45–9680.4%510+850.5%Total16,066100%Variable Type: numeric234",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+.,Logical skip,"8,649",53.8%
+1,0–1,"7,105",44.2%
+3,3–4,66,0.4%
+5,10+,85,0.5%
+,Total,"16,066",100%

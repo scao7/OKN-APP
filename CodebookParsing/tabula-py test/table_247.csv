@@ -1,0 +1,7 @@
+"HOSPBED: Hospital inpatient clients — total beds designated for substance usetreatment (Q.31e)ValueLabelFrequency%.Logical skip15,53496.7%MMissing970.6%10–101711.1%211–16550.3%317–22620.4%423–36720.4%537+750.5%Total16,066100%Variable Type: numeric237",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+.,Logical skip,"15,534",96.7%
+1,0–10,171,1.1%
+3,17–22,62,0.4%
+5,37+,75,0.5%
+,Total,"16,066",100%

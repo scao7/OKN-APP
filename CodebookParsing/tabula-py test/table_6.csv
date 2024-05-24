@@ -1,0 +1,14 @@
+"STFIPS: Census state FIPS codeValueLabelFrequency%36New York8945.6%37North Carolina6113.8%38North Dakota870.5%39Ohio6193.9%40Oklahoma1951.2%41Oregon2471.5%42Pennsylvania6043.8%44Rhode Island630.4%45South Carolina1240.8%46South Dakota580.4%47Tennessee3111.9%48Texas5093.2%49Utah3332.1%50Vermont520.3%51Virginia2491.5%53Washington4572.8%54West Virginia1260.8%55Wisconsin2951.8%56Wyoming600.4%72Puerto Rico1010.6%99Other jurisdictions100.1%Total16,066100%Variable Type: numeric21",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+36,New York,894,5.6%
+38,North Dakota,87,0.5%
+40,Oklahoma,195,1.2%
+42,Pennsylvania,604,3.8%
+45,South Carolina,124,0.8%
+47,Tennessee,311,1.9%
+49,Utah,333,2.1%
+51,Virginia,249,1.5%
+54,West Virginia,126,0.8%
+56,Wyoming,60,0.4%
+99,Other jurisdictions,10,0.1%
+,Total,"16,066",100%

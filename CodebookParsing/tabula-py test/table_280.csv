@@ -1,0 +1,6 @@
+"T_CLIHI_O: Total number of hospital inpatients — for OTP facilities (Q.31a)ValueLabelFrequency%.Logical skip15,97399.4%10–8310.2%29–15140.1%316–25120.1%426–44190.1%545+170.1%Total16,066100%Variable Type: numeric270",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+.,Logical skip,"15,973",99.4%
+2,9–15,14,0.1%
+4,26–44,19,0.1%
+,Total,"16,066",100%

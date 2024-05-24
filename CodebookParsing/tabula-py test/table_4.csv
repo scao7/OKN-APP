@@ -1,0 +1,14 @@
+"STATE: State abbreviationsValueLabelFrequency%NMNew Mexico1621.0%NVNevada1090.7%NYNew York8945.6%OHOhio6193.9%OKOklahoma1951.2%OROregon2471.5%PAPennsylvania6043.8%PRPuerto Rico1010.6%RIRhode Island630.4%SCSouth Carolina1240.8%SDSouth Dakota580.4%TNTennessee3111.9%TXTexas5093.2%UTUtah3332.1%VAVirginia2491.5%VTVermont520.3%WAWashington4572.8%WIWisconsin2951.8%WVWest Virginia1260.8%WYWyoming600.4%ZZOther jurisdictions100.1%Total16,066100%Variable Type: character19",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+NM,New Mexico,162,1.0%
+NY,New York,894,5.6%
+OK,Oklahoma,195,1.2%
+PA,Pennsylvania,604,3.8%
+RI,Rhode Island,63,0.4%
+SD,South Dakota,58,0.4%
+TX,Texas,509,3.2%
+VA,Virginia,249,1.5%
+WA,Washington,457,2.8%
+WV,West Virginia,126,0.8%
+ZZ,Other jurisdictions,10,0.1%
+,Total,"16,066",100%

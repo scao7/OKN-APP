@@ -1,0 +1,8 @@
+"ASSESSMENT: Number of assessment and pre-treatment services offered by thisfacility (Q.12)ValueLabelFrequency%00 assessment services offered1210.8%11 assessment service offered2081.3%22 assessment services offered6604.1%33 assessment services offered1,1927.4%44 assessment services offered2,13913.3%55 assessment services offered3,23720.1%66 assessment services offered3,61822.5%77 assessment services offered3,46021.5%88 assessment services offered1,4318.9%Total16,066100%Variable Type: numeric31",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+0,0 assessment services offered,121,0.8%
+2,2 assessment services offered,660,4.1%
+4,4 assessment services offered,"2,139",13.3%
+6,6 assessment services offered,"3,618",22.5%
+8,8 assessment services offered,"1,431",8.9%
+,Total,"16,066",100%

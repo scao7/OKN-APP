@@ -1,0 +1,8 @@
+"ANCILLARY: Number of ancillary services offered by this facility (Q.12)ValueLabelFrequency%00 ancillary services offered5063.1%11 ancillary service offered1,5639.7%22 ancillary services offered2,49215.5%33 ancillary services offered3,40921.2%44 ancillary services offered3,64122.7%55 ancillary services offered2,58116.1%66 ancillary services offered1,3088.1%77 ancillary services offered4352.7%88 ancillary services offered1220.8%99 ancillary services offered90.1%Total16,066100%Variable Type: numeric37",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+0,0 ancillary services offered,506,3.1%
+2,2 ancillary services offered,"2,492",15.5%
+4,4 ancillary services offered,"3,641",22.7%
+6,6 ancillary services offered,"1,308",8.1%
+8,8 ancillary services offered,122,0.8%
+,Total,"16,066",100%

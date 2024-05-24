@@ -1,0 +1,6 @@
+"O_AGE1: Outpatient clients under 18 years old (Q.33b)ValueLabelFrequency%.Logical skip8,64953.8%10–26,05237.7%23–54172.6%36–103202.0%411–233212.0%524+3071.9%Total16,066100%Variable Type: numeric240",Unnamed: 0,Unnamed: 1,Unnamed: 2
+Value,Label,Frequency,%
+.,Logical skip,"8,649",53.8%
+2,3–5,417,2.6%
+4,11–23,321,2.0%
+,Total,"16,066",100%
