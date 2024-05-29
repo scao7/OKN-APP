@@ -96,11 +96,6 @@ tabula-py need jpype install it using
 pip install jpype1
 ```
 
-
-
-
-
-
 previous method requires many dependencis for java 
 
 try to use the following package
@@ -124,7 +119,38 @@ for i, table in enumerate(tables):
     print(f"Table {i}")
     print(table.df)
     table.to_csv(f"table_{i}.csv")
+```
+Looks like both package need java
+
+
+use geopy to get the lantitude and longitude 
+https://geopy.readthedocs.io/en/stable/#geopy-is-not-a-service
+https://operations.osmfoundation.org/policies/nominatim/
+https://planet.openstreetmap.org/
+```
+pip install geopy
+```
+example
+```
+from geopy.geocoders import Nominatim
+
+# Initialize the geocoder
+geolocator = Nominatim(user_agent="geoapiExercises")
+
+# Define the address
+address = "1600 Amphitheatre Parkway, Mountain View, CA"
+
+# Get the location
+location = geolocator.geocode(address)
+
+# Print latitude and longitude
+if location:
+    print(f"Address: {address}")
+    print(f"Latitude: {location.latitude}, Longitude: {location.longitude}")
+else:
+    print("Location not found")
 
 ```
 
-Looks like both package need java
+if use google api use the google geocoding api 
+https://developers.google.com/maps/billing-and-pricing/billing#geocoding

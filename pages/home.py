@@ -7,7 +7,7 @@ from textwrap import dedent
 import plotly.graph_objs as go
 import networkx as nx
 import os
-from interactivemap import create_map
+from interactivemap import create_map,query_clinic
 
 
 openmapbox = create_map()
@@ -182,8 +182,6 @@ def create_home():
         )
         
     )
-    
-
     place_holder = html.Div(
         [
             dbc.Placeholder(color="primary", className="me-1 mt-1 w-100",button=True),
@@ -214,7 +212,6 @@ def create_home():
                                     type="circle",
                                     children=[
                                         openmapbox,
-                                        
                                     ],
                                     overlay_style={"visibility":"visible", "opacity": .5, "backgroundColor": "white"},
                                     custom_spinner=html.H2(["My Custom Spinner", dbc.Spinner(color="danger")]), 
@@ -227,8 +224,6 @@ def create_home():
 					),
 					dbc.Col(
 						[
-                        # raw_query_box,
-                        # html.Hr(),
 						chatbox
 						],
 						md=5,
@@ -279,7 +274,7 @@ def create_home():
         return "",""
 
     @dash.callback(
-        [Output("store-conversation", "data"), Output("loading-component", "children")],
+        [Output("store-conversation", "data"), Output("loading-component", "children"),Output("loading","children")],
         [Input("submit", "n_clicks"), Input("user-input", "n_submit"),Input("submit_query", "n_clicks"),Input("query-input", "n_submit")],
         [State("user-input", "value"),State("query-input", "value"), State("store-conversation", "data")],
     )
@@ -289,7 +284,7 @@ def create_home():
         if ctx.triggered:
             button_id = ctx.triggered[0]['prop_id'].split('.')[0]
 
-        result = "",None
+        result = "",None,openmapbox
         if button_id == 'submit':
             result= run_chatbot(n_clicks, n_submit,user_input, chat_history)
         elif button_id == 'submit_query':
@@ -333,7 +328,7 @@ def create_home():
 
         chat_history += f"{model_output}<split>"
 
-        return chat_history, None
+        return chat_history, None,openmapbox
 
     def run_query(n_clicks, n_submit,user_input, chat_history):
         if n_clicks == 0 and n_submit is None:
@@ -356,11 +351,19 @@ def create_home():
         # First add the user input to the chat history
         chat_history += f"You: {user_input}<split>{name}:"
 
-        model_output = "the query is "
+        
+
+        data_scatter = query_clinic(user_input)
+        print(data_scatter)
+        model_output = f"the query is {user_input}:{data_scatter} "
+
+        if data_scatter:
+            openmapbox = create_map(data_scatter)
 
         chat_history += f"{model_output}<split>"
 
-        return chat_history, None
+
+        return chat_history, None,openmapbox
 
     return home
     

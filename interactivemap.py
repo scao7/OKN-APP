@@ -2,6 +2,7 @@ import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
+import plotly.graph_objects as go
 import pandas as pd
 import json
 from urllib.request import urlopen
@@ -10,7 +11,7 @@ from sqlalchemy.orm import sessionmaker,declarative_base
 from sqlalchemy import create_engine, text, Column, Integer, String, Sequence
 import os 
 
-def create_map():
+def create_map(data_scatter=None):
 	# with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
 	# 	counties = json.load(response)
 	# df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
@@ -54,31 +55,74 @@ def create_map():
 						thickness=20  # Set the thickness of the color bar
     				)
 	)
-	
+
+	# Sample data for the scattermapbox layer
+	# data_scatter = [
+	# 	{'lat': 37.7749, 'lon': -122.4194, 'name': 'San Francisco'},
+	# 	{'lat': 34.0522, 'lon': -118.2437, 'name': 'Los Angeles'},
+	# 	{'lat': 40.7128, 'lon': -74.0060, 'name': 'New York City'},
+	# ]
+	# data_scatter = query_clinic()
+
+	if data_scatter:
+		# Create Scattermapbox trace
+		scatter_trace = go.Scattermapbox(
+			lat=[city['lat'] for city in data_scatter],
+			lon=[city['lon'] for city in data_scatter],
+			mode='markers',
+			marker=dict(size=6, color='rgb(0, 0, 255)'),
+			text=[city['name'] for city in data_scatter],
+			hoverinfo='text'
+		)
+
+		fig.add_trace(scatter_trace)
+		fig.update_layout(
+			mapbox_center={"lat": data_scatter[0]['lat'], "lon": data_scatter[0]['lon']},
+    		mapbox_zoom=11
+		)
 
 	# Define the layout
 	layout = html.Div([
-		dcc.Graph(id='map', figure=fig),
-		# dcc.Slider(
-		# 	id='zoom-slider',
-		# 	min=1,
-		# 	max=15,
-		# 	value=3,
-		# 	marks={i: str(i) for i in range(1, 16)},
-		# 	step=1
-		# )
+		dcc.Graph(id='map',figure=fig),
 	])
-
-	# # Define callback to update map zoom level
-	# @dash.callback(
-	# 	Output('map', 'figure'),
-	# 	[Input('zoom-slider', 'value')]
-	# )
-	# def update_map(zoom_level):
-	# 	fig.update_layout(mapbox=dict(zoom=zoom_level))
-	# 	return fig
-
 	return layout
-# # Run the app
-# if __name__ == '__main__':
-# 	app.run_server(debug=True)
+
+# get query infomation and update on the map 
+from geopy.geocoders import Nominatim
+def get_la_lo(address):
+
+	# Initialize the geocoder
+	geolocator = Nominatim(user_agent="okn_application")
+
+	# Get the location
+	location = geolocator.geocode(address)
+
+	# Print latitude and longitude
+	if location:
+		print(f"Address: {address}")
+		print(f"Latitude: {location.latitude}, Longitude: {location.longitude}")
+	else:
+		print("Location not found")
+	return location.latitude,location.longitude
+
+def query_clinic(location):
+	# read the clinic list 
+	df = pd.read_excel(r"D:\OKN_Front_End\Datasets\National_Directory_MH_Facilities_2022.xlsx", sheet_name=0)
+	# print(location,)
+	filterd = df[df['zip'] == int(location)]
+	street_list = filterd['street1'].tolist()
+	facility_list = filterd['name1'].tolist()
+	city_list = filterd['city'].tolist()
+	state_list = filterd['state'].tolist()
+	# print(street_list,facility_list)
+	data_scatter =[]
+
+	for street,name,city,state in zip(street_list, facility_list,city_list,state_list):
+		try:
+			la,lo = get_la_lo(street + ',' + city + ',' + state)
+			data_scatter.append({'lat':la,'lon':lo,'name':name,'info':street})
+		except:
+			print("Not find the location")
+		
+
+	return data_scatter
