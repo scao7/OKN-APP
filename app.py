@@ -43,7 +43,7 @@ title_banner = html.Div(dbc.Row(dbc.Col(html.H1("OKN-A Cross-Domain Knowledge Gr
 # home = create_home()
 content = html.Div(id="page-content")
 
-app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
+app.layout = html.Div([dcc.Location(id="url"), sidebar,content])
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def render_page_content(pathname):
     if pathname == "/":

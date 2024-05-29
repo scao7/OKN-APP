@@ -5,5 +5,5 @@ from dash.dependencies import Input, Output
 
 layout = html.Div([
     html.H1('Resource Page'),
-    dcc.Link('Go to About Page', href='/about')
+    html.P("some description about the data")
 ])

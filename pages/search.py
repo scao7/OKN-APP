@@ -13,10 +13,10 @@ def create_searchpage():
         ]
     )
 
-   
-
     @dash.callback(Output("output", "children"), [Input("serachbar_input", "value")])
     def output_text(value):
+
+        
         return value
     
     return serachbar

@@ -214,19 +214,20 @@ def create_home():
                                         openmapbox,
                                     ],
                                     overlay_style={"visibility":"visible", "opacity": .5, "backgroundColor": "white"},
-                                    custom_spinner=html.H2(["My Custom Spinner", dbc.Spinner(color="danger")]), 
+                                    custom_spinner=html.H2(["Loading", dbc.Spinner(color="danger")]), 
                                 ),
                                 
 							],
                             className="border rounded")
 						],
-						md=7,
+						# md=7,
+                        style={"marginLeft": "10px"}
 					),
 					dbc.Col(
 						[
 						chatbox
 						],
-						md=5,
+						# md=5,
 						className="border rounded"
 					) 
 				]
@@ -237,14 +238,15 @@ def create_home():
                     dbc.Col([html.H3("Service provided by selected treatment agency",className='h3'),
                              place_holder
                             ],
-                            md=7,
+                           
+                            style={"marginLeft": "10px"},
                             className="border rounded",
                             ),
 
                     dbc.Col([html.H3("Client satisfaction & Peer Review",className='h3'),
                             place_holder,
                             ],
-                            md=5,
+                          
                             className="border rounded"),
                 ],
             
