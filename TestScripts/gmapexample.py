@@ -41,7 +41,7 @@ def get_facility_website(api_key, facility_name, facility_address):
     return None
 
 # Example usage
-api_key = 'AIzaSyAra7tC7yiTJ0SHKh56YhShcnO3VHrXqcU'
+api_key = '88'
 facility_name = 'MHCNCA Inc'
 facility_address = 'Decatur/Morgan Counseling Center'
 website = get_facility_website(api_key, facility_name, facility_address)

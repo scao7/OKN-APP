@@ -42,7 +42,7 @@ def get_website(place_id, api_key):
 
 if __name__ == "__main__":
     address = "West Alabama Mental Health Center"
-    api_key = "AIzaSyAra7tC7yiTJ0SHKh56YhShcnO3VHrXqcU"
+    api_key = "88"
     lat, lng = get_coordinates(address, api_key)
     place_id = get_place_id(lat, lng, api_key)
     web_info = get_website(place_id,api_key)
