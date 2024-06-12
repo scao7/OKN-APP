@@ -1,82 +1,101 @@
 
 import dash
 import dash_bootstrap_components as dbc
-from dash import Input, Output, State, dcc, html
+from dash import Input, Output, State, dcc, html,MATCH, ALL
 from openai import OpenAI
 from textwrap import dedent
 import plotly.graph_objs as go
 import networkx as nx
 import os
-from interactivemap import create_map,query_clinic
-
-
+from interactivemap import create_map,query_clinic,get_coordinates,get_place_id,get_website,query_clinic_google
+from getfacilities import get_facility_website
+from dash.exceptions import PreventUpdate
+import re
+import json
+# from dash.dependencies import Input, Output, State, MATCH, ALL
+# place_holder = html.Div(
+#     [
+#         dbc.Placeholder(color="primary", className="me-1 mt-1 w-100",button=True),
+#         dbc.Placeholder(color="secondary", className="me-1 mt-1 w-100",button=True),
+#         dbc.Placeholder(color="success", className="me-1 mt-1 w-100",button=True),
+#         dbc.Placeholder(color="warning", className="me-1 mt-1 w-100",button=True),
+#         dbc.Placeholder(color="danger", className="me-1 mt-1 w-100",button=True),
+#         dbc.Placeholder(color="info", className="me-1 mt-1 w-100",button=True),
+#         dbc.Placeholder(color="light", className="me-1 mt-1 w-100",button=True),
+#         dbc.Placeholder(color="dark", className="me-1 mt-1 w-100",button=True),
+#     ]
+# )
+google_api_key=os.environ.get("GoogleMAP_API")
 openmapbox = create_map()
-
-G = nx.Graph()
-
-# Add nodes and edges
-G.add_edges_from([(1, 2), (1, 3), (2, 4), (3, 4), (4, 5)])
+data_scatter = {}
+services=None 
 
 
-def generate_graph():
-    pos = nx.spring_layout(G)  # Positioning the nodes
+# G = nx.Graph()
 
-    edge_trace = go.Scatter(
-        x=[],
-        y=[],
-        line=dict(width=1, color='#888'),
-        hoverinfo='none',
-        mode='lines')
+# # Add nodes and edges
+# G.add_edges_from([(1, 2), (1, 3), (2, 4), (3, 4), (4, 5)])
 
-    for edge in G.edges():
-        x0, y0 = pos[edge[0]]
-        x1, y1 = pos[edge[1]]
-        edge_trace['x'] += (x0, x1, None)
-        edge_trace['y'] += (y0, y1, None)
 
-    node_trace = go.Scatter(
-        x=[],
-        y=[],
-        text=[],
-        mode='markers+text',
-        hoverinfo='text',
-        marker=dict(
-            showscale=True,
-            colorscale='YlGnBu',
-            size=10,
-            colorbar=dict(
-                thickness=15,
-                title='Node Connections',
-                xanchor='left',
-                titleside='right'
-            )))
+# def generate_graph():
+#     pos = nx.spring_layout(G)  # Positioning the nodes
 
-    for node in G.nodes():
-        x, y = pos[node]
-        node_trace['x'] += (x,)
-        node_trace['y'] += (y,)
-        node_trace['text'] += (str(node),)
+#     edge_trace = go.Scatter(
+#         x=[],
+#         y=[],
+#         line=dict(width=1, color='#888'),
+#         hoverinfo='none',
+#         mode='lines')
+
+#     for edge in G.edges():
+#         x0, y0 = pos[edge[0]]
+#         x1, y1 = pos[edge[1]]
+#         edge_trace['x'] += (x0, x1, None)
+#         edge_trace['y'] += (y0, y1, None)
+
+#     node_trace = go.Scatter(
+#         x=[],
+#         y=[],
+#         text=[],
+#         mode='markers+text',
+#         hoverinfo='text',
+#         marker=dict(
+#             showscale=True,
+#             colorscale='YlGnBu',
+#             size=10,
+#             colorbar=dict(
+#                 thickness=15,
+#                 title='Node Connections',
+#                 xanchor='left',
+#                 titleside='right'
+#             )))
+
+#     for node in G.nodes():
+#         x, y = pos[node]
+#         node_trace['x'] += (x,)
+#         node_trace['y'] += (y,)
+#         node_trace['text'] += (str(node),)
     
 
 
-    return html.Div([
-                dcc.Graph(
-                    id='network-graph',
-                    figure={
-                        'data': [edge_trace, node_trace],
-                        'layout': go.Layout(
-                            title='Network Graph',
-                            showlegend=False,
-                            hovermode='closest',
-                            margin=dict(b=20, l=5, r=5, t=40),
-                            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-                            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
-                        )
-                    }
-                )
-            ])
+#     return html.Div([
+#                 dcc.Graph(
+#                     id='network-graph',
+#                     figure={
+#                         'data': [edge_trace, node_trace],
+#                         'layout': go.Layout(
+#                             title='Network Graph',
+#                             showlegend=False,
+#                             hovermode='closest',
+#                             margin=dict(b=20, l=5, r=5, t=40),
+#                             xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+#                             yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
+#                         )
+#                     }
+#                 )
+#             ])
 
-graph = generate_graph()
+# graph = generate_graph()
 
 def create_home():
     def Header(name, app):
@@ -160,12 +179,6 @@ def create_home():
             dbc.Button("Query",id = "submit_query",color="secondary"),
         ]
     )
-    # raw_query_box = dbc.InputGroup(
-    #     children=[
-    #         dbc.Input(id="user-input", placeholder="Write raw query input...", type="text"),
-    #         dbc.Button("Submit", id="submit")
-    #     ]
-    # )
 
     chatbox = html.Div(
         dbc.Container(
@@ -182,18 +195,36 @@ def create_home():
         )
         
     )
-    place_holder = html.Div(
-        [
-            dbc.Placeholder(color="primary", className="me-1 mt-1 w-100",button=True),
-            dbc.Placeholder(color="secondary", className="me-1 mt-1 w-100",button=True),
-            dbc.Placeholder(color="success", className="me-1 mt-1 w-100",button=True),
-            dbc.Placeholder(color="warning", className="me-1 mt-1 w-100",button=True),
-            dbc.Placeholder(color="danger", className="me-1 mt-1 w-100",button=True),
-            dbc.Placeholder(color="info", className="me-1 mt-1 w-100",button=True),
-            dbc.Placeholder(color="light", className="me-1 mt-1 w-100",button=True),
-            dbc.Placeholder(color="dark", className="me-1 mt-1 w-100",button=True),
-        ]
+
+    treatment_agency = html.Div(
+        dbc.Container(
+            fluid= True,
+            children=[
+                html.H3("Treatmemt Agency",className='h3'),
+                dcc.Loading(
+                    id="agency",
+                    type="circle",
+                    children=[
+                        services,
+                    ],
+                    overlay_style={"visibility":"visible", "opacity": .5, "backgroundColor": "white"},
+                    custom_spinner=html.H2(["Loading", dbc.Spinner(color="danger")]), 
+                )   
+
+            ]
+             
+        )
     )
+
+    agency_info = html.Div(
+        dcc.Loading(
+            id="output-container",
+            # children=[
+            #     'test'
+            # ]
+        )
+    )
+
     home = html.Div(
 		[
 			dbc.Row(
@@ -202,13 +233,8 @@ def create_home():
 						[
 							html.Div([
 								html.H3("MAP",className="h3"),
-								# html.Iframe(
-								# 	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497695.0212663337!2d-74.25986413519108!3d40.697589547260245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1621073910982!5m2!1sen!2sus",
-								# 	width="100%",
-								# 	height="500"
-								# )
                                 dcc.Loading(
-                                    id="loading",
+                                    id="openmap_render",
                                     type="circle",
                                     children=[
                                         openmapbox,
@@ -223,6 +249,7 @@ def create_home():
 						# md=7,
                         style={"marginLeft": "10px"}
 					),
+
 					dbc.Col(
 						[
 						chatbox
@@ -235,16 +262,16 @@ def create_home():
             html.Hr(),
             dbc.Row(
                 [
-                    dbc.Col([html.H3("Service provided by selected treatment agency",className='h3'),
-                             place_holder
+                    dbc.Col([
+                            treatment_agency
                             ],
                            
                             style={"marginLeft": "10px"},
                             className="border rounded",
                             ),
 
-                    dbc.Col([html.H3("Client satisfaction & Peer Review",className='h3'),
-                            place_holder,
+                    dbc.Col([html.H3("Angency Info",className='h3'),
+                            agency_info,
                             ],
                           
                             className="border rounded"),
@@ -276,7 +303,7 @@ def create_home():
         return "",""
 
     @dash.callback(
-        [Output("store-conversation", "data"), Output("loading-component", "children"),Output("loading","children")],
+        [Output("store-conversation", "data"), Output("loading-component", "children"), Output("openmap_render","children"),Output("agency","children")],
         [Input("submit", "n_clicks"), Input("user-input", "n_submit"),Input("submit_query", "n_clicks"),Input("query-input", "n_submit")],
         [State("user-input", "value"),State("query-input", "value"), State("store-conversation", "data")],
     )
@@ -284,9 +311,10 @@ def create_home():
         ctx = dash.callback_context
         button_id = None
         if ctx.triggered:
+            print("ctx",ctx.triggered[0]['prop_id'])
             button_id = ctx.triggered[0]['prop_id'].split('.')[0]
 
-        result = "",None,openmapbox
+        result = "",None,openmapbox,services
         if button_id == 'submit':
             result= run_chatbot(n_clicks, n_submit,user_input, chat_history)
         elif button_id == 'submit_query':
@@ -296,10 +324,10 @@ def create_home():
 
     def run_chatbot(n_clicks, n_submit,user_input, chat_history):
         if n_clicks == 0 and n_submit is None:
-            return "", None
+            return "", None, openmapbox, services
 
         if user_input is None or user_input == "":
-            return chat_history, None
+            return chat_history, None,openmapbox,services
 
         name = "OKN"
 
@@ -330,7 +358,7 @@ def create_home():
 
         chat_history += f"{model_output}<split>"
 
-        return chat_history, None,openmapbox
+        return chat_history, None,openmapbox,services
 
     def run_query(n_clicks, n_submit,user_input, chat_history):
         if n_clicks == 0 and n_submit is None:
@@ -354,18 +382,72 @@ def create_home():
         chat_history += f"You: {user_input}<split>{name}:"
 
         
-
         data_scatter = query_clinic(user_input)
+
+
         print(data_scatter)
         model_output = f"the query is {user_input}:{data_scatter} "
 
         if data_scatter:
             openmapbox = create_map(data_scatter)
 
+        # print(data_scatter)
+        button_styles = ["primary","secondary","success","warning","danger","info","light","dark"]
+        services =  html.Div(
+            [dbc.Button(button['name']+" " +button['info'] , color=button_styles[idx % 8], className="me-1",id={'type': 'dynamic-button', 'index': idx},style={"width":"100%"}) for idx, button in enumerate(data_scatter)],
+            id='button-container'
+        )
         chat_history += f"{model_output}<split>"
 
 
-        return chat_history, None,openmapbox
+        return chat_history, None,openmapbox,services
+
+
+        # Callback to handle button clicks
+    @dash.callback(
+        Output('output-container', 'children'),
+        [Input({'type': 'dynamic-button', 'index': ALL}, 'n_clicks')],
+        [State({'type': 'dynamic-button', 'index': ALL}, 'id'),
+        State({'type': 'dynamic-button', 'index': ALL}, 'children')]
+    )
+
+    def dynamic_button_logic(n_clicks, button_ids,button_labels):
+        ctx = dash.callback_context
+        if not ctx.triggered:
+            return "No agency selected yet."
+
+        button_id_clicked_str = ctx.triggered[0]['prop_id'].split('.')[0]
+        
+        # Extract the index from the clicked button ID string using regular expression
+        button_index = int(re.search(r'\d+', button_id_clicked_str).group())
+        clicked_button_name = button_labels[button_index]
+        address= clicked_button_name
+        print(address)
+        
+        web_info  =get_facility_website(google_api_key,address)
+        json_string = json.dumps(web_info, indent=4)
+        data_dict = json.loads(json_string)
+        print(data_dict)
+        # lat, lng = get_coordinates(address, google_api_key)
+        # place_id = get_place_id(lat, lng, google_api_key)
+        # web_info = get_website(place_id,google_api_key)
+
+        out_layout = html.Div(
+            [html.H3(data_dict['result']['name']),
+            html.P(data_dict['result']['rating']),
+            html.P(data_dict['result']['formatted_address']),
+            html.P(data_dict['result']['formatted_phone_number']),
+            html.P(data_dict['result']['website']),
+            # html.P(data_dict['result']['opening_hours']),
+            ]
+        )
+        return out_layout
+        
+
+
+        
+        
+
 
     return home
     

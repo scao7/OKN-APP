@@ -56,13 +56,6 @@ def create_map(data_scatter=None):
     				)
 	)
 
-	# Sample data for the scattermapbox layer
-	# data_scatter = [
-	# 	{'lat': 37.7749, 'lon': -122.4194, 'name': 'San Francisco'},
-	# 	{'lat': 34.0522, 'lon': -118.2437, 'name': 'Los Angeles'},
-	# 	{'lat': 40.7128, 'lon': -74.0060, 'name': 'New York City'},
-	# ]
-	# data_scatter = query_clinic()
 
 	if data_scatter:
 		# Create Scattermapbox trace
@@ -120,9 +113,74 @@ def query_clinic(location):
 	for street,name,city,state in zip(street_list, facility_list,city_list,state_list):
 		try:
 			la,lo = get_la_lo(street + ',' + city + ',' + state)
-			data_scatter.append({'lat':la,'lon':lo,'name':name,'info':street})
+			data_scatter.append({'lat':la,'lon':lo,'name':name,'info':street + ' '+ city + ' ' +state})
 		except:
 			print("Not find the location")
 		
 
 	return data_scatter
+
+def query_clinic_google(location,api_key):
+	# read the clinic list 
+	df = pd.read_excel(r"D:\OKN_Front_End\Datasets\National_Directory_MH_Facilities_2022.xlsx", sheet_name=0)
+	# print(location,)
+	filterd = df[df['zip'] == int(location)]
+	street_list = filterd['street1'].tolist()
+	facility_list = filterd['name1'].tolist()
+	city_list = filterd['city'].tolist()
+	state_list = filterd['state'].tolist()
+	# print(street_list,facility_list)
+	data_scatter =[]
+
+	for street,name,city,state in zip(street_list, facility_list,city_list,state_list):
+		try:
+			la,lo = get_coordinates(street + ',' + city + ',' + state,api_key)
+			data_scatter.append({'lat':la,'lon':lo,'name':name,'info':street})
+		except:
+			print("Not find the location")
+		
+	return data_scatter
+
+
+# geocoding google api
+import requests
+def get_coordinates(address, api_key):
+    geocode_url = f"https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={api_key}"
+    response = requests.get(geocode_url)
+    geocode_data = response.json()
+    if geocode_data['status'] == 'OK':
+        location = geocode_data['results'][0]['geometry']['location']
+        return location['lat'], location['lng']
+    else:
+        raise Exception("Geocoding API request failed.")
+
+def get_place_id(lat, lng, api_key):
+    places_url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat},{lng}&radius=10&key={api_key}"
+    response = requests.get(places_url)
+    places_data = response.json()
+    if places_data['status'] == 'OK':
+        place_id = places_data['results'][0]['place_id']
+        return place_id
+    else:
+        raise Exception("Places API request failed.")
+
+def get_reviews(place_id, api_key):
+    details_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=reviews&key={api_key}"
+    response = requests.get(details_url)
+    details_data = response.json()
+    if details_data['status'] == 'OK':
+        return details_data['result']['reviews']
+    else:
+        raise Exception("Place Details API request failed.")
+def get_website(place_id, api_key):
+    details_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=website&key={api_key}"
+    response = requests.get(details_url)
+    details_data = response.json()
+    if details_data['status'] == 'OK':
+        if 'website' in details_data['result']:
+            return details_data['result']['website']
+        else:
+            print("No website found for this place.")
+            return None
+    else:
+        raise Exception("Place Details API request failed.")
