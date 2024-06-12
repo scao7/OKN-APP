@@ -9,6 +9,7 @@ Reference/
 Datasets/
 data/
 gittoken.txt
+TestScripts/
 
 # Ignore OS-generated files
 .DS_Store
