@@ -390,7 +390,8 @@ def create_home():
 
         if data_scatter:
             openmapbox = create_map(data_scatter)
-
+        else:
+            openmapbox = create_map()
         # print(data_scatter)
         button_styles = ["primary","secondary","success","warning","danger","info","light","dark"]
         services =  html.Div(

@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix : <http://example.com/ontology#> .  # Replace with your actual ontology URI
+
+# Classes
+:Area rdf:type rdfs:Class .
+:RuralArea rdf:type :Area .
+:UrbanArea rdf:type :Area .
+
+# Properties
+:hasPopulation rdf:type rdf:Property ;
+               rdfs:domain :Area ;
+               rdfs:range schema:Number .
+
+:hasRucc rdf:type rdf:Property ;
+         rdfs:domain :Area ;
+         rdfs:range schema:Text .
+
+:hasRuccDescription rdf:type rdf:Property ;
+                    rdfs:domain :Area ;
+                    rdfs:range schema:Text .
+
+# Instances based on CSV data
+# Assume CSV has columns: county_name, state_fips, population, rucc, rucc_description
+
+# Example instances (replace with actual data instances)
+:Area1 rdf:type :RuralArea ;
+       :hasPopulation "10000"^^schema:Number ;  # Example population number
+       :hasRucc "8"^^schema:Text ;              # Example RUCC code
+       :hasRuccDescription "Nonmetro - Completely rural or less than 2,500 urban population, not adjacent to a metro area"^^schema:Text .
+
+:Area2 rdf:type :UrbanArea ;
+       :hasPopulation "500000"^^schema:Number ;  # Example population number
+       :hasRucc "1"^^schema:Text ;               # Example RUCC code
+       :hasRuccDescription "Metro - Counties in metro areas of 1 million population or more"^^schema:Text .
