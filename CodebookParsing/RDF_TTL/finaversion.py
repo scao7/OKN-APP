@@ -5,9 +5,12 @@ from rdflib.namespace import RDF, RDFS, XSD
 # Define namespaces
 schema = Namespace("http://schema.org/")
 example = Namespace("http://sail.ua.edu/")
+geoname = Namespace("https://www.geonames.org/")
+
 
 # Read data from Excel file
 df = pd.read_excel(r'D:\OKN_Front_End\Datasets\ruralurbancodes2013.xls')
+
 
 # Initialize RDF Graph
 g = Graph()
@@ -30,11 +33,3 @@ for index, row in df.iterrows():
     except:
         print("wrong")
     
-
-
-# Serialize the RDF graph to a TTL file
-output_file = 'county_ontology.ttl'
-with open(output_file, 'w') as f:
-    f.write(g.serialize(format='turtle'))
-
-print(f"Instances added and saved to {output_file}.")
