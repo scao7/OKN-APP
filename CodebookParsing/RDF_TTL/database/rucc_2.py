@@ -46,16 +46,19 @@ for state_id, state_name, state_abbr, fips in cursor.fetchall():
         # Fetch RUCC related to this County
         cursor2.execute("SELECT rucc_id, rucc_code, description, year FROM rucc")
         for rucc_id, rucc_code, description, year in cursor2.fetchall():
-            rucc_uri = RUCC[f"{rucc_code}"]
+            rucc_uri = RUCC[f"rucc_{rucc_code}"]
             g.add((rucc_uri, RDF.type, RUCC.RUCC))
+            cursor3.execute("SELECT rural_urban_id, rural_urban_code, population, rucc FROM rural_urban WHERE rural_urban_code = %s", (county_fips,))
+            for rural_urban_id, rural_urban_code, population, rucc in cursor3.fetchall():
+                # if rucc_uri == RUCC[f"{rucc}"]:
+                g.add((county_uri,RUCC.hasRUCC,RUCC[f"rucc_{rucc}"]))
+                g.add((county_uri,RUCC.population,Literal(population,datatype=XSD.integer)))
+
             g.add((rucc_uri, RUCC.code, Literal(rucc_code, datatype=XSD.string)))
             g.add((rucc_uri, RUCC.description, Literal(description, datatype=XSD.string)))
             g.add((rucc_uri, RUCC.year, Literal(year, datatype=XSD.integer)))
             
-            cursor3.execute("SELECT rural_urban_id, rural_urban_code, population, rucc FROM rural_urban WHERE rural_urban_code = %s", (county_fips,))
-            for rural_urban_id, rural_urban_code, population, rucc in cursor3.fetchall():
-                if rucc_uri == RUCC[f"{rucc}"]:
-                    g.add((county_uri,RUCC.hasRUCC,rucc_uri))
+            
 
         # cursor.execute("SELECT rural_urban_id, rural_urban_code, population, rucc FROM rural_urban WHERE rural_urban_code = %s", (county_fips,))
         # for rural_urban_id, rural_urban_code, population, rucc in cursor.fetchall():
@@ -75,6 +78,6 @@ for state_id, state_name, state_abbr, fips in cursor.fetchall():
 conn.close()
 
 # Serialize the RDF graph to a TTL file
-output_file = 'rucc_ontology.ttl'
+output_file = 'rucc_ontology2.ttl'
 g.serialize(destination=output_file, format='turtle')
 print(f"RDF graph serialized and saved to {output_file}.")
