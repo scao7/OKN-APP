@@ -26,12 +26,12 @@ for index, row in df.iterrows():
     g.add((county_uri, schema.description, Literal(row['Description'], datatype=XSD.string)))
     # Assuming there's no direct equivalent for RUCC_2013 in schema.org, you may use a custom property:
     try:
-        g.add((county_uri, example.hasRUCC_2013, Literal(int(row['RUCC_2013']), datatype=XSD.integer)))
+        g.add((example.hasRUCC_2013, RDF.type, Literal(int(row['RUCC_2013']), datatype=XSD.integer)))
     except:
         print("wrong")
 
 # Serialize the RDF graph to a TTL file
-output_file = 'county_ontology.ttl'
+output_file = 'county_ontology_2.ttl'
 with open(output_file, 'w') as f:
     f.write(g.serialize(format='turtle'))
 
