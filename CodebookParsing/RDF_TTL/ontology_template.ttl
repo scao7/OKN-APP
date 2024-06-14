@@ -1,49 +1,49 @@
-@prefix : <http://example.org/ontology#> .
+@prefix ex: <http://example.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-:State a rdfs:Class ;
+ex:State a rdfs:Class ;
     rdfs:label "State" .
 
-:County a rdfs:Class ;
+ex:County a rdfs:Class ;
     rdfs:label "County" .
 
-:RUCC a rdfs:Class ;
+ex:RUCC a rdfs:Class ;
     rdfs:label "Rural-Urban Continuum Code (RUCC)" .
 
-:FIPS a rdf:Property ;
+ex:FIPS a rdf:Property ;
     rdfs:label "FIPS" ;
-    rdfs:domain :County ;
+    rdfs:domain ex:County ;
     rdfs:range xsd:string .
 
-:hasState a rdf:Property ;
+ex:hasState a rdf:Property ;
     rdfs:label "has State" ;
-    rdfs:domain :County ;
-    rdfs:range :State .
+    rdfs:domain ex:County ;
+    rdfs:range ex:State .
 
-:CountyName a rdf:Property ;
+ex:CountyName a rdf:Property ;
     rdfs:label "County Name" ;
-    rdfs:domain :County ;
+    rdfs:domain ex:County ;
     rdfs:range xsd:string .
 
-:Population2010 a rdf:Property ;
+ex:Population2010 a rdf:Property ;
     rdfs:label "Population 2010" ;
-    rdfs:domain :County ;
+    rdfs:domain ex:County ;
     rdfs:range xsd:integer .
 
-:hasRUCC a rdf:Property ;
+ex:hasRUCC a rdf:Property ;
     rdfs:label "has RUCC" ;
-    rdfs:domain :County ;
-    rdfs:range :RUCC .
+    rdfs:domain ex:County ;
+    rdfs:range ex:RUCC .
 
-:RUCCCode a rdf:Property ;
+ex:RUCCCode a rdf:Property ;
     rdfs:label "RUCC Code" ;
-    rdfs:domain :RUCC ;
+    rdfs:domain ex:RUCC ;
     rdfs:range xsd:integer .
 
-:Description a rdf:Property ;
+ex:Description a rdf:Property ;
     rdfs:label "Description" ;
-    rdfs:domain :County ;
+    rdfs:domain ex:County ;
     rdfs:range xsd:string .
