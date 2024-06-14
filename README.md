@@ -154,3 +154,7 @@ else:
 
 if use google api use the google geocoding api 
 https://developers.google.com/maps/billing-and-pricing/billing#geocoding
+
+
+
+update database content with pgadmin 
