@@ -53,19 +53,3 @@ def get_facility_website(api_key, facility_name_and_facility_address):
         details_response = requests.get(details_endpoint, params=details_params)
         details_data = details_response.json()
         return details_data
-        # if 'result' in details_data:
-        #     if 'website' in details_data['result']:
-        #         return details_data['result']['website']
-
-    # return None
-
-# # Example usage
-# api_key = 'AIzaSyAra7tC7yiTJ0SHKh56YhShcnO3VHrXqcU'
-# facility_name = 'MHCNCA Inc'
-# facility_address = 'Decatur/Morgan Counseling Center'
-# website = get_facility_website(api_key, facility_name, facility_address)
-
-# if website:
-#     print(f"Website of {facility_name}: {website}")
-# else:
-#     print(f"Website of {facility_name} not found.")

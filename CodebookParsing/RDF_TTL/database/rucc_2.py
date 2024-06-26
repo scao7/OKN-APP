@@ -42,7 +42,6 @@ for state_id, state_name, state_abbr, fips in cursor.fetchall():
         g.add((county_uri, RUCC.fips, Literal(fips, datatype=XSD.string)))
         g.add((state_uri, RUCC.containsPlace, county_uri))
         
-        
         # Fetch RUCC related to this County
         cursor2.execute("SELECT rucc_id, rucc_code, description, year FROM rucc")
         for rucc_id, rucc_code, description, year in cursor2.fetchall():

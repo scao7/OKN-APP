@@ -11,15 +11,8 @@ from sqlalchemy.orm import sessionmaker,declarative_base
 from sqlalchemy import create_engine, text, Column, Integer, String, Sequence
 import os 
 
-def create_map(data_scatter=None):
-	# with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
-	# 	counties = json.load(response)
-	# df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
-	# 				dtype={"fips": str})
-	
+def create_map(data_scatter=None):	
 	counties = json.load(open(r"Datasets\geojson-counties-fips.json",'r'))
-	# df = pd.read_excel(r"Datasets\ruralurbancodes2013.xls",dtype={"FIPS": str})
-
 	# create using database conneciton 
 	password = os.environ["okn_database"]
 	engine = create_engine(f'postgresql+psycopg2://postgres:{password}@127.0.0.1:5432/dummy')

@@ -12,90 +12,11 @@ from getfacilities import get_facility_website
 from dash.exceptions import PreventUpdate
 import re
 import json
-# from dash.dependencies import Input, Output, State, MATCH, ALL
-# place_holder = html.Div(
-#     [
-#         dbc.Placeholder(color="primary", className="me-1 mt-1 w-100",button=True),
-#         dbc.Placeholder(color="secondary", className="me-1 mt-1 w-100",button=True),
-#         dbc.Placeholder(color="success", className="me-1 mt-1 w-100",button=True),
-#         dbc.Placeholder(color="warning", className="me-1 mt-1 w-100",button=True),
-#         dbc.Placeholder(color="danger", className="me-1 mt-1 w-100",button=True),
-#         dbc.Placeholder(color="info", className="me-1 mt-1 w-100",button=True),
-#         dbc.Placeholder(color="light", className="me-1 mt-1 w-100",button=True),
-#         dbc.Placeholder(color="dark", className="me-1 mt-1 w-100",button=True),
-#     ]
-# )
+
 google_api_key=os.environ.get("GoogleMAP_API")
 openmapbox = create_map()
 data_scatter = {}
 services=None 
-
-
-# G = nx.Graph()
-
-# # Add nodes and edges
-# G.add_edges_from([(1, 2), (1, 3), (2, 4), (3, 4), (4, 5)])
-
-
-# def generate_graph():
-#     pos = nx.spring_layout(G)  # Positioning the nodes
-
-#     edge_trace = go.Scatter(
-#         x=[],
-#         y=[],
-#         line=dict(width=1, color='#888'),
-#         hoverinfo='none',
-#         mode='lines')
-
-#     for edge in G.edges():
-#         x0, y0 = pos[edge[0]]
-#         x1, y1 = pos[edge[1]]
-#         edge_trace['x'] += (x0, x1, None)
-#         edge_trace['y'] += (y0, y1, None)
-
-#     node_trace = go.Scatter(
-#         x=[],
-#         y=[],
-#         text=[],
-#         mode='markers+text',
-#         hoverinfo='text',
-#         marker=dict(
-#             showscale=True,
-#             colorscale='YlGnBu',
-#             size=10,
-#             colorbar=dict(
-#                 thickness=15,
-#                 title='Node Connections',
-#                 xanchor='left',
-#                 titleside='right'
-#             )))
-
-#     for node in G.nodes():
-#         x, y = pos[node]
-#         node_trace['x'] += (x,)
-#         node_trace['y'] += (y,)
-#         node_trace['text'] += (str(node),)
-    
-
-
-#     return html.Div([
-#                 dcc.Graph(
-#                     id='network-graph',
-#                     figure={
-#                         'data': [edge_trace, node_trace],
-#                         'layout': go.Layout(
-#                             title='Network Graph',
-#                             showlegend=False,
-#                             hovermode='closest',
-#                             margin=dict(b=20, l=5, r=5, t=40),
-#                             xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-#                             yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
-#                         )
-#                     }
-#                 )
-#             ])
-
-# graph = generate_graph()
 
 def create_home():
     def Header(name, app):
@@ -429,6 +350,12 @@ def create_home():
         json_string = json.dumps(web_info, indent=4)
         data_dict = json.loads(json_string)
         print(data_dict)
+
+        try:
+            data_dict['result']['rating']
+        except:
+            data_dict['result']['rating'] = "no rating"
+
         # lat, lng = get_coordinates(address, google_api_key)
         # place_id = get_place_id(lat, lng, google_api_key)
         # web_info = get_website(place_id,google_api_key)
