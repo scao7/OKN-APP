@@ -7,12 +7,12 @@ from textwrap import dedent
 import plotly.graph_objs as go
 import networkx as nx
 import os
-from interactivemap import create_map,query_clinic,get_coordinates,get_place_id,get_website,query_clinic_google
+from interactivemap import create_map,query_clinic
 from getfacilities import get_facility_website
 from dash.exceptions import PreventUpdate
 import re
 import json
-
+from radarplot import create_radarplot
 google_api_key=os.environ.get("GoogleMAP_API")
 openmapbox = create_map()
 data_scatter = {}
@@ -198,6 +198,35 @@ def create_home():
                             className="border rounded"),
                 ],
             
+            ),
+            html.Hr(),
+            dbc.Row(
+                [
+                    dbc.Col([
+                            create_radarplot()
+                            ],
+                           
+                            style={"marginLeft": "10px"},
+                            className="border rounded",
+                            ),
+                    dbc.Col([
+                            create_radarplot()
+                            ],
+                           
+                            style={"marginLeft": "10px"},
+                            className="border rounded",
+                            ),  
+                    dbc.Col([
+                            create_radarplot()
+                            ],
+                           
+                            style={"marginLeft": "10px"},
+                            className="border rounded",
+                            ),  
+                    
+                    
+                ]
+                
             )
             ]
 	)
@@ -302,9 +331,7 @@ def create_home():
         # First add the user input to the chat history
         chat_history += f"You: {user_input}<split>{name}:"
 
-        
         data_scatter = query_clinic(user_input)
-
 
         print(data_scatter)
         model_output = f"the query is {user_input}:{data_scatter} "

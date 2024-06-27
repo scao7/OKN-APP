@@ -30,7 +30,7 @@ def get_facility_website(api_key, facility_name_and_facility_address):
         'input': f'{facility_name_and_facility_address}',
         'inputtype': 'textquery',
         'fields': 'place_id'
-    }
+    } 
 
     # Make the API request to find the place ID
     response = requests.get(endpoint, params=params)
@@ -46,7 +46,7 @@ def get_facility_website(api_key, facility_name_and_facility_address):
         details_params = {
             'key': api_key,
             'place_id': place_id,
-            'fields': 'name,formatted_address,formatted_phone_number,website,opening_hours,rating'
+            'fields': 'name,formatted_address,formatted_phone_number,website,opening_hours,rating,geometry'
         }
 
         # Make the API request to get place details
