@@ -158,3 +158,9 @@ https://developers.google.com/maps/billing-and-pricing/billing#geocoding
 
 
 update database content with pgadmin 
+
+
+6 
+
+3 for house 3 for justice 
+house determinate
