@@ -98,7 +98,9 @@ def query_clinic(location):
 		mh_treatment_provider.address_line_1,
 		mh_treatment_provider.address_line_2,
 		mh_treatment_provider.state_code,
-		city.city_name
+		city.city_name,
+		mh_treatment_provider.latitude,
+		mh_treatment_provider.longitude	  
 		FROM 
 			mh_treatment_provider
 		JOIN 
@@ -117,9 +119,11 @@ def query_clinic(location):
 	address_line_2_list =df['address_line_2'].tolist()
 	city_name_list = df['city_name'].tolist()
 	state_list = df['state_code'].tolist()
+	lon_list = df['longitude'].tolist()
+	lat_list = df['latitude'].tolist()
 	data_scatter =[]
 
-	for name1,name2,street1,street2,city,state in zip(tp_name_list, tp_name_sub_list,address_line_1_list,address_line_2_list,city_name_list,state_list):
+	for name1,name2,street1,street2,city,state, la,lo in zip(tp_name_list, tp_name_sub_list,address_line_1_list,address_line_2_list,city_name_list,state_list,lat_list,lon_list):
 		try:
 			print(name1 + ','+ name2 + ',' + street1 + ','+ city + ',' + state)
 			# la,lo = get_la_lo( street1+ ','+street2 + ','+ city + ',' + state)
@@ -129,9 +133,9 @@ def query_clinic(location):
 							street2 if street2!="NaN" else "" + \
 							city if city!="NaN" else "" + \
 							state if state!="NaN" else "" 
-			web_info  =get_facility_website(google_api_key,search_adress)
-			la = web_info['result']['geometry']['location']['lat']
-			lo = web_info['result']['geometry']['location']['lng']
+			# web_info  =get_facility_website(google_api_key,search_adress)
+			# la = web_info['result']['geometry']['location']['lat']
+			# lo = web_info['result']['geometry']['location']['lng']
 			data_scatter.append({'lat':la,'lon':lo,'name':name1,'info':search_adress})
 		except:
 			print("Not find the location")
