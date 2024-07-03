@@ -1,5 +1,6 @@
 # Ignore node_modules directory
 Datasets/
+!Datasets/geojson-counties-fips.json
 _pychache_/
 test1.py
 test2.py
