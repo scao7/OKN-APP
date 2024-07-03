@@ -140,9 +140,6 @@ def create_home():
     agency_info = html.Div(
         dcc.Loading(
             id="output-container",
-            # children=[
-            #     'test'
-            # ]
         )
     )
 
@@ -190,11 +187,9 @@ def create_home():
                             style={"marginLeft": "10px"},
                             className="border rounded",
                             ),
-
                     dbc.Col([html.H3("Angency Info",className='h3'),
                             agency_info,
                             ],
-                          
                             className="border rounded"),
                 ],
             
@@ -222,8 +217,7 @@ def create_home():
                            
                             style={"marginLeft": "10px"},
                             className="border rounded",
-                            ),  
-                    
+                            ),                      
                     
                 ]
                 
@@ -350,7 +344,6 @@ def create_home():
 
 
         return chat_history, None,openmapbox,services
-
 
         # Callback to handle button clicks
     @dash.callback(
