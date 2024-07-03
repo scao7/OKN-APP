@@ -16,3 +16,4 @@ Thumbs.db
 
 # don't ignore these files 
 !Datasets/geojson-counties-fips.json
+!Datasets/okndb_backup0702.tar
