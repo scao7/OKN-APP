@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 def create_radarplot():
 
 	# 示例数据
-	categories = ['力量', '速度', '智力', '耐力', '技巧']
+	categories = ['Rural \n ratio', 'Rural \n population\n ratio', 'Urban\n ratio', '# of\n treatment', 'variaty of\n treatment']
 	values = [80, 70, 85, 90, 75]
 
 	# 创建雷达图
@@ -14,7 +14,7 @@ def create_radarplot():
 		r=values,
 		theta=categories,
 		fill='toself',
-		name='角色能力值'
+		name='State determinants'
 	))
 
 	fig.update_layout(
