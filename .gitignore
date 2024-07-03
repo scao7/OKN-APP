@@ -17,4 +17,4 @@ Thumbs.db
 
 # don't ignore these files 
 !.gitignore
-!Datasets/geojson-counties-fips.json
+!*/geojson-counties-fips.json
