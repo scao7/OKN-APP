@@ -1,6 +1,5 @@
 # Ignore node_modules directory
-Datasets/
-
+Datasets/*
 _pychache_/
 test1.py
 test2.py
@@ -16,5 +15,4 @@ gittoken.txt
 Thumbs.db
 
 # don't ignore these files 
-!.gitignore
-!*/geojson-counties-fips.json
+!Datasets/geojson-counties-fips.json
