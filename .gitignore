@@ -1,6 +1,6 @@
 # Ignore node_modules directory
 Datasets/
-!Datasets/geojson-counties-fips.json
+
 _pychache_/
 test1.py
 test2.py
@@ -14,3 +14,7 @@ gittoken.txt
 # Ignore OS-generated files
 .DS_Store
 Thumbs.db
+
+# don't ignore these files 
+!.gitignore
+!Datasets/geojson-counties-fips.json
