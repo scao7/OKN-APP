@@ -1,6 +1,7 @@
 # Ignore node_modules directory
 Datasets/*
-_pychache_/
+_pychache_
+.ipynb_checkpoints
 test1.py
 test2.py
 test3.py
