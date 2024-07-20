@@ -9,7 +9,7 @@ openai.apikey.txt
 Reference/
 data/
 gittoken.txt
-# TestScripts/
+TestScripts/
 
 # Ignore OS-generated files
 .DS_Store
