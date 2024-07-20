@@ -1,0 +1,266 @@
+{
+    "entities": [
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Violations related to gambling equipment."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Tampering with sports events."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Engaging in or soliciting prostitution."
+        },
+        {
+            "entity": "AssistingOrPromotingProstitution",
+            "description": "Helping or promoting prostitution activities."
+        },
+        {
+            "entity": "PurchasingProstitution",
+            "description": "Buying services related to prostitution."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Offering, giving, receiving, or soliciting something of value as a means of influencing the actions of an individual."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Violations of laws regarding weapons."
+        },
+        {
+            "entity": "HumanTraffickingCommercialSexActs",
+            "description": "Involvement in human trafficking for commercial sex acts."
+        },
+        {
+            "entity": "MurderNonnegligentManslaughter",
+            "description": "The willful killing of one human being by another."
+        },
+        {
+            "entity": "NegligentManslaughter",
+            "description": "The killing of another person through gross negligence."
+        },
+        {
+            "entity": "JustifiableHomicide",
+            "description": "The killing of a person in circumstances which allow the act to be regarded in law as without criminal guilt."
+        },
+        {
+            "entity": "KidnapingAbduction",
+            "description": "Taking someone away illegally by force, typically to obtain a ransom."
+        },
+        {
+            "entity": "Rape",
+            "description": "Unlawful sexual activity, usually involving sexual intercourse, without consent."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Sexual intercourse involving anal or oral copulation."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "Sexual assault involving the use of an object."
+        },
+        {
+            "entity": "FondlingIndecentLibertiesChildMolesting",
+            "description": "Indecent touching or molesting of a child."
+        },
+        {
+            "entity": "Robbery",
+            "description": "Taking someone's property by force or intimidation."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "An attack with intent to cause severe or aggravated injury."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "A physical attack without a weapon and without severe injury."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "Threatening behavior causing fear of bodily harm."
+        },
+        {
+            "entity": "Arson",
+            "description": "The criminal act of deliberately setting fire to property."
+        },
+        {
+            "entity": "ExtortionBlackmail",
+            "description": "Obtaining something through force or threats."
+        },
+        {
+            "entity": "BurglaryBreakingAndEntering",
+            "description": "Illegally entering a building to commit a crime, especially theft."
+        },
+        {
+            "entity": "Pocket-picking",
+            "description": "The act of stealing from someone's pocket."
+        },
+        {
+            "entity": "Purse-snatching",
+            "description": "Theft involving grabbing a person's purse."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "The act of stealing goods from a shop."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "GamblingEquipmentViolations",
+            "description": "The survey records violations related to gambling equipment."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "SportsTampering",
+            "description": "The survey records offenses related to sports tampering."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Prostitution",
+            "description": "The survey records offenses related to prostitution."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "AssistingOrPromotingProstitution",
+            "description": "The survey records offenses related to assisting or promoting prostitution."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "PurchasingProstitution",
+            "description": "The survey records offenses related to the purchase of prostitution services."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Bribery",
+            "description": "The survey records offenses related to bribery."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "WeaponLawViolations",
+            "description": "The survey records offenses related to weapon law violations."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "HumanTraffickingCommercialSexActs",
+            "description": "The survey records offenses related to human trafficking for commercial sex acts."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "MurderNonnegligentManslaughter",
+            "description": "The survey records offenses related to murder or non-negligent manslaughter."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "NegligentManslaughter",
+            "description": "The survey records offenses related to negligent manslaughter."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "JustifiableHomicide",
+            "description": "The survey records instances of justifiable homicide."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "KidnapingAbduction",
+            "description": "The survey records offenses related to kidnapping or abduction."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Rape",
+            "description": "The survey records offenses related to rape."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Sodomy",
+            "description": "The survey records offenses related to sodomy."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "SexualAssaultWithAnObject",
+            "description": "The survey records offenses related to sexual assault with an object."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "FondlingIndecentLibertiesChildMolesting",
+            "description": "The survey records offenses related to fondling, indecent liberties, or child molesting."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Robbery",
+            "description": "The survey records instances of robbery."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "AggravatedAssault",
+            "description": "The survey records instances of aggravated assault."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "SimpleAssault",
+            "description": "The survey records instances of simple assault."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Intimidation",
+            "description": "The survey records instances of intimidation."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Arson",
+            "description": "The survey records instances of arson."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "ExtortionBlackmail",
+            "description": "The survey records instances of extortion or blackmail."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "BurglaryBreakingAndEntering",
+            "description": "The survey records instances of burglary, breaking, and entering."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Pocket-picking",
+            "description": "The survey records instances of pocket-picking."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Purse-snatching",
+            "description": "The survey records instances of purse-snatching."
+        },
+        {
+            "relationship": "hasOffense",
+            "source_entity": "Survey",
+            "target_entity": "Shoplifting",
+            "description": "The survey records instances of shoplifting."
+        }
+    ]
+}

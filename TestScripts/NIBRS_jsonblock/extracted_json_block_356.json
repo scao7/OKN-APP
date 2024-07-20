@@ -1,0 +1,253 @@
+{
+    "entities": [
+        {
+            "entity": "SimpleAssault",
+            "description": "Unweighted frequency: 585260, 5.2%."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "Unweighted frequency: 82340, 0.7%."
+        },
+        {
+            "entity": "Arson",
+            "description": "Unweighted frequency: 5895, 0.1%."
+        },
+        {
+            "entity": "Extortion/Blackmail",
+            "description": "Unweighted frequency: 410, 0.0%."
+        },
+        {
+            "entity": "Burglary/Breaking and Entering",
+            "description": "Unweighted frequency: 69390, 0.6%."
+        },
+        {
+            "entity": "Pocket-picking",
+            "description": "Unweighted frequency: 2932, 0.0%."
+        },
+        {
+            "entity": "Purse-snatching",
+            "description": "Unweighted frequency: 862, 0.0%."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "Unweighted frequency: 231145, 2.1%."
+        },
+        {
+            "entity": "Theft From Building",
+            "description": "Unweighted frequency: 16409, 0.1%."
+        },
+        {
+            "entity": "Theft From Coin-Operated Machine or Device",
+            "description": "Unweighted frequency: 407, 0.0%."
+        },
+        {
+            "entity": "Theft From Motor Vehicle",
+            "description": "Unweighted frequency: 19264, 0.2%."
+        },
+        {
+            "entity": "Theft of Motor Vehicle Parts/Accessories",
+            "description": "Unweighted frequency: 4303, 0.0%."
+        },
+        {
+            "entity": "All Other Larceny",
+            "description": "Unweighted frequency: 108180, 1.0%."
+        },
+        {
+            "entity": "Motor Vehicle Theft",
+            "description": "Unweighted frequency: 46009, 0.4%."
+        },
+        {
+            "entity": "Counterfeiting/Forgery",
+            "description": "Unweighted frequency: 18150, 0.2%."
+        },
+        {
+            "entity": "False Pretenses/Swindle/Confidence Game",
+            "description": "Unweighted frequency: 29244, 0.3%."
+        },
+        {
+            "entity": "Credit Card/Automatic Teller Machine Fraud",
+            "description": "Unweighted frequency: 6577, 0.1%."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Unweighted frequency: 10207, 0.1%."
+        },
+        {
+            "entity": "Welfare Fraud",
+            "description": "Unweighted frequency: 100, 0.0%."
+        },
+        {
+            "entity": "Wire Fraud",
+            "description": "Unweighted frequency: 326, 0.0%."
+        },
+        {
+            "entity": "Identity Theft",
+            "description": "Unweighted frequency: 5652, 0.1%."
+        },
+        {
+            "entity": "Hacking/Computer Invasion",
+            "description": "Unweighted frequency: 111, 0.0%."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Unweighted frequency: 6380, 0.1%."
+        },
+        {
+            "entity": "Stolen Property Offenses",
+            "description": "Unweighted frequency: 48506, 0.4%."
+        },
+        {
+            "entity": "Destruction/Damage/Vandalism of Property",
+            "description": "Unweighted frequency: 104628, 0.9%."
+        },
+        {
+            "entity": "Drug/Narcotic Violations",
+            "description": "Unweighted frequency: 566712, 5.1%."
+        },
+        {
+            "entity": "Drug Equipment Violations",
+            "description": "Unweighted frequency: 126113, 1.1%."
+        },
+        {
+            "entity": "Incest",
+            "description": "Unweighted frequency: 190, 0.0%."
+        },
+        {
+            "entity": "Statutory Rape",
+            "description": "Unweighted frequency: 1389, 0.0%."
+        },
+        {
+            "entity": "Pornography/Obscene Material",
+            "description": "Unweighted frequency: 4752, 0.0%."
+        },
+        {
+            "entity": "Betting/Wagering",
+            "description": "Unweighted frequency: 253, 0.0%."
+        },
+        {
+            "entity": "Operating/Promoting/Assisting Gambling",
+            "description": "Unweighted frequency: 181, 0.0%."
+        },
+        {
+            "entity": "Gambling Equipment Violations",
+            "description": "Unweighted frequency: 66, 0.0%."
+        },
+        {
+            "entity": "Sports Tampering",
+            "description": "Unweighted frequency: 2, 0.0%."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Unweighted frequency: 5302, 0.0%."
+        },
+        {
+            "entity": "Assisting or Promoting Prostitution",
+            "description": "Unweighted frequency: 1401, 0.0%."
+        },
+        {
+            "entity": "Purchasing Prostitution",
+            "description": "Unweighted frequency: 1208, 0.0%."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Unweighted frequency: 189, 0.0%."
+        },
+        {
+            "entity": "Weapon Law Violations",
+            "description": "Unweighted frequency: 108811, 1.0%."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasViolence",
+            "source_entity": "SimpleAssault",
+            "target_entity": [
+                "Intimidation",
+                "Arson",
+                "Extortion/Blackmail",
+                "Burglary/Breaking and Entering"
+            ],
+            "description": "Violent crimes related to assault."
+        },
+        {
+            "relationship": "hasTheft",
+            "source_entity": "TheftFromBuilding",
+            "target_entity": [
+                "Pocket-picking",
+                "Purse-snatching",
+                "Shoplifting",
+                "Theft From Coin-Operated Machine or Device",
+                "Theft From Motor Vehicle",
+                "Theft of Motor Vehicle Parts/Accessories",
+                "All Other Larceny",
+                "Motor Vehicle Theft",
+                "Counterfeiting/Forgery"
+            ],
+            "description": "Crimes related to theft and larceny."
+        },
+        {
+            "relationship": "hasFraud",
+            "source_entity": "FalsePretenses/Swindle/ConfidenceGame",
+            "target_entity": [
+                "Credit Card/Automatic Teller Machine Fraud",
+                "Impersonation",
+                "Welfare Fraud",
+                "Wire Fraud",
+                "Identity Theft",
+                "Hacking/Computer Invasion",
+                "Embezzlement"
+            ],
+            "description": "Crimes related to fraud and deception."
+        },
+        {
+            "relationship": "hasPropertyOffenses",
+            "source_entity": "Destruction/Damage/Vandalism of Property",
+            "target_entity": [
+                "Stolen Property Offenses"
+            ],
+            "description": "Property offenses including destruction and vandalism."
+        },
+        {
+            "relationship": "hasDrugs",
+            "source_entity": "Drug/Narcotic Violations",
+            "target_entity": [
+                "Drug Equipment Violations"
+            ],
+            "description": "Crimes related to drug violations."
+        },
+        {
+            "relationship": "hasSexCrimes",
+            "source_entity": "Incest",
+            "target_entity": [
+                "Statutory Rape",
+                "Pornography/Obscene Material",
+                "Prostitution",
+                "Assisting or Promoting Prostitution",
+                "Purchasing Prostitution"
+            ],
+            "description": "Sexual crimes including incest, rape, and prostitution."
+        },
+        {
+            "relationship": "hasGambling",
+            "source_entity": "Betting/Wagering",
+            "target_entity": [
+                "Operating/Promoting/Assisting Gambling",
+                "Gambling Equipment Violations",
+                "Sports Tampering"
+            ],
+            "description": "Crimes related to gambling."
+        },
+        {
+            "relationship": "hasBribery",
+            "source_entity": "Bribery",
+            "target_entity": [],
+            "description": "Crimes related to bribery."
+        },
+        {
+            "relationship": "hasWeaponLawViolations",
+            "source_entity": "WeaponLawViolations",
+            "target_entity": [],
+            "description": "Crimes related to weapon law violations."
+        }
+    ]
+}

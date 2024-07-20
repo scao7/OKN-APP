@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "PaymentForAlcohol",
+            "description": "Whether the respondent paid for the last alcoholic beverage they drank."
+        },
+        {
+            "entity": "PurchaseMode",
+            "description": "Whether the respondent bought the last alcoholic beverage themselves or gave money for someone else to buy it."
+        },
+        {
+            "entity": "PurchaseLocation",
+            "description": "The location where the respondent bought the last alcoholic beverage they drank."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasPaymentForAlcohol",
+            "source_entity": "Respondent",
+            "target_entity": "PaymentForAlcohol",
+            "description": "Indicates whether the respondent paid for the last alcoholic beverage they drank."
+        },
+        {
+            "relationship": "hasPurchaseMode",
+            "source_entity": "Respondent",
+            "target_entity": "PurchaseMode",
+            "description": "Indicates the mode of purchase for the last alcoholic beverage, whether bought by the respondent or by someone else on their behalf."
+        },
+        {
+            "relationship": "hasPurchaseLocation",
+            "source_entity": "Respondent",
+            "target_entity": "PurchaseLocation",
+            "description": "Specifies the location where the respondent bought the last alcoholic beverage."
+        }
+    ]
+}

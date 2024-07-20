@@ -1,0 +1,120 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyResponse",
+            "description": "A response category on the NSDUH survey"
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of responses for each category without applying any survey weights"
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of the unweighted frequency"
+        },
+        {
+            "entity": "MissingData",
+            "description": "The count of responses that are missing data"
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "The total number of survey responses"
+        },
+        {
+            "entity": "SurveyStatistics",
+            "description": "Statistical summary of the survey responses"
+        },
+        {
+            "entity": "Mean",
+            "description": "The average value of the survey responses"
+        },
+        {
+            "entity": "Minimum",
+            "description": "The minimum value of the survey responses"
+        },
+        {
+            "entity": "Maximum",
+            "description": "The maximum value of the survey responses"
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The standard deviation of the survey responses"
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of variable measured (e.g., numeric)"
+        },
+        {
+            "entity": "MissingValuesRange",
+            "description": "The range of missing values in the dataset"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Associates each survey response category with its unweighted frequency count"
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Percentage",
+            "description": "Associates each survey response category with its percentage representation"
+        },
+        {
+            "relationship": "includesMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the number of responses with missing data in the survey"
+        },
+        {
+            "relationship": "hasTotalResponses",
+            "source_entity": "Survey",
+            "target_entity": "TotalResponses",
+            "description": "Indicates the total number of responses in the survey"
+        },
+        {
+            "relationship": "hasSurveyStatistics",
+            "source_entity": "Survey",
+            "target_entity": "SurveyStatistics",
+            "description": "Associates the survey with statistical summaries of the responses"
+        },
+        {
+            "relationship": "hasMean",
+            "source_entity": "SurveyStatistics",
+            "target_entity": "Mean",
+            "description": "Indicates the mean value within the survey statistical summary"
+        },
+        {
+            "relationship": "hasMinimum",
+            "source_entity": "SurveyStatistics",
+            "target_entity": "Minimum",
+            "description": "Indicates the minimum value within the survey statistical summary"
+        },
+        {
+            "relationship": "hasMaximum",
+            "source_entity": "SurveyStatistics",
+            "target_entity": "Maximum",
+            "description": "Indicates the maximum value within the survey statistical summary"
+        },
+        {
+            "relationship": "hasStandardDeviation",
+            "source_entity": "SurveyStatistics",
+            "target_entity": "StandardDeviation",
+            "description": "Indicates the standard deviation within the survey statistical summary"
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "SurveyVariable",
+            "target_entity": "VariableType",
+            "description": "Defines the type of the survey variable"
+        },
+        {
+            "relationship": "hasMissingValuesRange",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MissingValuesRange",
+            "description": "Specifies the range of missing values for a survey variable"
+        }
+    ]
+}

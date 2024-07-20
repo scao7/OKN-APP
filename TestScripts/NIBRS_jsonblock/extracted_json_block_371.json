@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "Race",
+            "description": "The racial classification of the respondent or arrestee."
+        },
+        {
+            "entity": "Arrestee",
+            "description": "An individual who has been arrested."
+        },
+        {
+            "entity": "RaceOfArrestee",
+            "description": "The specific racial category assigned to an arrestee."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The count or number of occurrences in the dataset."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data points that are unknown, missing, or did not respond (DNR)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasRace",
+            "source_entity": "Respondent",
+            "target_entity": "Race",
+            "description": "Associates a respondent with their racial classification."
+        },
+        {
+            "relationship": "hasRaceOfArrestee",
+            "source_entity": "Arrestee",
+            "target_entity": "RaceOfArrestee",
+            "description": "Associates an arrestee with their specific racial category."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "RaceOfArrestee",
+            "target_entity": "Frequency",
+            "description": "Indicates the number of arrestees within a specific racial category."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Indicates data that is unknown, missing, or did not respond (DNR)."
+        }
+    ]
+}

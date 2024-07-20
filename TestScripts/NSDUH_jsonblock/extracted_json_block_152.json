@@ -1,0 +1,38 @@
+{
+    "entities": [
+        {
+            "entity": "BLNTNOMJ",
+            "description": "Indicator of whether the respondent smoked cigars with no marijuana in them during the past 30 days."
+        },
+        {
+            "entity": "TOBACCO",
+            "description": "Module related to tobacco usage in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasNoMarijuanaCigar",
+            "source_entity": "Respondent",
+            "target_entity": "BLNTNOMJ",
+            "description": "Indicates the respondent's usage of cigars with no marijuana during the past 30 days."
+        },
+        {
+            "relationship": "reportedInTOBACCO",
+            "source_entity": "Respondent",
+            "target_entity": "TOBACCO",
+            "description": "Indicates the respondent's survey data included in the TOBACCO module."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "smoked",
+            "object": "cigars"
+        },
+        {
+            "subject": "Cigars",
+            "predicate": "contained",
+            "object": "no marijuana"
+        }
+    ]
+}

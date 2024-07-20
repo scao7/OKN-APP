@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases in the dataset."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid cases used for analysis."
+        },
+        {
+            "entity": "MeanAge",
+            "description": "The average age of respondents."
+        },
+        {
+            "entity": "MedianAge",
+            "description": "The median age of respondents."
+        },
+        {
+            "entity": "ModeAge",
+            "description": "The mode age of respondents."
+        },
+        {
+            "entity": "AgeRange",
+            "description": "The age range of respondents, including minimum and maximum ages."
+        },
+        {
+            "entity": "StandardDeviationAge",
+            "description": "The standard deviation of ages among respondents."
+        },
+        {
+            "entity": "AgeOfArrestee",
+            "description": "The ages of individuals when they were arrested."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted count of responses for each age category."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of the total responses for each age category."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "The survey dataset contains a total number of cases."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Survey",
+            "target_entity": "ValidCases",
+            "description": "The total number of valid cases included in the survey analysis."
+        },
+        {
+            "relationship": "hasAgeStatistics",
+            "source_entity": "Respondents",
+            "target_entity": "MeanAge",
+            "description": "The mean age of respondents."
+        },
+        {
+            "relationship": "hasAgeStatistics",
+            "source_entity": "Respondents",
+            "target_entity": "MedianAge",
+            "description": "The median age of respondents."
+        },
+        {
+            "relationship": "hasAgeStatistics",
+            "source_entity": "Respondents",
+            "target_entity": "ModeAge",
+            "description": "The most frequently occurring age among respondents."
+        },
+        {
+            "relationship": "hasAgeRange",
+            "source_entity": "Respondents",
+            "target_entity": "AgeRange",
+            "description": "The minimum and maximum age range of respondents."
+        },
+        {
+            "relationship": "hasAgeStatistics",
+            "source_entity": "Respondents",
+            "target_entity": "StandardDeviationAge",
+            "description": "The standard deviation of the ages of respondents."
+        },
+        {
+            "relationship": "hasAgeOfArresteeData",
+            "source_entity": "Respondents",
+            "target_entity": "AgeOfArrestee",
+            "description": "The age at which respondents were arrested."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "AgeOfArrestee",
+            "target_entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of arrests by age."
+        },
+        {
+            "relationship": "hasPercentageFrequency",
+            "source_entity": "AgeOfArrestee",
+            "target_entity": "Percentage",
+            "description": "The percentage of the total arrests by age."
+        }
+    ]
+}

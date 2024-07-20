@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "StrongUrgeToUseMarijuana",
+            "description": "Strong urge to use marijuana or any cannabis product in the past 12 months."
+        },
+        {
+            "entity": "UseMarijuanaToGetFeeling",
+            "description": "Need to use a lot more marijuana to get the feeling you want."
+        },
+        {
+            "entity": "SameAmountLessEffect",
+            "description": "Same amount of marijuana has a much less effect than it used to."
+        },
+        {
+            "entity": "UseMarijuanaBadly",
+            "description": "Wanted to use marijuana or any cannabis product so badly that you couldn't think of anything else in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasStrongUrge",
+            "source_entity": "Respondent",
+            "target_entity": "StrongUrgeToUseMarijuana",
+            "description": "Indicates the respondent had a strong urge to use marijuana in the past 12 months."
+        },
+        {
+            "relationship": "needsMoreMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "UseMarijuanaToGetFeeling",
+            "description": "Indicates the respondent needed to use a lot more marijuana to get the desired feeling."
+        },
+        {
+            "relationship": "lessEffectFromSameAmount",
+            "source_entity": "Respondent",
+            "target_entity": "SameAmountLessEffect",
+            "description": "Indicates that the same amount of marijuana had much less effect than it used to for the respondent."
+        },
+        {
+            "relationship": "badlyWantedUse",
+            "source_entity": "Respondent",
+            "target_entity": "UseMarijuanaBadly",
+            "description": "Indicates the respondent wanted to use marijuana or any cannabis product very badly in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "wanted to use marijuana or any cannabis product so badly",
+            "object": "couldn't think of anything else in the past 12 months"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "had a strong urge to use marijuana",
+            "object": "in the past 12 months"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "needed to use a lot more marijuana",
+            "object": "to get the feeling they want"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "same amount of marijuana",
+            "object": "has a much less effect than it used to"
+        }
+    ]
+}

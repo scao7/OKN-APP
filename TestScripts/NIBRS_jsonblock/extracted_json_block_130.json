@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of unweighted responses corresponding to different dates and labels."
+        },
+        {
+            "entity": "Date",
+            "description": "Specific dates on which the survey responses are recorded."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data entries that are missing or not recorded in the survey."
+        },
+        {
+            "entity": "StolenMotorVehicles",
+            "description": "Number of stolen motor vehicles reported by respondents."
+        },
+        {
+            "entity": "Label",
+            "description": "Response categories displayed in the survey."
+        },
+        {
+            "entity": "NumberOfResponses",
+            "description": "The total number of valid cases or responses provided in the survey."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage representation of the unweighted responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the count of unweighted responses for each date and label."
+        },
+        {
+            "relationship": "hasDate",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Date",
+            "description": "Links the survey responses to specific dates."
+        },
+        {
+            "relationship": "containsMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Identifies data entries that are missing in the survey."
+        },
+        {
+            "relationship": "reportsStolenVehicles",
+            "source_entity": "Respondent",
+            "target_entity": "StolenMotorVehicles",
+            "description": "Reports the number of stolen motor vehicles according to survey responses."
+        },
+        {
+            "relationship": "hasLabel",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Label",
+            "description": "Associates survey responses with specific labels."
+        },
+        {
+            "relationship": "showsNumberOfResponses",
+            "source_entity": "Survey",
+            "target_entity": "NumberOfResponses",
+            "description": "Shows the total number of valid survey responses."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "UnweightedFrequency",
+            "target_entity": "Percentage",
+            "description": "Represents the percentage of unweighted responses."
+        }
+    ]
+}

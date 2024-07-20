@@ -1,0 +1,154 @@
+{
+    "entities": [
+        {
+            "entity": "Identification",
+            "description": "Data related to the identification of survey respondents."
+        },
+        {
+            "entity": "SampleWeighting",
+            "description": "Variables related to the weighting and estimation of survey samples."
+        },
+        {
+            "entity": "Geographic",
+            "description": "Variables related to the geographic location of respondents."
+        },
+        {
+            "entity": "Demographics",
+            "description": "Information about the demographic characteristics of respondents."
+        },
+        {
+            "entity": "SubstanceUse",
+            "description": "Data related to the use of various substances by survey respondents."
+        },
+        {
+            "entity": "MentalHealth",
+            "description": "Information about the mental health status of respondents."
+        },
+        {
+            "entity": "SpecialTopics",
+            "description": "Special topics addressed in the survey."
+        },
+        {
+            "entity": "Survey",
+            "description": "The survey being conducted."
+        },
+        {
+            "entity": "Employment",
+            "description": "Data related to the employment status of respondents."
+        },
+        {
+            "entity": "HealthInsurance",
+            "description": "Information about respondents' health insurance status."
+        },
+        {
+            "entity": "Income",
+            "description": "Data related to the income levels of respondents."
+        },
+        {
+            "entity": "Education",
+            "description": "Information about the education levels of respondents."
+        },
+        {
+            "entity": "NicotineDependence",
+            "description": "Data related to respondents' dependence on nicotine."
+        },
+        {
+            "entity": "AlcoholUse",
+            "description": "Information about alcohol consumption among respondents."
+        },
+        {
+            "entity": "DrugUse",
+            "description": "Data related to the use of various drugs by respondents."
+        },
+        {
+            "entity": "IMPUTED_HEALTH_INSURANCE",
+            "description": "Imputed health insurance data"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "Survey",
+            "target_entity": "Identification",
+            "description": "The survey includes data related to identification."
+        },
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "Survey",
+            "target_entity": "SampleWeighting",
+            "description": "The survey includes variables for sample weighting and estimation."
+        },
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "Survey",
+            "target_entity": "Geographic",
+            "description": "The survey includes geographic information of respondents."
+        },
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "Survey",
+            "target_entity": "Demographics",
+            "description": "The survey includes demographic information of respondents."
+        },
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "Survey",
+            "target_entity": "SubstanceUse",
+            "description": "The survey includes data about substance use among respondents."
+        },
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "Survey",
+            "target_entity": "MentalHealth",
+            "description": "The survey includes data about mental health status of respondents."
+        },
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "Survey",
+            "target_entity": "SpecialTopics",
+            "description": "The survey addresses special topics."
+        },
+        {
+            "relationship": "hasEmploymentData",
+            "source_entity": "Survey",
+            "target_entity": "Employment",
+            "description": "Employment data is collected in the survey."
+        },
+        {
+            "relationship": "hasHealthInsuranceData",
+            "source_entity": "Survey",
+            "target_entity": "HealthInsurance",
+            "description": "Health insurance data is collected in the survey."
+        },
+        {
+            "relationship": "hasIncomeData",
+            "source_entity": "Survey",
+            "target_entity": "Income",
+            "description": "Income data is collected in the survey."
+        },
+        {
+            "relationship": "hasEducationData",
+            "source_entity": "Survey",
+            "target_entity": "Education",
+            "description": "Education data is collected in the survey."
+        },
+        {
+            "relationship": "hasNicotineDependenceData",
+            "source_entity": "Survey",
+            "target_entity": "NicotineDependence",
+            "description": "Nicotine dependence data is collected in the survey."
+        },
+        {
+            "relationship": "hasAlcoholUseData",
+            "source_entity": "Survey",
+            "target_entity": "AlcoholUse",
+            "description": "Alcohol use data is collected in the survey."
+        },
+        {
+            "relationship": "hasDrugUseData",
+            "source_entity": "Survey",
+            "target_entity": "DrugUse",
+            "description": "Drug use data is collected in the survey."
+        }
+    ]
+}

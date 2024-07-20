@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "InhalantUseMonth",
+            "description": "The month in which the respondent last used an inhalant for kicks or to get high."
+        },
+        {
+            "entity": "MethamphetamineUseAge",
+            "description": "The age at which the respondent last used methamphetamine."
+        },
+        {
+            "entity": "LifetimeMethamphetamineUse",
+            "description": "Whether the respondent has ever used methamphetamine during their lifetime."
+        },
+        {
+            "entity": "RecentMethamphetamineUse",
+            "description": "The year(s) in which the respondent recently used methamphetamine."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInhalantUseMonth",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUseMonth",
+            "description": "Indicates the month the respondent last used an inhalant for kicks or to get high."
+        },
+        {
+            "relationship": "hasMethamphetamineUseAge",
+            "source_entity": "Respondent",
+            "target_entity": "MethamphetamineUseAge",
+            "description": "Indicates the age at which the respondent last used methamphetamine."
+        },
+        {
+            "relationship": "reportsLifetimeMethamphetamineUse",
+            "source_entity": "Respondent",
+            "target_entity": "LifetimeMethamphetamineUse",
+            "description": "Indicates whether the respondent has ever used methamphetamine during their lifetime."
+        },
+        {
+            "relationship": "reportsRecentMethamphetamineUse",
+            "source_entity": "Respondent",
+            "target_entity": "RecentMethamphetamineUse",
+            "description": "Indicates the year(s) in which the respondent recent used methamphetamine."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "usedInhalantForKicksOrHigh",
+            "object": "InhalantUseMonth"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedMethamphetamineLastTime",
+            "object": "MethamphetamineUseAge"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedMethamphetamineEver",
+            "object": "LifetimeMethamphetamineUse"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedMethamphetamineRecently",
+            "object": "RecentMethamphetamineUse"
+        }
+    ]
+}

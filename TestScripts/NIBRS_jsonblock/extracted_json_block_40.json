@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency of responses without any weighting applied."
+        },
+        {
+            "entity": "Mean",
+            "description": "The arithmetic average of the responses."
+        },
+        {
+            "entity": "Median",
+            "description": "The middle value of the ordered responses."
+        },
+        {
+            "entity": "Mode",
+            "description": "The most frequently occurring response value."
+        },
+        {
+            "entity": "Minimum",
+            "description": "The smallest value in the range of responses."
+        },
+        {
+            "entity": "Maximum",
+            "description": "The largest value in the range of responses."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "A measure of the dispersion or spread of responses."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The proportion of responses that are missing or incomplete."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type or nature of the variable, indicated as numeric in this case."
+        },
+        {
+            "entity": "Location",
+            "description": "The specific columns and width used for recording the variable in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Dataset",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the frequency of responses before any weighting is applied."
+        },
+        {
+            "relationship": "hasMean",
+            "source_entity": "Dataset",
+            "target_entity": "Mean",
+            "description": "Indicates the arithmetic average value of the survey responses."
+        },
+        {
+            "relationship": "hasMedian",
+            "source_entity": "Dataset",
+            "target_entity": "Median",
+            "description": "Indicates the middle value in the ordered list of survey responses."
+        },
+        {
+            "relationship": "hasMode",
+            "source_entity": "Dataset",
+            "target_entity": "Mode",
+            "description": "Indicates the most frequently occurring value among the survey responses."
+        },
+        {
+            "relationship": "hasMinimum",
+            "source_entity": "Dataset",
+            "target_entity": "Minimum",
+            "description": "Indicates the smallest value among the survey responses."
+        },
+        {
+            "relationship": "hasMaximum",
+            "source_entity": "Dataset",
+            "target_entity": "Maximum",
+            "description": "Indicates the largest value among the survey responses."
+        },
+        {
+            "relationship": "hasStandardDeviation",
+            "source_entity": "Dataset",
+            "target_entity": "StandardDeviation",
+            "description": "Indicates the spread or dispersion of the survey responses."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Indicates the proportion of responses that are missing or incomplete."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "VariableType",
+            "description": "Indicates the type or nature of the variable."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "Variable",
+            "target_entity": "Location",
+            "description": "Indicates where the variable information is located in the dataset."
+        }
+    ]
+}

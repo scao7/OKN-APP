@@ -1,0 +1,48 @@
+{
+    "entities": [
+        {
+            "entity": "MoodSeverity",
+            "description": "The severity of the respondent's mood problems over the past 12 months."
+        },
+        {
+            "entity": "HomeManagementInterference",
+            "description": "Degree to which feelings interfered with home management tasks."
+        },
+        {
+            "entity": "WorkInterference",
+            "description": "Degree to which feelings interfered with the ability to work."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMoodSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "MoodSeverity",
+            "description": "Relates the respondent to the severity of their mood problems in the past 12 months."
+        },
+        {
+            "relationship": "hasHomeManagementInterference",
+            "source_entity": "Respondent",
+            "target_entity": "HomeManagementInterference",
+            "description": "Indicates how much the respondent's feelings interfered with home management tasks."
+        },
+        {
+            "relationship": "hasWorkInterference",
+            "source_entity": "Respondent",
+            "target_entity": "WorkInterference",
+            "description": "Indicates how much the respondent's feelings interfered with their ability to work."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Feelings",
+            "predicate": "interfere_with",
+            "object": "Home management tasks"
+        },
+        {
+            "subject": "Feelings",
+            "predicate": "interfere_with",
+            "object": "Ability to work"
+        }
+    ]
+}

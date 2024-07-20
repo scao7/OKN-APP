@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseCategory",
+            "description": "Specific response categories displayed for data collection in the survey."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Percentage of missing data in the survey response categories."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "Total number of cases in the survey."
+        },
+        {
+            "entity": "DateRecovered",
+            "description": "Date when the data was recovered as recorded in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasResponseCategory",
+            "source_entity": "Survey",
+            "target_entity": "ResponseCategory",
+            "description": "Indicates the response categories available in the survey data."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Represents the amount of missing data in the survey's response categories."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Shows the total number of valid cases recorded in the survey."
+        },
+        {
+            "relationship": "hasDateRecovered",
+            "source_entity": "Survey",
+            "target_entity": "DateRecovered",
+            "description": "Specifies the date when the survey data was recovered."
+        }
+    ]
+}

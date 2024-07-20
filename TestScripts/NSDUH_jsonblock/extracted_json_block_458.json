@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "ProfessionalTreatment",
+            "description": "Professional treatment received over the phone or through video for alcohol or drug use."
+        },
+        {
+            "entity": "PeerSupport",
+            "description": "Peer support specialist or recovery coach help received."
+        },
+        {
+            "entity": "UnmetSubstanceTreatmentNeed",
+            "description": "Unmet need for substance treatment due to the cost being too high."
+        },
+        {
+            "entity": "SubstanceTypePhoneVideoService",
+            "description": "Type of substance treatment received over the phone or through video."
+        },
+        {
+            "entity": "SubstanceTypePeerSupportService",
+            "description": "Type of substance treatment received with help from a peer support specialist or recovery coach."
+        },
+        {
+            "entity": "SubstanceTreatmentReason",
+            "description": "Reasons for not receiving professional counseling, medication, or other treatment for substance use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasProfessionalTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "ProfessionalTreatment",
+            "description": "Indicates the respondent received professional treatment over the phone or through video for substance use."
+        },
+        {
+            "relationship": "hasPeerSupport",
+            "source_entity": "Respondent",
+            "target_entity": "PeerSupport",
+            "description": "Indicates the respondent received help from a peer support specialist or recovery coach."
+        },
+        {
+            "relationship": "hasUnmetSubstanceTreatmentNeed",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetSubstanceTreatmentNeed",
+            "description": "Indicates that the respondent had an unmet need for substance treatment due to high cost."
+        },
+        {
+            "relationship": "hasSubstanceTypePhoneVideoService",
+            "source_entity": "ProfessionalTreatment",
+            "target_entity": "SubstanceTypePhoneVideoService",
+            "description": "Specifies the type of substance treatment received over the phone or through video."
+        },
+        {
+            "relationship": "hasSubstanceTypePeerSupportService",
+            "source_entity": "PeerSupport",
+            "target_entity": "SubstanceTypePeerSupportService",
+            "description": "Specifies the type of substance treatment received with peer support help."
+        },
+        {
+            "relationship": "hasSubstanceTreatmentReason",
+            "source_entity": "UnmetSubstanceTreatmentNeed",
+            "target_entity": "SubstanceTreatmentReason",
+            "description": "Identifies the reason for not receiving substance use treatment, such as treatment cost."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "SubstanceTypePhoneVideoService",
+            "predicate": "isReceivedThrough",
+            "object": "ProfessionalTreatment"
+        },
+        {
+            "subject": "SubstanceTypePeerSupportService",
+            "predicate": "isReceivedThrough",
+            "object": "PeerSupport"
+        },
+        {
+            "subject": "UnmetSubstanceTreatmentNeed",
+            "predicate": "isDueTo",
+            "object": "HighCost"
+        }
+    ]
+}

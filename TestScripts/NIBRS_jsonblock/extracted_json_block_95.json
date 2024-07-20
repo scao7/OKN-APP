@@ -1,0 +1,190 @@
+{
+    "entities": [
+        {
+            "entity": "Poison",
+            "description": "Usage involving poison, including gas."
+        },
+        {
+            "entity": "Explosives",
+            "description": "Usage involving explosives."
+        },
+        {
+            "entity": "FireIncendiaryDevice",
+            "description": "Usage involving fire or incendiary devices."
+        },
+        {
+            "entity": "DrugsNarcoticsSleepingPills",
+            "description": "Usage involving drugs, narcotics, or sleeping pills."
+        },
+        {
+            "entity": "Asphyxiation",
+            "description": "Incidents involving asphyxiation."
+        },
+        {
+            "entity": "OtherWeapon",
+            "description": "Usage involving other types of weapons such as BB guns, pellet guns, etc."
+        },
+        {
+            "entity": "Firearm",
+            "description": "Usage involving firearms, type not stated."
+        },
+        {
+            "entity": "FirearmAutomatic",
+            "description": "Usage involving automatic firearms."
+        },
+        {
+            "entity": "Handgun",
+            "description": "Usage involving handguns."
+        },
+        {
+            "entity": "HandgunAutomatic",
+            "description": "Usage involving automatic handguns."
+        },
+        {
+            "entity": "Rifle",
+            "description": "Usage involving rifles."
+        },
+        {
+            "entity": "RifleAutomatic",
+            "description": "Usage involving automatic rifles."
+        },
+        {
+            "entity": "Shotgun",
+            "description": "Usage involving shotguns."
+        },
+        {
+            "entity": "ShotgunAutomatic",
+            "description": "Usage involving automatic shotguns."
+        },
+        {
+            "entity": "OtherFirearm",
+            "description": "Usage involving other types of firearms."
+        },
+        {
+            "entity": "KnifeCuttingInstrument",
+            "description": "Usage involving knives or cutting instruments."
+        },
+        {
+            "entity": "BluntObject",
+            "description": "Usage involving blunt objects."
+        },
+        {
+            "entity": "MotorVehicleVessel",
+            "description": "Usage involving motor vehicles or vessels."
+        },
+        {
+            "entity": "PersonalWeapons",
+            "description": "Usage involving personal weapons such as hands, feet, teeth, etc."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "Poison",
+            "description": "Associates an incident with the use of poison or gas."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "Explosives",
+            "description": "Associates an incident with the use of explosives."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "FireIncendiaryDevice",
+            "description": "Associates an incident with the use of fire or incendiary devices."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "DrugsNarcoticsSleepingPills",
+            "description": "Associates an incident with the use of drugs, narcotics, or sleeping pills."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "Asphyxiation",
+            "description": "Associates an incident with asphyxiation."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "OtherWeapon",
+            "description": "Associates an incident with the use of other types of weapons."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "Firearm",
+            "target_entity": "FirearmAutomatic",
+            "description": "Defines automatic firearms as a type of firearm."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "Firearm",
+            "target_entity": "Handgun",
+            "description": "Defines handguns as a type of firearm."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "Handgun",
+            "target_entity": "HandgunAutomatic",
+            "description": "Defines automatic handguns as a type of handgun."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "Firearm",
+            "target_entity": "Rifle",
+            "description": "Defines rifles as a type of firearm."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "Rifle",
+            "target_entity": "RifleAutomatic",
+            "description": "Defines automatic rifles as a type of rifle."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "Firearm",
+            "target_entity": "Shotgun",
+            "description": "Defines shotguns as a type of firearm."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "Shotgun",
+            "target_entity": "ShotgunAutomatic",
+            "description": "Defines automatic shotguns as a type of shotgun."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "Firearm",
+            "target_entity": "OtherFirearm",
+            "description": "Defines other firearms as a type of firearm."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "KnifeCuttingInstrument",
+            "description": "Associates an incident with the use of knives or cutting instruments."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "BluntObject",
+            "description": "Associates an incident with the use of blunt objects."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "MotorVehicleVessel",
+            "description": "Associates an incident with the use of motor vehicles or vessels."
+        },
+        {
+            "relationship": "associatedWithWeapon",
+            "source_entity": "Incident",
+            "target_entity": "PersonalWeapons",
+            "description": "Associates an incident with the use of personal weapons such as hands, feet, etc."
+        }
+    ]
+}

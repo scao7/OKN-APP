@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "Frequency",
+            "description": "The count of occurrences of different values in the dataset."
+        },
+        {
+            "entity": "CaseCount",
+            "description": "The total number of valid cases in the dataset."
+        },
+        {
+            "entity": "Statistic",
+            "description": "Statistical information such as standard deviation, mean, median, mode, minimum, and maximum values of the dataset."
+        },
+        {
+            "entity": "PopulationGroup",
+            "description": "Different population groups referred to in the dataset. E.g. LAST POPULATION 2 and CURRENT POPULATION 3."
+        },
+        {
+            "entity": "Location",
+            "description": "The specific location in the dataset terms of width and decimal for numeric values."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of variable in the dataset."
+        },
+        {
+            "entity": "MissingValueRange",
+            "description": "Range of missing values in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "PopulationGroup",
+            "target_entity": "Statistic",
+            "description": "Relates the population group to its statistical information."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "PopulationGroup",
+            "target_entity": "Frequency",
+            "description": "Indicates the frequency of different values within the population group."
+        },
+        {
+            "relationship": "hasCaseCount",
+            "source_entity": "Dataset",
+            "target_entity": "CaseCount",
+            "description": "Indicates the total number of valid cases within the dataset."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "Variable",
+            "target_entity": "Location",
+            "description": "Marks the position of a numeric value in terms of width and decimal places."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "VariableType",
+            "description": "Defines the type of a variable in the dataset."
+        },
+        {
+            "relationship": "hasMissingValueRange",
+            "source_entity": "Variable",
+            "target_entity": "MissingValueRange",
+            "description": "Indicates the range of missing values for the variable."
+        }
+    ]
+}

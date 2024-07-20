@@ -1,0 +1,112 @@
+{
+    "entities": [
+        {
+            "entity": "VictimRelationshipToOffender",
+            "description": "The relationship between the victim and the offender."
+        },
+        {
+            "entity": "VictimWasParent",
+            "description": "Indicates whether the victim was the parent."
+        },
+        {
+            "entity": "VictimWasSibling",
+            "description": "Indicates whether the victim was a sibling."
+        },
+        {
+            "entity": "VictimWasChild",
+            "description": "Indicates whether the victim was a child."
+        },
+        {
+            "entity": "VictimWasGrandparent",
+            "description": "Indicates whether the victim was a grandparent."
+        },
+        {
+            "entity": "VictimWasGrandchild",
+            "description": "Indicates whether the victim was a grandchild."
+        },
+        {
+            "entity": "VictimWasInLaw",
+            "description": "Indicates whether the victim was an in-law."
+        },
+        {
+            "entity": "VictimWasStepParent",
+            "description": "Indicates whether the victim was a stepparent."
+        },
+        {
+            "entity": "VictimWasStepchild",
+            "description": "Indicates whether the victim was a stepchild."
+        },
+        {
+            "entity": "VictimWasStepsibling",
+            "description": "Indicates whether the victim was a stepsibling."
+        },
+        {
+            "entity": "VictimWasOtherFamilyMember",
+            "description": "Indicates whether the victim was another family member."
+        },
+        {
+            "entity": "VictimWasOffender",
+            "description": "Indicates whether the victim was the offender."
+        },
+        {
+            "entity": "VictimWasAcquaintance",
+            "description": "Indicates whether the victim was an acquaintance."
+        },
+        {
+            "entity": "VictimWasFriend",
+            "description": "Indicates whether the victim was a friend."
+        },
+        {
+            "entity": "VictimWasNeighbor",
+            "description": "Indicates whether the victim was a neighbor."
+        },
+        {
+            "entity": "VictimWasBabysittee",
+            "description": "Indicates whether the victim was a babysittee (the baby)."
+        },
+        {
+            "entity": "VictimWasBoyfriendGirlfriend",
+            "description": "Indicates whether the victim was a boyfriend or girlfriend."
+        },
+        {
+            "entity": "VictimWasChildOfBoyfriendGirlfriend",
+            "description": "Indicates whether the victim was the child of a boyfriend or girlfriend."
+        },
+        {
+            "entity": "HomosexualRelationship",
+            "description": "Indicates whether the relationship was homosexual."
+        },
+        {
+            "entity": "VictimWasExSpouse",
+            "description": "Indicates whether the victim was an ex-spouse."
+        },
+        {
+            "entity": "VictimWasEmployee",
+            "description": "Indicates whether the victim was an employee."
+        },
+        {
+            "entity": "VictimWasEmployer",
+            "description": "Indicates whether the victim was an employer."
+        },
+        {
+            "entity": "VictimWasOtherwiseKnown",
+            "description": "Indicates whether the victim was otherwise known."
+        },
+        {
+            "entity": "VictimWasStranger",
+            "description": "Indicates whether the victim was a stranger."
+        },
+        {
+            "entity": "VictimWasExRelationship",
+            "description": "Indicates whether the victim was in an ex-relationship (Ex-boyfriend/ex-girlfriend)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVictimRelationshipToOffender",
+            "source_entity": "Victim",
+            "target_entity": "VictimRelationshipToOffender",
+            "description": "Defines the relationship between the victim and the offender."
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of responses collected, not adjusted for weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of total responses represented by each category."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is missing or not reported in the survey."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of responses considered valid for analysis."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of survey responses collected."
+        },
+        {
+            "entity": "SexOfVictim",
+            "description": "The gender of the victim, as reported in the survey."
+        },
+        {
+            "entity": "Female",
+            "description": "Victim identified as female."
+        },
+        {
+            "entity": "Male",
+            "description": "Victim identified as male."
+        }
+    ]
+}

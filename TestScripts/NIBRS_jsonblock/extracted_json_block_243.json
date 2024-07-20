@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of survey responses without any statistical weighting applied."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each unweighted frequency."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyLabel",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the number of responses for each survey label without weighting."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyLabel",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage of each survey label's unweighted frequency."
+        }
+    ]
+}

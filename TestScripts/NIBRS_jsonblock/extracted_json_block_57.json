@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "ReportDateIndicator",
+            "description": "An indicator showing if the date recorded in the survey is an incident date or a report date."
+        },
+        {
+            "entity": "IncidentDateHour",
+            "description": "The specific hour during which an incident occurred."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of occurrences of each category without any statistical weighting."
+        },
+        {
+            "entity": "IncidentDate",
+            "description": "The specific date when an incident occurred."
+        },
+        {
+            "entity": "ReportDate",
+            "description": "The specific date when an incident was reported."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasIncidentDateHour",
+            "source_entity": "Incident",
+            "target_entity": "IncidentDateHour",
+            "description": "Relates an incident to the specific hour it occurred."
+        },
+        {
+            "relationship": "hasReportDateIndicator",
+            "source_entity": "Survey",
+            "target_entity": "ReportDateIndicator",
+            "description": "Indicates whether the date recorded in the survey is an incident date or a report date."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ReportDateIndicator",
+            "target_entity": "UnweightedFrequency",
+            "description": "Shows the count of each category without any statistical weighting."
+        },
+        {
+            "relationship": "isIncidentDate",
+            "source_entity": "ReportDateIndicator",
+            "target_entity": "IncidentDate",
+            "description": "Categorizes the date as an incident date when the indicator is set to incident."
+        },
+        {
+            "relationship": "isReportDate",
+            "source_entity": "ReportDateIndicator",
+            "target_entity": "ReportDate",
+            "description": "Categorizes the date as a report date when the indicator is set to report."
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "entities": [
+        {
+            "entity": "Human Trafficking - Commercial Sex Acts",
+            "description": "Refers to cases of human trafficking specifically involving commercial sex acts."
+        },
+        {
+            "entity": "Missing Data",
+            "description": "Represents data entries that are missing or not available in the survey."
+        },
+        {
+            "entity": "Murder/Nonnegligent Manslaughter",
+            "description": "Involves the willful (non-negligent) killing of one human being by another."
+        },
+        {
+            "entity": "Negligent Manslaughter",
+            "description": "Refers to the killing of another person through gross negligence."
+        },
+        {
+            "entity": "Justifiable Homicide",
+            "description": "The killing of a felon by a law enforcement officer in the line of duty or the killing of a felon during the commission of a felony by a private citizen."
+        },
+        {
+            "entity": "Kidnaping/Abduction",
+            "description": "Entails the unlawful seizure, transportation, and/or detention of a person against their will."
+        },
+        {
+            "entity": "Rape",
+            "description": "Includes all forms of non-consensual sexual penetration."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Involves oral or anal sexual intercourse without consent."
+        },
+        {
+            "entity": "Sexual Assault With An Object",
+            "description": "Non-consensual penetration of a person by an object."
+        },
+        {
+            "entity": "Fondling (Indecent Liberties/Child Molesting)",
+            "description": "Touching of the private body parts of another person for sexual gratification without consent, including incidents involving minors."
+        },
+        {
+            "entity": "Robbery",
+            "description": "The taking or attempting to take anything of value by force or threat of force."
+        },
+        {
+            "entity": "Aggravated Assault",
+            "description": "An unlawful attack by one person upon another with the intent to inflict severe or aggravated bodily injury."
+        },
+        {
+            "entity": "Simple Assault",
+            "description": "An unlawful physical attack by one person upon another without the use of a weapon and not resulting in serious injury."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "To unlawfully place another person in reasonable fear of bodily harm through the use of threatening words and/or other conduct."
+        },
+        {
+            "entity": "Arson",
+            "description": "Willfully or maliciously setting, or attempting to set, fire to a structure, vehicle, or property."
+        },
+        {
+            "entity": "Extortion/Blackmail",
+            "description": "Obtaining money, property, or anything else of value through the use of threat or coercion."
+        },
+        {
+            "entity": "Burglary/Breaking and Entering",
+            "description": "The unlawful entry into a building with the intent to commit a felony or theft."
+        },
+        {
+            "entity": "Pocket-picking",
+            "description": "Theft of articles from another person's physical possession without the use of force."
+        },
+        {
+            "entity": "Purse-snatching",
+            "description": "Theft of a purse, handbag, etc., from the custody of an individual without the use of force."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "Theft by a person of goods or merchandise exposed for sale."
+        },
+        {
+            "entity": "Theft From Building",
+            "description": "Theft within a building which is open to the general public without force, violence, or fraud."
+        },
+        {
+            "entity": "Theft From Coin-Operated Machine or Device",
+            "description": "Theft from a machine or device operated by coins or tokens."
+        },
+        {
+            "entity": "Theft From Motor Vehicle",
+            "description": "Theft of articles from a motor vehicle, either locked or unlocked."
+        },
+        {
+            "entity": "Theft of Motor Vehicle Parts/Accessories",
+            "description": "Theft of any parts or accessories from a motor vehicle in which the parts or accessories are attached."
+        },
+        {
+            "entity": "All Other Larceny",
+            "description": "All thefts that do not fit any of the definitions of the specific subcategories listed above."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffenseCode",
+            "source_entity": "UCR Arrest Offense Code",
+            "target_entity": "Crime",
+            "description": "Relates the UCR arrest offense code to specific crimes."
+        },
+        {
+            "relationship": "describedBy",
+            "source_entity": "Crime",
+            "target_entity": "Description",
+            "description": "Provides a detailed description of the crime."
+        },
+        {
+            "relationship": "hasIncidentCount",
+            "source_entity": "Crime",
+            "target_entity": "IncidentCount",
+            "description": "Indicates the number of times the crime has been reported."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "IncidentCount",
+            "target_entity": "Frequency",
+            "description": "Represents the frequency percentage of the reported incidents."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Indicates data entries that are missing in the dataset."
+        }
+    ]
+}

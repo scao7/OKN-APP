@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseCategories",
+            "description": "Categories used to display only the first 50 response categories in the PDF codebook."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "Total number of valid cases based on the survey responses."
+        },
+        {
+            "entity": "MeanValue",
+            "description": "Mean value of the valid cases."
+        },
+        {
+            "entity": "MinimumValue",
+            "description": "Minimum value of the valid cases."
+        },
+        {
+            "entity": "MaximumValue",
+            "description": "Maximum value of the valid cases."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "Standard deviation of the valid cases."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of the variable, in this case, numeric."
+        },
+        {
+            "entity": "MissingValuesRange",
+            "description": "Range of missing values for the variable."
+        },
+        {
+            "entity": "ResponseValues",
+            "description": "Specific response values and their corresponding unweighted frequencies and percentages."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasResponseCategories",
+            "source_entity": "Survey",
+            "target_entity": "ResponseCategories",
+            "description": "Associates the survey with the categories used for displaying responses."
+        },
+        {
+            "relationship": "reportsTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of valid cases reported in the survey."
+        },
+        {
+            "relationship": "reportsMeanValue",
+            "source_entity": "SurveyAnalysis",
+            "target_entity": "MeanValue",
+            "description": "Indicates the mean value based on the survey analysis."
+        },
+        {
+            "relationship": "reportsMinimumValue",
+            "source_entity": "SurveyAnalysis",
+            "target_entity": "MinimumValue",
+            "description": "Indicates the minimum value based on the survey analysis."
+        },
+        {
+            "relationship": "reportsMaximumValue",
+            "source_entity": "SurveyAnalysis",
+            "target_entity": "MaximumValue",
+            "description": "Indicates the maximum value based on the survey analysis."
+        },
+        {
+            "relationship": "reportsStandardDeviation",
+            "source_entity": "SurveyAnalysis",
+            "target_entity": "StandardDeviation",
+            "description": "Indicates the standard deviation based on the survey analysis."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "VariableType",
+            "description": "Defines the type of the variable as numeric."
+        },
+        {
+            "relationship": "hasMissingValuesRange",
+            "source_entity": "Variable",
+            "target_entity": "MissingValuesRange",
+            "description": "Defines the range of missing values for the variable."
+        },
+        {
+            "relationship": "hasResponseValues",
+            "source_entity": "Survey",
+            "target_entity": "ResponseValues",
+            "description": "Associates response values with their respective unweighted frequencies and percentages."
+        }
+    ]
+}

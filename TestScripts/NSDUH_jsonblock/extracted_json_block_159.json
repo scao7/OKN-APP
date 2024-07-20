@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "EverUsedCrack",
+            "description": "Whether the respondent has ever used crack cocaine."
+        },
+        {
+            "entity": "AgeFirstUsedCrack",
+            "description": "Age at which the respondent first used crack cocaine."
+        },
+        {
+            "entity": "YearFirstUsedCrackRecode",
+            "description": "Recode of the year in which the respondent first used crack cocaine."
+        },
+        {
+            "entity": "MonthFirstUsedCrackRecode",
+            "description": "Recode of the month in which the respondent first used crack cocaine."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEverUsedCrack",
+            "source_entity": "Respondent",
+            "target_entity": "EverUsedCrack",
+            "description": "Indicates if the respondent has ever used crack cocaine."
+        },
+        {
+            "relationship": "hasAgeFirstUsedCrack",
+            "source_entity": "Respondent",
+            "target_entity": "AgeFirstUsedCrack",
+            "description": "Indicates the age at which the respondent first used crack cocaine."
+        },
+        {
+            "relationship": "hasYearFirstUsedCrackRecode",
+            "source_entity": "Respondent",
+            "target_entity": "YearFirstUsedCrackRecode",
+            "description": "Indicates the recoded year in which the respondent first used crack cocaine."
+        },
+        {
+            "relationship": "hasMonthFirstUsedCrackRecode",
+            "source_entity": "Respondent",
+            "target_entity": "MonthFirstUsedCrackRecode",
+            "description": "Indicates the recoded month in which the respondent first used crack cocaine."
+        }
+    ]
+}

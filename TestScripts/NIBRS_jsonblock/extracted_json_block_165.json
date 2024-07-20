@@ -1,0 +1,176 @@
+{
+    "entities": [
+        {
+            "entity": "Marijuana",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "Morphine",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "Opium",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "OtherNarcotics",
+            "description": "A category of drugs listed in the survey accounting for its use."
+        },
+        {
+            "entity": "LSD",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "PCP",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "OtherHallucinogens",
+            "description": "A category of drugs listed in the survey accounting for its use."
+        },
+        {
+            "entity": "Amphetamines/Methamphetamines",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "OtherStimulants",
+            "description": "A category of drugs listed in the survey accounting for its use."
+        },
+        {
+            "entity": "Barbiturates",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "OtherDepressants",
+            "description": "A category of drugs listed in the survey accounting for its use."
+        },
+        {
+            "entity": "OtherDrugs:Antidepressants",
+            "description": "A category of drugs listed in the survey accounting for its use."
+        },
+        {
+            "entity": "Total",
+            "description": "Total unweighted frequency and percentage of drug use cases."
+        },
+        {
+            "entity": "CrackCocaine",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "Cocaine",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "Hashish",
+            "description": "A type of drug listed in the survey accounting for its use."
+        },
+        {
+            "entity": "Heroin",
+            "description": "A type of drug listed in the survey accounting for its use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "Marijuana",
+            "description": "Lists Marijuana as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "Morphine",
+            "description": "Lists Morphine as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "Opium",
+            "description": "Lists Opium as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsCategory",
+            "source_entity": "Survey",
+            "target_entity": "OtherNarcotics",
+            "description": "Lists Other Narcotics as a category of drugs in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "LSD",
+            "description": "Lists LSD as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "PCP",
+            "description": "Lists PCP as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsCategory",
+            "source_entity": "Survey",
+            "target_entity": "OtherHallucinogens",
+            "description": "Lists Other Hallucinogens as a category of drugs in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "Amphetamines/Methamphetamines",
+            "description": "Lists Amphetamines/Methamphetamines as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsCategory",
+            "source_entity": "Survey",
+            "target_entity": "OtherStimulants",
+            "description": "Lists Other Stimulants as a category of drugs in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "Barbiturates",
+            "description": "Lists Barbiturates as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsCategory",
+            "source_entity": "Survey",
+            "target_entity": "OtherDepressants",
+            "description": "Lists Other Depressants as a category of drugs in the survey."
+        },
+        {
+            "relationship": "listsCategory",
+            "source_entity": "Survey",
+            "target_entity": "OtherDrugs:Antidepressants",
+            "description": "Lists Other Drugs: Antidepressants as a category of drugs in the survey."
+        },
+        {
+            "relationship": "hasTotalCount",
+            "source_entity": "Survey",
+            "target_entity": "Total",
+            "description": "Shows the total unweighted frequency and percentage of drug use cases."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "CrackCocaine",
+            "description": "Lists Crack Cocaine as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "Cocaine",
+            "description": "Lists Cocaine as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "Hashish",
+            "description": "Lists Hashish as a type of drug in the survey."
+        },
+        {
+            "relationship": "listsDrug",
+            "source_entity": "Survey",
+            "target_entity": "Heroin",
+            "description": "Lists Heroin as a type of drug in the survey."
+        }
+    ]
+}

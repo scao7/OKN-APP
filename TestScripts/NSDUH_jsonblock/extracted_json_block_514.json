@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "WorstMonthEmotionalState",
+            "description": "The state of emotional health reported during the respondent's worst month."
+        },
+        {
+            "entity": "CheerUpFrequency",
+            "description": "Frequency of feeling so depressed that cheering up was difficult in the worst month."
+        },
+        {
+            "entity": "EffortFrequency",
+            "description": "Frequency of feeling that everything was an effort in the worst month."
+        },
+        {
+            "entity": "WorthlessFrequency",
+            "description": "Frequency of feeling down on oneself, no good, or worthless in the worst month."
+        },
+        {
+            "entity": "MemoryDifficulty",
+            "description": "Level of difficulty experienced in remembering things needed to be done during the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWorstMonthEmotionalState",
+            "source_entity": "Respondent",
+            "target_entity": "WorstMonthEmotionalState",
+            "description": "Indicates the emotional state of the respondent during their worst month."
+        },
+        {
+            "relationship": "hasCheerUpFrequency",
+            "source_entity": "WorstMonthEmotionalState",
+            "target_entity": "CheerUpFrequency",
+            "description": "Relates the worst emotional month to the frequency of being unable to cheer up."
+        },
+        {
+            "relationship": "hasEffortFrequency",
+            "source_entity": "WorstMonthEmotionalState",
+            "target_entity": "EffortFrequency",
+            "description": "Relates the worst emotional month to the frequency of feeling that everything was an effort."
+        },
+        {
+            "relationship": "hasWorthlessFrequency",
+            "source_entity": "WorstMonthEmotionalState",
+            "target_entity": "WorthlessFrequency",
+            "description": "Relates the worst emotional month to the frequency of feeling down on oneself, no good, or worthless."
+        },
+        {
+            "relationship": "hasMemoryDifficulty",
+            "source_entity": "Respondent",
+            "target_entity": "MemoryDifficulty",
+            "description": "Indicates the level of difficulty the respondent had in remembering to do things over the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "WorstMonthEmotionalState",
+            "predicate": "includes",
+            "object": "CheerUpFrequency"
+        },
+        {
+            "subject": "WorstMonthEmotionalState",
+            "predicate": "includes",
+            "object": "EffortFrequency"
+        },
+        {
+            "subject": "WorstMonthEmotionalState",
+            "predicate": "includes",
+            "object": "WorthlessFrequency"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "reports",
+            "object": "WorstMonthEmotionalState"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "experiences",
+            "object": "MemoryDifficulty"
+        }
+    ]
+}

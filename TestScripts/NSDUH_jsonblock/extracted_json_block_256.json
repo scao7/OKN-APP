@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "CigarFirstUseImputationIndicator",
+            "description": "Indicates the method of data imputation for the age of first cigar use."
+        },
+        {
+            "entity": "CigarFirstUseImputationRevised",
+            "description": "Revised indicator for the age of first cigar use."
+        },
+        {
+            "entity": "CigarFirstUseYearImputationIndicator",
+            "description": "Indicator for the year of first cigar use with imputation."
+        },
+        {
+            "entity": "SmokelessTobaccoFirstUseImputationRevised",
+            "description": "Revised indicator for the age of first smokeless tobacco use."
+        },
+        {
+            "entity": "SmokelessTobaccoFirstUseImputationIndicator",
+            "description": "Indicator for the age of first smokeless tobacco use with imputation."
+        },
+        {
+            "entity": "SmokelessTobaccoFirstUseYearImputationRevised",
+            "description": "Revised indicator for the year of first smokeless tobacco use."
+        },
+        {
+            "entity": "SmokelessTobaccoFirstUseYearImputationIndicator",
+            "description": "Indicator for the year of first smokeless tobacco use with imputation."
+        },
+        {
+            "entity": "NicotineVapingFirstUseImputationRevised",
+            "description": "Revised indicator for the age of first nicotine vaping use."
+        },
+        {
+            "entity": "NicotineVapingFirstUseImputationIndicator",
+            "description": "Indicator for the age of first nicotine vaping use with imputation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCigarFirstUseImputationIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "CigarFirstUseImputationIndicator",
+            "description": "Indicates the method used to impute the age of first cigar use."
+        },
+        {
+            "relationship": "hasCigarFirstUseImputationRevised",
+            "source_entity": "Respondent",
+            "target_entity": "CigarFirstUseImputationRevised",
+            "description": "Indicates the revised indicator for the age of first cigar use."
+        },
+        {
+            "relationship": "hasCigarFirstUseYearImputationIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "CigarFirstUseYearImputationIndicator",
+            "description": "Indicates the year of first cigar use with imputation."
+        },
+        {
+            "relationship": "hasSmokelessTobaccoFirstUseImputationRevised",
+            "source_entity": "Respondent",
+            "target_entity": "SmokelessTobaccoFirstUseImputationRevised",
+            "description": "Indicates the revised indicator for the age of first smokeless tobacco use."
+        },
+        {
+            "relationship": "hasSmokelessTobaccoFirstUseImputationIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "SmokelessTobaccoFirstUseImputationIndicator",
+            "description": "Indicates the indicator for the age of first smokeless tobacco use with imputation."
+        },
+        {
+            "relationship": "hasSmokelessTobaccoFirstUseYearImputationRevised",
+            "source_entity": "Respondent",
+            "target_entity": "SmokelessTobaccoFirstUseYearImputationRevised",
+            "description": "Indicates the revised indicator for the year of first smokeless tobacco use."
+        },
+        {
+            "relationship": "hasSmokelessTobaccoFirstUseYearImputationIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "SmokelessTobaccoFirstUseYearImputationIndicator",
+            "description": "Indicates the indicator for the year of first smokeless tobacco use with imputation."
+        },
+        {
+            "relationship": "hasNicotineVapingFirstUseImputationRevised",
+            "source_entity": "Respondent",
+            "target_entity": "NicotineVapingFirstUseImputationRevised",
+            "description": "Indicates the revised indicator for the age of first nicotine vaping use."
+        },
+        {
+            "relationship": "hasNicotineVapingFirstUseImputationIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "NicotineVapingFirstUseImputationIndicator",
+            "description": "Indicates the indicator for the age of first nicotine vaping use with imputation."
+        }
+    ]
+}

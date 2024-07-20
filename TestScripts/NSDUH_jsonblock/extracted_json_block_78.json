@@ -1,0 +1,102 @@
+{
+    "entities": [
+        {
+            "entity": "IMRECDIR",
+            "description": "Not covered by Medicare"
+        },
+        {
+            "entity": "IMRDCHP",
+            "description": "Not covered by Medicaid/CHIP"
+        },
+        {
+            "entity": "IRCHMPUS",
+            "description": "Not covered by Tricare, Champus, ChampVA, VA, or Military"
+        },
+        {
+            "entity": "IRPRVHLT",
+            "description": "Not covered by private insurance"
+        },
+        {
+            "entity": "IROTHHLT",
+            "description": "OTHER HEALTH INSURANCE - IMPUTATION REVISED"
+        },
+        {
+            "entity": "IROTHHLT_IND",
+            "description": "OTHER HEALTH INSURANCE - IMPUTATION INDICATOR"
+        },
+        {
+            "entity": "SurveyRespondent",
+            "description": "A person who participates in the survey and provides health insurance information."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMedicareCoverage",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "IMRECDIR",
+            "description": "Indicates that the respondent is not covered by Medicare."
+        },
+        {
+            "relationship": "hasMedicaidCHIPCoverage",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "IMRDCHP",
+            "description": "Indicates that the respondent is not covered by Medicaid/CHIP."
+        },
+        {
+            "relationship": "hasMilitaryCoverage",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "IRCHMPUS",
+            "description": "Indicates that the respondent is not covered by Tricare, Champus, ChampVA, VA, or Military."
+        },
+        {
+            "relationship": "hasPrivateInsuranceCoverage",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "IRPRVHLT",
+            "description": "Indicates that the respondent is not covered by private insurance."
+        },
+        {
+            "relationship": "hasOtherHealthInsurance",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "IROTHHLT",
+            "description": "Relates the respondent to other health insurance status (imputation revised)."
+        },
+        {
+            "relationship": "hasOtherHealthInsuranceIndicator",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "IROTHHLT_IND",
+            "description": "Relates the respondent to the imputation indicator for other health insurance."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "IROTHHLT",
+            "predicate": "1",
+            "object": "Yes, R is covered by other health insurance"
+        },
+        {
+            "subject": "IROTHHLT",
+            "predicate": "2",
+            "object": "No, R is not covered by other health insurance"
+        },
+        {
+            "subject": "IROTHHLT",
+            "predicate": "99",
+            "object": "LEGITIMATE SKIP"
+        },
+        {
+            "subject": "IROTHHLT_IND",
+            "predicate": "1",
+            "object": "Questionnaire data"
+        },
+        {
+            "subject": "IROTHHLT_IND",
+            "predicate": "3",
+            "object": "Statistically imputed data"
+        },
+        {
+            "subject": "IROTHHLT_IND",
+            "predicate": "9",
+            "object": "LEGITIMATE SKIP"
+        }
+    ]
+}

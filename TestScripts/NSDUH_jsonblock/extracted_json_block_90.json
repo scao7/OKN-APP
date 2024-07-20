@@ -1,0 +1,78 @@
+{
+    "entities": [
+        {
+            "entity": "DrivingUnderInfluenceMarijuana",
+            "description": "Indicates if the respondent has driven a vehicle under the influence of marijuana in the past 12 months."
+        },
+        {
+            "entity": "DrivingUnderInfluenceCocaine",
+            "description": "Indicates if the respondent has driven a vehicle under the influence of cocaine in the past 12 months."
+        },
+        {
+            "entity": "DrivingUnderInfluenceHeroin",
+            "description": "Indicates if the respondent has driven a vehicle under the influence of heroin in the past 12 months."
+        },
+        {
+            "entity": "DrivingUnderInfluenceHallucinogens",
+            "description": "Indicates if the respondent has driven a vehicle under the influence of hallucinogens in the past 12 months."
+        },
+        {
+            "entity": "Respondent",
+            "description": "An individual who participates in the survey."
+        },
+        {
+            "entity": "Past12Months",
+            "description": "The timeframe referring to the previous 12 months from today's date."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrivenUnderInfluence",
+            "source_entity": "Respondent",
+            "target_entity": "DrivingUnderInfluenceMarijuana",
+            "description": "Indicates if the respondent has driven under the influence of marijuana."
+        },
+        {
+            "relationship": "hasDrivenUnderInfluence",
+            "source_entity": "Respondent",
+            "target_entity": "DrivingUnderInfluenceCocaine",
+            "description": "Indicates if the respondent has driven under the influence of cocaine."
+        },
+        {
+            "relationship": "hasDrivenUnderInfluence",
+            "source_entity": "Respondent",
+            "target_entity": "DrivingUnderInfluenceHeroin",
+            "description": "Indicates if the respondent has driven under the influence of heroin."
+        },
+        {
+            "relationship": "hasDrivenUnderInfluence",
+            "source_entity": "Respondent",
+            "target_entity": "DrivingUnderInfluenceHallucinogens",
+            "description": "Indicates if the respondent has driven under the influence of hallucinogens."
+        },
+        {
+            "relationship": "withinTimeframe",
+            "source_entity": "DrivingUnderInfluenceMarijuana",
+            "target_entity": "Past12Months",
+            "description": "Specifies that driving under the influence of marijuana occurred within the past 12 months."
+        },
+        {
+            "relationship": "withinTimeframe",
+            "source_entity": "DrivingUnderInfluenceCocaine",
+            "target_entity": "Past12Months",
+            "description": "Specifies that driving under the influence of cocaine occurred within the past 12 months."
+        },
+        {
+            "relationship": "withinTimeframe",
+            "source_entity": "DrivingUnderInfluenceHeroin",
+            "target_entity": "Past12Months",
+            "description": "Specifies that driving under the influence of heroin occurred within the past 12 months."
+        },
+        {
+            "relationship": "withinTimeframe",
+            "source_entity": "DrivingUnderInfluenceHallucinogens",
+            "target_entity": "Past12Months",
+            "description": "Specifies that driving under the influence of hallucinogens occurred within the past 12 months."
+        }
+    ]
+}

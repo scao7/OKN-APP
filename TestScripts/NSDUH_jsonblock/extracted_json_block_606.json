@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "HealthCondition",
+            "description": "The health condition ever told by a medical professional."
+        },
+        {
+            "entity": "CancerStatus",
+            "description": "Information regarding whether the respondent was ever told they had cancer."
+        },
+        {
+            "entity": "HighBloodPressureStatus",
+            "description": "Information regarding whether the respondent was ever told they had high blood pressure."
+        },
+        {
+            "entity": "BLADDER_CancerStatus",
+            "description": "Information regarding whether the respondent was ever told they had bladder cancer."
+        },
+        {
+            "entity": "BloodLeukemiaLymphomaStatus",
+            "description": "Information regarding whether the respondent was ever told they had blood/leukemia/lymphoma cancer."
+        },
+        {
+            "entity": "OtherCancerStatus",
+            "description": "Information regarding whether the respondent was ever told they had any other type of cancer."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHealthCondition",
+            "source_entity": "Respondent",
+            "target_entity": "HealthCondition",
+            "description": "Indicates that a respondent has been diagnosed with a specific health condition."
+        },
+        {
+            "relationship": "hasCancerStatus",
+            "source_entity": "HealthCondition",
+            "target_entity": "CancerStatus",
+            "description": "Specifies whether the diagnosed health condition is cancer."
+        },
+        {
+            "relationship": "hasHighBloodPressureStatus",
+            "source_entity": "HealthCondition",
+            "target_entity": "HighBloodPressureStatus",
+            "description": "Specifies whether the diagnosed health condition is high blood pressure."
+        },
+        {
+            "relationship": "hasBLADDER_CancerStatus",
+            "source_entity": "CancerStatus",
+            "target_entity": "BLADDER_CancerStatus",
+            "description": "Specifies whether the diagnosed cancer is bladder cancer."
+        },
+        {
+            "relationship": "hasBloodLeukemiaLymphomaStatus",
+            "source_entity": "CancerStatus",
+            "target_entity": "BloodLeukemiaLymphomaStatus",
+            "description": "Specifies whether the diagnosed cancer is blood/leukemia/lymphoma cancer."
+        },
+        {
+            "relationship": "hasOtherCancerStatus",
+            "source_entity": "CancerStatus",
+            "target_entity": "OtherCancerStatus",
+            "description": "Specifies whether the diagnosed cancer is any other type of cancer."
+        }
+    ]
+}

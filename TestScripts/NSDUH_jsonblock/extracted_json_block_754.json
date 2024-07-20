@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "MRJDAYS",
+            "description": "Number of days marijuana was used in the past month."
+        },
+        {
+            "entity": "PASTMONTH",
+            "description": "Indicator variable for any marijuana use in the past month."
+        },
+        {
+            "entity": "ANALWT_C",
+            "description": "Person-level analysis weight."
+        },
+        {
+            "entity": "DESIGNWR",
+            "description": "Indicates the design and weight of the file type for analysis."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMRJDAYS",
+            "source_entity": "Variable",
+            "target_entity": "MRJDAYS",
+            "description": "Specifies the number of days marijuana was used in the past month."
+        },
+        {
+            "relationship": "hasPASTMONTH",
+            "source_entity": "Variable",
+            "target_entity": "PASTMONTH",
+            "description": "Indicates whether there was any marijuana use in the past month."
+        },
+        {
+            "relationship": "hasANALWT_C",
+            "source_entity": "Survey",
+            "target_entity": "ANALWT_C",
+            "description": "Relates the survey to the person-level analysis weight."
+        },
+        {
+            "relationship": "hasDESIGNWR",
+            "source_entity": "FileType",
+            "target_entity": "DESIGNWR",
+            "description": "Relates the design and weight of the file type for analysis."
+        }
+    ]
+}

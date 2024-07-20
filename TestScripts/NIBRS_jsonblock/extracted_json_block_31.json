@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "CurrentPopulation",
+            "description": "The current population surveyed in NSDUH dataset."
+        },
+        {
+            "entity": " unweightedFrequency",
+            "description": "The absolute number of responses for each current population survey entry."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of responses for each current population survey entry relative to the total number of respondents."
+        },
+        {
+            "entity": "AgeRanges",
+            "description": "Different age ranges represented in the current population."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "AgeRanges",
+            "target_entity": "unweightedFrequency",
+            "description": "Indicates the number of responses for a specific age range."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "AgeRanges",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage for a specific age range."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "unweightedFrequency",
+            "target_entity": "CurrentPopulation",
+            "description": "Relates the unweighted frequency value as part of the overall current population."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "Percentage",
+            "target_entity": "CurrentPopulation",
+            "description": "Relates the percentage value as part of the overall current population."
+        }
+    ]
+}

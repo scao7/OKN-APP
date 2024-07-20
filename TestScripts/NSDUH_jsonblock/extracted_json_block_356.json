@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "DaysUsedMethToAvoidCocaineWithdrawal",
+            "description": "Number of days respondent used meth to avoid cocaine withdrawal in the past 12 months."
+        },
+        {
+            "entity": "DaysUsedPrescriptionStimulantsToAvoidCocaineWithdrawal",
+            "description": "Number of days respondent used prescription stimulants to avoid cocaine withdrawal in the past 12 months."
+        },
+        {
+            "entity": "DaysUsedOtherSubstancesToAvoidCocaineWithdrawal",
+            "description": "Number of days respondent used other substances to avoid cocaine withdrawal in the past 12 months."
+        },
+        {
+            "entity": "DaysSpentUsingHeroinOrFeelingEffects",
+            "description": "Number of days respondent spent a great deal of time using heroin or feeling its effects in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMethToAvoidCocaineWithdrawalUsage",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedMethToAvoidCocaineWithdrawal",
+            "description": "Indicates the number of days the respondent used meth to avoid cocaine withdrawal in the past 12 months."
+        },
+        {
+            "relationship": "hasPrescriptionStimulantsToAvoidCocaineWithdrawalUsage",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedPrescriptionStimulantsToAvoidCocaineWithdrawal",
+            "description": "Indicates the number of days the respondent used prescription stimulants to avoid cocaine withdrawal in the past 12 months."
+        },
+        {
+            "relationship": "hasOtherSubstancesToAvoidCocaineWithdrawalUsage",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedOtherSubstancesToAvoidCocaineWithdrawal",
+            "description": "Indicates the number of days the respondent used other substances to avoid cocaine withdrawal in the past 12 months."
+        },
+        {
+            "relationship": "hasHeroinOrFeelingEffectsUsage",
+            "source_entity": "Respondent",
+            "target_entity": "DaysSpentUsingHeroinOrFeelingEffects",
+            "description": "Indicates the number of days the respondent spent a great deal of time using heroin or feeling its effects in the past 12 months."
+        }
+    ]
+}

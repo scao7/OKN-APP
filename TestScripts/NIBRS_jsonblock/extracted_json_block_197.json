@@ -1,0 +1,126 @@
+{
+    "entities": [
+        {
+            "entity": "WireFraud",
+            "description": "A form of fraud involving the use of telecommunications or information technology."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "The deliberate use of someone else's identity, usually as a method to gain financial advantage."
+        },
+        {
+            "entity": "Hacking",
+            "description": "Unauthorized access to data in a system or computer."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Theft or misappropriation of funds placed in one's trust or belonging to one's employer."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Crimes involving stolen property."
+        },
+        {
+            "entity": "DestructionOfProperty",
+            "description": "Damage, destruction, or vandalism of property."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Violations related to the possession, sale, or manufacture of drugs/narcotics."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Violations related to the possession, sale, or manufacture of drug paraphernalia."
+        },
+        {
+            "entity": "Incest",
+            "description": "Sexual relations between people classified as being too closely related to marry each other."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Sexual activity with a person who is below the statutory age of consent."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "Violations involving the production, distribution, or possession of pornography or obscene material."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "Placing bets or wagers on the outcome of an event."
+        },
+        {
+            "entity": "GamblingOffenses",
+            "description": "Crimes related to illegal gambling activities."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Illegally influencing the outcome or progression of a sporting event."
+        },
+        {
+            "entity": "ProstitutionRelatedOffenses",
+            "description": "Violations related to prostitution, including promotion and purchasing of prostitution."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Offering, giving, receiving, or soliciting something of value to influence an action."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Illegal activities involving weapons."
+        },
+        {
+            "entity": "HumanTrafficking",
+            "description": "Illegal trafficking of humans, often for sexual exploitation or forced labor."
+        },
+        {
+            "entity": "MurderNonnegligentManslaughter",
+            "description": "The willful killing of one human being by another."
+        },
+        {
+            "entity": "NegligentManslaughter",
+            "description": "The killing of another person through gross negligence."
+        },
+        {
+            "entity": "JustifiableHomicide",
+            "description": "The killing of a person in circumstances that allow it to be regarded in law as a matter of self-defense."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "relatedTo",
+            "source_entity": "DrugNarcoticViolations",
+            "target_entity": "DrugEquipmentViolations",
+            "description": "The relationship between drug/narcotic violations and equipment violations."
+        },
+        {
+            "relationship": "involvedIn",
+            "source_entity": "ProstitutionRelatedOffenses",
+            "target_entity": "HumanTrafficking",
+            "description": "Prostitution-related offenses involving human trafficking."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "GamblingOffenses",
+            "target_entity": "BettingWagering",
+            "description": "Gambling-related offenses include betting and wagering activities."
+        },
+        {
+            "relationship": "relatedToViolence",
+            "source_entity": "WeaponLawViolations",
+            "target_entity": "MurderNonnegligentManslaughter",
+            "description": "Weapon law violations related to violent crimes such as murder or manslaughter."
+        },
+        {
+            "relationship": "relatedToViolence",
+            "source_entity": "WeaponLawViolations",
+            "target_entity": "NegligentManslaughter",
+            "description": "Weapon law violations related to violent crimes such as negligent manslaughter."
+        },
+        {
+            "relationship": "justifiedBy",
+            "source_entity": "JustifiableHomicide",
+            "target_entity": "SelfDefense",
+            "description": "Justifiable homicide is often considered legally justified by the act of self-defense."
+        }
+    ]
+}

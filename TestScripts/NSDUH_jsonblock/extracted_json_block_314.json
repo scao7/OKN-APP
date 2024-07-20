@@ -1,0 +1,154 @@
+{
+    "entities": [
+        {
+            "entity": "NyQuil",
+            "description": "Over-the-counter medication for cold and flu symptoms."
+        },
+        {
+            "entity": "DayQuil",
+            "description": "Over-the-counter medication for daytime cold and flu symptoms."
+        },
+        {
+            "entity": "Advil",
+            "description": "Over-the-counter medication, typically for pain relief."
+        },
+        {
+            "entity": "Tylenol",
+            "description": "Over-the-counter medication, typically for pain relief."
+        },
+        {
+            "entity": "Aleve",
+            "description": "Over-the-counter anti-inflammatory medication."
+        },
+        {
+            "entity": "Acetaminophen",
+            "description": "Common pain reliever and fever reducer found in many over-the-counter medications."
+        },
+        {
+            "entity": "Cough Medicine",
+            "description": "Generic or unspecified over-the-counter medication for cough."
+        },
+        {
+            "entity": "Alka Seltzer",
+            "description": "Over-the-counter medication used to relieve heartburn and indigestion."
+        },
+        {
+            "entity": "CCK",
+            "description": "Over-the-counter cough medicine known as 'Triple C'."
+        },
+        {
+            "entity": "Mucinex",
+            "description": "Over-the-counter medication for mucus and congestion relief."
+        },
+        {
+            "entity": "Vicks",
+            "description": "Brand of over-the-counter medication for cold symptom relief."
+        },
+        {
+            "entity": "Vicks VapoRub",
+            "description": "Over-the-counter topical ointment for cough suppression."
+        },
+        {
+            "entity": "Benzedrex",
+            "description": "Over-the-counter nasal decongestant."
+        },
+        {
+            "entity": "Lean",
+            "description": "Recreational drug commonly made with over-the-counter medication containing codeine."
+        },
+        {
+            "entity": "Other Medications",
+            "description": "Miscellaneous over-the-counter medications for various symptoms."
+        },
+        {
+            "entity": "BAD DATA",
+            "description": "Logically assigned data point indicating erroneous or irrelevant data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "NyQuil",
+            "description": "Indicates that the respondent used NyQuil in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "DayQuil",
+            "description": "Indicates that the respondent used DayQuil in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Advil",
+            "description": "Indicates that the respondent used Advil in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Tylenol",
+            "description": "Indicates that the respondent used Tylenol in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Aleve",
+            "description": "Indicates that the respondent used Aleve in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Acetaminophen",
+            "description": "Indicates that the respondent used Acetaminophen in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Cough Medicine",
+            "description": "Indicates that the respondent used Cough Medicine in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Alka Seltzer",
+            "description": "Indicates that the respondent used Alka Seltzer in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "CCK",
+            "description": "Indicates that the respondent used CCK in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Mucinex",
+            "description": "Indicates that the respondent used Mucinex in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Vicks",
+            "description": "Indicates that the respondent used Vicks in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Vicks VapoRub",
+            "description": "Indicates that the respondent used Vicks VapoRub in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Benzedrex",
+            "description": "Indicates that the respondent used Benzedrex in the past 12 months."
+        },
+        {
+            "relationship": "usedInPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "Lean",
+            "description": "Indicates that the respondent used Lean in the past 12 months."
+        }
+    ]
+}

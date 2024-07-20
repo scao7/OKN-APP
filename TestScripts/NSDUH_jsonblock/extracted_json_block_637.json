@@ -1,0 +1,154 @@
+{
+    "entities": [
+        {
+            "entity": "HEALTH",
+            "description": "General health information or status."
+        },
+        {
+            "entity": "HIGHBAGE",
+            "description": "An entity referring to age-specific high behavioral activities or metrics."
+        },
+        {
+            "entity": "HIGHED",
+            "description": "Educational level or attainment."
+        },
+        {
+            "entity": "HLCLAGE",
+            "description": "Age-specific health or lifestyle information."
+        },
+        {
+            "entity": "HLCTNOM",
+            "description": "Health classification or terminology."
+        },
+        {
+            "entity": "HLNVCOST",
+            "description": "Costs associated with health or no-cost health events."
+        },
+        {
+            "entity": "HLNVOFER",
+            "description": "Offers related to health or non-offered health services."
+        },
+        {
+            "entity": "HLNVSOR",
+            "description": "Sources related to health or no-source health information."
+        },
+        {
+            "entity": "HLSICK",
+            "description": "Health issues related to sickness."
+        },
+        {
+            "entity": "HPSUICD",
+            "description": "Data related to suicide prevention or incidence."
+        },
+        {
+            "entity": "HRDAYPN",
+            "description": "Day-specific health metrics or indicators."
+        },
+        {
+            "entity": "HRDAYSICK",
+            "description": "Health metrics related to sickness duration."
+        },
+        {
+            "entity": "FOOTRO",
+            "description": "Possible reference to foot health issues."
+        },
+        {
+            "entity": "YLEHRDATE",
+            "description": "Health-related dates or events."
+        },
+        {
+            "entity": "YRSTRET",
+            "description": "Year-specific metrics related to treatment."
+        },
+        {
+            "entity": "YNHOME",
+            "description": "Home environment indicators."
+        },
+        {
+            "entity": "YRSCHED",
+            "description": "Yearly schedule or timeline indicators."
+        },
+        {
+            "entity": "LLDTESTR",
+            "description": "Testing metrics for learning and development."
+        },
+        {
+            "entity": "INCVAAGE",
+            "description": "Income variability metrics based on age."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHealthStatus",
+            "source_entity": "Respondent",
+            "target_entity": "HEALTH",
+            "description": "Indicates the general health status of the respondent."
+        },
+        {
+            "relationship": "hasEducationLevel",
+            "source_entity": "Respondent",
+            "target_entity": "HIGHED",
+            "description": "Indicates the education level of the respondent."
+        },
+        {
+            "relationship": "hasHealthClassification",
+            "source_entity": "HLCTNOM",
+            "target_entity": "HEALTH",
+            "description": "Classifies health information."
+        },
+        {
+            "relationship": "incursHealthCost",
+            "source_entity": "Respondent",
+            "target_entity": "HLNVCOST",
+            "description": "Indicates health-related costs incurred by the respondent."
+        },
+        {
+            "relationship": "hasOfferRelatedToHealth",
+            "source_entity": "HLNVOFER",
+            "target_entity": "HEALTH",
+            "description": "Indicates health-related offers available to the respondent."
+        },
+        {
+            "relationship": "hasHealthSource",
+            "source_entity": "HLNVSOR",
+            "target_entity": "HEALTH",
+            "description": "Indicates sources related to health information."
+        },
+        {
+            "relationship": "hasSickness",
+            "source_entity": "Respondent",
+            "target_entity": "HLSICK",
+            "description": "Indicates health issues related to sickness."
+        },
+        {
+            "relationship": "hasSuicideData",
+            "source_entity": "Respondent",
+            "target_entity": "HPSUICD",
+            "description": "Indicates data related to suicide prevention or incidence."
+        },
+        {
+            "relationship": "hasSickDays",
+            "source_entity": "Respondent",
+            "target_entity": "HRDAYSICK",
+            "description": "Indicates health metrics related to sickness duration."
+        },
+        {
+            "relationship": "hasHealthMetrics",
+            "source_entity": "Respondent",
+            "target_entity": "HRDAYPN",
+            "description": "Indicates day-specific health metrics or indicators."
+        },
+        {
+            "relationship": "hasHomeIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "YNHOME",
+            "description": "Indicates home environment indicators."
+        },
+        {
+            "relationship": "hasIncomeVariability",
+            "source_entity": "Respondent",
+            "target_entity": "INCVAAGE",
+            "description": "Indicates income variability metrics based on age."
+        }
+    ]
+}

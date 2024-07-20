@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "entity": "EstimatedQuantity",
+            "description": "The estimated quantity represented one part per thousand (1/1000th) of a whole."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of responses without adjustment for sample design."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage value representing the proportion of responses for each category."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "EstimatedQuantity",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the raw count of responses for each estimated quantity."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "EstimatedQuantity",
+            "target_entity": "Percentage",
+            "description": "Indicates the proportion of responses represented as a percentage for each estimated quantity."
+        }
+    ]
+}

@@ -1,0 +1,276 @@
+{
+    "entities": [
+        {
+            "entity": "AntiGenderNonConforming",
+            "description": "Bias against gender non-conforming individuals."
+        },
+        {
+            "entity": "AntiEasternOrthodox",
+            "description": "Bias against individuals of Eastern Orthodox Christian faith."
+        },
+        {
+            "entity": "AntiOtherChristian",
+            "description": "Bias against individuals of other Christian denominations not explicitly mentioned."
+        },
+        {
+            "entity": "AntiBuddhist",
+            "description": "Bias against Buddhist individuals."
+        },
+        {
+            "entity": "AntiHindu",
+            "description": "Bias against Hindu individuals."
+        },
+        {
+            "entity": "AntiSikh",
+            "description": "Bias against Sikh individuals."
+        },
+        {
+            "entity": "BiasMotivation",
+            "description": "Various categorizations of bias motivations."
+        },
+        {
+            "entity": "AntiWhite",
+            "description": "Bias against White individuals."
+        },
+        {
+            "entity": "AntiBlackOrAfricanAmerican",
+            "description": "Bias against Black or African American individuals."
+        },
+        {
+            "entity": "AntiAmericanIndianOrAlaskaNative",
+            "description": "Bias against American Indian or Alaska Native individuals."
+        },
+        {
+            "entity": "AntiAsian",
+            "description": "Bias against Asian individuals."
+        },
+        {
+            "entity": "AntiMultiRacialGroup",
+            "description": "Bias against individuals of multi-racial groups."
+        },
+        {
+            "entity": "AntiNativeHawaiianOrPacificIslander",
+            "description": "Bias against Native Hawaiian or other Pacific Islander individuals."
+        },
+        {
+            "entity": "AntiJewish",
+            "description": "Bias against Jewish individuals."
+        },
+        {
+            "entity": "AntiCatholic",
+            "description": "Bias against Catholic individuals."
+        },
+        {
+            "entity": "AntiProtestant",
+            "description": "Bias against Protestant individuals."
+        },
+        {
+            "entity": "AntiMuslim",
+            "description": "Bias against Islamic (Muslim) individuals."
+        },
+        {
+            "entity": "AntiOtherReligion",
+            "description": "Bias against individuals of other religions not explicitly mentioned."
+        },
+        {
+            "entity": "AntiMultiReligiousGroup",
+            "description": "Bias against individuals of multi-religious groups."
+        },
+        {
+            "entity": "AntiAtheismAgnosticism",
+            "description": "Bias against individuals identified as Atheist or Agnostic."
+        },
+        {
+            "entity": "AntiMormon",
+            "description": "Bias against Mormon individuals."
+        },
+        {
+            "entity": "AntiJehovahsWitness",
+            "description": "Bias against Jehovah's Witness individuals."
+        },
+        {
+            "entity": "AntiArab",
+            "description": "Bias against Arab individuals."
+        },
+        {
+            "entity": "AntiHispanicOrLatino",
+            "description": "Bias against Hispanic or Latino individuals."
+        },
+        {
+            "entity": "AntiNotHispanicOrLatino",
+            "description": "Bias against individuals not identified as Hispanic or Latino."
+        },
+        {
+            "entity": "AntiGay",
+            "description": "Bias against Gay individuals."
+        },
+        {
+            "entity": "AntiLesbian",
+            "description": "Bias against Lesbian individuals."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Survey",
+            "target_entity": "BiasMotivation",
+            "description": "Relates the survey to the categorizations of bias motivations."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiGenderNonConforming",
+            "description": "Indicates the bias motivation against gender non-conforming individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiEasternOrthodox",
+            "description": "Indicates the bias motivation against individuals of Eastern Orthodox Christian faith."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiOtherChristian",
+            "description": "Indicates the bias motivation against individuals of other Christian denominations not explicitly mentioned."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiBuddhist",
+            "description": "Indicates the bias motivation against Buddhist individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiHindu",
+            "description": "Indicates the bias motivation against Hindu individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiSikh",
+            "description": "Indicates the bias motivation against Sikh individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiWhite",
+            "description": "Indicates the bias motivation against White individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiBlackOrAfricanAmerican",
+            "description": "Indicates the bias motivation against Black or African American individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiAmericanIndianOrAlaskaNative",
+            "description": "Indicates the bias motivation against American Indian or Alaska Native individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiAsian",
+            "description": "Indicates the bias motivation against Asian individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiMultiRacialGroup",
+            "description": "Indicates the bias motivation against individuals of multi-racial groups."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiNativeHawaiianOrPacificIslander",
+            "description": "Indicates the bias motivation against Native Hawaiian or other Pacific Islander individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiJewish",
+            "description": "Indicates the bias motivation against Jewish individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiCatholic",
+            "description": "Indicates the bias motivation against Catholic individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiProtestant",
+            "description": "Indicates the bias motivation against Protestant individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiMuslim",
+            "description": "Indicates the bias motivation against Islamic (Muslim) individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiOtherReligion",
+            "description": "Indicates the bias motivation against individuals of other religions not explicitly mentioned."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiMultiReligiousGroup",
+            "description": "Indicates the bias motivation against individuals of multi-religious groups."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiAtheismAgnosticism",
+            "description": "Indicates the bias motivation against individuals identified as Atheist or Agnostic."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiMormon",
+            "description": "Indicates the bias motivation against Mormon individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiJehovahsWitness",
+            "description": "Indicates the bias motivation against Jehovah's Witness individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiArab",
+            "description": "Indicates the bias motivation against Arab individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiHispanicOrLatino",
+            "description": "Indicates the bias motivation against Hispanic or Latino individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiNotHispanicOrLatino",
+            "description": "Indicates the bias motivation against individuals not identified as Hispanic or Latino."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiGay",
+            "description": "Indicates the bias motivation against Gay individuals."
+        },
+        {
+            "relationship": "biasAgainst",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiLesbian",
+            "description": "Indicates the bias motivation against Lesbian individuals."
+        }
+    ]
+}

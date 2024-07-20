@@ -1,0 +1,84 @@
+{
+    "entities": [
+        {
+            "entity": "JustifiableHomicideCircumstance",
+            "description": "Circumstances under which a justifiable homicide occurred."
+        },
+        {
+            "entity": "CrimAttackedPoliceOfficer",
+            "description": "Circumstance where a criminal attacked a police officer, resulting in the officer killing the criminal."
+        },
+        {
+            "entity": "CrimAttackedFellowPoliceOfficer",
+            "description": "Circumstance where a criminal attacked a fellow police officer, resulting in the criminal being killed by another police officer."
+        },
+        {
+            "entity": "CrimAttackedCivilian",
+            "description": "Circumstance where a criminal attacked a civilian."
+        },
+        {
+            "entity": "CrimAttemptedFlightFromCrime",
+            "description": "Circumstance where a criminal attempted to flee from a crime scene."
+        },
+        {
+            "entity": "CrimKilledInCommissionOfCrime",
+            "description": "Circumstance where a criminal was killed during the commission of a crime."
+        },
+        {
+            "entity": "CrimResistedArrest",
+            "description": "Circumstance where a criminal resisted arrest and was killed."
+        },
+        {
+            "entity": "Survey",
+            "description": "The survey collecting information on justifiable homicide circumstances."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The unweighted frequency of each justifiable homicide circumstance."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCircumstance",
+            "source_entity": "JustifiableHomicideCircumstance",
+            "target_entity": "CrimAttackedPoliceOfficer",
+            "description": "Indicates the circumstance where a criminal attacked a police officer and was killed."
+        },
+        {
+            "relationship": "hasCircumstance",
+            "source_entity": "JustifiableHomicideCircumstance",
+            "target_entity": "CrimAttackedFellowPoliceOfficer",
+            "description": "Indicates the circumstance where a criminal attacked a fellow police officer and was killed by another officer."
+        },
+        {
+            "relationship": "hasCircumstance",
+            "source_entity": "JustifiableHomicideCircumstance",
+            "target_entity": "CrimAttackedCivilian",
+            "description": "Indicates the circumstance where a criminal attacked a civilian."
+        },
+        {
+            "relationship": "hasCircumstance",
+            "source_entity": "JustifiableHomicideCircumstance",
+            "target_entity": "CrimAttemptedFlightFromCrime",
+            "description": "Indicates the circumstance where a criminal attempted to flee from a crime."
+        },
+        {
+            "relationship": "hasCircumstance",
+            "source_entity": "JustifiableHomicideCircumstance",
+            "target_entity": "CrimKilledInCommissionOfCrime",
+            "description": "Indicates the circumstance where a criminal was killed during the commission of a crime."
+        },
+        {
+            "relationship": "hasCircumstance",
+            "source_entity": "JustifiableHomicideCircumstance",
+            "target_entity": "CrimResistedArrest",
+            "description": "Indicates the circumstance where a criminal resisted arrest and was killed."
+        },
+        {
+            "relationship": "reports",
+            "source_entity": "Survey",
+            "target_entity": "Frequency",
+            "description": "Reports the unweighted frequency of occurrences for each justifiable homicide circumstance."
+        }
+    ]
+}

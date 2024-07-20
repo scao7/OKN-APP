@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "GOVTPROG",
+            "description": "Participation in one or more government assistance programs."
+        },
+        {
+            "entity": "INCOME",
+            "description": "Total family income recode."
+        },
+        {
+            "entity": "POVERTY3",
+            "description": "Poverty level based on the US Census poverty threshold."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasParticipationStatus",
+            "source_entity": "Respondent",
+            "target_entity": "GOVTPROG",
+            "description": "Indicates whether the respondent participated in one or more government assistance programs."
+        },
+        {
+            "relationship": "hasIncomeLevel",
+            "source_entity": "Respondent",
+            "target_entity": "INCOME",
+            "description": "Indicates the total family income level of the respondent."
+        },
+        {
+            "relationship": "hasPovertyLevel",
+            "source_entity": "Family",
+            "target_entity": "POVERTY3",
+            "description": "Indicates the poverty level of the family based on the US Census poverty threshold."
+        }
+    ]
+}

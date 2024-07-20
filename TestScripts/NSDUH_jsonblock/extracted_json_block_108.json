@@ -1,0 +1,112 @@
+{
+    "entities": [
+        {
+            "entity": "AirplaneTravelDueToNoSmoking",
+            "description": "Preference of not traveling by airplane because smoking is not permitted."
+        },
+        {
+            "entity": "WorryAboutCigaretteShortage",
+            "description": "Concern about running out of cigarettes."
+        },
+        {
+            "entity": "RegularDailyCigaretteUse",
+            "description": "Smoking cigarettes fairly regularly throughout the day."
+        },
+        {
+            "entity": "WeekendWeekdayCigaretteUse",
+            "description": "Smoking cigarettes the same amount on weekends as on weekdays."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The number of individuals indicating a certain response."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of individuals indicating a certain response."
+        },
+        {
+            "entity": "Respondent",
+            "description": "Individual completing the NSDUH survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAirplaneTravelDueToNoSmoking",
+            "source_entity": "Respondent",
+            "target_entity": "AirplaneTravelDueToNoSmoking",
+            "description": "Indicates the respondent's preference regarding airplane travel due to smoking restrictions."
+        },
+        {
+            "relationship": "hasWorryAboutCigaretteShortage",
+            "source_entity": "Respondent",
+            "target_entity": "WorryAboutCigaretteShortage",
+            "description": "Indicates the respondent's concern about running out of cigarettes."
+        },
+        {
+            "relationship": "hasRegularDailyCigaretteUse",
+            "source_entity": "Respondent",
+            "target_entity": "RegularDailyCigaretteUse",
+            "description": "Indicates the respondent's daily cigarette use pattern."
+        },
+        {
+            "relationship": "hasWeekendWeekdayCigaretteUse",
+            "source_entity": "Respondent",
+            "target_entity": "WeekendWeekdayCigaretteUse",
+            "description": "Indicates the respondent's cigarette use pattern on weekends and weekdays."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Frequency",
+            "description": "Indicates the number of respondents who selected a particular response."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage of respondents who selected a particular response."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "AirplaneTravelDueToNoSmoking",
+            "predicate": "hasFrequency",
+            "object": "5635"
+        },
+        {
+            "subject": "AirplaneTravelDueToNoSmoking",
+            "predicate": "hasPercentage",
+            "object": "9.54"
+        },
+        {
+            "subject": "WorryAboutCigaretteShortage",
+            "predicate": "hasFrequency",
+            "object": "3840"
+        },
+        {
+            "subject": "WorryAboutCigaretteShortage",
+            "predicate": "hasPercentage",
+            "object": "6.50"
+        },
+        {
+            "subject": "RegularDailyCigaretteUse",
+            "predicate": "hasFrequency",
+            "object": "2479"
+        },
+        {
+            "subject": "RegularDailyCigaretteUse",
+            "predicate": "hasPercentage",
+            "object": "4.20"
+        },
+        {
+            "subject": "WeekendWeekdayCigaretteUse",
+            "predicate": "hasFrequency",
+            "object": "2142"
+        },
+        {
+            "subject": "WeekendWeekdayCigaretteUse",
+            "predicate": "hasPercentage",
+            "object": "3.63"
+        }
+    ]
+}

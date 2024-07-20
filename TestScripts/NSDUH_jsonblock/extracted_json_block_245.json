@@ -1,0 +1,53 @@
+{
+    "entities": [
+        {
+            "entity": "StimulantMisuseRecency",
+            "description": "Recency of stimulant misuse as determined by questionnaire data or imputed data."
+        },
+        {
+            "entity": "SedativeMisuseRecency",
+            "description": "Recency of sedative misuse, either within a specified time frame or never misused."
+        },
+        {
+            "entity": "BenzodiazepinesMisuseRecency",
+            "description": "Recency of benzodiazepines misuse in the past year, as determined by questionnaire data or imputed data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMisuseRecency",
+            "source_entity": "Survey",
+            "target_entity": "StimulantMisuseRecency",
+            "description": "Relates the survey to the recency of stimulant misuse."
+        },
+        {
+            "relationship": "hasMisuseRecency",
+            "source_entity": "Survey",
+            "target_entity": "SedativeMisuseRecency",
+            "description": "Relates the survey to the recency of sedative misuse."
+        },
+        {
+            "relationship": "hasMisuseRecency",
+            "source_entity": "Survey",
+            "target_entity": "BenzodiazepinesMisuseRecency",
+            "description": "Relates the survey to the recency of benzodiazepines misuse."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "StimulantMisuseRecency",
+            "predicate": "hasDataType",
+            "object": "Questionnaire or Imputed Data"
+        },
+        {
+            "subject": "SedativeMisuseRecency",
+            "predicate": "hasTimeFrame",
+            "object": "Past 30 days, Past 12 months, or Never Misused"
+        },
+        {
+            "subject": "BenzodiazepinesMisuseRecency",
+            "predicate": "hasDataType",
+            "object": "Questionnaire or Imputed Data"
+        }
+    ]
+}

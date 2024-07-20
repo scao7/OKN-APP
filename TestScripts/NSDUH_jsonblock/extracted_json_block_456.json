@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "MethamphetamineOutpatientTreatment",
+            "description": "Received outpatient treatment for methamphetamine use in the past 12 months."
+        },
+        {
+            "entity": "PainRelieverOutpatientTreatment",
+            "description": "Received outpatient treatment for pain reliever use in the past 12 months."
+        },
+        {
+            "entity": "StimulantOutpatientTreatment",
+            "description": "Received outpatient treatment for stimulant use in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMethamphetamineOutpatientTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "MethamphetamineOutpatientTreatment",
+            "description": "Indicates whether the respondent received outpatient treatment for methamphetamine use in the past 12 months."
+        },
+        {
+            "relationship": "hasPainRelieverOutpatientTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "PainRelieverOutpatientTreatment",
+            "description": "Indicates whether the respondent received outpatient treatment for pain reliever use in the past 12 months."
+        },
+        {
+            "relationship": "hasStimulantOutpatientTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "StimulantOutpatientTreatment",
+            "description": "Indicates whether the respondent received outpatient treatment for stimulant use in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "MethamphetamineOutpatientTreatment",
+            "predicate": "frequency",
+            "object": "283"
+        },
+        {
+            "subject": "NeverUsedAlcoholOrDrugs",
+            "predicate": "frequency",
+            "object": "10772"
+        },
+        {
+            "subject": "UsedAlcoholOrDrugsButNotMethamphetamine",
+            "predicate": "frequency",
+            "object": "45067"
+        },
+        {
+            "subject": "PainRelieverOutpatientTreatment",
+            "predicate": "frequency",
+            "object": "316"
+        },
+        {
+            "subject": "NeverUsedAlcoholOrDrugs",
+            "predicate": "frequency",
+            "object": "10772"
+        },
+        {
+            "subject": "UsedAlcoholOrDrugsButNotPainRelievers",
+            "predicate": "frequency",
+            "object": "19351"
+        },
+        {
+            "subject": "StimulantOutpatientTreatment",
+            "predicate": "frequency",
+            "object": "129"
+        },
+        {
+            "subject": "NeverUsedAlcoholOrDrugs",
+            "predicate": "frequency",
+            "object": "10772"
+        },
+        {
+            "subject": "UsedAlcoholOrDrugsButNotStimulants",
+            "predicate": "frequency",
+            "object": "39566"
+        }
+    ]
+}

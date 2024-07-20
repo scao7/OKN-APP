@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyCode",
+            "description": "The unique code associated with each survey entry."
+        },
+        {
+            "entity": "Label",
+            "description": "The label or unique identifier for each survey entry."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency of responses without applying any statistical weighting."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is incomplete or missing from the survey responses."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each response in the survey data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyCode",
+            "source_entity": "Survey",
+            "target_entity": "SurveyCode",
+            "description": "Relates each survey to its unique code."
+        },
+        {
+            "relationship": "hasLabel",
+            "source_entity": "Survey",
+            "target_entity": "Label",
+            "description": "Associates each survey entry with a label or unique identifier."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency of responses."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Identifies the data that is incomplete or missing from survey responses."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Percentage",
+            "description": "Defines the percentage representation of each survey response."
+        }
+    ]
+}

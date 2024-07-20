@@ -1,0 +1,126 @@
+{
+    "entities": [
+        {
+            "entity": "Arson",
+            "description": "The act of intentionally setting fire to property."
+        },
+        {
+            "entity": "Extortion",
+            "description": "The practice of obtaining something, especially money, through force or threats."
+        },
+        {
+            "entity": "Burglary",
+            "description": "The unlawful entry into a building with intent to commit a crime, especially theft."
+        },
+        {
+            "entity": "Theft From Motor Vehicle",
+            "description": "Stealing items from inside a motor vehicle."
+        },
+        {
+            "entity": "Motor Vehicle Theft",
+            "description": "The act of stealing or attempting to steal a motor vehicle."
+        },
+        {
+            "entity": "Counterfeiting",
+            "description": "The act of making an imitation of currency, documents, or goods with the intent to deceive or defraud."
+        },
+        {
+            "entity": "Welfare Fraud",
+            "description": "The act of illegally using state welfare systems by knowingly withholding information or giving false information."
+        },
+        {
+            "entity": "Destruction of Property",
+            "description": "The act of damaging or vandalizing property."
+        },
+        {
+            "entity": "Drug Violation",
+            "description": "The illegal possession, distribution, or manufacture of drugs or narcotics."
+        },
+        {
+            "entity": "Drug Equipment Violation",
+            "description": "The possession, distribution, or manufacture of equipment used for drug-related activities."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "The act of engaging in sexual activity for payment."
+        },
+        {
+            "entity": "Human Trafficking",
+            "description": "The illegal trade of humans for the purposes of forced labor, sexual slavery, or commercial sexual exploitation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Arson",
+            "description": "Indicates involvement in the crime of arson."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Extortion",
+            "description": "Indicates involvement in the crime of extortion."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Burglary",
+            "description": "Indicates involvement in the crime of burglary."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Theft From Motor Vehicle",
+            "description": "Indicates involvement in the crime of theft from a motor vehicle."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Motor Vehicle Theft",
+            "description": "Indicates involvement in the crime of motor vehicle theft."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Counterfeiting",
+            "description": "Indicates involvement in the crime of counterfeiting."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Welfare Fraud",
+            "description": "Indicates involvement in the crime of welfare fraud."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Destruction of Property",
+            "description": "Indicates involvement in the crime of destruction of property."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Drug Violation",
+            "description": "Indicates involvement in the crime of drug violation."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Drug Equipment Violation",
+            "description": "Indicates involvement in the crime of drug equipment violation."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Prostitution",
+            "description": "Indicates involvement in the crime of prostitution."
+        },
+        {
+            "relationship": "involvesCrime",
+            "source_entity": "Respondent",
+            "target_entity": "Human Trafficking",
+            "description": "Indicates involvement in the crime of human trafficking."
+        }
+    ]
+}

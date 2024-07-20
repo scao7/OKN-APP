@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyCases",
+            "description": "Total number of survey cases processed."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The number of cases missing data in the survey."
+        },
+        {
+            "entity": "UCROffenseCode",
+            "description": "Code representing specific types of crimes reported in the Uniform Crime Reporting system."
+        },
+        {
+            "entity": "CrimeType",
+            "description": "Category of offense such as murder, robbery, or burglary."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of incidents for each crime type."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "SurveyCases",
+            "description": "Indicates the total number of cases included in the survey."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "SurveyCases",
+            "target_entity": "MissingData",
+            "description": "Identifies the cases with missing data in the survey."
+        },
+        {
+            "relationship": "usesUCRCode",
+            "source_entity": "SurveyCases",
+            "target_entity": "UCROffenseCode",
+            "description": "Associates the survey with the Uniform Crime Reporting offense codes."
+        },
+        {
+            "relationship": "categorizesCrimeType",
+            "source_entity": "UCROffenseCode",
+            "target_entity": "CrimeType",
+            "description": "Defines the specific type of crime represented by each UCR offense code."
+        },
+        {
+            "relationship": "measuresFrequency",
+            "source_entity": "CrimeType",
+            "target_entity": "UnweightedFrequency",
+            "description": "Specifies the raw count of incidents for each crime type."
+        }
+    ]
+}

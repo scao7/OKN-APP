@@ -1,0 +1,108 @@
+{
+    "entities": [
+        {
+            "entity": "MentalHealth",
+            "description": "A broad category covering aspects related to mental health, including adult and adolescent mental health and depression."
+        },
+        {
+            "entity": "AdultMentalHealth",
+            "description": "Mental health aspects related to adults, including recorded and imputed data."
+        },
+        {
+            "entity": "AdolescentMentalHealth",
+            "description": "Mental health aspects related to adolescents, including depression."
+        },
+        {
+            "entity": "Depression",
+            "description": "A mental health condition that is analyzed for both adults and adolescents, with recorded and imputed data."
+        },
+        {
+            "entity": "MentalHealthServiceUtilization",
+            "description": "The utilization of mental health services, with recorded and imputed data."
+        },
+        {
+            "entity": "YouthExperiences",
+            "description": "Experiences and behaviors of youth, including recorded ones."
+        },
+        {
+            "entity": "Health",
+            "description": "A broad category covering various health-related topics, including recorded and imputed data, and emerging issues."
+        },
+        {
+            "entity": "EmergingIssues",
+            "description": "Recent or new health issues that are recorded and imputed."
+        },
+        {
+            "entity": "COVID-19",
+            "description": "Data related to the COVID-19 pandemic, including recorded cases."
+        },
+        {
+            "entity": "DrugUse",
+            "description": "Data related to drug use, nicotine dependence, and substance use disorder."
+        },
+        {
+            "entity": "NicotineDependence",
+            "description": "Dependence on nicotine, including data related to substance use disorder."
+        },
+        {
+            "entity": "SubstanceUseDisorder",
+            "description": "A disorder related to the use of substances, such as drugs and alcohol."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "includes",
+            "source_entity": "MentalHealth",
+            "target_entity": "AdultMentalHealth",
+            "description": "Includes data related to adult mental health."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MentalHealth",
+            "target_entity": "AdolescentMentalHealth",
+            "description": "Includes data related to adolescent mental health."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MentalHealth",
+            "target_entity": "Depression",
+            "description": "Includes data related to depression in both adults and adolescents."
+        },
+        {
+            "relationship": "utilizes",
+            "source_entity": "MentalHealth",
+            "target_entity": "MentalHealthServiceUtilization",
+            "description": "Data about the utilization of mental health services."
+        },
+        {
+            "relationship": "records",
+            "source_entity": "YouthExperiences",
+            "target_entity": "Youth",
+            "description": "Includes recorded data on the experiences and behaviors of youth."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Health",
+            "target_entity": "EmergingIssues",
+            "description": "Includes data on new and emerging health issues."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Health",
+            "target_entity": "COVID-19",
+            "description": "Includes data related to the COVID-19 pandemic."
+        },
+        {
+            "relationship": "contains",
+            "source_entity": "DrugUse",
+            "target_entity": "NicotineDependence",
+            "description": "Contains data related to nicotine dependence."
+        },
+        {
+            "relationship": "contains",
+            "source_entity": "DrugUse",
+            "target_entity": "SubstanceUseDisorder",
+            "description": "Contains data related to substance use disorder."
+        }
+    ]
+}

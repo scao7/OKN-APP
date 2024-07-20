@@ -1,0 +1,143 @@
+{
+    "entities": [
+        {
+            "entity": "HomeworkHelp",
+            "description": "Help with homework provided by parents in the past year."
+        },
+        {
+            "entity": "Chores",
+            "description": "Chores done around the house by the youth in the past year as requested by parents."
+        },
+        {
+            "entity": "TVLimit",
+            "description": "Limit imposed by parents on the amount of TV watched in the past year."
+        },
+        {
+            "entity": "SchoolTimeout",
+            "description": "Limit on time out from school imposed by parents in the past year."
+        },
+        {
+            "entity": "GoodJob",
+            "description": "Parents telling youth they had done a good job in the past year."
+        },
+        {
+            "entity": "ProudOfThingsDone",
+            "description": "Parents expressing pride in the things the youth had done in the past year."
+        },
+        {
+            "entity": "ArgumentsWithParents",
+            "description": "Number of arguments or fights with parents in the past year."
+        },
+        {
+            "entity": "SeriousFightAtSchoolWork",
+            "description": "Instances of serious fights at school or work in the past year."
+        },
+        {
+            "entity": "GroupFights",
+            "description": "Instances of youth fighting with a group versus another group in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "providedHomeworkHelp",
+            "source_entity": "Parents",
+            "target_entity": "HomeworkHelp",
+            "description": "Parents providing help with homework in the past year."
+        },
+        {
+            "relationship": "requestedChores",
+            "source_entity": "Parents",
+            "target_entity": "Chores",
+            "description": "Parents requesting the youth to do chores in the past year."
+        },
+        {
+            "relationship": "imposedTVLimit",
+            "source_entity": "Parents",
+            "target_entity": "TVLimit",
+            "description": "Parents limiting the amount of TV the youth watches in the past year."
+        },
+        {
+            "relationship": "imposedSchoolTimeout",
+            "source_entity": "Parents",
+            "target_entity": "SchoolTimeout",
+            "description": "Parents limiting the timeout from school in the past year."
+        },
+        {
+            "relationship": "toldGoodJob",
+            "source_entity": "Parents",
+            "target_entity": "GoodJob",
+            "description": "Parents telling the youth they had done a good job in the past year."
+        },
+        {
+            "relationship": "expressedPride",
+            "source_entity": "Parents",
+            "target_entity": "ProudOfThingsDone",
+            "description": "Parents expressing pride in the things the youth had done in the past year."
+        },
+        {
+            "relationship": "hadArguments",
+            "source_entity": "Youth",
+            "target_entity": "ArgumentsWithParents",
+            "description": "Youth having arguments or fights with parents in the past year."
+        },
+        {
+            "relationship": "hadSeriousFights",
+            "source_entity": "Youth",
+            "target_entity": "SeriousFightAtSchoolWork",
+            "description": "Youth having serious fights at school or work in the past year."
+        },
+        {
+            "relationship": "foughtInGroups",
+            "source_entity": "Youth",
+            "target_entity": "GroupFights",
+            "description": "Youth fighting with a group versus another group in the past year."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Parents",
+            "predicate": "helpedWith",
+            "object": "HomeworkHelp"
+        },
+        {
+            "subject": "Parents",
+            "predicate": "madeDo",
+            "object": "Chores"
+        },
+        {
+            "subject": "Parents",
+            "predicate": "limitedAmountOf",
+            "object": "TV"
+        },
+        {
+            "subject": "Parents",
+            "predicate": "limitedAmountOf",
+            "object": "SchoolTimeout"
+        },
+        {
+            "subject": "Parents",
+            "predicate": "toldHadDoneGoodJob",
+            "object": "GoodJob"
+        },
+        {
+            "subject": "Parents",
+            "predicate": "expressedPride",
+            "object": "ProudOfThingsDone"
+        },
+        {
+            "subject": "Youth",
+            "predicate": "arguedWith",
+            "object": "Parents"
+        },
+        {
+            "subject": "Youth",
+            "predicate": "hadSeriousFight",
+            "object": "SchoolWork"
+        },
+        {
+            "subject": "Youth",
+            "predicate": "foughtWith",
+            "object": "Groups"
+        }
+    ]
+}

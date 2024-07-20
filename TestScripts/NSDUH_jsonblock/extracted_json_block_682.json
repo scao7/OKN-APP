@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "Drug",
+            "description": "Substances listed for the purpose of tracking use in the survey."
+        },
+        {
+            "entity": "OutsideOfPrescriptionDrugs",
+            "description": "Drugs that fall outside common prescription drugs, including OTC (over-the-counter) and illegal substances."
+        },
+        {
+            "entity": "DrugCode",
+            "description": "A numeric code assigned to each drug mentioned."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug as reported in the survey."
+        },
+        {
+            "entity": "TimesMentioned",
+            "description": "Number of times the drug was mentioned in the survey under the \u2018OTHER\u2019 category."
+        },
+        {
+            "entity": "PercentageOfAllDrugs",
+            "description": "Percentage of mentions of the drug out of the total number of drug mentions in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Associates a drug with its assigned numeric code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Names each drug listed."
+        },
+        {
+            "relationship": "hasTimesMentioned",
+            "source_entity": "Drug",
+            "target_entity": "TimesMentioned",
+            "description": "Indicates the number of times a drug is mentioned in survey responses."
+        },
+        {
+            "relationship": "hasPercentageOfAllDrugs",
+            "source_entity": "Drug",
+            "target_entity": "PercentageOfAllDrugs",
+            "description": "Represents the percentage proportion of a specific drug mention out of all drug mentions."
+        },
+        {
+            "relationship": "belongsToOutsideOfPrescriptionDrugs",
+            "source_entity": "Drug",
+            "target_entity": "OutsideOfPrescriptionDrugs",
+            "description": "Categorizes the drug as being outside common prescription drugs, including OTC and illegal substances."
+        }
+    ]
+}

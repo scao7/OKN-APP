@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "SubTreatmentNeed",
+            "description": "The unmet need for substance use treatment."
+        },
+        {
+            "entity": "NoHealthInsuranceCoverage",
+            "description": "Lack of health insurance coverage for substance use treatment."
+        },
+        {
+            "entity": "HealthInsuranceDidNotCoverEnough",
+            "description": "Health insurance not covering enough cost for substance use treatment."
+        },
+        {
+            "entity": "DidNotKnowHowToGetTreatment",
+            "description": "Lack of knowledge on how to obtain substance use treatment."
+        },
+        {
+            "entity": "NoPreferredProvider",
+            "description": "Inability to find a preferred provider for substance use treatment."
+        },
+        {
+            "entity": "NoOpeningsWithPreferredProvider",
+            "description": "No available openings with the preferred provider for substance use treatment."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasNoHealthInsuranceCoverage",
+            "source_entity": "SubTreatmentNeed",
+            "target_entity": "NoHealthInsuranceCoverage",
+            "description": "Indicates an unmet need for treatment due to lack of health insurance coverage."
+        },
+        {
+            "relationship": "hasNotEnoughCover",
+            "source_entity": "SubTreatmentNeed",
+            "target_entity": "HealthInsuranceDidNotCoverEnough",
+            "description": "Indicates an unmet need for treatment due to insufficient health insurance coverage."
+        },
+        {
+            "relationship": "hasNoKnowledge",
+            "source_entity": "SubTreatmentNeed",
+            "target_entity": "DidNotKnowHowToGetTreatment",
+            "description": "Indicates an unmet need for treatment due to a lack of knowledge on how to get treatment."
+        },
+        {
+            "relationship": "hasNoPreferredProvider",
+            "source_entity": "SubTreatmentNeed",
+            "target_entity": "NoPreferredProvider",
+            "description": "Indicates an unmet need for treatment due to inability to find a preferred provider."
+        },
+        {
+            "relationship": "hasNoOpenings",
+            "source_entity": "SubTreatmentNeed",
+            "target_entity": "NoOpeningsWithPreferredProvider",
+            "description": "Indicates an unmet need for treatment due to no available openings with the preferred provider."
+        }
+    ]
+}

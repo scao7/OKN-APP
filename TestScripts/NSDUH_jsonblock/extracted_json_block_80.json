@@ -1,0 +1,52 @@
+{
+    "entities": [
+        {
+            "entity": "Address",
+            "description": "The location participating in the survey."
+        },
+        {
+            "entity": "WorkingCellPhone",
+            "description": "Presence of a working cell phone at the address."
+        },
+        {
+            "entity": "LandlinePhone",
+            "description": "Presence of a landline phone at the address."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWorkingCellPhone",
+            "source_entity": "Address",
+            "target_entity": "WorkingCellPhone",
+            "description": "Indicates whether there is a working cell phone at the address."
+        },
+        {
+            "relationship": "hasLandlinePhone",
+            "source_entity": "Address",
+            "target_entity": "LandlinePhone",
+            "description": "Indicates whether there is a landline phone at the address."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Address",
+            "predicate": "workingCellPhone",
+            "object": "Yes"
+        },
+        {
+            "subject": "Address",
+            "predicate": "workingCellPhone",
+            "object": "No"
+        },
+        {
+            "subject": "Address",
+            "predicate": "landlinePhone",
+            "object": "Yes"
+        },
+        {
+            "subject": "Address",
+            "predicate": "landlinePhone",
+            "object": "No"
+        }
+    ]
+}

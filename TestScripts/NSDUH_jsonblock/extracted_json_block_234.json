@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "SedativeUseReason",
+            "description": "Reason for the last use of sedatives, including physical pain relief, feeling good, sleep aid, emotional relief, etc."
+        },
+        {
+            "entity": "MainSedativeUseReason",
+            "description": "Main reason for the last use of sedatives, such as relieving tension, feeling good, or because of addiction."
+        },
+        {
+            "entity": "PastYearSedativeMisuse",
+            "description": "Indicates whether the respondent misused sedatives in the past 12 months."
+        },
+        {
+            "entity": "PrescriptionTypeLastMisuse",
+            "description": "Indicates if the last misuse was with or without a prescription."
+        },
+        {
+            "entity": "BenzodiazepineMisusePastYear",
+            "description": "Indicates whether the respondent misused any Benzodiazepine sedatives in the past year."
+        },
+        {
+            "entity": "Respondent",
+            "description": "The individual providing responses to the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSedativeUseReason",
+            "source_entity": "Respondent",
+            "target_entity": "SedativeUseReason",
+            "description": "Relates the respondent to the reason for their last use of sedatives."
+        },
+        {
+            "relationship": "hasMainSedativeUseReason",
+            "source_entity": "Respondent",
+            "target_entity": "MainSedativeUseReason",
+            "description": "Defines the main reason for the respondent\u2019s last use of sedatives."
+        },
+        {
+            "relationship": "hasPastYearSedativeMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "PastYearSedativeMisuse",
+            "description": "Indicates whether the respondent misused sedatives in the past year."
+        },
+        {
+            "relationship": "hasPrescriptionTypeLastMisuse",
+            "source_entity": "PastYearSedativeMisuse",
+            "target_entity": "PrescriptionTypeLastMisuse",
+            "description": "Defines whether the last misuse occurred with or without a prescription."
+        },
+        {
+            "relationship": "hasBenzodiazepineMisusePastYear",
+            "source_entity": "Respondent",
+            "target_entity": "BenzodiazepineMisusePastYear",
+            "description": "Indicates whether the respondent misused Benzodiazepine sedatives in the past year."
+        }
+    ]
+}

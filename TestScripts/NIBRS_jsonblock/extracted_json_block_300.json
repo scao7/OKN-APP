@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "VictimType",
+            "description": "Type of relationship between victim and offender."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Number of unweighted cases for each type of relationship."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage representation of each victim type out of total cases."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "Number of valid cases observed."
+        },
+        {
+            "entity": "Location",
+            "description": "Specific location reference in the dataset."
+        },
+        {
+            "entity": "VariableType",
+            "description": "Type and format of the dataset variable."
+        },
+        {
+            "entity": "MissingValues",
+            "description": "Range of possible missing values in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVictimType",
+            "source_entity": "DataRecord",
+            "target_entity": "VictimType",
+            "description": "Associates each data record with a type of victim relationship."
+        },
+        {
+            "relationship": "measuredBy",
+            "source_entity": "VictimType",
+            "target_entity": "UnweightedFrequency",
+            "description": "Frequency measurement of occurrence for each victim type."
+        },
+        {
+            "relationship": "expressedAs",
+            "source_entity": "VictimType",
+            "target_entity": "Percentage",
+            "description": "Expresses the frequency of each victim type as a percentage."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Dataset",
+            "target_entity": "ValidCases",
+            "description": "Indicates the total number of valid cases in the dataset."
+        },
+        {
+            "relationship": "locatedAt",
+            "source_entity": "DataRecord",
+            "target_entity": "Location",
+            "description": "Locates each data record within the dataset."
+        },
+        {
+            "relationship": "typedAs",
+            "source_entity": "Variable",
+            "target_entity": "VariableType",
+            "description": "Defines the type and format of a dataset variable."
+        },
+        {
+            "relationship": "includesMissingValues",
+            "source_entity": "Dataset",
+            "target_entity": "MissingValues",
+            "description": "Specifies the range of missing values possible in the dataset."
+        }
+    ]
+}

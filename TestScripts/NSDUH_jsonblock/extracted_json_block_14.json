@@ -1,0 +1,116 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyYear",
+            "description": "The year in which the NSDUH survey was conducted."
+        },
+        {
+            "entity": "ResponseMode",
+            "description": "The mode by which respondents provided their answers, e.g., in-person."
+        },
+        {
+            "entity": "Gender",
+            "description": "The gender of the respondent."
+        },
+        {
+            "entity": "Race",
+            "description": "The racial background of the respondent."
+        },
+        {
+            "entity": "NicotineSection",
+            "description": "Part of the survey focused on the use of nicotine products."
+        },
+        {
+            "entity": "MarijuanaSection",
+            "description": "Part of the survey focused on the use of marijuana."
+        },
+        {
+            "entity": "DrugTreatmentSection",
+            "description": "Part of the survey focused on the use of substances and receiving treatments."
+        },
+        {
+            "entity": "CigaretteType",
+            "description": "Specific types of cigarettes queried in the survey, such as menthol, light cigarettes."
+        },
+        {
+            "entity": "VapingFrequency",
+            "description": "Frequency of nicotine vaping by the respondent."
+        },
+        {
+            "entity": "MarijuanaProduct",
+            "description": "Different forms of marijuana products queried in the survey."
+        },
+        {
+            "entity": "TreatmentType",
+            "description": "Different types of drug treatments received."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyYear",
+            "source_entity": "Survey",
+            "target_entity": "SurveyYear",
+            "description": "Relates the survey to the specific year it was conducted."
+        },
+        {
+            "relationship": "hasResponseMode",
+            "source_entity": "Survey",
+            "target_entity": "ResponseMode",
+            "description": "Relates the survey to the mode of response."
+        },
+        {
+            "relationship": "hasGender",
+            "source_entity": "Respondent",
+            "target_entity": "Gender",
+            "description": "Identifies the gender of the respondent."
+        },
+        {
+            "relationship": "hasRace",
+            "source_entity": "Respondent",
+            "target_entity": "Race",
+            "description": "Identifies the racial background of the respondent."
+        },
+        {
+            "relationship": "includesNicotineSection",
+            "source_entity": "Survey",
+            "target_entity": "NicotineSection",
+            "description": "Indicates that the survey includes a section on nicotine use."
+        },
+        {
+            "relationship": "includesMarijuanaSection",
+            "source_entity": "Survey",
+            "target_entity": "MarijuanaSection",
+            "description": "Indicates that the survey includes a section on marijuana use."
+        },
+        {
+            "relationship": "includesDrugTreatmentSection",
+            "source_entity": "Survey",
+            "target_entity": "DrugTreatmentSection",
+            "description": "Indicates that the survey includes a section on drug treatment."
+        },
+        {
+            "relationship": "hasCigaretteType",
+            "source_entity": "NicotineSection",
+            "target_entity": "CigaretteType",
+            "description": "Details the specific types of cigarettes queried in the nicotine section."
+        },
+        {
+            "relationship": "hasVapingFrequency",
+            "source_entity": "NicotineSection",
+            "target_entity": "VapingFrequency",
+            "description": "Details the frequency of nicotine vaping by the respondent."
+        },
+        {
+            "relationship": "hasMarijuanaProduct",
+            "source_entity": "MarijuanaSection",
+            "target_entity": "MarijuanaProduct",
+            "description": "Details the different forms of marijuana products queried in the marijuana section."
+        },
+        {
+            "relationship": "hasTreatmentType",
+            "source_entity": "DrugTreatmentSection",
+            "target_entity": "TreatmentType",
+            "description": "Details the different types of drug treatments received according to the drug treatment section."
+        }
+    ]
+}

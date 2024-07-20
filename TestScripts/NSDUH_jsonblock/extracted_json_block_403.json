@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "AlcoholUseForWithdrawal",
+            "description": "Use of alcohol to get over or avoid withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "OtherSubstanceUseForWithdrawal",
+            "description": "Use of substances other than alcohol to get over or avoid withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "StimulantUseEfforts",
+            "description": "Efforts to use stimulants, feel effects, or get over effects of stimulants in the past 12 months."
+        },
+        {
+            "entity": "StimulantGettingEfforts",
+            "description": "Efforts to get or try to get prescription stimulants in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAlcoholUseForWithdrawal",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholUseForWithdrawal",
+            "description": "Indicates if the respondent used alcohol to get over or avoid withdrawal symptoms in the past 12 months."
+        },
+        {
+            "relationship": "hasOtherSubstanceUseForWithdrawal",
+            "source_entity": "Respondent",
+            "target_entity": "OtherSubstanceUseForWithdrawal",
+            "description": "Indicates if the respondent used substances other than alcohol to get over or avoid withdrawal symptoms in the past 12 months."
+        },
+        {
+            "relationship": "hasStimulantUseEfforts",
+            "source_entity": "Respondent",
+            "target_entity": "StimulantUseEfforts",
+            "description": "Indicates if the respondent spent a great deal of time using or feeling the effects of stimulants in the past 12 months."
+        },
+        {
+            "relationship": "hasStimulantGettingEfforts",
+            "source_entity": "Respondent",
+            "target_entity": "StimulantGettingEfforts",
+            "description": "Indicates if the respondent spent a great deal of time getting or trying to get prescription stimulants in the past 12 months."
+        }
+    ]
+}

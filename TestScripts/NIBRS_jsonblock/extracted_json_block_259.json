@@ -1,0 +1,176 @@
+{
+    "entities": [
+        {
+            "entity": "AggAsltHomicideCircumstance",
+            "description": "Circumstances under which aggravated assault or homicide occurred."
+        },
+        {
+            "entity": "ChildPlayingWithWeapon",
+            "description": "Incident involving a child playing with a weapon."
+        },
+        {
+            "entity": "GunCleaningAccident",
+            "description": "Accidental discharge of a gun during cleaning."
+        },
+        {
+            "entity": "HuntingAccident",
+            "description": "Incident occurring during hunting."
+        },
+        {
+            "entity": "NegligentWeaponHandling",
+            "description": "Other incidents involving negligent handling of a weapon."
+        },
+        {
+            "entity": "NegligentKillings",
+            "description": "Incidents involving killings due to negligence."
+        },
+        {
+            "entity": "Argument",
+            "description": "Incident involving an argument."
+        },
+        {
+            "entity": "AssaultOnLawEnforcement",
+            "description": "Incident involving assault on law enforcement officer(s)."
+        },
+        {
+            "entity": "DrugDealing",
+            "description": "Incident involving drug dealing."
+        },
+        {
+            "entity": "Gangland",
+            "description": "Gang-related incident."
+        },
+        {
+            "entity": "JuvenileGang",
+            "description": "Incident involving a juvenile gang."
+        },
+        {
+            "entity": "LoversQuarrelDomesticViolence",
+            "description": "Incident involving a lovers' quarrel or domestic violence."
+        },
+        {
+            "entity": "MercyKilling",
+            "description": "Incident involving a mercy killing."
+        },
+        {
+            "entity": "OtherFelony",
+            "description": "Incident involving other felonies."
+        },
+        {
+            "entity": "OtherCircumstances",
+            "description": "Other unspecified circumstances."
+        },
+        {
+            "entity": "CriminalKilledByPrivateCitizen",
+            "description": "Incident where a criminal is killed by a private citizen."
+        },
+        {
+            "entity": "CriminalKilledByPoliceOfficer",
+            "description": "Incident where a criminal is killed by a police officer."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAggAsltHomicideCircumstance",
+            "source_entity": "Incident",
+            "target_entity": "AggAsltHomicideCircumstance",
+            "description": "Relates the incident to the specific circumstances of aggravated assault or homicide."
+        },
+        {
+            "relationship": "involvesChildPlayingWithWeapon",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "ChildPlayingWithWeapon",
+            "description": "Circumstance involves a child playing with a weapon."
+        },
+        {
+            "relationship": "involvesGunCleaningAccident",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "GunCleaningAccident",
+            "description": "Circumstance involves an accident during gun cleaning."
+        },
+        {
+            "relationship": "involvesHuntingAccident",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "HuntingAccident",
+            "description": "Circumstance involves a hunting accident."
+        },
+        {
+            "relationship": "involvesNegligentWeaponHandling",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "NegligentWeaponHandling",
+            "description": "Circumstance involves negligent weapon handling."
+        },
+        {
+            "relationship": "involvesNegligentKillings",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "NegligentKillings",
+            "description": "Circumstance involves negligent killings."
+        },
+        {
+            "relationship": "involvesArgument",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "Argument",
+            "description": "Circumstance involves an argument."
+        },
+        {
+            "relationship": "involvesAssaultOnLawEnforcement",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "AssaultOnLawEnforcement",
+            "description": "Circumstance involves assault on law enforcement officer(s)."
+        },
+        {
+            "relationship": "involvesDrugDealing",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "DrugDealing",
+            "description": "Circumstance involves drug dealing."
+        },
+        {
+            "relationship": "involvesGangland",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "Gangland",
+            "description": "Circumstance involves gangland activities."
+        },
+        {
+            "relationship": "involvesJuvenileGang",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "JuvenileGang",
+            "description": "Circumstance involves a juvenile gang."
+        },
+        {
+            "relationship": "involvesLoversQuarrelDomesticViolence",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "LoversQuarrelDomesticViolence",
+            "description": "Circumstance involves a lovers' quarrel or domestic violence."
+        },
+        {
+            "relationship": "involvesMercyKilling",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "MercyKilling",
+            "description": "Circumstance involves a mercy killing."
+        },
+        {
+            "relationship": "involvesOtherFelony",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "OtherFelony",
+            "description": "Circumstance involves other felonies."
+        },
+        {
+            "relationship": "involvesOtherCircumstances",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "OtherCircumstances",
+            "description": "Circumstance involves other unspecified circumstances."
+        },
+        {
+            "relationship": "involvesCriminalKilledByPrivateCitizen",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "CriminalKilledByPrivateCitizen",
+            "description": "Circumstance involves a criminal killed by a private citizen."
+        },
+        {
+            "relationship": "involvesCriminalKilledByPoliceOfficer",
+            "source_entity": "AggAsltHomicideCircumstance",
+            "target_entity": "CriminalKilledByPoliceOfficer",
+            "description": "Circumstance involves a criminal killed by a police officer."
+        }
+    ]
+}

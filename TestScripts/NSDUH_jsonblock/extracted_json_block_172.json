@@ -1,0 +1,250 @@
+{
+    "entities": [
+        {
+            "entity": "Methamphetamine",
+            "description": "A potent central nervous system stimulant."
+        },
+        {
+            "entity": "Gasoline",
+            "description": "A flammable liquid often used as fuel."
+        },
+        {
+            "entity": "Old Paint",
+            "description": "Outdated or not fresh paint."
+        },
+        {
+            "entity": "LSD",
+            "description": "A powerful hallucinogenic drug."
+        },
+        {
+            "entity": "Psilocybin",
+            "description": "A naturally occurring psychedelic compound produced by certain fungi."
+        },
+        {
+            "entity": "PCP",
+            "description": "A dissociative drug, also known as 'angel dust'."
+        },
+        {
+            "entity": "MDA",
+            "description": "A psychedelic and empathogenic drug."
+        },
+        {
+            "entity": "Morning Glory Seeds",
+            "description": "Seeds of the morning glory plant which contain psychoactive substances."
+        },
+        {
+            "entity": "BC Powder",
+            "description": "A brand of over-the-counter analgesics."
+        },
+        {
+            "entity": "Oxycodone",
+            "description": "An opioid pain medication."
+        },
+        {
+            "entity": "LSD",
+            "description": "A hallucinogenic drug known for its psychological effects."
+        },
+        {
+            "entity": "San Pedro",
+            "description": "A cactus containing mescaline."
+        },
+        {
+            "entity": "Ayahuasca",
+            "description": "A South American psychoactive brew."
+        },
+        {
+            "entity": "2C-T-2",
+            "description": "A synthetic psychedelic of the phenethylamine class."
+        },
+        {
+            "entity": "2C-I",
+            "description": "A psychedelic drug and phenethylamine of the 2C family."
+        },
+        {
+            "entity": "DOC",
+            "description": "A psychedelic drug and a substituted amphetamine."
+        },
+        {
+            "entity": "25B-NBOMe",
+            "description": "A synthetic psychedelic substance."
+        },
+        {
+            "entity": "LEMON",
+            "description": "A hallucinogenic drug, otherwise unspecified."
+        },
+        {
+            "entity": "Bath Salts",
+            "description": "A synthetic drug with stimulant and psychoactive properties."
+        },
+        {
+            "entity": "Synthetic Cannabinoids",
+            "description": "Substances that mimic the effects of cannabis."
+        },
+        {
+            "entity": "DMT",
+            "description": "A powerful hallucinogenic drug producing intense visual and auditory hallucinations."
+        },
+        {
+            "entity": "4-FMA",
+            "description": "A synthetic stimulant drug of the amphetamine class."
+        },
+        {
+            "entity": "5-MeO-DiPT",
+            "description": "A psychedelic tryptamine."
+        },
+        {
+            "entity": "25I-NBOMe",
+            "description": "A synthetic psychedelic."
+        },
+        {
+            "entity": "Sex-enhancement Hallucinogen",
+            "description": "A hallucinogen used for purported enhancement of sexual experiences."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Methamphetamine",
+            "target_entity": "SurveyPage",
+            "description": "Methamphetamine is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Gasoline",
+            "target_entity": "SurveyPage",
+            "description": "Gasoline is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Old Paint",
+            "target_entity": "SurveyPage",
+            "description": "Old Paint is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "LSD",
+            "target_entity": "SurveyPage",
+            "description": "LSD is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Psilocybin",
+            "target_entity": "SurveyPage",
+            "description": "Psilocybin is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "PCP",
+            "target_entity": "SurveyPage",
+            "description": "PCP is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "MDA",
+            "target_entity": "SurveyPage",
+            "description": "MDA is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Morning Glory Seeds",
+            "target_entity": "SurveyPage",
+            "description": "Morning Glory Seeds are mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "BC Powder",
+            "target_entity": "SurveyPage",
+            "description": "BC Powder is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Oxycodone",
+            "target_entity": "SurveyPage",
+            "description": "Oxycodone is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "San Pedro",
+            "target_entity": "SurveyPage",
+            "description": "San Pedro is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Ayahuasca",
+            "target_entity": "SurveyPage",
+            "description": "Ayahuasca is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "2C-T-2",
+            "target_entity": "SurveyPage",
+            "description": "2C-T-2 is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "2C-I",
+            "target_entity": "SurveyPage",
+            "description": "2C-I is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "DOC",
+            "target_entity": "SurveyPage",
+            "description": "DOC is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "25B-NBOMe",
+            "target_entity": "SurveyPage",
+            "description": "25B-NBOMe is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "LEMON",
+            "target_entity": "SurveyPage",
+            "description": "LEMON is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Bath Salts",
+            "target_entity": "SurveyPage",
+            "description": "Bath Salts are mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Synthetic Cannabinoids",
+            "target_entity": "SurveyPage",
+            "description": "Synthetic Cannabinoids are mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "DMT",
+            "target_entity": "SurveyPage",
+            "description": "DMT is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "4-FMA",
+            "target_entity": "SurveyPage",
+            "description": "4-FMA is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "5-MeO-DiPT",
+            "target_entity": "SurveyPage",
+            "description": "5-MeO-DiPT is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "25I-NBOMe",
+            "target_entity": "SurveyPage",
+            "description": "25I-NBOMe is mentioned in the survey."
+        },
+        {
+            "relationship": "mentionedIn",
+            "source_entity": "Sex-enhancement Hallucinogen",
+            "target_entity": "SurveyPage",
+            "description": "Sex-enhancement Hallucinogen is mentioned in the survey."
+        }
+    ]
+}

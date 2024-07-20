@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "HERAGE",
+            "description": "HEROIN AGE OF FIRST USE - IMPUTATION INDICATOR"
+        },
+        {
+            "entity": "IRHERAGE",
+            "description": "HEROIN YEAR OF FIRST USE - IMPUTATION REVISED"
+        },
+        {
+            "entity": "HERAGE",
+            "description": "HEROIN AGE OF FIRST USE - IMPUTATION INDICATOR"
+        },
+        {
+            "entity": "IRHALLUCAGE",
+            "description": "HALLUCINOGEN AGE OF FIRST USE - IMPUTATION REVISED"
+        },
+        {
+            "entity": "HALLUCAGE",
+            "description": "HALLUCINOGEN AGE OF FIRST USE - IMPUTATION INDICATOR"
+        },
+        {
+            "entity": "IRHALLUCYFU",
+            "description": "HALLUCINOGEN YEAR OF FIRST USE - IMPUTATION REVISED"
+        },
+        {
+            "entity": "HALLUCYFU",
+            "description": "HALLUCINOGEN YEAR OF FIRST USE - IMPUTATION INDICATOR"
+        },
+        {
+            "entity": "IRLSDAGE",
+            "description": "LSD AGE OF FIRST USE - IMPUTATION REVISED"
+        },
+        {
+            "entity": "LSDAGE",
+            "description": "LSD AGE OF FIRST USE - IMPUTATION INDICATOR"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "Heroin",
+            "target_entity": "HERAGE",
+            "description": "Indicates the age of first use of heroin."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "Heroin",
+            "target_entity": "IRHERAGE",
+            "description": "Indicates the year of first use of heroin."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "Heroin",
+            "target_entity": "HERAGE",
+            "description": "Indicates the age of first use of heroin."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "Hallucinogen",
+            "target_entity": "IRHALLUCAGE",
+            "description": "Indicates the age of first use of hallucinogen."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "Hallucinogen",
+            "target_entity": "HALLUCAGE",
+            "description": "Indicates the age of first use of hallucinogen."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "Hallucinogen",
+            "target_entity": "IRHALLUCYFU",
+            "description": "Indicates the year of first use of hallucinogen."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "Hallucinogen",
+            "target_entity": "HALLUCYFU",
+            "description": "Indicates the year of first use of hallucinogen."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "LSD",
+            "target_entity": "IRLSDAGE",
+            "description": "Indicates the age of first use of LSD."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "LSD",
+            "target_entity": "LSDAGE",
+            "description": "Indicates the age of first use of LSD."
+        }
+    ]
+}

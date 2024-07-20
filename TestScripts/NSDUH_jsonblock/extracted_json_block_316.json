@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "EverSmokedHeroin",
+            "description": "Whether the respondent has ever smoked heroin."
+        },
+        {
+            "entity": "TimeSinceLastSmokedHeroin",
+            "description": "The time period since the respondent last smoked heroin."
+        },
+        {
+            "entity": "EverSniffedHeroin",
+            "description": "Whether the respondent has ever sniffed or snorted heroin powder."
+        },
+        {
+            "entity": "TimeSinceLastSniffedHeroin",
+            "description": "The time period since the respondent last sniffed or snorted heroin powder."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSmokedHeroin",
+            "source_entity": "Respondent",
+            "target_entity": "EverSmokedHeroin",
+            "description": "Indicates whether the respondent has ever smoked heroin."
+        },
+        {
+            "relationship": "timeSinceLastSmoked",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastSmokedHeroin",
+            "description": "Specifies the time period since the respondent last smoked heroin."
+        },
+        {
+            "relationship": "hasSniffedHeroin",
+            "source_entity": "Respondent",
+            "target_entity": "EverSniffedHeroin",
+            "description": "Indicates whether the respondent has ever sniffed or snorted heroin powder."
+        },
+        {
+            "relationship": "timeSinceLastSniffed",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastSniffedHeroin",
+            "description": "Specifies the time period since the respondent last sniffed or snorted heroin powder."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "EverSmokedHeroin",
+            "predicate": "is a",
+            "object": "SurveyResponse"
+        },
+        {
+            "subject": "TimeSinceLastSmokedHeroin",
+            "predicate": "is a",
+            "object": "SurveyResponse"
+        },
+        {
+            "subject": "EverSniffedHeroin",
+            "predicate": "is a",
+            "object": "SurveyResponse"
+        },
+        {
+            "subject": "TimeSinceLastSniffedHeroin",
+            "predicate": "is a",
+            "object": "SurveyResponse"
+        }
+    ]
+}

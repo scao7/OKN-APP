@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceUnit",
+            "description": "Units by which substances are measured such as Kilogram, Ounce, Pound, Milliliter, Liter, Fluid Ounce, Gallon, Dosage Unit/Items, and Number of Plants."
+        },
+        {
+            "entity": "SubstanceMeasurement",
+            "description": "Frequency and percentage of various units of substance measurement in the dataset."
+        },
+        {
+            "entity": "SubstanceType",
+            "description": "Types of substances like Crack Cocaine, Cocaine, Hashish, Heroin, Marijuana, Morphine, Opium, Other Narcotics, LSD, PCP, Other Hallucinogens, Amphetamines/Methamphetamines, Other Stimulants, Barbiturates, Other Depressants, Other Drugs: Antidepressants."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The unweighted count of each type of substance reported."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each type of substance reported."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMeasurement",
+            "source_entity": "Substance",
+            "target_entity": "SubstanceUnit",
+            "description": "Specifies the units by which the substance is measured."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SubstanceMeasurement",
+            "target_entity": "Frequency",
+            "description": "Associate the measurement unit with its unweighted frequency in the dataset."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SubstanceMeasurement",
+            "target_entity": "Percentage",
+            "description": "Associate the measurement unit with its percentage representation in the dataset."
+        },
+        {
+            "relationship": "isTypeOf",
+            "source_entity": "Substance",
+            "target_entity": "SubstanceType",
+            "description": "Defines the type of substance."
+        }
+    ]
+}

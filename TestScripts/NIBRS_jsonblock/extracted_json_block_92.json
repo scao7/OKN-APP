@@ -1,0 +1,206 @@
+{
+    "entities": [
+        {
+            "entity": "WeaponType",
+            "description": "The category of weapon used in a force or weapon-related incident."
+        },
+        {
+            "entity": "Handgun",
+            "description": "A firearm designed to be handheld."
+        },
+        {
+            "entity": "HandgunAutomatic",
+            "description": "A handheld firearm that automatically chambers the next round."
+        },
+        {
+            "entity": "Rifle",
+            "description": "A long-barrel firearm designed for accurate shooting."
+        },
+        {
+            "entity": "RifleAutomatic",
+            "description": "A long-barrel firearm that automatically chambers the next round."
+        },
+        {
+            "entity": "Shotgun",
+            "description": "A firearm designed to be fired from the shoulder, shooting a spread of shot."
+        },
+        {
+            "entity": "ShotgunAutomatic",
+            "description": "A shotgun that automatically chambers the next round."
+        },
+        {
+            "entity": "OtherFirearm",
+            "description": "Other types of firearms not categorized under specific listed categories."
+        },
+        {
+            "entity": "KnifeCuttingInstrument",
+            "description": "Weapons that cut or stab, such as knives."
+        },
+        {
+            "entity": "BluntObject",
+            "description": "Objects that inflict injury through blunt force, such as clubs or bats."
+        },
+        {
+            "entity": "MotorVehicleVessel",
+            "description": "Vehicles used in force-related incidents."
+        },
+        {
+            "entity": "PersonalWeapons",
+            "description": "Body parts used as weapons, including hands, feet, teeth, etc."
+        },
+        {
+            "entity": "Poison",
+            "description": "Substances that can cause harm if ingested, inhaled, or absorbed."
+        },
+        {
+            "entity": "Explosives",
+            "description": "Explosive devices used as weapons."
+        },
+        {
+            "entity": "FireIncendiaryDevice",
+            "description": "Devices used to start fires intentionally."
+        },
+        {
+            "entity": "DrugsNarcoticsSleepingPills",
+            "description": "Substances used for their psychoactive effects or to incapacitate."
+        },
+        {
+            "entity": "Asphyxiation",
+            "description": "Cause of harm by suffocation or obstruction of breathing."
+        },
+        {
+            "entity": "Other",
+            "description": "Other types of weapons not categorized under specific listed categories."
+        },
+        {
+            "entity": "None",
+            "description": "Indicates the absence of a weapon used."
+        },
+        {
+            "entity": "UnknownMissingDNR",
+            "description": "Cases where the weapon type is unknown, missing, or did not report."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Incident",
+            "target_entity": "WeaponType",
+            "description": "Relates an incident to the type of weapon used."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "Handgun",
+            "description": "Indicates that the weapon type is a handgun."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "HandgunAutomatic",
+            "description": "Indicates that the weapon type is a handgun-automatic."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "Rifle",
+            "description": "Indicates that the weapon type is a rifle."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "RifleAutomatic",
+            "description": "Indicates that the weapon type is a rifle-automatic."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "Shotgun",
+            "description": "Indicates that the weapon type is a shotgun."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "ShotgunAutomatic",
+            "description": "Indicates that the weapon type is a shotgun-automatic."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "OtherFirearm",
+            "description": "Indicates that the weapon type is another type of firearm."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "KnifeCuttingInstrument",
+            "description": "Indicates that the weapon type is a knife or cutting instrument."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "BluntObject",
+            "description": "Indicates that the weapon type is blunt object."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "MotorVehicleVessel",
+            "description": "Indicates that the weapon type is a motor vehicle or vessel."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "PersonalWeapons",
+            "description": "Indicates that the weapon type is personal body parts."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "Poison",
+            "description": "Indicates that the weapon type is poison."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "Explosives",
+            "description": "Indicates that the weapon type is explosives."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "FireIncendiaryDevice",
+            "description": "Indicates that the weapon type is fire or incendiary device."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "DrugsNarcoticsSleepingPills",
+            "description": "Indicates that the weapon type is drugs, narcotics, or sleeping pills."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "Asphyxiation",
+            "description": "Indicates that the weapon type is asphyxiation."
+        },
+        {
+            "relationship": "hasSpecificWeapon",
+            "source_entity": "WeaponType",
+            "target_entity": "Other",
+            "description": "Indicates other types of weapon not categorized."
+        },
+        {
+            "relationship": "hasNoWeapon",
+            "source_entity": "Incident",
+            "target_entity": "None",
+            "description": "Indicates no weapon was used in the incident."
+        },
+        {
+            "relationship": "hasUnknownWeapon",
+            "source_entity": "Incident",
+            "target_entity": "UnknownMissingDNR",
+            "description": "Indicates the weapon type is unknown, missing, or did not report."
+        }
+    ]
+}

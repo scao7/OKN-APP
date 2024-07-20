@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "CaseID",
+            "description": "Unique identifier for each case in the dataset."
+        },
+        {
+            "entity": "FIPSCountyCode",
+            "description": "Federal Information Processing Standard (FIPS) code for counties."
+        },
+        {
+            "entity": "IBRReportStartDate",
+            "description": "Date when the state began incident-based reporting (IBR) for LEOKA."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency for different categories in the dataset."
+        },
+        {
+            "entity": "PercentageFrequency",
+            "description": "The percentage frequency for different categories in the dataset."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Indication of missing data points within the dataset."
+        },
+        {
+            "entity": "StatisticalMeasures",
+            "description": "Statistical summarization measures such as mean, median, mode, minimum, maximum, and standard deviation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasStatisticalMeasure",
+            "source_entity": "Dataset",
+            "target_entity": "StatisticalMeasures",
+            "description": "Statistical measures computed over the dataset values."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "CaseID",
+            "target_entity": "FIPSCountyCode",
+            "description": "Each CaseID is related to a corresponding FIPS county code."
+        },
+        {
+            "relationship": "hasStartDate",
+            "source_entity": "State",
+            "target_entity": "IBRReportStartDate",
+            "description": "Indicates the start date for reporting LEOKA data for a state."
+        },
+        {
+            "relationship": "containsUnweightedFrequency",
+            "source_entity": "Category",
+            "target_entity": "UnweightedFrequency",
+            "description": "Each category within the dataset has an unweighted frequency value."
+        },
+        {
+            "relationship": "containsPercentageFrequency",
+            "source_entity": "Category",
+            "target_entity": "PercentageFrequency",
+            "description": "Each category within the dataset has a percentage frequency value."
+        },
+        {
+            "relationship": "containsMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Indicates missing data points within the dataset."
+        }
+    ]
+}

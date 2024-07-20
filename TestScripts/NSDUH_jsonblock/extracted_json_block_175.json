@@ -1,0 +1,62 @@
+{
+    "entities": [
+        {
+            "entity": "HallucinogenUsage",
+            "description": "The usage of hallucinogens by the respondent."
+        },
+        {
+            "entity": "HallucinogenUsageDaysYearly",
+            "description": "The number of days the respondent used hallucinogens in the past year."
+        },
+        {
+            "entity": "HallucinogenUsageDaysMonthly",
+            "description": "The number of days the respondent used hallucinogens in the past month."
+        },
+        {
+            "entity": "HallucinogenUsageDaysWeekly",
+            "description": "The number of days the respondent used hallucinogens in the past week."
+        },
+        {
+            "entity": "ResponseType",
+            "description": "The type of response provided by the respondent (e.g., never used, don't know, refused)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsageFrequency",
+            "source_entity": "HallucinogenUsage",
+            "target_entity": "HallucinogenUsageDaysYearly",
+            "description": "Relates hallucinogen usage to the number of days used in the past year."
+        },
+        {
+            "relationship": "hasUsageFrequency",
+            "source_entity": "HallucinogenUsage",
+            "target_entity": "HallucinogenUsageDaysMonthly",
+            "description": "Relates hallucinogen usage to the number of days used in the past month."
+        },
+        {
+            "relationship": "hasUsageFrequency",
+            "source_entity": "HallucinogenUsage",
+            "target_entity": "HallucinogenUsageDaysWeekly",
+            "description": "Relates hallucinogen usage to the number of days used in the past week."
+        },
+        {
+            "relationship": "hasResponseType",
+            "source_entity": "Respondent",
+            "target_entity": "ResponseType",
+            "description": "Indicates the type of response given by the respondent regarding their hallucinogen usage."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "usesHallucinogens",
+            "object": "HallucinogenUsage"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "answered",
+            "object": "ResponseType"
+        }
+    ]
+}

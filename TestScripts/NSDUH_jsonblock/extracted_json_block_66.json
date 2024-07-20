@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "WRKDRGALB",
+            "description": "Workplace policy on covering alcohol, drugs, or both."
+        },
+        {
+            "entity": "WRKDREDU",
+            "description": "Workplace education on alcohol and drugs."
+        },
+        {
+            "entity": "WRKDRGHLP",
+            "description": "Workplace assistance program for alcohol or drug-related problems."
+        },
+        {
+            "entity": "WRKTSTALC",
+            "description": "Workplace tests for alcohol usage."
+        },
+        {
+            "entity": "WRKTSTDRG",
+            "description": "Workplace tests for drug usage."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "covers",
+            "source_entity": "WorkplacePolicy",
+            "target_entity": "WRKDRGALB",
+            "description": "Relates workplace policy to covering alcohol, drugs, or both."
+        },
+        {
+            "relationship": "provides",
+            "source_entity": "Workplace",
+            "target_entity": "WRKDREDU",
+            "description": "Relates workplace to providing education on alcohol and drugs."
+        },
+        {
+            "relationship": "offers",
+            "source_entity": "Workplace",
+            "target_entity": "WRKDRGHLP",
+            "description": "Relates workplace to offering assistance programs for alcohol or drug-related problems."
+        },
+        {
+            "relationship": "conducts",
+            "source_entity": "Workplace",
+            "target_entity": "WRKTSTALC",
+            "description": "Relates workplace to conducting tests for alcohol usage."
+        },
+        {
+            "relationship": "conducts",
+            "source_entity": "Workplace",
+            "target_entity": "WRKTSTDRG",
+            "description": "Relates workplace to conducting tests for drug usage."
+        }
+    ]
+}

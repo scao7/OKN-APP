@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "DrugOrAlcoholProblem",
+            "description": "Perceived ever having a drug or alcohol use problem."
+        },
+        {
+            "entity": "MentalHealthIssue",
+            "description": "Perceived ever having a mental health issue."
+        },
+        {
+            "entity": "RecoveryFromDrugOrAlcoholProblem",
+            "description": "Perceived recovery from a drug or alcohol use problem."
+        },
+        {
+            "entity": "RecoveryFromMentalHealthIssue",
+            "description": "Perceived recovery from a mental health issue."
+        },
+        {
+            "entity": "KratomUseEver",
+            "description": "Ever used kratom."
+        },
+        {
+            "entity": "KratomUsePastYear",
+            "description": "Used kratom in the past year."
+        },
+        {
+            "entity": "KratomUsePastMonth",
+            "description": "Used kratom in the past month."
+        },
+        {
+            "entity": "FlavoringVapingEver",
+            "description": "Ever used only flavoring vaping."
+        },
+        {
+            "entity": "FlavoringVapingPastYear",
+            "description": "Used flavoring vaping in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugOrAlcoholProblem",
+            "source_entity": "Respondent",
+            "target_entity": "DrugOrAlcoholProblem",
+            "description": "Indicates whether the respondent ever had a drug or alcohol use problem."
+        },
+        {
+            "relationship": "hasMentalHealthIssue",
+            "source_entity": "Respondent",
+            "target_entity": "MentalHealthIssue",
+            "description": "Indicates whether the respondent ever had a mental health issue."
+        },
+        {
+            "relationship": "hasRecoveredFromDrugOrAlcoholProblem",
+            "source_entity": "Respondent",
+            "target_entity": "RecoveryFromDrugOrAlcoholProblem",
+            "description": "Indicates whether the respondent perceives having recovered from a drug or alcohol use problem."
+        },
+        {
+            "relationship": "hasRecoveredFromMentalHealthIssue",
+            "source_entity": "Respondent",
+            "target_entity": "RecoveryFromMentalHealthIssue",
+            "description": "Indicates whether the respondent perceives having recovered from a mental health issue."
+        },
+        {
+            "relationship": "hasUsedKratomEver",
+            "source_entity": "Respondent",
+            "target_entity": "KratomUseEver",
+            "description": "Indicates whether the respondent has ever used kratom."
+        },
+        {
+            "relationship": "hasUsedKratomPastYear",
+            "source_entity": "Respondent",
+            "target_entity": "KratomUsePastYear",
+            "description": "Indicates whether the respondent used kratom in the past year."
+        },
+        {
+            "relationship": "hasUsedKratomPastMonth",
+            "source_entity": "Respondent",
+            "target_entity": "KratomUsePastMonth",
+            "description": "Indicates whether the respondent used kratom in the past month."
+        },
+        {
+            "relationship": "hasUsedFlavoringVapingEver",
+            "source_entity": "Respondent",
+            "target_entity": "FlavoringVapingEver",
+            "description": "Indicates whether the respondent has ever used only flavoring vaping."
+        },
+        {
+            "relationship": "hasUsedFlavoringVapingPastYear",
+            "source_entity": "Respondent",
+            "target_entity": "FlavoringVapingPastYear",
+            "description": "Indicates whether the respondent used flavoring vaping in the past year."
+        }
+    ]
+}

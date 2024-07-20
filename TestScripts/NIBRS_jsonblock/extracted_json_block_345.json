@@ -1,0 +1,80 @@
+{
+    "entities": [
+        {
+            "entity": "ArresteeSequenceNumber",
+            "description": "The sequence number of arrestees as recorded in the survey."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of occurrences for each arrestee sequence number."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of occurrences for each arrestee sequence number."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid cases used in the calculation."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases considered in the survey."
+        },
+        {
+            "entity": "Statistics",
+            "description": "Statistical measures such as Mean, Median, Mode, Minimum, Maximum, and Standard Deviation for the variable."
+        },
+        {
+            "entity": "VariableLocation",
+            "description": "Location details of the variable with width and decimal information."
+        },
+        {
+            "entity": "VariableType",
+            "description": "Type and range of missing values for the variable."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ArresteeSequenceNumber",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency for each arrestee sequence number."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "ArresteeSequenceNumber",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage of occurrences for each arrestee sequence number."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "ArresteeSequenceNumber",
+            "target_entity": "Statistics",
+            "description": "Provides statistical measures for the arrestee sequence number variable."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "ArresteeSequenceNumber",
+            "target_entity": "VariableLocation",
+            "description": "Specifies the location details for the arrestee sequence number variable."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "ArresteeSequenceNumber",
+            "target_entity": "VariableType",
+            "description": "Defines the type and range of missing values for the arrestee sequence number variable."
+        },
+        {
+            "relationship": "isBasedOn",
+            "source_entity": "Statistics",
+            "target_entity": "ValidCases",
+            "description": "Statistics are calculated based on the number of valid cases."
+        },
+        {
+            "relationship": "isBasedOn",
+            "source_entity": "Statistics",
+            "target_entity": "TotalCases",
+            "description": "Statistics are calculated based on the total number of cases considered."
+        }
+    ]
+}

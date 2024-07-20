@@ -1,0 +1,116 @@
+{
+    "entities": [
+        {
+            "entity": "PREG",
+            "description": "Indicates whether the respondent is pregnant."
+        },
+        {
+            "entity": "PRJOB2",
+            "description": "Represents the respondent's job status."
+        },
+        {
+            "entity": "POVERTY3",
+            "description": "Indicator for the respondent's poverty status."
+        },
+        {
+            "entity": "PSYCORE",
+            "description": "Measures the core psychological wellbeing of the respondent."
+        },
+        {
+            "entity": "PSYLCEVER",
+            "description": "Indicates if the respondent has ever received psychological counseling."
+        },
+        {
+            "entity": "PSYTXEVER",
+            "description": "Indicates if the respondent has ever received psychological treatment."
+        },
+        {
+            "entity": "PRIMJOB",
+            "description": "Indicates the primary job of the respondent."
+        },
+        {
+            "entity": "PYSYCOREX",
+            "description": "Extended measure of psychological wellbeing."
+        },
+        {
+            "entity": "PREMJOB2",
+            "description": "Indicates the respondent's primary employment."
+        },
+        {
+            "entity": "SEDANF",
+            "description": "Sedentary family member count."
+        },
+        {
+            "entity": "SEDANNYR",
+            "description": "Indicates the yearly sedentary activities."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isPregnant",
+            "source_entity": "Respondent",
+            "target_entity": "PREG",
+            "description": "Indicates whether the respondent is pregnant."
+        },
+        {
+            "relationship": "hasJobStatus",
+            "source_entity": "Respondent",
+            "target_entity": "PRJOB2",
+            "description": "Represents the respondent's job status."
+        },
+        {
+            "relationship": "hasPovertyStatus",
+            "source_entity": "Respondent",
+            "target_entity": "POVERTY3",
+            "description": "Indicator for the respondent's poverty status."
+        },
+        {
+            "relationship": "measuresPsychologicalWellbeing",
+            "source_entity": "Respondent",
+            "target_entity": "PSYCORE",
+            "description": "Measures the core psychological wellbeing of the respondent."
+        },
+        {
+            "relationship": "hasEverReceivedPsychologicalCounseling",
+            "source_entity": "Respondent",
+            "target_entity": "PSYLCEVER",
+            "description": "Indicates if the respondent has ever received psychological counseling."
+        },
+        {
+            "relationship": "hasEverReceivedPsychologicalTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "PSYTXEVER",
+            "description": "Indicates if the respondent has ever received psychological treatment."
+        },
+        {
+            "relationship": "hasPrimaryJob",
+            "source_entity": "Respondent",
+            "target_entity": "PRIMJOB",
+            "description": "Indicates the primary job of the respondent."
+        },
+        {
+            "relationship": "measuresExtendedPsychologicalWellbeing",
+            "source_entity": "Respondent",
+            "target_entity": "PSYCOREX",
+            "description": "Extended measure of psychological wellbeing."
+        },
+        {
+            "relationship": "hasPrimaryEmployment",
+            "source_entity": "Respondent",
+            "target_entity": "PREMJOB2",
+            "description": "Indicates the respondent's primary employment."
+        },
+        {
+            "relationship": "hasSedentaryFamilyCount",
+            "source_entity": "Family",
+            "target_entity": "SEDANF",
+            "description": "Sedentary family member count."
+        },
+        {
+            "relationship": "hasYearlySedentaryActivities",
+            "source_entity": "Respondent",
+            "target_entity": "SEDANNYR",
+            "description": "Indicates the yearly sedentary activities."
+        }
+    ]
+}

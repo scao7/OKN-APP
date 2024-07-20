@@ -1,0 +1,87 @@
+{
+    "entities": [
+        {
+            "entity": "EmotionalProblems",
+            "description": "Emotions, nerves, or mental health issues that interfere with daily activities."
+        },
+        {
+            "entity": "HouseholdResponsibilities",
+            "description": "Daily responsibilities at home such as taking care of household chores."
+        },
+        {
+            "entity": "WorkResponsibilityDifficulty",
+            "description": "The level of difficulty experienced in handling work responsibilities due to mental health issues."
+        },
+        {
+            "entity": "WorkOrSchool",
+            "description": "Refers to the context of either work or school where difficulties are encountered."
+        },
+        {
+            "entity": "WorkSchoolAbsenceReason",
+            "description": "Issues related to emotions, nerves, or mental health that keep individuals from working or going to school."
+        },
+        {
+            "entity": "DailyWorkEfficiency",
+            "description": "Ability to get daily work done quickly and effectively."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "interferesWith",
+            "source_entity": "EmotionalProblems",
+            "target_entity": "HouseholdResponsibilities",
+            "description": "Indicates that emotional problems can interfere with household responsibilities."
+        },
+        {
+            "relationship": "causesDifficultyIn",
+            "source_entity": "EmotionalProblems",
+            "target_entity": "WorkResponsibilityDifficulty",
+            "description": "Emotional problems causing varying levels of difficulty in fulfilling work responsibilities."
+        },
+        {
+            "relationship": "relatesTo",
+            "source_entity": "WorkResponsibilityDifficulty",
+            "target_entity": "WorkOrSchool",
+            "description": "The context within which work responsibility difficulty is assessed."
+        },
+        {
+            "relationship": "preventFrom",
+            "source_entity": "WorkSchoolAbsenceReason",
+            "target_entity": "WorkOrSchool",
+            "description": "Reasons related to emotional problems that prevent individuals from attending work or school."
+        },
+        {
+            "relationship": "affects",
+            "source_entity": "EmotionalProblems",
+            "target_entity": "DailyWorkEfficiency",
+            "description": "Emotional problems affecting the efficiency of completing daily work."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "EmotionalProblems",
+            "predicate": "interferesWith",
+            "object": "HouseholdResponsibilities"
+        },
+        {
+            "subject": "EmotionalProblems",
+            "predicate": "causesDifficultyIn",
+            "object": "WorkResponsibilityDifficulty"
+        },
+        {
+            "subject": "WorkResponsibilityDifficulty",
+            "predicate": "relatesTo",
+            "object": "WorkOrSchool"
+        },
+        {
+            "subject": "WorkSchoolAbsenceReason",
+            "predicate": "preventFrom",
+            "object": "WorkOrSchool"
+        },
+        {
+            "subject": "EmotionalProblems",
+            "predicate": "affects",
+            "object": "DailyWorkEfficiency"
+        }
+    ]
+}

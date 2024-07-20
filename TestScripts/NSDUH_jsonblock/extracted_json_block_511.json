@@ -1,0 +1,103 @@
+{
+    "entities": [
+        {
+            "entity": "NervousnessFrequency",
+            "description": "How often the respondent felt nervous during the past 30 days."
+        },
+        {
+            "entity": "HopelessnessFrequency",
+            "description": "How often the respondent felt hopeless during the past 30 days."
+        },
+        {
+            "entity": "RestlessnessFrequency",
+            "description": "How often the respondent felt restless or fidgety during the past 30 days."
+        },
+        {
+            "entity": "BadData",
+            "description": "Indicates logically assigned bad data."
+        },
+        {
+            "entity": "DontKnow",
+            "description": "Indicates that the respondent didn't know the answer."
+        },
+        {
+            "entity": "Refused",
+            "description": "Indicates that the respondent refused to answer."
+        },
+        {
+            "entity": "Blank",
+            "description": "Indicates no answer was given by the respondent."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "Indicates a legitimate skip in answering."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "feelsNervous",
+            "source_entity": "Respondent",
+            "target_entity": "NervousnessFrequency",
+            "description": "Indicates how often the respondent felt nervous in the past 30 days."
+        },
+        {
+            "relationship": "feelsHopeless",
+            "source_entity": "Respondent",
+            "target_entity": "HopelessnessFrequency",
+            "description": "Indicates how often the respondent felt hopeless in the past 30 days."
+        },
+        {
+            "relationship": "feelsRestless",
+            "source_entity": "Respondent",
+            "target_entity": "RestlessnessFrequency",
+            "description": "Indicates how often the respondent felt restless or fidgety in the past 30 days."
+        },
+        {
+            "relationship": "hasBadData",
+            "source_entity": "Response",
+            "target_entity": "BadData",
+            "description": "Associates a response with logically assigned bad data."
+        },
+        {
+            "relationship": "hasDontKnow",
+            "source_entity": "Response",
+            "target_entity": "DontKnow",
+            "description": "Associates a response with uncertainty."
+        },
+        {
+            "relationship": "hasRefused",
+            "source_entity": "Response",
+            "target_entity": "Refused",
+            "description": "Associates a response with a refusal to answer."
+        },
+        {
+            "relationship": "hasBlank",
+            "source_entity": "Response",
+            "target_entity": "Blank",
+            "description": "Associates a response with no answer."
+        },
+        {
+            "relationship": "hasLegitimateSkip",
+            "source_entity": "Response",
+            "target_entity": "LegitimateSkip",
+            "description": "Associates a response with a legitimate skip."
+        }
+    ],
+    "triples": [
+        {
+            "subject": "NervousnessFrequency",
+            "predicate": "isMeasuredIn",
+            "object": "past 30 days"
+        },
+        {
+            "subject": "HopelessnessFrequency",
+            "predicate": "isMeasuredIn",
+            "object": "past 30 days"
+        },
+        {
+            "subject": "RestlessnessFrequency",
+            "predicate": "isMeasuredIn",
+            "object": "past 30 days"
+        }
+    ]
+}

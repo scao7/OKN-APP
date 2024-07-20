@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseCategory",
+            "description": "Different response categories for survey questions."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of respondents for each response category."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each response category out of the total."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that was not recorded or is missing from the survey."
+        },
+        {
+            "entity": "MeasureUnit",
+            "description": "Units of measurement used in survey responses, such as Gram, Kilogram, Ounce, etc."
+        },
+        {
+            "entity": "CategoryFrequency",
+            "description": "Count of responses for a particular category."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasResponseCategory",
+            "source_entity": "Survey",
+            "target_entity": "ResponseCategory",
+            "description": "Relates the survey to different categories of responses."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Each response category has an associated unweighted frequency."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "ResponseCategory",
+            "target_entity": "Percentage",
+            "description": "Each response category has an associated percentage out of the total."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "The survey data includes missing data for certain responses."
+        },
+        {
+            "relationship": "usesMeasureUnit",
+            "source_entity": "Response",
+            "target_entity": "MeasureUnit",
+            "description": "Survey responses are recorded using specific units of measure."
+        },
+        {
+            "relationship": "countsCategoryFrequency",
+            "source_entity": "Survey",
+            "target_entity": "CategoryFrequency",
+            "description": "The survey counts the frequency of responses for each category."
+        }
+    ]
+}

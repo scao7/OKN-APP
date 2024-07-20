@@ -1,0 +1,123 @@
+{
+    "entities": [
+        {
+            "entity": "PastMonth",
+            "description": "The time frame of the past month including today's date."
+        },
+        {
+            "entity": "MarijuanaFrequency",
+            "description": "Frequency of marijuana use in the past month."
+        },
+        {
+            "entity": "CocaineFrequency",
+            "description": "Frequency of cocaine use in the past month."
+        },
+        {
+            "entity": "CrackFrequency",
+            "description": "Frequency of crack use in the past month."
+        },
+        {
+            "entity": "ImputationIndicator",
+            "description": "Indicator for imputation status of frequency data."
+        },
+        {
+            "entity": "NeverUsed",
+            "description": "Indicates the respondent has never used the specified substance."
+        },
+        {
+            "entity": "NotUsed",
+            "description": "Indicates substance was not used in the past month."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTimeFrame",
+            "source_entity": "Survey",
+            "target_entity": "PastMonth",
+            "description": "Relates the survey to the time period of the past month."
+        },
+        {
+            "relationship": "reportsMarijuanaFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaFrequency",
+            "description": "Reports the frequency of marijuana use by the respondent in the past month."
+        },
+        {
+            "relationship": "reportsCocaineFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineFrequency",
+            "description": "Reports the frequency of cocaine use by the respondent in the past month."
+        },
+        {
+            "relationship": "reportsCrackFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "CrackFrequency",
+            "description": "Reports the frequency of crack use by the respondent in the past month."
+        },
+        {
+            "relationship": "hasImputationIndicator",
+            "source_entity": "FrequencyData",
+            "target_entity": "ImputationIndicator",
+            "description": "Indicates the imputation status of the frequency data."
+        },
+        {
+            "relationship": "hasNeverUsedStatus",
+            "source_entity": "SubstanceUse",
+            "target_entity": "NeverUsed",
+            "description": "Indicates that the respondent has never used the substance."
+        },
+        {
+            "relationship": "hasNotUsedStatus",
+            "source_entity": "PastMonthUse",
+            "target_entity": "NotUsed",
+            "description": "Indicates that the substance was not used by the respondent in the past month."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "MarijuanaFrequency",
+            "predicate": "hasImputationIndicator",
+            "object": "Imputed"
+        },
+        {
+            "subject": "MarijuanaFrequency",
+            "predicate": "hasNeverUsedStatus",
+            "object": "NeverUsed"
+        },
+        {
+            "subject": "MarijuanaFrequency",
+            "predicate": "hasNotUsedStatus",
+            "object": "NotUsed"
+        },
+        {
+            "subject": "CocaineFrequency",
+            "predicate": "hasImputationIndicator",
+            "object": "Imputed"
+        },
+        {
+            "subject": "CocaineFrequency",
+            "predicate": "hasNeverUsedStatus",
+            "object": "NeverUsed"
+        },
+        {
+            "subject": "CocaineFrequency",
+            "predicate": "hasNotUsedStatus",
+            "object": "NotUsed"
+        },
+        {
+            "subject": "CrackFrequency",
+            "predicate": "hasImputationIndicator",
+            "object": "Imputed"
+        },
+        {
+            "subject": "CrackFrequency",
+            "predicate": "hasNeverUsedStatus",
+            "object": "NeverUsed"
+        },
+        {
+            "subject": "CrackFrequency",
+            "predicate": "hasNotUsedStatus",
+            "object": "NotUsed"
+        }
+    ]
+}

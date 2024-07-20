@@ -1,0 +1,114 @@
+{
+    "entities": [
+        {
+            "entity": "Methamphetamine",
+            "description": "A powerful, highly addictive stimulant that affects the central nervous system."
+        },
+        {
+            "entity": "MethamphetamineUse",
+            "description": "Use of methamphetamine within a specified time frame."
+        },
+        {
+            "entity": "PastYear",
+            "description": "The time frame of the past year, including today's date."
+        },
+        {
+            "entity": "MethamphetamineUseDisorder",
+            "description": "Disorder defined by the use of methamphetamine according to DSM-5 criteria."
+        },
+        {
+            "entity": "PainRelieverUseDisorder",
+            "description": "Disorder defined by the DSM-5 based on use or misuse of prescription pain relievers."
+        },
+        {
+            "entity": "PrescriptionPainRelievers",
+            "description": "Pain relievers that require a medical prescription."
+        },
+        {
+            "entity": "MisuseOfPrescriptionPainRelievers",
+            "description": "Use of prescription pain relievers in a manner other than prescribed."
+        },
+        {
+            "entity": "TranquilizerUseDisorder",
+            "description": "Disorder defined by the DSM-5 based on use or misuse of prescription tranquilizers."
+        },
+        {
+            "entity": "PrescriptionTranquilizers",
+            "description": "Tranquilizers that require a medical prescription."
+        },
+        {
+            "entity": "MisuseOfPrescriptionTranquilizers",
+            "description": "Use of prescription tranquilizers in a manner other than prescribed."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsePeriod",
+            "source_entity": "MethamphetamineUse",
+            "target_entity": "PastYear",
+            "description": "Relates methamphetamine use to the past year time frame."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "MethamphetamineUse",
+            "target_entity": "MethamphetamineUseDisorder",
+            "description": "Classifies the use of methamphetamine as a disorder if criteria are met."
+        },
+        {
+            "relationship": "hasSubstance",
+            "source_entity": "PainRelieverUseDisorder",
+            "target_entity": "PrescriptionPainRelievers",
+            "description": "Indicates that the disorder involves prescription pain relievers."
+        },
+        {
+            "relationship": "includesMisuse",
+            "source_entity": "PainRelieverUseDisorder",
+            "target_entity": "MisuseOfPrescriptionPainRelievers",
+            "description": "Indicates that the disorder includes misuse of prescription pain relievers."
+        },
+        {
+            "relationship": "hasSubstance",
+            "source_entity": "TranquilizerUseDisorder",
+            "target_entity": "PrescriptionTranquilizers",
+            "description": "Indicates that the disorder involves prescription tranquilizers."
+        },
+        {
+            "relationship": "includesMisuse",
+            "source_entity": "TranquilizerUseDisorder",
+            "target_entity": "MisuseOfPrescriptionTranquilizers",
+            "description": "Indicates that the disorder includes misuse of prescription tranquilizers."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "MethamphetamineUse",
+            "predicate": "hasUsePeriod",
+            "object": "PastYear"
+        },
+        {
+            "subject": "MethamphetamineUse",
+            "predicate": "categorizedAs",
+            "object": "MethamphetamineUseDisorder"
+        },
+        {
+            "subject": "PainRelieverUseDisorder",
+            "predicate": "hasSubstance",
+            "object": "PrescriptionPainRelievers"
+        },
+        {
+            "subject": "PainRelieverUseDisorder",
+            "predicate": "includesMisuse",
+            "object": "MisuseOfPrescriptionPainRelievers"
+        },
+        {
+            "subject": "TranquilizerUseDisorder",
+            "predicate": "hasSubstance",
+            "object": "PrescriptionTranquilizers"
+        },
+        {
+            "subject": "TranquilizerUseDisorder",
+            "predicate": "includesMisuse",
+            "object": "MisuseOfPrescriptionTranquilizers"
+        }
+    ]
+}

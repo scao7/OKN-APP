@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "ParentPrideFrequency",
+            "description": "Frequency with which parents express pride in something the respondent has done."
+        },
+        {
+            "entity": "ParentFightFrequency",
+            "description": "Frequency of arguments or fights with parents over the past 12 months."
+        },
+        {
+            "entity": "SeriousFightFrequency",
+            "description": "Frequency of getting into serious fights at school or work over the past 12 months."
+        },
+        {
+            "entity": "GroupFightFrequency",
+            "description": "Frequency of participating in group fights over the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasParentPrideFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "ParentPrideFrequency",
+            "description": "Indicates how often parents told the respondent they were proud of something they did."
+        },
+        {
+            "relationship": "hasParentFightFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "ParentFightFrequency",
+            "description": "Indicates how often the respondent argued or had a fight with at least one of their parents."
+        },
+        {
+            "relationship": "hasSeriousFightFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "SeriousFightFrequency",
+            "description": "Indicates how often the respondent got into serious fights at school or work."
+        },
+        {
+            "relationship": "hasGroupFightFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "GroupFightFrequency",
+            "description": "Indicates how often the respondent took part in a fight where a group of friends fought against another group."
+        }
+    ]
+}

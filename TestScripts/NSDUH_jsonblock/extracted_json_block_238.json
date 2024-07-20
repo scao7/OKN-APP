@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "MarijuanaVapingPastMonth",
+            "description": "Past month marijuana vaping usage, with a frequency of occurrence."
+        },
+        {
+            "entity": "MarijuanaVapingPastMonthImputation",
+            "description": "Imputation status of past month marijuana vaping, with types such as questionnaire data, logically assigned data, and statistically imputed data."
+        },
+        {
+            "entity": "MarijuanaVapingPastYear",
+            "description": "Past year marijuana vaping usage, with a frequency of occurrence."
+        },
+        {
+            "entity": "MarijuanaVapingPastYearImputation",
+            "description": "Imputation status of past year marijuana vaping, including types like questionnaire data and statistically imputed data."
+        },
+        {
+            "entity": "CocaineUseRecency",
+            "description": "Recency of cocaine use, categorized by time frames such as within the past 30 days, more than 30 days but within the past 12 months, and more than 12 months ago."
+        },
+        {
+            "entity": "CocaineRecencyImputation",
+            "description": "Imputation status for cocaine use recency, with types such as questionnaire data and statistically imputed data."
+        },
+        {
+            "entity": "CocaineDetailedRecencyImputation",
+            "description": "Detailed imputation status for cocaine recency data, including lifetime use imputed, and statistically imputed data."
+        },
+        {
+            "entity": "CrackUseRecency",
+            "description": "Recency of crack use, categorized by time frames such as within the past 30 days, more than 30 days but within the past 12 months, and more than 12 months ago."
+        },
+        {
+            "entity": "CrackRecencyImputation",
+            "description": "Imputation status for crack use recency, including types like questionnaire data and statistically imputed data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMarijuanaVapingPastMonth",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaVapingPastMonth",
+            "description": "Indicates the respondent's marijuana vaping usage in the past month."
+        },
+        {
+            "relationship": "hasMarijuanaVapingPastMonthImputation",
+            "source_entity": "MarijuanaVapingPastMonth",
+            "target_entity": "MarijuanaVapingPastMonthImputation",
+            "description": "Defines the imputation status for past month marijuana vaping usage."
+        },
+        {
+            "relationship": "hasMarijuanaVapingPastYear",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaVapingPastYear",
+            "description": "Indicates the respondent's marijuana vaping usage in the past year."
+        },
+        {
+            "relationship": "hasMarijuanaVapingPastYearImputation",
+            "source_entity": "MarijuanaVapingPastYear",
+            "target_entity": "MarijuanaVapingPastYearImputation",
+            "description": "Defines the imputation status for past year marijuana vaping usage."
+        },
+        {
+            "relationship": "hasCocaineUseRecency",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineUseRecency",
+            "description": "Indicates the respondent's recency of cocaine use."
+        },
+        {
+            "relationship": "hasCocaineRecencyImputation",
+            "source_entity": "CocaineUseRecency",
+            "target_entity": "CocaineRecencyImputation",
+            "description": "Defines the imputation status for cocaine use recency."
+        },
+        {
+            "relationship": "hasCocaineDetailedRecencyImputation",
+            "source_entity": "CocaineUseRecency",
+            "target_entity": "CocaineDetailedRecencyImputation",
+            "description": "Provides detailed imputation status for cocaine use recency data."
+        },
+        {
+            "relationship": "hasCrackUseRecency",
+            "source_entity": "Respondent",
+            "target_entity": "CrackUseRecency",
+            "description": "Indicates the respondent's recency of crack use."
+        },
+        {
+            "relationship": "hasCrackRecencyImputation",
+            "source_entity": "CrackUseRecency",
+            "target_entity": "CrackRecencyImputation",
+            "description": "Defines the imputation status for crack use recency."
+        }
+    ]
+}

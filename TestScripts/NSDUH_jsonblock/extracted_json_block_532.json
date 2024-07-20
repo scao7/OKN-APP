@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "SMI",
+            "description": "Serious Mental Illness (SMI) based on the 2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "entity": "AMI",
+            "description": "Any Mental Illness (AMI) based on the 2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "entity": "SMMI",
+            "description": "Serious or Moderate Mental Illness (SMMI) based on the 2012 predicted probability of SMI"
+        },
+        {
+            "entity": "MMI",
+            "description": "Moderate Mental Illness (MMI) based on the 2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "entity": "LMI",
+            "description": "Mild (Low) Mental Illness (LMI) based on the 2012 predicted probability of SMI"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isIndicatorOf",
+            "source_entity": "SMI",
+            "target_entity": "SMIPPY",
+            "description": "SMI is an indicator based on the 2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "relationship": "isIndicatorOf",
+            "source_entity": "AMI",
+            "target_entity": "SMIPPY",
+            "description": "AMI is an indicator based on the 2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "relationship": "isDerivedFrom",
+            "source_entity": "SMMI",
+            "target_entity": "SMIPPY",
+            "description": "SMMI is derived from the 2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "relationship": "isDerivedFrom",
+            "source_entity": "MMI",
+            "target_entity": "SMIPPY",
+            "description": "MMI is derived from the 2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "relationship": "isDerivedFrom",
+            "source_entity": "LMI",
+            "target_entity": "AMI",
+            "description": "LMI is derived from AMI and SMI based on the 2012 predicted probability"
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "SMI",
+            "predicate": "isBasedOn",
+            "object": "2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "subject": "AMI",
+            "predicate": "isBasedOn",
+            "object": "2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "subject": "SMMI",
+            "predicate": "isDerivedFrom",
+            "object": "2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "subject": "MMI",
+            "predicate": "isDerivedFrom",
+            "object": "2012 predicted probability of SMI (SMIPPY)"
+        },
+        {
+            "subject": "LMI",
+            "predicate": "isDerivedFrom",
+            "object": "2012 predicted probability of SMI (SMIPPY)"
+        }
+    ]
+}

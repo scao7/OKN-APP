@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "AgeGroup",
+            "description": "Specific age group category of respondents."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The unweighted frequency count of responses for a particular category."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of the frequency count for a given category."
+        },
+        {
+            "entity": "SurveyCategory",
+            "description": "General category within the survey relating to substance use, mental health, or other relevant topics."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAgeGroup",
+            "source_entity": "Respondent",
+            "target_entity": "AgeGroup",
+            "description": "Indicates the age group category of the respondent in the survey."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SurveyCategory",
+            "target_entity": "Frequency",
+            "description": "Shows the frequency count of responses within a specific category."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyCategory",
+            "target_entity": "Percentage",
+            "description": "Shows the percentage representation of responses within a specific category."
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "entities": [
+        {
+            "entity": "Firearm",
+            "description": "Any type of firearm, including unstated types, automatic, and rifle."
+        },
+        {
+            "entity": "Handgun",
+            "description": "A type of firearm specifically classified as a handgun, including automatic handguns."
+        },
+        {
+            "entity": "Rifle",
+            "description": "A type of firearm specifically classified as a rifle, including automatic rifles."
+        },
+        {
+            "entity": "Shotgun",
+            "description": "A type of firearm specifically classified as a shotgun, including automatic shotguns."
+        },
+        {
+            "entity": "KnifeCuttingInstrument",
+            "description": "A weapon classified as a knife or other cutting instrument."
+        },
+        {
+            "entity": "BluntObject",
+            "description": "A weapon classified as a blunt object."
+        },
+        {
+            "entity": "MotorVehicleVessel",
+            "description": "A weapon classified as a motor vehicle or vessel."
+        },
+        {
+            "entity": "PersonalWeapons",
+            "description": "Includes use of hands, feet, and other body parts as weapons."
+        },
+        {
+            "entity": "Poison",
+            "description": "A weapon classified as poison, including gas."
+        },
+        {
+            "entity": "Explosives",
+            "description": "A weapon classified as an explosive device."
+        },
+        {
+            "entity": "FireIncendiaryDevice",
+            "description": "A weapon classified as a fire or incendiary device."
+        },
+        {
+            "entity": "DrugsNarcoticsSleepingPills",
+            "description": "Includes drugs, narcotics, and sleeping pills used as weapons."
+        },
+        {
+            "entity": "Asphyxiation",
+            "description": "Using methods of asphyxiation as a weapon."
+        },
+        {
+            "entity": "OtherWeapons",
+            "description": "Includes BB guns, pellet guns, Tasers, pepper spray, stun guns, and other types not specifically listed."
+        },
+        {
+            "entity": "NoWeapon",
+            "description": "Indicates no weapon was used."
+        },
+        {
+            "entity": "SurveyData",
+            "description": "General data about the survey, including minimum and maximum values and missing data."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency for each weapon type used."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage that represents each weapon type from the total cases."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "Firearm",
+            "description": "Classifies a firearm as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "Handgun",
+            "description": "Classifies a handgun as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "Rifle",
+            "description": "Classifies a rifle as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "Shotgun",
+            "description": "Classifies a shotgun as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "KnifeCuttingInstrument",
+            "description": "Classifies a knife or cutting instrument as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "BluntObject",
+            "description": "Classifies a blunt object as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "MotorVehicleVessel",
+            "description": "Classifies a motor vehicle or a vessel as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "PersonalWeapons",
+            "description": "Classifies personal weapons like hands, feet, etc., as weapons used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "Poison",
+            "description": "Classifies poison, including gas, as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "Explosives",
+            "description": "Classifies explosives as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "FireIncendiaryDevice",
+            "description": "Classifies fire or incendiary devices as a type of weapon used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "DrugsNarcoticsSleepingPills",
+            "description": "Classifies drugs, narcotics, and sleeping pills as weapons used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "Asphyxiation",
+            "description": "Classifies asphyxiation methods as weapons used in the survey data."
+        },
+        {
+            "relationship": "hasWeaponType",
+            "source_entity": "Survey",
+            "target_entity": "OtherWeapons",
+            "description": "Includes other weapon types like BB guns, pellet guns, etc., in the survey data."
+        },
+        {
+            "relationship": "hasWeaponUsage",
+            "source_entity": "Survey",
+            "target_entity": "NoWeapon",
+            "description": "Indicates instances where no weapon was used in the survey data."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "Survey",
+            "target_entity": "UnweightedFrequency",
+            "description": "Associates the unweighted frequency with each weapon type."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Survey",
+            "target_entity": "Percentage",
+            "description": "Associates the percentage representation with each weapon type."
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "entities": [
+        {
+            "entity": "LocationType",
+            "description": "The types of locations categorized in the survey from where respondents' data was collected."
+        },
+        {
+            "entity": "AirBusTrainTerminal",
+            "description": "A type of location at an Air, Bus, or Train Terminal."
+        },
+        {
+            "entity": "BankSavingsLoan",
+            "description": "A type of location at a Bank or Savings and Loan institution."
+        },
+        {
+            "entity": "BarNightclub",
+            "description": "A type of location at a Bar or Nightclub."
+        },
+        {
+            "entity": "ChurchSynagogueTempleMosque",
+            "description": "A type of location at religious buildings such as a Church, Synagogue, Temple, or Mosque."
+        },
+        {
+            "entity": "CommercialOfficeBuilding",
+            "description": "A type of location at a Commercial or Office Building."
+        },
+        {
+            "entity": "ConstructionSite",
+            "description": "A type of location at a Construction Site."
+        },
+        {
+            "entity": "ConvenienceStore",
+            "description": "A type of location at a Convenience Store."
+        },
+        {
+            "entity": "DepartmentDiscountStore",
+            "description": "A type of location at a Department or Discount Store."
+        },
+        {
+            "entity": "DrugStoreDoctorsOfficeHospital",
+            "description": "A type of location at a Drug Store, Doctor's Office, or Hospital."
+        },
+        {
+            "entity": "FieldWoods",
+            "description": "A type of location at a Field or Woods."
+        },
+        {
+            "entity": "GovernmentPublicBuilding",
+            "description": "A type of location at a Government or Public Building."
+        },
+        {
+            "entity": "GrocerySupermarket",
+            "description": "A type of location at a Grocery store or Supermarket."
+        },
+        {
+            "entity": "HighwayRoadAlleyStreetSidewalk",
+            "description": "A type of location at a Highway, Road, Alley, Street, or Sidewalk."
+        },
+        {
+            "entity": "HotelMotelEtc",
+            "description": "A type of location at a Hotel, Motel, or similar establishment."
+        },
+        {
+            "entity": "JailPrisonPenitentiaryCorrectionsFacility",
+            "description": "A type of location at a Jail, Prison, Penitentiary, or Correctional Facility."
+        },
+        {
+            "entity": "LakeWaterwayBeach",
+            "description": "A type of location at a Lake, Waterway, or Beach."
+        },
+        {
+            "entity": "LiquorStore",
+            "description": "A type of location at a Liquor Store."
+        },
+        {
+            "entity": "ParkingLotGarage",
+            "description": "A type of location at a Parking Lot or Garage."
+        },
+        {
+            "entity": "RentalStorageFacility",
+            "description": "A type of location at a Rental Storage Facility."
+        },
+        {
+            "entity": "ResidenceHome",
+            "description": "A type of location at a Residence or Home."
+        },
+        {
+            "entity": "Restaurant",
+            "description": "A type of location at a Restaurant."
+        },
+        {
+            "entity": "SchoolCollege",
+            "description": "A type of location at a School or College."
+        },
+        {
+            "entity": "ServiceGasStation",
+            "description": "A type of location at a Service or Gas Station."
+        },
+        {
+            "entity": "SpecialtyStoreTVFurEtc",
+            "description": "A type of location at a Specialty Store (e.g., TV, Fur, etc.)."
+        },
+        {
+            "entity": "OtherUnknown",
+            "description": "A type of location categorized as 'Other' or 'Unknown'."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "Location",
+            "target_entity": "LocationType",
+            "description": "Specifies the type of location assessed in the survey."
+        }
+    ]
+}

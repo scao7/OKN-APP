@@ -1,0 +1,104 @@
+{
+    "entities": [
+        {
+            "entity": "PastYearInitiatePainRelieverMisuse",
+            "description": "Indicates whether there was past year initiation of pain reliever misuse."
+        },
+        {
+            "entity": "PainRelieverMisuseImputationIndicator",
+            "description": "Indicator for imputation regarding initiation of pain reliever misuse."
+        },
+        {
+            "entity": "PastYearInitiateTranquilizerMisuse",
+            "description": "Indicates whether there was past year initiation of tranquilizer misuse."
+        },
+        {
+            "entity": "TranquilizerMisuseImputationIndicator",
+            "description": "Indicator for imputation regarding initiation of tranquilizer misuse."
+        },
+        {
+            "entity": "PastYearInitiateStimulantMisuse",
+            "description": "Indicates whether there was past year initiation of stimulant misuse."
+        },
+        {
+            "entity": "StimulantMisuseImputationIndicator",
+            "description": "Indicator for imputation regarding initiation of stimulant misuse."
+        },
+        {
+            "entity": "PastYearInitiateSedativeMisuse",
+            "description": "Indicates whether there was past year initiation of sedative misuse."
+        },
+        {
+            "entity": "SedativeMisuseImputationIndicator",
+            "description": "Indicator for imputation regarding initiation of sedative misuse."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMisuseInitiationIndicator",
+            "source_entity": "PastYearInitiatePainRelieverMisuse",
+            "target_entity": "PainRelieverMisuseImputationIndicator",
+            "description": "Relates the past year initiation of pain reliever misuse to its imputation indicator."
+        },
+        {
+            "relationship": "hasMisuseInitiationIndicator",
+            "source_entity": "PastYearInitiateTranquilizerMisuse",
+            "target_entity": "TranquilizerMisuseImputationIndicator",
+            "description": "Relates the past year initiation of tranquilizer misuse to its imputation indicator."
+        },
+        {
+            "relationship": "hasMisuseInitiationIndicator",
+            "source_entity": "PastYearInitiateStimulantMisuse",
+            "target_entity": "StimulantMisuseImputationIndicator",
+            "description": "Relates the past year initiation of stimulant misuse to its imputation indicator."
+        },
+        {
+            "relationship": "hasMisuseInitiationIndicator",
+            "source_entity": "PastYearInitiateSedativeMisuse",
+            "target_entity": "SedativeMisuseImputationIndicator",
+            "description": "Relates the past year initiation of sedative misuse to its imputation indicator."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "PastYearInitiatePainRelieverMisuse",
+            "predicate": "hasFrequency",
+            "object": "358"
+        },
+        {
+            "subject": "PastYearInitiatePainRelieverMisuse",
+            "predicate": "hasPercentage",
+            "object": "0.61"
+        },
+        {
+            "subject": "NotAPastYearInitiatePainRelieverMisuse",
+            "predicate": "hasFrequency",
+            "object": "1416"
+        },
+        {
+            "subject": "NotAPastYearInitiatePainRelieverMisuse",
+            "predicate": "hasPercentage",
+            "object": "2.40"
+        },
+        {
+            "subject": "NeverMisusedPainReliever",
+            "predicate": "hasFrequency",
+            "object": "54812"
+        },
+        {
+            "subject": "NeverMisusedPainReliever",
+            "predicate": "hasPercentage",
+            "object": "91.73"
+        },
+        {
+            "subject": "NoPastYearMisusePainReliever",
+            "predicate": "hasFrequency",
+            "object": "3113"
+        },
+        {
+            "subject": "NoPastYearMisusePainReliever",
+            "predicate": "hasPercentage",
+            "object": "5.27"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "entities": [
+        {
+            "entity": "LSDRecencyImputationIndicator",
+            "description": "Indicator for LSD recency imputation data, including questionnaire and statistically imputed data."
+        },
+        {
+            "entity": "LSDRecencyDetailedImputationIndicator",
+            "description": "Detailed indicator for LSD recency including questionnaire data, lifetime use imputed, and edited recency values."
+        },
+        {
+            "entity": "PCPRecencyImputationRevised",
+            "description": "Revised PCP recency imputation data categorizing use within the past 30 days, past 12 months, past 12 months, and those who have never used PCP."
+        },
+        {
+            "entity": "PCPRecencyImputationIndicator",
+            "description": "Indicator for PCP recency imputation data, including questionnaire and statistically imputed data."
+        },
+        {
+            "entity": "PCPRecencyDetailedImputationIndicator",
+            "description": "Detailed indicator for PCP recency including questionnaire data, lifetime use imputed, and edited recency values."
+        },
+        {
+            "entity": "EcstasyRecencyImputationRevised",
+            "description": "Revised Ecstasy recency imputation data categorizing use within the past 30 days, past 12 months, past 12 months, and those who have never used Ecstasy."
+        },
+        {
+            "entity": "EcstasyRecencyImputationIndicator",
+            "description": "Indicator for Ecstasy recency imputation data, including questionnaire and statistically imputed data."
+        },
+        {
+            "entity": "KetamineRecencyImputationRevised",
+            "description": "Revised Ketamine recency imputation data categorizing use within the past 30 days, past 12 months, past 12 months, and those who have never used Ketamine."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLSDRecencyImputationIndicator",
+            "source_entity": "Survey",
+            "target_entity": "LSDRecencyImputationIndicator",
+            "description": "Indicates the imputation status of LSD use recency data in the survey."
+        },
+        {
+            "relationship": "hasLSDRecencyDetailedImputationIndicator",
+            "source_entity": "Survey",
+            "target_entity": "LSDRecencyDetailedImputationIndicator",
+            "description": "Provides detailed imputation information for LSD use recency data in the survey."
+        },
+        {
+            "relationship": "hasPCPRecencyImputationRevised",
+            "source_entity": "Survey",
+            "target_entity": "PCPRecencyImputationRevised",
+            "description": "Indicates the revised imputation status of PCP use recency data in the survey."
+        },
+        {
+            "relationship": "hasPCPRecencyImputationIndicator",
+            "source_entity": "Survey",
+            "target_entity": "PCPRecencyImputationIndicator",
+            "description": "Indicates the imputation status of PCP use recency data in the survey."
+        },
+        {
+            "relationship": "hasPCPRecencyDetailedImputationIndicator",
+            "source_entity": "Survey",
+            "target_entity": "PCPRecencyDetailedImputationIndicator",
+            "description": "Provides detailed imputation information for PCP use recency data in the survey."
+        },
+        {
+            "relationship": "hasEcstasyRecencyImputationRevised",
+            "source_entity": "Survey",
+            "target_entity": "EcstasyRecencyImputationRevised",
+            "description": "Indicates the revised imputation status of Ecstasy use recency data in the survey."
+        },
+        {
+            "relationship": "hasEcstasyRecencyImputationIndicator",
+            "source_entity": "Survey",
+            "target_entity": "EcstasyRecencyImputationIndicator",
+            "description": "Indicates the imputation status of Ecstasy use recency data in the survey."
+        },
+        {
+            "relationship": "hasKetamineRecencyImputationRevised",
+            "source_entity": "Survey",
+            "target_entity": "KetamineRecencyImputationRevised",
+            "description": "Indicates the revised imputation status of Ketamine use recency data in the survey."
+        }
+    ],
+    "triplets": []
+}

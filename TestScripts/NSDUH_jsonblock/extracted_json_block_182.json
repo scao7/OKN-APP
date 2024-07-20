@@ -1,0 +1,212 @@
+[
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Freq",
+        "object": "1291"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Pet",
+        "object": "2.19"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Freq",
+        "object": "4481"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Pet",
+        "object": "7.59"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Freq",
+        "object": "2"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Pet",
+        "object": "0.00"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Freq",
+        "object": "2"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Pet",
+        "object": "0.00"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Freq",
+        "object": "53243"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Pet",
+        "object": "90.14"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Freq",
+        "object": "43"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Pet",
+        "object": "0.07"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Freq",
+        "object": "7"
+    },
+    {
+        "subject": "AMYLNIT",
+        "predicate": "Pet",
+        "object": "0.01"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Freq",
+        "object": "364"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Pet",
+        "object": "0.62"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Freq",
+        "object": "5417"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Pet",
+        "object": "9.17"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Freq",
+        "object": "2"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Pet",
+        "object": "0.00"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Freq",
+        "object": "2"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Pet",
+        "object": "0.00"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Freq",
+        "object": "53243"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Pet",
+        "object": "90.14"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Freq",
+        "object": "33"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Pet",
+        "object": "0.06"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Freq",
+        "object": "8"
+    },
+    {
+        "subject": "CLEFLU",
+        "predicate": "Pet",
+        "object": "0.01"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Freq",
+        "object": "735"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Pet",
+        "object": "1.24"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Freq",
+        "object": "5053"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Pet",
+        "object": "8.55"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Freq",
+        "object": "1"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Pet",
+        "object": "0.00"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Freq",
+        "object": "2"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Pet",
+        "object": "0.00"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Freq",
+        "object": "53243"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Pet",
+        "object": "90.14"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Freq",
+        "object": "24"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Pet",
+        "object": "0.04"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Freq",
+        "object": "11"
+    },
+    {
+        "subject": "GAS",
+        "predicate": "Pet",
+        "object": "0.02"
+    }
+]

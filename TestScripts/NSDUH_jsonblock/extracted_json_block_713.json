@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "CocaineUseProblems",
+            "description": "Experiencing problems with emotions, mental health, or physical health due to cocaine use."
+        },
+        {
+            "entity": "CocaineTolerance",
+            "description": "Needing a lot more cocaine to get the desired feeling or using the same amount with less effect."
+        },
+        {
+            "entity": "CocaineWithdrawalSymptoms",
+            "description": "Experiencing withdrawal symptoms when trying to stop or cut down cocaine use."
+        },
+        {
+            "entity": "CocaineSubstitution",
+            "description": "Using the same or similar substances to avoid cocaine withdrawal symptoms."
+        },
+        {
+            "entity": "HeroinUseProblems",
+            "description": "Experiencing problems at work, school, home, or with family due to heroin use."
+        },
+        {
+            "entity": "HeroinTolerance",
+            "description": "Using heroin in larger amounts or over a longer time than intended."
+        },
+        {
+            "entity": "HeroinFailedQuitAttempts",
+            "description": "Unable to cut down or stop using heroin despite trying."
+        },
+        {
+            "entity": "HeroinTimeSpent",
+            "description": "Spending a great deal of time using or trying to get heroin."
+        },
+        {
+            "entity": "HeroinCraving",
+            "description": "Having a strong urge to use heroin or thinking about it constantly."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "causesProblems",
+            "source_entity": "CocaineUse",
+            "target_entity": "CocaineUseProblems",
+            "description": "Relates cocaine use to problems with emotions, mental health, or physical health."
+        },
+        {
+            "relationship": "leadsToTolerance",
+            "source_entity": "CocaineUse",
+            "target_entity": "CocaineTolerance",
+            "description": "Indicates that cocaine use leads to needing more cocaine for the same effect."
+        },
+        {
+            "relationship": "causesWithdrawalSymptoms",
+            "source_entity": "CocaineUse",
+            "target_entity": "CocaineWithdrawalSymptoms",
+            "description": "Relates cocaine use to experiencing withdrawal symptoms."
+        },
+        {
+            "relationship": "resultsInSubstitution",
+            "source_entity": "CocaineWithdrawalSymptoms",
+            "target_entity": "CocaineSubstitution",
+            "description": "Indicates that withdrawal symptoms lead to using similar substances to avoid them."
+        },
+        {
+            "relationship": "causesProblems",
+            "source_entity": "HeroinUse",
+            "target_entity": "HeroinUseProblems",
+            "description": "Relates heroin use to problems at work, school, home, or with family."
+        },
+        {
+            "relationship": "leadsToTolerance",
+            "source_entity": "HeroinUse",
+            "target_entity": "HeroinTolerance",
+            "description": "Indicates that heroin use leads to using larger amounts over time."
+        },
+        {
+            "relationship": "causesFailedQuitAttempts",
+            "source_entity": "HeroinUse",
+            "target_entity": "HeroinFailedQuitAttempts",
+            "description": "Relates heroin use to being unable to quit despite trying."
+        },
+        {
+            "relationship": "involvesTimeSpent",
+            "source_entity": "HeroinUse",
+            "target_entity": "HeroinTimeSpent",
+            "description": "Indicates that heroin use involves spending a lot of time using or trying to get the drug."
+        },
+        {
+            "relationship": "causesCraving",
+            "source_entity": "HeroinUse",
+            "target_entity": "HeroinCraving",
+            "description": "Relates heroin use to having a strong urge or constant thoughts about using."
+        }
+    ]
+}

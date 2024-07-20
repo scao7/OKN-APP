@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "KratomRecencyRevised",
+            "description": "Recency of kratom use, with imputation revisions."
+        },
+        {
+            "entity": "KratomRecencyIndicator",
+            "description": "Indicator for the source of recency data for kratom use."
+        },
+        {
+            "entity": "VapingFlavoringRecencyRevised",
+            "description": "Recency of vaping using only flavoring, with imputation revisions."
+        },
+        {
+            "entity": "VapingFlavoringRecencyIndicator",
+            "description": "Indicator for the source of recency data for vaping using only flavoring."
+        },
+        {
+            "entity": "SyntheticMarijuanaRecencyRevised",
+            "description": "Recency of synthetic marijuana use, with imputation revisions."
+        },
+        {
+            "entity": "SyntheticMarijuanaRecencyIndicator",
+            "description": "Indicator for the source of recency data for synthetic marijuana use."
+        },
+        {
+            "entity": "SyntheticStimulantsRecencyRevised",
+            "description": "Recency of synthetic stimulants use, with imputation revisions."
+        },
+        {
+            "entity": "SyntheticStimulantsRecencyIndicator",
+            "description": "Indicator for the source of recency data for synthetic stimulants use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasRecencyRevised",
+            "source_entity": "KratomUse",
+            "target_entity": "KratomRecencyRevised",
+            "description": "Indicates the recency of kratom use with imputation revisions."
+        },
+        {
+            "relationship": "hasRecencyIndicator",
+            "source_entity": "KratomUse",
+            "target_entity": "KratomRecencyIndicator",
+            "description": "Serves as an indicator for the source of the kratom recency data."
+        },
+        {
+            "relationship": "hasRecencyRevised",
+            "source_entity": "VapingFlavoringUse",
+            "target_entity": "VapingFlavoringRecencyRevised",
+            "description": "Indicates the recency of vaping using only flavoring with imputation revisions."
+        },
+        {
+            "relationship": "hasRecencyIndicator",
+            "source_entity": "VapingFlavoringUse",
+            "target_entity": "VapingFlavoringRecencyIndicator",
+            "description": "Serves as an indicator for the source of the vaping flavoring recency data."
+        },
+        {
+            "relationship": "hasRecencyRevised",
+            "source_entity": "SyntheticMarijuanaUse",
+            "target_entity": "SyntheticMarijuanaRecencyRevised",
+            "description": "Indicates the recency of synthetic marijuana use with imputation revisions."
+        },
+        {
+            "relationship": "hasRecencyIndicator",
+            "source_entity": "SyntheticMarijuanaUse",
+            "target_entity": "SyntheticMarijuanaRecencyIndicator",
+            "description": "Serves as an indicator for the source of the synthetic marijuana recency data."
+        },
+        {
+            "relationship": "hasRecencyRevised",
+            "source_entity": "SyntheticStimulantsUse",
+            "target_entity": "SyntheticStimulantsRecencyRevised",
+            "description": "Indicates the recency of synthetic stimulants use with imputation revisions."
+        },
+        {
+            "relationship": "hasRecencyIndicator",
+            "source_entity": "SyntheticStimulantsUse",
+            "target_entity": "SyntheticStimulantsRecencyIndicator",
+            "description": "Serves as an indicator for the source of the synthetic stimulants recency data."
+        }
+    ]
+}

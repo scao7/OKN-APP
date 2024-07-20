@@ -1,0 +1,94 @@
+{
+    "entities": [
+        {
+            "entity": "SeriousPsychologicalDistress",
+            "description": "Serious psychological distress (SPD)."
+        },
+        {
+            "entity": "MentalIllness",
+            "description": "An overarching category for various mental health issues including serious mental illness (SMI), moderate mental illness (MMI), serious or moderate mental illness (SMMI), low (mild) mental illness (LMI), and any mental illness (AMI)."
+        },
+        {
+            "entity": "SuicidalIdeationAndBehavior",
+            "description": "Suicidal ideation and behavior, including thoughts, plans, and attempts."
+        },
+        {
+            "entity": "MentalHealthMeasures",
+            "description": "Measures used to evaluate serious psychological distress, mental illness, and suicidal ideation and behavior."
+        },
+        {
+            "entity": "PastYearEstimates",
+            "description": "Estimates of mental health measures based on past year data."
+        },
+        {
+            "entity": "PastMonthEstimates",
+            "description": "Estimates of mental health measures based on past month data."
+        },
+        {
+            "entity": "COVID19Impact",
+            "description": "Impact of COVID-19 on mental health measures."
+        },
+        {
+            "entity": "MentalHealthModel",
+            "description": "The predictive model used to estimate mental illness."
+        },
+        {
+            "entity": "MentalHealthSurveillanceStudy",
+            "description": "Mental Health Surveillance Study (MHSS) used for data collection."
+        },
+        {
+            "entity": "NSDUHFollowUpInterview",
+            "description": "Follow-up clinical interviews for diagnosing mental illness."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "includes",
+            "source_entity": "MentalHealthMeasures",
+            "target_entity": "SeriousPsychologicalDistress",
+            "description": "The mental health measures include serious psychological distress (SPD)."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MentalHealthMeasures",
+            "target_entity": "MentalIllness",
+            "description": "The mental health measures include multiple types of mental illness."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MentalHealthMeasures",
+            "target_entity": "SuicidalIdeationAndBehavior",
+            "description": "The mental health measures include suicidal ideation and behavior."
+        },
+        {
+            "relationship": "reports",
+            "source_entity": "PastYearEstimates",
+            "target_entity": "MentalHealthMeasures",
+            "description": "Past year estimates report on various mental health measures."
+        },
+        {
+            "relationship": "reports",
+            "source_entity": "PastMonthEstimates",
+            "target_entity": "MentalHealthMeasures",
+            "description": "Past month estimates report on various mental health measures."
+        },
+        {
+            "relationship": "impacts",
+            "source_entity": "COVID19Impact",
+            "target_entity": "MentalHealthMeasures",
+            "description": "The impact of COVID-19 on mental health measures."
+        },
+        {
+            "relationship": "uses",
+            "source_entity": "MentalHealthModel",
+            "target_entity": "MentalHealthSurveillanceStudy",
+            "description": "The predictive model for mental illness uses data from the Mental Health Surveillance Study."
+        },
+        {
+            "relationship": "conducts",
+            "source_entity": "NSDUH",
+            "target_entity": "NSDUHFollowUpInterview",
+            "description": "The NSDUH conducts follow-up clinical interviews for diagnosing mental illness."
+        }
+    ]
+}

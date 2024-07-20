@@ -1,0 +1,270 @@
+{
+    "entities": [
+        {
+            "entity": "VictimEmployee",
+            "description": "The victim was an employee."
+        },
+        {
+            "entity": "VictimEmployer",
+            "description": "The victim was an employer."
+        },
+        {
+            "entity": "VictimOtherwiseKnown",
+            "description": "The victim was otherwise known to the offender."
+        },
+        {
+            "entity": "VictimStranger",
+            "description": "The victim was a stranger to the offender."
+        },
+        {
+            "entity": "VictimExRelationship",
+            "description": "The victim was an ex-boyfriend or ex-girlfriend of the offender."
+        },
+        {
+            "entity": "VictimSurvey",
+            "description": "Data based on victim-offender relationships."
+        },
+        {
+            "entity": "OffenderUnknown",
+            "description": "The offender was unknown."
+        },
+        {
+            "entity": "VictimSpouse",
+            "description": "The victim was the current spouse of the offender."
+        },
+        {
+            "entity": "VictimCommonLawSpouse",
+            "description": "The victim was the common-law spouse of the offender."
+        },
+        {
+            "entity": "VictimParent",
+            "description": "The victim was the parent of the offender."
+        },
+        {
+            "entity": "VictimSibling",
+            "description": "The victim was the sibling of the offender."
+        },
+        {
+            "entity": "VictimChild",
+            "description": "The victim was the child of the offender."
+        },
+        {
+            "entity": "VictimGrandparent",
+            "description": "The victim was the grandparent of the offender."
+        },
+        {
+            "entity": "VictimGrandchild",
+            "description": "The victim was the grandchild of the offender."
+        },
+        {
+            "entity": "VictimInLaw",
+            "description": "The victim was an in-law of the offender."
+        },
+        {
+            "entity": "VictimStepparent",
+            "description": "The victim was the stepparent of the offender."
+        },
+        {
+            "entity": "VictimStepchild",
+            "description": "The victim was the stepchild of the offender."
+        },
+        {
+            "entity": "VictimStepsibling",
+            "description": "The victim was the stepsibling of the offender."
+        },
+        {
+            "entity": "VictimOtherFamilyMember",
+            "description": "The victim was another family member of the offender."
+        },
+        {
+            "entity": "VictimOffender",
+            "description": "The victim was also an offender."
+        },
+        {
+            "entity": "VictimAcquaintance",
+            "description": "The victim was an acquaintance of the offender."
+        },
+        {
+            "entity": "VictimFriend",
+            "description": "The victim was a friend of the offender."
+        },
+        {
+            "entity": "VictimNeighbor",
+            "description": "The victim was a neighbor of the offender."
+        },
+        {
+            "entity": "VictimBabysittee",
+            "description": "The victim was the babysittee (the baby) of the offender."
+        },
+        {
+            "entity": "VictimBoyfriendGirlfriend",
+            "description": "The victim was the boyfriend or girlfriend of the offender."
+        },
+        {
+            "entity": "VictimChildOfBoyfriendGirlfriend",
+            "description": "The victim was the child of the offender's boyfriend or girlfriend."
+        },
+        {
+            "entity": "VictimHomosexualRelationship",
+            "description": "The victim was in a homosexual relationship with the offender."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimEmployee",
+            "description": "Defines the victim as an employee in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimEmployer",
+            "description": "Defines the victim as an employer in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimOtherwiseKnown",
+            "description": "Defines the victim as otherwise known in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimStranger",
+            "description": "Defines the victim as a stranger in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimExRelationship",
+            "description": "Defines the victim as an ex-relationship in the survey."
+        },
+        {
+            "relationship": "hasOffenderRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "OffenderUnknown",
+            "description": "Defines the offender as unknown in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimSpouse",
+            "description": "Defines the victim as spouse in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimCommonLawSpouse",
+            "description": "Defines the victim as a common-law spouse in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimParent",
+            "description": "Defines the victim as a parent in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimSibling",
+            "description": "Defines the victim as a sibling in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimChild",
+            "description": "Defines the victim as a child in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimGrandparent",
+            "description": "Defines the victim as a grandparent in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimGrandchild",
+            "description": "Defines the victim as a grandchild in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimInLaw",
+            "description": "Defines the victim as an in-law in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimStepparent",
+            "description": "Defines the victim as a stepparent in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimStepchild",
+            "description": "Defines the victim as a stepchild in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimStepsibling",
+            "description": "Defines the victim as a stepsibling in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimOtherFamilyMember",
+            "description": "Defines the victim as another family member in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimOffender",
+            "description": "Defines the victim as an offender in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimAcquaintance",
+            "description": "Defines the victim as an acquaintance in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimFriend",
+            "description": "Defines the victim as a friend in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimNeighbor",
+            "description": "Defines the victim as a neighbor in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimBabysittee",
+            "description": "Defines the victim as a babysittee in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimBoyfriendGirlfriend",
+            "description": "Defines the victim as a boyfriend or girlfriend in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimChildOfBoyfriendGirlfriend",
+            "description": "Defines the victim as the child of a boyfriend or girlfriend in the survey."
+        },
+        {
+            "relationship": "hasVictimRole",
+            "source_entity": "VictimSurvey",
+            "target_entity": "VictimHomosexualRelationship",
+            "description": "Defines the victim as being in a homosexual relationship in the survey."
+        }
+    ]
+}

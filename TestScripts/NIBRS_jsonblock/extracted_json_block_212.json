@@ -1,0 +1,410 @@
+{
+    "entities": [
+        {
+            "entity": "CrimeType",
+            "description": "Different types of crimes listed in the survey."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of each crime type occurrence."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of the unweighted frequency for each crime type."
+        },
+        {
+            "entity": "KidnapingAbduction",
+            "description": "The number and percentage of instances of kidnaping or abduction."
+        },
+        {
+            "entity": "Rape",
+            "description": "The number and percentage of instances of rape."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "The number and percentage of instances of sodomy."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "The number and percentage of instances of sexual assault with an object."
+        },
+        {
+            "entity": "FondlingIndecentLibertiesChildMolesting",
+            "description": "The number and percentage of instances of fondling, indecent liberties, or child molesting."
+        },
+        {
+            "entity": "Robbery",
+            "description": "The number and percentage of instances of robbery."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "The number and percentage of instances of aggravated assault."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "The number and percentage of instances of simple assault."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "The number and percentage of instances of intimidation."
+        },
+        {
+            "entity": "Arson",
+            "description": "The number and percentage of instances of arson."
+        },
+        {
+            "entity": "ExtortionBlackmail",
+            "description": "The number and percentage of instances of extortion or blackmail."
+        },
+        {
+            "entity": "BurglaryBreakingAndEntering",
+            "description": "The number and percentage of instances of burglary, breaking and entering."
+        },
+        {
+            "entity": "Pocket-picking",
+            "description": "The number and percentage of instances of pocket-picking."
+        },
+        {
+            "entity": "Purse-snatching",
+            "description": "The number and percentage of instances of purse-snatching."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "The number and percentage of instances of shoplifting."
+        },
+        {
+            "entity": "TheftFromCoin-OperatedMachineOrDevice",
+            "description": "The number and percentage of instances of theft from a coin-operated machine or device."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "The number and percentage of instances of theft from a motor vehicle."
+        },
+        {
+            "entity": "TheftOfMotorVehiclePartsAccessories",
+            "description": "The number and percentage of instances of theft of motor vehicle parts or accessories."
+        },
+        {
+            "entity": "AllOtherLarceny",
+            "description": "The number and percentage of instances of all other larceny."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "The number and percentage of instances of motor vehicle theft."
+        },
+        {
+            "entity": "CounterfeitingForgery",
+            "description": "The number and percentage of instances of counterfeiting or forgery."
+        },
+        {
+            "entity": "FalsePretensesSwindleConfidenceGame",
+            "description": "The number and percentage of instances of false pretenses, swindle, or confidence game."
+        },
+        {
+            "entity": "CreditCardAutomaticTellerMachineFraud",
+            "description": "The number and percentage of instances of credit card or automatic teller machine fraud."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "The number and percentage of instances of impersonation."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "The number and percentage of instances of welfare fraud."
+        },
+        {
+            "entity": "WireFraud",
+            "description": "The number and percentage of instances of wire fraud."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "The number and percentage of instances of identity theft."
+        },
+        {
+            "entity": "HackingComputerInvasion",
+            "description": "The number and percentage of instances of hacking or computer invasion."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "The number and percentage of instances of embezzlement."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "The number and percentage of instances of stolen property offenses."
+        },
+        {
+            "entity": "DestructionDamageVandalismOfProperty",
+            "description": "The number and percentage of instances of destruction, damage, or vandalism of property."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "The number and percentage of instances of drug or narcotic violations."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "The number and percentage of instances of drug equipment violations."
+        },
+        {
+            "entity": "Incest",
+            "description": "The number and percentage of instances of incest."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "The number and percentage of instances of statutory rape."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "The number and percentage of instances of pornography or obscene material."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "The number and percentage of instances of betting or wagering."
+        },
+        {
+            "entity": "OperatingPromotingAssistingGambling",
+            "description": "The number and percentage of instances of operating, promoting, or assisting gambling."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "reportedFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the respondent to the unweighted frequency of crime types they reported."
+        },
+        {
+            "relationship": "reportedPercentage",
+            "source_entity": "Respondent",
+            "target_entity": "Percentage",
+            "description": "Relates the respondent to the percentage of crime types they reported."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "KidnapingAbduction",
+            "description": "Indicates that kidnaping or abduction is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Rape",
+            "description": "Indicates that rape is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Sodomy",
+            "description": "Indicates that sodomy is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "SexualAssaultWithAnObject",
+            "description": "Indicates that sexual assault with an object is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "FondlingIndecentLibertiesChildMolesting",
+            "description": "Indicates that fondling, indecent liberties or child molesting is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Robbery",
+            "description": "Indicates that robbery is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "AggravatedAssault",
+            "description": "Indicates that aggravated assault is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "SimpleAssault",
+            "description": "Indicates that simple assault is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Intimidation",
+            "description": "Indicates that intimidation is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Arson",
+            "description": "Indicates that arson is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "ExtortionBlackmail",
+            "description": "Indicates that extortion or blackmail is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "BurglaryBreakingAndEntering",
+            "description": "Indicates that burglary, breaking and entering is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Pocket-picking",
+            "description": "Indicates that pocket-picking is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Purse-snatching",
+            "description": "Indicates that purse-snatching is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Shoplifting",
+            "description": "Indicates that shoplifting is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "TheftFromCoin-OperatedMachineOrDevice",
+            "description": "Indicates that theft from a coin-operated machine or device is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "TheftFromMotorVehicle",
+            "description": "Indicates that theft from a motor vehicle is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "TheftOfMotorVehiclePartsAccessories",
+            "description": "Indicates that theft of motor vehicle parts or accessories is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "AllOtherLarceny",
+            "description": "Indicates that all other larceny is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "MotorVehicleTheft",
+            "description": "Indicates that motor vehicle theft is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "CounterfeitingForgery",
+            "description": "Indicates that counterfeiting or forgery is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "FalsePretensesSwindleConfidenceGame",
+            "description": "Indicates that false pretenses, swindle, or confidence game is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "CreditCardAutomaticTellerMachineFraud",
+            "description": "Indicates that credit card or automatic teller machine fraud is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Impersonation",
+            "description": "Indicates that impersonation is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "WelfareFraud",
+            "description": "Indicates that welfare fraud is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "WireFraud",
+            "description": "Indicates that wire fraud is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "IdentityTheft",
+            "description": "Indicates that identity theft is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "HackingComputerInvasion",
+            "description": "Indicates that hacking or computer invasion is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Embezzlement",
+            "description": "Indicates that embezzlement is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "StolenPropertyOffenses",
+            "description": "Indicates that stolen property offenses is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "DestructionDamageVandalismOfProperty",
+            "description": "Indicates that destruction, damage, or vandalism of property is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "DrugNarcoticViolations",
+            "description": "Indicates that drug or narcotic violations is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "DrugEquipmentViolations",
+            "description": "Indicates that drug equipment violations is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "Incest",
+            "description": "Indicates that incest is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "StatutoryRape",
+            "description": "Indicates that statutory rape is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "PornographyObsceneMaterial",
+            "description": "Indicates that pornography or obscene material is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "BettingWagering",
+            "description": "Indicates that betting or wagering is a type of crime."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "CrimeType",
+            "target_entity": "OperatingPromotingAssistingGambling",
+            "description": "Indicates that operating, promoting, or assisting gambling is a type of crime."
+        }
+    ]
+}

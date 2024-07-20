@@ -1,0 +1,161 @@
+{
+    "entities": [
+        {
+            "entity": "010N",
+            "description": "Unknown category with unweighted frequency of 124650."
+        },
+        {
+            "entity": "015S",
+            "description": "Unknown category with unweighted frequency of 39570."
+        },
+        {
+            "entity": "020A",
+            "description": "Unknown category with unweighted frequency of 14063."
+        },
+        {
+            "entity": "025A",
+            "description": "Unknown category with unweighted frequency of 188799."
+        },
+        {
+            "entity": "030E",
+            "description": "Unknown category with unweighted frequency of 110200."
+        },
+        {
+            "entity": "035W",
+            "description": "Unknown category with unweighted frequency of 66345."
+        },
+        {
+            "entity": "040C",
+            "description": "Unknown category with unweighted frequency of 225919."
+        },
+        {
+            "entity": "045E",
+            "description": "Unknown category with unweighted frequency of 220318."
+        },
+        {
+            "entity": "050N",
+            "description": "Unknown category with unweighted frequency of 163147."
+        },
+        {
+            "entity": "055S",
+            "description": "Unknown category with unweighted frequency of 128201."
+        },
+        {
+            "entity": "060A",
+            "description": "Unknown category with unweighted frequency of 327646."
+        },
+        {
+            "entity": "065A",
+            "description": "Unknown category with unweighted frequency of 112134."
+        },
+        {
+            "entity": "070A",
+            "description": "Unknown category with unweighted frequency of 52741."
+        },
+        {
+            "entity": "075A",
+            "description": "Unknown category with unweighted frequency of 59726."
+        },
+        {
+            "entity": "080M",
+            "description": "Unknown category with unweighted frequency of 130015."
+        },
+        {
+            "entity": "085N",
+            "description": "Unknown category with unweighted frequency of 8804."
+        },
+        {
+            "entity": "090S",
+            "description": "Unknown category with unweighted frequency of 74184."
+        },
+        {
+            "entity": "095M",
+            "description": "Unknown category with unweighted frequency of 81829."
+        },
+        {
+            "entity": "100N",
+            "description": "Unknown category with unweighted frequency of 282279."
+        },
+        {
+            "entity": "105S",
+            "description": "Unknown category with unweighted frequency of 33589."
+        },
+        {
+            "entity": "110A",
+            "description": "Unknown category with unweighted frequency of 52628."
+        },
+        {
+            "entity": "115A",
+            "description": "Unknown category with unweighted frequency of 61845."
+        },
+        {
+            "entity": "120C",
+            "description": "Unknown category with unweighted frequency of 74637."
+        },
+        {
+            "entity": "125N",
+            "description": "Unknown category with unweighted frequency of 342095."
+        },
+        {
+            "entity": "130S",
+            "description": "Unknown category with unweighted frequency of 24772."
+        },
+        {
+            "entity": "135N",
+            "description": "Unknown category with unweighted frequency of 64021."
+        },
+        {
+            "entity": "140S",
+            "description": "Unknown category with unweighted frequency of 147329."
+        },
+        {
+            "entity": "145N",
+            "description": "Unknown category with unweighted frequency of 40112."
+        },
+        {
+            "entity": "150S",
+            "description": "Unknown category with unweighted frequency of 57430."
+        },
+        {
+            "entity": "155A",
+            "description": "Unknown category with unweighted frequency of 135768."
+        },
+        {
+            "entity": "160E",
+            "description": "Unknown category with unweighted frequency of 62477."
+        },
+        {
+            "entity": "165W",
+            "description": "Unknown category with unweighted frequency of 81203."
+        },
+        {
+            "entity": "170E",
+            "description": "Unknown category with unweighted frequency of 58642."
+        },
+        {
+            "entity": "175M",
+            "description": "Unknown category with unweighted frequency of 52027."
+        },
+        {
+            "entity": "180W",
+            "description": "Unknown category with unweighted frequency of 78980."
+        },
+        {
+            "entity": "185A",
+            "description": "Unknown category with unweighted frequency of 39394."
+        },
+        {
+            "entity": "190A",
+            "description": "Unknown category with unweighted frequency of 190103."
+        },
+        {
+            "entity": "195A",
+            "description": "Unknown category with unweighted frequency of 192909."
+        },
+        {
+            "entity": "200E",
+            "description": "Unknown category with unweighted frequency of 266743."
+        }
+    ],
+    "relationships": []
+}

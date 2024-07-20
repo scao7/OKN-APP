@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "DifficultyConcentrating",
+            "description": "Level of difficulty in concentrating during the past 12 months due to emotions, nerves, or mental health."
+        },
+        {
+            "entity": "DifficultyGoingOut",
+            "description": "Level of difficulty in going out of the house during the past 12 months due to emotions, nerves, or mental health."
+        },
+        {
+            "entity": "EmotionalProblemsKeepFromLeavingHouse",
+            "description": "Whether emotional problems kept the individual from leaving the house during the past 12 months."
+        },
+        {
+            "entity": "DifficultyDealingWithStrangers",
+            "description": "Level of difficulty in dealing with people the individual did not know well during the past 12 months due to emotions, nerves, or mental health."
+        },
+        {
+            "entity": "ResponseOptions",
+            "description": "Different response options available for survey questions, such as no difficulty, mild difficulty, and severe difficulty."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDifficultyConcentrating",
+            "source_entity": "Respondent",
+            "target_entity": "DifficultyConcentrating",
+            "description": "Indicates the respondent's level of difficulty in concentrating due to mental health issues."
+        },
+        {
+            "relationship": "hasDifficultyGoingOut",
+            "source_entity": "Respondent",
+            "target_entity": "DifficultyGoingOut",
+            "description": "Indicates the respondent's level of difficulty in going out due to mental health issues."
+        },
+        {
+            "relationship": "hasEmotionalProblemsKeepFromLeavingHouse",
+            "source_entity": "Respondent",
+            "target_entity": "EmotionalProblemsKeepFromLeavingHouse",
+            "description": "Indicates if emotional problems kept the respondent from leaving the house."
+        },
+        {
+            "relationship": "hasDifficultyDealingWithStrangers",
+            "source_entity": "Respondent",
+            "target_entity": "DifficultyDealingWithStrangers",
+            "description": "Indicates the respondent's level of difficulty in dealing with strangers due to mental health issues."
+        },
+        {
+            "relationship": "hasResponseOptions",
+            "source_entity": "SurveyQuestion",
+            "target_entity": "ResponseOptions",
+            "description": "Defines the response options available for each survey question."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "has",
+            "object": "DifficultyConcentrating"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has",
+            "object": "DifficultyGoingOut"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has",
+            "object": "EmotionalProblemsKeepFromLeavingHouse"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has",
+            "object": "DifficultyDealingWithStrangers"
+        },
+        {
+            "subject": "SurveyQuestion",
+            "predicate": "defines",
+            "object": "ResponseOptions"
+        }
+    ]
+}

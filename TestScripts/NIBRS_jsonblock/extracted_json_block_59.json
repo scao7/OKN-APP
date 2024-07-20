@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of responses or occurrences."
+        },
+        {
+            "entity": "ResponsePercentage",
+            "description": "The percentage of the total responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponses",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the survey responses to their unweighted frequency counts."
+        },
+        {
+            "relationship": "hasResponsePercentage",
+            "source_entity": "SurveyResponses",
+            "target_entity": "ResponsePercentage",
+            "description": "Relates the survey responses to their corresponding percentages."
+        }
+    ]
+}

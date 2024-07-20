@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceUseType",
+            "description": "The type of substance use (alcohol, drugs, both) indicated in support group participation."
+        },
+        {
+            "entity": "SupportGroupParticipation",
+            "description": "Indicates whether the respondent participated in a support group in the past 12 months."
+        },
+        {
+            "entity": "OutpatientTreatmentAlcohol",
+            "description": "Indicates whether the respondent received outpatient treatment for alcohol use in the past 12 months."
+        },
+        {
+            "entity": "OutpatientTreatmentMarijuana",
+            "description": "Indicates whether the respondent received outpatient treatment for marijuana use in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstanceUseType",
+            "source_entity": "SupportGroupParticipation",
+            "target_entity": "SubstanceUseType",
+            "description": "Specifies the type of substance use (alcohol, drugs, both) involved in the support group participation."
+        },
+        {
+            "relationship": "hasOutpatientTreatmentAlcohol",
+            "source_entity": "Respondent",
+            "target_entity": "OutpatientTreatmentAlcohol",
+            "description": "Links the respondent to their receipt of outpatient treatment for alcohol use in the past 12 months."
+        },
+        {
+            "relationship": "hasOutpatientTreatmentMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "OutpatientTreatmentMarijuana",
+            "description": "Links the respondent to their receipt of outpatient treatment for marijuana use in the past 12 months."
+        }
+    ]
+}

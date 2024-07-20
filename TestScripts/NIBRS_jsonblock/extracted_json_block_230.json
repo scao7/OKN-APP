@@ -1,0 +1,192 @@
+{
+    "entities": [
+        {
+            "entity": "AggravatedAssault",
+            "description": "Aggravated assault cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "Simple assault cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "Intimidation instances reported in the NSDUH survey."
+        },
+        {
+            "entity": "Arson",
+            "description": "Arson incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "ExtortionBlackmail",
+            "description": "Extortion and blackmail cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "BurglaryBreakingEntering",
+            "description": "Burglary, breaking and entering incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "PocketPicking",
+            "description": "Pocket-picking incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "PurseSnatching",
+            "description": "Purse-snatching incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "Shoplifting incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "Theft from building incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "TheftFromCoinOperatedDevice",
+            "description": "Theft from coin-operated machine or device incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "Theft from motor vehicle incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "TheftOfMotorVehicleParts",
+            "description": "Theft of motor vehicle parts and accessories incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "AllOtherLarceny",
+            "description": "All other larceny incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "Motor vehicle theft incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "CounterfeitingForgery",
+            "description": "Counterfeiting and forgery cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "FalsePretenses",
+            "description": "False pretenses and confidence game reports in the NSDUH survey."
+        },
+        {
+            "entity": "CreditCardFraud",
+            "description": "Credit card and automatic teller machine fraud reported in the NSDUH survey."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Impersonation cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "Welfare fraud cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "WireFraud",
+            "description": "Wire fraud cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "Identity theft cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "HackingComputerInvasion",
+            "description": "Hacking and computer invasion incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Embezzlement cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Stolen property offenses reported in the NSDUH survey."
+        },
+        {
+            "entity": "DestructionVandalism",
+            "description": "Destruction, damage, and vandalism of property reported in the NSDUH survey."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Drug and narcotic violations reported in the NSDUH survey."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Drug equipment violations reported in the NSDUH survey."
+        },
+        {
+            "entity": "Incest",
+            "description": "Incest cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Statutory rape cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "Pornography",
+            "description": "Pornography and obscene material offenses reported in the NSDUH survey."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "Betting and wagering incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "GamblingViolation",
+            "description": "Operating, promoting, and assisting gambling violations reported in the NSDUH survey."
+        },
+        {
+            "entity": "GamblingEquipmentViolation",
+            "description": "Gambling equipment violations reported in the NSDUH survey."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Sports tampering incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Prostitution cases reported in the NSDUH survey."
+        },
+        {
+            "entity": "PromotingProstitution",
+            "description": "Assisting or promoting prostitution cases in the NSDUH survey."
+        },
+        {
+            "entity": "PurchasingProstitution",
+            "description": "Purchasing prostitution incidents reported in the NSDUH survey."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Bribery cases reported in the NSDUH survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAggravatedAssault",
+            "source_entity": "Survey",
+            "target_entity": "AggravatedAssault",
+            "description": "Indicates aggravated assault cases recorded in the survey."
+        },
+        {
+            "relationship": "hasSimpleAssault",
+            "source_entity": "Survey",
+            "target_entity": "SimpleAssault",
+            "description": "Indicates simple assault cases recorded in the survey."
+        },
+        {
+            "relationship": "hasIntimidation",
+            "source_entity": "Survey",
+            "target_entity": "Intimidation",
+            "description": "Indicates intimidation instances recorded in the survey."
+        },
+        {
+            "relationship": "hasArson",
+            "source_entity": "Survey",
+            "target_entity": "Arson",
+            "description": "Indicates arson incidents recorded in the survey."
+        },
+        {
+            "relationship": "hasExtortionBlackmail",
+            "source_entity": "Survey",
+            "target_entity": "ExtortionBlackmail",
+            "description": "Indicates extortion and blackmail cases recorded in the survey."
+        }
+    ]
+}

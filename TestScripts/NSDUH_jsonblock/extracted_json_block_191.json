@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 12 months, including today's date."
+        },
+        {
+            "entity": "InhalantUsageFrequencyPreference",
+            "description": "Preferred frequency method for reporting inhalant use (e.g., days per week, days per month, etc.)."
+        },
+        {
+            "entity": "DaysUsedInhalantPast12Months",
+            "description": "Number of days the respondent used an inhalant of any kind in the past 12 months."
+        },
+        {
+            "entity": "DaysUsedInhalantPerMonth",
+            "description": "Number of days per month the respondent used an inhalant of any kind in the past 12 months."
+        },
+        {
+            "entity": "DaysUsedInhalantPerWeek",
+            "description": "Number of days per week the respondent used an inhalant of any kind in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 12 months."
+        },
+        {
+            "relationship": "hasInhalantUsageFrequencyPreference",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUsageFrequencyPreference",
+            "description": "Indicates the preferred method for the respondent to report inhalant use frequency."
+        },
+        {
+            "relationship": "hasDaysUsedInhalantPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedInhalantPast12Months",
+            "description": "Indicates the number of days the respondent used inhalants in the past 12 months."
+        },
+        {
+            "relationship": "hasDaysUsedInhalantPerMonth",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedInhalantPerMonth",
+            "description": "Indicates the number of days per month the respondent used inhalants."
+        },
+        {
+            "relationship": "hasDaysUsedInhalantPerWeek",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedInhalantPerWeek",
+            "description": "Indicates the number of days per week the respondent used inhalants."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Survey",
+            "predicate": "hasSurveyPeriod",
+            "object": "SurveyPeriod"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasInhalantUsageFrequencyPreference",
+            "object": "InhalantUsageFrequencyPreference"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasDaysUsedInhalantPast12Months",
+            "object": "DaysUsedInhalantPast12Months"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasDaysUsedInhalantPerMonth",
+            "object": "DaysUsedInhalantPerMonth"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasDaysUsedInhalantPerWeek",
+            "object": "DaysUsedInhalantPerWeek"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "EcstasyFirstUseYear",
+            "description": "Year of first ecstasy use with imputation indicator."
+        },
+        {
+            "entity": "InhalantsFirstUseAgeRevised",
+            "description": "Revised age of first use of inhalants."
+        },
+        {
+            "entity": "InhalantsFirstUseIndicator",
+            "description": "Imputation indicator for first use of inhalants."
+        },
+        {
+            "entity": "MethamphetamineFirstUseAgeRevised",
+            "description": "Revised age of first use of methamphetamine."
+        },
+        {
+            "entity": "MethamphetamineFirstUseIndicator",
+            "description": "Imputation indicator for first use of methamphetamine."
+        },
+        {
+            "entity": "MethamphetamineFirstUseYearRevised",
+            "description": "Revised year of first use of methamphetamine."
+        },
+        {
+            "entity": "MethamphetamineFirstUseYearIndicator",
+            "description": "Imputation indicator for year of first use of methamphetamine."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "Ecstasy",
+            "target_entity": "EcstasyFirstUseYear",
+            "description": "Relates Ecstasy to the year of first use with imputation indicators."
+        },
+        {
+            "relationship": "hasFirstUseAgeRevised",
+            "source_entity": "Inhalants",
+            "target_entity": "InhalantsFirstUseAgeRevised",
+            "description": "Relates Inhalants to the revised age of first use."
+        },
+        {
+            "relationship": "hasFirstUseIndicator",
+            "source_entity": "Inhalants",
+            "target_entity": "InhalantsFirstUseIndicator",
+            "description": "Relates Inhalants to the imputation indicator for first use age."
+        },
+        {
+            "relationship": "hasFirstUseAgeRevised",
+            "source_entity": "Methamphetamine",
+            "target_entity": "MethamphetamineFirstUseAgeRevised",
+            "description": "Relates Methamphetamine to the revised age of first use."
+        },
+        {
+            "relationship": "hasFirstUseIndicator",
+            "source_entity": "Methamphetamine",
+            "target_entity": "MethamphetamineFirstUseIndicator",
+            "description": "Relates Methamphetamine to the imputation indicator for first use age."
+        },
+        {
+            "relationship": "hasFirstUseYearRevised",
+            "source_entity": "Methamphetamine",
+            "target_entity": "MethamphetamineFirstUseYearRevised",
+            "description": "Relates Methamphetamine to the revised year of first use."
+        },
+        {
+            "relationship": "hasFirstUseYearIndicator",
+            "source_entity": "Methamphetamine",
+            "target_entity": "MethamphetamineFirstUseYearIndicator",
+            "description": "Relates Methamphetamine to the imputation indicator for year of first use."
+        }
+    ]
+}

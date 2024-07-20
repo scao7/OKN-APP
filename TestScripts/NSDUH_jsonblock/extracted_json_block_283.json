@@ -1,0 +1,98 @@
+{
+    "entities": [
+        {
+            "entity": "RC_EverUsedComputerCleaner_GetHigh",
+            "description": "Respondent ever used computer cleaner or air duster to get high."
+        },
+        {
+            "entity": "RC_EverUsedOtherAerosolSpray",
+            "description": "Respondent ever used other aerosol spray."
+        },
+        {
+            "entity": "RC_HydrocodoneProducts_PastYearUse",
+            "description": "Respondent's past year use of hydrocodone products."
+        },
+        {
+            "entity": "RC_ZohydroER_PastYearUse",
+            "description": "Respondent's past year use of Zohydro ER."
+        },
+        {
+            "entity": "RC_OxycodoneProducts_PastYearUse",
+            "description": "Respondent's past year use of oxycodone products."
+        },
+        {
+            "entity": "RC_TramadolProducts_PastYearUse",
+            "description": "Respondent's past year use of tramadol products."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsedSubstance",
+            "source_entity": "Respondent",
+            "target_entity": "RC_EverUsedComputerCleaner_GetHigh",
+            "description": "Indicates that the respondent has ever used computer cleaner or air duster to get high."
+        },
+        {
+            "relationship": "hasUsedSubstance",
+            "source_entity": "Respondent",
+            "target_entity": "RC_EverUsedOtherAerosolSpray",
+            "description": "Indicates that the respondent has ever used other aerosol spray."
+        },
+        {
+            "relationship": "hasPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "RC_HydrocodoneProducts_PastYearUse",
+            "description": "Indicates that the respondent has used hydrocodone products in the past year."
+        },
+        {
+            "relationship": "hasPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "RC_ZohydroER_PastYearUse",
+            "description": "Indicates that the respondent has used Zohydro ER in the past year."
+        },
+        {
+            "relationship": "hasPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "RC_OxycodoneProducts_PastYearUse",
+            "description": "Indicates that the respondent has used oxycodone products in the past year."
+        },
+        {
+            "relationship": "hasPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "RC_TramadolProducts_PastYearUse",
+            "description": "Indicates that the respondent has used tramadol products in the past year."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "RC_EverUsedComputerCleaner_GetHigh",
+            "predicate": "frequency",
+            "object": "0.01"
+        },
+        {
+            "subject": "RC_EverUsedOtherAerosolSpray",
+            "predicate": "frequency",
+            "object": "0.02"
+        },
+        {
+            "subject": "RC_HydrocodoneProducts_PastYearUse",
+            "predicate": "frequency",
+            "object": "0.27"
+        },
+        {
+            "subject": "RC_ZohydroER_PastYearUse",
+            "predicate": "frequency",
+            "object": "0.27"
+        },
+        {
+            "subject": "RC_OxycodoneProducts_PastYearUse",
+            "predicate": "frequency",
+            "object": "0.25"
+        },
+        {
+            "subject": "RC_TramadolProducts_PastYearUse",
+            "predicate": "frequency",
+            "object": "0.27"
+        }
+    ]
+}

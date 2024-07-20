@@ -1,0 +1,52 @@
+{
+    "entities": [
+        {
+            "entity": "CentralNervousSystemStimulants",
+            "description": "Central nervous system stimulant use disorder including prescription stimulant use disorder due to any use of stimulants."
+        },
+        {
+            "entity": "BothDrugsAndAlcohol",
+            "description": "Drug use disorder including prescription drug use disorder due to any use of prescription drugs, and alcohol use disorder."
+        },
+        {
+            "entity": "DrugsOnlyNoAlcohol",
+            "description": "Drug use disorder including prescription drug use disorder due to any use of prescription drugs, and no alcohol use disorder."
+        },
+        {
+            "entity": "AlcoholOnlyNoDrugs",
+            "description": "Alcohol use disorder, and no drug use disorder including prescription drug use disorder due to any use of prescription drugs."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUseDisorder",
+            "source_entity": "CentralNervousSystemStimulants",
+            "target_entity": "PrescriptionStimulantsUsage",
+            "description": "Relates central nervous system stimulants use disorder to the use of prescription stimulants."
+        },
+        {
+            "relationship": "hasDrugsUseDisorder",
+            "source_entity": "BothDrugsAndAlcohol",
+            "target_entity": "PrescriptionDrugsUsage",
+            "description": "Relates drug use disorder including prescription drug use disorder."
+        },
+        {
+            "relationship": "hasAlcoholUseDisorder",
+            "source_entity": "BothDrugsAndAlcohol",
+            "target_entity": "AlcoholUsage",
+            "description": "Relates alcohol use disorder."
+        },
+        {
+            "relationship": "hasDrugsUseDisorder",
+            "source_entity": "DrugsOnlyNoAlcohol",
+            "target_entity": "PrescriptionDrugsUsage",
+            "description": "Relates drug use disorder including prescription drug use disorder."
+        },
+        {
+            "relationship": "hasAlcoholUseDisorder",
+            "source_entity": "AlcoholOnlyNoDrugs",
+            "target_entity": "PrescriptionDrugsUsage",
+            "description": "Relates alcohol use disorder and no drug use disorder."
+        }
+    ]
+}

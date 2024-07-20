@@ -1,0 +1,396 @@
+{
+    "entities": [
+        {
+            "entity": "KidnappingAbduction",
+            "description": "The act of forcibly taking someone away against their will."
+        },
+        {
+            "entity": "Rape",
+            "description": "A type of sexual assault involving non-consensual sexual intercourse."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Sexual activity involving anal or oral copulation."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "The act of sexually violating someone with an object."
+        },
+        {
+            "entity": "Fondling",
+            "description": "Touching or handling someone in a sexual manner without their consent."
+        },
+        {
+            "entity": "Robbery",
+            "description": "The act of taking property unlawfully from a person or place by force or threat of force."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "An attack intended to cause serious bodily harm to another person."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "An attack without the intention of causing serious bodily harm."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "The act of frightening or threatening someone, usually to make them do something."
+        },
+        {
+            "entity": "Arson",
+            "description": "The act of intentionally setting fire to property."
+        },
+        {
+            "entity": "Extortion",
+            "description": "The practice of obtaining something, especially money, through force or threats."
+        },
+        {
+            "entity": "Burglary",
+            "description": "The act of breaking into a building, typically to steal."
+        },
+        {
+            "entity": "Pocket-picking",
+            "description": "The act of stealing from someone's pocket."
+        },
+        {
+            "entity": "Purse-snatching",
+            "description": "The act of stealing a purse from someone through sudden and forceful means."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "The act of stealing goods from a store."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "The act of stealing items from a building."
+        },
+        {
+            "entity": "TheftFromCoinMachine",
+            "description": "The act of stealing from a coin-operated machine."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "The act of stealing items from a motor vehicle."
+        },
+        {
+            "entity": "TheftOfVehicleParts",
+            "description": "The act of stealing parts from a motor vehicle."
+        },
+        {
+            "entity": "AllOtherLarceny",
+            "description": "All other thefts not classified under specific categories."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "The act of stealing a motor vehicle."
+        },
+        {
+            "entity": "CounterfeitingForgery",
+            "description": "The act of making an unauthorized copy or imitation of something, especially money."
+        },
+        {
+            "entity": "Swindle",
+            "description": "The act of fraudulently obtaining money or property by deceit or manipulation."
+        },
+        {
+            "entity": "CreditCardFraud",
+            "description": "The act of using someone else's credit card without authorization."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "The act of pretending to be someone else for deceitful purposes."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "The act of wrongfully obtaining welfare benefits."
+        },
+        {
+            "entity": "WireFraud",
+            "description": "The act of using electronic communications to defraud someone."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "The use of someone else's personal information without their permission, usually for financial gain."
+        },
+        {
+            "entity": "Hacking",
+            "description": "The act of breaking into computers or computer networks."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "The wrongful taking of money or property by someone entrusted to manage it."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Crimes related to dealing in stolen property."
+        },
+        {
+            "entity": "Vandalism",
+            "description": "The deliberate destruction or damage of property."
+        },
+        {
+            "entity": "DrugViolations",
+            "description": "Crimes involving the illegal possession, sale, or use of drugs."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Crimes involving the possession or use of drug paraphernalia."
+        },
+        {
+            "entity": "Incest",
+            "description": "Sexual activity between family members who are not legally allowed to marry each other."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Sexual activity with someone who is below the age of consent."
+        },
+        {
+            "entity": "ObsceneMaterial",
+            "description": "Materials that depict or describe offensive sexual conduct."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "The act of risking money or other assets on an event with an uncertain outcome."
+        },
+        {
+            "entity": "AssistingGambling",
+            "description": "The act of promoting or helping with gambling activities."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "KidnappingAbduction",
+            "description": "A type of crime involving the forceful taking of someone against their will."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Rape",
+            "description": "A type of crime involving non-consensual sexual intercourse."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Sodomy",
+            "description": "A type of sexual activity involving anal or oral copulation."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "SexualAssaultWithAnObject",
+            "description": "A type of crime involving sexual violation with an object."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Fondling",
+            "description": "A type of crime involving unwanted sexual touching or handling."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Robbery",
+            "description": "A type of crime involving taking property unlawfully by force or threat."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "AggravatedAssault",
+            "description": "A type of crime involving an attack intending to cause serious bodily harm."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "SimpleAssault",
+            "description": "A type of crime involving an attack without intent to cause serious bodily harm."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Intimidation",
+            "description": "A type of crime involving frightening or threatening someone."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Arson",
+            "description": "A type of crime involving intentionally setting fire to property."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Extortion",
+            "description": "A type of crime involving obtaining something through force or threats."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Burglary",
+            "description": "A type of crime involving breaking into a building to steal."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Pocket-picking",
+            "description": "A type of theft involving stealing from someone's pocket."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Purse-snatching",
+            "description": "A type of theft involving forcefully stealing a purse."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Shoplifting",
+            "description": "A type of theft involving stealing goods from a store."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "TheftFromBuilding",
+            "description": "A type of theft involving stealing items from a building."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "TheftFromCoinMachine",
+            "description": "A type of theft involving stealing from a coin-operated machine."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "TheftFromMotorVehicle",
+            "description": "A type of theft involving stealing items from a motor vehicle."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "TheftOfVehicleParts",
+            "description": "A type of theft involving stealing parts from a motor vehicle."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "AllOtherLarceny",
+            "description": "A type of theft not classified under other categories."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "MotorVehicleTheft",
+            "description": "A type of theft involving stealing a motor vehicle."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "CounterfeitingForgery",
+            "description": "A type of crime involving making unauthorized copies or imitations, especially of money."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Swindle",
+            "description": "A type of crime involving obtaining money or property through deceit or manipulation."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "CreditCardFraud",
+            "description": "A type of crime involving the unauthorized use of someone else's credit card."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Impersonation",
+            "description": "A type of crime involving pretending to be someone else."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "WelfareFraud",
+            "description": "A type of crime involving wrongfully obtaining welfare benefits."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "WireFraud",
+            "description": "A type of crime involving using electronic communications to defraud someone."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "IdentityTheft",
+            "description": "A type of crime involving using someone else's personal information without authorization."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Hacking",
+            "description": "A type of crime involving breaking into computers or computer networks."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Embezzlement",
+            "description": "A type of crime involving wrongly taking money or property by someone entrusted to manage it."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "StolenPropertyOffenses",
+            "description": "Crimes related to dealing in stolen property."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Vandalism",
+            "description": "A type of crime involving the deliberate destruction of property."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "DrugViolations",
+            "description": "Crimes involving unlawful possession, sale, or use of drugs."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "DrugEquipmentViolations",
+            "description": "Crimes involving possession or use of drug paraphernalia."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "Incest",
+            "description": "A type of crime involving sexual activity between family members who cannot legally marry."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "StatutoryRape",
+            "description": "A type of crime involving sexual activity with someone below the age of consent."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "ObsceneMaterial",
+            "description": "A type of crime involving materials depicting offensive sexual conduct."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "BettingWagering",
+            "description": "A type of crime involving risking money or assets on an event with an uncertain outcome."
+        },
+        {
+            "relationship": "hasType",
+            "source_entity": "Crime",
+            "target_entity": "AssistingGambling",
+            "description": "A type of crime involving promoting or helping with gambling activities."
+        }
+    ]
+}

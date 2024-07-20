@@ -1,0 +1,266 @@
+{
+    "entities": [
+        {
+            "entity": "VictimSpouse",
+            "description": "Victim was Spouse of the offender."
+        },
+        {
+            "entity": "VictimCommonLawSpouse",
+            "description": "Victim was Common-Law Spouse of the offender."
+        },
+        {
+            "entity": "VictimParent",
+            "description": "Victim was Parent of the offender."
+        },
+        {
+            "entity": "VictimSibling",
+            "description": "Victim was Sibling of the offender."
+        },
+        {
+            "entity": "VictimChild",
+            "description": "Victim was Child of the offender."
+        },
+        {
+            "entity": "VictimGrandparent",
+            "description": "Victim was Grandparent of the offender."
+        },
+        {
+            "entity": "VictimGrandchild",
+            "description": "Victim was Grandchild of the offender."
+        },
+        {
+            "entity": "VictimInLaw",
+            "description": "Victim was In-Law of the offender."
+        },
+        {
+            "entity": "VictimStepparent",
+            "description": "Victim was Stepparent of the offender."
+        },
+        {
+            "entity": "VictimStepchild",
+            "description": "Victim was Stepchild of the offender."
+        },
+        {
+            "entity": "VictimStepsibling",
+            "description": "Victim was Stepsibling of the offender."
+        },
+        {
+            "entity": "VictimOtherFamilyMember",
+            "description": "Victim was Other Family Member of the offender."
+        },
+        {
+            "entity": "VictimOffender",
+            "description": "Victim was the Offender themselves."
+        },
+        {
+            "entity": "VictimAcquaintance",
+            "description": "Victim was Acquaintance of the offender."
+        },
+        {
+            "entity": "VictimFriend",
+            "description": "Victim was Friend of the offender."
+        },
+        {
+            "entity": "VictimNeighbor",
+            "description": "Victim was Neighbor of the offender."
+        },
+        {
+            "entity": "VictimBabysittee",
+            "description": "Victim was Babysittee (the baby) of the offender."
+        },
+        {
+            "entity": "VictimBoyfriendGirlfriend",
+            "description": "Victim was Boyfriend/Girlfriend of the offender."
+        },
+        {
+            "entity": "VictimChildBoyfriendGirlfriend",
+            "description": "Victim was Child of Boyfriend/Girlfriend of the offender."
+        },
+        {
+            "entity": "HomosexualRelationship",
+            "description": "Victim had a Homosexual Relationship with the offender."
+        },
+        {
+            "entity": "VictimExSpouse",
+            "description": "Victim was Ex-Spouse of the offender."
+        },
+        {
+            "entity": "VictimEmployee",
+            "description": "Victim was Employee of the offender."
+        },
+        {
+            "entity": "VictimEmployer",
+            "description": "Victim was Employer of the offender."
+        },
+        {
+            "entity": "VictimOtherwiseKnown",
+            "description": "Victim was Otherwise Known to the offender."
+        },
+        {
+            "entity": "VictimStranger",
+            "description": "Victim was Stranger to the offender."
+        },
+        {
+            "entity": "VictimExRelationship",
+            "description": "Victim was in an Ex-relationship (Ex-boyfriend/ex-girlfriend) with the offender."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimSpouse",
+            "target_entity": "Offender",
+            "description": "Indicates that the spouse was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimCommonLawSpouse",
+            "target_entity": "Offender",
+            "description": "Indicates that the common-law spouse was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimParent",
+            "target_entity": "Offender",
+            "description": "Indicates that the parent was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimSibling",
+            "target_entity": "Offender",
+            "description": "Indicates that the sibling was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimChild",
+            "target_entity": "Offender",
+            "description": "Indicates that the child was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimGrandparent",
+            "target_entity": "Offender",
+            "description": "Indicates that the grandparent was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimGrandchild",
+            "target_entity": "Offender",
+            "description": "Indicates that the grandchild was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimInLaw",
+            "target_entity": "Offender",
+            "description": "Indicates that the in-law was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimStepparent",
+            "target_entity": "Offender",
+            "description": "Indicates that the stepparent was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimStepchild",
+            "target_entity": "Offender",
+            "description": "Indicates that the stepchild was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimStepsibling",
+            "target_entity": "Offender",
+            "description": "Indicates that the stepsibling was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimOtherFamilyMember",
+            "target_entity": "Offender",
+            "description": "Indicates that other family member was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimOffender",
+            "target_entity": "Offender",
+            "description": "Indicates that the offender was the victim."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimAcquaintance",
+            "target_entity": "Offender",
+            "description": "Indicates that the acquaintance was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimFriend",
+            "target_entity": "Offender",
+            "description": "Indicates that the friend was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimNeighbor",
+            "target_entity": "Offender",
+            "description": "Indicates that the neighbor was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimBabysittee",
+            "target_entity": "Offender",
+            "description": "Indicates that the babysittee was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimBoyfriendGirlfriend",
+            "target_entity": "Offender",
+            "description": "Indicates that the boyfriend/girlfriend was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimChildBoyfriendGirlfriend",
+            "target_entity": "Offender",
+            "description": "Indicates that the child of the boyfriend/girlfriend was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "HomosexualRelationship",
+            "target_entity": "Offender",
+            "description": "Indicates that the victim was in a homosexual relationship with the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimExSpouse",
+            "target_entity": "Offender",
+            "description": "Indicates that the ex-spouse was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimEmployee",
+            "target_entity": "Offender",
+            "description": "Indicates that the employee was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimEmployer",
+            "target_entity": "Offender",
+            "description": "Indicates that the employer was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimOtherwiseKnown",
+            "target_entity": "Offender",
+            "description": "Indicates that the otherwise known person was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimStranger",
+            "target_entity": "Offender",
+            "description": "Indicates that the stranger was the victim of the offender."
+        },
+        {
+            "relationship": "wasVictimOf",
+            "source_entity": "VictimExRelationship",
+            "target_entity": "Offender",
+            "description": "Indicates that the ex-relationship victim was the victim of the offender."
+        }
+    ]
+}

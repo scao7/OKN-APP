@@ -1,0 +1,100 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency count of responses, not adjusted for sample weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of total responses that fall into each category."
+        },
+        {
+            "entity": "ResponseCategory",
+            "description": "Categories of responses to a survey question numbered from 25 to 49, including missing data."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The count and percentage of missing data from survey responses."
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "The total number of responses recorded."
+        },
+        {
+            "entity": "StatisticalMeasures",
+            "description": "Measures including Mean, Minimum, Maximum, and Standard Deviation based on valid cases."
+        },
+        {
+            "entity": "CaseLocation",
+            "description": "The location of cases in terms of data position or identifier."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of variable, which in this case is numeric."
+        },
+        {
+            "entity": "MissingValuesRange",
+            "description": "Range of missing values for the variable."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases considered within the survey including valid and missing data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Connects a response category to its unweighted frequency count."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "ResponseCategory",
+            "target_entity": "Percentage",
+            "description": "Connects a response category to its corresponding percentage."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the count of missing data from the survey."
+        },
+        {
+            "relationship": "comprisesTotalResponses",
+            "source_entity": "Survey",
+            "target_entity": "TotalResponses",
+            "description": "Indicates the total number of survey responses recorded."
+        },
+        {
+            "relationship": "usesStatisticalMeasures",
+            "source_entity": "Analysis",
+            "target_entity": "StatisticalMeasures",
+            "description": "Relates the analysis to the statistical measures calculated."
+        },
+        {
+            "relationship": "hasCaseLocation",
+            "source_entity": "Survey",
+            "target_entity": "CaseLocation",
+            "description": "Indicates the location of cases in the data."
+        },
+        {
+            "relationship": "definesVariableType",
+            "source_entity": "Survey",
+            "target_entity": "VariableType",
+            "description": "Defines the variable type used in the survey."
+        },
+        {
+            "relationship": "hasMissingValuesRange",
+            "source_entity": "Variable",
+            "target_entity": "MissingValuesRange",
+            "description": "Specifies the range of missing values for a variable."
+        },
+        {
+            "relationship": "includesTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of cases considered, including valid and missing data."
+        }
+    ]
+}

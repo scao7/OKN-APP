@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "HERFSMOKE",
+            "description": "RC-EVER SMOKED HEROIN"
+        },
+        {
+            "entity": "HERFSNIFF",
+            "description": "RC-EVER SNIFFED HEROIN"
+        },
+        {
+            "entity": "IRNPCOLDRC",
+            "description": "RC-NONPRESCRIPTION COUGH OR COLD MEDS - EVER USED"
+        },
+        {
+            "entity": "IRNPCOLDYR",
+            "description": "RC-NONPRESCRIPTION COUGH OR COLD MEDS - PAST YEAR USE"
+        },
+        {
+            "entity": "IRNPCOLDMON",
+            "description": "RC-NONPRESCRIPTION COUGH OR COLD MEDS - PAST MONTH USE"
+        },
+        {
+            "entity": "IRGHBREC",
+            "description": "RC-GHB - EVER USED"
+        },
+        {
+            "entity": "IGHBYR",
+            "description": "RC-GHB - PAST YEAR USE"
+        },
+        {
+            "entity": "IGHBMON",
+            "description": "RC-GHB - PAST MONTH USE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "defines",
+            "source_entity": "HERFSMOKE",
+            "target_entity": "RC-EVER SMOKED HEROIN",
+            "description": "Defines whether the respondent has ever smoked heroin."
+        },
+        {
+            "relationship": "defines",
+            "source_entity": "HERFSNIFF",
+            "target_entity": "RC-EVER SNIFFED HEROIN",
+            "description": "Defines whether the respondent has ever sniffed heroin."
+        },
+        {
+            "relationship": "defines",
+            "source_entity": "IRNPCOLDRC",
+            "target_entity": "RC-NONPRESCRIPTION COUGH OR COLD MEDS - EVER USED",
+            "description": "Defines whether the respondent has ever used nonprescription cough or cold medications."
+        },
+        {
+            "relationship": "defines",
+            "source_entity": "IRNPCOLDYR",
+            "target_entity": "RC-NONPRESCRIPTION COUGH OR COLD MEDS - PAST YEAR USE",
+            "description": "Defines whether the respondent has used nonprescription cough or cold medications in the past year."
+        },
+        {
+            "relationship": "defines",
+            "source_entity": "IRNPCOLDMON",
+            "target_entity": "RC-NONPRESCRIPTION COUGH OR COLD MEDS - PAST MONTH USE",
+            "description": "Defines whether the respondent has used nonprescription cough or cold medications in the past month."
+        },
+        {
+            "relationship": "defines",
+            "source_entity": "IRGHBREC",
+            "target_entity": "RC-GHB - EVER USED",
+            "description": "Defines whether the respondent has ever used GHB."
+        },
+        {
+            "relationship": "defines",
+            "source_entity": "IGHBYR",
+            "target_entity": "RC-GHB - PAST YEAR USE",
+            "description": "Defines whether the respondent has used GHB in the past year."
+        },
+        {
+            "relationship": "defines",
+            "source_entity": "IGHBMON",
+            "target_entity": "RC-GHB - PAST MONTH USE",
+            "description": "Defines whether the respondent has used GHB in the past month."
+        }
+    ]
+}

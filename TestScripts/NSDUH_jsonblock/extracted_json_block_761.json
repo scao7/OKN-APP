@@ -1,0 +1,92 @@
+[
+    {
+        "subject": "Male",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "4.9"
+    },
+    {
+        "subject": "Female",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "7.1"
+    },
+    {
+        "subject": "Not Hispanic or Latino",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "6.2"
+    },
+    {
+        "subject": "American Indian or Alaska Native",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "7.6"
+    },
+    {
+        "subject": "Asian",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "3.7"
+    },
+    {
+        "subject": "Black or African American",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "4.9"
+    },
+    {
+        "subject": "Native Hawaiian or Other Pacific Islander",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "3.3"
+    },
+    {
+        "subject": "White",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "6.5"
+    },
+    {
+        "subject": "Two or More Races",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "12.5"
+    },
+    {
+        "subject": "Hispanic or Latino",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "5.2"
+    },
+    {
+        "subject": "Private Health Insurance",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "5.3"
+    },
+    {
+        "subject": "Medicaid/CHIP",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "10.2"
+    },
+    {
+        "subject": "Other Insurance",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "3.7"
+    },
+    {
+        "subject": "No Coverage",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "6.5"
+    },
+    {
+        "subject": "Full-Time Employment",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "5.5"
+    },
+    {
+        "subject": "Part-Time Employment",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "7.9"
+    },
+    {
+        "subject": "Unemployed",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "10.3"
+    },
+    {
+        "subject": "Other Employment",
+        "predicate": "hasSeriousMentalIllnessPercentage",
+        "object": "5.5"
+    }
+]

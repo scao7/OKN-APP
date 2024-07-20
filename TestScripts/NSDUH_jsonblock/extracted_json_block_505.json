@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "YouthCarriedHandgun",
+            "description": "Indicates whether the youth carried a handgun."
+        },
+        {
+            "entity": "YouthSoldIllegalDrugs",
+            "description": "Indicates whether the youth sold illegal drugs."
+        },
+        {
+            "entity": "YouthStoleItemOver50",
+            "description": "Indicates whether the youth stole or tried to steal an item valued over $50."
+        },
+        {
+            "entity": "YouthAttackedIntentToHarm",
+            "description": "Indicates whether the youth attacked someone with intent to seriously harm."
+        },
+        {
+            "entity": "ParentFeelYouthSmokePackDay",
+            "description": "Parents' feelings about youth smoking a pack of cigarettes per day."
+        },
+        {
+            "entity": "ParentFeelYouthTryMarijuana",
+            "description": "Parents' feelings about youth trying marijuana."
+        },
+        {
+            "entity": "ParentFeelYouthUseMarijuanaMonthly",
+            "description": "Parents' feelings about youth using marijuana monthly."
+        },
+        {
+            "entity": "ParentFeelYouthDrink1To2AlcBevDay",
+            "description": "Parents' feelings about youth drinking 1 to 2 alcoholic beverages per day."
+        },
+        {
+            "entity": "PeerSmokePackDay",
+            "description": "How the youth feels about peers smoking a pack of cigarettes per day."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHandgunIncident",
+            "source_entity": "Youth",
+            "target_entity": "YouthCarriedHandgun",
+            "description": "Relates to whether the youth carried a handgun."
+        },
+        {
+            "relationship": "hasDrugDealingIncident",
+            "source_entity": "Youth",
+            "target_entity": "YouthSoldIllegalDrugs",
+            "description": "Relates to whether the youth sold illegal drugs."
+        },
+        {
+            "relationship": "hasTheftIncident",
+            "source_entity": "Youth",
+            "target_entity": "YouthStoleItemOver50",
+            "description": "Relates to whether the youth stole or tried to steal an item valued over $50."
+        },
+        {
+            "relationship": "hasViolenceIncident",
+            "source_entity": "Youth",
+            "target_entity": "YouthAttackedIntentToHarm",
+            "description": "Relates to whether the youth attacked someone with intent to seriously harm."
+        },
+        {
+            "relationship": "hasParentFeelings",
+            "source_entity": "Parent",
+            "target_entity": "ParentFeelYouthSmokePackDay",
+            "description": "Parents' feelings about youth smoking a pack of cigarettes per day."
+        },
+        {
+            "relationship": "hasParentFeelings",
+            "source_entity": "Parent",
+            "target_entity": "ParentFeelYouthTryMarijuana",
+            "description": "Parents' feelings about youth trying marijuana."
+        },
+        {
+            "relationship": "hasParentFeelings",
+            "source_entity": "Parent",
+            "target_entity": "ParentFeelYouthUseMarijuanaMonthly",
+            "description": "Parents' feelings about youth using marijuana monthly."
+        },
+        {
+            "relationship": "hasParentFeelings",
+            "source_entity": "Parent",
+            "target_entity": "ParentFeelYouthDrink1To2AlcBevDay",
+            "description": "Parents' feelings about youth drinking 1 to 2 alcoholic beverages per day."
+        },
+        {
+            "relationship": "hasPeerFeelings",
+            "source_entity": "Youth",
+            "target_entity": "PeerSmokePackDay",
+            "description": "Relates to how the youth feels about peers smoking a pack of cigarettes per day."
+        }
+    ]
+}

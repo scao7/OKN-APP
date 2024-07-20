@@ -1,0 +1,154 @@
+{
+    "entities": [
+        {
+            "entity": "AdultDepressionModule",
+            "description": "Module designed to measure whether respondents had experienced a major depressive episode (MDE) in their lifetime and past year."
+        },
+        {
+            "entity": "AdolescentDepressionModule",
+            "description": "Module designed to measure whether adolescent respondents had experienced a major depressive episode (MDE) in their lifetime and past year."
+        },
+        {
+            "entity": "MajorDepressiveEpisode",
+            "description": "A period in which an individual experienced five or more of nine symptoms for MDE in the same 2-week period, including at least one symptom being a depressed mood or loss of interest or pleasure."
+        },
+        {
+            "entity": "DSM-5",
+            "description": "Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, which includes the criteria for assessing MDE symptoms."
+        },
+        {
+            "entity": "NCS-R",
+            "description": "National Comorbidity Survey-Replication, used as a source for adult MDE questions."
+        },
+        {
+            "entity": "NCS-A",
+            "description": "National Comorbidity Survey-Adolescent, used as a source for youth MDE questions."
+        },
+        {
+            "entity": "Symptom",
+            "description": "An indicator of MDE, which includes nine attributes such as feeling sad, empty, depressed, discouraged, or loss of interest."
+        },
+        {
+            "entity": "BehavioralHealthStatistics",
+            "description": "Statistics presented in the Results from the 2022 National Survey on Drug Use and Health: Detailed Tables."
+        },
+        {
+            "entity": "SubstanceAndMentalHealthReport",
+            "description": "Key Substance Use and Mental Health Indicators in the United States report."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasModule",
+            "source_entity": "NSDUH",
+            "target_entity": "AdultDepressionModule",
+            "description": "NSDUH includes the adult depression module to assess MDE in respondents."
+        },
+        {
+            "relationship": "hasModule",
+            "source_entity": "NSDUH",
+            "target_entity": "AdolescentDepressionModule",
+            "description": "NSDUH includes the adolescent depression module to assess MDE in adolescent respondents."
+        },
+        {
+            "relationship": "assesses",
+            "source_entity": "AdultDepressionModule",
+            "target_entity": "MajorDepressiveEpisode",
+            "description": "The adult depression module assesses major depressive episodes in respondents."
+        },
+        {
+            "relationship": "assesses",
+            "source_entity": "AdolescentDepressionModule",
+            "target_entity": "MajorDepressiveEpisode",
+            "description": "The adolescent depression module assesses major depressive episodes in adolescent respondents."
+        },
+        {
+            "relationship": "usesCriteriaFrom",
+            "source_entity": "MDEAssessment",
+            "target_entity": "DSM-5",
+            "description": "The assessment of MDE symptoms uses criteria from the DSM-5."
+        },
+        {
+            "relationship": "adaptedFrom",
+            "source_entity": "AdultDepressionQuestions",
+            "target_entity": "NCS-R",
+            "description": "Questions for adult MDE were adapted from the National Comorbidity Survey-Replication."
+        },
+        {
+            "relationship": "adaptedFrom",
+            "source_entity": "YouthDepressionQuestions",
+            "target_entity": "NCS-A",
+            "description": "Questions for youth MDE were adapted from the National Comorbidity Survey-Adolescent."
+        },
+        {
+            "relationship": "defines",
+            "source_entity": "MDE",
+            "target_entity": "Symptom",
+            "description": "Major depressive episodes are defined by the presence of nine attributes (symptoms)."
+        },
+        {
+            "relationship": "presents",
+            "source_entity": "ResultsFrom2022Survey",
+            "target_entity": "BehavioralHealthStatistics",
+            "description": "The results from the 2022 survey present behavioral health statistics."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "SubstanceAndMentalHealthReport",
+            "target_entity": "BehavioralHealthStatistics",
+            "description": "The Key Substance Use and Mental Health Indicators report includes behavioral health statistics."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "NSDUH",
+            "predicate": "includes",
+            "object": "AdultDepressionModule"
+        },
+        {
+            "subject": "NSDUH",
+            "predicate": "includes",
+            "object": "AdolescentDepressionModule"
+        },
+        {
+            "subject": "AdultDepressionModule",
+            "predicate": "assesses",
+            "object": "MajorDepressiveEpisode"
+        },
+        {
+            "subject": "AdolescentDepressionModule",
+            "predicate": "assesses",
+            "object": "MajorDepressiveEpisode"
+        },
+        {
+            "subject": "MDEAssessment",
+            "predicate": "usesCriteriaFrom",
+            "object": "DSM-5"
+        },
+        {
+            "subject": "AdultDepressionQuestions",
+            "predicate": "adaptedFrom",
+            "object": "NCS-R"
+        },
+        {
+            "subject": "YouthDepressionQuestions",
+            "predicate": "adaptedFrom",
+            "object": "NCS-A"
+        },
+        {
+            "subject": "MDE",
+            "predicate": "definedBy",
+            "object": "Symptom"
+        },
+        {
+            "subject": "ResultsFrom2022Survey",
+            "predicate": "presents",
+            "object": "BehavioralHealthStatistics"
+        },
+        {
+            "subject": "SubstanceAndMentalHealthReport",
+            "predicate": "includes",
+            "object": "BehavioralHealthStatistics"
+        }
+    ]
+}

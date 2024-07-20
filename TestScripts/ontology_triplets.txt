@@ -1,0 +1,24 @@
+
+{"subject":"CJ49", "predicate":"is about", "object": "being sentenced to serve time in a state or federal prison"}
+{"subject":"-9", "predicate":"means", "object": "Response missing due to CAPI issue"}
+{"subject":"-8", "predicate":"means", "object": "Skipped"}
+{"subject":"-2", "predicate":"means", "object": "Refusal"}
+{"subject":"-1", "predicate":"means", "object": "Don't Know"}
+{"subject":"1", "predicate":"means", "object": "Yes"}
+{"subject":"2", "predicate":"means", "object": "No"}
+
+{"subject":"CJ50", "predicate":"is about", "object": "number of times sentenced to serve time in a state or federal prison"}
+{"subject":"-9", "predicate":"means", "object": "Response missing due to CAPI issue"}
+{"subject":"-8", "predicate":"means", "object":"Skipped"}
+{"subject":"-2", "predicate":"means", "object":"Refusal"}
+{"subject":"-1", "predicate":"means", "object":"Don't Know"}
+{"subject":"1", "predicate":"means", "object":""}
+{"subject":"2", "predicate":"means", "object":""}
+{"subject":"3", "predicate":"means", "object":""}
+{"subject":"4", "predicate":"means", "object":""}
+{"subject":"5", "predicate":"means", "object":""}
+{"subject":"6", "predicate":"means", "object":""}
+{"subject":"7", "predicate":"means", "object":""}
+{"subject":"8", "predicate":"means", "object":""}
+{"subject":"9", "predicate":"means", "object":""}
+{"subject":"10", "predicate":"means", "object":""}

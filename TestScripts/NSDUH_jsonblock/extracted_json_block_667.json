@@ -1,0 +1,405 @@
+{
+    "entities": [
+        {
+            "entity": "Smoke from a fire",
+            "description": "Contents unspecified."
+        },
+        {
+            "entity": "Febreze",
+            "description": "Febreze is a brand of household odor eliminators."
+        },
+        {
+            "entity": "Silicone",
+            "description": "Silicone is a synthetic material often used in sealants and adhesives."
+        },
+        {
+            "entity": "Purell",
+            "description": "Purell is a brand of hand sanitizer."
+        },
+        {
+            "entity": "Air blast",
+            "description": "Compressed air used for cleaning or cooling."
+        },
+        {
+            "entity": "Goof off",
+            "description": "A product used to remove adhesive residue."
+        },
+        {
+            "entity": "Floor wax stripper",
+            "description": "Usually a chemical used to remove wax from floors."
+        },
+        {
+            "entity": "Pine-sol",
+            "description": "A brand of household cleaner."
+        },
+        {
+            "entity": "Water/stain repellant",
+            "description": "Typically unspecified label type."
+        },
+        {
+            "entity": "Resistol",
+            "description": "A brand of adhesive."
+        },
+        {
+            "entity": "Axe body spray",
+            "description": "A brand of body spray deodorant."
+        },
+        {
+            "entity": "Shellac",
+            "description": "A resin typically used in varnish."
+        },
+        {
+            "entity": "Tetrachloroethene",
+            "description": "A chlorinated hydrocarbon commonly used as a solvent in dry cleaning."
+        },
+        {
+            "entity": "Photographic development fluid",
+            "description": "Fluid used in the development of photographs."
+        },
+        {
+            "entity": "Chalk dust",
+            "description": "The powder resulting from the use of chalk."
+        },
+        {
+            "entity": "Ethyl chloride",
+            "description": "An organic compound used as a cooling agent."
+        },
+        {
+            "entity": "Dry cleaning fluid/solvent",
+            "description": "Fluids used in the dry cleaning process."
+        },
+        {
+            "entity": "Toilet bowl hook-ons",
+            "description": "Products designed to keep toilet bowls clean."
+        },
+        {
+            "entity": "Dry Fab",
+            "description": "Textile material name."
+        },
+        {
+            "entity": "Tennis balls, ping pong balls",
+            "description": "Sports equipment items."
+        },
+        {
+            "entity": "Jungle juice",
+            "description": "A colloquial term often used for mixed alcoholic beverages."
+        },
+        {
+            "entity": "Tattoo Goo Color Guard Spray",
+            "description": "A spray-on product for tattoo care."
+        },
+        {
+            "entity": "PVC Cleaner",
+            "description": "A cleaner specifically for PVC material."
+        },
+        {
+            "entity": "Germ-X",
+            "description": "A brand of hand sanitizer."
+        },
+        {
+            "entity": "Burning/ignited permanent marker",
+            "description": "Smoke from burning or ignited markers."
+        },
+        {
+            "entity": "Goo Gone",
+            "description": "A product used to remove sticky residues."
+        },
+        {
+            "entity": "Scotch Brite",
+            "description": "A brand of cleaning products."
+        },
+        {
+            "entity": "The Works shower cleaner",
+            "description": "A brand of shower cleaner."
+        },
+        {
+            "entity": "Nylon rope",
+            "description": "Rope made from nylon material."
+        },
+        {
+            "entity": "Lysol",
+            "description": "An aerosol product unspecified type of disinfectant."
+        },
+        {
+            "entity": "Axe/Axe deodorant; aerosol",
+            "description": "An aerosol product from the Axe brand."
+        },
+        {
+            "entity": "HydroCide",
+            "description": "A product name, specifics unstated."
+        },
+        {
+            "entity": "TCE, Trichloroethylene",
+            "description": "A volatile organic compound used as a solvent."
+        },
+        {
+            "entity": "Difluoroethane",
+            "description": "A chemical often used as an aerosol propellant."
+        },
+        {
+            "entity": "Xylene",
+            "description": "An aromatic hydrocarbon used as a solvent and in chemical manufacturing."
+        },
+        {
+            "entity": "Shoe dye",
+            "description": "Materials used to dye shoes."
+        },
+        {
+            "entity": "Shoe cleaner",
+            "description": "Products used for cleaning shoes, otherwise unspecified."
+        },
+        {
+            "entity": "Sulfur",
+            "description": "A chemical element, occasionally used in its elemental form."
+        },
+        {
+            "entity": "Alcanfor, camphor",
+            "description": "Camphor, a substance used in medical and cosmetic products."
+        },
+        {
+            "entity": "Tag body spray",
+            "description": "A brand of body spray."
+        },
+        {
+            "entity": "Tinactin antifungal spray",
+            "description": "A brand of antifungal spray product."
+        },
+        {
+            "entity": "Graffiti eraser",
+            "description": "A product used to erase graffiti."
+        },
+        {
+            "entity": "Homemade napalm",
+            "description": "A colloquial term, usually referring to a sticky incendiary substance."
+        },
+        {
+            "entity": "Lotion",
+            "description": "Body lotion; contents unspecified."
+        },
+        {
+            "entity": "Disinfectant",
+            "description": "A product used to eliminate germs and micro-organisms."
+        },
+        {
+            "entity": "Green gas propellant",
+            "description": "A type of gas propellant, often used in airsoft."
+        },
+        {
+            "entity": "Polish",
+            "description": "A product to shine or polish surfaces; unspecified contents."
+        },
+        {
+            "entity": "Vinegar",
+            "description": "Acetic acid solution used in cooking and cleaning."
+        },
+        {
+            "entity": "Turpentine",
+            "description": "A solvent obtained from tree resin, used in painting and cleaning."
+        },
+        {
+            "entity": "Spray adhesive",
+            "description": "An adhesive in spray form."
+        },
+        {
+            "entity": "Battery acid",
+            "description": "Acid contained within batteries, typically sulfuric acid."
+        },
+        {
+            "entity": "Ignition spray",
+            "description": "A spray used to assist in ignition processes."
+        },
+        {
+            "entity": "Tetrafluoroethane",
+            "description": "A type of refrigerant gas."
+        },
+        {
+            "entity": "Leather cleaner",
+            "description": "Products used to clean leather."
+        },
+        {
+            "entity": "Fixative",
+            "description": "A substance used to stabilize or fix materials."
+        },
+        {
+            "entity": "Bromine",
+            "description": "A chemical element often used in flame retardants."
+        },
+        {
+            "entity": "Difluoromethane",
+            "description": "A refrigerant gas alternative."
+        },
+        {
+            "entity": "Rubber rejuvenator",
+            "description": "A product used to rejuvenate or restore rubber."
+        },
+        {
+            "entity": "Airsoft propellant",
+            "description": "Propellant gases used in airsoft sports."
+        },
+        {
+            "entity": "Floor sealer",
+            "description": "Products used in floor sealing."
+        },
+        {
+            "entity": "Smoke bomb",
+            "description": "A device that emits smoke."
+        },
+        {
+            "entity": "Glow stick",
+            "description": "A stick that emits light through a chemical reaction."
+        },
+        {
+            "entity": "Hunting/fishing deodorizer",
+            "description": "A deodorizer specifically for hunting or fishing purposes."
+        },
+        {
+            "entity": "Chewing gum remover",
+            "description": "A product used to remove chewing gum."
+        },
+        {
+            "entity": "Air conditioner cleaner",
+            "description": "A product used to clean air conditioning units."
+        },
+        {
+            "entity": "Cosmetics/makeup",
+            "description": "Products used for makeup or personal appearance enhancement."
+        },
+        {
+            "entity": "Rubber roof remover",
+            "description": "A product used to remove rubber from roofs."
+        },
+        {
+            "entity": "WariActiv",
+            "description": "Product name; specifics unstated."
+        },
+        {
+            "entity": "Handi Wipes",
+            "description": "A brand of cleaning wipes."
+        },
+        {
+            "entity": "Glade Plugins",
+            "description": "A brand of air freshener."
+        },
+        {
+            "entity": "Hydrazine hydrate",
+            "description": "A chemical compound used in various industrial processes."
+        },
+        {
+            "entity": "Rat shampoo",
+            "description": "Shampoo product possibly misrepresented for human use."
+        },
+        {
+            "entity": "Gun smoke, gun powder",
+            "description": "Residue from gunfire."
+        },
+        {
+            "entity": "Dryer sheets, fabric softener",
+            "description": "Products used in drying laundry."
+        },
+        {
+            "entity": "Toilet bowl cleaner",
+            "description": "Products used to clean toilet bowls."
+        },
+        {
+            "entity": "Tires",
+            "description": "Rubber covers for vehicle wheels."
+        },
+        {
+            "entity": "Phosphorus",
+            "description": "A chemical element, used in various products."
+        },
+        {
+            "entity": "Rocol PR Spray",
+            "description": "Product name; specifics unstated."
+        },
+        {
+            "entity": "Glycerin",
+            "description": "A compound used in various formulations."
+        },
+        {
+            "entity": "Hand sanitizer, cleaner; alcohol-based",
+            "description": "Hand sanitizers that are alcohol-based."
+        },
+        {
+            "entity": "Sanitizer",
+            "description": "Type unspecified."
+        },
+        {
+            "entity": "Nail strengthener",
+            "description": "A product used to strengthen nails."
+        },
+        {
+            "entity": "Dichloromethane",
+            "description": "A solvent used in various chemical processes."
+        },
+        {
+            "entity": "Sawdust",
+            "description": "Small particles of wood."
+        },
+        {
+            "entity": "Breaking Styrofoam",
+            "description": "Breaking Styrofoam to release gas."
+        },
+        {
+            "entity": "Latex glove",
+            "description": "Gloves made of latex material."
+        },
+        {
+            "entity": "Levomethamphetamine",
+            "description": "OTC drug, specifics unspecified."
+        },
+        {
+            "entity": "Liquid air",
+            "description": "Cryogenic air in liquid form."
+        },
+        {
+            "entity": "Spam",
+            "description": "Meat product in a plastic bag."
+        },
+        {
+            "entity": "Alcohol dye",
+            "description": "Dyes containing alcohol."
+        },
+        {
+            "entity": "Gas/fuel cleaner/treatment",
+            "description": "Products used to clean or treat fuel."
+        },
+        {
+            "entity": "Smoke",
+            "description": "From burning paper."
+        },
+        {
+            "entity": "Smoke",
+            "description": "From burning wood."
+        },
+        {
+            "entity": "Mold cleaner",
+            "description": "Cleaner named; unspecified contents."
+        },
+        {
+            "entity": "Sewage",
+            "description": "Raw sewage."
+        },
+        {
+            "entity": "Obleck",
+            "description": "Non-Newtonian fluid."
+        },
+        {
+            "entity": "Citric acid",
+            "description": "Organic acid used in various applications."
+        },
+        {
+            "entity": "Frosties",
+            "description": "Breakfast cereal strings."
+        },
+        {
+            "entity": "Cinnamon",
+            "description": "Spice derived from the inner bark of trees."
+        },
+        {
+            "entity": "Cigarettes coated with salt",
+            "description": "Cigarettes with a salt coating."
+        }
+    ],
+    "relationships": []
+}

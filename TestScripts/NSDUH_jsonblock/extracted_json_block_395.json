@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "PrescriptionTranquilizers",
+            "description": "Drugs prescribed to alleviate anxiety, tension, and related conditions."
+        },
+        {
+            "entity": "GreatDealOfTimeGettingPrescriptionTranquilizers",
+            "description": "Spending significant time trying to obtain prescription tranquilizers in the past 12 months."
+        },
+        {
+            "entity": "UsingLargerAmountsOrLongerTimes",
+            "description": "Using prescription tranquilizers in larger amounts or for longer times than intended in the past 12 months."
+        },
+        {
+            "entity": "WantedToUseBadly",
+            "description": "Having a strong desire to use prescription tranquilizers in the past 12 months."
+        },
+        {
+            "entity": "StrongUrgeToUse",
+            "description": "Experiencing a strong urge to use prescription tranquilizers in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSpentGreatDealOfTimeGetting",
+            "source_entity": "Respondent",
+            "target_entity": "GreatDealOfTimeGettingPrescriptionTranquilizers",
+            "description": "Indicates the respondent spent significant time trying to obtain prescription tranquilizers in the past 12 months."
+        },
+        {
+            "relationship": "hasUsedLargerAmountsOrLongerTimes",
+            "source_entity": "Respondent",
+            "target_entity": "UsingLargerAmountsOrLongerTimes",
+            "description": "Indicates the respondent used prescription tranquilizers in larger amounts or for longer times than intended in the past 12 months."
+        },
+        {
+            "relationship": "hasWantedToUseBadly",
+            "source_entity": "Respondent",
+            "target_entity": "WantedToUseBadly",
+            "description": "Indicates the respondent had a strong desire to use prescription tranquilizers in the past 12 months."
+        },
+        {
+            "relationship": "hasStrongUrgeToUse",
+            "source_entity": "Respondent",
+            "target_entity": "StrongUrgeToUse",
+            "description": "Indicates the respondent experienced a strong urge to use prescription tranquilizers in the past 12 months."
+        }
+    ]
+}

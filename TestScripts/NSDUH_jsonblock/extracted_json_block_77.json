@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "MedicareImputationRevised",
+            "description": "Indicator for whether the respondent's Medicare status has been imputed."
+        },
+        {
+            "entity": "MedicareImputationIndicator",
+            "description": "Indicator for type of data if Medicare data was imputed."
+        },
+        {
+            "entity": "MedicaidChipImputationRevised",
+            "description": "Indicator for whether the respondent's Medicaid/CHIP status has been imputed."
+        },
+        {
+            "entity": "MedicaidChipImputationIndicator",
+            "description": "Indicator for type of data if Medicaid/CHIP data was imputed."
+        },
+        {
+            "entity": "ChampusImputationRevised",
+            "description": "Indicator for whether the respondent's CHAMPUS status has been imputed."
+        },
+        {
+            "entity": "ChampusImputationIndicator",
+            "description": "Indicator for type of data if CHAMPUS data was imputed."
+        },
+        {
+            "entity": "PrivateHealthInsuranceImputationRevised",
+            "description": "Indicator for whether the respondent's private health insurance status has been imputed."
+        },
+        {
+            "entity": "PrivateHealthInsuranceImputationIndicator",
+            "description": "Indicator for type of data if private health insurance data was imputed."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasImputationStatus",
+            "source_entity": "Respondent",
+            "target_entity": "MedicareImputationRevised",
+            "description": "Indicates whether the respondent's Medicare status has been imputed."
+        },
+        {
+            "relationship": "hasImputationType",
+            "source_entity": "Imputation",
+            "target_entity": "MedicareImputationIndicator",
+            "description": "Defines the type of data used if Medicare status was imputed."
+        },
+        {
+            "relationship": "hasImputationStatus",
+            "source_entity": "Respondent",
+            "target_entity": "MedicaidChipImputationRevised",
+            "description": "Indicates whether the respondent's Medicaid/CHIP status has been imputed."
+        },
+        {
+            "relationship": "hasImputationType",
+            "source_entity": "Imputation",
+            "target_entity": "MedicaidChipImputationIndicator",
+            "description": "Defines the type of data used if Medicaid/CHIP status was imputed."
+        },
+        {
+            "relationship": "hasImputationStatus",
+            "source_entity": "Respondent",
+            "target_entity": "ChampusImputationRevised",
+            "description": "Indicates whether the respondent's CHAMPUS status has been imputed."
+        },
+        {
+            "relationship": "hasImputationType",
+            "source_entity": "Imputation",
+            "target_entity": "ChampusImputationIndicator",
+            "description": "Defines the type of data used if CHAMPUS status was imputed."
+        },
+        {
+            "relationship": "hasImputationStatus",
+            "source_entity": "Respondent",
+            "target_entity": "PrivateHealthInsuranceImputationRevised",
+            "description": "Indicates whether the respondent's private health insurance status has been imputed."
+        },
+        {
+            "relationship": "hasImputationType",
+            "source_entity": "Imputation",
+            "target_entity": "PrivateHealthInsuranceImputationIndicator",
+            "description": "Defines the type of data used if private health insurance status was imputed."
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "DifficultyInSocialActivities",
+            "description": "Indicates the level of difficulty a respondent has in participating in social activities over the past 12 months."
+        },
+        {
+            "entity": "EmotionalProblemsAffectingSocialActivities",
+            "description": "Indicates whether emotional problems kept the respondent from social activities over the past 12 months."
+        },
+        {
+            "entity": "DifficultyInHouseholdResponsibilities",
+            "description": "Indicates the level of difficulty a respondent has in taking care of household responsibilities over the past 12 months."
+        },
+        {
+            "entity": "EmotionalProblemsAffectingHouseholdResponsibilities",
+            "description": "Indicates whether emotional problems kept the respondent from household responsibilities over the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDifficultyLevel",
+            "source_entity": "Respondent",
+            "target_entity": "DifficultyInSocialActivities",
+            "description": "Specifies the respondent's level of difficulty in participating in social activities."
+        },
+        {
+            "relationship": "hasEmotionalProblemsAffectingSocialActivities",
+            "source_entity": "Respondent",
+            "target_entity": "EmotionalProblemsAffectingSocialActivities",
+            "description": "Specifies whether the respondent's emotional problems affected their participation in social activities."
+        },
+        {
+            "relationship": "hasDifficultyLevel",
+            "source_entity": "Respondent",
+            "target_entity": "DifficultyInHouseholdResponsibilities",
+            "description": "Specifies the respondent's level of difficulty in taking care of household responsibilities."
+        },
+        {
+            "relationship": "hasEmotionalProblemsAffectingHouseholdResponsibilities",
+            "source_entity": "Respondent",
+            "target_entity": "EmotionalProblemsAffectingHouseholdResponsibilities",
+            "description": "Specifies whether the respondent's emotional problems affected their household responsibilities."
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "ImputedAdultMentalHealth",
+            "description": "Category for imputed data related to adult mental health."
+        },
+        {
+            "entity": "SuicideAttemptDueToCOVID",
+            "description": "Adult attempted to kill self due to COVID-19 in the past year."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The number of occurrences of each response."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of each response."
+        },
+        {
+            "entity": "QuestionnaireData",
+            "description": "Data collected from the questionnaire."
+        },
+        {
+            "entity": "StatisticallyImputedData",
+            "description": "Data that has been statistically imputed."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "Responses that were legitimate skips."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSuicideAttemptSurvey",
+            "source_entity": "ImputedAdultMentalHealth",
+            "target_entity": "SuicideAttemptDueToCOVID",
+            "description": "Describes the survey question about adult suicide attempts due to COVID-19."
+        },
+        {
+            "relationship": "hasDataCategory",
+            "source_entity": "SuicideAttemptDueToCOVID",
+            "target_entity": "QuestionnaireData",
+            "description": "Indicates that the data is collected from the questionnaire."
+        },
+        {
+            "relationship": "hasDataCategory",
+            "source_entity": "SuicideAttemptDueToCOVID",
+            "target_entity": "StatisticallyImputedData",
+            "description": "Indicates that the data has been statistically imputed."
+        },
+        {
+            "relationship": "hasDataCategory",
+            "source_entity": "SuicideAttemptDueToCOVID",
+            "target_entity": "LegitimateSkip",
+            "description": "Indicates that the response was a legitimate skip."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SuicideAttemptDueToCOVID",
+            "target_entity": "Frequency",
+            "description": "Specifies the frequency of each response."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SuicideAttemptDueToCOVID",
+            "target_entity": "Percentage",
+            "description": "Specifies the percentage of each response."
+        }
+    ]
+}

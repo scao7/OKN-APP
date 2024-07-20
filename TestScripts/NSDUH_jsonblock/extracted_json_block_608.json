@@ -1,0 +1,160 @@
+{
+    "entities": [
+        {
+            "entity": "CancerType_LarynxWindpipeLung",
+            "description": "Indicates whether the respondent has had cancer of the larynx, windpipe, or lungs."
+        },
+        {
+            "entity": "CancerType_Melanoma",
+            "description": "Indicates whether the respondent has had melanoma."
+        },
+        {
+            "entity": "CancerType_MouthTongueLipThroatPharynx",
+            "description": "Indicates whether the respondent has had cancer of the mouth, tongue, lip, throat, or pharynx."
+        },
+        {
+            "entity": "CancerType_Ovary",
+            "description": "Indicates whether the respondent has had cancer of the ovary (females only)."
+        },
+        {
+            "entity": "CancerType_ProstateTestis",
+            "description": "Indicates whether the respondent has had cancer of the prostate or testis (males only)."
+        },
+        {
+            "entity": "CancerType_SkinNonMelanoma",
+            "description": "Indicates whether the respondent has had skin cancer (not melanoma)."
+        },
+        {
+            "entity": "Response_Yes",
+            "description": "The response indicating 'Yes' to a question."
+        },
+        {
+            "entity": "Response_No",
+            "description": "The response indicating 'No' to a question."
+        },
+        {
+            "entity": "BadDataAssigned",
+            "description": "The response indicating bad data logically assigned."
+        },
+        {
+            "entity": "DontKnow",
+            "description": "The response indicating 'Don't Know' to a question."
+        },
+        {
+            "entity": "Refused",
+            "description": "The response indicating that the respondent refused to answer."
+        },
+        {
+            "entity": "BlankNoAnswer",
+            "description": "The response indicating a blank or no answer."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "The response indicating a legitimate skip."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "indicates_cancer",
+            "source_entity": "CancerType_LarynxWindpipeLung",
+            "target_entity": "Response_Yes",
+            "description": "Indicates whether the respondent has had cancer of the larynx, windpipe, or lungs."
+        },
+        {
+            "relationship": "indicates_absence_of_cancer",
+            "source_entity": "CancerType_LarynxWindpipeLung",
+            "target_entity": "Response_No",
+            "description": "Indicates whether the respondent has not had cancer of the larynx, windpipe, or lungs."
+        },
+        {
+            "relationship": "indicates_cancer",
+            "source_entity": "CancerType_Melanoma",
+            "target_entity": "Response_Yes",
+            "description": "Indicates whether the respondent has had melanoma."
+        },
+        {
+            "relationship": "indicates_absence_of_cancer",
+            "source_entity": "CancerType_Melanoma",
+            "target_entity": "Response_No",
+            "description": "Indicates whether the respondent has not had melanoma."
+        },
+        {
+            "relationship": "indicates_cancer",
+            "source_entity": "CancerType_MouthTongueLipThroatPharynx",
+            "target_entity": "Response_Yes",
+            "description": "Indicates whether the respondent has had cancer of the mouth, tongue, lip, throat, or pharynx."
+        },
+        {
+            "relationship": "indicates_absence_of_cancer",
+            "source_entity": "CancerType_MouthTongueLipThroatPharynx",
+            "target_entity": "Response_No",
+            "description": "Indicates whether the respondent has not had cancer of the mouth, tongue, lip, throat, or pharynx."
+        },
+        {
+            "relationship": "indicates_cancer",
+            "source_entity": "CancerType_Ovary",
+            "target_entity": "Response_Yes",
+            "description": "Indicates whether the respondent has had cancer of the ovary (females only)."
+        },
+        {
+            "relationship": "indicates_absence_of_cancer",
+            "source_entity": "CancerType_Ovary",
+            "target_entity": "Response_No",
+            "description": "Indicates whether the respondent has not had cancer of the ovary (females only)."
+        },
+        {
+            "relationship": "indicates_cancer",
+            "source_entity": "CancerType_ProstateTestis",
+            "target_entity": "Response_Yes",
+            "description": "Indicates whether the respondent has had cancer of the prostate or testis (males only)."
+        },
+        {
+            "relationship": "indicates_absence_of_cancer",
+            "source_entity": "CancerType_ProstateTestis",
+            "target_entity": "Response_No",
+            "description": "Indicates whether the respondent has not had cancer of the prostate or testis (males only)."
+        },
+        {
+            "relationship": "indicates_cancer",
+            "source_entity": "CancerType_SkinNonMelanoma",
+            "target_entity": "Response_Yes",
+            "description": "Indicates whether the respondent has had skin cancer (not melanoma)."
+        },
+        {
+            "relationship": "indicates_absence_of_cancer",
+            "source_entity": "CancerType_SkinNonMelanoma",
+            "target_entity": "Response_No",
+            "description": "Indicates whether the respondent has not had skin cancer (not melanoma)."
+        },
+        {
+            "relationship": "has_response",
+            "source_entity": "Questionnaire",
+            "target_entity": "BadDataAssigned",
+            "description": "Indicates the response 'Bad Data Logically Assigned' in the survey."
+        },
+        {
+            "relationship": "has_response",
+            "source_entity": "Questionnaire",
+            "target_entity": "DontKnow",
+            "description": "Indicates the response 'Don't Know' in the survey."
+        },
+        {
+            "relationship": "has_response",
+            "source_entity": "Questionnaire",
+            "target_entity": "Refused",
+            "description": "Indicates the response 'Refused' in the survey."
+        },
+        {
+            "relationship": "has_response",
+            "source_entity": "Questionnaire",
+            "target_entity": "BlankNoAnswer",
+            "description": "Indicates the response 'Blank or No Answer' in the survey."
+        },
+        {
+            "relationship": "has_response",
+            "source_entity": "Questionnaire",
+            "target_entity": "LegitimateSkip",
+            "description": "Indicates the response 'Legitimate Skip' in the survey."
+        }
+    ]
+}

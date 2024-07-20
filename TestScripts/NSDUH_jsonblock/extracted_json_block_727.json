@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "NicotineDependenceSyndromeScale",
+            "description": "A multi-dimensional measure of nicotine dependence."
+        },
+        {
+            "entity": "StudyTitle",
+            "description": "The Nicotine Dependence Syndrome Scale: A multi-dimensional measure of nicotine dependence."
+        },
+        {
+            "entity": "Authors",
+            "description": "Individuals who conducted the study, including Shiffman, S., Waters, A. J., and Hickcox, M."
+        },
+        {
+            "entity": "PublicationDate",
+            "description": "The date the study was published, which is April 2004."
+        },
+        {
+            "entity": "Journal",
+            "description": "The journal where the study was published, Nicotine and Tobacco Research."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTitle",
+            "source_entity": "Study",
+            "target_entity": "StudyTitle",
+            "description": "Relates the study to its title."
+        },
+        {
+            "relationship": "hasAuthors",
+            "source_entity": "Study",
+            "target_entity": "Authors",
+            "description": "Indicates the authors who conducted the study."
+        },
+        {
+            "relationship": "hasPublicationDate",
+            "source_entity": "Study",
+            "target_entity": "PublicationDate",
+            "description": "Indicates the date when the study was published."
+        },
+        {
+            "relationship": "hasJournal",
+            "source_entity": "Study",
+            "target_entity": "Journal",
+            "description": "Indicates the journal where the study was published."
+        }
+    ]
+}

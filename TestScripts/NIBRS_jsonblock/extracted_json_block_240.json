@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceUse",
+            "description": "Frequency and nature of tobacco, alcohol, and drug use by individuals."
+        },
+        {
+            "entity": "MentalHealth",
+            "description": "Indicators and statistics related to mental health conditions among individuals."
+        },
+        {
+            "entity": "TreatmentReceived",
+            "description": "Details on whether individuals have received treatment for substance use or mental health issues."
+        },
+        {
+            "entity": "DemographicInfo",
+            "description": "Demographic information including age, gender, and location of respondents."
+        },
+        {
+            "entity": "RuralArea",
+            "description": "Classification of areas as rural for analysis of resilience in such regions."
+        },
+        {
+            "entity": "EconomicStatus",
+            "description": "Economic conditions or status of the individuals surveyed."
+        },
+        {
+            "entity": "EducationLevel",
+            "description": "Educational attainment levels of the respondents."
+        },
+        {
+            "entity": "LegalConsequences",
+            "description": "Any legal incidents or consequences related to substance use."
+        },
+        {
+            "entity": "HealthStatus",
+            "description": "Overall health indicators of respondents, including any chronic conditions."
+        },
+        {
+            "entity": "FamilySupport",
+            "description": "Support systems including family and social support available to the respondents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstanceUseData",
+            "source_entity": "Survey",
+            "target_entity": "SubstanceUse",
+            "description": "Links the survey to data on substance use."
+        },
+        {
+            "relationship": "hasMentalHealthData",
+            "source_entity": "Survey",
+            "target_entity": "MentalHealth",
+            "description": "Links the survey to data on mental health conditions."
+        },
+        {
+            "relationship": "receivedTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "TreatmentReceived",
+            "description": "Indicates whether the respondent has received any treatment for substance use or mental health."
+        },
+        {
+            "relationship": "hasDemographicInfo",
+            "source_entity": "Survey",
+            "target_entity": "DemographicInfo",
+            "description": "Includes demographic information of respondents in the survey."
+        },
+        {
+            "relationship": "classifiedAsRural",
+            "source_entity": "Location",
+            "target_entity": "RuralArea",
+            "description": "Classifies certain locations as rural."
+        },
+        {
+            "relationship": "hasEconomicStatus",
+            "source_entity": "Respondent",
+            "target_entity": "EconomicStatus",
+            "description": "Links respondents to their economic status."
+        },
+        {
+            "relationship": "hasEducationLevel",
+            "source_entity": "Respondent",
+            "target_entity": "EducationLevel",
+            "description": "Links respondents to their level of educational attainment."
+        },
+        {
+            "relationship": "hasLegalConsequences",
+            "source_entity": "SubstanceUse",
+            "target_entity": "LegalConsequences",
+            "description": "Links substance use to any legal consequences that may have occurred."
+        },
+        {
+            "relationship": "hasHealthStatus",
+            "source_entity": "Respondent",
+            "target_entity": "HealthStatus",
+            "description": "Links respondents to their overall health status."
+        },
+        {
+            "relationship": "hasFamilySupport",
+            "source_entity": "Respondent",
+            "target_entity": "FamilySupport",
+            "description": "Indicates the level of family support available to the respondents."
+        }
+    ]
+}

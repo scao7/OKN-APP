@@ -1,0 +1,80 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyYear",
+            "description": "The specific year in which the survey data is collected."
+        },
+        {
+            "entity": "VariableName",
+            "description": "Names used to identify specific variables in the dataset."
+        },
+        {
+            "entity": "VariableDescription",
+            "description": "Detailed explanation of what each variable in the dataset represents."
+        },
+        {
+            "entity": "ValueCodes",
+            "description": "Codes used to represent different values of a variable."
+        },
+        {
+            "entity": "CaseIdentification",
+            "description": "The method or ID used to identify individual cases in the survey."
+        },
+        {
+            "entity": "Sampling",
+            "description": "Details about how the sample population for the survey was selected."
+        },
+        {
+            "entity": "DataCollection",
+            "description": "Methods used in the collection of survey data."
+        },
+        {
+            "entity": "MultiyearTrendAnalysis",
+            "description": "Analysis technique focused on identifying changes over multiple years."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "documents",
+            "source_entity": "Codebook",
+            "target_entity": "VariableName",
+            "description": "The codebook provides the names of variables used in the dataset."
+        },
+        {
+            "relationship": "describes",
+            "source_entity": "Codebook",
+            "target_entity": "VariableDescription",
+            "description": "The codebook offers detailed descriptions of each variable."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Variable",
+            "target_entity": "ValueCodes",
+            "description": "Each variable in the dataset includes specific value codes."
+        },
+        {
+            "relationship": "outlines",
+            "source_entity": "Codebook",
+            "target_entity": "CaseIdentification",
+            "description": "The codebook outlines methods for case identification."
+        },
+        {
+            "relationship": "details",
+            "source_entity": "Codebook",
+            "target_entity": "Sampling",
+            "description": "The codebook provides details on the sampling techniques used."
+        },
+        {
+            "relationship": "uses",
+            "source_entity": "Survey",
+            "target_entity": "DataCollection",
+            "description": "The survey utilizes various methods of data collection."
+        },
+        {
+            "relationship": "analyzes",
+            "source_entity": "Respondent",
+            "target_entity": "MultiyearTrendAnalysis",
+            "description": "Respondents' data is analyzed for multiyear trends."
+        }
+    ]
+}

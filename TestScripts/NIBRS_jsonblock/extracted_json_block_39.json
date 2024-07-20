@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "Mean",
+            "description": "The average value of the data."
+        },
+        {
+            "entity": "Median",
+            "description": "The middle value of the data."
+        },
+        {
+            "entity": "Mode",
+            "description": "The most frequently occurring value in the data."
+        },
+        {
+            "entity": "Minimum",
+            "description": "The smallest value in the data."
+        },
+        {
+            "entity": "Maximum",
+            "description": "The largest value in the data."
+        },
+        {
+            "entity": "Standard Deviation",
+            "description": "The amount of variation or dispersion in the data."
+        },
+        {
+            "entity": "Location",
+            "description": "Specifies the data location with width and decimal."
+        },
+        {
+            "entity": "Variable Type",
+            "description": "Type of the variable, in this case, numeric."
+        },
+        {
+            "entity": "Missing Values",
+            "description": "Represents the range of missing values in the data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLocation",
+            "source_entity": "Variable",
+            "target_entity": "Location",
+            "description": "Defines where the data is located, including width and decimal."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "Variable Type",
+            "description": "Denotes the nature of the variable."
+        },
+        {
+            "relationship": "hasMissingValues",
+            "source_entity": "Variable",
+            "target_entity": "Missing Values",
+            "description": "Specifies the extent of missing data values."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "Data",
+            "target_entity": "Mean",
+            "description": "Attributes the average value to the dataset."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "Data",
+            "target_entity": "Median",
+            "description": "Attributes the median value to the dataset."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "Data",
+            "target_entity": "Mode",
+            "description": "Attributes the mode value to the dataset."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "Data",
+            "target_entity": "Minimum",
+            "description": "Attributes the minimum value to the dataset."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "Data",
+            "target_entity": "Maximum",
+            "description": "Attributes the maximum value to the dataset."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "Data",
+            "target_entity": "Standard Deviation",
+            "description": "Attributes the standard deviation to the dataset."
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "MentalHealthTelehealthMove",
+            "description": "Mental health appointments moved to telehealth due to COVID-19"
+        },
+        {
+            "entity": "AppointmentsDelays",
+            "description": "Delays or cancellations in mental health appointments due to COVID-19"
+        },
+        {
+            "entity": "PrescriptionsDelays",
+            "description": "Delays in getting mental health prescriptions due to COVID-19"
+        },
+        {
+            "entity": "HealthImpact",
+            "description": "Lack of mental health care caused moderate to severe impact on health due to COVID-19"
+        },
+        {
+            "entity": "SubstanceUseTelehealthMove",
+            "description": "Substance use treatment appointments moved to telehealth due to COVID-19"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTelehealthMove",
+            "source_entity": "COVID-19",
+            "target_entity": "MentalHealthTelehealthMove",
+            "description": "Refers to the mental health appointments moved to telehealth due to the COVID-19 pandemic"
+        },
+        {
+            "relationship": "hasAppointmentsDelays",
+            "source_entity": "COVID-19",
+            "target_entity": "AppointmentsDelays",
+            "description": "Indicates the delays or cancellations in mental health appointments due to the COVID-19 pandemic"
+        },
+        {
+            "relationship": "hasPrescriptionsDelays",
+            "source_entity": "COVID-19",
+            "target_entity": "PrescriptionsDelays",
+            "description": "Refers to the delays in getting mental health prescriptions due to the COVID-19 pandemic"
+        },
+        {
+            "relationship": "hasHealthImpact",
+            "source_entity": "COVID-19",
+            "target_entity": "HealthImpact",
+            "description": "Highlights the lack of mental health care causing moderate to severe impact on health due to the COVID-19 pandemic"
+        },
+        {
+            "relationship": "hasTelehealthMove",
+            "source_entity": "COVID-19",
+            "target_entity": "SubstanceUseTelehealthMove",
+            "description": "Refers to the substance use treatment appointments moved to telehealth due to the COVID-19 pandemic"
+        }
+    ]
+}

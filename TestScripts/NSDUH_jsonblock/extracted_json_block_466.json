@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "ReceivedDetoxServices",
+            "description": "Received detoxification services for substance use withdrawal symptoms."
+        },
+        {
+            "entity": "ReceivedPeerSupport",
+            "description": "Received substance use help from peer support specialists or recovery coaches."
+        },
+        {
+            "entity": "DataType",
+            "description": "Type of data collected, indicating whether it's questionnaire data, statistically imputed data, or a legitimate skip."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasReceivedDetoxServices",
+            "source_entity": "Respondent",
+            "target_entity": "ReceivedDetoxServices",
+            "description": "Indicates whether the respondent received detox services for substance use withdrawal symptoms."
+        },
+        {
+            "relationship": "hasReceivedPeerSupport",
+            "source_entity": "Respondent",
+            "target_entity": "ReceivedPeerSupport",
+            "description": "Indicates whether the respondent received substance use help from peer support specialists or recovery coaches."
+        },
+        {
+            "relationship": "hasDataType",
+            "source_entity": "SurveyResponse",
+            "target_entity": "DataType",
+            "description": "Defines the type of data, such as questionnaire data or statistically imputed data."
+        }
+    ]
+}

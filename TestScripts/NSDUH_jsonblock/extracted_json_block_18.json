@@ -1,0 +1,80 @@
+{
+    "entities": [
+        {
+            "entity": "SSR",
+            "description": "Sampling strata within each state, partitioned into regions for interview during data collection."
+        },
+        {
+            "entity": "CensusTract",
+            "description": "Geographical sub-division within states used for sampling in studies."
+        },
+        {
+            "entity": "DU",
+            "description": "Dwelling Unit, used to define minimum size requirements for both urban and rural areas."
+        },
+        {
+            "entity": "PSU",
+            "description": "Primary Sampling Units, used within the selected census tracts for the study."
+        },
+        {
+            "entity": "CBSA",
+            "description": "Core-Based Statistical Area used for socioeconomic status analysis."
+        },
+        {
+            "entity": "CBSA/SES",
+            "description": "Categories used to define statistical area and socioeconomic status indicators."
+        },
+        {
+            "entity": "UrbanArea",
+            "description": "Classification of the area within census tracts with specific minimum DU requirements."
+        },
+        {
+            "entity": "RuralArea",
+            "description": "Classification of the area outside urban areas with specific minimum DU requirements."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "contains",
+            "source_entity": "State",
+            "target_entity": "SSR",
+            "description": "A state contains several SSRs for sampling."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "SSR",
+            "target_entity": "CensusTract",
+            "description": "Each SSR includes one or more census tracts."
+        },
+        {
+            "relationship": "hasMinimumRequirement",
+            "source_entity": "CensusTract",
+            "target_entity": "DU",
+            "description": "Census tracts have defined minimum DU requirements for sampling."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Area",
+            "target_entity": "UrbanArea",
+            "description": "Areas in census tracts are classified based on DU requirements."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Area",
+            "target_entity": "RuralArea",
+            "description": "Areas outside census tracts are classified based on DU requirements."
+        },
+        {
+            "relationship": "uses",
+            "source_entity": "Study",
+            "target_entity": "PSU",
+            "description": "The study uses primary sampling units within selected census tracts."
+        },
+        {
+            "relationship": "appliesIndicatorsFrom",
+            "source_entity": "Sampling",
+            "target_entity": "CBSA/SES",
+            "description": "Sampling applies socioeconomic status indicators from CBSA."
+        }
+    ]
+}

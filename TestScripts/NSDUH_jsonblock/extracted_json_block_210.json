@@ -1,0 +1,87 @@
+{
+    "entities": [
+        {
+            "entity": "PainRelievers",
+            "description": "Refers to the use of pain relievers by the respondents."
+        },
+        {
+            "entity": "PNRRSMAIN",
+            "description": "Main reason for using the last pain relievers (not directed)."
+        },
+        {
+            "entity": "PNRNORXFG",
+            "description": "Indication of misuse of pain relievers obtained without a prescription for the last pain reliever use."
+        },
+        {
+            "entity": "FENTMYR",
+            "description": "Misuse of fentanyl products in the past year."
+        },
+        {
+            "entity": "Rx",
+            "description": "Receipt of a prescription for pain relievers."
+        },
+        {
+            "entity": "MisuseWithoutRx",
+            "description": "Misuse of pain relievers without a prescription."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMainReason",
+            "source_entity": "PainRelievers",
+            "target_entity": "PNRRSMAIN",
+            "description": "Relates the use of pain relievers to the main reason for use as reported by the respondent."
+        },
+        {
+            "relationship": "hasNonPrescriptionMisuse",
+            "source_entity": "PainRelievers",
+            "target_entity": "PNRNORXFG",
+            "description": "Connections to non-prescription misuse of pain relievers."
+        },
+        {
+            "relationship": "hasFentanylProductMisuse",
+            "source_entity": "PainRelievers",
+            "target_entity": "FENTMYR",
+            "description": "Relates to the misuse of fentanyl products in the past year."
+        },
+        {
+            "relationship": "hasPrescription",
+            "source_entity": "PainRelievers",
+            "target_entity": "Rx",
+            "description": "Indicates if the pain reliever was obtained with a prescription."
+        },
+        {
+            "relationship": "hasMisuseWithoutPrescription",
+            "source_entity": "PainRelievers",
+            "target_entity": "MisuseWithoutRx",
+            "description": "Indicates if the pain reliever was misused without a prescription."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "PainRelievers",
+            "predicate": "hasMainReason",
+            "object": "PNRRSMAIN"
+        },
+        {
+            "subject": "PainRelievers",
+            "predicate": "hasNonPrescriptionMisuse",
+            "object": "PNRNORXFG"
+        },
+        {
+            "subject": "PainRelievers",
+            "predicate": "hasFentanylProductMisuse",
+            "object": "FENTMYR"
+        },
+        {
+            "subject": "PainRelievers",
+            "predicate": "hasPrescription",
+            "object": "Rx"
+        },
+        {
+            "subject": "PainRelievers",
+            "predicate": "hasMisuseWithoutPrescription",
+            "object": "MisuseWithoutRx"
+        }
+    ]
+}

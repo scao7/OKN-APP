@@ -1,0 +1,84 @@
+{
+    "entities": [
+        {
+            "entity": "ArresteeArmament",
+            "description": "The type of weapon or lack thereof an arrestee was armed with."
+        },
+        {
+            "entity": "Unarmed",
+            "description": "Arrestee was not armed."
+        },
+        {
+            "entity": "Firearm",
+            "description": "Arrestee was armed with a firearm."
+        },
+        {
+            "entity": "AutomaticFirearm",
+            "description": "Arrestee was armed with an automatic firearm."
+        },
+        {
+            "entity": "Handgun",
+            "description": "Arrestee was armed with a handgun."
+        },
+        {
+            "entity": "AutomaticHandgun",
+            "description": "Arrestee was armed with an automatic handgun."
+        },
+        {
+            "entity": "Rifle",
+            "description": "Arrestee was armed with a rifle."
+        },
+        {
+            "entity": "AutomaticRifle",
+            "description": "Arrestee was armed with an automatic rifle."
+        },
+        {
+            "entity": "Shotgun",
+            "description": "Arrestee was armed with a shotgun."
+        },
+        {
+            "entity": "AutomaticShotgun",
+            "description": "Arrestee was armed with an automatic shotgun."
+        },
+        {
+            "entity": "OtherFirearm",
+            "description": "Arrestee was armed with another type of firearm."
+        },
+        {
+            "entity": "LethalCuttingInstrument",
+            "description": "Arrestee was armed with a lethal cutting instrument."
+        },
+        {
+            "entity": "BrassKnuckles",
+            "description": "Arrestee was armed with club, blackjack, or brass knuckles."
+        },
+        {
+            "entity": "SurveyVariableRange",
+            "description": "Range of survey variable values, including minimum and maximum."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Cases where data is missing."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasArmamentStatus",
+            "source_entity": "Arrestee",
+            "target_entity": "ArresteeArmament",
+            "description": "Indicates the weapon status or type of weapon an arrestee was armed with."
+        },
+        {
+            "relationship": "hasDataRange",
+            "source_entity": "SurveyVariable",
+            "target_entity": "SurveyVariableRange",
+            "description": "Defines the range of values for survey variables, including minimum and maximum values."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Relates the survey to the cases with missing data."
+        }
+    ]
+}

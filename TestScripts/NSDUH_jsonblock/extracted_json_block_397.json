@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "PrescriptionTranquilizersUsage",
+            "description": "Usage pattern of prescription tranquilizers to achieve desired effects."
+        },
+        {
+            "entity": "IncreasedDosage",
+            "description": "Use of more prescription tranquilizers to achieve the same effect as previously achieved with less."
+        },
+        {
+            "entity": "ReducedEffect",
+            "description": "Reduced effect of the same amount of prescription tranquilizers compared to past usage."
+        },
+        {
+            "entity": "CutDownAttempt",
+            "description": "Attempt to reduce or stop the usage of prescription tranquilizers in the past 12 months."
+        },
+        {
+            "entity": "CutDownFailure",
+            "description": "Failure to reduce or stop the usage of prescription tranquilizers after multiple attempts."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsage",
+            "source_entity": "Respondent",
+            "target_entity": "PrescriptionTranquilizersUsage",
+            "description": "Indicates the respondent's usage pattern of prescription tranquilizers."
+        },
+        {
+            "relationship": "hasIncreasedDosage",
+            "source_entity": "PrescriptionTranquilizersUsage",
+            "target_entity": "IncreasedDosage",
+            "description": "Relates the usage of prescription tranquilizers to increased dosage to achieve desired effects."
+        },
+        {
+            "relationship": "hasReducedEffect",
+            "source_entity": "PrescriptionTranquilizersUsage",
+            "target_entity": "ReducedEffect",
+            "description": "Indicates the reduced effect of the same amount of prescription tranquilizers."
+        },
+        {
+            "relationship": "hasCutDownAttempt",
+            "source_entity": "PrescriptionTranquilizersUsage",
+            "target_entity": "CutDownAttempt",
+            "description": "Relates to any attempts made by the respondent to cut down or stop using prescription tranquilizers."
+        },
+        {
+            "relationship": "hasCutDownFailure",
+            "source_entity": "CutDownAttempt",
+            "target_entity": "CutDownFailure",
+            "description": "Indicates the failure to reduce or stop usage of prescription tranquilizers after multiple attempts."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "uses",
+            "object": "Prescription Tranquilizers"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "needs_more",
+            "object": "Prescription Tranquilizers for effect"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "experiences",
+            "object": "Reduced Effect from same amount of Prescription Tranquilizers"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "tries",
+            "object": "to Cut Down/Stop Prescription Tranquilizers"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "fails",
+            "object": "to Cut Down/Stop Prescription Tranquilizers multiple times"
+        }
+    ]
+}

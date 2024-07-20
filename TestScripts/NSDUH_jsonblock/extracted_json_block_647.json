@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceUse",
+            "description": "The use of tobacco, alcohol, or drugs by an individual."
+        },
+        {
+            "entity": "SubstanceUseDisorder",
+            "description": "A condition in which the use of substances leads to clinically significant impairment or distress."
+        },
+        {
+            "entity": "MentalHealthIssue",
+            "description": "Psychological or emotional conditions such as depression or anxiety."
+        },
+        {
+            "entity": "MentalHealthTreatment",
+            "description": "Services or interventions aimed at treating mental health issues."
+        },
+        {
+            "entity": "EconomicStatus",
+            "description": "The financial situation or socioeconomic status of an individual or household."
+        },
+        {
+            "entity": "EducationLevel",
+            "description": "The highest level of education attained by an individual."
+        },
+        {
+            "entity": "RuralArea",
+            "description": "A geographic area located outside towns and cities, typically with low population density."
+        },
+        {
+            "entity": "Infrastructure",
+            "description": "The basic physical systems of a community, including transportation, communication, sewage, water, and electric systems."
+        },
+        {
+            "entity": "Policy",
+            "description": "Laws, regulations, or guidelines intended to influence or control behavior."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstanceUse",
+            "source_entity": "Individual",
+            "target_entity": "SubstanceUse",
+            "description": "Indicates that an individual engages in the use of substances."
+        },
+        {
+            "relationship": "hasSubstanceUseDisorder",
+            "source_entity": "Individual",
+            "target_entity": "SubstanceUseDisorder",
+            "description": "Indicates that an individual has a substance use disorder."
+        },
+        {
+            "relationship": "experiencesMentalHealthIssue",
+            "source_entity": "Individual",
+            "target_entity": "MentalHealthIssue",
+            "description": "Indicates that an individual experiences a mental health issue."
+        },
+        {
+            "relationship": "receivesMentalHealthTreatment",
+            "source_entity": "Individual",
+            "target_entity": "MentalHealthTreatment",
+            "description": "Indicates that an individual receives treatment for mental health issues."
+        },
+        {
+            "relationship": "hasEconomicStatus",
+            "source_entity": "Individual",
+            "target_entity": "EconomicStatus",
+            "description": "Indicates the economic status of an individual."
+        },
+        {
+            "relationship": "hasEducationLevel",
+            "source_entity": "Individual",
+            "target_entity": "EducationLevel",
+            "description": "Indicates the highest level of education attained by an individual."
+        },
+        {
+            "relationship": "isLocatedIn",
+            "source_entity": "Individual",
+            "target_entity": "RuralArea",
+            "description": "Indicates that an individual resides in a rural area."
+        },
+        {
+            "relationship": "isAffectedBy",
+            "source_entity": "Individual",
+            "target_entity": "Infrastructure",
+            "description": "Indicates that an individual's living conditions are affected by the available infrastructure."
+        },
+        {
+            "relationship": "isSubjectTo",
+            "source_entity": "SubstanceUse",
+            "target_entity": "Policy",
+            "description": "Indicates that substance use is regulated or influenced by certain policies."
+        }
+    ]
+}

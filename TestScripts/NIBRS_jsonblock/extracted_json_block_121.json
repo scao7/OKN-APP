@@ -1,0 +1,252 @@
+{
+    "entities": [
+        {
+            "entity": "Collections/collectibles",
+            "description": "Items classified under collections or collectibles."
+        },
+        {
+            "entity": "Crops",
+            "description": "Items classified under crops."
+        },
+        {
+            "entity": "Documents/personal or business",
+            "description": "Personal or business documents."
+        },
+        {
+            "entity": "Explosives",
+            "description": "Items classified as explosives."
+        },
+        {
+            "entity": "Firearm accessories",
+            "description": "Accessories used with firearms."
+        },
+        {
+            "entity": "Fuel",
+            "description": "Items classified under fuel."
+        },
+        {
+            "entity": "Aircraft",
+            "description": "Items classified as aircraft."
+        },
+        {
+            "entity": "Alcohol",
+            "description": "Items classified under alcohol."
+        },
+        {
+            "entity": "Automobiles",
+            "description": "Items classified as automobiles."
+        },
+        {
+            "entity": "Bicycles",
+            "description": "Items classified as bicycles."
+        },
+        {
+            "entity": "Buses",
+            "description": "Items classified as buses."
+        },
+        {
+            "entity": "Clothes/furs",
+            "description": "Items classified under clothes or furs."
+        },
+        {
+            "entity": "Computer hardware/software",
+            "description": "Computer hardware or software items."
+        },
+        {
+            "entity": "Consumable goods",
+            "description": "Items classified under consumable goods."
+        },
+        {
+            "entity": "Credit/debit cards",
+            "description": "Items classified as credit or debit cards."
+        },
+        {
+            "entity": "Drugs/narcotics",
+            "description": "Items classified as drugs or narcotics."
+        },
+        {
+            "entity": "Drug/narcotic equipment",
+            "description": "Items classified as drug or narcotic equipment."
+        },
+        {
+            "entity": "Farm equipment",
+            "description": "Items classified as farm equipment."
+        },
+        {
+            "entity": "Firearms",
+            "description": "Items classified as firearms."
+        },
+        {
+            "entity": "Gambling equipment",
+            "description": "Items classified as gambling equipment."
+        },
+        {
+            "entity": "Heavy construction/industrial equipment",
+            "description": "Items under heavy construction or industrial equipment."
+        },
+        {
+            "entity": "Household goods",
+            "description": "Items classified as household goods."
+        },
+        {
+            "entity": "Jewelry/precious metals/gems",
+            "description": "Items classified under jewelry, precious metals, or gems."
+        },
+        {
+            "entity": "Livestock",
+            "description": "Items classified under livestock."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasPropertyDescription",
+            "source_entity": "Survey",
+            "target_entity": "PropertyDescription",
+            "description": "Relates the survey to its property descriptions."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Collections/collectibles",
+            "description": "Classifies property under collections or collectibles."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Crops",
+            "description": "Classifies property under crops."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Documents/personal or business",
+            "description": "Classifies property under documents, personal or business."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Explosives",
+            "description": "Classifies property under explosives."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Firearm accessories",
+            "description": "Classifies property under firearm accessories."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Fuel",
+            "description": "Classifies property under fuel."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Aircraft",
+            "description": "Classifies property under aircraft."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Alcohol",
+            "description": "Classifies property under alcohol."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Automobiles",
+            "description": "Classifies property under automobiles."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Bicycles",
+            "description": "Classifies property under bicycles."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Buses",
+            "description": "Classifies property under buses."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Clothes/furs",
+            "description": "Classifies property under clothes or furs."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Computer hardware/software",
+            "description": "Classifies property under computer hardware or software."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Consumable goods",
+            "description": "Classifies property under consumable goods."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Credit/debit cards",
+            "description": "Classifies property under credit or debit cards."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Drugs/narcotics",
+            "description": "Classifies property under drugs or narcotics."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Drug/narcotic equipment",
+            "description": "Classifies property under drug or narcotic equipment."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Farm equipment",
+            "description": "Classifies property under farm equipment."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Firearms",
+            "description": "Classifies property under firearms."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Gambling equipment",
+            "description": "Classifies property under gambling equipment."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Heavy construction/industrial equipment",
+            "description": "Classifies property under heavy construction or industrial equipment."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Household goods",
+            "description": "Classifies property under household goods."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Jewelry/precious metals/gems",
+            "description": "Classifies property under jewelry, precious metals, or gems."
+        },
+        {
+            "relationship": "underCategory",
+            "source_entity": "Property",
+            "target_entity": "Livestock",
+            "description": "Classifies property under livestock."
+        }
+    ]
+}

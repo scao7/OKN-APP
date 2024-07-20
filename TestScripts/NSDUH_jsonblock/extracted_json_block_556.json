@@ -1,0 +1,136 @@
+{
+    "entities": [
+        {
+            "entity": "MDE",
+            "description": "Major Depressive Episode, a condition used to classify respondents in this context."
+        },
+        {
+            "entity": "ADSEEDOC",
+            "description": "RC-ADULT: SAW/TALK TO MD/PROF ABOUT DEPRESSIVE FEELINGS IN PAST YEAR"
+        },
+        {
+            "entity": "ADRXL2MO",
+            "description": "RC-ADULT: USED RX MEDICATION FOR DEPRESSIVE FEELINGS IN PAST YEAR"
+        },
+        {
+            "entity": "ADRXMEDYR",
+            "description": "RC-ADULT: RECEIVED TREATMENT/COUNSELING OR USED RX MED FOR DEPRESSIVE FEELINGS IN PAST YEAR"
+        },
+        {
+            "entity": "ADFAMDOC",
+            "description": "RC-ADULT: SAW/TALK TO GENERAL PRACTITIONER/FAMILY DOCTOR ABOUT DEPRESSIVE FEELINGS IN PAST YEAR"
+        },
+        {
+            "entity": "ADOTHDOC",
+            "description": "RC-ADULT: SAW/TALK TO OTHER MD ABOUT DEPRESSIVE FEELINGS IN PAST YEAR"
+        },
+        {
+            "entity": "ADPSYCH",
+            "description": "RC-ADULT: SAW/TALK TO PSYCHOLOGIST ABOUT DEPRESSIVE FEELINGS IN PAST YEAR"
+        },
+        {
+            "entity": "ADPSYMD",
+            "description": "RC-ADULT: SAW/TALK TO PSYCHIATRIST ABOUT DEPRESSIVE FEELINGS IN PAST YEAR"
+        },
+        {
+            "entity": "ADOMMDE",
+            "description": "RC-ADULT: SAW/TALK TO OTHER MD ABOUT DEPRESSIVE FEELINGS IN PAST YEAR"
+        },
+        {
+            "entity": "ADSEEDOC",
+            "description": "RC-ADULT: SAW/TALK TO MD/PROF ABOUT DEPRESSIVE FEELINGS IN PAST YEAR"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMajorDepressiveEpisode",
+            "source_entity": "Respondent",
+            "target_entity": "MDE",
+            "description": "Indicates that the respondent was classified as having a Major Depressive Episode."
+        },
+        {
+            "relationship": "soughtMedicalProfessional",
+            "source_entity": "Respondent",
+            "target_entity": "ADSEEDOC",
+            "description": "Respondent saw or talked to a medical professional about depressive feelings in the past year."
+        },
+        {
+            "relationship": "usedRxMedication",
+            "source_entity": "Respondent",
+            "target_entity": "ADRXL2MO",
+            "description": "Respondent used prescription medication for depressive feelings in the past year."
+        },
+        {
+            "relationship": "receivedTreatmentOrCounseling",
+            "source_entity": "Respondent",
+            "target_entity": "ADRXMEDYR",
+            "description": "Respondent received treatment/counseling or used prescription medication for depressive feelings in the past year."
+        },
+        {
+            "relationship": "soughtGPOrFamilyDoctor",
+            "source_entity": "Respondent",
+            "target_entity": "ADFAMDOC",
+            "description": "Respondent saw or talked to a general practitioner/family doctor about depressive feelings in the past year."
+        },
+        {
+            "relationship": "soughtOtherMD",
+            "source_entity": "Respondent",
+            "target_entity": "ADOTHDOC",
+            "description": "Respondent saw or talked to another medical doctor about depressive feelings in the past year."
+        },
+        {
+            "relationship": "soughtPsychologist",
+            "source_entity": "Respondent",
+            "target_entity": "ADPSYCH",
+            "description": "Respondent saw or talked to a psychologist about depressive feelings in the past year."
+        },
+        {
+            "relationship": "soughtPsychiatrist",
+            "source_entity": "Respondent",
+            "target_entity": "ADPSYMD",
+            "description": "Respondent saw or talked to a psychiatrist about depressive feelings in the past year."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "hasMajorDepressiveEpisode",
+            "object": "MDE"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "soughtMedicalProfessional",
+            "object": "ADSEEDOC"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedRxMedication",
+            "object": "ADRXL2MO"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "receivedTreatmentOrCounseling",
+            "object": "ADRXMEDYR"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "soughtGPOrFamilyDoctor",
+            "object": "ADFAMDOC"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "soughtOtherMD",
+            "object": "ADOTHDOC"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "soughtPsychologist",
+            "object": "ADPSYCH"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "soughtPsychiatrist",
+            "object": "ADPSYMD"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceType",
+            "description": "Different types of substances mentioned in the survey."
+        },
+        {
+            "entity": "SubstanceUseFrequency",
+            "description": "Frequency of use for each type of substance."
+        },
+        {
+            "entity": "RespondentInhalantUse",
+            "description": "Whether the respondent has used inhalants."
+        },
+        {
+            "entity": "NotInhalantUserReason",
+            "description": "Reason for not using inhalants."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "mentionsSubstanceType",
+            "source_entity": "Survey",
+            "target_entity": "SubstanceType",
+            "description": "The survey lists various types of substances."
+        },
+        {
+            "relationship": "measuresUseFrequency",
+            "source_entity": "SubstanceType",
+            "target_entity": "SubstanceUseFrequency",
+            "description": "Frequency of use recorded for each type of substance."
+        },
+        {
+            "relationship": "recordsInhalantUse",
+            "source_entity": "Survey",
+            "target_entity": "RespondentInhalantUse",
+            "description": "Indicates whether the respondent has used inhalants."
+        },
+        {
+            "relationship": "recordsNonUseReason",
+            "source_entity": "Respondent",
+            "target_entity": "NotInhalantUserReason",
+            "description": "Captures the reasons for not using inhalants provided by the respondent."
+        }
+    ]
+}

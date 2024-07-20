@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "HeroinUseArgument",
+            "description": "Arguments or problems with family or friends caused or made worse by heroin use in the past 12 months."
+        },
+        {
+            "entity": "ContinuedHeroinUse",
+            "description": "Continued heroin use despite arguments or problems with family or friends in the past 12 months."
+        },
+        {
+            "entity": "HeroinIncreasedChanceGettingHurt",
+            "description": "Situations where heroin use increased the chance of getting physically hurt in the past 12 months."
+        },
+        {
+            "entity": "HeroinWithdrawalSymptoms",
+            "description": "Withdrawal symptoms experienced after reducing or stopping heroin use in the past 12 months."
+        },
+        {
+            "entity": "FeelingBlueDown",
+            "description": "Feeling blue or down as a symptom of heroin withdrawal in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "leadsTo",
+            "source_entity": "HeroinUse",
+            "target_entity": "HeroinUseArgument",
+            "description": "Relates heroin use to causing arguments or problems with family or friends."
+        },
+        {
+            "relationship": "leadsTo",
+            "source_entity": "HeroinUse",
+            "target_entity": "ContinuedHeroinUse",
+            "description": "Relates heroin use to continued use despite causing arguments or problems with family or friends."
+        },
+        {
+            "relationship": "leadsTo",
+            "source_entity": "HeroinUse",
+            "target_entity": "HeroinIncreasedChanceGettingHurt",
+            "description": "Relates heroin use to an increased chance of getting physically hurt."
+        },
+        {
+            "relationship": "leadsTo",
+            "source_entity": "HeroinUse",
+            "target_entity": "HeroinWithdrawalSymptoms",
+            "description": "Relates heroin use to experiencing withdrawal symptoms after reducing or stopping use."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "HeroinWithdrawalSymptoms",
+            "target_entity": "FeelingBlueDown",
+            "description": "Relates heroin withdrawal symptoms to feeling blue or down."
+        }
+    ]
+}

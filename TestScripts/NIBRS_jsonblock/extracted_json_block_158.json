@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyResponse",
+            "description": "The recorded answers to survey questions."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Number of recorded occurrences or responses for a given category without applying any weight."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of responses out of the total for a given category."
+        },
+        {
+            "entity": "ResponseCategory",
+            "description": "A specific category or answer option in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted number of responses for each category."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage value of the responses in each category."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "SurveyResponse",
+            "target_entity": "ResponseCategory",
+            "description": "Defines the category to which a survey response belongs."
+        }
+    ]
+}

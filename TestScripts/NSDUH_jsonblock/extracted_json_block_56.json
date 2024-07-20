@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "AgeCategory",
+            "description": "Detailed age categories of the respondents."
+        },
+        {
+            "entity": "GenderCategory",
+            "description": "Combined gender by age category indicator."
+        },
+        {
+            "entity": "RaceEthnicityCode",
+            "description": "Recode of race/ethnicity into seven levels."
+        },
+        {
+            "entity": "GenderRaceCategory",
+            "description": "Combined gender by race indicator."
+        },
+        {
+            "entity": "EducationCategory",
+            "description": "Recode of educational attainment levels."
+        },
+        {
+            "entity": "OverallHealth",
+            "description": "Recode of overall health status."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAgeCategory",
+            "source_entity": "Respondent",
+            "target_entity": "AgeCategory",
+            "description": "Indicates the age category of the respondent."
+        },
+        {
+            "relationship": "hasGenderCategory",
+            "source_entity": "Respondent",
+            "target_entity": "GenderCategory",
+            "description": "Indicates the combined gender and age category of the respondent."
+        },
+        {
+            "relationship": "hasRaceEthnicityCode",
+            "source_entity": "Respondent",
+            "target_entity": "RaceEthnicityCode",
+            "description": "Indicates the race/ethnicity code of the respondent."
+        },
+        {
+            "relationship": "hasGenderRaceCategory",
+            "source_entity": "Respondent",
+            "target_entity": "GenderRaceCategory",
+            "description": "Indicates the combined gender and race category of the respondent."
+        },
+        {
+            "relationship": "hasEducationCategory",
+            "source_entity": "Respondent",
+            "target_entity": "EducationCategory",
+            "description": "Indicates the education level category of the respondent."
+        },
+        {
+            "relationship": "hasOverallHealth",
+            "source_entity": "Respondent",
+            "target_entity": "OverallHealth",
+            "description": "Indicates the overall health status of the respondent."
+        }
+    ]
+}

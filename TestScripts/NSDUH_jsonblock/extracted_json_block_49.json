@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "CombatZoneDuty",
+            "description": "Service in the United States Armed Forces or Reserve components in a military combat zone or an area with imminent danger or hostile fire pay."
+        },
+        {
+            "entity": "OverallHealth",
+            "description": "The general health status of an individual, stated as excellent, very good, good, fair, or poor."
+        },
+        {
+            "entity": "TimesMovedPast12Months",
+            "description": "The number of times an individual has moved in the past 12 months."
+        },
+        {
+            "entity": "SexualAttraction",
+            "description": "An individual's sexual orientation or attraction towards others."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCombatZoneDuty",
+            "source_entity": "Respondent",
+            "target_entity": "CombatZoneDuty",
+            "description": "Indicates if the respondent has served in a combat zone during military service."
+        },
+        {
+            "relationship": "hasOverallHealth",
+            "source_entity": "Respondent",
+            "target_entity": "OverallHealth",
+            "description": "Represents the respondent's overall health status."
+        },
+        {
+            "relationship": "hasTimesMoved",
+            "source_entity": "Respondent",
+            "target_entity": "TimesMovedPast12Months",
+            "description": "Represents the number of times the respondent has moved in the past 12 months."
+        },
+        {
+            "relationship": "hasSexualAttraction",
+            "source_entity": "Respondent",
+            "target_entity": "SexualAttraction",
+            "description": "Indicates the respondent's sexual attraction orientation."
+        }
+    ]
+}

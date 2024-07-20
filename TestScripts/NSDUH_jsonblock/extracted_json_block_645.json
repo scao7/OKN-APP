@@ -1,0 +1,52 @@
+[
+    {
+        "subject": "Respondent",
+        "predicate": "uses",
+        "object": "UDMJAWKEPR"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "uses",
+        "object": "UDMYES"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "reports",
+        "object": "UDSWRBRKPRB"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "has",
+        "object": "UDSVWTAX"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "reports",
+        "object": "UDTWRSTNOPR"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "has",
+        "object": "UDTWXSHPTOP"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "reports",
+        "object": "UDTWYWBTHC"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "attended",
+        "object": "YEHEYMNYR"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "has",
+        "object": "YEHMNRS1R"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "has",
+        "object": "YEIHSKGRAD"
+    }
+]

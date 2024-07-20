@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "PrescriptionPainRelievers",
+            "description": "Refers to the use of prescription pain relievers to get over or avoid withdrawal symptoms during the past 12 months."
+        },
+        {
+            "entity": "Heroin",
+            "description": "Refers to the use of heroin to get over or avoid withdrawal symptoms during the past 12 months."
+        },
+        {
+            "entity": "Tranquilizers",
+            "description": "Refers to the use of prescription tranquilizers, spending great deal of time using them, feeling their effects, or getting over their effects during the past 12 months."
+        },
+        {
+            "entity": "WithdrawalSymptoms",
+            "description": "Symptoms related to substance withdrawal which individuals may try to avoid."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesToAvoidWithdrawal",
+            "source_entity": "PrescriptionPainRelievers",
+            "target_entity": "WithdrawalSymptoms",
+            "description": "Relates the use of prescription pain relievers to avoiding withdrawal symptoms."
+        },
+        {
+            "relationship": "usesToAvoidWithdrawal",
+            "source_entity": "Heroin",
+            "target_entity": "WithdrawalSymptoms",
+            "description": "Relates the use of heroin to avoiding withdrawal symptoms."
+        },
+        {
+            "relationship": "usesToAvoidWithdrawal",
+            "source_entity": "Tranquilizers",
+            "target_entity": "WithdrawalSymptoms",
+            "description": "Relates the use of prescription tranquilizers to avoiding withdrawal symptoms."
+        }
+    ]
+}

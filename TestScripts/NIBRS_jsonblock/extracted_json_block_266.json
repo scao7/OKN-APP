@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "InjuryType",
+            "description": "The type of injury experienced by an individual."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency count of each injury type in the survey."
+        },
+        {
+            "entity": "InjurySeverity",
+            "description": "The severity level of the injury experienced."
+        },
+        {
+            "entity": "SurveyTotal",
+            "description": "The total number of survey cases."
+        },
+        {
+            "entity": "NumericRange",
+            "description": "The range of numeric values for the variable."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInjuryType",
+            "source_entity": "Respondent",
+            "target_entity": "InjuryType",
+            "description": "Specifies the type of injury the respondent experienced."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "InjuryType",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the frequency count of each type of injury."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "InjuryType",
+            "target_entity": "InjurySeverity",
+            "description": "Defines the severity level of the specified injury type."
+        },
+        {
+            "relationship": "hasSurveyTotal",
+            "source_entity": "Survey",
+            "target_entity": "SurveyTotal",
+            "description": "Relates to the total number of survey cases."
+        },
+        {
+            "relationship": "hasNumericRange",
+            "source_entity": "Variable",
+            "target_entity": "NumericRange",
+            "description": "Defines the numeric range of the variable."
+        }
+    ]
+}

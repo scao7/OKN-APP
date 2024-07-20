@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "entity": "QUESTID2",
+            "description": "A unique record identifier within a particular study year."
+        },
+        {
+            "entity": "FILEDATE",
+            "description": "The date the SAS data file was created."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isIdentifierFor",
+            "source_entity": "QUESTID2",
+            "target_entity": "Respondent",
+            "description": "Relates the unique identifier to the respondent."
+        },
+        {
+            "relationship": "isCreationDateOf",
+            "source_entity": "FILEDATE",
+            "target_entity": "DataFile",
+            "description": "Indicates the creation date of the data file."
+        }
+    ]
+}

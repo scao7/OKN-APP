@@ -1,0 +1,232 @@
+{
+    "entities": [
+        {
+            "entity": "PurseSnatching",
+            "description": "Incidents of purse snatching reported in the survey."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "Incidents of shoplifting reported in the survey."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "Incidents of theft from buildings reported in the survey."
+        },
+        {
+            "entity": "TheftFromCoinOperatedMachineOrDevice",
+            "description": "Incidents of theft from coin-operated machines or devices reported in the survey."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "Incidents of theft from motor vehicles reported in the survey."
+        },
+        {
+            "entity": "TheftOfMotorVehiclePartsAccessories",
+            "description": "Incidents of theft of motor vehicle parts/accessories reported in the survey."
+        },
+        {
+            "entity": "AllOtherLarceny",
+            "description": "All other incidents of larceny reported in the survey."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "Incidents of motor vehicle theft reported in the survey."
+        },
+        {
+            "entity": "CounterfeitingForgery",
+            "description": "Incidents of counterfeiting/forgery reported in the survey."
+        },
+        {
+            "entity": "FalsePretensesSwindleConfidenceGame",
+            "description": "Incidents of false pretenses/swindle/confidence game reported in the survey."
+        },
+        {
+            "entity": "CreditCardATMCardFraud",
+            "description": "Incidents of credit card/automatic teller machine fraud reported in the survey."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Incidents of impersonation reported in the survey."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "Incidents of welfare fraud reported in the survey."
+        },
+        {
+            "entity": "WireFraud",
+            "description": "Incidents of wire fraud reported in the survey."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "Incidents of identity theft reported in the survey."
+        },
+        {
+            "entity": "HackingComputerInvasion",
+            "description": "Incidents of hacking/computer invasion reported in the survey."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Incidents of embezzlement reported in the survey."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Incidents of stolen property offenses reported in the survey."
+        },
+        {
+            "entity": "DestructionDamageVandalismOfProperty",
+            "description": "Incidents of destruction, damage, or vandalism of property reported in the survey."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Incidents of drug/narcotic violations reported in the survey."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Incidents of drug equipment violations reported in the survey."
+        },
+        {
+            "entity": "Incest",
+            "description": "Incidents of incest reported in the survey."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Incidents of statutory rape reported in the survey."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "Incidents of pornography/obscene material reported in the survey."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "Incidents of betting/wagering reported in the survey."
+        },
+        {
+            "entity": "OperatingPromotingAssistingGambling",
+            "description": "Incidents of operating/promoting/assisting gambling reported in the survey."
+        },
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Incidents of gambling equipment violations reported in the survey."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Incidents of sports tampering reported in the survey."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Incidents of prostitution reported in the survey."
+        },
+        {
+            "entity": "AssistingPromotingProstitution",
+            "description": "Incidents of assisting/promoting prostitution reported in the survey."
+        },
+        {
+            "entity": "PurchasingProstitution",
+            "description": "Incidents of purchasing prostitution reported in the survey."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Incidents of bribery reported in the survey."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Incidents of weapon law violations reported in the survey."
+        },
+        {
+            "entity": "HumanTraffickingCommercialSexActs",
+            "description": "Incidents of human trafficking for commercial sex acts reported in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Theft",
+            "target_entity": "PurseSnatching",
+            "description": "Purse snatching is a type of theft."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Theft",
+            "target_entity": "Shoplifting",
+            "description": "Shoplifting is a type of theft."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Theft",
+            "target_entity": "TheftFromBuilding",
+            "description": "Theft from building is a type of theft."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Theft",
+            "target_entity": "TheftFromCoinOperatedMachineOrDevice",
+            "description": "Theft from coin-operated machine or device is a type of theft."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Theft",
+            "target_entity": "TheftFromMotorVehicle",
+            "description": "Theft from motor vehicle is a type of theft."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Theft",
+            "target_entity": "TheftOfMotorVehiclePartsAccessories",
+            "description": "Theft of motor vehicle parts/accessories is a type of theft."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Theft",
+            "target_entity": "AllOtherLarceny",
+            "description": "All other larceny is a type of theft."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Fraud",
+            "target_entity": "CounterfeitingForgery",
+            "description": "Counterfeiting/forgery is a type of fraud."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Fraud",
+            "target_entity": "FalsePretensesSwindleConfidenceGame",
+            "description": "False pretenses/swindle/confidence game is a type of fraud."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Fraud",
+            "target_entity": "CreditCardATMCardFraud",
+            "description": "Credit card/ATM card fraud is a type of fraud."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Fraud",
+            "target_entity": "Impersonation",
+            "description": "Impersonation is a type of fraud."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Fraud",
+            "target_entity": "WelfareFraud",
+            "description": "Welfare fraud is a type of fraud."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Fraud",
+            "target_entity": "WireFraud",
+            "description": "Wire fraud is a type of fraud."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Fraud",
+            "target_entity": "IdentityTheft",
+            "description": "Identity theft is a type of fraud."
+        },
+        {
+            "relationship": "relatedTo",
+            "source_entity": "Fraud",
+            "target_entity": "HackingComputerInvasion",
+            "description": "Hacking/computer invasion is a type of fraud."
+        }
+    ]
+}

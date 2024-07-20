@@ -1,0 +1,22 @@
+[
+    {
+        "subject": "HallucinogenUse",
+        "predicate": "causes",
+        "object": "Arguments or Problems with Family or Friends"
+    },
+    {
+        "subject": "ContinuedHallucinogenUse",
+        "predicate": "despite",
+        "object": "Arguments or Problems with Family or Friends"
+    },
+    {
+        "subject": "HallucinogenUse",
+        "predicate": "increased",
+        "object": "Chances of Getting Hurt"
+    },
+    {
+        "subject": "InhalantUse",
+        "predicate": "spent",
+        "object": "Great Deal of Time Using"
+    }
+]

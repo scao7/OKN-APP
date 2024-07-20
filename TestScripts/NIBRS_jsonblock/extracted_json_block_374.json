@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "ResidentStatus",
+            "description": "The resident status of the arrestee which includes both residents and nonresidents."
+        },
+        {
+            "entity": "DispositionUnder18",
+            "description": "The disposition of arrestees under 18, which includes whether they were referred or handled."
+        },
+        {
+            "entity": "SurveyID",
+            "description": "The unique identifier for the survey variable."
+        },
+        {
+            "entity": "MissingData",
+            "description": "An indicator for data that is missing or unknown."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The number of occurrences of each response category."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasResidentStatus",
+            "source_entity": "Arrestee",
+            "target_entity": "ResidentStatus",
+            "description": "Denotes whether the arrestee is a resident or nonresident."
+        },
+        {
+            "relationship": "hasDisposition",
+            "source_entity": "ArresteeUnder18",
+            "target_entity": "DispositionUnder18",
+            "description": "Indicates the disposition of arrestee under 18, whether referred or handled."
+        },
+        {
+            "relationship": "hasSurveyID",
+            "source_entity": "SurveyVariable",
+            "target_entity": "SurveyID",
+            "description": "Links a survey variable to its unique identifier."
+        },
+        {
+            "relationship": "containsMissingData",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MissingData",
+            "description": "Indicates that a survey variable has missing or unknown data."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "Frequency",
+            "description": "Denotes the number of occurrences of each response category."
+        }
+    ]
+}

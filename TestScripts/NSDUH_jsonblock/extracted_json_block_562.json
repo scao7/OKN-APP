@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "AdolescentDepression",
+            "description": "A condition where adolescents experience symptoms such as changes in sleep, energy, eating, ability to keep their mind on things, and feeling badly about themselves."
+        },
+        {
+            "entity": "DepressionSymptoms",
+            "description": "Symptoms associated with adolescent depression."
+        },
+        {
+            "entity": "Duration",
+            "description": "The length of time these problems lasted, specifically two weeks or longer."
+        },
+        {
+            "entity": "WorstPeriod",
+            "description": "The time when depression symptoms were the worst, including the age when this period started."
+        },
+        {
+            "entity": "FeelingDepressed",
+            "description": "Feelings of sadness, emptiness, or being depressed most of the day nearly every day during the worst period."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDepressionSymptoms",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "DepressionSymptoms",
+            "description": "Indicates the symptoms associated with adolescent depression, such as sleep, eating, energy levels, ability to concentrate, and self-esteem."
+        },
+        {
+            "relationship": "hasDuration",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "Duration",
+            "description": "Relates the depression to the length of time these symptoms lasted."
+        },
+        {
+            "relationship": "hasWorstPeriod",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "WorstPeriod",
+            "description": "Indicates the time period when depression symptoms were the worst, including the respondent's age at that time."
+        },
+        {
+            "relationship": "hasFeelingDepressed",
+            "source_entity": "WorstPeriod",
+            "target_entity": "FeelingDepressed",
+            "description": "Describes the feeling of being sad, empty, or depressed most of the day nearly every day during the worst period."
+        }
+    ]
+}

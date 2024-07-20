@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceUseDisorderMeasures",
+            "description": "Variables used as substance use disorder measures for alcohol and drugs based on diagnostic criteria and statistical manual."
+        },
+        {
+            "entity": "AlcoholUseDisorder",
+            "description": "Presence of alcohol use disorder in the past year based on specific criteria."
+        },
+        {
+            "entity": "MarijuanaUseDisorder",
+            "description": "Presence of marijuana use disorder in the past year based on specific criteria."
+        },
+        {
+            "entity": "SedativesUse",
+            "description": "Use of sedatives in the past 12 months."
+        },
+        {
+            "entity": "WithdrawalSymptomTreatment",
+            "description": "Treatment specified for handling withdrawal symptoms in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstanceUseDisorderMeasure",
+            "source_entity": "Survey",
+            "target_entity": "SubstanceUseDisorderMeasures",
+            "description": "Relates the survey to specific variables used to measure substance use disorders."
+        },
+        {
+            "relationship": "hasAlcoholUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholUseDisorder",
+            "description": "Indicates whether the respondent had an alcohol use disorder in the past year."
+        },
+        {
+            "relationship": "hasMarijuanaUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaUseDisorder",
+            "description": "Indicates whether the respondent had a marijuana use disorder in the past year."
+        },
+        {
+            "relationship": "hasSedativesUse",
+            "source_entity": "Respondent",
+            "target_entity": "SedativesUse",
+            "description": "Indicates whether the respondent used sedatives in the past 12 months."
+        },
+        {
+            "relationship": "hasWithdrawalSymptomTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "WithdrawalSymptomTreatment",
+            "description": "Indicates whether the respondent received treatment for withdrawal symptoms in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "is assessed for",
+            "object": "SubstanceUseDisorderMeasures"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "may have",
+            "object": "AlcoholUseDisorder"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "may have",
+            "object": "MarijuanaUseDisorder"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "reports",
+            "object": "SedativesUse"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "receives",
+            "object": "WithdrawalSymptomTreatment"
+        }
+    ]
+}

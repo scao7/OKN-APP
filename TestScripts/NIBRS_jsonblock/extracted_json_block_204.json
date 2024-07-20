@@ -1,0 +1,220 @@
+{
+    "entities": [
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Violations involving gambling equipment."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Tampering with sports events."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Engaging in or promoting prostitution."
+        },
+        {
+            "entity": "Bribery",
+            "description": "The act of giving or receiving bribes."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Violations pertaining to weapon laws."
+        },
+        {
+            "entity": "HumanTraffickingCommercialSexActs",
+            "description": "Human trafficking for commercial sex acts."
+        },
+        {
+            "entity": "MurderNonnegligentManslaughter",
+            "description": "Murder or nonnegligent manslaughter."
+        },
+        {
+            "entity": "NegligentManslaughter",
+            "description": "Unintentional killing resulting from negligence."
+        },
+        {
+            "entity": "JustifiableHomicide",
+            "description": "Homicide deemed justifiable under the law."
+        },
+        {
+            "entity": "KidnappingAbduction",
+            "description": "The act of forcibly taking someone against their will."
+        },
+        {
+            "entity": "Rape",
+            "description": "The crime of rape."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Sodomy."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "Sexual assault committed with an object."
+        },
+        {
+            "entity": "Fondling",
+            "description": "Indecent liberties or child molesting."
+        },
+        {
+            "entity": "Robbery",
+            "description": "Taking property unlawfully from a person."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "Assault that causes serious injury or involves a weapon."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "Assault without a weapon or serious injury."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "The act of intimidating someone."
+        },
+        {
+            "entity": "Arson",
+            "description": "The act of setting fire to property."
+        },
+        {
+            "entity": "ExtortionBlackmail",
+            "description": "Obtaining something through force or threats."
+        },
+        {
+            "entity": "BurglaryBreakingAndEntering",
+            "description": "The illegal act of breaking and entering to commit a crime."
+        },
+        {
+            "entity": "PocketPicking",
+            "description": "The act of stealing from someone's pocket."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "GamblingEquipmentViolations",
+            "target_entity": "CrimeType",
+            "description": "Categorizes gambling equipment violations as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "Prostitution",
+            "target_entity": "CrimeType",
+            "description": "Categorizes prostitution and related offenses as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "Bribery",
+            "target_entity": "CrimeType",
+            "description": "Categorizes bribery as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "WeaponLawViolations",
+            "target_entity": "CrimeType",
+            "description": "Categorizes weapon law violations as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "HumanTraffickingCommercialSexActs",
+            "target_entity": "CrimeType",
+            "description": "Categorizes human trafficking for commercial sex acts as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "MurderNonnegligentManslaughter",
+            "target_entity": "CrimeType",
+            "description": "Categorizes murder or nonnegligent manslaughter as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "NegligentManslaughter",
+            "target_entity": "CrimeType",
+            "description": "Categorizes negligent manslaughter as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "JustifiableHomicide",
+            "target_entity": "CrimeType",
+            "description": "Categorizes justifiable homicide as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "KidnappingAbduction",
+            "target_entity": "CrimeType",
+            "description": "Categorizes kidnapping or abduction as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "Rape",
+            "target_entity": "CrimeType",
+            "description": "Categorizes rape as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "Sodomy",
+            "target_entity": "CrimeType",
+            "description": "Categorizes sodomy as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "SexualAssaultWithAnObject",
+            "target_entity": "CrimeType",
+            "description": "Categorizes sexual assault with an object as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "Fondling",
+            "target_entity": "CrimeType",
+            "description": "Categorizes fondling (indecent liberties or child molesting) as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "Robbery",
+            "target_entity": "CrimeType",
+            "description": "Categorizes robbery as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "AggravatedAssault",
+            "target_entity": "CrimeType",
+            "description": "Categorizes aggravated assault as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "SimpleAssault",
+            "target_entity": "CrimeType",
+            "description": "Categorizes simple assault as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "Intimidation",
+            "target_entity": "CrimeType",
+            "description": "Categorizes intimidation as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "Arson",
+            "target_entity": "CrimeType",
+            "description": "Categorizes arson as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "ExtortionBlackmail",
+            "target_entity": "CrimeType",
+            "description": "Categorizes extortion or blackmail as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "BurglaryBreakingAndEntering",
+            "target_entity": "CrimeType",
+            "description": "Categorizes burglary or breaking and entering as a type of crime."
+        },
+        {
+            "relationship": "fallsUnder",
+            "source_entity": "PocketPicking",
+            "target_entity": "CrimeType",
+            "description": "Categorizes pocket-picking as a type of crime."
+        }
+    ]
+}

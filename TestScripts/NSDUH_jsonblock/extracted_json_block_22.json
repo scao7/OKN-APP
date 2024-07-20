@@ -1,0 +1,102 @@
+{
+    "entities": [
+        {
+            "entity": "NSDUH",
+            "description": "National Survey on Drug Use and Health, a survey to collect nationally representative data on substance use, mental health, and related issues."
+        },
+        {
+            "entity": "RTI",
+            "description": "Research company involved in the project management of the NSDUH survey."
+        },
+        {
+            "entity": "COVID-19",
+            "description": "Pandemic that influenced the data collection methods for the 2022 NSDUH survey."
+        },
+        {
+            "entity": "In-Person Data Collection",
+            "description": "Method of data collection involving face-to-face interviews, conducted in all states and counties in 2022."
+        },
+        {
+            "entity": "Web-Based Data Collection",
+            "description": "Method of data collection involving online surveys."
+        },
+        {
+            "entity": "ACASI",
+            "description": "Audio Computer-Assisted Self-Interviewing technology used to gather sensitive data."
+        },
+        {
+            "entity": "Final Analysis Weight",
+            "description": "Weight assigned to respondents in the NSDUH survey to ensure representative estimates of the population."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "ManagedBy",
+            "source_entity": "NSDUH",
+            "target_entity": "RTI",
+            "description": "The NSDUH project was managed by RTI."
+        },
+        {
+            "relationship": "ImpactedBy",
+            "source_entity": "Data Collection Methods",
+            "target_entity": "COVID-19",
+            "description": "The COVID-19 pandemic resulted in modifications to the NSDUH data collection methods."
+        },
+        {
+            "relationship": "ConductedThrough",
+            "source_entity": "2022 NSDUH",
+            "target_entity": "In-Person Data Collection",
+            "description": "The majority of the 2022 NSDUH data collection was conducted in person."
+        },
+        {
+            "relationship": "ConductedThrough",
+            "source_entity": "2022 NSDUH",
+            "target_entity": "Web-Based Data Collection",
+            "description": "A portion of the 2022 NSDUH data collection was conducted through web-based methods."
+        },
+        {
+            "relationship": "Utilizes",
+            "source_entity": "NSDUH",
+            "target_entity": "ACASI",
+            "description": "The NSDUH survey utilized ACASI technology for sensitive questions."
+        },
+        {
+            "relationship": "WeightAssignedTo",
+            "source_entity": "Final Analysis Weight",
+            "target_entity": "Respondent",
+            "description": "The final analysis weight is assigned to each respondent to ensure representative data."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "NSDUH",
+            "predicate": "ManagedBy",
+            "object": "RTI"
+        },
+        {
+            "subject": "Data Collection Methods",
+            "predicate": "ImpactedBy",
+            "object": "COVID-19"
+        },
+        {
+            "subject": "2022 NSDUH",
+            "predicate": "ConductedThrough",
+            "object": "In-Person Data Collection"
+        },
+        {
+            "subject": "2022 NSDUH",
+            "predicate": "ConductedThrough",
+            "object": "Web-Based Data Collection"
+        },
+        {
+            "subject": "NSDUH",
+            "predicate": "Utilizes",
+            "object": "ACASI"
+        },
+        {
+            "subject": "Final Analysis Weight",
+            "predicate": "WeightAssignedTo",
+            "object": "Respondent"
+        }
+    ]
+}

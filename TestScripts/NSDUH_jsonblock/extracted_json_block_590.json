@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "IMHTSUPGRP",
+            "description": "Participation in a support group for mental health within the past year."
+        },
+        {
+            "entity": "IMHTERED",
+            "description": "Seen in an emergency room or department for mental health within the past year."
+        },
+        {
+            "entity": "IMHTINHOSP",
+            "description": "Received mental health treatment at a hospital as an inpatient within the past year."
+        },
+        {
+            "entity": "IMHTINRSMH",
+            "description": "Received mental health treatment at a residential mental health treatment center within the past year."
+        },
+        {
+            "entity": "IMHTINRHAB",
+            "description": "Received mental health treatment at a residential substance rehabilitation/treatment center within the past year."
+        },
+        {
+            "entity": "IMHTINOPL",
+            "description": "Received mental health treatment at another place as an inpatient within the past year."
+        },
+        {
+            "entity": "QuestionnaireData",
+            "description": "Data obtained from the completed questionnaire."
+        },
+        {
+            "entity": "LogicallyAssignedData",
+            "description": "Data logically assigned based on responses."
+        },
+        {
+            "entity": "StatisticallyImputedData",
+            "description": "Data statistically imputed."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasParticipation",
+            "source_entity": "Respondent",
+            "target_entity": "IMHTSUPGRP",
+            "description": "Indicates whether the respondent participated in a support group for mental health."
+        },
+        {
+            "relationship": "visitedER",
+            "source_entity": "Respondent",
+            "target_entity": "IMHTERED",
+            "description": "Indicates whether the respondent was seen in an emergency room or department for mental health."
+        },
+        {
+            "relationship": "admittedInpatientHospital",
+            "source_entity": "Respondent",
+            "target_entity": "IMHTINHOSP",
+            "description": "Indicates whether the respondent received mental health treatment at a hospital as an inpatient."
+        },
+        {
+            "relationship": "receivedResidentialTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "IMHTINRSMH",
+            "description": "Indicates whether the respondent received mental health treatment at a residential mental health treatment center."
+        },
+        {
+            "relationship": "receivedRehabTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "IMHTINRHAB",
+            "description": "Indicates whether the respondent received mental health treatment at a residential substance rehabilitation/treatment center."
+        },
+        {
+            "relationship": "receivedOtherInpatientTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "IMHTINOPL",
+            "description": "Indicates whether the respondent received mental health treatment at another place as an inpatient."
+        },
+        {
+            "relationship": "isDataTypeOf",
+            "source_entity": "Data",
+            "target_entity": "QuestionnaireData",
+            "description": "Indicates that the data type is obtained from the questionnaire."
+        },
+        {
+            "relationship": "isDataTypeOf",
+            "source_entity": "Data",
+            "target_entity": "LogicallyAssignedData",
+            "description": "Indicates that the data type is logically assigned."
+        },
+        {
+            "relationship": "isDataTypeOf",
+            "source_entity": "Data",
+            "target_entity": "StatisticallyImputedData",
+            "description": "Indicates that the data type is statistically imputed."
+        }
+    ]
+}

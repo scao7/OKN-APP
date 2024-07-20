@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "The unique identifier assigned to each drug."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug specified."
+        },
+        {
+            "entity": "OtherSpecialDrugsMentioned",
+            "description": "Number of times a specific drug is mentioned under 'OTHER, Specified'."
+        },
+        {
+            "entity": "PercentageOfAllSpecialDrugs",
+            "description": "Percentage of each drug mentioned out of all special drugs specified."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Associates the drug with its unique drug code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Associates the drug with its name."
+        },
+        {
+            "relationship": "hasOtherSpecialDrugsMentioned",
+            "source_entity": "Drug",
+            "target_entity": "OtherSpecialDrugsMentioned",
+            "description": "Specifies the number of times the drug is mentioned under 'OTHER, Specified'."
+        },
+        {
+            "relationship": "hasPercentageOfAllSpecialDrugs",
+            "source_entity": "Drug",
+            "target_entity": "PercentageOfAllSpecialDrugs",
+            "description": "Indicates the percentage of each drug mentioned out of all special drugs specified."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Drug",
+            "predicate": "hasDrugCode",
+            "object": "DrugCode"
+        },
+        {
+            "subject": "Drug",
+            "predicate": "hasDrugName",
+            "object": "DrugName"
+        },
+        {
+            "subject": "Drug",
+            "predicate": "hasOtherSpecialDrugsMentioned",
+            "object": "OtherSpecialDrugsMentioned"
+        },
+        {
+            "subject": "Drug",
+            "predicate": "hasPercentageOfAllSpecialDrugs",
+            "object": "PercentageOfAllSpecialDrugs"
+        }
+    ]
+}

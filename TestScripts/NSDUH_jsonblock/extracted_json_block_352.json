@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "CocaineUseImpact",
+            "description": "Any long-lasting or repeated problems with emotions or mental health caused or worsened by cocaine use in the past 12 months."
+        },
+        {
+            "entity": "ContinuedCocaineUseImpact",
+            "description": "Continued use of cocaine despite causing long-lasting or repeated problems with emotions or mental health."
+        },
+        {
+            "entity": "LessActivitiesDueToCocaineUse",
+            "description": "Reduction in engagement in important activities due to cocaine use in the past 12 months."
+        },
+        {
+            "entity": "Activities",
+            "description": "Important activities including spending time with friends and family, attending special events, participating in hobbies, sports, or religious services and events."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "causesProblemsWithEmotionsOrMentalHealth",
+            "source_entity": "CocaineUse",
+            "target_entity": "CocaineUseImpact",
+            "description": "Relates cocaine use to causing long-lasting or repeated problems with emotions or mental health."
+        },
+        {
+            "relationship": "continuedUseDespiteProblems",
+            "source_entity": "CocaineUse",
+            "target_entity": "ContinuedCocaineUseImpact",
+            "description": "Indicates continued use of cocaine despite causing emotional or mental health problems."
+        },
+        {
+            "relationship": "reducedEngagementInActivities",
+            "source_entity": "CocaineUse",
+            "target_entity": "LessActivitiesDueToCocaineUse",
+            "description": "Relates cocaine use to reduced engagement in important activities."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "ImportantActivities",
+            "target_entity": "Activities",
+            "description": "Defines the scope of important activities affected by cocaine use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "CocaineUse",
+            "predicate": "causes",
+            "object": "CocaineUseImpact"
+        },
+        {
+            "subject": "CocaineUse",
+            "predicate": "continued_despite",
+            "object": "ContinuedCocaineUseImpact"
+        },
+        {
+            "subject": "CocaineUse",
+            "predicate": "reduces",
+            "object": "LessActivitiesDueToCocaineUse"
+        },
+        {
+            "subject": "ImportantActivities",
+            "predicate": "includes",
+            "object": "Activities"
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "entities": [
+        {
+            "entity": "BiasMotivation",
+            "description": "The reason or motivation behind a bias incident or behavior."
+        },
+        {
+            "entity": "AntiWhite",
+            "description": "Bias incidents motivated by anti-White sentiment."
+        },
+        {
+            "entity": "AntiBlackOrAfricanAmerican",
+            "description": "Bias incidents motivated by anti-Black or African American sentiment."
+        },
+        {
+            "entity": "AntiAmericanIndianOrAlaskaNative",
+            "description": "Bias incidents motivated by anti-American Indian or Alaska Native sentiment."
+        },
+        {
+            "entity": "AntiAsian",
+            "description": "Bias incidents motivated by anti-Asian sentiment."
+        },
+        {
+            "entity": "AntiMultiRacialGroup",
+            "description": "Bias incidents motivated by anti-multi-racial group sentiment."
+        },
+        {
+            "entity": "AntiNativeHawaiianOrOtherPacificIslander",
+            "description": "Bias incidents motivated by anti-Native Hawaiian or Other Pacific Islander sentiment."
+        },
+        {
+            "entity": "AntiJewish",
+            "description": "Bias incidents motivated by anti-Jewish sentiment."
+        },
+        {
+            "entity": "AntiCatholic",
+            "description": "Bias incidents motivated by anti-Catholic sentiment."
+        },
+        {
+            "entity": "AntiProtestant",
+            "description": "Bias incidents motivated by anti-Protestant sentiment."
+        },
+        {
+            "entity": "AntiIslamicMuslim",
+            "description": "Bias incidents motivated by anti-Islamic or Muslim sentiment."
+        },
+        {
+            "entity": "AntiOtherReligion",
+            "description": "Bias incidents motivated by anti-other religion sentiment."
+        },
+        {
+            "entity": "AntiMultiReligiousGroup",
+            "description": "Bias incidents motivated by anti-multi-religious group sentiment."
+        },
+        {
+            "entity": "AntiAtheismAgnosticism",
+            "description": "Bias incidents motivated by anti-atheism or agnosticism sentiment."
+        },
+        {
+            "entity": "AntiMormon",
+            "description": "Bias incidents motivated by anti-Mormon sentiment."
+        },
+        {
+            "entity": "AntiJehovahWitness",
+            "description": "Bias incidents motivated by anti-Jehovah's Witness sentiment."
+        },
+        {
+            "entity": "AntiArab",
+            "description": "Bias incidents motivated by anti-Arab sentiment."
+        },
+        {
+            "entity": "AntiHispanicOrLatino",
+            "description": "Bias incidents motivated by anti-Hispanic or Latino sentiment."
+        },
+        {
+            "entity": "AntiNotHispanicOrLatino",
+            "description": "Bias incidents motivated by anti-not Hispanic or Latino sentiment."
+        },
+        {
+            "entity": "AntiGay",
+            "description": "Bias incidents motivated by anti-gay sentiment."
+        },
+        {
+            "entity": "AntiLesbian",
+            "description": "Bias incidents motivated by anti-lesbian sentiment."
+        },
+        {
+            "entity": "AntiLGBT",
+            "description": "Bias incidents motivated by anti-lesbian, gay, bisexual or transgender sentiment."
+        },
+        {
+            "entity": "AntiHeterosexual",
+            "description": "Bias incidents motivated by anti-heterosexual sentiment."
+        },
+        {
+            "entity": "AntiBisexual",
+            "description": "Bias incidents motivated by anti-bisexual sentiment."
+        },
+        {
+            "entity": "AntiPhysicalDisability",
+            "description": "Bias incidents motivated by anti-physical disability sentiment."
+        },
+        {
+            "entity": "AntiMentalDisability",
+            "description": "Bias incidents motivated by anti-mental disability sentiment."
+        },
+        {
+            "entity": "AntiMale",
+            "description": "Bias incidents motivated by anti-male sentiment."
+        },
+        {
+            "entity": "AntiFemale",
+            "description": "Bias incidents motivated by anti-female sentiment."
+        },
+        {
+            "entity": "AntiTransgender",
+            "description": "Bias incidents motivated by anti-transgender sentiment."
+        },
+        {
+            "entity": "AntiGenderNonConforming",
+            "description": "Bias incidents motivated by anti-gender non-conforming sentiment."
+        },
+        {
+            "entity": "AntiEasternOrthodox",
+            "description": "Bias incidents motivated by anti-Eastern Orthodox sentiment (e.g., Greek, Russian)."
+        },
+        {
+            "entity": "AntiOtherChristian",
+            "description": "Bias incidents motivated by anti-other Christian sentiment."
+        },
+        {
+            "entity": "AntiBuddhist",
+            "description": "Bias incidents motivated by anti-Buddhist sentiment."
+        },
+        {
+            "entity": "AntiHindu",
+            "description": "Bias incidents motivated by anti-Hindu sentiment."
+        },
+        {
+            "entity": "AntiSikh",
+            "description": "Bias incidents motivated by anti-Sikh sentiment."
+        },
+        {
+            "entity": "None",
+            "description": "No bias incidents."
+        },
+        {
+            "entity": "Unknown",
+            "description": "Unknown bias motivation."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data on bias motivation is missing."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "recordsBiasMotivation",
+            "source_entity": "Survey",
+            "target_entity": "BiasMotivation",
+            "description": "The survey records different types of bias motivations."
+        }
+    ]
+}

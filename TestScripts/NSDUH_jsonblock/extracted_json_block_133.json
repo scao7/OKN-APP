@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "EverUsedCBDHempProducts",
+            "description": "Indicates if the respondent has ever used CBD or hemp products."
+        },
+        {
+            "entity": "TimeSinceLastUsedCBDHempProduct",
+            "description": "The time duration since the respondent last used any form of CBD or hemp product."
+        },
+        {
+            "entity": "EverUsedMarijuanaCannabis",
+            "description": "Indicates if the respondent has ever used marijuana or any cannabis product."
+        },
+        {
+            "entity": "AgeFirstUsedMarijuanaCannabis",
+            "description": "The age at which the respondent first used marijuana or any cannabis product."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEverUsedCBDHempProducts",
+            "source_entity": "Respondent",
+            "target_entity": "EverUsedCBDHempProducts",
+            "description": "Indicates whether the respondent has ever used CBD or hemp products."
+        },
+        {
+            "relationship": "hasTimeSinceLastUsedCBDHempProduct",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastUsedCBDHempProduct",
+            "description": "Indicates the time duration since the respondent last used any form of CBD or hemp product."
+        },
+        {
+            "relationship": "hasEverUsedMarijuanaCannabis",
+            "source_entity": "Respondent",
+            "target_entity": "EverUsedMarijuanaCannabis",
+            "description": "Indicates whether the respondent has ever used marijuana or any cannabis product."
+        },
+        {
+            "relationship": "hasAgeFirstUsedMarijuanaCannabis",
+            "source_entity": "Respondent",
+            "target_entity": "AgeFirstUsedMarijuanaCannabis",
+            "description": "Indicates the age at which the respondent first used marijuana or any cannabis product."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "CBD",
+            "predicate": "used_for",
+            "object": "relieve pain, reduce anxiety, help sleep"
+        },
+        {
+            "subject": "CBD",
+            "predicate": "forms",
+            "object": "oils, lotions, edibles, isolate"
+        },
+        {
+            "subject": "Marijuana",
+            "predicate": "forms",
+            "object": "weed, hashish, concentrates"
+        },
+        {
+            "subject": "Marijuana products",
+            "predicate": "consumed_via",
+            "object": "smoking, vaping, dabbing, eating, drinking, applying as lotion"
+        }
+    ]
+}

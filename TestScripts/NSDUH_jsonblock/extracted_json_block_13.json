@@ -1,0 +1,64 @@
+{
+    "entities": [
+        {
+            "entity": "SAMHSA",
+            "description": "Substance Abuse and Mental Health Services Administration, responsible for the NSDUH data collection."
+        },
+        {
+            "entity": "COVID-19",
+            "description": "Coronavirus disease 2019, impacted NSDUH data collection in 2020."
+        },
+        {
+            "entity": "SUD",
+            "description": "Substance Use Disorder, a focus area within the NSDUH survey."
+        },
+        {
+            "entity": "DSM-5",
+            "description": "The 5th edition of Diagnostic and Statistical Manual of Mental Disorders, used for SUD criteria."
+        },
+        {
+            "entity": "VirtualHealthcareVisits",
+            "description": "A new metric added to the survey in Quarter 4 of 2020 to measure COVID-19 related healthcare visits."
+        },
+        {
+            "entity": "MultimodeDataCollection",
+            "description": "A method of NSDUH data collection using various modes like web or in-person."
+        },
+        {
+            "entity": "CountyLevelCOVID-19Metrics",
+            "description": "Metrics used to decide the feasibility of in-person data collection during the COVID-19 pandemic."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "suspendedInPersonDataCollection",
+            "source_entity": "SAMHSA",
+            "target_entity": "COVID-19",
+            "description": "The impact of COVID-19 on the suspension of in-person data collection for NSDUH in 2020."
+        },
+        {
+            "relationship": "revisedQuestions",
+            "source_entity": "SAMHSA",
+            "target_entity": "DSM-5",
+            "description": "Updates to SUD questions to be consistent with DSM-5 criteria for SUD in the NSDUH survey."
+        },
+        {
+            "relationship": "addedNewQuestions",
+            "source_entity": "SAMHSA",
+            "target_entity": "VirtualHealthcareVisits",
+            "description": "Inclusion of new questions to measure virtual healthcare visits related to COVID-19."
+        },
+        {
+            "relationship": "metFeasibility",
+            "source_entity": "InPersonDataCollection",
+            "target_entity": "CountyLevelCOVID-19Metrics",
+            "description": "The criteria for continuing in-person data collection based on county-level and state-level COVID-19 metrics."
+        },
+        {
+            "relationship": "usedFor",
+            "source_entity": "NSDUH2021Survey",
+            "target_entity": "MultimodeDataCollection",
+            "description": "The use of multimode data collection procedures for the entire 2021 NSDUH survey."
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "entities": [
+        {
+            "entity": "Current Population 4",
+            "description": "The current population measured in variable BH031 with 11,207,634 valid cases."
+        },
+        {
+            "entity": "UCR County Code 4",
+            "description": "The UCR County Code measured in variable BH032 with 98,855 valid cases."
+        },
+        {
+            "entity": "Unweighted Frequency",
+            "description": "The frequency count of responses without weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of the unweighted frequency."
+        },
+        {
+            "entity": "Statistic",
+            "description": "Statistical measures such as Mean, Median, Mode, Minimum, Maximum, and Standard Deviation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "measures",
+            "source_entity": "BH031",
+            "target_entity": "Current Population 4",
+            "description": "Variable BH031 measures the current population statistics."
+        },
+        {
+            "relationship": "measures",
+            "source_entity": "BH032",
+            "target_entity": "UCR County Code 4",
+            "description": "Variable BH032 measures the UCR County Code statistics."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "Response",
+            "target_entity": "Unweighted Frequency",
+            "description": "A response has an associated unweighted frequency count."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Response",
+            "target_entity": "Percentage",
+            "description": "A response has an associated percentage representation."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "Current Population 4",
+            "target_entity": "Statistic",
+            "description": "Statistical measures related to the current population."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "UCR County Code 4",
+            "target_entity": "Statistic",
+            "description": "Statistical measures related to the UCR County Code."
+        }
+    ]
+}

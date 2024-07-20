@@ -1,0 +1,190 @@
+{
+    "entities": [
+        {
+            "entity": "Candy",
+            "description": "Powdered candy, sugar"
+        },
+        {
+            "entity": "Window sealant",
+            "description": "Sealant for windows"
+        },
+        {
+            "entity": "Deodorant",
+            "description": "Personal care product for reducing body odor"
+        },
+        {
+            "entity": "Fire hat",
+            "description": "Hat worn by firefighters"
+        },
+        {
+            "entity": "Air horn",
+            "description": "Device that emits a loud sound, often used on boats"
+        },
+        {
+            "entity": "Condensed horn",
+            "description": "Type of air horn"
+        },
+        {
+            "entity": "ScotchGard",
+            "description": "Brand of fabric protector"
+        },
+        {
+            "entity": "PAM",
+            "description": "Brand of cooking spray"
+        },
+        {
+            "entity": "Binaca",
+            "description": "Breath freshener brand"
+        },
+        {
+            "entity": "Brasso",
+            "description": "Metal polish brand"
+        },
+        {
+            "entity": "Lens cleaner",
+            "description": "Product used for cleaning lenses"
+        },
+        {
+            "entity": "Spirits of ammonia",
+            "description": "Ammonia-based cleaning product"
+        },
+        {
+            "entity": "Smelling salts",
+            "description": "Aromatic stimulant often used to revive someone"
+        },
+        {
+            "entity": "Liquid oxygen",
+            "description": "Cryogenic liquid form of oxygen"
+        },
+        {
+            "entity": "Lighter gases",
+            "description": "Gases used in lighters"
+        },
+        {
+            "entity": "Car tailpipe exhaust fumes",
+            "description": "Emissions from car exhaust"
+        },
+        {
+            "entity": "Carbon monoxide",
+            "description": "Toxic gas found in vehicle exhaust"
+        },
+        {
+            "entity": "Gasoline motor exhaust fumes",
+            "description": "Emissions from gasoline-powered engines"
+        },
+        {
+            "entity": "Leather protector",
+            "description": "Product used to protect leather"
+        },
+        {
+            "entity": "Suede protector",
+            "description": "Product used to protect suede"
+        },
+        {
+            "entity": "Cologne",
+            "description": "Fragrance for personal use"
+        },
+        {
+            "entity": "Isopropanol vapors",
+            "description": "Vapors from isopropyl alcohol"
+        },
+        {
+            "entity": "Rubbing alcohol",
+            "description": "Antiseptic liquid often used for disinfection"
+        },
+        {
+            "entity": "Perfume",
+            "description": "Fragrance for personal use"
+        },
+        {
+            "entity": "Methyl chloride",
+            "description": "Chemical compound used as a solvent"
+        },
+        {
+            "entity": "Oven cleaner",
+            "description": "Product used for cleaning ovens"
+        },
+        {
+            "entity": "Pixie sticks",
+            "description": "Powdered candy in a straw-like package"
+        },
+        {
+            "entity": "Insect killer",
+            "description": "Product used to kill insects"
+        },
+        {
+            "entity": "Chillers",
+            "description": "Equipment used for cooling"
+        },
+        {
+            "entity": "Emerging",
+            "description": "Appearing or coming into prominence"
+        },
+        {
+            "entity": "Hogwash",
+            "description": "Nonsense or trivial talk"
+        },
+        {
+            "entity": "Kool Aid",
+            "description": "Brand of powdered drink mix"
+        },
+        {
+            "entity": "Dishwashing detergent",
+            "description": "Soap used for washing dishes"
+        },
+        {
+            "entity": "Laundry detergent",
+            "description": "Soap used for washing clothes"
+        },
+        {
+            "entity": "Amputee gas cleanser",
+            "description": "Specific type of cleaning product"
+        },
+        {
+            "entity": "Acetylene",
+            "description": "A gas used in welding and cutting metals"
+        },
+        {
+            "entity": "Electric contact cleaner",
+            "description": "Product used to clean electrical contacts"
+        },
+        {
+            "entity": "Trichloroethane",
+            "description": "Chemical used as a solvent"
+        },
+        {
+            "entity": "Pertussin spray",
+            "description": "Medication used to treat cough"
+        },
+        {
+            "entity": "Jet fuel",
+            "description": "Fuel used in jet engines"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasChemicalCompound",
+            "source_entity": "Product",
+            "target_entity": "Methyl chloride",
+            "description": "Indicates the product containing methyl chloride as a chemical compound."
+        },
+        {
+            "relationship": "hasApplication",
+            "source_entity": "Leather protector",
+            "target_entity": "Leather",
+            "description": "Specifies the type of material the leather protector is used for."
+        },
+        {
+            "relationship": "hasToxicGas",
+            "source_entity": "Car tailpipe exhaust fumes",
+            "target_entity": "Carbon monoxide",
+            "description": "Indicates the presence of carbon monoxide in car tailpipe exhaust fumes."
+        },
+        {
+            "relationship": "hasFragranceType",
+            "source_entity": "Perfume",
+            "target_entity": "Cologne",
+            "description": "Specifies cologne as a type of perfume."
+        }
+    ]
+}

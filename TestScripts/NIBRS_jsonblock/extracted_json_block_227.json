@@ -1,0 +1,344 @@
+{
+    "entities": [
+        {
+            "entity": "Shoplifting",
+            "description": "The act of stealing goods from a retail establishment."
+        },
+        {
+            "entity": "Theft From Building",
+            "description": "The act of stealing property from within a building."
+        },
+        {
+            "entity": "Theft From Coin-Operated Machine or Device",
+            "description": "The act of stealing property from a coin-operated machine or device."
+        },
+        {
+            "entity": "Theft From Motor Vehicle",
+            "description": "The act of stealing property from a motor vehicle."
+        },
+        {
+            "entity": "Theft of Motor Vehicle Parts/Accessories",
+            "description": "The act of stealing parts or accessories from a motor vehicle."
+        },
+        {
+            "entity": "All Other Larceny",
+            "description": "Other forms of theft not specifically categorized."
+        },
+        {
+            "entity": "Motor Vehicle Theft",
+            "description": "The act of stealing or attempting to steal a motor vehicle."
+        },
+        {
+            "entity": "Counterfeiting/Forgery",
+            "description": "The act of making a counterfeit or forging documents or currency."
+        },
+        {
+            "entity": "False Pretenses/Swindle/Confidence Game",
+            "description": "The act of deceiving someone for monetary or personal gain."
+        },
+        {
+            "entity": "Credit Card/Automatic Teller Machine Fraud",
+            "description": "The act of using stolen or fraudulent credit cards or ATM cards."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "The act of pretending to be another person for fraudulent purposes."
+        },
+        {
+            "entity": "Welfare Fraud",
+            "description": "The act of fraudulently obtaining welfare benefits."
+        },
+        {
+            "entity": "Wire Fraud",
+            "description": "The act of using electronic communications to commit fraud."
+        },
+        {
+            "entity": "Identity Theft",
+            "description": "The act of stealing someone\u2019s personal information to commit fraud."
+        },
+        {
+            "entity": "Hacking/Computer Invasion",
+            "description": "The act of unauthorized access to computer systems."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "The act of stealing money placed in one's trust or belonging to one's employer."
+        },
+        {
+            "entity": "Stolen Property Offenses",
+            "description": "The act of receiving, buying, or possessing stolen property."
+        },
+        {
+            "entity": "Destruction/Damage/Vandalism of Property",
+            "description": "The act of deliberately destroying or damaging property."
+        },
+        {
+            "entity": "Drug/Narcotic Violations",
+            "description": "The act of violating laws related to controlled substances."
+        },
+        {
+            "entity": "Drug Equipment Violations",
+            "description": "The act of violating laws related to drug paraphernalia."
+        },
+        {
+            "entity": "Incest",
+            "description": "The act of sexual relations with a close family member."
+        },
+        {
+            "entity": "Statutory Rape",
+            "description": "The act of sexual relations with a person under the legal age of consent."
+        },
+        {
+            "entity": "Pornography/Obscene Material",
+            "description": "The act of producing or distributing pornographic or obscene materials."
+        },
+        {
+            "entity": "Betting/Wagering",
+            "description": "The act of gambling, placing bets or wagers."
+        },
+        {
+            "entity": "Operating/Promoting/Assisting Gambling",
+            "description": "The act of facilitating gambling activities."
+        },
+        {
+            "entity": "Gambling Equipment Violations",
+            "description": "The act of violating laws related to gambling equipment."
+        },
+        {
+            "entity": "Sports Tampering",
+            "description": "The act of altering or interfering with sports outcomes."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "The act of engaging in sexual activities for money."
+        },
+        {
+            "entity": "Assisting or Promoting Prostitution",
+            "description": "The act of facilitating or encouraging prostitution."
+        },
+        {
+            "entity": "Purchasing Prostitution",
+            "description": "The act of buying sexual services."
+        },
+        {
+            "entity": "Bribery",
+            "description": "The act of offering, giving, receiving, or soliciting something of value to influence a public official."
+        },
+        {
+            "entity": "Weapon Law Violations",
+            "description": "The act of violating laws related to the possession and use of weapons."
+        },
+        {
+            "entity": "Human Trafficking-Commercial Sex Acts",
+            "description": "The act of trafficking humans for the purpose of sexual exploitation."
+        },
+        {
+            "entity": "Missing Data",
+            "description": "Indicates missing or incomplete data in the survey."
+        },
+        {
+            "entity": "Total",
+            "description": "The total count of all surveyed items."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "committedBy",
+            "source_entity": "Person",
+            "target_entity": "Shoplifting",
+            "description": "Indicates that the person committed the act of shoplifting."
+        },
+        {
+            "relationship": "committedBy",
+            "source_entity": "Person",
+            "target_entity": "Theft From Building",
+            "description": "Indicates that the person committed the act of theft from a building."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "Theft From Coin-Operated Machine or Device",
+            "description": "Indicates that the theft involves a coin-operated machine or device."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "Theft From Motor Vehicle",
+            "description": "Indicates that the theft involves a motor vehicle."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "Theft of Motor Vehicle Parts/Accessories",
+            "description": "Indicates that the theft involves motor vehicle parts or accessories."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "Larceny",
+            "target_entity": "All Other Larceny",
+            "description": "Categorizes instances of larceny that do not fall under specific types."
+        },
+        {
+            "relationship": "committedBy",
+            "source_entity": "Person",
+            "target_entity": "Motor Vehicle Theft",
+            "description": "Indicates that the person committed motor vehicle theft."
+        },
+        {
+            "relationship": "involvesFraud",
+            "source_entity": "Person",
+            "target_entity": "Counterfeiting/Forgery",
+            "description": "Indicates that the person is involved in counterfeiting or forgery."
+        },
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Person",
+            "target_entity": "False Pretenses/Swindle/Confidence Game",
+            "description": "Indicates that the person engages in fraudulent activities."
+        },
+        {
+            "relationship": "uses",
+            "source_entity": "Fraud",
+            "target_entity": "Credit Card/Automatic Teller Machine Fraud",
+            "description": "Indicates that the fraud involves the use of credit cards or ATM cards."
+        },
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Person",
+            "target_entity": "Impersonation",
+            "description": "Indicates that the person engages in impersonation."
+        },
+        {
+            "relationship": "commits",
+            "source_entity": "Person",
+            "target_entity": "Welfare Fraud",
+            "description": "Indicates that the person commits welfare fraud."
+        },
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Person",
+            "target_entity": "Wire Fraud",
+            "description": "Indicates that the person engages in wire fraud."
+        },
+        {
+            "relationship": "commits",
+            "source_entity": "Person",
+            "target_entity": "Identity Theft",
+            "description": "Indicates that the person commits identity theft."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Cybercrime",
+            "target_entity": "Hacking/Computer Invasion",
+            "description": "Indicates that the cybercrime involves hacking or computer invasion."
+        },
+        {
+            "relationship": "commits",
+            "source_entity": "Person",
+            "target_entity": "Embezzlement",
+            "description": "Indicates that the person commits embezzlement."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Crime",
+            "target_entity": "Stolen Property Offenses",
+            "description": "Indicates that the crime involves dealing in stolen property."
+        },
+        {
+            "relationship": "commits",
+            "source_entity": "Person",
+            "target_entity": "Destruction/Damage/Vandalism of Property",
+            "description": "Indicates that the person commits property damage or vandalism."
+        },
+        {
+            "relationship": "violates",
+            "source_entity": "Person",
+            "target_entity": "Drug/Narcotic Violations",
+            "description": "Indicates that the person violates drug/narcotic laws."
+        },
+        {
+            "relationship": "violates",
+            "source_entity": "Person",
+            "target_entity": "Drug Equipment Violations",
+            "description": "Indicates that the person violates drug equipment laws."
+        },
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Person",
+            "target_entity": "Incest",
+            "description": "Indicates that the person engages in incest."
+        },
+        {
+            "relationship": "commits",
+            "source_entity": "Person",
+            "target_entity": "Statutory Rape",
+            "description": "Indicates that the person commits statutory rape."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Crime",
+            "target_entity": "Pornography/Obscene Material",
+            "description": "Indicates that the crime involves pornography or obscene material."
+        },
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Person",
+            "target_entity": "Betting/Wagering",
+            "description": "Indicates that the person engages in betting or wagering."
+        },
+        {
+            "relationship": "involvedIn",
+            "source_entity": "Person",
+            "target_entity": "Operating/Promoting/Assisting Gambling",
+            "description": "Indicates that the person is involved in gambling activities."
+        },
+        {
+            "relationship": "violates",
+            "source_entity": "Person",
+            "target_entity": "Gambling Equipment Violations",
+            "description": "Indicates that the person violates gambling equipment laws."
+        },
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Person",
+            "target_entity": "Sports Tampering",
+            "description": "Indicates that the person engages in sports tampering."
+        },
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Person",
+            "target_entity": "Prostitution",
+            "description": "Indicates that the person engages in prostitution."
+        },
+        {
+            "relationship": "assists",
+            "source_entity": "Person",
+            "target_entity": "Assisting or Promoting Prostitution",
+            "description": "Indicates that the person assists or promotes prostitution."
+        },
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Person",
+            "target_entity": "Purchasing Prostitution",
+            "description": "Indicates that the person engages in purchasing prostitution."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Crime",
+            "target_entity": "Bribery",
+            "description": "Indicates that the crime involves bribery."
+        },
+        {
+            "relationship": "violates",
+            "source_entity": "Person",
+            "target_entity": "Weapon Law Violations",
+            "description": "Indicates that the person violates weapon laws."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Crime",
+            "target_entity": "Human Trafficking-Commercial Sex Acts",
+            "description": "Indicates that the crime involves human trafficking for commercial sex acts."
+        }
+    ]
+}

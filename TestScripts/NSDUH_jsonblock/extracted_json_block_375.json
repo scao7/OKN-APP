@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "InhalantUseDespiteArguments",
+            "description": "Continued use of inhalants despite causing arguments or problems with family or friends."
+        },
+        {
+            "entity": "InhalantUseIncreasedChanceGettingHurt",
+            "description": "Use of inhalants increased chance of getting hurt in the past 12 months."
+        },
+        {
+            "entity": "MethamphetamineUseEffects",
+            "description": "Spent a great deal of time using methamphetamine or feeling its effects in the past 12 months."
+        },
+        {
+            "entity": "MethamphetamineGettingTime",
+            "description": "Spent a great deal of time trying to get or getting methamphetamine in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBehavioralImpact",
+            "source_entity": "InhalantUse",
+            "target_entity": "InhalantUseDespiteArguments",
+            "description": "Relates the use of inhalants to the behavioral impact of causing arguments or problems with family or friends."
+        },
+        {
+            "relationship": "hasRiskFactor",
+            "source_entity": "InhalantUse",
+            "target_entity": "InhalantUseIncreasedChanceGettingHurt",
+            "description": "Relates the use of inhalants to an increased chance of getting hurt in the past 12 months."
+        },
+        {
+            "relationship": "hasTimeSpent",
+            "source_entity": "MethamphetamineUse",
+            "target_entity": "MethamphetamineUseEffects",
+            "description": "Relates the use of methamphetamine to the time spent using it or feeling its effects."
+        },
+        {
+            "relationship": "hasGettingTime",
+            "source_entity": "MethamphetamineUse",
+            "target_entity": "MethamphetamineGettingTime",
+            "description": "Relates the use of methamphetamine to the time spent trying to get or getting methamphetamine."
+        }
+    ]
+}

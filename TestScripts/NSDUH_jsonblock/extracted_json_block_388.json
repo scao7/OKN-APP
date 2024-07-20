@@ -1,0 +1,22 @@
+[
+    {
+        "subject": "Respondent",
+        "predicate": "experienced physical health problems by using prescription pain relievers",
+        "object": "metrics ('Yes' = 730, 'No' = 112, 'Other' category codes = 30437)"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "experienced emotional/mental health problems by using prescription pain relievers",
+        "object": "metrics ('Yes' = 180, 'No' = 12269, 'Other' category codes = 30388)"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "used prescription pain relievers despite causing emotional/mental health problems",
+        "object": "metrics ('Yes' = 76, 'No' = 103, 'Other' category codes = 30337)"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "provides possible responses",
+        "object": "codes ('1', '2', '83', '85', '91', '93', '94', '97', '98', '99')"
+    }
+]

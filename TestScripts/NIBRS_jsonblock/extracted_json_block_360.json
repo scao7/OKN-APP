@@ -1,0 +1,134 @@
+{
+    "entities": [
+        {
+            "entity": "Incest",
+            "description": "Illegal sexual relations between family members."
+        },
+        {
+            "entity": "Statutory Rape",
+            "description": "Sexual activity with a minor who is below the age of consent."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "The distribution or production of obscene materials."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "Placing bets or wagers on events."
+        },
+        {
+            "entity": "Gambling Equipment Violations",
+            "description": "Illegal use or distribution of gambling equipment."
+        },
+        {
+            "entity": "Sports Tampering",
+            "description": "Manipulating or fixing of sports events."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Engaging in or offering sexual services for payment."
+        },
+        {
+            "entity": "Assisting or Promoting Prostitution",
+            "description": "Aiding or encouraging prostitution activities."
+        },
+        {
+            "entity": "Purchasing Prostitution",
+            "description": "Buying sexual services."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Offering or accepting something of value to influence action."
+        },
+        {
+            "entity": "Weapon Law Violations",
+            "description": "Breach of laws regarding the possession, use, or distribution of weapons."
+        },
+        {
+            "entity": "Human Trafficking - Commercial Sex Acts",
+            "description": "Exploitation of people through coercion into commercial sex acts."
+        },
+        {
+            "entity": "Unarmed",
+            "description": "Not possessing a weapon."
+        },
+        {
+            "entity": "Firearm",
+            "description": "A weapon capable of firing a projectile using an explosive charge."
+        },
+        {
+            "entity": "Firearm - automatic",
+            "description": "A firearm that continuously fires when the trigger is pressed."
+        },
+        {
+            "entity": "Handgun",
+            "description": "A small, hand-held firearm."
+        },
+        {
+            "entity": "Handgun - automatic",
+            "description": "An automatic handgun that continues to fire as long as the trigger is pressed."
+        },
+        {
+            "entity": "Rifle",
+            "description": "A long-barreled firearm designed for precision shooting."
+        },
+        {
+            "entity": "Rifle - automatic",
+            "description": "An automatic rifle that continuously fires when the trigger is held down."
+        },
+        {
+            "entity": "Shotgun",
+            "description": "A firearm that shoots a spread of pellets or a single projectile."
+        },
+        {
+            "entity": "Shotgun - automatic",
+            "description": "An automatic shotgun that fires continuously when the trigger is pressed."
+        },
+        {
+            "entity": "Other Firearm",
+            "description": "Any firearm that does not fall under common categories."
+        },
+        {
+            "entity": "Other Firearm - automatic",
+            "description": "Any automatic firearm that does not fall under common categories."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isInvolvedIn",
+            "source_entity": "Prostitution",
+            "target_entity": "Purchasing Prostitution",
+            "description": "Indicates the purchasing of prostitution services."
+        },
+        {
+            "relationship": "isLinkedTo",
+            "source_entity": "Bribery",
+            "target_entity": "Human Trafficking - Commercial Sex Acts",
+            "description": "Bribery can be linked to activities involving human trafficking for commercial sex acts."
+        },
+        {
+            "relationship": "relatesTo",
+            "source_entity": "Weapon Law Violations",
+            "target_entity": "Firearm",
+            "description": "Indicates violations of laws related to firearms."
+        },
+        {
+            "relationship": "isTypeOf",
+            "source_entity": "Firearm - automatic",
+            "target_entity": "Firearm",
+            "description": "Specifies automatic firearms as a type of firearm."
+        },
+        {
+            "relationship": "isSubtypeOf",
+            "source_entity": "Handgun - automatic",
+            "target_entity": "Handgun",
+            "description": "Specifies automatic handguns as a subtype of handguns."
+        },
+        {
+            "relationship": "isType",
+            "source_entity": "Entity",
+            "target_entity": "Type",
+            "description": "Indicates the type of entity involved in activities."
+        }
+    ]
+}

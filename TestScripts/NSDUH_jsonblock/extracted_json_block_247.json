@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "CocaineUseFrequency",
+            "description": "Frequency of cocaine use in the past year."
+        },
+        {
+            "entity": "CocaineUseImputation",
+            "description": "Indicator type for cocaine use frequency data imputation."
+        },
+        {
+            "entity": "CrackUseFrequency",
+            "description": "Frequency of crack use in the past year."
+        },
+        {
+            "entity": "CrackUseImputation",
+            "description": "Indicator type for crack use frequency data imputation."
+        },
+        {
+            "entity": "HeroinUseFrequency",
+            "description": "Frequency of heroin use in the past year."
+        },
+        {
+            "entity": "HeroinUseImputation",
+            "description": "Indicator type for heroin use frequency data imputation."
+        },
+        {
+            "entity": "HallucinogenUseFrequency",
+            "description": "Frequency of hallucinogen use in the past year."
+        },
+        {
+            "entity": "HallucinogenUseImputation",
+            "description": "Indicator type for hallucinogen use frequency data imputation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCocaineUseFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineUseFrequency",
+            "description": "Indicates the frequency of cocaine use by the respondent in the past year."
+        },
+        {
+            "relationship": "hasCocaineUseImputation",
+            "source_entity": "CocaineUseFrequency",
+            "target_entity": "CocaineUseImputation",
+            "description": "Defines the type of data imputation used for cocaine use frequency."
+        },
+        {
+            "relationship": "hasCrackUseFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "CrackUseFrequency",
+            "description": "Indicates the frequency of crack use by the respondent in the past year."
+        },
+        {
+            "relationship": "hasCrackUseImputation",
+            "source_entity": "CrackUseFrequency",
+            "target_entity": "CrackUseImputation",
+            "description": "Defines the type of data imputation used for crack use frequency."
+        },
+        {
+            "relationship": "hasHeroinUseFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinUseFrequency",
+            "description": "Indicates the frequency of heroin use by the respondent in the past year."
+        },
+        {
+            "relationship": "hasHeroinUseImputation",
+            "source_entity": "HeroinUseFrequency",
+            "target_entity": "HeroinUseImputation",
+            "description": "Defines the type of data imputation used for heroin use frequency."
+        },
+        {
+            "relationship": "hasHallucinogenUseFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogenUseFrequency",
+            "description": "Indicates the frequency of hallucinogen use by the respondent in the past year."
+        },
+        {
+            "relationship": "hasHallucinogenUseImputation",
+            "source_entity": "HallucinogenUseFrequency",
+            "target_entity": "HallucinogenUseImputation",
+            "description": "Defines the type of data imputation used for hallucinogen use frequency."
+        }
+    ]
+}

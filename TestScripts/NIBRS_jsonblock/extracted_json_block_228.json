@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "Survey",
+            "description": "The NSDUH survey used to collect information about substance use, mental health, and related factors."
+        },
+        {
+            "entity": "SubstanceAbuse",
+            "description": "Instances of illegal or harmful use of substances."
+        },
+        {
+            "entity": "MentalHealthIssue",
+            "description": "Conditions relating to mental health problems."
+        },
+        {
+            "entity": "Incarceration",
+            "description": "The state of being confined in prison."
+        },
+        {
+            "entity": "EconomicCrime",
+            "description": "Crimes committed to gain economic benefits."
+        },
+        {
+            "entity": "ViolentCrime",
+            "description": "Crimes that involve force or threat of force."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "reportsSubstanceAbuse",
+            "source_entity": "Survey",
+            "target_entity": "SubstanceAbuse",
+            "description": "Relates the survey to instances of substance abuse reported in the data."
+        },
+        {
+            "relationship": "reportsMentalHealthIssue",
+            "source_entity": "Survey",
+            "target_entity": "MentalHealthIssue",
+            "description": "Relates the survey to instances of mental health issues reported in the data."
+        },
+        {
+            "relationship": "leadsToIncarceration",
+            "source_entity": "SubstanceAbuse",
+            "target_entity": "Incarceration",
+            "description": "Substance abuse can lead to incarceration."
+        },
+        {
+            "relationship": "involvesEconomicCrime",
+            "source_entity": "SubstanceAbuse",
+            "target_entity": "EconomicCrime",
+            "description": "Substance abuse can involve crimes committed to support drug habits, such as theft or fraud."
+        },
+        {
+            "relationship": "involvesViolentCrime",
+            "source_entity": "SubstanceAbuse",
+            "target_entity": "ViolentCrime",
+            "description": "Substance abuse can involve violent crimes."
+        },
+        {
+            "relationship": "isAssociatedWith",
+            "source_entity": "MentalHealthIssue",
+            "target_entity": "SubstanceAbuse",
+            "description": "Mental health issues are often associated with substance abuse."
+        }
+    ]
+}

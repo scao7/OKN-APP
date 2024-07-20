@@ -1,0 +1,203 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "A numerical code representing a specific drug."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug, which may be specified or unspecified."
+        },
+        {
+            "entity": "NumberOfTimesMentioned",
+            "description": "The number of times this drug is mentioned in the 'OTHER, Specifies' category."
+        },
+        {
+            "entity": "PercentageOfAllSpecialDrugsSpecified",
+            "description": "The percentage this drug represents within the total of all special drugs specified."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Relates a drug to its corresponding code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Relates a drug to its name."
+        },
+        {
+            "relationship": "hasNumberOfTimesMentioned",
+            "source_entity": "Drug",
+            "target_entity": "NumberOfTimesMentioned",
+            "description": "Indicates the number of times the drug is mentioned in the 'OTHER, Specifies' category."
+        },
+        {
+            "relationship": "hasPercentageOfSpecialDrugs",
+            "source_entity": "Drug",
+            "target_entity": "PercentageOfAllSpecialDrugsSpecified",
+            "description": "Indicates the percentage this drug represents within all special drugs specified."
+        }
+    ],
+    "triplets": [
+        {
+            "Drug": "Speed, otherwise unspecified",
+            "NumberOfTimesMentioned": "2",
+            "PercentageOfAllSpecialDrugsSpecified": "0.34"
+        },
+        {
+            "Drug": "Methedrone",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Pyrovalerone",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Tramadol",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Hydrocodone",
+            "NumberOfTimesMentioned": "2",
+            "PercentageOfAllSpecialDrugsSpecified": "0.34"
+        },
+        {
+            "Drug": "Oxycodone",
+            "NumberOfTimesMentioned": "19",
+            "PercentageOfAllSpecialDrugsSpecified": "3.23"
+        },
+        {
+            "Drug": "Roxicet",
+            "NumberOfTimesMentioned": "2",
+            "PercentageOfAllSpecialDrugsSpecified": "0.34"
+        },
+        {
+            "Drug": "Roxicodone",
+            "NumberOfTimesMentioned": "11",
+            "PercentageOfAllSpecialDrugsSpecified": "1.87"
+        },
+        {
+            "Drug": "OxyContin",
+            "NumberOfTimesMentioned": "34",
+            "PercentageOfAllSpecialDrugsSpecified": "5.77"
+        },
+        {
+            "Drug": "K4",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Suboxone",
+            "NumberOfTimesMentioned": "19",
+            "PercentageOfAllSpecialDrugsSpecified": "3.23"
+        },
+        {
+            "Drug": "Buprenorphine",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Opana",
+            "NumberOfTimesMentioned": "9",
+            "PercentageOfAllSpecialDrugsSpecified": "1.53"
+        },
+        {
+            "Drug": "Subutex",
+            "NumberOfTimesMentioned": "5",
+            "PercentageOfAllSpecialDrugsSpecified": "0.85"
+        },
+        {
+            "Drug": "Oxycodone product, unspecified",
+            "NumberOfTimesMentioned": "14",
+            "PercentageOfAllSpecialDrugsSpecified": "2.38"
+        },
+        {
+            "Drug": "Oxymorphone",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Mad dog",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Molly, not otherwise specified",
+            "NumberOfTimesMentioned": "6",
+            "PercentageOfAllSpecialDrugsSpecified": "1.02"
+        },
+        {
+            "Drug": "Testosterone",
+            "NumberOfTimesMentioned": "14",
+            "PercentageOfAllSpecialDrugsSpecified": "2.38"
+        },
+        {
+            "Drug": "Deca-Durabolin, Nandrolone decanoate",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Sustanon, Sostenon",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Finaplix Gold, Trembolona QV75, Trenbolone",
+            "NumberOfTimesMentioned": "3",
+            "PercentageOfAllSpecialDrugsSpecified": "0.51"
+        },
+        {
+            "Drug": "Human growth hormone (HGH)",
+            "NumberOfTimesMentioned": "2",
+            "PercentageOfAllSpecialDrugsSpecified": "0.34"
+        },
+        {
+            "Drug": "Bath salts/synthetic cathinone; otherwise unspcfd",
+            "NumberOfTimesMentioned": "3",
+            "PercentageOfAllSpecialDrugsSpecified": "0.51"
+        },
+        {
+            "Drug": "alpha-PVP, alpha-Pyrrolidinopentiophenone",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Melanotan 2, Melanotan II",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Testosterone booster; contents unspecified",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Estradiol valerate",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Delta-9",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Estradiol enantate",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        },
+        {
+            "Drug": "Quetiapine, Seroquel",
+            "NumberOfTimesMentioned": "1",
+            "PercentageOfAllSpecialDrugsSpecified": "0.17"
+        }
+    ]
+}

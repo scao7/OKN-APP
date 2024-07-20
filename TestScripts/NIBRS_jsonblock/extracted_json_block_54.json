@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "FIPSCode",
+            "description": "Federal Information Processing Standards (FIPS) code assigned to a U.S. county."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency count of responses in the dataset without weighting adjustments."
+        },
+        {
+            "entity": "ResponseCategory",
+            "description": "Specific code categories for survey responses."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Information about the amount of data not included in the survey responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFIPSCode",
+            "source_entity": "Survey",
+            "target_entity": "FIPSCode",
+            "description": "Relates the survey to the specific FIPS code assigned to U.S. counties."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Shows the unweighted frequency of responses for each category."
+        },
+        {
+            "relationship": "hasResponseCategory",
+            "source_entity": "Survey",
+            "target_entity": "ResponseCategory",
+            "description": "Defines the specific code categories for survey responses."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Specifies the amount of data that is missing from the survey responses."
+        }
+    ]
+}

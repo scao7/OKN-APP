@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderStatus",
+            "description": "The status or relation of the offender to the victim."
+        },
+        {
+            "entity": "VictimStatus",
+            "description": "The relation of the victim to the offender, such as spouse, parent, sibling, etc."
+        },
+        {
+            "entity": "OffenderRelationshipFrequency",
+            "description": "The frequency of each type of offender relationship within the given dataset."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Indicates the portion of data that is missing."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffenderStatus",
+            "source_entity": "Incident",
+            "target_entity": "OffenderStatus",
+            "description": "Associates an incident with the status of the involved offender."
+        },
+        {
+            "relationship": "hasVictimStatus",
+            "source_entity": "Incident",
+            "target_entity": "VictimStatus",
+            "description": "Associates an incident with the status of the involved victim."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "OffenderRelationshipType",
+            "target_entity": "OffenderRelationshipFrequency",
+            "description": "Describes the frequency of each type of offender relationship within the dataset."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Indicates the amount of data that is missing within the dataset."
+        }
+    ]
+}

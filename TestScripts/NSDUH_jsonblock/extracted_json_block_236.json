@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "LifetimePipeUseIndicator",
+            "description": "Indicator for whether lifetime pipe use data is based on questionnaire or statistically imputed."
+        },
+        {
+            "entity": "PastMonthPipeUseRevised",
+            "description": "Data revised for past month pipe use incidence, including within the past 30 days, more than 30 days ago but within lifetime, or never smoked pipes."
+        },
+        {
+            "entity": "PastMonthPipeUseIndicator",
+            "description": "Indicator for whether past month pipe use data is based on questionnaire or statistically imputed."
+        },
+        {
+            "entity": "NicotineVapingRecencyRevised",
+            "description": "Data revised for nicotine vaping recency, including within the past 30 days, more than 30 days ago but within the past 12 months, more than 12 months ago but within the past 3 years, more than 3 years ago, or never vaped nicotine."
+        },
+        {
+            "entity": "NicotineVapingRecencyIndicator",
+            "description": "Indicator for whether nicotine vaping recency data is based on questionnaire, logically assigned, or statistically imputed at various recency revision stages."
+        },
+        {
+            "entity": "SmokelessTobaccoRecencyRevised",
+            "description": "Data revised for smokeless tobacco recency, including within the past 30 days, more than 30 days ago but within the past 12 months, more than 12 months ago but within the past 3 years, more than 3 years ago, or never used smokeless tobacco."
+        },
+        {
+            "entity": "SmokelessTobaccoRecencyIndicator",
+            "description": "Indicator for whether smokeless tobacco recency data is based on questionnaire or statistically imputed at various recency revision stages."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLifetimePipeUseIndicator",
+            "source_entity": "Survey",
+            "target_entity": "LifetimePipeUseIndicator",
+            "description": "Relates the survey data to the indicator for lifetime pipe use."
+        },
+        {
+            "relationship": "hasPastMonthPipeUseRevised",
+            "source_entity": "Survey",
+            "target_entity": "PastMonthPipeUseRevised",
+            "description": "Relates the survey data to the revised incidence of past month pipe use."
+        },
+        {
+            "relationship": "hasPastMonthPipeUseIndicator",
+            "source_entity": "Survey",
+            "target_entity": "PastMonthPipeUseIndicator",
+            "description": "Relates the survey data to the indicator for past month pipe use."
+        },
+        {
+            "relationship": "hasNicotineVapingRecencyRevised",
+            "source_entity": "Survey",
+            "target_entity": "NicotineVapingRecencyRevised",
+            "description": "Relates the survey data to the revised data on nicotine vaping recency."
+        },
+        {
+            "relationship": "hasNicotineVapingRecencyIndicator",
+            "source_entity": "Survey",
+            "target_entity": "NicotineVapingRecencyIndicator",
+            "description": "Relates the survey data to the indicator for nicotine vaping recency."
+        },
+        {
+            "relationship": "hasSmokelessTobaccoRecencyRevised",
+            "source_entity": "Survey",
+            "target_entity": "SmokelessTobaccoRecencyRevised",
+            "description": "Relates the survey data to the revised data on smokeless tobacco recency."
+        },
+        {
+            "relationship": "hasSmokelessTobaccoRecencyIndicator",
+            "source_entity": "Survey",
+            "target_entity": "SmokelessTobaccoRecencyIndicator",
+            "description": "Relates the survey data to the indicator for smokeless tobacco recency."
+        }
+    ]
+}

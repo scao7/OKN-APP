@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "SUDAAN",
+            "description": "Software used for statistical analysis of correlated data, as depicted in the SUDAAN DESCRIPT Procedure."
+        },
+        {
+            "entity": "Stata",
+            "description": "Software used for data manipulation, visualization, statistics, and automated reporting, as depicted in the Stata COMMANDS."
+        },
+        {
+            "entity": "Procedure",
+            "description": "The method or way of performing a specified action, such as the SUDAAN DESCRIPT Procedure and Stata COMMANDS procedure."
+        },
+        {
+            "entity": "Gender",
+            "description": "A variable used in the analysis to differentiate between male (=1) & female (=2)."
+        },
+        {
+            "entity": "WeightVariable",
+            "description": "Variable used for adjusting analysis results to be representative of the population, such as ANALWT2_C (2022 person-level analysis weight)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesSoftware",
+            "source_entity": "SUDAAN DESCRIPT Procedure",
+            "target_entity": "SUDAAN",
+            "description": "Indicates that the SUDAAN DESCRIPT Procedure uses SUDAAN software for its analysis."
+        },
+        {
+            "relationship": "usesSoftware",
+            "source_entity": "Stata COMMANDS",
+            "target_entity": "Stata",
+            "description": "Indicates that Stata COMMANDS use Stata software for its analysis."
+        },
+        {
+            "relationship": "employsProcedure",
+            "source_entity": "Analysis",
+            "target_entity": "Procedure",
+            "description": "Indicates that the analysis employs a specific procedure like SUDAAN DESCRIPT Procedure or Stata COMMANDS."
+        },
+        {
+            "relationship": "categorizesBy",
+            "source_entity": "Analysis",
+            "target_entity": "Gender",
+            "description": "Indicates that the analysis categorizes data by gender."
+        },
+        {
+            "relationship": "usesWeightVariable",
+            "source_entity": "Analysis",
+            "target_entity": "WeightVariable",
+            "description": "Indicates that the analysis makes use of weight variables like ANALWT2_C."
+        }
+    ]
+}

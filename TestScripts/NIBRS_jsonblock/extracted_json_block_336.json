@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "entity": "Age",
+            "description": "Different age groups of the respondents ranging from 12 to 49."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency count of respondents in each age category."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each age group in the overall survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Age",
+            "target_entity": "UnweightedFrequency",
+            "description": "Describes the unweighted frequency of respondents in a particular age group."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Age",
+            "target_entity": "Percentage",
+            "description": "Describes the percentage representation of respondents in a specific age group."
+        }
+    ]
+}

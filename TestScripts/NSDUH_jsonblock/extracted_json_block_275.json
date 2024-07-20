@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "RC-TRANQUILIZERS_PAST_MONTH_MISUSE",
+            "description": "Misuse of tranquilizers in the past month."
+        },
+        {
+            "entity": "RC-STIMULANTS_EVER_MISUSED",
+            "description": "Lifetime misuse of stimulants."
+        },
+        {
+            "entity": "RC-STIMULANTS_PAST_YEAR_MISUSE",
+            "description": "Misuse of stimulants in the past year."
+        },
+        {
+            "entity": "RC-STIMULANTS_PAST_MONTH_MISUSE",
+            "description": "Misuse of stimulants in the past month."
+        },
+        {
+            "entity": "RC-SEDATIVES_EVER_MISUSED",
+            "description": "Lifetime misuse of sedatives."
+        },
+        {
+            "entity": "RC-SEDATIVES_PAST_YEAR_MISUSE",
+            "description": "Misuse of sedatives in the past year."
+        },
+        {
+            "entity": "RC-SEDATIVES_PAST_MONTH_MISUSE",
+            "description": "Misuse of sedatives in the past month."
+        },
+        {
+            "entity": "RC-TRANQUILIZERS_OR_SEDATIVES_EVER_MISUSED",
+            "description": "Lifetime misuse of tranquilizers or sedatives."
+        },
+        {
+            "entity": "RC-TRANQUILIZERS_OR_SEDATIVES_PAST_YEAR_MISUSE",
+            "description": "Misuse of tranquilizers or sedatives in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasPastMonthMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "RC-TRANQUILIZERS_PAST_MONTH_MISUSE",
+            "description": "Indicates the respondent's misuse of tranquilizers in the past month."
+        },
+        {
+            "relationship": "hasEverMisused",
+            "source_entity": "Respondent",
+            "target_entity": "RC-STIMULANTS_EVER_MISUSED",
+            "description": "Indicates the respondent's misuse of stimulants at any point in their lifetime."
+        },
+        {
+            "relationship": "hasPastYearMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "RC-STIMULANTS_PAST_YEAR_MISUSE",
+            "description": "Indicates the respondent's misuse of stimulants in the past year."
+        },
+        {
+            "relationship": "hasPastMonthMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "RC-STIMULANTS_PAST_MONTH_MISUSE",
+            "description": "Indicates the respondent's misuse of stimulants in the past month."
+        },
+        {
+            "relationship": "hasEverMisused",
+            "source_entity": "Respondent",
+            "target_entity": "RC-SEDATIVES_EVER_MISUSED",
+            "description": "Indicates the respondent's misuse of sedatives at any point in their lifetime."
+        },
+        {
+            "relationship": "hasPastYearMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "RC-SEDATIVES_PAST_YEAR_MISUSE",
+            "description": "Indicates the respondent's misuse of sedatives in the past year."
+        },
+        {
+            "relationship": "hasPastMonthMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "RC-SEDATIVES_PAST_MONTH_MISUSE",
+            "description": "Indicates the respondent's misuse of sedatives in the past month."
+        },
+        {
+            "relationship": "hasEverMisused",
+            "source_entity": "Respondent",
+            "target_entity": "RC-TRANQUILIZERS_OR_SEDATIVES_EVER_MISUSED",
+            "description": "Indicates the respondent's misuse of tranquilizers or sedatives at any point in their lifetime."
+        },
+        {
+            "relationship": "hasPastYearMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "RC-TRANQUILIZERS_OR_SEDATIVES_PAST_YEAR_MISUSE",
+            "description": "Indicates the respondent's misuse of tranquilizers or sedatives in the past year."
+        }
+    ]
+}

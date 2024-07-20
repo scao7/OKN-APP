@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "NumberOfOffenders",
+            "description": "The number of offenders in a particular case, ranging from unknown (0) to specific values."
+        },
+        {
+            "entity": "VictimRelationToOffender",
+            "description": "The relationship of the victim to the offender, such as 'Victim was Spouse'."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is missing or unrecorded in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffenderCount",
+            "source_entity": "Case",
+            "target_entity": "NumberOfOffenders",
+            "description": "Indicates the number of offenders involved in a particular case."
+        },
+        {
+            "relationship": "hasVictimRelation",
+            "source_entity": "Case",
+            "target_entity": "VictimRelationToOffender",
+            "description": "Describes the relationship between the victim and the offender in a case."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Represents missing or unrecorded data in the dataset."
+        }
+    ]
+}

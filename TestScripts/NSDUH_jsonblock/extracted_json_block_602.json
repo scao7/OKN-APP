@@ -1,0 +1,74 @@
+{
+    "entities": [
+        {
+            "entity": "HPQTTOB",
+            "description": "Health professional advised you to quit tobacco use in the past 12 months"
+        },
+        {
+            "entity": "HPALCAMT",
+            "description": "Doctor asked how much you drink in the past 12 months"
+        },
+        {
+            "entity": "SickOrInjuredDays",
+            "description": "Number of whole days missed from school due to sickness or injury."
+        },
+        {
+            "entity": "SchoolAbsenceReason",
+            "description": "The reason for missing school, specifically due to being sick or injured."
+        },
+        {
+            "entity": "FamilyCareAbsence",
+            "description": "Number of days missed due to staying home with a sick child or family member."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 12 months."
+        },
+        {
+            "relationship": "hasHPQTTOB",
+            "source_entity": "Respondent",
+            "target_entity": "HPQTTOB",
+            "description": "Indicates whether a health professional advised the respondent to quit tobacco use in the past 12 months."
+        },
+        {
+            "relationship": "hasHPALCAMT",
+            "source_entity": "Respondent",
+            "target_entity": "HPALCAMT",
+            "description": "Indicates whether a doctor asked the respondent how much they drink in the past 12 months."
+        },
+        {
+            "relationship": "hasSickOrInjuredDays",
+            "source_entity": "Respondent",
+            "target_entity": "SickOrInjuredDays",
+            "description": "Indicates the number of days the respondent missed school due to sickness or injury."
+        },
+        {
+            "relationship": "hasAbsenceReason",
+            "source_entity": "SchoolAbsence",
+            "target_entity": "SchoolAbsenceReason",
+            "description": "Defines the reason for the school absence, such as being sick or injured."
+        },
+        {
+            "relationship": "hasFamilyCareAbsence",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyCareAbsence",
+            "description": "Indicates the number of days the respondent missed school due to caring for a sick child or family member."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Health professional",
+            "predicate": "advised",
+            "object": "quit tobacco use"
+        },
+        {
+            "subject": "Doctor",
+            "predicate": "asked about",
+            "object": "how much respondent drinks"
+        }
+    ]
+}

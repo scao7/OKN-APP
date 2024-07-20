@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "PainRelieverPast12Months",
+            "description": "Pain relievers used in the past 12 months."
+        },
+        {
+            "entity": "OxyContinUse",
+            "description": "OxyContin use in the past 12 months."
+        },
+        {
+            "entity": "PrescriptionPainReliever",
+            "description": "Any use of prescription pain reliever ever in lifetime."
+        },
+        {
+            "entity": "PainRelieverRecoded",
+            "description": "Most recent any pain reliever use recoded."
+        },
+        {
+            "entity": "FentanylProducts",
+            "description": "Any past year use of Fentanyl products."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesPainReliever",
+            "source_entity": "Respondent",
+            "target_entity": "PainRelieverPast12Months",
+            "description": "Indicates whether the respondent used any pain reliever in the past 12 months."
+        },
+        {
+            "relationship": "usesOxyContin",
+            "source_entity": "Respondent",
+            "target_entity": "OxyContinUse",
+            "description": "Indicates whether the respondent used OxyContin in the past 12 months."
+        },
+        {
+            "relationship": "usesPrescriptionPainReliever",
+            "source_entity": "Respondent",
+            "target_entity": "PrescriptionPainReliever",
+            "description": "Indicates whether the respondent has ever used any prescription pain reliever in their lifetime."
+        },
+        {
+            "relationship": "mostRecentPainRelieverUse",
+            "source_entity": "Respondent",
+            "target_entity": "PainRelieverRecoded",
+            "description": "Indicates the most recent use of any pain reliever by the respondent."
+        },
+        {
+            "relationship": "usesFentanylProducts",
+            "source_entity": "Respondent",
+            "target_entity": "FentanylProducts",
+            "description": "Indicates whether the respondent has used Fentanyl products in the past year."
+        }
+    ]
+}

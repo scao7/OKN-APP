@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderNumber",
+            "description": "The number identifying the offender in the dataset."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of occurrences for each offender number."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Cases where data is missing."
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "The total number of cases in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "OffenderNumber",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates each offender number to its corresponding raw count of occurrences."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Denotes the parts of the dataset where data is missing for offender numbers."
+        },
+        {
+            "relationship": "hasTotalResponses",
+            "source_entity": "Dataset",
+            "target_entity": "TotalResponses",
+            "description": "Defines the total number of responses recorded in the dataset."
+        }
+    ]
+}

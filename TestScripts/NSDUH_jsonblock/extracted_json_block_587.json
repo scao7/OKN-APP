@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "TreatmentTimeInadequacy",
+            "description": "Respondent's unmet mental health treatment need due to not having enough time for treatment."
+        },
+        {
+            "entity": "PrivacyConcern",
+            "description": "Respondent's worry that their information would not be kept private."
+        },
+        {
+            "entity": "StigmaWorry",
+            "description": "Respondent's worry about what people would think or say if they got treatment."
+        },
+        {
+            "entity": "ConsequencesWorry",
+            "description": "Respondent's worry about potential negative consequences if people knew they were in treatment, such as loss of job, home, or children."
+        },
+        {
+            "entity": "ReadinessForTreatment",
+            "description": "Respondent's self-assessment of being ready or not to start treatment."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTreatmentTimeInadequacy",
+            "source_entity": "Respondent",
+            "target_entity": "TreatmentTimeInadequacy",
+            "description": "Indicates the unmet treatment need due to not enough time for treatment."
+        },
+        {
+            "relationship": "hasPrivacyConcern",
+            "source_entity": "Respondent",
+            "target_entity": "PrivacyConcern",
+            "description": "Indicates the respondent's concern regarding privacy of their information."
+        },
+        {
+            "relationship": "hasStigmaWorry",
+            "source_entity": "Respondent",
+            "target_entity": "StigmaWorry",
+            "description": "Indicates the respondent's worry about societal stigma if they got treatment."
+        },
+        {
+            "relationship": "hasConsequencesWorry",
+            "source_entity": "Respondent",
+            "target_entity": "ConsequencesWorry",
+            "description": "Indicates the respondent's worry about losing job, home, or children if people knew they were in treatment."
+        },
+        {
+            "relationship": "hasReadinessForTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "ReadinessForTreatment",
+            "description": "Indicates whether the respondent feels ready to start treatment or not."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "UNMET MH TRMT NEED",
+            "predicate": "reason",
+            "object": "NOT ENOUGH TIME FOR TREATMENT"
+        },
+        {
+            "subject": "UNMET MH TRMT NEED",
+            "predicate": "concern",
+            "object": "WORRIED THAT INFO NOT KEPT PRIVATE"
+        },
+        {
+            "subject": "UNMET MH TRMT NEED",
+            "predicate": "concern",
+            "object": "WORRIED WHAT PEOPLE WOULD THINK OR SAY"
+        },
+        {
+            "subject": "UNMET MH TRMT NEED",
+            "predicate": "concern",
+            "object": "WORRIED LOSS OF JOB, HOME, CHILDREN, ETC"
+        },
+        {
+            "subject": "UNMET MH TRMT NEED",
+            "predicate": "reason",
+            "object": "NOT READY TO START TREATMENT"
+        }
+    ]
+}

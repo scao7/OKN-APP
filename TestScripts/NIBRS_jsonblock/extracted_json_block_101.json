@@ -1,0 +1,116 @@
+{
+    "entities": [
+        {
+            "entity": "BiasMotivation",
+            "description": "The reason behind bias-motivated incidents, categorized by specific groups."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of incidents/events reported without any statistical weighting."
+        },
+        {
+            "entity": "AntiReligiousGroups",
+            "description": "Bias motivations against religious groups such as Mormons, Jehovah's Witnesses, Arabs, Buddhists, Hindus, and Sikhs."
+        },
+        {
+            "entity": "AntiSexualOrientationGroups",
+            "description": "Bias motivations against groups based on sexual orientation, including Anti-Gay, Anti-Lesbian, and LGBT."
+        },
+        {
+            "entity": "AntiGenderGroups",
+            "description": "Bias motivations against gender groups including Male, Female, Transgender, and Non-Conforming."
+        },
+        {
+            "entity": "AntiEthnicGroups",
+            "description": "Bias motivations against ethnic groups such as Hispanic or Latino."
+        },
+        {
+            "entity": "AntiDisabilityGroups",
+            "description": "Bias motivations against individuals with physical or mental disabilities."
+        },
+        {
+            "entity": "AntiRacialGroups",
+            "description": "Bias motivations against racial groups such as White, Black or African American, and American Indian or Alaska Native."
+        },
+        {
+            "entity": "UnknownBiasMotivation",
+            "description": "Incidents where the bias motivation is unknown."
+        },
+        {
+            "entity": "None",
+            "description": "Indicates no bias motivation was reported."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Indicates missing data in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Incident",
+            "target_entity": "BiasMotivation",
+            "description": "Categorizes the reported incidents by the bias motivation."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "BiasMotivation",
+            "target_entity": "UnweightedFrequency",
+            "description": "Reports the count of incidents/events without statistical weighting for each bias motivation."
+        },
+        {
+            "relationship": "belongsToAntiReligiousGroups",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiReligiousGroups",
+            "description": "Classifies bias motivations against specific religious groups."
+        },
+        {
+            "relationship": "belongsToAntiSexualOrientationGroups",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiSexualOrientationGroups",
+            "description": "Classifies bias motivations against groups based on sexual orientation."
+        },
+        {
+            "relationship": "belongsToAntiGenderGroups",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiGenderGroups",
+            "description": "Classifies bias motivations against gender groups."
+        },
+        {
+            "relationship": "belongsToAntiEthnicGroups",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiEthnicGroups",
+            "description": "Classifies bias motivations against ethnic groups."
+        },
+        {
+            "relationship": "belongsToAntiDisabilityGroups",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiDisabilityGroups",
+            "description": "Classifies bias motivations against individuals with disabilities."
+        },
+        {
+            "relationship": "belongsToAntiRacialGroups",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiRacialGroups",
+            "description": "Classifies bias motivations against racial groups."
+        },
+        {
+            "relationship": "hasUnknownBiasMotivation",
+            "source_entity": "Incident",
+            "target_entity": "UnknownBiasMotivation",
+            "description": "Indicates incidents where the bias motivation is unknown."
+        },
+        {
+            "relationship": "hasNoBias",
+            "source_entity": "Incident",
+            "target_entity": "None",
+            "description": "Indicates incidents that have no bias motivation."
+        },
+        {
+            "relationship": "containsMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Indicates missing data in the dataset."
+        }
+    ]
+}

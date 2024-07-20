@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "UnmetSubTrmtNeedStartTreatment",
+            "description": "Not ready to start treatment for unmet substance use treatment need."
+        },
+        {
+            "entity": "UnmetSubTrmtNeedStopCutBack",
+            "description": "Not ready to stop or cut back on alcohol or drug use for unmet substance use treatment need."
+        },
+        {
+            "entity": "UnmetSubTrmtNeedHandleUseOnOwn",
+            "description": "Thought could handle alcohol or drug use on their own for unmet substance use treatment need."
+        },
+        {
+            "entity": "UnmetSubTrmtNeedFamilyFriendsDisapproval",
+            "description": "Family, friends or religious group wouldn't like them to get treatment for unmet substance use treatment need."
+        },
+        {
+            "entity": "UnmetSubTrmtNeedForcedIntoTreatment",
+            "description": "Worried about being forced into treatment or rehab against their will for unmet substance use treatment need."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnmetTrmtNeedStart",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetSubTrmtNeedStartTreatment",
+            "description": "Indicates that the respondent was not ready to start treatment for substance use issues."
+        },
+        {
+            "relationship": "hasUnmetTrmtNeedStopCutBack",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetSubTrmtNeedStopCutBack",
+            "description": "Indicates that the respondent was not ready to stop or cut back on their alcohol or drug use."
+        },
+        {
+            "relationship": "hasUnmetTrmtNeedHandleUseOnOwn",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetSubTrmtNeedHandleUseOnOwn",
+            "description": "Indicates that the respondent thought they could handle their alcohol or drug use on their own."
+        },
+        {
+            "relationship": "hasFamilyFriendsDisapproval",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetSubTrmtNeedFamilyFriendsDisapproval",
+            "description": "Indicates that the respondent's family, friends, or religious group would disapprove of them getting treatment."
+        },
+        {
+            "relationship": "hasWorryAboutBeingForced",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetSubTrmtNeedForcedIntoTreatment",
+            "description": "Indicates that the respondent was worried about being forced into rehab or treatment against their will."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "not ready to start treatment",
+            "object": "UnmetSubTrmtNeedStartTreatment"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "not ready to stop/cut back on alcohol/drug use",
+            "object": "UnmetSubTrmtNeedStopCutBack"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "thought could handle alcohol/drug use on own",
+            "object": "UnmetSubTrmtNeedHandleUseOnOwn"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "family/friends/religious group wouldn't like treatment",
+            "object": "UnmetSubTrmtNeedFamilyFriendsDisapproval"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "worried about being forced into treatment",
+            "object": "UnmetSubTrmtNeedForcedIntoTreatment"
+        }
+    ]
+}

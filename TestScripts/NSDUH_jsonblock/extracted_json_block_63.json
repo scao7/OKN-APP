@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "WorkHours",
+            "description": "Usually work 35 or more hours per week at all jobs or businesses."
+        },
+        {
+            "entity": "WorkAbsenceReason",
+            "description": "Reason for not working at a job in the past week."
+        },
+        {
+            "entity": "UnemploymentReason",
+            "description": "Reason for not having a job in the past week."
+        },
+        {
+            "entity": "JobSearchEffort",
+            "description": "Efforts made to find work in the past 30 days."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWorkHours",
+            "source_entity": "Respondent",
+            "target_entity": "WorkHours",
+            "description": "Indicates whether the respondent usually works 35 or more hours per week."
+        },
+        {
+            "relationship": "hasWorkAbsenceReason",
+            "source_entity": "Respondent",
+            "target_entity": "WorkAbsenceReason",
+            "description": "Specifies the reason the respondent did not work in the past week."
+        },
+        {
+            "relationship": "hasUnemploymentReason",
+            "source_entity": "Respondent",
+            "target_entity": "UnemploymentReason",
+            "description": "Specifies the reason the respondent did not have a job in the past week."
+        },
+        {
+            "relationship": "hasJobSearchEffort",
+            "source_entity": "Respondent",
+            "target_entity": "JobSearchEffort",
+            "description": "Indicates whether the respondent made efforts to find work in the past 30 days."
+        }
+    ]
+}

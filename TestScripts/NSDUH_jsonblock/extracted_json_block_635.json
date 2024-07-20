@@ -1,0 +1,107 @@
+{
+    "entities": [
+        {
+            "entity": "DrugUseFrequency",
+            "description": "Frequency of drug use among respondents."
+        },
+        {
+            "entity": "CigaretteUse",
+            "description": "Usage patterns of cigarettes among respondents."
+        },
+        {
+            "entity": "MarijuanaUse",
+            "description": "Usage patterns of marijuana among respondents."
+        },
+        {
+            "entity": "AlcoholUse",
+            "description": "Frequency and intensity of alcohol consumption among respondents."
+        },
+        {
+            "entity": "SubstanceAbuseTreatment",
+            "description": "Information regarding treatment received for substance abuse."
+        },
+        {
+            "entity": "MentalHealthIssue",
+            "description": "Types of mental health issues experienced by respondents."
+        },
+        {
+            "entity": "FamilyCareAbsence",
+            "description": "Number of days missed due to staying home with a sick child or family member."
+        },
+        {
+            "entity": "RuralResidence",
+            "description": "Indicator of whether the respondent resides in a rural area."
+        },
+        {
+            "entity": "EconomicStatus",
+            "description": "Economic status of the respondents based on income bracket."
+        },
+        {
+            "entity": "EducationLevel",
+            "description": "Highest level of education attained by the respondents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesDrug",
+            "source_entity": "Respondent",
+            "target_entity": "DrugUseFrequency",
+            "description": "Indicates the frequency of drug use by the respondent."
+        },
+        {
+            "relationship": "usesCigarette",
+            "source_entity": "Respondent",
+            "target_entity": "CigaretteUse",
+            "description": "Indicates the cigarette usage pattern of the respondent."
+        },
+        {
+            "relationship": "usesMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaUse",
+            "description": "Indicates the marijuana usage pattern of the respondent."
+        },
+        {
+            "relationship": "consumesAlcohol",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholUse",
+            "description": "Indicates the alcohol consumption pattern of the respondent."
+        },
+        {
+            "relationship": "receivedTreatment",
+            "source_entity": "SubstanceAbuse",
+            "target_entity": "SubstanceAbuseTreatment",
+            "description": "Indicates that the respondent received treatment for substance abuse."
+        },
+        {
+            "relationship": "hasMentalHealthIssue",
+            "source_entity": "Respondent",
+            "target_entity": "MentalHealthIssue",
+            "description": "Indicates that the respondent has experienced a mental health issue."
+        },
+        {
+            "relationship": "providesFamilyCare",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyCareAbsence",
+            "description": "Indicates the respondent missed days due to family care responsibilities."
+        },
+        {
+            "relationship": "residesIn",
+            "source_entity": "Respondent",
+            "target_entity": "RuralResidence",
+            "description": "Indicates that the respondent resides in a rural area."
+        },
+        {
+            "relationship": "hasEconomicStatus",
+            "source_entity": "Respondent",
+            "target_entity": "EconomicStatus",
+            "description": "Indicates the economic status of the respondent."
+        },
+        {
+            "relationship": "hasEducationLevel",
+            "source_entity": "Respondent",
+            "target_entity": "EducationLevel",
+            "description": "Indicates the education level of the respondent."
+        }
+    ],
+    "triplets": []
+}

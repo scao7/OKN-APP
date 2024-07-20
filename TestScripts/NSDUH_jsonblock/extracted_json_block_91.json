@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "DrivingUnderInfluenceOfInhalants",
+            "description": "Driving a vehicle under the influence of inhalants in the past 12 months."
+        },
+        {
+            "entity": "DrivingUnderInfluenceOfMethamphetamine",
+            "description": "Driving a vehicle under the influence of methamphetamine in the past 12 months."
+        },
+        {
+            "entity": "DrivingUnderInfluenceOfAlcohol",
+            "description": "Driving a vehicle under the influence of alcohol in the past 12 months."
+        },
+        {
+            "entity": "MaxLegalPenalty",
+            "description": "Maximum legal penalty for first offense possession of an ounce or less of marijuana for personal use in the respondent's state."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrivingUnderInfluenceOfInhalants",
+            "source_entity": "Respondent",
+            "target_entity": "DrivingUnderInfluenceOfInhalants",
+            "description": "Relates the respondent to driving under the influence of inhalants in the past 12 months."
+        },
+        {
+            "relationship": "hasDrivingUnderInfluenceOfMethamphetamine",
+            "source_entity": "Respondent",
+            "target_entity": "DrivingUnderInfluenceOfMethamphetamine",
+            "description": "Relates the respondent to driving under the influence of methamphetamine in the past 12 months."
+        },
+        {
+            "relationship": "hasDrivingUnderInfluenceOfAlcohol",
+            "source_entity": "Respondent",
+            "target_entity": "DrivingUnderInfluenceOfAlcohol",
+            "description": "Relates the respondent to driving under the influence of alcohol in the past 12 months."
+        },
+        {
+            "relationship": "hasMaxLegalPenalty",
+            "source_entity": "State",
+            "target_entity": "MaxLegalPenalty",
+            "description": "Defines the maximum legal penalty in the respondent's state for first offense possession of an ounce or less of marijuana for personal use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "hasDrivingUnderInfluenceOfInhalants",
+            "object": "DrivingUnderInfluenceOfInhalants"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasDrivingUnderInfluenceOfMethamphetamine",
+            "object": "DrivingUnderInfluenceOfMethamphetamine"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasDrivingUnderInfluenceOfAlcohol",
+            "object": "DrivingUnderInfluenceOfAlcohol"
+        },
+        {
+            "subject": "State",
+            "predicate": "hasMaxLegalPenalty",
+            "object": "MaxLegalPenalty"
+        }
+    ]
+}

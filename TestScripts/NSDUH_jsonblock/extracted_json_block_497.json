@@ -1,0 +1,27 @@
+[
+    {
+        "subject": "Respondent",
+        "predicate": "talked_with_parents_about_dangers_of_substance_use",
+        "object": "ParentalTalkAboutSubstanceUse"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "participated_in_problem_solving_communication_skills_or_self_esteem_group",
+        "object": "ProblemSolvingGroupParticipation"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "participated_in_violence_prevention_program",
+        "object": "ViolencePreventionProgramParticipation"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "participated_in_alcohol_tobacco_drug_prevention_programs_outside_school",
+        "object": "SubstanceUsePreventionProgram"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "participated_in_individual_or_group_counseling_programs",
+        "object": "SubstanceAbuseCounseling"
+    }
+]

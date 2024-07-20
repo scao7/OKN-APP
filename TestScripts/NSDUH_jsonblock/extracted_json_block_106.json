@@ -1,0 +1,88 @@
+{
+    "entities": [
+        {
+            "entity": "SurveySection",
+            "description": "Specific section of the survey, in this context related to nicotine dependence."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 30 days referred in the survey question."
+        },
+        {
+            "entity": "NicotineDependence",
+            "description": "The dependence on nicotine as measured by various statements in the survey."
+        },
+        {
+            "entity": "CigarIrritableNeed",
+            "description": "Statement indicating the need to smoke to feel less irritable."
+        },
+        {
+            "entity": "CigarCraveStart",
+            "description": "Statement indicating the start of craving cigarettes when not smoked for a few hours."
+        },
+        {
+            "entity": "CigarCraveForce",
+            "description": "Statement indicating strong cravings for a cigarette that feels uncontrollable."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "containsSection",
+            "source_entity": "Survey",
+            "target_entity": "SurveySection",
+            "description": "Indicates a specific section within the survey."
+        },
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 30 days."
+        },
+        {
+            "relationship": "measuresDependence",
+            "source_entity": "SurveySection",
+            "target_entity": "NicotineDependence",
+            "description": "Indicates that the survey section is focused on measuring nicotine dependence."
+        },
+        {
+            "relationship": "assessesNeedToSmoke",
+            "source_entity": "NicotineDependence",
+            "target_entity": "CigarIrritableNeed",
+            "description": "Evaluates the need to smoke to feel less irritable."
+        },
+        {
+            "relationship": "assessesCraveStart",
+            "source_entity": "NicotineDependence",
+            "target_entity": "CigarCraveStart",
+            "description": "Evaluates the start of craving cigarettes when not smoked for a few hours."
+        },
+        {
+            "relationship": "assessesCraveForce",
+            "source_entity": "NicotineDependence",
+            "target_entity": "CigarCraveForce",
+            "description": "Evaluates strong cravings for a cigarette that feels uncontrollable."
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Respondent",
+            "predicate": "hasDependence",
+            "object": "NicotineDependence"
+        },
+        {
+            "subject": "CigarIrritableNeed",
+            "predicate": "hasFrequency",
+            "object": "FrequencyCounts"
+        },
+        {
+            "subject": "CigarCraveStart",
+            "predicate": "hasFrequency",
+            "object": "FrequencyCounts"
+        },
+        {
+            "subject": "CigarCraveForce",
+            "predicate": "hasFrequency",
+            "object": "FrequencyCounts"
+        }
+    ]
+}

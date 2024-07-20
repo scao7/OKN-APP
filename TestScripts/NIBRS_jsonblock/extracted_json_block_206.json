@@ -1,0 +1,212 @@
+{
+    "entities": [
+        {
+            "entity": "Murder/Nonnegligent Manslaughter",
+            "description": "The unlawful killing of a human being by another."
+        },
+        {
+            "entity": "Negligent Manslaughter",
+            "description": "The killing of another person through gross negligence."
+        },
+        {
+            "entity": "Justifiable Homicide",
+            "description": "The killing of a person under circumstances that allow the act to be regarded in law as without criminal guilt."
+        },
+        {
+            "entity": "Kidnaping/Abduction",
+            "description": "The unlawful seizure and carrying away of a person by force."
+        },
+        {
+            "entity": "Rape",
+            "description": "Sexual activity carried out against a person's will."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Sexual activity involving anal or oral copulation."
+        },
+        {
+            "entity": "Sexual Assault With An Object",
+            "description": "Unlawful penetration of a person with a foreign object without the victim's consent."
+        },
+        {
+            "entity": "Fondling (Indecent Liberties/Child Molesting)",
+            "description": "Touching private parts of another person for sexual gratification."
+        },
+        {
+            "entity": "Robbery",
+            "description": "Taking or attempting to take something by force or threat of force."
+        },
+        {
+            "entity": "Aggravated Assault",
+            "description": "An attack for the purpose of inflicting severe or aggravated bodily injury."
+        },
+        {
+            "entity": "Simple Assault",
+            "description": "An attack without a weapon resulting in no or minor injury."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "Unlawfully placing another person in fear of bodily harm without physical attack."
+        },
+        {
+            "entity": "Arson",
+            "description": "The criminal act of deliberately setting fire to property."
+        },
+        {
+            "entity": "Extortion/Blackmail",
+            "description": "Obtaining money or other value by threats or coercion."
+        },
+        {
+            "entity": "Burglary/Breaking and Entering",
+            "description": "Unlawful entry into a structure to commit a theft or felony."
+        },
+        {
+            "entity": "Pocket-picking",
+            "description": "Stealing from another person's pockets or bags without their notice."
+        },
+        {
+            "entity": "Purse-snatching",
+            "description": "Forcibly stealing a purse or handbag from an individual."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "The act of stealing goods from a retail establishment."
+        },
+        {
+            "entity": "Theft From Building",
+            "description": "The act of stealing property from a building."
+        },
+        {
+            "entity": "Theft From Coin-Operated Machine or Device",
+            "description": "Theft from a machine or device designed to receive money."
+        },
+        {
+            "entity": "Theft From Motor Vehicle",
+            "description": "Stealing items from within a motor vehicle."
+        },
+        {
+            "entity": "Theft Of Motor Vehicle Parts/Accessories",
+            "description": "Stealing parts or accessories from a motor vehicle."
+        },
+        {
+            "entity": "All Other Larceny",
+            "description": "Theft that does not fit into any of the other defined categories of larceny."
+        },
+        {
+            "entity": "Motor Vehicle Theft",
+            "description": "The theft or attempted theft of a motor vehicle."
+        },
+        {
+            "entity": "Counterfeiting/Forgery",
+            "description": "Making, altering, or possessing counterfeit items or falsifying documents."
+        },
+        {
+            "entity": "False Pretenses/Swindle/Confidence Game",
+            "description": "Deceiving someone to acquire money or something of value."
+        },
+        {
+            "entity": "Credit Card/Automatic Teller Machine Fraud",
+            "description": "Deceptive acts involving credit cards or ATMs to gain unauthorized access to funds."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Assuming another person\u2019s identity to deceive or gain advantage."
+        },
+        {
+            "entity": "Welfare Fraud",
+            "description": "Illegally obtaining welfare benefits."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Murder/Nonnegligent Manslaughter",
+            "target_entity": "Crime",
+            "description": "Classification of the unlawful killing of a human being by another as a crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Negligent Manslaughter",
+            "target_entity": "Crime",
+            "description": "Classification of the killing of another person through gross negligence as a crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Justifiable Homicide",
+            "target_entity": "Homicide",
+            "description": "Classification of the killing of a person under certain circumstances as a form of homicide."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Kidnaping/Abduction",
+            "target_entity": "Crime",
+            "description": "Classification of the unlawful seizure and carrying away of a person by force as a crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Rape",
+            "target_entity": "Sexual Crime",
+            "description": "Classification of non-consensual sexual activity as a sexual crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Sexual Assault With An Object",
+            "target_entity": "Sexual Crime",
+            "description": "Classification of unlawful penetration with a foreign object as a sexual crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Intimidation",
+            "target_entity": "Crime",
+            "description": "Classification of unlawfully placing another person in fear of bodily harm without physical attack as a crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Arson",
+            "target_entity": "Crime",
+            "description": "Classification of the deliberate setting of fire to property as a crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Extortion/Blackmail",
+            "target_entity": "Crime",
+            "description": "Classification of obtaining money or value by threats or coercion as a crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Burglary/Breaking and Entering",
+            "target_entity": "Property Crime",
+            "description": "Classification of unlawful entry into a structure to commit a theft or felony as a property crime."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Shoplifting",
+            "target_entity": "Theft",
+            "description": "Classification of stealing goods from a retail establishment as theft."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Motor Vehicle Theft",
+            "target_entity": "Theft",
+            "description": "Classification of the theft or attempted theft of a motor vehicle as a form of theft."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Counterfeiting/Forgery",
+            "target_entity": "Fraud",
+            "description": "Classification of making, altering, or possessing counterfeit items or falsifying documents as fraud."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Impersonation",
+            "target_entity": "Fraud",
+            "description": "Classification of assuming another person\u2019s identity to deceive or gain advantage as fraud."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Welfare Fraud",
+            "target_entity": "Fraud",
+            "description": "Classification of illegally obtaining welfare benefits as fraud."
+        }
+    ]
+}

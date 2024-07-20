@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "CentralNervousSystemStimulantsUse",
+            "description": "Use of central nervous system stimulants in the past month."
+        },
+        {
+            "entity": "IllicitDrugEverUse",
+            "description": "Use of any illicit drug in the respondent's lifetime."
+        },
+        {
+            "entity": "IllicitDrugPastYearUse",
+            "description": "Use of any illicit drug in the past year."
+        },
+        {
+            "entity": "IllicitDrugPastMonthUse",
+            "description": "Use of any illicit drug in the past month."
+        },
+        {
+            "entity": "MarijuanaOnlyEverUse",
+            "description": "Use of only marijuana in the respondent's lifetime."
+        },
+        {
+            "entity": "MarijuanaOnlyPastYearUse",
+            "description": "Use of only marijuana in the past year."
+        },
+        {
+            "entity": "MarijuanaOnlyPastMonthUse",
+            "description": "Use of only marijuana in the past month."
+        },
+        {
+            "entity": "IllicitDrugOtherThanMarijuanaEverUse",
+            "description": "Use of illicit drugs other than marijuana in the respondent's lifetime."
+        },
+        {
+            "entity": "IllicitDrugOtherThanMarijuanaPastYearUse",
+            "description": "Use of illicit drugs other than marijuana in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUseCategory",
+            "source_entity": "CentralNervousSystemStimulantsUse",
+            "target_entity": "PastMonthUse",
+            "description": "Categorizes whether the respondent has misused central nervous system stimulants in the past month."
+        },
+        {
+            "relationship": "hasEverUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugEverUse",
+            "description": "Indicates whether the respondent has ever used any illicit drug."
+        },
+        {
+            "relationship": "hasPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugPastYearUse",
+            "description": "Indicates whether the respondent has used any illicit drug in the past year."
+        },
+        {
+            "relationship": "hasPastMonthUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugPastMonthUse",
+            "description": "Indicates whether the respondent has used any illicit drug in the past month."
+        },
+        {
+            "relationship": "hasMarijuanaOnlyEverUse",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaOnlyEverUse",
+            "description": "Indicates whether the respondent has ever used only marijuana."
+        },
+        {
+            "relationship": "hasMarijuanaOnlyPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaOnlyPastYearUse",
+            "description": "Indicates whether the respondent has used only marijuana in the past year."
+        },
+        {
+            "relationship": "hasMarijuanaOnlyPastMonthUse",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaOnlyPastMonthUse",
+            "description": "Indicates whether the respondent has used only marijuana in the past month."
+        },
+        {
+            "relationship": "hasIllicitDrugOtherThanMarijuanaEverUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugOtherThanMarijuanaEverUse",
+            "description": "Indicates whether the respondent has ever used illicit drugs other than marijuana."
+        },
+        {
+            "relationship": "hasIllicitDrugOtherThanMarijuanaPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugOtherThanMarijuanaPastYearUse",
+            "description": "Indicates whether the respondent has used illicit drugs other than marijuana in the past year."
+        }
+    ]
+}

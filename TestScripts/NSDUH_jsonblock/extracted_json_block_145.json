@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "BoughtLastMarijuanaFromStoreOrDispensary",
+            "description": "Whether the respondent bought marijuana from a store or dispensary in the past 12 months."
+        },
+        {
+            "entity": "KnewPersonBoughtLastMarijuanaFrom",
+            "description": "How well the respondent knew the person they bought marijuana from the last time in the past 12 months."
+        },
+        {
+            "entity": "BoughtPreRolledJoints",
+            "description": "Whether the respondent bought marijuana in pre-rolled joints in the past 12 months."
+        },
+        {
+            "entity": "BoughtMarijuanaInLooseForm",
+            "description": "Whether the respondent bought marijuana in loose form in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBoughtFromStoreOrDispensary",
+            "source_entity": "Respondent",
+            "target_entity": "BoughtLastMarijuanaFromStoreOrDispensary",
+            "description": "Indicates if the respondent purchased marijuana from a store or dispensary in the past 12 months."
+        },
+        {
+            "relationship": "knowsPersonBoughtFrom",
+            "source_entity": "Respondent",
+            "target_entity": "KnewPersonBoughtLastMarijuanaFrom",
+            "description": "Describes the knowledge level of the respondent about the person they last bought marijuana from."
+        },
+        {
+            "relationship": "hasBoughtPreRolledJoints",
+            "source_entity": "Respondent",
+            "target_entity": "BoughtPreRolledJoints",
+            "description": "Indicates if the respondent purchased marijuana in pre-rolled joints in the past 12 months."
+        },
+        {
+            "relationship": "hasBoughtLooseForm",
+            "source_entity": "Respondent",
+            "target_entity": "BoughtMarijuanaInLooseForm",
+            "description": "Indicates if the respondent purchased marijuana in loose form in the past 12 months."
+        }
+    ],
+    "triplet": [
+        {
+            "subject": "Respondent",
+            "predicate": "boughtMarijuanaFrom",
+            "object": "StoreOrDispensary"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "knewPersonBoughtFrom",
+            "object": "Person"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "boughtForm",
+            "object": "PreRolledJoints"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "boughtForm",
+            "object": "LooseForm"
+        }
+    ]
+}

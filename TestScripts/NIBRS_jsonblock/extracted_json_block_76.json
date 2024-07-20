@@ -1,0 +1,109 @@
+{
+    "entities": [
+        {
+            "entity": "ATM",
+            "description": "ATM separate from bank"
+        },
+        {
+            "entity": "AutoDealership",
+            "description": "Auto dealership new/used"
+        },
+        {
+            "entity": "Campground",
+            "description": "Camp/campground"
+        },
+        {
+            "entity": "DaycareFacility",
+            "description": "Daycare facility"
+        },
+        {
+            "entity": "FreightTerminal",
+            "description": "Dock/wharf/freight/modal terminal"
+        },
+        {
+            "entity": "FarmFacility",
+            "description": "Farm facility"
+        },
+        {
+            "entity": "GamblingFacility",
+            "description": "Gambling facility/casino/race track"
+        },
+        {
+            "entity": "IndustrialSite",
+            "description": "Industrial site"
+        },
+        {
+            "entity": "MilitaryInstallation",
+            "description": "Military installation"
+        },
+        {
+            "entity": "ParkPlayground",
+            "description": "Park/playground"
+        },
+        {
+            "entity": "RestArea",
+            "description": "Rest area"
+        },
+        {
+            "entity": "SchoolCollegeUniversity",
+            "description": "School\u2014college/university"
+        },
+        {
+            "entity": "SchoolElementarySecondary",
+            "description": "School\u2014elementary/secondary"
+        },
+        {
+            "entity": "ShelterHomeless",
+            "description": "Shelter\u2014mission/homeless"
+        },
+        {
+            "entity": "ShoppingMall",
+            "description": "Shopping mall"
+        },
+        {
+            "entity": "TribalLands",
+            "description": "Tribal lands"
+        },
+        {
+            "entity": "CommunityCenter",
+            "description": "Community Center"
+        },
+        {
+            "entity": "Cyberspace",
+            "description": "Cyberspace"
+        },
+        {
+            "entity": "AirBusTrainTerminal",
+            "description": "Air/Bus/Train Terminal"
+        },
+        {
+            "entity": "BankSavingsAndLoan",
+            "description": "Bank/Savings and Loan"
+        },
+        {
+            "entity": "BarNightclub",
+            "description": "Bar/Nightclub"
+        },
+        {
+            "entity": "ReligiousBuilding",
+            "description": "Church/Synagogue/Temple/Mosque"
+        },
+        {
+            "entity": "OfficeBuilding",
+            "description": "Commercial/Office Building"
+        },
+        {
+            "entity": "ConstructionSite",
+            "description": "Construction Site"
+        },
+        {
+            "entity": "ConvenienceStore",
+            "description": "Convenience Store"
+        },
+        {
+            "entity": "DepartmentStore",
+            "description": "Department/Discount Store"
+        }
+    ],
+    "relationships": []
+}

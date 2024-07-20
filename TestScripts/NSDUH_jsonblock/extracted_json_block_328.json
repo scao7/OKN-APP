@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "UDALTMUSE",
+            "description": "Spent a great deal of time using or feeling the effects of alcohol in the past 12 months."
+        },
+        {
+            "entity": "UDALTMGET",
+            "description": "Spent a great deal of time trying to get or getting alcohol in the past 12 months."
+        },
+        {
+            "entity": "UDALLRGAMTS",
+            "description": "Drank alcohol in larger amounts or for longer periods of time than intended in the past 12 months."
+        },
+        {
+            "entity": "UDALWTBAD",
+            "description": "Wanted to use alcohol so badly that it affected thoughts or actions in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUDALTMUSE",
+            "source_entity": "Respondent",
+            "target_entity": "UDALTMUSE",
+            "description": "Indicates the respondent's experience with spending a great deal of time using or feeling the effects of alcohol."
+        },
+        {
+            "relationship": "hasUDALTMGET",
+            "source_entity": "Respondent",
+            "target_entity": "UDALTMGET",
+            "description": "Indicates the respondent's experience with spending a great deal of time trying to get or getting alcohol."
+        },
+        {
+            "relationship": "hasUDALLRGAMTS",
+            "source_entity": "Respondent",
+            "target_entity": "UDALLRGAMTS",
+            "description": "Indicates the respondent's experience with drinking alcohol in larger amounts or for longer periods than intended."
+        },
+        {
+            "relationship": "hasUDALWTBAD",
+            "source_entity": "Respondent",
+            "target_entity": "UDALWTBAD",
+            "description": "Indicates the respondent's intense desire to use alcohol affecting thoughts or actions."
+        }
+    ]
+}

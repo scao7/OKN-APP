@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "HallucinogenUsage",
+            "description": "Use of other hallucinogens besides the listed ones."
+        },
+        {
+            "entity": "LifetimeHallucinogen",
+            "description": "Hallucinogens reported in the respondent's lifetime including LSD, PCP, Ecstasy, ketamine, DMT/AMT/Foxy, or Salvia divinorum."
+        },
+        {
+            "entity": "RecentHallucinogenUse",
+            "description": "Recent use of hallucinogens reported by the respondent, which may be more recent than the listed ones."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHallucinogenUsage",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogenUsage",
+            "description": "Indicates whether the respondent has ever used other hallucinogens besides the ones listed."
+        },
+        {
+            "relationship": "reportedLifetimeHallucinogen",
+            "source_entity": "Respondent",
+            "target_entity": "LifetimeHallucinogen",
+            "description": "Indicates the hallucinogens reported by the respondent in their lifetime."
+        },
+        {
+            "relationship": "reportedRecentHallucinogenUse",
+            "source_entity": "Respondent",
+            "target_entity": "RecentHallucinogenUse",
+            "description": "Indicates the recent use of hallucinogens reported by the respondent."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Yes",
+            "predicate": "hasFrequency",
+            "object": "614"
+        },
+        {
+            "subject": "No",
+            "predicate": "hasFrequency",
+            "object": "8825"
+        },
+        {
+            "subject": "Yes (specific hallucinogen unknown)",
+            "predicate": "hasFrequency",
+            "object": "37"
+        },
+        {
+            "subject": "NEVER USED HALLUCINOGENS",
+            "predicate": "hasFrequency",
+            "object": "49509"
+        },
+        {
+            "subject": "DON'T KNOW",
+            "predicate": "hasFrequency",
+            "object": "72"
+        },
+        {
+            "subject": "REFUSED",
+            "predicate": "hasFrequency",
+            "object": "12"
+        }
+    ]
+}

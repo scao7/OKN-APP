@@ -1,0 +1,168 @@
+{
+    "entities": [
+        {
+            "entity": "TranquilizerMisuseAgeImputation",
+            "description": "Indicator for the age at first misuse of tranquilizers."
+        },
+        {
+            "entity": "StimulantMisuseAgeImputation",
+            "description": "Indicator for the age at first misuse of stimulants."
+        },
+        {
+            "entity": "SedativeMisuseAgeImputation",
+            "description": "Indicator for the age at first misuse of sedatives."
+        },
+        {
+            "entity": "MisuseAgeRange",
+            "description": "Range for reporting the age of first misuse of substances."
+        },
+        {
+            "entity": "PastYearInitiate",
+            "description": "Indicator for whether the respondent misused substances in the past year."
+        },
+        {
+            "entity": "NeverMisusedIndicator",
+            "description": "Indicator for whether the respondent has never misused substances."
+        },
+        {
+            "entity": "LegitimateSkipIndicator",
+            "description": "Indicator for legitimate skip if the respondent is not a past year initiate."
+        },
+        {
+            "entity": "QuestionnaireData",
+            "description": "Raw questionnaire data for misuse."
+        },
+        {
+            "entity": "StatisticallyImputedDataPastYearInitiationImputed",
+            "description": "Statistically imputed data for past year initiation imputed."
+        },
+        {
+            "entity": "StatisticallyImputedDataPastYearInitiationKnown",
+            "description": "Statistically imputed data for past year initiation known."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMisuseAgeImputation",
+            "source_entity": "Respondent",
+            "target_entity": "TranquilizerMisuseAgeImputation",
+            "description": "Links the respondent to the imputed age of first misuse of tranquilizers."
+        },
+        {
+            "relationship": "hasMisuseAgeImputation",
+            "source_entity": "Respondent",
+            "target_entity": "StimulantMisuseAgeImputation",
+            "description": "Links the respondent to the imputed age of first misuse of stimulants."
+        },
+        {
+            "relationship": "hasMisuseAgeImputation",
+            "source_entity": "Respondent",
+            "target_entity": "SedativeMisuseAgeImputation",
+            "description": "Links the respondent to the imputed age of first misuse of sedatives."
+        },
+        {
+            "relationship": "hasMisuseAgeRange",
+            "source_entity": "MisuseAgeRange",
+            "target_entity": "AgeRange",
+            "description": "Defines the range for reporting age of first misuse."
+        },
+        {
+            "relationship": "hasPastYearInitiateIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "PastYearInitiate",
+            "description": "Indicates whether the respondent misused substances in the past year."
+        },
+        {
+            "relationship": "hasNeverMisusedIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "NeverMisusedIndicator",
+            "description": "Indicates whether the respondent has never misused substances."
+        },
+        {
+            "relationship": "hasLegitimateSkipIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "LegitimateSkipIndicator",
+            "description": "Indicates a legitimate skip for respondents not misusing substances in the past year."
+        },
+        {
+            "relationship": "hasDataType",
+            "source_entity": "MisuseType",
+            "target_entity": "QuestionnaireData",
+            "description": "Specifies that the misuse data is derived from raw questionnaire data."
+        },
+        {
+            "relationship": "hasDataType",
+            "source_entity": "MisuseType",
+            "target_entity": "StatisticallyImputedDataPastYearInitiationImputed",
+            "description": "Specifies that the misuse data is statistically imputed for past year initiation imputed."
+        },
+        {
+            "relationship": "hasDataType",
+            "source_entity": "MisuseType",
+            "target_entity": "StatisticallyImputedDataPastYearInitiationKnown",
+            "description": "Specifies that the misuse data is statistically imputed for past year initiation known."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "TranquilizerMisuseAgeImputation",
+            "predicate": "hasQuestionnaireData",
+            "object": "QuestionnaireData"
+        },
+        {
+            "subject": "TranquilizerMisuseAgeImputation",
+            "predicate": "hasStatisticallyImputedData",
+            "object": "StatisticallyImputedDataPastYearInitiationImputed"
+        },
+        {
+            "subject": "TranquilizerMisuseAgeImputation",
+            "predicate": "hasStatisticallyImputedData",
+            "object": "StatisticallyImputedDataPastYearInitiationKnown"
+        },
+        {
+            "subject": "TranquilizerMisuseAgeImputation",
+            "predicate": "hasLegitimateSkip",
+            "object": "LegitimateSkipIndicator"
+        },
+        {
+            "subject": "StimulantMisuseAgeImputation",
+            "predicate": "hasQuestionnaireData",
+            "object": "QuestionnaireData"
+        },
+        {
+            "subject": "StimulantMisuseAgeImputation",
+            "predicate": "hasStatisticallyImputedData",
+            "object": "StatisticallyImputedDataPastYearInitiationImputed"
+        },
+        {
+            "subject": "StimulantMisuseAgeImputation",
+            "predicate": "hasStatisticallyImputedData",
+            "object": "StatisticallyImputedDataPastYearInitiationKnown"
+        },
+        {
+            "subject": "StimulantMisuseAgeImputation",
+            "predicate": "hasLegitimateSkip",
+            "object": "LegitimateSkipIndicator"
+        },
+        {
+            "subject": "SedativeMisuseAgeImputation",
+            "predicate": "hasQuestionnaireData",
+            "object": "QuestionnaireData"
+        },
+        {
+            "subject": "SedativeMisuseAgeImputation",
+            "predicate": "hasStatisticallyImputedData",
+            "object": "StatisticallyImputedDataPastYearInitiationImputed"
+        },
+        {
+            "subject": "SedativeMisuseAgeImputation",
+            "predicate": "hasStatisticallyImputedData",
+            "object": "StatisticallyImputedDataPastYearInitiationKnown"
+        },
+        {
+            "subject": "SedativeMisuseAgeImputation",
+            "predicate": "hasLegitimateSkip",
+            "object": "LegitimateSkipIndicator"
+        }
+    ]
+}

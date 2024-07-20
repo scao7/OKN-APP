@@ -1,0 +1,140 @@
+{
+    "entities": [
+        {
+            "entity": "Firearm",
+            "description": "Any type of gun or firearm carried by an arrestee."
+        },
+        {
+            "entity": "AutomaticFirearm",
+            "description": "An automatic version of a firearm."
+        },
+        {
+            "entity": "Handgun",
+            "description": "A small firearm designed to be held and operated with one hand."
+        },
+        {
+            "entity": "AutomaticHandgun",
+            "description": "An automatic version of a handgun."
+        },
+        {
+            "entity": "Rifle",
+            "description": "A long firearm designed for accurate shooting, with a rifled barrel."
+        },
+        {
+            "entity": "AutomaticRifle",
+            "description": "An automatic version of a rifle."
+        },
+        {
+            "entity": "Shotgun",
+            "description": "A long firearm designed to shoot a straight-walled cartridge."
+        },
+        {
+            "entity": "AutomaticShotgun",
+            "description": "An automatic version of a shotgun."
+        },
+        {
+            "entity": "OtherFirearm",
+            "description": "Any other type of firearm not specifically listed."
+        },
+        {
+            "entity": "AutomaticOtherFirearm",
+            "description": "An automatic version of any other firearm not specifically listed."
+        },
+        {
+            "entity": "LethalCuttingInstrument",
+            "description": "Any type of weapon that involves a sharp blade intended to cause harm."
+        },
+        {
+            "entity": "ClubBlackjackBrassKnuckles",
+            "description": "A blunt force weapon or brass knuckles carried by an arrestee."
+        },
+        {
+            "entity": "Unarmed",
+            "description": "Indicating that the arrestee was not carrying any weapon."
+        },
+        {
+            "entity": "Arrestee",
+            "description": "An individual who has been apprehended by law enforcement."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "Firearm",
+            "description": "Indicates that an arrestee is carrying a firearm."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "AutomaticFirearm",
+            "description": "Indicates that an arrestee is carrying an automatic firearm."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "Handgun",
+            "description": "Indicates that an arrestee is carrying a handgun."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "AutomaticHandgun",
+            "description": "Indicates that an arrestee is carrying an automatic handgun."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "Rifle",
+            "description": "Indicates that an arrestee is carrying a rifle."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "AutomaticRifle",
+            "description": "Indicates that an arrestee is carrying an automatic rifle."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "Shotgun",
+            "description": "Indicates that an arrestee is carrying a shotgun."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "AutomaticShotgun",
+            "description": "Indicates that an arrestee is carrying an automatic shotgun."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "OtherFirearm",
+            "description": "Indicates that an arrestee is carrying another type of firearm."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "AutomaticOtherFirearm",
+            "description": "Indicates that an arrestee is carrying an automatic version of another type of firearm."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "LethalCuttingInstrument",
+            "description": "Indicates that an arrestee is carrying a lethal cutting instrument."
+        },
+        {
+            "relationship": "isCarrying",
+            "source_entity": "Arrestee",
+            "target_entity": "ClubBlackjackBrassKnuckles",
+            "description": "Indicates that an arrestee is carrying a club, blackjack, or brass knuckles."
+        },
+        {
+            "relationship": "isUnarmed",
+            "source_entity": "Arrestee",
+            "target_entity": "Unarmed",
+            "description": "Indicates that an arrestee was unarmed."
+        }
+    ]
+}

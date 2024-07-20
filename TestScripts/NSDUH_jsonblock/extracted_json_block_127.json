@@ -1,0 +1,72 @@
+{
+    "entities": [
+        {
+            "entity": "AlcoholConsumption",
+            "description": "The consumption of alcoholic beverages."
+        },
+        {
+            "entity": "AlcoholReport",
+            "description": "Report of consumption of 4 or 5+ drinks from the alcohol module."
+        },
+        {
+            "entity": "AlcoholBingeUse",
+            "description": "Binge alcohol use, defined as the consumption of 4 or more drinks (women) or 5 or more drinks (men) on the same occasion."
+        },
+        {
+            "entity": "FirstAlcoholUse",
+            "description": "Age and instance of first time the respondent had 4 or 5 or more drinks on the same occasion."
+        },
+        {
+            "entity": "YearOfFirstAlcoholUse",
+            "description": "The year when the respondent first had 4 or 5 or more drinks on the same occasion."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAlcoholReport",
+            "source_entity": "AlcoholConsumption",
+            "target_entity": "AlcoholReport",
+            "description": "Relates alcohol consumption to the report of drinking 4 or 5+ drinks."
+        },
+        {
+            "relationship": "isBingeUse",
+            "source_entity": "AlcoholConsumption",
+            "target_entity": "AlcoholBingeUse",
+            "description": "Defines whether the alcohol consumption qualifies as binge use."
+        },
+        {
+            "relationship": "hasFirstUse",
+            "source_entity": "AlcoholConsumption",
+            "target_entity": "FirstAlcoholUse",
+            "description": "Links the first instance of heavy alcohol consumption to the overall alcohol use."
+        },
+        {
+            "relationship": "occurredInYear",
+            "source_entity": "FirstAlcoholUse",
+            "target_entity": "YearOfFirstAlcoholUse",
+            "description": "Indicates the year in which the first instance of 4 or 5+ drinks occurred."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "CBINGEVGF",
+            "predicate": "reports",
+            "object": "5+ drinks from alcohol module"
+        },
+        {
+            "subject": "CBINGEVG",
+            "predicate": "reports",
+            "object": "4 or 5+ drinks on same occasion"
+        },
+        {
+            "subject": "CA10",
+            "predicate": "age at first use",
+            "object": "4 or 5 or more drinks on same occasion"
+        },
+        {
+            "subject": "CA11",
+            "predicate": "year of first use",
+            "object": "4 or 5+ drinks on same occasion"
+        }
+    ]
+}

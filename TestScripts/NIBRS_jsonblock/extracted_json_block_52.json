@@ -1,0 +1,58 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyResponse",
+            "description": "The numerical response options displayed from the survey instrument."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of survey responses, not adjusted for sample design."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each unweighted frequency in comparison to the total."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Responses that are missing or omitted from the dataset."
+        },
+        {
+            "entity": "TotalSample",
+            "description": "The total number of valid responses collected in the survey."
+        },
+        {
+            "entity": "DescriptiveStatistics",
+            "description": "Summary statistics including mean, minimum, maximum, and standard deviation derived from the responses."
+        },
+        {
+            "entity": "LocationCode",
+            "description": "FIPS county code capturing geographic location information of responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isMeasuredBy",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Associates a survey response option with its unweighted frequency count."
+        },
+        {
+            "relationship": "isRepresentedBy",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Percentage",
+            "description": "Links survey response options to their percentage representation."
+        },
+        {
+            "relationship": "summarizes",
+            "source_entity": "DescriptiveStatistics",
+            "target_entity": "TotalSample",
+            "description": "Summarizes the responses collected in the survey."
+        },
+        {
+            "relationship": "isLocatedIn",
+            "source_entity": "SurveyResponse",
+            "target_entity": "LocationCode",
+            "description": "Indicates the geographic location based on FIPS county code where the survey response was recorded."
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderSex",
+            "description": "The sex of the offender."
+        },
+        {
+            "entity": "OffenderRace",
+            "description": "The race of the offender."
+        },
+        {
+            "entity": "SurveyData",
+            "description": "Collected data from the NSDUH survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSex",
+            "source_entity": "SurveyData",
+            "target_entity": "OffenderSex",
+            "description": "Relates the survey data to the sex information of offenders."
+        },
+        {
+            "relationship": "hasRace",
+            "source_entity": "SurveyData",
+            "target_entity": "OffenderRace",
+            "description": "Relates the survey data to the race information of offenders."
+        }
+    ]
+}

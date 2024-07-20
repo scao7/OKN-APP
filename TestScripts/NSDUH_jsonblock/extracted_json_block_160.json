@@ -1,0 +1,103 @@
+{
+    "entities": [
+        {
+            "entity": "CrackUsageRecency",
+            "description": "The time since last used crack."
+        },
+        {
+            "entity": "DaysUsedCrackPast12Months",
+            "description": "Total number of days crack was used in the past 12 months."
+        },
+        {
+            "entity": "CrackUsageFrequencyMethod",
+            "description": "The preferred method for reporting the number of days crack was used."
+        },
+        {
+            "entity": "DaysUsedCrackPast12MonthsReported",
+            "description": "The number of days crack was used in the past 12 months as reported by the respondent."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCrackUsageRecency",
+            "source_entity": "Respondent",
+            "target_entity": "CrackUsageRecency",
+            "description": "Indicates the recency of the respondent's crack usage."
+        },
+        {
+            "relationship": "hasDaysUsedCrackPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedCrackPast12Months",
+            "description": "Indicates the total number of days the respondent used crack in the past 12 months."
+        },
+        {
+            "relationship": "hasCrackUsageFrequencyMethod",
+            "source_entity": "Respondent",
+            "target_entity": "CrackUsageFrequencyMethod",
+            "description": "Indicates the preferred reporting method for the number of days crack was used."
+        },
+        {
+            "relationship": "hasDaysUsedCrackPast12MonthsReported",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedCrackPast12MonthsReported",
+            "description": "The reported number of days the respondent used crack in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "Crack"
+        },
+        {
+            "subject": "CrackUsageRecency",
+            "predicate": "is",
+            "object": "Within the past 30 days"
+        },
+        {
+            "subject": "CrackUsageRecency",
+            "predicate": "is",
+            "object": "More than 30 days ago but within the past 12 months"
+        },
+        {
+            "subject": "CrackUsageRecency",
+            "predicate": "is",
+            "object": "More than 12 months ago"
+        },
+        {
+            "subject": "CrackUsageRecency",
+            "predicate": "is",
+            "object": "Used at some point in the past 12 months"
+        },
+        {
+            "subject": "CrackUsageRecency",
+            "predicate": "is",
+            "object": "Used at some point in the lifetime"
+        },
+        {
+            "subject": "CrackUsageRecency",
+            "predicate": "is",
+            "object": "Never used crack"
+        },
+        {
+            "subject": "DaysUsedCrackPast12Months",
+            "predicate": "is",
+            "object": "Range of 1 to 365 days"
+        },
+        {
+            "subject": "CrackUsageFrequencyMethod",
+            "predicate": "is",
+            "object": "Prefer to answer in days per week"
+        },
+        {
+            "subject": "CrackUsageFrequencyMethod",
+            "predicate": "is",
+            "object": "Prefer to answer in days per month"
+        },
+        {
+            "subject": "CrackUsageFrequencyMethod",
+            "predicate": "is",
+            "object": "Prefer to answer in days per year"
+        }
+    ]
+}

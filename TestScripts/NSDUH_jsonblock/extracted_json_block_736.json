@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "entity": "Depression",
+            "description": "A mental health condition characterized by persistent sadness and loss of interest."
+        },
+        {
+            "entity": "Adolescent",
+            "description": "Individuals aged between 12 to 18 years old."
+        },
+        {
+            "entity": "DepressionVariable",
+            "description": "A variable used to measure the level of depression in adolescents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDepressionVariable",
+            "source_entity": "Adolescent",
+            "target_entity": "DepressionVariable",
+            "description": "Indicates that the level of depression is measured in adolescent individuals."
+        },
+        {
+            "relationship": "documentsDepression",
+            "source_entity": "DepressionVariable",
+            "target_entity": "Depression",
+            "description": "Indicates that the variable documents the presence or extent of depression."
+        }
+    ]
+}

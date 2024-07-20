@@ -1,0 +1,101 @@
+{
+    "entities": [
+        {
+            "entity": "MDEAttributes",
+            "description": "Nine attributes of Major Depressive Episode (MDE), including sadness, discouragement, or lack of interest in most things."
+        },
+        {
+            "entity": "MDEDiagnosis",
+            "description": "Diagnosis criteria for determining if an individual had a Major Depressive Episode in their lifetime."
+        },
+        {
+            "entity": "Sadness",
+            "description": "One of the nine attributes of MDE; feeling sad."
+        },
+        {
+            "entity": "Discouragement",
+            "description": "One of the nine attributes of MDE; feeling discouraged."
+        },
+        {
+            "entity": "LackOfInterest",
+            "description": "One of the nine attributes of MDE; lack of interest in most things."
+        },
+        {
+            "entity": "EmotionalDistress",
+            "description": "Feeling of emotional distress associated with MDE."
+        },
+        {
+            "entity": "SevereEmotionalDistress",
+            "description": "Emotional distress so severe that the respondent could not be cheered up."
+        },
+        {
+            "entity": "MildEmotionalDistress",
+            "description": "Emotional distress that is more than mild but not severe."
+        },
+        {
+            "entity": "YDS21",
+            "description": "Variable code for reporting feeling sad, empty, or depressed."
+        },
+        {
+            "entity": "YDS22",
+            "description": "Variable code for reporting feeling discouraged about things."
+        },
+        {
+            "entity": "YDS23",
+            "description": "Variable code for reporting lack of interest in most things."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "defines",
+            "source_entity": "MDEAttributes",
+            "target_entity": "MDEDiagnosis",
+            "description": "Defines the set criteria for diagnosing MDE."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "Sadness",
+            "target_entity": "MDEAttributes",
+            "description": "Sadness is one of the nine attributes of MDE."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "Discouragement",
+            "target_entity": "MDEAttributes",
+            "description": "Discouragement is one of the nine attributes of MDE."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "LackOfInterest",
+            "target_entity": "MDEAttributes",
+            "description": "Lack of interest in most things is one of the nine attributes of MDE."
+        },
+        {
+            "relationship": "isLinkedTo",
+            "source_entity": "EmotionalDistress",
+            "target_entity": [
+                "SevereEmotionalDistress",
+                "MildEmotionalDistress"
+            ],
+            "description": "Emotional distress can vary in severity."
+        },
+        {
+            "relationship": "isVariableCodeFor",
+            "source_entity": "YDS21",
+            "target_entity": "Sadness",
+            "description": "YDS21 is the variable code for reporting feelings of sadness."
+        },
+        {
+            "relationship": "isVariableCodeFor",
+            "source_entity": "YDS22",
+            "target_entity": "Discouragement",
+            "description": "YDS22 is the variable code for reporting feelings of discouragement."
+        },
+        {
+            "relationship": "isVariableCodeFor",
+            "source_entity": "YDS23",
+            "target_entity": "LackOfInterest",
+            "description": "YDS23 is the variable code for reporting lack of interest in most things."
+        }
+    ]
+}

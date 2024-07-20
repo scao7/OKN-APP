@@ -1,0 +1,136 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 30 days, including today's date."
+        },
+        {
+            "entity": "SickOrInjuredDays",
+            "description": "Number of whole days missed from school due to sickness or injury."
+        },
+        {
+            "entity": "SchoolAbsenceReason",
+            "description": "The reason for missing school, specifically due to being sick or injured."
+        },
+        {
+            "entity": "FamilyCareAbsence",
+            "description": "Number of days missed due to staying home with a sick child or family member."
+        },
+        {
+            "entity": "IllicitDrugTobaccoAlcoholPastMonthUse",
+            "description": "Use of illicit drugs, tobacco products, or alcohol in the past month."
+        },
+        {
+            "entity": "TobaccoNicotineVapingAlcoholIllicitDrugPastMonthUse",
+            "description": "Use of tobacco, nicotine vaping, alcohol, or illicit drugs in the past month."
+        },
+        {
+            "entity": "IllicitDrugOrAlcoholPastMonthUse",
+            "description": "Use of illicit drugs or alcohol in the past month."
+        },
+        {
+            "entity": "TobaccoOrAlcoholLifetimeUse",
+            "description": "Lifetime use of tobacco or alcohol."
+        },
+        {
+            "entity": "TobaccoOrAlcoholPastYearUse",
+            "description": "Use of tobacco or alcohol in the past year."
+        },
+        {
+            "entity": "IllicitDrugAndAlcoholPastYearUse",
+            "description": "Use of illicit drugs and alcohol in the past year."
+        },
+        {
+            "entity": "IllicitDrugOrAlcoholPastYearUse",
+            "description": "Use of illicit drugs or alcohol in the past year."
+        },
+        {
+            "entity": "IllicitDrugOrAlcoholLifetimeUse",
+            "description": "Lifetime use of illicit drugs or alcohol."
+        },
+        {
+            "entity": "MarijuanaUseSmokingPastYear",
+            "description": "Smoking marijuana in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 30 days."
+        },
+        {
+            "relationship": "hasSickOrInjuredDays",
+            "source_entity": "Respondent",
+            "target_entity": "SickOrInjuredDays",
+            "description": "Indicates the number of days the respondent missed school due to sickness or injury."
+        },
+        {
+            "relationship": "hasAbsenceReason",
+            "source_entity": "SchoolAbsence",
+            "target_entity": "SchoolAbsenceReason",
+            "description": "Defines the reason for the school absence, such as being sick or injured."
+        },
+        {
+            "relationship": "hasFamilyCareAbsence",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyCareAbsence",
+            "description": "Indicates the number of days the respondent missed school due to caring for a sick child or family member."
+        },
+        {
+            "relationship": "hasIllicitDrugTobaccoAlcoholPastMonthUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugTobaccoAlcoholPastMonthUse",
+            "description": "Indicates the respondent's use of illicit drugs, tobacco, or alcohol in the past month."
+        },
+        {
+            "relationship": "hasTobaccoNicotineVapingAlcoholIllicitDrugPastMonthUse",
+            "source_entity": "Respondent",
+            "target_entity": "TobaccoNicotineVapingAlcoholIllicitDrugPastMonthUse",
+            "description": "Indicates the respondent's use of tobacco, nicotine vaping, alcohol, or illicit drugs in the past month."
+        },
+        {
+            "relationship": "hasIllicitDrugOrAlcoholPastMonthUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugOrAlcoholPastMonthUse",
+            "description": "Indicates the respondent's use of illicit drugs or alcohol in the past month."
+        },
+        {
+            "relationship": "hasTobaccoOrAlcoholLifetimeUse",
+            "source_entity": "Respondent",
+            "target_entity": "TobaccoOrAlcoholLifetimeUse",
+            "description": "Indicates the respondent's lifetime use of tobacco or alcohol."
+        },
+        {
+            "relationship": "hasTobaccoOrAlcoholPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "TobaccoOrAlcoholPastYearUse",
+            "description": "Indicates the respondent's use of tobacco or alcohol in the past year."
+        },
+        {
+            "relationship": "hasIllicitDrugAndAlcoholPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugAndAlcoholPastYearUse",
+            "description": "Indicates the respondent's use of illicit drugs and alcohol in the past year."
+        },
+        {
+            "relationship": "hasIllicitDrugOrAlcoholPastYearUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugOrAlcoholPastYearUse",
+            "description": "Indicates the respondent's use of illicit drugs or alcohol in the past year."
+        },
+        {
+            "relationship": "hasIllicitDrugOrAlcoholLifetimeUse",
+            "source_entity": "Respondent",
+            "target_entity": "IllicitDrugOrAlcoholLifetimeUse",
+            "description": "Indicates the respondent's lifetime use of illicit drugs or alcohol."
+        },
+        {
+            "relationship": "hasMarijuanaUseSmokingPastYear",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaUseSmokingPastYear",
+            "description": "Indicates the respondent's use of marijuana in the past year."
+        }
+    ]
+}

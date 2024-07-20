@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The past year."
+        },
+        {
+            "entity": "CodeineProductsUse",
+            "description": "Use of Codeine Products in the past year."
+        },
+        {
+            "entity": "MorphineProductsUse",
+            "description": "Use of Morphine Products in the past year."
+        },
+        {
+            "entity": "BuprenorphineProductsUse",
+            "description": "Use of Buprenorphine Products in the past year."
+        },
+        {
+            "entity": "OxymorphoneProductsUse",
+            "description": "Use of Oxymorphone Products in the past year."
+        },
+        {
+            "entity": "DemerolProductsUse",
+            "description": "Use of Demerol Products in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUse",
+            "source_entity": "Survey",
+            "target_entity": "CodeineProductsUse",
+            "description": "Relates the survey to the use of Codeine Products in the past year."
+        },
+        {
+            "relationship": "hasUse",
+            "source_entity": "Survey",
+            "target_entity": "MorphineProductsUse",
+            "description": "Relates the survey to the use of Morphine Products in the past year."
+        },
+        {
+            "relationship": "hasUse",
+            "source_entity": "Survey",
+            "target_entity": "BuprenorphineProductsUse",
+            "description": "Relates the survey to the use of Buprenorphine Products in the past year."
+        },
+        {
+            "relationship": "hasUse",
+            "source_entity": "Survey",
+            "target_entity": "OxymorphoneProductsUse",
+            "description": "Relates the survey to the use of Oxymorphone Products in the past year."
+        },
+        {
+            "relationship": "hasUse",
+            "source_entity": "Survey",
+            "target_entity": "DemerolProductsUse",
+            "description": "Relates the survey to the use of Demerol Products in the past year."
+        }
+    ]
+}

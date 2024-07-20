@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "MeasurementType",
+            "description": "Represents the type of measurement units used in the dataset (e.g., Gram, Kilogram, Liter)."
+        },
+        {
+            "entity": "Unit",
+            "description": "Specific unit of measurement (e.g., Gram, Kilogram)."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of each measurement type in the dataset."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of each measurement type in relation to the total number of cases."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The count or percentage of cases with missing data."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of valid cases in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMeasurementType",
+            "source_entity": "Unit",
+            "target_entity": "MeasurementType",
+            "description": "Links the specific unit of measurement to its type."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "MeasurementType",
+            "target_entity": "UnweightedFrequency",
+            "description": "Links each measurement type to its raw count in the dataset."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "MeasurementType",
+            "target_entity": "Percentage",
+            "description": "Links each measurement type to its percentage representation in the dataset."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Indicates the amount of missing data in the dataset."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Dataset",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of valid cases in the dataset."
+        }
+    ]
+}

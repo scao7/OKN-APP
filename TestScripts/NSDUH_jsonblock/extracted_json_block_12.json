@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "NSDUH",
+            "description": "National Survey on Drug Use and Health, a survey to measure the prevalence and correlates of substance use and mental health issues in the United States."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "Time frame when the survey is conducted, from 1971 onwards, annually since 1991."
+        },
+        {
+            "entity": "TargetPopulation",
+            "description": "Civilian, noninstitutionalized population of the United States aged 12 or older."
+        },
+        {
+            "entity": "SurveyChanges1999",
+            "description": "Changes made in 1999 including the switch from national sample design to 50-state design, paper to computer-assisted interviews, and the introduction of CAPI and ACASI."
+        },
+        {
+            "entity": "SurveyChanges2002",
+            "description": "Changes made in 2002 including renaming the survey and new population data from the 2000 census."
+        },
+        {
+            "entity": "SurveyChanges2015",
+            "description": "Changes made in 2015 including a partial redesign to improve data quality and an increase in the number of allowable characters in variable names."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTimePeriod",
+            "source_entity": "NSDUH",
+            "target_entity": "SurveyPeriod",
+            "description": "Indicates the time period over which the survey has been conducted."
+        },
+        {
+            "relationship": "targetsPopulation",
+            "source_entity": "NSDUH",
+            "target_entity": "TargetPopulation",
+            "description": "Denotes the population targeted by the survey."
+        },
+        {
+            "relationship": "implementedChanges",
+            "source_entity": "NSDUH",
+            "target_entity": "SurveyChanges1999",
+            "description": "Refers to changes implemented in the year 1999."
+        },
+        {
+            "relationship": "implementedChanges",
+            "source_entity": "NSDUH",
+            "target_entity": "SurveyChanges2002",
+            "description": "Refers to changes implemented in the year 2002."
+        },
+        {
+            "relationship": "implementedChanges",
+            "source_entity": "NSDUH",
+            "target_entity": "SurveyChanges2015",
+            "description": "Refers to changes implemented in the year 2015."
+        }
+    ]
+}

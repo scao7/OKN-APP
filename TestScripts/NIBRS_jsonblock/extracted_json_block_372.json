@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "AmericanIndianOrAlaskaNative",
+            "description": "Survey respondent identified as American Indian or Alaska Native."
+        },
+        {
+            "entity": "Asian",
+            "description": "Survey respondent identified as Asian."
+        },
+        {
+            "entity": "NativeHawaiianOrOtherPacificIslander",
+            "description": "Survey respondent identified as Native Hawaiian or Other Pacific Islander."
+        },
+        {
+            "entity": "UnknownMissingDNR",
+            "description": "Data for the respondent is unknown, missing, or did not respond."
+        },
+        {
+            "entity": "NotHispanicOrLatino",
+            "description": "Survey respondent identified as not Hispanic or Latino."
+        },
+        {
+            "entity": "HispanicOrLatino",
+            "description": "Survey respondent identified as Hispanic or Latino."
+        },
+        {
+            "entity": "EthnicityOfArrestee1",
+            "description": "The ethnicity of arrestees as captured in the first part of the survey."
+        },
+        {
+            "entity": "EthnicityOfArrestee2",
+            "description": "The ethnicity of arrestees as captured in the second part of the survey."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of responses without any weighting applied."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "includes",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "AmericanIndianOrAlaskaNative",
+            "description": "The NSDUH Survey includes respondents who identified as American Indian or Alaska Native."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "Asian",
+            "description": "The NSDUH Survey includes respondents who identified as Asian."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "NativeHawaiianOrOtherPacificIslander",
+            "description": "The NSDUH Survey includes respondents who identified as Native Hawaiian or Other Pacific Islander."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "UnknownMissingDNR",
+            "description": "The NSDUH Survey includes data that is unknown, missing, or not responded to by certain individuals."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "NotHispanicOrLatino",
+            "description": "The NSDUH Survey includes respondents who identified as not Hispanic or Latino."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "HispanicOrLatino",
+            "description": "The NSDUH Survey includes respondents who identified as Hispanic or Latino."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "EthnicityOfArrestee1",
+            "description": "The NSDUH Survey includes data on the ethnicity of arrestees as captured in the first part."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "EthnicityOfArrestee2",
+            "description": "The NSDUH Survey includes data on the ethnicity of arrestees as captured in the second part."
+        },
+        {
+            "relationship": "frequencyReportedAs",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "The survey responses are reported as unweighted frequencies."
+        }
+    ]
+}

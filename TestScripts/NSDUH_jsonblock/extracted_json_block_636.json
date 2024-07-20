@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "ADEDTIMEVR",
+            "description": "Time duration spent on education"
+        },
+        {
+            "entity": "ALHLFE",
+            "description": "Lifetime alcohol consumption"
+        },
+        {
+            "entity": "EMOTSUPY",
+            "description": "Emotional support received in the past year"
+        },
+        {
+            "entity": "EMPINCOME",
+            "description": "Personal income from employment"
+        },
+        {
+            "entity": "GNDINCRS",
+            "description": "Financial status increment"
+        },
+        {
+            "entity": "HEALTHLTH",
+            "description": "Long-term health issues"
+        },
+        {
+            "entity": "HETHOMEVR",
+            "description": "Lifetime health condition related to home environment"
+        },
+        {
+            "entity": "SICKTMOUTR",
+            "description": "Sickness time out reported"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAlcoholLifetime",
+            "source_entity": "Respondent",
+            "target_entity": "ALHLFE",
+            "description": "Relates the respondent to their lifetime alcohol consumption"
+        },
+        {
+            "relationship": "hasEducationTime",
+            "source_entity": "Respondent",
+            "target_entity": "ADEDTIMEVR",
+            "description": "Relates the respondent to time spent on education"
+        },
+        {
+            "relationship": "hasEmotionalSupport",
+            "source_entity": "Respondent",
+            "target_entity": "EMOTSUPY",
+            "description": "Relates the respondent to the emotional support received in the past year"
+        },
+        {
+            "relationship": "hasEmploymentIncome",
+            "source_entity": "Respondent",
+            "target_entity": "EMPINCOME",
+            "description": "Relates the respondent to the income earned from employment"
+        },
+        {
+            "relationship": "hasIncrementedFinancialStatus",
+            "source_entity": "Respondent",
+            "target_entity": "GNDINCRS",
+            "description": "Indicates the respondent's improvement in financial status"
+        },
+        {
+            "relationship": "hasLongTermHealthIssue",
+            "source_entity": "Respondent",
+            "target_entity": "HEALTHLTH",
+            "description": "Relates the respondent to any long-term health issues"
+        },
+        {
+            "relationship": "hasHomeHealthCondition",
+            "source_entity": "Respondent",
+            "target_entity": "HETHOMEVR",
+            "description": "Relates the respondent to a lifetime health condition influenced by the home environment"
+        },
+        {
+            "relationship": "hasReportedSicknessTimeOut",
+            "source_entity": "Respondent",
+            "target_entity": "SICKTMOUTR",
+            "description": "Relates the respondent to the time taken off due to sickness"
+        }
+    ]
+}

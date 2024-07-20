@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 30 days, including today's date."
+        },
+        {
+            "entity": "SickOrInjuredDays",
+            "description": "Number of whole days missed from school due to sickness or injury."
+        },
+        {
+            "entity": "SchoolAbsenceReason",
+            "description": "The reason for missing school, specifically due to being sick or injured."
+        },
+        {
+            "entity": "FamilyCareAbsence",
+            "description": "Number of days missed due to staying home with a sick child or family member."
+        },
+        {
+            "entity": "MonthOfLastCigarUse",
+            "description": "The month during which the respondent last smoked part or all of a cigar or cigarillo."
+        },
+        {
+            "entity": "AgeOfLastAlcoholUse",
+            "description": "The age at which the respondent last drank an alcoholic beverage."
+        },
+        {
+            "entity": "YearOfLastAlcoholUse",
+            "description": "The year during which the respondent last drank an alcoholic beverage."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 30 days."
+        },
+        {
+            "relationship": "hasSickOrInjuredDays",
+            "source_entity": "Respondent",
+            "target_entity": "SickOrInjuredDays",
+            "description": "Indicates the number of days the respondent missed school due to sickness or injury."
+        },
+        {
+            "relationship": "hasAbsenceReason",
+            "source_entity": "SchoolAbsence",
+            "target_entity": "SchoolAbsenceReason",
+            "description": "Defines the reason for the school absence, such as being sick or injured."
+        },
+        {
+            "relationship": "hasFamilyCareAbsence",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyCareAbsence",
+            "description": "Indicates the number of days the respondent missed school due to caring for a sick child or family member."
+        },
+        {
+            "relationship": "hasMonthOfLastCigarUse",
+            "source_entity": "Respondent",
+            "target_entity": "MonthOfLastCigarUse",
+            "description": "Indicates the month during which the respondent last smoked part or all of a cigar or cigarillo."
+        },
+        {
+            "relationship": "hasAgeOfLastAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "AgeOfLastAlcoholUse",
+            "description": "Specifies the age at which the respondent last drank an alcoholic beverage."
+        },
+        {
+            "relationship": "hasYearOfLastAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "YearOfLastAlcoholUse",
+            "description": "Specifies the year during which the respondent last drank an alcoholic beverage."
+        }
+    ]
+}

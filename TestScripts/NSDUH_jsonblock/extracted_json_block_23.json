@@ -1,0 +1,116 @@
+{
+    "entities": [
+        {
+            "entity": "AnalysisWeights",
+            "description": "Types of weights used in the 2022 NSDUH, including person-level analysis weights, questionnaire dwelling unit (QDU)-level weights, and person pair-level weights."
+        },
+        {
+            "entity": "InPersonInterview",
+            "description": "In-person method of data collection for the survey, with varying proportion by quarter."
+        },
+        {
+            "entity": "WebInterview",
+            "description": "Web-based method of data collection for the survey."
+        },
+        {
+            "entity": "Quarter",
+            "description": "Time periods in which the data collection is divided (Quarter 1 to Quarter 4)."
+        },
+        {
+            "entity": "EducationalAttainment",
+            "description": "Level of education achieved by web respondents, used as a control variable in weighting adjustments."
+        },
+        {
+            "entity": "DemographicVariables",
+            "description": "Variables related to the characteristics of respondents, used for weighting adjustments and analysis."
+        },
+        {
+            "entity": "GeographicDistributions",
+            "description": "Distribution of respondents based on geographic location, used for weighting adjustments."
+        },
+        {
+            "entity": "AdultMentalHealthEstimates",
+            "description": "Estimates of mental health issues among adult respondents, impacted by break-off of interviews."
+        },
+        {
+            "entity": "UsableInterviews",
+            "description": "Interviews that provide sufficient information for analysis, including details on substance use."
+        },
+        {
+            "entity": "Break-offAnalysisWeights",
+            "description": "Weights developed to analyze uncompleted interviews, especially for mental health-related questions."
+        },
+        {
+            "entity": "DwellingUnits",
+            "description": "Dwelling units included in the survey for web-based data collection, with adjustments made for ineligibility."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAnalysisWeights",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "AnalysisWeights",
+            "description": "Relation between the NSDUH survey and the types of analysis weights developed for 2022."
+        },
+        {
+            "relationship": "hasInPersonInterview",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "InPersonInterview",
+            "description": "Indicates the use of in-person interviews as a method of data collection."
+        },
+        {
+            "relationship": "hasWebInterview",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "WebInterview",
+            "description": "Indicates the use of web-based interviews as a method of data collection."
+        },
+        {
+            "relationship": "occursInQuarter",
+            "source_entity": "DataCollection",
+            "target_entity": "Quarter",
+            "description": "Indicates the time period during which the data collection occurs."
+        },
+        {
+            "relationship": "controlsEducationalAttainment",
+            "source_entity": "WeightingAdjustments",
+            "target_entity": "EducationalAttainment",
+            "description": "Indicates the use of educational attainment as a control variable in weighting adjustments."
+        },
+        {
+            "relationship": "usesDemographicVariables",
+            "source_entity": "WeightingAdjustments",
+            "target_entity": "DemographicVariables",
+            "description": "Indicates the use of demographic variables in weighting adjustments and analysis."
+        },
+        {
+            "relationship": "usesGeographicDistributions",
+            "source_entity": "WeightingAdjustments",
+            "target_entity": "GeographicDistributions",
+            "description": "Indicates the use of geographic distributions in weighting adjustments."
+        },
+        {
+            "relationship": "impactsAdultMentalHealthEstimates",
+            "source_entity": "BreakOffInterviews",
+            "target_entity": "AdultMentalHealthEstimates",
+            "description": "Indicates the impact of interview break-off on the accuracy of adult mental health estimates."
+        },
+        {
+            "relationship": "hasUsableInterviews",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "UsableInterviews",
+            "description": "Indicates that the NSDUH survey includes interviews that are considered usable for analysis."
+        },
+        {
+            "relationship": "analyzesBreakoffInterviews",
+            "source_entity": "BreakOffAnalysisWeights",
+            "target_entity": "BreakOffInterviews",
+            "description": "Indicates the use of specific weights to analyze uncompleted (break-off) interviews."
+        },
+        {
+            "relationship": "hasDwellingUnits",
+            "source_entity": "WebDataCollection",
+            "target_entity": "DwellingUnits",
+            "description": "Indicates the inclusion of dwelling units in the survey for web-based data collection."
+        }
+    ]
+}

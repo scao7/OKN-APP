@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "Intimidation",
+            "description": "An act involving threats or coercion."
+        },
+        {
+            "entity": "Arson",
+            "description": "The criminal act of deliberately setting fire to property."
+        },
+        {
+            "entity": "Extortion",
+            "description": "The practice of obtaining something, especially money, through force or threats."
+        },
+        {
+            "entity": "Burglary",
+            "description": "Illegal entry into a building with intent to commit a crime, especially theft."
+        },
+        {
+            "entity": "PocketPicking",
+            "description": "The act of stealing from someone's pocket."
+        },
+        {
+            "entity": "PurseSnatching",
+            "description": "The act of taking a purse or bag from someone by force."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "The act of stealing goods from a store."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "Stealing items from within a structure or building."
+        },
+        {
+            "entity": "TheftFromVehicle",
+            "description": "Stealing items from a motor vehicle."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "The criminal act of stealing or attempting to steal a motor vehicle."
+        },
+        {
+            "entity": "Forgery",
+            "description": "The action of forging a document, signature, or work of art."
+        },
+        {
+            "entity": "Fraud",
+            "description": "Wrongful or criminal deception intended to result in financial or personal gain."
+        },
+        {
+            "entity": "NarcoticViolations",
+            "description": "Offenses related to the illegal possession, distribution, sale, or manufacture of narcotics."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "The act or practice of engaging in sexual activity for payment."
+        },
+        {
+            "entity": "HumanTrafficking",
+            "description": "The trade of humans for the purpose of forced labor, sexual slavery, or commercial sexual exploitation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "relatedTo",
+            "source_entity": "TheftFromBuilding",
+            "target_entity": "TheftFromVehicle",
+            "description": "Both entities involve stealing items, one from buildings and the other from motor vehicles."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "NarcoticViolations",
+            "target_entity": "DrugEquipmentViolations",
+            "description": "Narcotic violations can involve the possession or use of drug equipment."
+        },
+        {
+            "relationship": "resultsIn",
+            "source_entity": "Extortion",
+            "target_entity": "Fraud",
+            "description": "Extortion can result in fraud when threats or coercion lead to wrongful financial gain."
+        },
+        {
+            "relationship": "facilitates",
+            "source_entity": "HumanTrafficking",
+            "target_entity": "Prostitution",
+            "description": "Human trafficking can facilitate activities such as prostitution."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Fraud",
+            "target_entity": "Forgery",
+            "description": "Forgery is a type of fraud."
+        }
+    ]
+}

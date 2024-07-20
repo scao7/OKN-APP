@@ -1,0 +1,117 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceAbuse",
+            "description": "The use of substances such as drugs and alcohol in a harmful manner."
+        },
+        {
+            "entity": "MentalHealth",
+            "description": "The overall mental well-being of an individual, including conditions like depression and anxiety."
+        },
+        {
+            "entity": "EconomicStatus",
+            "description": "The economic standing of an individual or family, often measured by income."
+        },
+        {
+            "entity": "EducationLevel",
+            "description": "The highest level of education completed by an individual."
+        },
+        {
+            "entity": "RuralArea",
+            "description": "A geographic area that is located outside towns and cities."
+        },
+        {
+            "entity": "Infrastructure",
+            "description": "The fundamental facilities and systems serving a country, city, or area, including transportation and communication systems, power plants, and schools."
+        },
+        {
+            "entity": "LegalStatus",
+            "description": "The standing of an individual's actions with respect to the law, including any legal prohibitions or permissions."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "affects",
+            "source_entity": "SubstanceAbuse",
+            "target_entity": "MentalHealth",
+            "description": "Indicates that substance abuse can have an impact on an individual's mental health."
+        },
+        {
+            "relationship": "associatedWith",
+            "source_entity": "EconomicStatus",
+            "target_entity": "SubstanceAbuse",
+            "description": "States that an individual's economic status can be associated with their likelihood of substance abuse."
+        },
+        {
+            "relationship": "influences",
+            "source_entity": "EducationLevel",
+            "target_entity": "EconomicStatus",
+            "description": "Indicates that the level of education attained by an individual can influence their economic status."
+        },
+        {
+            "relationship": "locatedIn",
+            "source_entity": "Respondent",
+            "target_entity": "RuralArea",
+            "description": "Indicates the geographic location of the respondent being in a rural area."
+        },
+        {
+            "relationship": "requires",
+            "source_entity": "RuralArea",
+            "target_entity": "Infrastructure",
+            "description": "Indicates that rural areas require certain infrastructure to support their communities."
+        },
+        {
+            "relationship": "regulatedBy",
+            "source_entity": "SubstanceAbuse",
+            "target_entity": "LegalStatus",
+            "description": "Indicates that substance abuse is regulated by legal provisions."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "IFKNMKMJE",
+            "predicate": "has_code",
+            "object": "204"
+        },
+        {
+            "subject": "IIPRNMNXE",
+            "predicate": "has_code",
+            "object": "205"
+        },
+        {
+            "subject": "IIPEVSEHAYUC1",
+            "predicate": "has_code",
+            "object": "364"
+        },
+        {
+            "subject": "ILMFOTHFG",
+            "predicate": "has_code",
+            "object": "551"
+        },
+        {
+            "subject": "ILNALLCAMC",
+            "predicate": "has_code",
+            "object": "222"
+        },
+        {
+            "subject": "ICRCBFCUU",
+            "predicate": "has_code",
+            "object": "186"
+        },
+        {
+            "subject": "IMFSONCRU",
+            "predicate": "has_code",
+            "object": "40"
+        },
+        {
+            "subject": "IRINCMO",
+            "predicate": "has_code",
+            "object": "42"
+        },
+        {
+            "subject": "IMIREDMYR",
+            "predicate": "has_code",
+            "object": "487"
+        }
+    ]
+}

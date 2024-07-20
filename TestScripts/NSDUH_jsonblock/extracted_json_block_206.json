@@ -1,0 +1,150 @@
+{
+    "entities": [
+        {
+            "entity": "PainRelieverUsageMoreOftenThanRx",
+            "description": "Used pain relievers more often than prescribed in the past 12 months."
+        },
+        {
+            "entity": "PainRelieverUsageLongerThanRx",
+            "description": "Used pain relievers for a longer duration than prescribed in the past 12 months."
+        },
+        {
+            "entity": "PainRelieverUsageOtherWay",
+            "description": "Used pain relievers in a way other than prescribed in the past 12 months."
+        },
+        {
+            "entity": "ResponseYes",
+            "description": "Responded 'Yes' to the usage question."
+        },
+        {
+            "entity": "ResponseNo",
+            "description": "Responded 'No' to the usage question."
+        },
+        {
+            "entity": "ResponseRefused",
+            "description": "Responded 'Refused' to the usage question."
+        },
+        {
+            "entity": "ResponseBlank",
+            "description": "Response was blank (no answer) for the usage question."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The count of participants with a specific response."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of participants with a specific response."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsageFrequency",
+            "source_entity": "PainRelieverUsageMoreOftenThanRx",
+            "target_entity": "Frequency",
+            "description": "Relates the frequency of usage more often than prescribed."
+        },
+        {
+            "relationship": "hasUsagePercentage",
+            "source_entity": "PainRelieverUsageMoreOftenThanRx",
+            "target_entity": "Percentage",
+            "description": "Relates the percentage of participants who used pain relievers more often than prescribed."
+        },
+        {
+            "relationship": "hasUsageFrequency",
+            "source_entity": "PainRelieverUsageLongerThanRx",
+            "target_entity": "Frequency",
+            "description": "Relates the frequency of usage for a longer duration than prescribed."
+        },
+        {
+            "relationship": "hasUsagePercentage",
+            "source_entity": "PainRelieverUsageLongerThanRx",
+            "target_entity": "Percentage",
+            "description": "Relates the percentage of participants who used pain relievers for a longer duration than prescribed."
+        },
+        {
+            "relationship": "hasUsageFrequency",
+            "source_entity": "PainRelieverUsageOtherWay",
+            "target_entity": "Frequency",
+            "description": "Relates the frequency of usage in a way other than prescribed."
+        },
+        {
+            "relationship": "hasUsagePercentage",
+            "source_entity": "PainRelieverUsageOtherWay",
+            "target_entity": "Percentage",
+            "description": "Relates the percentage of participants who used pain relievers in a way other than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageMoreOftenThanRx",
+            "target_entity": "ResponseYes",
+            "description": "Response 'Yes' to using pain relievers more often than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageMoreOftenThanRx",
+            "target_entity": "ResponseNo",
+            "description": "Response 'No' to using pain relievers more often than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageMoreOftenThanRx",
+            "target_entity": "ResponseRefused",
+            "description": "Response 'Refused' to using pain relievers more often than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageMoreOftenThanRx",
+            "target_entity": "ResponseBlank",
+            "description": "Response was blank (no answer) for using pain relievers more often than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageLongerThanRx",
+            "target_entity": "ResponseYes",
+            "description": "Response 'Yes' to using pain relievers for a longer duration than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageLongerThanRx",
+            "target_entity": "ResponseNo",
+            "description": "Response 'No' to using pain relievers for a longer duration than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageLongerThanRx",
+            "target_entity": "ResponseRefused",
+            "description": "Response 'Refused' to using pain relievers for a longer duration than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageLongerThanRx",
+            "target_entity": "ResponseBlank",
+            "description": "Response was blank (no answer) for using pain relievers for a longer duration than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageOtherWay",
+            "target_entity": "ResponseYes",
+            "description": "Response 'Yes' to using pain relievers in a way other than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageOtherWay",
+            "target_entity": "ResponseNo",
+            "description": "Response 'No' to using pain relievers in a way other than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageOtherWay",
+            "target_entity": "ResponseRefused",
+            "description": "Response 'Refused' to using pain relievers in a way other than prescribed."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "PainRelieverUsageOtherWay",
+            "target_entity": "ResponseBlank",
+            "description": "Response was blank (no answer) for using pain relievers in a way other than prescribed."
+        }
+    ]
+}

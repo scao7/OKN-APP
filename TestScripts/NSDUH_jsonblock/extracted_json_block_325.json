@@ -1,0 +1,138 @@
+{
+    "entities": [
+        {
+            "entity": "NonprescriptionCoughOrColdMedsRecency",
+            "description": "Recency of using nonprescription cough or cold medicines."
+        },
+        {
+            "entity": "NonprescriptionCoughOrColdMedsRecencyImputationRevised",
+            "description": "Revised imputation for recency of using nonprescription cough or cold medicines."
+        },
+        {
+            "entity": "NonprescriptionCoughOrColdMedsRecencyImputationIndicator",
+            "description": "Indicator of imputation for recency of using nonprescription cough or cold medicines."
+        },
+        {
+            "entity": "GHBRecency",
+            "description": "Recency of using GHB drugs."
+        },
+        {
+            "entity": "GHBRecencyImputationRevised",
+            "description": "Revised imputation for recency of using GHB drugs."
+        },
+        {
+            "entity": "GHBRecencyImputationIndicator",
+            "description": "Indicator of imputation for recency of using GHB drugs."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasNonprescriptionCoughOrColdMedsRecency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "NonprescriptionCoughOrColdMedsRecency",
+            "description": "Indicates the recency of using nonprescription cough or cold medicines in the survey response."
+        },
+        {
+            "relationship": "hasNonprescriptionCoughOrColdMedsRecencyImputationRevised",
+            "source_entity": "NonprescriptionCoughOrColdMedsRecency",
+            "target_entity": "NonprescriptionCoughOrColdMedsRecencyImputationRevised",
+            "description": "Indicates the revised imputation for the recency of using nonprescription cough or cold medicines."
+        },
+        {
+            "relationship": "hasNonprescriptionCoughOrColdMedsRecencyImputationIndicator",
+            "source_entity": "NonprescriptionCoughOrColdMedsRecency",
+            "target_entity": "NonprescriptionCoughOrColdMedsRecencyImputationIndicator",
+            "description": "Indicates the imputation indicator for the recency of using nonprescription cough or cold medicines."
+        },
+        {
+            "relationship": "hasGHBRecency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "GHBRecency",
+            "description": "Indicates the recency of using GHB drugs in the survey response."
+        },
+        {
+            "relationship": "hasGHBRecencyImputationRevised",
+            "source_entity": "GHBRecency",
+            "target_entity": "GHBRecencyImputationRevised",
+            "description": "Indicates the revised imputation for the recency of using GHB drugs."
+        },
+        {
+            "relationship": "hasGHBRecencyImputationIndicator",
+            "source_entity": "GHBRecency",
+            "target_entity": "GHBRecencyImputationIndicator",
+            "description": "Indicates the imputation indicator for the recency of using GHB drugs."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "NonprescriptionCoughOrColdMeds",
+            "predicate": "hasRecency",
+            "object": "Within the past 30 days"
+        },
+        {
+            "subject": "NonprescriptionCoughOrColdMeds",
+            "predicate": "hasRecency",
+            "object": "More than 30 days ago but within the past 12 months"
+        },
+        {
+            "subject": "NonprescriptionCoughOrColdMeds",
+            "predicate": "hasRecency",
+            "object": "More than 12 months ago"
+        },
+        {
+            "subject": "NonprescriptionCoughOrColdMeds",
+            "predicate": "hasRecency",
+            "object": "Never used nonprescription cough and cold medicines"
+        },
+        {
+            "subject": "NonprescriptionCoughOrColdMedsRecency",
+            "predicate": "hasImputationIndicator",
+            "object": "Questionnaire data"
+        },
+        {
+            "subject": "NonprescriptionCoughOrColdMedsRecency",
+            "predicate": "hasImputationIndicator",
+            "object": "Statistically imputed data"
+        },
+        {
+            "subject": "NonprescriptionCoughOrColdMedsRecency",
+            "predicate": "hasImputationIndicator",
+            "object": "Statistically imputed data - edited recency"
+        },
+        {
+            "subject": "GHB",
+            "predicate": "hasRecency",
+            "object": "Within the past 30 days"
+        },
+        {
+            "subject": "GHB",
+            "predicate": "hasRecency",
+            "object": "More than 30 days ago but within the past 12 months"
+        },
+        {
+            "subject": "GHB",
+            "predicate": "hasRecency",
+            "object": "More than 12 months ago"
+        },
+        {
+            "subject": "GHB",
+            "predicate": "hasRecency",
+            "object": "NEVER used GHB"
+        },
+        {
+            "subject": "GHBRecency",
+            "predicate": "hasImputationIndicator",
+            "object": "Questionnaire data"
+        },
+        {
+            "subject": "GHBRecency",
+            "predicate": "hasImputationIndicator",
+            "object": "Statistically imputed data"
+        },
+        {
+            "subject": "GHBRecency",
+            "predicate": "hasImputationIndicator",
+            "object": "Statistically imputed data - edited recency"
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "entities": [
+        {
+            "entity": "IRSEX",
+            "description": "IMPUTATION REVISED GENDER with values 1 = Male, 2 = Female."
+        },
+        {
+            "entity": "IRMRMART",
+            "description": "IMPUTATION REVISED MARITAL STATUS with values 1 = Married, 2 = Widowed, 3 = Divorced or Separated, 4 = Never Been Married, 99 = LEGITIMATE SKIP Respondent is <= 14 years old."
+        },
+        {
+            "entity": "IIMARIT",
+            "description": "IMPUTATION INDICATOR MARITAL STATUS with values 1 = Marital status from questionnaire, 3 = Marital status statistically imputed, 99 = LEGITIMATE SKIP Respondent is <= 14 years old."
+        },
+        {
+            "entity": "IREDUHIGHST2",
+            "description": "EDUCATION - RECODED IMPUTATION REVISED with education levels from 1 to 11."
+        },
+        {
+            "entity": "IIEDUHIGHST2",
+            "description": "EDUCATION INDICATOR - IMPUTATION INDICATOR with values 1 = Education from questionnaire, 3 = Education statistically imputed."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasGender",
+            "source_entity": "Respondent",
+            "target_entity": "IRSEX",
+            "description": "Indicates the gender imputation status of the respondent."
+        },
+        {
+            "relationship": "hasMaritalStatus",
+            "source_entity": "Respondent",
+            "target_entity": "IRMRMART",
+            "description": "Indicates the marital status imputation of the respondent."
+        },
+        {
+            "relationship": "hasMaritalStatusIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "IIMARIT",
+            "description": "Indicates the marital status imputation indicator of the respondent."
+        },
+        {
+            "relationship": "hasEducationLevel",
+            "source_entity": "Respondent",
+            "target_entity": "IREDUHIGHST2",
+            "description": "Indicates the education level recoded imputation of the respondent."
+        },
+        {
+            "relationship": "hasEducationIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "IIEDUHIGHST2",
+            "description": "Indicates the education imputation indicator of the respondent."
+        }
+    ],
+    "triples": [
+        {
+            "subject": "IRSEX",
+            "predicate": "hasFrequency",
+            "object": "27047"
+        },
+        {
+            "subject": "IRSEX",
+            "predicate": "hasFrequency",
+            "object": "32022"
+        },
+        {
+            "subject": "IRMRMART",
+            "predicate": "hasFrequency",
+            "object": "15921"
+        },
+        {
+            "subject": "IRMRMART",
+            "predicate": "hasFrequency",
+            "object": "1340"
+        },
+        {
+            "subject": "IRMRMART",
+            "predicate": "hasFrequency",
+            "object": "4673"
+        },
+        {
+            "subject": "IRMRMART",
+            "predicate": "hasFrequency",
+            "object": "27497"
+        },
+        {
+            "subject": "IRMRMART",
+            "predicate": "hasFrequency",
+            "object": "6038"
+        },
+        {
+            "subject": "IIMARIT",
+            "predicate": "hasFrequency",
+            "object": "53001"
+        },
+        {
+            "subject": "IIMARIT",
+            "predicate": "hasFrequency",
+            "object": "30"
+        },
+        {
+            "subject": "IIMARIT",
+            "predicate": "hasFrequency",
+            "object": "6038"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "884"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "1959"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "2134"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "2553"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "2672"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "3567"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "3847"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "12189"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "9809"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "4189"
+        },
+        {
+            "subject": "IREDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "16300"
+        },
+        {
+            "subject": "IIEDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "58996"
+        },
+        {
+            "subject": "IIEDUHIGHST2",
+            "predicate": "hasFrequency",
+            "object": "73"
+        }
+    ]
+}

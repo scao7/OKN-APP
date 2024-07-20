@@ -1,0 +1,122 @@
+{
+    "entities": [
+        {
+            "entity": "Argument",
+            "description": "A type of aggravated assault or homicide circumstance involving a verbal or physical altercation."
+        },
+        {
+            "entity": "AssaultOnLawEnforcement",
+            "description": "An incident where an assault is directed towards law enforcement officers."
+        },
+        {
+            "entity": "DrugDealing",
+            "description": "An aggravated assault or homicide circumstance related to the sale or distribution of illegal drugs."
+        },
+        {
+            "entity": "GangActivity",
+            "description": "Criminal activities involving gang members, including violent acts."
+        },
+        {
+            "entity": "JuvenileGangActivity",
+            "description": "Violent acts or criminal activities involving gang members who are juveniles."
+        },
+        {
+            "entity": "DomesticViolence",
+            "description": "An incident involving a conflict, often violent, between domestic partners or family members."
+        },
+        {
+            "entity": "MercyKilling",
+            "description": "An act of killing performed to alleviate some form of suffering."
+        },
+        {
+            "entity": "FelonyInvolvement",
+            "description": "An aggravated assault or homicide circumstance involving other felonious activities."
+        },
+        {
+            "entity": "OtherCircumstances",
+            "description": "Other varied circumstances under which aggravated assaults or homicides occur."
+        },
+        {
+            "entity": "PrivateCitizenInvolvement",
+            "description": "Criminal incidents where a private citizen is the victim or perpetrator."
+        },
+        {
+            "entity": "PoliceInvolvement",
+            "description": "Criminal incidents where a law officer is involved either as victim or perpetrator."
+        },
+        {
+            "entity": "ChildPlayWithWeapon",
+            "description": "Incidents involving children irresponsibly handling a weapon."
+        },
+        {
+            "entity": "GunCleaningAccident",
+            "description": "An accident occurring while cleaning a firearm."
+        },
+        {
+            "entity": "HuntingAccident",
+            "description": "Accidental incidents occurring in the context of hunting."
+        },
+        {
+            "entity": "NegligentWeaponHandling",
+            "description": "Incidents caused by careless handling of weapons."
+        },
+        {
+            "entity": "OtherNegligentKillings",
+            "description": "Incidents involving negligent actions resulting in killing."
+        },
+        {
+            "entity": "UnknownCircumstance",
+            "description": "Circumstances of aggravate assault or homicide that are unknown or missing."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isSubtypeOf",
+            "source_entity": "AssaultOnLawEnforcement",
+            "target_entity": "ViolentCrime",
+            "description": "Classifies assault on law enforcement as a subtype of violent crime."
+        },
+        {
+            "relationship": "isSubtypeOf",
+            "source_entity": "DrugDealing",
+            "target_entity": "Crime",
+            "description": "Classifies drug dealing as a subtype of crime."
+        },
+        {
+            "relationship": "isInvolvedIn",
+            "source_entity": "GangActivity",
+            "target_entity": "GangMember",
+            "description": "Links gang activities to involvement by gang members."
+        },
+        {
+            "relationship": "isSubtypeOf",
+            "source_entity": "DomesticViolence",
+            "target_entity": "ViolentConflict",
+            "description": "Classifies domestic violence as a subtype of violent conflict."
+        },
+        {
+            "relationship": "isOutcomeOf",
+            "source_entity": "MercyKilling",
+            "target_entity": "Suffering",
+            "description": "Indicates that mercy killing is an outcome intended to alleviate suffering."
+        },
+        {
+            "relationship": "isSubtypeOf",
+            "source_entity": "NegligentWeaponHandling",
+            "target_entity": "Negligence",
+            "description": "Classifies negligent weapon handling as a subtype of negligence."
+        },
+        {
+            "relationship": "isCircumstanceOf",
+            "source_entity": "ChildPlayWithWeapon",
+            "target_entity": "InjuryOrDeath",
+            "description": "Indicates that a child playing with a weapon is a circumstance leading to injury or death."
+        },
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "UnknownCircumstance",
+            "target_entity": "UnsolvedCrime",
+            "description": "Relates unknown circumstances to cases of unsolved crime."
+        }
+    ]
+}

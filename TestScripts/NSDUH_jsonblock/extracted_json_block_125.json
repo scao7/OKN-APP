@@ -1,0 +1,73 @@
+{
+    "entities": [
+        {
+            "entity": "AlcoholAcquisitionMethod",
+            "description": "Various methods by which respondents acquired alcoholic beverages."
+        },
+        {
+            "entity": "AlcoholAcquisitionFrequency",
+            "description": "Frequency at which the respondents used methods to obtain alcohol."
+        },
+        {
+            "entity": "AlcoholUsageInPast30Days",
+            "description": "Indicates if the respondent used alcohol in the past 30 days."
+        },
+        {
+            "entity": "ConcurrentDrugUse",
+            "description": "Indicates if the respondent used drugs while drinking alcohol."
+        },
+        {
+            "entity": "MarijuanaUse",
+            "description": "Indicates if the respondent used marijuana or cannabis."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAlcoholAcquisitionMethod",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholAcquisitionMethod",
+            "description": "Specifies the method the respondent used to acquire alcohol."
+        },
+        {
+            "relationship": "hasAlcoholAcquisitionFrequency",
+            "source_entity": "AlcoholAcquisitionMethod",
+            "target_entity": "AlcoholAcquisitionFrequency",
+            "description": "Relates the method of acquiring alcohol to the frequency of its usage."
+        },
+        {
+            "relationship": "hasAlcoholUsageInPast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholUsageInPast30Days",
+            "description": "Indicates whether the respondent consumed alcohol in the past 30 days."
+        },
+        {
+            "relationship": "hasConcurrentDrugUse",
+            "source_entity": "Respondent",
+            "target_entity": "ConcurrentDrugUse",
+            "description": "Denotes if the respondent used drugs while consuming alcohol."
+        },
+        {
+            "relationship": "hasMarijuanaUse",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaUse",
+            "description": "Indicates whether the respondent used marijuana or cannabis."
+        }
+    ],
+    "triplet": [
+        {
+            "subject": "Respondent",
+            "predicate": "AcquisitionMethod",
+            "object": "My parent or guardian gave it to me"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "AcquisitionMethod",
+            "object": "I got it from a friend/acquaintance"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "Behavior",
+            "object": "negligent purchase"
+        }
+    ]
+}

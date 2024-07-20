@@ -1,0 +1,166 @@
+{
+    "entities": [
+        {
+            "entity": "TotalCases",
+            "description": "Total number of cases reported in the survey."
+        },
+        {
+            "entity": "MinimumCases",
+            "description": "Minimum number of valid cases."
+        },
+        {
+            "entity": "MaximumCases",
+            "description": "Maximum number of valid cases."
+        },
+        {
+            "entity": "ResidentStatus",
+            "description": "Indicates if the victim was a resident or nonresident."
+        },
+        {
+            "entity": "Argument",
+            "description": "Homicide or assault occurred due to an argument."
+        },
+        {
+            "entity": "AssaultOnLawEnforcementOfficer",
+            "description": "Homicide or assault occurred due to an assault on law enforcement officer(s)."
+        },
+        {
+            "entity": "DrugDealing",
+            "description": "Homicide or assault occurred in connection with drug dealing."
+        },
+        {
+            "entity": "Gangland",
+            "description": "Homicide or assault occurred due to gangland activities."
+        },
+        {
+            "entity": "JuvenileGang",
+            "description": "Homicide or assault occurred due to juvenile gang activities."
+        },
+        {
+            "entity": "LoversQuarrelDomesticViolence",
+            "description": "Homicide or assault occurred due to a lover's quarrel or domestic violence."
+        },
+        {
+            "entity": "MercyKilling",
+            "description": "Homicide or assault occurred as a mercy killing."
+        },
+        {
+            "entity": "OtherFelonyInvolved",
+            "description": "Homicide or assault involved another felony."
+        },
+        {
+            "entity": "OtherCircumstances",
+            "description": "Homicide or assault occurred due to other unspecified circumstances."
+        },
+        {
+            "entity": "CriminalKilledByPrivateCitizen",
+            "description": "Criminal was killed by a private citizen."
+        },
+        {
+            "entity": "CriminalKilledByPoliceOfficer",
+            "description": "Criminal was killed by a police officer."
+        },
+        {
+            "entity": "ChildPlayingWithWeapon",
+            "description": "Homicide or assault occurred due to a child playing with a weapon."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "reports",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Details the total number of cases reported in the survey."
+        },
+        {
+            "relationship": "hasMinimumCases",
+            "source_entity": "Survey",
+            "target_entity": "MinimumCases",
+            "description": "Defines the minimum number of valid cases in the survey."
+        },
+        {
+            "relationship": "hasMaximumCases",
+            "source_entity": "Survey",
+            "target_entity": "MaximumCases",
+            "description": "Defines the maximum number of valid cases in the survey."
+        },
+        {
+            "relationship": "hasResidentStatus",
+            "source_entity": "Victim",
+            "target_entity": "ResidentStatus",
+            "description": "Indicates if the victim's resident status within the survey."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "Argument",
+            "description": "Classifies the homicide or assault as due to an argument."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "AssaultOnLawEnforcementOfficer",
+            "description": "Classifies the homicide or assault as due to an assault on law enforcement officer(s)."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "DrugDealing",
+            "description": "Classifies the homicide or assault as related to drug dealing."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "Gangland",
+            "description": "Classifies the homicide or assault as gangland-related."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "JuvenileGang",
+            "description": "Classifies the homicide or assault as juvenile gang-related."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "LoversQuarrelDomesticViolence",
+            "description": "Classifies the homicide or assault as due to a lover's quarrel or domestic violence."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "MercyKilling",
+            "description": "Classifies the homicide or assault as a mercy killing."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "OtherFelonyInvolved",
+            "description": "Classifies the homicide or assault as involving another felony."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "OtherCircumstances",
+            "description": "Classifies the homicide or assault as due to other unspecified circumstances."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "CriminalKilledByPrivateCitizen",
+            "description": "Classifies the homicide or assault as involving a criminal killed by a private citizen."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "CriminalKilledByPoliceOfficer",
+            "description": "Classifies the homicide or assault as involving a criminal killed by a police officer."
+        },
+        {
+            "relationship": "hasHomicideCircumstance",
+            "source_entity": "AggAssaultHomicide",
+            "target_entity": "ChildPlayingWithWeapon",
+            "description": "Classifies the homicide or assault as due to a child playing with a weapon."
+        }
+    ]
+}

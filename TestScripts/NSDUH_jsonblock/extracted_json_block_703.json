@@ -1,0 +1,238 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "A code representing a specific drug used in treatment."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug used in treatment."
+        },
+        {
+            "entity": "NumberOfTimesMentioned",
+            "description": "The number of times the drug is mentioned under 'OTHER, Specifies'."
+        },
+        {
+            "entity": "PercentageOfAllTreatmentDrugs",
+            "description": "The percentage of all treatment drugs specified that this drug represents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Associates a drug with its corresponding code used in treatment."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Associates a drug with its name used in treatment."
+        },
+        {
+            "relationship": "hasMentions",
+            "source_entity": "Drug",
+            "target_entity": "NumberOfTimesMentioned",
+            "description": "Relates a drug to the number of times it is mentioned under 'OTHER, Specifies'."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Drug",
+            "target_entity": "PercentageOfAllTreatmentDrugs",
+            "description": "Indicates the percentage of all treatment drugs specified that this drug represents."
+        }
+    ],
+    "triples": [
+        {
+            "subject": "Lyrica, Pregabalin",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "2"
+        },
+        {
+            "subject": "Lyrica, Pregabalin",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.32"
+        },
+        {
+            "subject": "Kratom",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "3"
+        },
+        {
+            "subject": "Kratom",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.99"
+        },
+        {
+            "subject": "Lamictal, Lamotrigine",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "2"
+        },
+        {
+            "subject": "Lamictal, Lamotrigine",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.32"
+        },
+        {
+            "subject": "Synthetic cannabinoids (eg, K2, Spice, JWH-018)",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "3"
+        },
+        {
+            "subject": "Synthetic cannabinoids (eg, K2, Spice, JWH-018)",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.99"
+        },
+        {
+            "subject": "Anti-anxiety medications, type unspecified",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "3"
+        },
+        {
+            "subject": "Anti-anxiety medications, type unspecified",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.99"
+        },
+        {
+            "subject": "Hormone, otherwise unspecified",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "1"
+        },
+        {
+            "subject": "Hormone, otherwise unspecified",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "0.66"
+        },
+        {
+            "subject": "Effexor XR",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "2"
+        },
+        {
+            "subject": "Effexor XR",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.32"
+        },
+        {
+            "subject": "Phenibut",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "1"
+        },
+        {
+            "subject": "Phenibut",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "0.66"
+        },
+        {
+            "subject": "Briviact, brivaracetam",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "1"
+        },
+        {
+            "subject": "Briviact, brivaracetam",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "0.66"
+        },
+        {
+            "subject": "Quetiapine, Seroquel",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "2"
+        },
+        {
+            "subject": "Quetiapine, Seroquel",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.32"
+        },
+        {
+            "subject": "Desyrel, Trazodone hydrochloride",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "2"
+        },
+        {
+            "subject": "Desyrel, Trazodone hydrochloride",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.32"
+        },
+        {
+            "subject": "Lithium carbonate, Lithonate",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "1"
+        },
+        {
+            "subject": "Lithium carbonate, Lithonate",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "0.66"
+        },
+        {
+            "subject": "Prozac, Fluoxetine",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "5"
+        },
+        {
+            "subject": "Prozac, Fluoxetine",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "3.31"
+        },
+        {
+            "subject": "Sertraline hydrochloride, Zoloft",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "12"
+        },
+        {
+            "subject": "Sertraline hydrochloride, Zoloft",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "7.95"
+        },
+        {
+            "subject": "Clozapine, Clozaril",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "1"
+        },
+        {
+            "subject": "Clozapine, Clozaril",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "0.66"
+        },
+        {
+            "subject": "Risperdal, Risperidol, Risperidone",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "1"
+        },
+        {
+            "subject": "Risperdal, Risperidol, Risperidone",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "0.66"
+        },
+        {
+            "subject": "Mirtazapine, Remeron",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "1"
+        },
+        {
+            "subject": "Mirtazapine, Remeron",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "0.66"
+        },
+        {
+            "subject": "Escitalopram, Lexapro",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "1"
+        },
+        {
+            "subject": "Escitalopram, Lexapro",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "0.66"
+        },
+        {
+            "subject": "Bupropion, Wellbutrin, Zyban",
+            "predicate": "Number of Times Mentioned in OTHER, Specifies",
+            "object": "2"
+        },
+        {
+            "subject": "Bupropion, Wellbutrin, Zyban",
+            "predicate": "Percentage of All Treatment Drugs Specified",
+            "object": "1.32"
+        }
+    ]
+}

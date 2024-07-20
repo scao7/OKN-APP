@@ -1,0 +1,128 @@
+{
+    "entities": [
+        {
+            "entity": "AntiHeterosexual",
+            "description": "Discrimination or bias against heterosexual individuals"
+        },
+        {
+            "entity": "AntiBisexual",
+            "description": "Discrimination or bias against bisexual individuals"
+        },
+        {
+            "entity": "AntiPhysicalDisability",
+            "description": "Discrimination or bias against individuals with physical disabilities"
+        },
+        {
+            "entity": "AntiMentalDisability",
+            "description": "Discrimination or bias against individuals with mental disabilities"
+        },
+        {
+            "entity": "AntiMale",
+            "description": "Discrimination or bias against males"
+        },
+        {
+            "entity": "AntiFemale",
+            "description": "Discrimination or bias against females"
+        },
+        {
+            "entity": "AntiTransgender",
+            "description": "Discrimination or bias against transgender individuals"
+        },
+        {
+            "entity": "AntiGenderNonConforming",
+            "description": "Discrimination or bias against gender non-conforming individuals"
+        },
+        {
+            "entity": "AntiEasternOrthodox",
+            "description": "Discrimination or bias against Eastern Orthodox individuals"
+        },
+        {
+            "entity": "AntiOtherChristian",
+            "description": "Discrimination or bias against other Christian denominations"
+        },
+        {
+            "entity": "AntiBuddhist",
+            "description": "Discrimination or bias against Buddhists"
+        },
+        {
+            "entity": "AntiHindu",
+            "description": "Discrimination or bias against Hindus"
+        },
+        {
+            "entity": "AntiSikh",
+            "description": "Discrimination or bias against Sikhs"
+        },
+        {
+            "entity": "AntiWhite",
+            "description": "Discrimination or bias against White individuals"
+        },
+        {
+            "entity": "AntiBlackOrAfricanAmerican",
+            "description": "Discrimination or bias against Black or African American individuals"
+        },
+        {
+            "entity": "AntiAmericanIndianOrAlaskaNative",
+            "description": "Discrimination or bias against American Indian or Alaska Native individuals"
+        },
+        {
+            "entity": "AntiAsian",
+            "description": "Discrimination or bias against Asian individuals"
+        },
+        {
+            "entity": "AntiMultiRacialGroup",
+            "description": "Discrimination or bias against multi-racial groups"
+        },
+        {
+            "entity": "AntiNativeHawaiianOrOtherPacificIslander",
+            "description": "Discrimination or bias against Native Hawaiian or other Pacific Islander individuals"
+        },
+        {
+            "entity": "AntiJewish",
+            "description": "Discrimination or bias against Jewish individuals"
+        },
+        {
+            "entity": "AntiCatholic",
+            "description": "Discrimination or bias against Catholics"
+        },
+        {
+            "entity": "AntiProtestant",
+            "description": "Discrimination or bias against Protestants"
+        },
+        {
+            "entity": "AntiIslamicMuslim",
+            "description": "Discrimination or bias against Muslims"
+        },
+        {
+            "entity": "AntiOtherReligion",
+            "description": "Discrimination or bias against other religions"
+        },
+        {
+            "entity": "AntiMultiReligiousGroup",
+            "description": "Discrimination or bias against multi-religious groups"
+        },
+        {
+            "entity": "AntiAtheismAgnosticism",
+            "description": "Discrimination or bias against atheists or agnostics"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "BiasMotivation",
+            "description": "Indicates the type of bias motivation experienced by the respondent."
+        },
+        {
+            "relationship": "typeOfBias",
+            "source_entity": "Respondent",
+            "target_entity": "TypeOfBias",
+            "description": "Specifies the type of bias experienced, such as racial, religious, gender, etc."
+        },
+        {
+            "relationship": "hasDiscriminationType",
+            "source_entity": "BiasMotivation",
+            "target_entity": "TypeOfBias",
+            "description": "Links the bias motivation to the specific type of discrimination."
+        }
+    ]
+}

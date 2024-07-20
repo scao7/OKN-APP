@@ -1,0 +1,164 @@
+{
+    "entities": [
+        {
+            "entity": "DrugStoreOfficeHospital",
+            "description": "Location type referring to drug stores, doctor's offices, or hospitals."
+        },
+        {
+            "entity": "FieldWoods",
+            "description": "Location type referring to fields or woods."
+        },
+        {
+            "entity": "GovernmentPublicBuilding",
+            "description": "Location type referring to government or public buildings."
+        },
+        {
+            "entity": "GrocerySupermarket",
+            "description": "Location type referring to grocery stores or supermarkets."
+        },
+        {
+            "entity": "HighwayRoadAlleyStreetSidewalk",
+            "description": "Location type referring to highways, roads, alleys, streets, or sidewalks."
+        },
+        {
+            "entity": "HotelMotelEtc",
+            "description": "Location type referring to hotels, motels, or similar establishments."
+        },
+        {
+            "entity": "JailPrisonPenitentiaryCorrectionsFacility",
+            "description": "Location type referring to jails, prisons, penitentiaries, or correctional facilities."
+        },
+        {
+            "entity": "LakeWaterwayBeach",
+            "description": "Location type referring to lakes, waterways, or beaches."
+        },
+        {
+            "entity": "LiquorStore",
+            "description": "Location type referring to liquor stores."
+        },
+        {
+            "entity": "ParkingLotGarage",
+            "description": "Location type referring to parking lots or garages."
+        },
+        {
+            "entity": "RentalStorageFacility",
+            "description": "Location type referring to rental storage facilities."
+        },
+        {
+            "entity": "ResidenceHome",
+            "description": "Location type referring to residences or homes."
+        },
+        {
+            "entity": "Restaurant",
+            "description": "Location type referring to restaurants."
+        },
+        {
+            "entity": "SchoolCollege",
+            "description": "Location type referring to schools or colleges."
+        },
+        {
+            "entity": "ServiceGasStation",
+            "description": "Location type referring to service or gas stations."
+        },
+        {
+            "entity": "SpecialtyStore",
+            "description": "Location type referring to specialty stores (TV, fur, etc.)."
+        },
+        {
+            "entity": "OtherUnknown",
+            "description": "Location type referring to other or unknown locations."
+        },
+        {
+            "entity": "AbandonedCondemnedStructure",
+            "description": "Location type referring to abandoned or condemned structures."
+        },
+        {
+            "entity": "AmusementPark",
+            "description": "Location type referring to amusement parks."
+        },
+        {
+            "entity": "ArenaStadiumFairgroundsColiseum",
+            "description": "Location type referring to arenas, stadiums, fairgrounds, or coliseums."
+        },
+        {
+            "entity": "ATMSeparateFromBank",
+            "description": "Location type referring to ATMs separate from banks."
+        },
+        {
+            "entity": "AutoDealershipNewUsed",
+            "description": "Location type referring to new or used auto dealerships."
+        },
+        {
+            "entity": "CampCampground",
+            "description": "Location type referring to camps or campgrounds."
+        },
+        {
+            "entity": "DaycareFacility",
+            "description": "Location type referring to daycare facilities."
+        },
+        {
+            "entity": "DockWharfFreightModalTerminal",
+            "description": "Location type referring to docks, wharfs, freight, or modal terminals."
+        },
+        {
+            "entity": "FarmFacility",
+            "description": "Location type referring to farm facilities."
+        },
+        {
+            "entity": "GamblingFacilityCasinoRaceTrack",
+            "description": "Location type referring to gambling facilities, casinos, or race tracks."
+        },
+        {
+            "entity": "IndustrialSite",
+            "description": "Location type referring to industrial sites."
+        },
+        {
+            "entity": "MilitaryInstallation",
+            "description": "Location type referring to military installations."
+        },
+        {
+            "entity": "ParkPlayground",
+            "description": "Location type referring to parks or playgrounds."
+        },
+        {
+            "entity": "RestArea",
+            "description": "Location type referring to rest areas."
+        },
+        {
+            "entity": "SchoolCollegeUniversity",
+            "description": "Location type referring to schools, colleges, or universities."
+        },
+        {
+            "entity": "SchoolElementarySecondary",
+            "description": "Location type referring to elementary or secondary schools."
+        },
+        {
+            "entity": "ShelterMissionHomeless",
+            "description": "Location type referring to shelters, missions, or facilities for homeless individuals."
+        },
+        {
+            "entity": "ShoppingMall",
+            "description": "Location type referring to shopping malls."
+        },
+        {
+            "entity": "TribalLands",
+            "description": "Location type referring to tribal lands."
+        },
+        {
+            "entity": "CommunityCenter",
+            "description": "Location type referring to community centers."
+        },
+        {
+            "entity": "Cyberspace",
+            "description": "Location type referring to cyberspace or online environments."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isLocationType",
+            "source_entity": "SurveyResponse",
+            "target_entity": "LocationType",
+            "description": "Defines various location types where certain behaviors or activities might be reported in the survey."
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "PrescriptionTranquilizer",
+            "description": "A type of medication used for calming or sedative effects."
+        },
+        {
+            "entity": "WishToCutDown",
+            "description": "Desire to reduce or stop usage of prescription tranquilizers."
+        },
+        {
+            "entity": "PhysicalHealthProblems",
+            "description": "Long-lasting or repeated physical issues caused or worsened by using prescription tranquilizers."
+        },
+        {
+            "entity": "MentalHealthProblems",
+            "description": "Long-lasting or repeated problems with emotions or mental health caused or worsened by using prescription tranquilizers."
+        },
+        {
+            "entity": "ContinuationDespiteProblems",
+            "description": "Continuation of prescription tranquilizer usage despite it causing physical or mental health issues."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWishToCutDown",
+            "source_entity": "Respondent",
+            "target_entity": "WishToCutDown",
+            "description": "Indicates the respondent's desire to reduce or stop using prescription tranquilizers."
+        },
+        {
+            "relationship": "hasPhysicalHealthProblems",
+            "source_entity": "Respondent",
+            "target_entity": "PhysicalHealthProblems",
+            "description": "Indicates that the respondent has physical health problems caused or worsened by prescription tranquilizers."
+        },
+        {
+            "relationship": "hasMentalHealthProblems",
+            "source_entity": "Respondent",
+            "target_entity": "MentalHealthProblems",
+            "description": "Indicates that the respondent has mental health issues caused or worsened by prescription tranquilizers."
+        },
+        {
+            "relationship": "continuesDespiteProblems",
+            "source_entity": "Respondent",
+            "target_entity": "ContinuationDespiteProblems",
+            "description": "Indicates that the respondent continues to use prescription tranquilizers despite having physical or mental health issues."
+        },
+        {
+            "relationship": "usesTranquilizers",
+            "source_entity": "Respondent",
+            "target_entity": "PrescriptionTranquilizer",
+            "description": "Indicates that the respondent uses prescription tranquilizers."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "hasWishToCutDown",
+            "object": "WishToCutDown"
+        },
+        {
+            "subject": "PrescriptionTranquilizer",
+            "predicate": "causesOrWorsens",
+            "object": "PhysicalHealthProblems"
+        },
+        {
+            "subject": "PrescriptionTranquilizer",
+            "predicate": "causesOrWorsens",
+            "object": "MentalHealthProblems"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "continuesDespiteProblems",
+            "object": "ContinuationDespiteProblems"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "uses",
+            "object": "PrescriptionTranquilizer"
+        }
+    ]
+}

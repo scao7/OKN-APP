@@ -1,0 +1,107 @@
+{
+    "entities": [
+        {
+            "entity": "SMIPPPY",
+            "description": "Predicted probability of Serious Mental Illness (SMI) using the model parameter estimates."
+        },
+        {
+            "entity": "SMIPY",
+            "description": "Predicted Serious Mental Illness indicator based on predicted SMI probability."
+        },
+        {
+            "entity": "SMIMPPY",
+            "description": "Predicted Serious Mental Illness Probability (Prediction Year)."
+        },
+        {
+            "entity": "SMIMPY",
+            "description": "Predicted Serious Mental Illness indicator based on predicted SMI probability (Prediction Year)."
+        },
+        {
+            "entity": "AMIPY",
+            "description": "Predicted Any Mental Illness indicator based on predicted AMI probability."
+        },
+        {
+            "entity": "AMIMPY",
+            "description": "Predicted Any Mental Illness Probability (Prediction Year)."
+        },
+        {
+            "entity": "LMIPY",
+            "description": "Predicted Less Mild Mental Illness indicator based on predicted LMI probability."
+        },
+        {
+            "entity": "LMIMPY",
+            "description": "Predicted Less Mild Mental Illness Probability (Prediction Year)."
+        },
+        {
+            "entity": "MICAITYPY",
+            "description": "Categorical Mental Illness indicator (Prediction Year)."
+        },
+        {
+            "entity": "AMI",
+            "description": "Any Mental Illness, defined as having a diagnosable mental, behavioral, or emotional disorder."
+        },
+        {
+            "entity": "SMI",
+            "description": "Serious Mental Illness, a subset of AMI limited to those with a resulting serious functional impairment."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasPredictionModel",
+            "source_entity": "SMIPPPY",
+            "target_entity": "PredictionModel",
+            "description": "Relates the predicted probability of SMI to the model used for the prediction."
+        },
+        {
+            "relationship": "hasCutPoint",
+            "source_entity": "Probability",
+            "target_entity": "CutPoint",
+            "description": "Defines the point at which the probability is cut to classify respondents into positive or negative categories."
+        },
+        {
+            "relationship": "basedOn",
+            "source_entity": "SMIPY",
+            "target_entity": "SMIPPPY",
+            "description": "Indicates that the SMI predictor variable is based on the predicted probability of SMI."
+        },
+        {
+            "relationship": "basedOn",
+            "source_entity": "AMIPY",
+            "target_entity": "SMIPPPY",
+            "description": "Indicates that the AMI predictor variable is based on the predicted probability of SMI."
+        },
+        {
+            "relationship": "isSubtypeOf",
+            "source_entity": "SMI",
+            "target_entity": "AMI",
+            "description": "Indicates that Serious Mental Illness (SMI) is a subset of Any Mental Illness (AMI)."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "SMIPPPY",
+            "predicate": "hasPredictionModel",
+            "object": "PredictionModel"
+        },
+        {
+            "subject": "Probability",
+            "predicate": "hasCutPoint",
+            "object": "CutPoint"
+        },
+        {
+            "subject": "SMIPY",
+            "predicate": "basedOn",
+            "object": "SMIPPPY"
+        },
+        {
+            "subject": "AMIPY",
+            "predicate": "basedOn",
+            "object": "SMIPPPY"
+        },
+        {
+            "subject": "SMI",
+            "predicate": "isSubtypeOf",
+            "object": "AMI"
+        }
+    ]
+}

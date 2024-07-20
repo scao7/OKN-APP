@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "entity": "EthnicityOfVictim",
+            "description": "The ethnicity classification of the victim, categorized as Hispanic or Latino, Not Hispanic or Latino, with options for Missing Data and Unknown/missing/DNR."
+        },
+        {
+            "entity": "ResidentStatusOfVictim",
+            "description": "The residential status of the victim, categorized as Resident, Nonresident, with options for Missing Data and Unknown/missing/DNR."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEthnicityOfVictim",
+            "source_entity": "Survey",
+            "target_entity": "EthnicityOfVictim",
+            "description": "Relates the survey to the ethnicity classification of the victim."
+        },
+        {
+            "relationship": "hasResidentStatusOfVictim",
+            "source_entity": "Survey",
+            "target_entity": "ResidentStatusOfVictim",
+            "description": "Relates the survey to the residential status of the victim."
+        }
+    ]
+}

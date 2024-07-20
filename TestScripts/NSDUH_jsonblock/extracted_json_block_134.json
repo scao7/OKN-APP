@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "MarijuanaUse",
+            "description": "Usage of marijuana or any cannabis product."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "The specific year or time frame in which the survey is conducted."
+        },
+        {
+            "entity": "FirstUseYear",
+            "description": "The year when marijuana or cannabis was first used."
+        },
+        {
+            "entity": "FirstUseMonth",
+            "description": "The month when marijuana or cannabis was first used."
+        },
+        {
+            "entity": "LastUseTime",
+            "description": "The time since marijuana or cannabis was last used."
+        },
+        {
+            "entity": "Respondent",
+            "description": "The individual responding to the survey."
+        },
+        {
+            "entity": "DataQualityCode",
+            "description": "Code indicating the quality or status of the data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the specific year or time frame."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "MarijuanaUse",
+            "target_entity": "FirstUseYear",
+            "description": "Indicates the year when the respondent first used marijuana or cannabis."
+        },
+        {
+            "relationship": "hasFirstUseMonth",
+            "source_entity": "MarijuanaUse",
+            "target_entity": "FirstUseMonth",
+            "description": "Indicates the month when the respondent first used marijuana or cannabis."
+        },
+        {
+            "relationship": "hasLastUseTime",
+            "source_entity": "MarijuanaUse",
+            "target_entity": "LastUseTime",
+            "description": "Indicates the time since the respondent last used marijuana or cannabis."
+        },
+        {
+            "relationship": "hasRespondent",
+            "source_entity": "Survey",
+            "target_entity": "Respondent",
+            "description": "Indicates that the data pertains to a specific individual respondent."
+        },
+        {
+            "relationship": "hasDataQualityCode",
+            "source_entity": "SurveyResponse",
+            "target_entity": "DataQualityCode",
+            "description": "Indicates the quality or status of the survey response data."
+        }
+    ]
+}

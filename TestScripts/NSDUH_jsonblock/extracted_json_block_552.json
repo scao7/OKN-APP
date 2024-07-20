@@ -1,0 +1,63 @@
+{
+    "entities": [
+        {
+            "entity": "MedicationHelpedScale",
+            "description": "Scale measuring how much prescribed medication has helped mood in the past 12 months."
+        },
+        {
+            "entity": "TherapyHelpedScale",
+            "description": "Scale measuring how much treatment or counseling has helped in the past 12 months."
+        },
+        {
+            "entity": "ReportedMDECriteria",
+            "description": "Criteria used to define an adult as having had MDE in their lifetime."
+        },
+        {
+            "entity": "AMDELT",
+            "description": "Respondent classified as having a major depressive episode in their lifetime."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMedicationHelpedScale",
+            "source_entity": "Respondent",
+            "target_entity": "MedicationHelpedScale",
+            "description": "Indicates the degree to which prescribed medication has helped the respondent's mood in the past 12 months."
+        },
+        {
+            "relationship": "hasTherapyHelpedScale",
+            "source_entity": "Respondent",
+            "target_entity": "TherapyHelpedScale",
+            "description": "Indicates the degree to which treatment or counseling has helped the respondent in the past 12 months."
+        },
+        {
+            "relationship": "meetsReportedMDECriteria",
+            "source_entity": "Respondent",
+            "target_entity": "ReportedMDECriteria",
+            "description": "Indicates whether the respondent meets the criteria for having had a major depressive episode (MDE) in their lifetime."
+        },
+        {
+            "relationship": "isClassifiedAsMDE",
+            "source_entity": "Respondent",
+            "target_entity": "AMDELT",
+            "description": "Classifies the respondent as having had a major depressive episode in their lifetime based on the criteria."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "ADPRXHLT",
+            "predicate": "hasHelpedScale",
+            "object": "MedicationHelpedScale"
+        },
+        {
+            "subject": "ADMTTHLP",
+            "predicate": "hasHelpedScale",
+            "object": "TherapyHelpedScale"
+        },
+        {
+            "subject": "AMDELT",
+            "predicate": "usesCriteria",
+            "object": "ReportedMDECriteria"
+        }
+    ]
+}

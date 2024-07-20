@@ -1,0 +1,124 @@
+{
+    "entities": [
+        {
+            "entity": "AntiBuddhistBias",
+            "description": "Bias motivation against individuals who practice Buddhism."
+        },
+        {
+            "entity": "AntiHinduBias",
+            "description": "Bias motivation against individuals who practice Hinduism."
+        },
+        {
+            "entity": "AntiSikhBias",
+            "description": "Bias motivation against individuals who practice Sikhism."
+        },
+        {
+            "entity": "AntiIslamicBias",
+            "description": "Bias motivation against individuals who practice Islam."
+        },
+        {
+            "entity": "AntiCatholicBias",
+            "description": "Bias motivation against individuals who practice Catholicism."
+        },
+        {
+            "entity": "AntiProtestantBias",
+            "description": "Bias motivation against individuals who practice Protestantism."
+        },
+        {
+            "entity": "AntiOtherReligionBias",
+            "description": "Bias motivation against individuals who practice other forms of religion."
+        },
+        {
+            "entity": "AntiMulti-ReligiousGroupBias",
+            "description": "Bias motivation against individuals belonging to multiple religious groups."
+        },
+        {
+            "entity": "AntiAtheismAgnosticismBias",
+            "description": "Bias motivation against individuals who are atheists or agnostics."
+        },
+        {
+            "entity": "AntiLGBTBias",
+            "description": "Bias motivation against the LGBT community."
+        },
+        {
+            "entity": "SurveyRespondents",
+            "description": "Individuals who participated in the NSDUH survey."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of respondents without statistical weights applied."
+        },
+        {
+            "entity": "BiasMotivation",
+            "description": "The reason for discriminative behavior towards specific groups."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "SurveyRespondents",
+            "target_entity": "BiasMotivation",
+            "description": "Indicates the bias motivations reported by the survey respondents."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiBuddhistBias",
+            "description": "Classifies a type of bias motivation as being against Buddhists."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiHinduBias",
+            "description": "Classifies a type of bias motivation as being against Hindus."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiSikhBias",
+            "description": "Classifies a type of bias motivation as being against Sikhs."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiIslamicBias",
+            "description": "Classifies a type of bias motivation as being against Muslims."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiCatholicBias",
+            "description": "Classifies a type of bias motivation as being against Catholics."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiProtestantBias",
+            "description": "Classifies a type of bias motivation as being against Protestants."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiOtherReligionBias",
+            "description": "Classifies a type of bias motivation as being against other religions."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiMulti-ReligiousGroupBias",
+            "description": "Classifies a type of bias motivation as being against multi-religious groups."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiAtheismAgnosticismBias",
+            "description": "Classifies a type of bias motivation as being against atheists or agnostics."
+        },
+        {
+            "relationship": "antiBias",
+            "source_entity": "BiasMotivation",
+            "target_entity": "AntiLGBTBias",
+            "description": "Classifies a type of bias motivation as being against the LGBT community."
+        }
+    ]
+}

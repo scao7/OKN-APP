@@ -1,0 +1,178 @@
+{
+    "entities": [
+        {
+            "entity": "RECORDED_DRUG_USE",
+            "description": "The dataset section dedicated to documenting the use of substances like tranquillisers."
+        },
+        {
+            "entity": "TRQRSMAIN",
+            "description": "Main reason for misusing tranquilizers."
+        },
+        {
+            "entity": "TRQRELX",
+            "description": "Reason for misusing tranquilizers to relax or relieve tension."
+        },
+        {
+            "entity": "TRQEXPR",
+            "description": "Reason for misusing tranquilizers to experiment or see what it's like."
+        },
+        {
+            "entity": "TRQRSHIGH",
+            "description": "Reason for misusing tranquilizers to feel good or get high."
+        },
+        {
+            "entity": "TRQRSSLP",
+            "description": "Reason for misusing tranquilizers to help with sleep."
+        },
+        {
+            "entity": "TRQREMOT",
+            "description": "Reason for misusing tranquilizers to help with feelings or emotions."
+        },
+        {
+            "entity": "TRQRSDFX",
+            "description": "Reason for misusing tranquilizers to increase or decrease effects of other drugs."
+        },
+        {
+            "entity": "TRQRSHOOK",
+            "description": "Reason for misusing tranquilizers because hooked or had to have drug."
+        },
+        {
+            "entity": "TRQRSOTHX",
+            "description": "Other specified reason for misusing tranquilizers."
+        },
+        {
+            "entity": "TRQRSMAIN_REASON",
+            "description": "Categorized main reasons for misusing tranquilizers."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasReason",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "RECORDED_DRUG_USE",
+            "description": "Relates the reason for misusing tranquilizers to the recorded drug use section."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "TRQRSMAIN_REASON",
+            "target_entity": "TRQRSMAIN",
+            "description": "Defines the categorized main reasons for misusing tranquilizers."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "TRQRELX",
+            "description": "Categorizes the main reason for misusing tranquilizers as to relax or relieve tension."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "TRQEXPR",
+            "description": "Categorizes the main reason for misusing tranquilizers as to experiment or see what it's like."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "TRQRSHIGH",
+            "description": "Categorizes the main reason for misusing tranquilizers as to feel good or get high."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "TRQRSSLP",
+            "description": "Categorizes the main reason for misusing tranquilizers as to help with sleep."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "TRQREMOT",
+            "description": "Categorizes the main reason for misusing tranquilizers as to help with feelings or emotions."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "TRQRSDFX",
+            "description": "Categorizes the main reason for misusing tranquilizers as to increase or decrease effects of other drugs."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "TRQRSHOOK",
+            "description": "Categorizes the main reason for misusing tranquilizers as being hooked or having to have the drug."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "TRQRSMAIN",
+            "target_entity": "TRQRSOTHX",
+            "description": "Categorizes the main reason for misusing tranquilizers as some other specified reason."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "TRQRSMAIN_REASON",
+            "predicate": "includes",
+            "object": [
+                "Unknown",
+                "Relax or relieve tension",
+                "Experiment or see what it's like",
+                "Feel good or get high",
+                "Help with sleep",
+                "Help with feelings or emotions",
+                "Increase or decrease effects of other drugs",
+                "Hooked or had to have drug",
+                "Some other reason",
+                "Did not misuse in past 12 months"
+            ]
+        },
+        {
+            "subject": "Unknown",
+            "predicate": "freq",
+            "object": "247"
+        },
+        {
+            "subject": "Relax or relieve tension",
+            "predicate": "freq",
+            "object": "355"
+        },
+        {
+            "subject": "Experiment or see what it's like",
+            "predicate": "freq",
+            "object": "39"
+        },
+        {
+            "subject": "Feel good or get high",
+            "predicate": "freq",
+            "object": "100"
+        },
+        {
+            "subject": "Help with sleep",
+            "predicate": "freq",
+            "object": "169"
+        },
+        {
+            "subject": "Help with feelings or emotions",
+            "predicate": "freq",
+            "object": "162"
+        },
+        {
+            "subject": "Increase or decrease effects of other drugs",
+            "predicate": "freq",
+            "object": "23"
+        },
+        {
+            "subject": "Hooked or had to have drug",
+            "predicate": "freq",
+            "object": "7"
+        },
+        {
+            "subject": "Some other reason",
+            "predicate": "freq",
+            "object": "40"
+        },
+        {
+            "subject": "Did not misuse in past 12 months",
+            "predicate": "freq",
+            "object": "57927"
+        }
+    ]
+}

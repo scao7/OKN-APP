@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "EmotionalDistressSeverity",
+            "description": "The severity of emotional distress during a two-week period."
+        },
+        {
+            "entity": "EmotionalDistressFrequency",
+            "description": "Frequency of emotional distress so severe that nothing could cheer the individual up."
+        },
+        {
+            "entity": "DailyActivityInterference",
+            "description": "Frequency of emotional distress so severe that it interfered with daily activities."
+        },
+        {
+            "entity": "AdditionalProblemsDuringDistress",
+            "description": "Experiencing additional problems such as changes in sleep, appetite, energy, ability to concentrate, and feelings of low self-worth during periods of distress."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEmotionalDistressSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "EmotionalDistressSeverity",
+            "description": "Indicates the severity of emotional distress experienced by the respondent during a two-week period."
+        },
+        {
+            "relationship": "hasEmotionalDistressFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "EmotionalDistressFrequency",
+            "description": "Indicates how often the respondent's emotional distress was so severe that nothing could cheer them up."
+        },
+        {
+            "relationship": "hasDailyActivityInterference",
+            "source_entity": "Respondent",
+            "target_entity": "DailyActivityInterference",
+            "description": "Indicates how often the respondent's emotional distress interfered with their daily activities."
+        },
+        {
+            "relationship": "hasAdditionalProblemsDuringDistress",
+            "source_entity": "Respondent",
+            "target_entity": "AdditionalProblemsDuringDistress",
+            "description": "Indicates whether the respondent experienced additional problems such as changes in sleep, appetite, energy, ability to concentrate, and feelings of low self-worth during periods of distress."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "EmotionalDistressSeverity",
+            "predicate": "measured",
+            "object": "2 weeks"
+        },
+        {
+            "subject": "EmotionalDistressFrequency",
+            "predicate": "measured",
+            "object": "2 weeks"
+        },
+        {
+            "subject": "DailyActivityInterference",
+            "predicate": "measured",
+            "object": "2 weeks"
+        },
+        {
+            "subject": "AdditionalProblemsDuringDistress",
+            "predicate": "measured",
+            "object": "2 weeks"
+        }
+    ]
+}

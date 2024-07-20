@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "RC_CBD_OR_HEMP_PAST_YEAR_USE",
+            "description": "Categorization of respondent's use of CBD or hemp products in the past year."
+        },
+        {
+            "entity": "RC_CBD_OR_HEMP_PAST_MONTH_USE",
+            "description": "Categorization of respondent's use of CBD or hemp products within the past month."
+        },
+        {
+            "entity": "RC_MARIJUANA_EVER_USED",
+            "description": "Indicates if the respondent has ever used marijuana."
+        },
+        {
+            "entity": "RC_MARIJUANA_PAST_YEAR_USE",
+            "description": "Categorization of respondent's use of marijuana in the past year."
+        },
+        {
+            "entity": "RC_MARIJUANA_PAST_MONTH_USE",
+            "description": "Categorization of respondent's use of marijuana within the past month."
+        },
+        {
+            "entity": "RC_MARIJUANA_VAPING_PAST_YEAR_USE",
+            "description": "Categorization of respondent's use of vaping marijuana in the past year."
+        },
+        {
+            "entity": "RC_MARIJUANA_VAPING_PAST_MONTH_USE",
+            "description": "Categorization of respondent's use of vaping marijuana within the past month."
+        },
+        {
+            "entity": "RC_MRJ_VAPE_MRJ_USE_BUT_NOT_VAPE_OR_NO_MRJ_USE_PAST_MONTH",
+            "description": "Categorization of respondent's use of vaping marijuana, marijuana use but not vaping, or no marijuana use within the past month."
+        },
+        {
+            "entity": "RC_COCAINE_EVER_USED",
+            "description": "Indicates if the respondent has ever used cocaine."
+        },
+        {
+            "entity": "RC_COCAINE_PAST_YEAR_USE",
+            "description": "Categorization of respondent's use of cocaine in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "categorizes",
+            "source_entity": "RC_CBD_OR_HEMP_PAST_YEAR_USE",
+            "target_entity": "Respondent",
+            "description": "Categorizes the respondent's use of CBD or hemp products in the past year."
+        },
+        {
+            "relationship": "categorizes",
+            "source_entity": "RC_CBD_OR_HEMP_PAST_MONTH_USE",
+            "target_entity": "Respondent",
+            "description": "Categorizes the respondent's use of CBD or hemp products within the past month."
+        },
+        {
+            "relationship": "indicates",
+            "source_entity": "RC_MARIJUANA_EVER_USED",
+            "target_entity": "Respondent",
+            "description": "Indicates if the respondent has ever used marijuana."
+        },
+        {
+            "relationship": "categorizes",
+            "source_entity": "RC_MARIJUANA_PAST_YEAR_USE",
+            "target_entity": "Respondent",
+            "description": "Categorizes the respondent's use of marijuana in the past year."
+        },
+        {
+            "relationship": "categorizes",
+            "source_entity": "RC_MARIJUANA_PAST_MONTH_USE",
+            "target_entity": "Respondent",
+            "description": "Categorizes the respondent's use of marijuana within the past month."
+        },
+        {
+            "relationship": "categorizes",
+            "source_entity": "RC_MARIJUANA_VAPING_PAST_YEAR_USE",
+            "target_entity": "Respondent",
+            "description": "Categorizes the respondent's use of vaping marijuana in the past year."
+        },
+        {
+            "relationship": "categorizes",
+            "source_entity": "RC_MARIJUANA_VAPING_PAST_MONTH_USE",
+            "target_entity": "Respondent",
+            "description": "Categorizes the respondent's use of vaping marijuana within the past month."
+        },
+        {
+            "relationship": "categorizes",
+            "source_entity": "RC_MRJ_VAPE_MRJ_USE_BUT_NOT_VAPE_OR_NO_MRJ_USE_PAST_MONTH",
+            "target_entity": "Respondent",
+            "description": "Categorizes the respondent's use of vaping marijuana, marijuana use but not vaping, or no marijuana use within the past month."
+        },
+        {
+            "relationship": "indicates",
+            "source_entity": "RC_COCAINE_EVER_USED",
+            "target_entity": "Respondent",
+            "description": "Indicates if the respondent has ever used cocaine."
+        },
+        {
+            "relationship": "categorizes",
+            "source_entity": "RC_COCAINE_PAST_YEAR_USE",
+            "target_entity": "Respondent",
+            "description": "Categorizes the respondent's use of cocaine in the past year."
+        }
+    ]
+}

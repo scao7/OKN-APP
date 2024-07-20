@@ -1,0 +1,174 @@
+{
+    "entities": [
+        {
+            "entity": "KidnapingAbduction",
+            "description": "Incident of kidnaping or abduction."
+        },
+        {
+            "entity": "Rape",
+            "description": "Incident of rape."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Incident of sodomy."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "Incident of sexual assault with an object."
+        },
+        {
+            "entity": "FondlingIndecentLibertiesChildMolesting",
+            "description": "Incident of fondling or indecent liberties, including child molesting."
+        },
+        {
+            "entity": "Robbery",
+            "description": "Incident of robbery."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "Incident of aggravated assault."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "Incident of simple assault."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "Incident of intimidation."
+        },
+        {
+            "entity": "Arson",
+            "description": "Incident of arson."
+        },
+        {
+            "entity": "ExtortionBlackmail",
+            "description": "Incident of extortion or blackmail."
+        },
+        {
+            "entity": "BurglaryBreakingAndEntering",
+            "description": "Incident of burglary or breaking and entering."
+        },
+        {
+            "entity": "PocketPicking",
+            "description": "Incident of pocket-picking."
+        },
+        {
+            "entity": "PurseSnatching",
+            "description": "Incident of purse-snatching."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "Incident of shoplifting."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "Incident of theft from a building."
+        },
+        {
+            "entity": "TheftFromCoinOperatedMachineOrDevice",
+            "description": "Incident of theft from a coin-operated machine or device."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "Incident of theft from a motor vehicle."
+        },
+        {
+            "entity": "TheftOfMotorVehiclePartsAccessories",
+            "description": "Incident of theft of motor vehicle parts or accessories."
+        },
+        {
+            "entity": "AllOtherLarceny",
+            "description": "Incident of all other larceny."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "Incident of motor vehicle theft."
+        },
+        {
+            "entity": "CounterfeitingForgery",
+            "description": "Incident of counterfeiting or forgery."
+        },
+        {
+            "entity": "FalsePretensesSwindleConfidenceGame",
+            "description": "Incident of false pretenses, swindle, or confidence game."
+        },
+        {
+            "entity": "CreditCardAutomaticTellerMachineFraud",
+            "description": "Incident of credit card or automatic teller machine fraud."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Incident of impersonation."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "Incident of welfare fraud."
+        },
+        {
+            "entity": "WireFraud",
+            "description": "Incident of wire fraud."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "Incident of identity theft."
+        },
+        {
+            "entity": "HackingComputerInvasion",
+            "description": "Incident of hacking or computer invasion."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Incident of embezzlement."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Incident of stolen property offenses."
+        },
+        {
+            "entity": "DestructionDamageVandalismOfProperty",
+            "description": "Incident of destruction, damage, or vandalism of property."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Incident of drug or narcotic violations."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Incident of drug equipment violations."
+        },
+        {
+            "entity": "Incest",
+            "description": "Incident of incest."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Incident of statutory rape."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "Incident of pornography or obscene material."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "Incident of betting or wagering."
+        },
+        {
+            "entity": "OperatingPromotingAssistingGambling",
+            "description": "Incident of operating, promoting, or assisting gambling."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "unweightedFrequency",
+            "source_entity": "Incident",
+            "target_entity": "Frequency",
+            "description": "Indicates the unweighted frequency of the incident."
+        },
+        {
+            "relationship": "percentage",
+            "source_entity": "Incident",
+            "target_entity": "Percentage",
+            "description": "The percentage of each incident type."
+        }
+    ]
+}

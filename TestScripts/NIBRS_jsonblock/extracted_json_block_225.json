@@ -1,0 +1,396 @@
+{
+    "entities": [
+        {
+            "entity": "JustifiableHomicide",
+            "description": "Justifiable Homicide incidents."
+        },
+        {
+            "entity": "KidnapingAbduction",
+            "description": "Occurrences of kidnaping or abduction incidents."
+        },
+        {
+            "entity": "Rape",
+            "description": "Rape incidents."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Sodomy incidents."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "Sexual assault incidents involving an object."
+        },
+        {
+            "entity": "Fondling",
+            "description": "Fondling or child molesting incidents."
+        },
+        {
+            "entity": "Robbery",
+            "description": "Robbery incidents."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "Aggravated assault incidents."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "Simple assault incidents."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "Intimidation incidents."
+        },
+        {
+            "entity": "Arson",
+            "description": "Arson incidents."
+        },
+        {
+            "entity": "ExtortionBlackmail",
+            "description": "Extortion or blackmail incidents."
+        },
+        {
+            "entity": "Burglary",
+            "description": "Burglary or breaking and entering incidents."
+        },
+        {
+            "entity": "PocketPicking",
+            "description": "Pocket-picking incidents."
+        },
+        {
+            "entity": "PurseSnatching",
+            "description": "Purse-snatching incidents."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "Shoplifting incidents."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "Theft from building incidents."
+        },
+        {
+            "entity": "TheftFromCoinOperatedMachine",
+            "description": "Theft from coin-operated machine or device incidents."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "Theft from motor vehicle incidents."
+        },
+        {
+            "entity": "TheftOfMotorVehicleParts",
+            "description": "Theft of motor vehicle parts or accessories incidents."
+        },
+        {
+            "entity": "AllOtherLarceny",
+            "description": "All other larceny incidents."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "Motor vehicle theft incidents."
+        },
+        {
+            "entity": "CounterfeitingForgery",
+            "description": "Counterfeiting or forgery incidents."
+        },
+        {
+            "entity": "FalsePretenses",
+            "description": "False pretenses, swindle, or confidence game incidents."
+        },
+        {
+            "entity": "CreditCardFraud",
+            "description": "Credit card or automatic teller machine fraud incidents."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Impersonation incidents."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "Welfare fraud incidents."
+        },
+        {
+            "entity": "WireFraud",
+            "description": "Wire fraud incidents."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "Identity theft incidents."
+        },
+        {
+            "entity": "HackingComputerInvasion",
+            "description": "Hacking or computer invasion incidents."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Embezzlement incidents."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Stolen property offenses."
+        },
+        {
+            "entity": "DestructionDamage",
+            "description": "Destruction, damage, or vandalism of property incidents."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Drug or narcotic violations."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Drug equipment violations."
+        },
+        {
+            "entity": "Incest",
+            "description": "Incest incidents."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Statutory rape incidents."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "Pornography or obscene material incidents."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "Betting or wagering incidents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "JustifiableHomicide",
+            "description": "Relates the survey to justifiable homicide incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "KidnapingAbduction",
+            "description": "Relates the survey to kidnaping or abduction incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Rape",
+            "description": "Relates the survey to rape incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Sodomy",
+            "description": "Relates the survey to sodomy incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "SexualAssaultWithAnObject",
+            "description": "Relates the survey to sexual assault incidents involving an object."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Fondling",
+            "description": "Relates the survey to fondling or child molesting incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Robbery",
+            "description": "Relates the survey to robbery incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "AggravatedAssault",
+            "description": "Relates the survey to aggravated assault incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "SimpleAssault",
+            "description": "Relates the survey to simple assault incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Intimidation",
+            "description": "Relates the survey to intimidation incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Arson",
+            "description": "Relates the survey to arson incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "ExtortionBlackmail",
+            "description": "Relates the survey to extortion or blackmail incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Burglary",
+            "description": "Relates the survey to burglary or breaking and entering incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "PocketPicking",
+            "description": "Relates the survey to pocket-picking incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "PurseSnatching",
+            "description": "Relates the survey to purse-snatching incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Shoplifting",
+            "description": "Relates the survey to shoplifting incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "TheftFromBuilding",
+            "description": "Relates the survey to theft from building incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "TheftFromCoinOperatedMachine",
+            "description": "Relates the survey to theft from coin-operated machine or device incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "TheftFromMotorVehicle",
+            "description": "Relates the survey to theft from motor vehicle incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "TheftOfMotorVehicleParts",
+            "description": "Relates the survey to theft of motor vehicle parts or accessories incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "AllOtherLarceny",
+            "description": "Relates the survey to all other larceny incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "MotorVehicleTheft",
+            "description": "Relates the survey to motor vehicle theft incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "CounterfeitingForgery",
+            "description": "Relates the survey to counterfeiting or forgery incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "FalsePretenses",
+            "description": "Relates the survey to false pretenses, swindle, or confidence game incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "CreditCardFraud",
+            "description": "Relates the survey to credit card or automatic teller machine fraud incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Impersonation",
+            "description": "Relates the survey to impersonation incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "WelfareFraud",
+            "description": "Relates the survey to welfare fraud incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "WireFraud",
+            "description": "Relates the survey to wire fraud incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "IdentityTheft",
+            "description": "Relates the survey to identity theft incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "HackingComputerInvasion",
+            "description": "Relates the survey to hacking or computer invasion incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Embezzlement",
+            "description": "Relates the survey to embezzlement incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "StolenPropertyOffenses",
+            "description": "Relates the survey to stolen property offenses."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "DestructionDamage",
+            "description": "Relates the survey to destruction, damage, or vandalism of property incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "DrugNarcoticViolations",
+            "description": "Relates the survey to drug or narcotic violations."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "DrugEquipmentViolations",
+            "description": "Relates the survey to drug equipment violations."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Incest",
+            "description": "Relates the survey to incest incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "StatutoryRape",
+            "description": "Relates the survey to statutory rape incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "PornographyObsceneMaterial",
+            "description": "Relates the survey to pornography or obscene material incidents."
+        },
+        {
+            "relationship": "hasCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "BettingWagering",
+            "description": "Relates the survey to betting or wagering incidents."
+        }
+    ]
+}

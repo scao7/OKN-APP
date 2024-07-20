@@ -1,0 +1,42 @@
+[
+    {
+        "subject": "Alcohol",
+        "predicate": "usedToAvoidWithdrawal",
+        "object": "Yes"
+    },
+    {
+        "subject": "Alcohol",
+        "predicate": "notUsedToAvoidWithdrawal",
+        "object": "No"
+    },
+    {
+        "subject": "OtherSubstance",
+        "predicate": "usedToAvoidWithdrawal",
+        "object": "Yes"
+    },
+    {
+        "subject": "OtherSubstance",
+        "predicate": "notUsedToAvoidWithdrawal",
+        "object": "No"
+    },
+    {
+        "subject": "Stimulants",
+        "predicate": "timeUsingOrFeelingEffects",
+        "object": "Yes"
+    },
+    {
+        "subject": "Stimulants",
+        "predicate": "noTimeUsingOrFeelingEffects",
+        "object": "No"
+    },
+    {
+        "subject": "Stimulants",
+        "predicate": "timeGettingOrTryingToGet",
+        "object": "Yes"
+    },
+    {
+        "subject": "Stimulants",
+        "predicate": "noTimeGettingOrTryingToGet",
+        "object": "No"
+    }
+]

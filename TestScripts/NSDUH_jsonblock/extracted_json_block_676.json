@@ -1,0 +1,16 @@
+{
+    "entities": [
+        {
+            "entity": "Medication",
+            "description": "A list of various medications including antidepressants, antipsychotics, and others."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMedication",
+            "source_entity": "Survey",
+            "target_entity": "Medication",
+            "description": "Associates the survey with a list of specific medications taken by the respondent."
+        }
+    ]
+}

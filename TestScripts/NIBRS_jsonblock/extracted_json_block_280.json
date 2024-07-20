@@ -1,0 +1,104 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderRelationUnknown",
+            "description": "The relationship of the offender to the victim is unknown."
+        },
+        {
+            "entity": "VictimSpouse",
+            "description": "The victim is the spouse of the offender."
+        },
+        {
+            "entity": "VictimCommonLawSpouse",
+            "description": "The victim is the common-law spouse of the offender."
+        },
+        {
+            "entity": "VictimParent",
+            "description": "The victim is the parent of the offender."
+        },
+        {
+            "entity": "VictimSibling",
+            "description": "The victim is the sibling of the offender."
+        },
+        {
+            "entity": "VictimChild",
+            "description": "The victim is the child of the offender."
+        },
+        {
+            "entity": "VictimGrandparent",
+            "description": "The victim is the grandparent of the offender."
+        },
+        {
+            "entity": "VictimGrandchild",
+            "description": "The victim is the grandchild of the offender."
+        },
+        {
+            "entity": "VictimInLaw",
+            "description": "The victim is the in-law of the offender."
+        },
+        {
+            "entity": "VictimStepparent",
+            "description": "The victim is the stepparent of the offender."
+        },
+        {
+            "entity": "VictimStepchild",
+            "description": "The victim is the stepchild of the offender."
+        },
+        {
+            "entity": "VictimStepsibling",
+            "description": "The victim is the stepsibling of the offender."
+        },
+        {
+            "entity": "VictimOtherFamilyMember",
+            "description": "The victim is another family member of the offender."
+        },
+        {
+            "entity": "VictimOffender",
+            "description": "The victim is also the offender."
+        },
+        {
+            "entity": "VictimAcquaintance",
+            "description": "The victim is an acquaintance of the offender."
+        },
+        {
+            "entity": "VictimFriend",
+            "description": "The victim is a friend of the offender."
+        },
+        {
+            "entity": "VictimNeighbor",
+            "description": "The victim is a neighbor of the offender."
+        },
+        {
+            "entity": "VictimBabysittee",
+            "description": "The victim is a babysittee of the offender."
+        },
+        {
+            "entity": "VictimBoyfriendGirlfriend",
+            "description": "The victim is a boyfriend or girlfriend of the offender."
+        },
+        {
+            "entity": "VictimChildBoyfriendGirlfriend",
+            "description": "The victim is the child of a boyfriend or girlfriend of the offender."
+        },
+        {
+            "entity": "VictimHomosexualRelationship",
+            "description": "The victim is in a homosexual relationship with the offender."
+        },
+        {
+            "entity": "VictimExSpouse",
+            "description": "The victim is the ex-spouse of the offender."
+        },
+        {
+            "entity": "VictimEmployee",
+            "description": "The victim is an employee of the offender."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isRelatedToOffenderAs",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Defines the relationship between the victim and the offender."
+        }
+    ]
+}

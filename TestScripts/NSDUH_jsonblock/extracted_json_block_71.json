@@ -1,0 +1,81 @@
+{
+    "entities": [
+        {
+            "entity": "PRXYRETRY",
+            "description": "Indicates whether respondents younger than 18 selected another proxy if their previously selected proxy was unavailable, starting in 2014."
+        },
+        {
+            "entity": "PRXYDATA",
+            "description": "Indicates whether the proxy is answering insurance/income questions."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYRETRY",
+            "target_entity": "Option 2",
+            "description": "PRXYRETRY option indicating 'No'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYRETRY",
+            "target_entity": "Option 94",
+            "description": "PRXYRETRY option indicating 'Don't Know'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYRETRY",
+            "target_entity": "Option 97",
+            "description": "PRXYRETRY option indicating 'Refused'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYRETRY",
+            "target_entity": "Option 98",
+            "description": "PRXYRETRY option indicating 'Blank (No Answer)'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYRETRY",
+            "target_entity": "Option 99",
+            "description": "PRXYRETRY option indicating 'Legitimate Skip'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYDATA",
+            "target_entity": "Option 1",
+            "description": "PRXYDATA option indicating 'Yes'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYDATA",
+            "target_entity": "Option 2",
+            "description": "PRXYDATA option indicating 'No'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYDATA",
+            "target_entity": "Option 94",
+            "description": "PRXYDATA option indicating 'Don't Know'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYDATA",
+            "target_entity": "Option 97",
+            "description": "PRXYDATA option indicating 'Refused'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYDATA",
+            "target_entity": "Option 98",
+            "description": "PRXYDATA option indicating 'Blank (No Answer)'."
+        },
+        {
+            "relationship": "hasOption",
+            "source_entity": "PRXYDATA",
+            "target_entity": "Option 99",
+            "description": "PRXYDATA option indicating 'Legitimate Skip (Respondent answering)'."
+        }
+    ],
+    "triples": []
+}

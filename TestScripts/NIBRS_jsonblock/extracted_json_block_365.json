@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "Age",
+            "description": "Age of the respondent."
+        },
+        {
+            "entity": "Unweighted Frequency",
+            "description": "The count of respondents in each age category, without any statistical adjustments."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each age category among the respondents."
+        },
+        {
+            "entity": "Missing Data",
+            "description": "The data that were not collected or reported."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAge",
+            "source_entity": "Respondent",
+            "target_entity": "Age",
+            "description": "Indicates the age of the respondent."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Age",
+            "target_entity": "Unweighted Frequency",
+            "description": "The unadjusted count of respondents within the specified age category."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Age",
+            "target_entity": "Percentage",
+            "description": "The percentage representation of the age category among the respondents."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "Missing Data",
+            "description": "Relates the survey to the data that were not collected or reported."
+        }
+    ]
+}

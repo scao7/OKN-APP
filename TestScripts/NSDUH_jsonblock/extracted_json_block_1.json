@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "Survey",
+            "description": "A detailed research instrument used for collecting data on drug use and health in the United States."
+        },
+        {
+            "entity": "SubstanceAbuse",
+            "description": "The usage of substances such as tobacco, alcohol, or drugs beyond the prescribed or generally accepted standards resulting in negative social, physical or self-harm impacts."
+        },
+        {
+            "entity": "MentalHealth",
+            "description": "The psychological state of someone who is functioning at a satisfactory level of emotional and behavioral adjustment."
+        },
+        {
+            "entity": "RuralResilience",
+            "description": "The ability of rural communities to withstand and recover from substance abuse and mental health challenges."
+        },
+        {
+            "entity": "EconomicStatus",
+            "description": "The level of income, employment, and financial stability of an individual or group."
+        },
+        {
+            "entity": "Education",
+            "description": "The level of schooling or training achieved by an individual."
+        },
+        {
+            "entity": "Infrastructure",
+            "description": "The basic physical and organizational structures and facilities needed for the operation of a society or community."
+        },
+        {
+            "entity": "Law",
+            "description": "The system of rules that are created and enforced through social or governmental institutions to regulate behavior."
+        },
+        {
+            "entity": "Treatment",
+            "description": "The medical care given to a patient for an illness or injury."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "collectsDataOn",
+            "source_entity": "Survey",
+            "target_entity": "SubstanceAbuse",
+            "description": "The survey collects data on various aspects of substance abuse."
+        },
+        {
+            "relationship": "collectsDataOn",
+            "source_entity": "Survey",
+            "target_entity": "MentalHealth",
+            "description": "The survey collects data on various aspects of mental health."
+        },
+        {
+            "relationship": "examines",
+            "source_entity": "Survey",
+            "target_entity": "RuralResilience",
+            "description": "The survey provides insights into the capability of rural areas to handle substance abuse and mental health challenges."
+        },
+        {
+            "relationship": "influences",
+            "source_entity": "EconomicStatus",
+            "target_entity": "SubstanceAbuse",
+            "description": "Economic status can have an impact on substance abuse patterns."
+        },
+        {
+            "relationship": "affects",
+            "source_entity": "SubstanceAbuse",
+            "target_entity": "MentalHealth",
+            "description": "Substance abuse can affect an individual's mental health."
+        },
+        {
+            "relationship": "isSupportedBy",
+            "source_entity": "RuralResilience",
+            "target_entity": "Infrastructure",
+            "description": "Rural resilience is supported by the presence of robust infrastructure."
+        },
+        {
+            "relationship": "isGovernedBy",
+            "source_entity": "SubstanceAbuse",
+            "target_entity": "Law",
+            "description": "Laws regulate behaviors related to substance abuse."
+        },
+        {
+            "relationship": "provides",
+            "source_entity": "Treatment",
+            "target_entity": "MentalHealth",
+            "description": "Treatment provides care for individuals with mental health issues."
+        },
+        {
+            "relationship": "isMeasuredBy",
+            "source_entity": "Education",
+            "target_entity": "Survey",
+            "description": "The survey measures the education level of participants."
+        }
+    ]
+}

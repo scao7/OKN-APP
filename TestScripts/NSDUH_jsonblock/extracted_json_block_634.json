@@ -1,0 +1,160 @@
+{
+    "entities": [
+        {
+            "entity": "ACUDUSE",
+            "description": "Use of substances (Acute).",
+            "category": "Substance"
+        },
+        {
+            "entity": "ADDPREV",
+            "description": "Use of substances (Prevailing).",
+            "category": "Substance"
+        },
+        {
+            "entity": "ADDPROS1",
+            "description": "Use of substances (Prospective).",
+            "category": "Substance"
+        },
+        {
+            "entity": "ALDRISK2",
+            "description": "Perceived risk of alcohol use (2 or more drinks per day).",
+            "category": "Substance"
+        },
+        {
+            "entity": "ADIRDEV",
+            "description": "Developmental Impact of substance use.",
+            "category": "Mental Health"
+        },
+        {
+            "entity": "AGE",
+            "description": "Respondent's age.",
+            "category": "Demographic"
+        },
+        {
+            "entity": "AHCHMED",
+            "description": "Achieving medical help for mental health.",
+            "category": "Mental Health"
+        },
+        {
+            "entity": "ALCSTYO",
+            "description": "Youth outcomes and their relation to alcohol use.",
+            "category": "Substance"
+        },
+        {
+            "entity": "ALGLST2",
+            "description": "Legal status as related to substance use.",
+            "category": "Legal"
+        },
+        {
+            "entity": "ANXIETL2",
+            "description": "Anxiety levels experienced.",
+            "category": "Mental Health"
+        },
+        {
+            "entity": "ADDEBPRG",
+            "description": "Programs to combat substance use.",
+            "category": "Programs"
+        },
+        {
+            "entity": "ARMEDYR",
+            "description": "Involvement or impact of armed services.",
+            "category": "Demographic"
+        },
+        {
+            "entity": "ARNUMEDC",
+            "description": "Number of medical services used.",
+            "category": "Infrastructure"
+        },
+        {
+            "entity": "AGEA",
+            "description": "Age at first use of substances.",
+            "category": "Substance"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstanceUse",
+            "source_entity": "Respondent",
+            "target_entity": "ACUDUSE",
+            "description": "Indicates the respondent's acute substance use."
+        },
+        {
+            "relationship": "hasPrevailingUse",
+            "source_entity": "Respondent",
+            "target_entity": "ADDPREV",
+            "description": "Indicates the respondent's prevailing substance use."
+        },
+        {
+            "relationship": "hasProspectiveUse",
+            "source_entity": "Respondent",
+            "target_entity": "ADDPROS1",
+            "description": "Indicates the respondent's prospective substance use."
+        },
+        {
+            "relationship": "hasPerceivedRisk",
+            "source_entity": "Respondent",
+            "target_entity": "ALDRISK2",
+            "description": "Indicates the respondent's perception of risk regarding alcohol use."
+        },
+        {
+            "relationship": "hasDevelopmentalImpact",
+            "source_entity": "SubstanceUse",
+            "target_entity": "ADIRDEV",
+            "description": "Relates the use of substances to developmental impacts."
+        },
+        {
+            "relationship": "isOfAge",
+            "source_entity": "Respondent",
+            "target_entity": "AGE",
+            "description": "Indicates the respondent's age."
+        },
+        {
+            "relationship": "seeksHealth",
+            "source_entity": "Respondent",
+            "target_entity": "AHCHMED",
+            "description": "Indicates the respondent's seeking of medical help for mental health."
+        },
+        {
+            "relationship": "relatesToYouth",
+            "source_entity": "AlcoholUse",
+            "target_entity": "ALCSTYO",
+            "description": "Relates the outcomes of youth to alcohol use."
+        },
+        {
+            "relationship": "hasLegalStatus",
+            "source_entity": "Respondent",
+            "target_entity": "ALGLST2",
+            "description": "Indicates the legal status as related to substance use."
+        },
+        {
+            "relationship": "hasAnxietyLevel",
+            "source_entity": "Respondent",
+            "target_entity": "ANXIETL2",
+            "description": "Indicates the level of anxiety experienced."
+        },
+        {
+            "relationship": "hasPrograms",
+            "source_entity": "SubstanceUsePrevention",
+            "target_entity": "ADDEBPRG",
+            "description": "Indicates the programs to combat substance use."
+        },
+        {
+            "relationship": "isInvolvedInArmedServices",
+            "source_entity": "Respondent",
+            "target_entity": "ARMEDYR",
+            "description": "Indicates involvement or impact of armed services."
+        },
+        {
+            "relationship": "usesMedicalServices",
+            "source_entity": "Respondent",
+            "target_entity": "ARNUMEDC",
+            "description": "Indicates the number of medical services used."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "Respondent",
+            "target_entity": "AGEA",
+            "description": "Indicates the respondent's age at first use of substances."
+        }
+    ]
+}

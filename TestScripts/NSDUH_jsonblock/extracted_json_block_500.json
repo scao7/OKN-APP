@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "SubstancePreventionMessage",
+            "description": "Alcohol or drug prevention messages from sources outside school such as posters, pamphlets, radio, or TV."
+        },
+        {
+            "entity": "ReligiousServiceAttendance",
+            "description": "Frequency of attending religious services during the past 12 months, excluding special occasions."
+        },
+        {
+            "entity": "ImportanceOfReligiousBeliefs",
+            "description": "The extent to which religious beliefs are important in one's life."
+        },
+        {
+            "entity": "InfluenceOfReligiousBeliefs",
+            "description": "The extent to which religious beliefs influence one's decisions."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstancePreventionMessageExposure",
+            "source_entity": "Respondent",
+            "target_entity": "SubstancePreventionMessage",
+            "description": "Indicates whether the respondent has seen or heard substance prevention messages from sources outside school."
+        },
+        {
+            "relationship": "attendsReligiousServices",
+            "source_entity": "Respondent",
+            "target_entity": "ReligiousServiceAttendance",
+            "description": "Specifies how often the respondent attends religious services in the past 12 months."
+        },
+        {
+            "relationship": "hasReligiousBeliefImportance",
+            "source_entity": "Respondent",
+            "target_entity": "ImportanceOfReligiousBeliefs",
+            "description": "Describes the importance of religious beliefs in the respondent's life."
+        },
+        {
+            "relationship": "hasReligiousBeliefInfluence",
+            "source_entity": "Respondent",
+            "target_entity": "InfluenceOfReligiousBeliefs",
+            "description": "Describes the influence of religious beliefs on the respondent's decision-making."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "seenOrHeard",
+            "object": "SubstancePreventionMessage"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "attended",
+            "object": "ReligiousServiceAttendance"
+        },
+        {
+            "subject": "ReligiousBeliefs",
+            "predicate": "areImportant",
+            "object": "Respondent"
+        },
+        {
+            "subject": "ReligiousBeliefs",
+            "predicate": "influence",
+            "object": "Respondent'sDecisions"
+        }
+    ]
+}

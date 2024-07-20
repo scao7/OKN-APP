@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "entity": "Victim's Relationship",
+            "description": "The relationship between the victim and the offender."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The frequency of instances where the relationship type was recorded."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasRelationship",
+            "source_entity": "Victim",
+            "target_entity": "Victim's Relationship",
+            "description": "Indicates the relationship type between the victim and offender."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "Victim's Relationship",
+            "target_entity": "Frequency",
+            "description": "Indicates the frequency of each relationship type occurrence."
+        }
+    ]
+}

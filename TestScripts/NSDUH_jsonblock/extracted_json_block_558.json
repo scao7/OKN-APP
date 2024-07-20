@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "ALTMDE",
+            "description": "Indicates whether an adult reported seeing or talking to an alternative service professional about MDE in the past year."
+        },
+        {
+            "entity": "AALTMDE",
+            "description": "Indicates an adult reported interaction with any alternative service professional for depression in the past year."
+        },
+        {
+            "entity": "ARELIMDE",
+            "description": "Having seen or talked to a religious or spiritual advisor about depression in the past year."
+        },
+        {
+            "entity": "AHBCHMDE",
+            "description": "Having seen or talked to a herbalist, chiropractor, acupuncturist, or massage therapist about depression in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasReportedALTMDE",
+            "source_entity": "Respondent",
+            "target_entity": "ALTMDE",
+            "description": "Indicates if the respondent reported seeing or talking to an alternative service professional about MDE."
+        },
+        {
+            "relationship": "hasAALTMDE",
+            "source_entity": "Respondent",
+            "target_entity": "AALTMDE",
+            "description": "Indicates if respondents reported seeing an alternative service professional for depression."
+        },
+        {
+            "relationship": "hasReportedARELIMDE",
+            "source_entity": "Respondent",
+            "target_entity": "ARELIMDE",
+            "description": "Indicates if respondents reported seeing a religious or spiritual advisor for depression."
+        },
+        {
+            "relationship": "hasReportedAHBCHMDE",
+            "source_entity": "Respondent",
+            "target_entity": "AHBCHMDE",
+            "description": "Indicates if respondents reported seeing a herbalist, chiropractor, acupuncturist, or massage therapist for depression."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "ALTMDE",
+            "predicate": "survey",
+            "object": "Respondent seeing or talking to alternative service professional about MDE"
+        },
+        {
+            "subject": "AALTMDE",
+            "predicate": "classified as",
+            "object": "Respondent seeing any of the listed alternative service professionals"
+        },
+        {
+            "subject": "ARELIMDE",
+            "predicate": "classified as",
+            "object": "Respondent seeing a religious or spiritual advisor"
+        },
+        {
+            "subject": "AHBCHMDE",
+            "predicate": "classified as",
+            "object": "Respondent seeing a herbalist, chiropractor, acupuncturist, or massage therapist"
+        }
+    ]
+}

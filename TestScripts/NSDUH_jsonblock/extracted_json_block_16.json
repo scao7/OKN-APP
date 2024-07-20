@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame during which the NSDUH survey is conducted."
+        },
+        {
+            "entity": "CivilianNoninstitutionalizedPopulation",
+            "description": "Population that includes individuals not in active-duty military or institutional group quarters."
+        },
+        {
+            "entity": "ActiveDutyMilitary",
+            "description": "Population segment that is actively serving in the military."
+        },
+        {
+            "entity": "InstitutionalGroupQuarters",
+            "description": "Includes hospitals, prisons, nursing homes, and treatment centers."
+        },
+        {
+            "entity": "VolunteerSampling",
+            "description": "Methodology of sample design which includes selecting specific sampling regions within each state."
+        },
+        {
+            "entity": "StateBasedSampleDesign",
+            "description": "Sampling design based on selecting samples from each state and the District of Columbia."
+        },
+        {
+            "entity": "SamplingStages",
+            "description": "Different stages involved in the sampling process, including census tracts, area segments, and dwelling units."
+        },
+        {
+            "entity": "EfficientSampling",
+            "description": "Efficient methods used in sampling that result in improved estimates."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "excludesPopulation",
+            "source_entity": "Survey",
+            "target_entity": "CivilianNoninstitutionalizedPopulation",
+            "description": "The target population for the NSDUH survey excludes active-duty military and institutional group quarters."
+        },
+        {
+            "relationship": "hasSamplingMethod",
+            "source_entity": "NSDUH",
+            "target_entity": "VolunteerSampling",
+            "description": "The NSDUH employs volunteer sampling for conducting its survey."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "VolunteerSampling",
+            "target_entity": "SamplingStages",
+            "description": "The sampling methodology involves multiple stages such as census tracts, area segments, and dwelling units."
+        },
+        {
+            "relationship": "isBasedOn",
+            "source_entity": "NSDUH",
+            "target_entity": "StateBasedSampleDesign",
+            "description": "The sample design of the NSDUH is based on selecting samples from each state."
+        },
+        {
+            "relationship": "ensures",
+            "source_entity": "EfficientSampling",
+            "target_entity": "PreciseEstimates",
+            "description": "Efficient sampling methods ensure more precise estimates."
+        }
+    ]
+}

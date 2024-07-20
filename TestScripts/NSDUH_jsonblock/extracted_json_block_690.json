@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "The identification number assigned to different drugs."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug."
+        },
+        {
+            "entity": "NumberTimesMentioned",
+            "description": "The number of times the drug was mentioned in the 'OTHER, Specifies' section."
+        },
+        {
+            "entity": "PercentageHallucinogenDrugs",
+            "description": "The percentage of all hallucinogen drugs specified."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Relates the drug to its identification code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Relates the drug to its name."
+        },
+        {
+            "relationship": "hasNumberTimesMentioned",
+            "source_entity": "Drug",
+            "target_entity": "NumberTimesMentioned",
+            "description": "Indicates how many times the drug was mentioned in the 'OTHER, Specifies' section."
+        },
+        {
+            "relationship": "hasPercentageHallucinogenDrugs",
+            "source_entity": "Drug",
+            "target_entity": "PercentageHallucinogenDrugs",
+            "description": "Indicates the percentage of all hallucinogen drugs specified that the drug represents."
+        }
+    ]
+}

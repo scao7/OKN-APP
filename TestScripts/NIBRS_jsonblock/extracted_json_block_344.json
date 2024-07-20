@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Frequency count of responses for the survey variable before weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage of the responses of the total unweighted frequency."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The amount of missing data for the survey variable expressed in frequency count and percentage."
+        },
+        {
+            "entity": "SurveyTotal",
+            "description": "The total number of responses for the survey variable, combining the unweighted frequency."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyVariable",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates a survey variable to its unweighted frequency counts."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyVariable",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage representation of the survey variable's response frequency."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MissingData",
+            "description": "Indicates the presence of missing data for the survey variable."
+        },
+        {
+            "relationship": "hasSurveyTotal",
+            "source_entity": "Survey",
+            "target_entity": "SurveyTotal",
+            "description": "Represents the total survey responses for a variable."
+        }
+    ]
+}

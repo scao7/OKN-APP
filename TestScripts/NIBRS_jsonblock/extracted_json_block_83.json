@@ -1,0 +1,126 @@
+{
+    "entities": [
+        {
+            "entity": "MethodOfEntry",
+            "description": "The method used for entering data on substance use and related behaviors."
+        },
+        {
+            "entity": "NoForce",
+            "description": "Indicates no force was used."
+        },
+        {
+            "entity": "Force",
+            "description": "Indicates force was used."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Represents data that is missing from the survey."
+        },
+        {
+            "entity": "CriminalActivityType",
+            "description": "Different types of criminal activities or gang involvement."
+        },
+        {
+            "entity": "BuyingReceiving",
+            "description": "Involvement in buying or receiving substances."
+        },
+        {
+            "entity": "CultivatingManufacturingPublishing",
+            "description": "Involvement in cultivating, manufacturing, or publishing."
+        },
+        {
+            "entity": "DistributingSelling",
+            "description": "Involvement in distributing or selling substances."
+        },
+        {
+            "entity": "ExploitingChildren",
+            "description": "Involvement in child exploitation."
+        },
+        {
+            "entity": "OtherGang",
+            "description": "Involvement in gang activities other than mentioned."
+        },
+        {
+            "entity": "JuvenileGang",
+            "description": "Involvement in juvenile gang activities."
+        },
+        {
+            "entity": "NoneUnknownGangInvolvement",
+            "description": "No or unknown involvement in gang activities."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEntryMethod",
+            "source_entity": "Survey",
+            "target_entity": "MethodOfEntry",
+            "description": "Indicates the method used for data entry in the survey."
+        },
+        {
+            "relationship": "entryMethodNoForce",
+            "source_entity": "MethodOfEntry",
+            "target_entity": "NoForce",
+            "description": "Specifies that no force was used in the method of entry."
+        },
+        {
+            "relationship": "entryMethodForce",
+            "source_entity": "MethodOfEntry",
+            "target_entity": "Force",
+            "description": "Specifies that force was used in the method of entry."
+        },
+        {
+            "relationship": "entryMethodMissingData",
+            "source_entity": "MethodOfEntry",
+            "target_entity": "MissingData",
+            "description": "Indicates that data is missing from the method of entry."
+        },
+        {
+            "relationship": "hasCriminalActivityType",
+            "source_entity": "Survey",
+            "target_entity": "CriminalActivityType",
+            "description": "Specifies different types of criminal activities reported in the survey."
+        },
+        {
+            "relationship": "criminalActivityBuyingReceiving",
+            "source_entity": "CriminalActivityType",
+            "target_entity": "BuyingReceiving",
+            "description": "Involvement in buying or receiving substances."
+        },
+        {
+            "relationship": "criminalActivityCultivatingManufacturingPublishing",
+            "source_entity": "CriminalActivityType",
+            "target_entity": "CultivatingManufacturingPublishing",
+            "description": "Involvement in cultivating, manufacturing, or publishing substances."
+        },
+        {
+            "relationship": "criminalActivityDistributingSelling",
+            "source_entity": "CriminalActivityType",
+            "target_entity": "DistributingSelling",
+            "description": "Involvement in distributing or selling substances."
+        },
+        {
+            "relationship": "criminalActivityExploitingChildren",
+            "source_entity": "CriminalActivityType",
+            "target_entity": "ExploitingChildren",
+            "description": "Involvement in exploiting children."
+        },
+        {
+            "relationship": "criminalActivityOtherGang",
+            "source_entity": "CriminalActivityType",
+            "target_entity": "OtherGang",
+            "description": "Involvement in other gang activities."
+        },
+        {
+            "relationship": "criminalActivityJuvenileGang",
+            "source_entity": "CriminalActivityType",
+            "target_entity": "JuvenileGang",
+            "description": "Involvement in juvenile gang activities."
+        },
+        {
+            "relationship": "criminalActivityNoneUnknownGangInvolvement",
+            "source_entity": "CriminalActivityType",
+            "target_entity": "NoneUnknownGangInvolvement",
+            "description": "No or unknown involvement in gang activities."
+        }
+    ]
+}

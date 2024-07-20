@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "MRJUseVaping",
+            "description": "Use of marijuana through vaping in the past 30 days."
+        },
+        {
+            "entity": "MRJUseDabbing",
+            "description": "Use of marijuana by dabbing waxes, shatter, or concentrate in the past 30 days."
+        },
+        {
+            "entity": "MRJUseEatingOrDrinking",
+            "description": "Use of marijuana by eating or drinking in the past 30 days."
+        },
+        {
+            "entity": "MRJUseMouthSprays",
+            "description": "Use of marijuana by drops, strips, lozenges, or sprays in the mouth in the past 30 days."
+        },
+        {
+            "entity": "MRJUseSkinApplications",
+            "description": "Use of marijuana by applying lotion, cream, or patch to the skin in the past 30 days."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUseMethod",
+            "source_entity": "SubstanceUse",
+            "target_entity": "MRJUseVaping",
+            "description": "Indicates the method of marijuana use through vaping."
+        },
+        {
+            "relationship": "hasUseMethod",
+            "source_entity": "SubstanceUse",
+            "target_entity": "MRJUseDabbing",
+            "description": "Indicates the method of marijuana use by dabbing waxes, shatter, or concentrate."
+        },
+        {
+            "relationship": "hasUseMethod",
+            "source_entity": "SubstanceUse",
+            "target_entity": "MRJUseEatingOrDrinking",
+            "description": "Indicates the method of marijuana use by eating or drinking."
+        },
+        {
+            "relationship": "hasUseMethod",
+            "source_entity": "SubstanceUse",
+            "target_entity": "MRJUseMouthSprays",
+            "description": "Indicates the method of marijuana use by drops, strips, lozenges, or sprays in the mouth."
+        },
+        {
+            "relationship": "hasUseMethod",
+            "source_entity": "SubstanceUse",
+            "target_entity": "MRJUseSkinApplications",
+            "description": "Indicates the method of marijuana use by applying lotion, cream, or patch to the skin."
+        }
+    ]
+}

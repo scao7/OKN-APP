@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "ArrestTransactionNumber",
+            "description": "A unique identifier for each arrest transaction."
+        },
+        {
+            "entity": "TotalArrestTransactions",
+            "description": "The total count of arrest transactions."
+        },
+        {
+            "entity": "ArrestDate",
+            "description": "The specific date when an arrest was made."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasArrestTransactionNumber",
+            "source_entity": "ArrestTransactionRecord",
+            "target_entity": "ArrestTransactionNumber",
+            "description": "Associates an arrest transaction record with its unique transaction number."
+        },
+        {
+            "relationship": "hasTotalArrestTransactions",
+            "source_entity": "ArrestTransactionSummary",
+            "target_entity": "TotalArrestTransactions",
+            "description": "Indicates the total count of arrest transactions from the survey data."
+        },
+        {
+            "relationship": "hasArrestDate",
+            "source_entity": "ArrestRecord",
+            "target_entity": "ArrestDate",
+            "description": "Connects an arrest record to the date on which the arrest occurred."
+        }
+    ]
+}

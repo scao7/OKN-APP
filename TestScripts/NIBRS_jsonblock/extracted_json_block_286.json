@@ -1,0 +1,90 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderNumber",
+            "description": "The number of offenders involved in a particular incident."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of cases for each offender number without any statistical weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each offender number."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases observed."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The count of cases with missing data."
+        },
+        {
+            "entity": "Statistics",
+            "description": "Statistical measures including mean, median, mode, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of the variable, in this case, numeric."
+        },
+        {
+            "entity": "Location",
+            "description": "The location of the data in the dataset width and decimal points."
+        },
+        {
+            "entity": "RangeOfMissingValues",
+            "description": "The range representing different missing values."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "OffenderNumber",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the raw count of cases for each offender number."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "OffenderNumber",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage representation of each offender number."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of cases observed in the survey."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the count of cases with missing data in the survey."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "Survey",
+            "target_entity": "Statistics",
+            "description": "Provides statistical measures including mean, median, mode, minimum, maximum, and standard deviation."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "DataPoint",
+            "target_entity": "VariableType",
+            "description": "Indicates the type of the variable, in this case, numeric."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "DataPoint",
+            "target_entity": "Location",
+            "description": "Indicates the location of the data in the dataset width and decimal points."
+        },
+        {
+            "relationship": "hasRangeOfMissingValues",
+            "source_entity": "DataPoint",
+            "target_entity": "RangeOfMissingValues",
+            "description": "Indicates the range representing different missing values."
+        }
+    ]
+}

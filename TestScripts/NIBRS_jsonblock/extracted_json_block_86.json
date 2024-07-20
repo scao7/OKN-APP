@@ -1,0 +1,156 @@
+{
+    "entities": [
+        {
+            "entity": "ExploitingChildren",
+            "description": "Criminal activity involving the exploitation of children."
+        },
+        {
+            "entity": "OtherGang",
+            "description": "Criminal activity associated with gangs not otherwise specified."
+        },
+        {
+            "entity": "JuvenileGang",
+            "description": "Criminal activity associated with juvenile gangs."
+        },
+        {
+            "entity": "UnknownGangInvolvement",
+            "description": "Cases where gang involvement is unknown."
+        },
+        {
+            "entity": "OperatingPromotingAssisting",
+            "description": "Criminal activity involving the operation, promotion, or assistance in illegal activities."
+        },
+        {
+            "entity": "PossessingConcealing",
+            "description": "Criminal activity involving possession or concealment of illegal items."
+        },
+        {
+            "entity": "TransportingTransmittingImporting",
+            "description": "Criminal activity involving the transportation, transmission, or importation of illegal items."
+        },
+        {
+            "entity": "UsingConsuming",
+            "description": "Criminal activity involving the use or consumption of illegal substances."
+        },
+        {
+            "entity": "IntentionalAbuseTorture",
+            "description": "Criminal activity involving intentional abuse or torture."
+        },
+        {
+            "entity": "SimpleGrossNeglect",
+            "description": "Cases of simple or gross neglect."
+        },
+        {
+            "entity": "OrganizedAbuse",
+            "description": "Cases of organized abuse."
+        },
+        {
+            "entity": "AnimalSexualAbuse",
+            "description": "Cases involving sexual abuse of animals."
+        },
+        {
+            "entity": "BuyingReceiving",
+            "description": "Criminal activity involving the buying or receiving of illegal items."
+        },
+        {
+            "entity": "CultivatingManufacturingPublishing",
+            "description": "Criminal activity involving the cultivation, manufacturing, or publishing of illegal items."
+        },
+        {
+            "entity": "DistributingSelling",
+            "description": "Criminal activity involving the distribution or selling of illegal items."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "ExploitingChildren",
+            "description": "Indicates that the criminal activity involves exploiting children."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "OtherGang",
+            "description": "Indicates that the criminal activity involves gangs not otherwise specified."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "JuvenileGang",
+            "description": "Indicates that the criminal activity involves juvenile gangs."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "UnknownGangInvolvement",
+            "description": "Indicates that the criminal activity involves gangs with unknown involvement."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "OperatingPromotingAssisting",
+            "description": "Indicates that the criminal activity involves operating, promoting, or assisting illegal activities."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "PossessingConcealing",
+            "description": "Indicates that the criminal activity involves possession or concealment of illegal items."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "TransportingTransmittingImporting",
+            "description": "Indicates that the criminal activity involves the transportation, transmission, or importation of illegal items."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "UsingConsuming",
+            "description": "Indicates that the criminal activity involves the use or consumption of illegal substances."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "IntentionalAbuseTorture",
+            "description": "Indicates that the criminal activity involves intentional abuse or torture."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "SimpleGrossNeglect",
+            "description": "Indicates that the criminal activity involves simple or gross neglect."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "OrganizedAbuse",
+            "description": "Indicates that the criminal activity involves organized abuse."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "AnimalSexualAbuse",
+            "description": "Indicates that the criminal activity involves the sexual abuse of animals."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "BuyingReceiving",
+            "description": "Indicates that the criminal activity involves the buying or receiving of illegal items."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "CultivatingManufacturingPublishing",
+            "description": "Indicates that the criminal activity involves the cultivation, manufacturing, or publishing of illegal items."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "CriminalActivity",
+            "target_entity": "DistributingSelling",
+            "description": "Indicates that the criminal activity involves the distribution or selling of illegal items."
+        }
+    ]
+}

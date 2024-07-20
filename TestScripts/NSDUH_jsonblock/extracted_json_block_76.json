@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "HealthInsuranceStatus",
+            "description": "The status regarding whether the respondent ever had health insurance."
+        },
+        {
+            "entity": "ReasonNoHealthInsurance",
+            "description": "Specifies the reason for never having had health insurance."
+        },
+        {
+            "entity": "ResponseEntered",
+            "description": "Indicates if a response was entered."
+        },
+        {
+            "entity": "ResponseNotEntered",
+            "description": "Indicates if a response was not entered."
+        },
+        {
+            "entity": "DontKnow",
+            "description": "Indicates if the respondent does not know the answer."
+        },
+        {
+            "entity": "Refused",
+            "description": "Indicates if the respondent refused to answer."
+        },
+        {
+            "entity": "BlankNoAnswer",
+            "description": "Indicates if the answer was left blank."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "Indicates if the question was legitimately skipped."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHealthInsuranceStatus",
+            "source_entity": "Respondent",
+            "target_entity": "HealthInsuranceStatus",
+            "description": "Indicates whether the respondent ever had health insurance."
+        },
+        {
+            "relationship": "hasReasonNoHealthInsurance",
+            "source_entity": "HealthInsuranceStatus",
+            "target_entity": "ReasonNoHealthInsurance",
+            "description": "Links the health insurance status to the reason for never having had health insurance."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "ReasonNoHealthInsurance",
+            "target_entity": "ResponseEntered",
+            "description": "Indicates that a reason for not having health insurance was entered."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "ReasonNoHealthInsurance",
+            "target_entity": "ResponseNotEntered",
+            "description": "Indicates that a reason for not having health insurance was not entered."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "ReasonNoHealthInsurance",
+            "target_entity": "DontKnow",
+            "description": "Indicates that the reason for not having health insurance is unknown."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "ReasonNoHealthInsurance",
+            "target_entity": "Refused",
+            "description": "Indicates that the respondent refused to provide a reason for not having health insurance."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "ReasonNoHealthInsurance",
+            "target_entity": "BlankNoAnswer",
+            "description": "Indicates that no reason for not having health insurance was provided."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "ReasonNoHealthInsurance",
+            "target_entity": "LegitimateSkip",
+            "description": "Indicates that the question about the reason for not having health insurance was legitimately skipped."
+        }
+    ]
+}

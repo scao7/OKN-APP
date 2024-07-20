@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "OpioidUseDisorderSeverity",
+            "description": "The severity of opioid use disorder among past year users."
+        },
+        {
+            "entity": "StimulantUseDisorderSeverity",
+            "description": "The severity of CNS stimulant use disorder among past year users."
+        },
+        {
+            "entity": "DrugUseDisorderSeverity",
+            "description": "The severity of drug use disorder among past year users."
+        },
+        {
+            "entity": "SubstanceUseDisorderSeverity",
+            "description": "The severity of any substance use disorder among past year users."
+        },
+        {
+            "entity": "MildDisorder",
+            "description": "Indicates a mild disorder based on a specified comment code."
+        },
+        {
+            "entity": "ModerateDisorder",
+            "description": "Indicates a moderate disorder based on a specified comment code."
+        },
+        {
+            "entity": "SevereDisorder",
+            "description": "Indicates a severe disorder based on a specified comment code."
+        },
+        {
+            "entity": "NoPastYearUseDisorder",
+            "description": "No past year use disorder based on all source variables."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSeverityLevel",
+            "source_entity": "OpioidUseDisorderSeverity",
+            "target_entity": "SeverityLevel",
+            "description": "Relates opioid use disorder severity to its level (mild, moderate, severe, or no past year use disorder)."
+        },
+        {
+            "relationship": "hasSeverityLevel",
+            "source_entity": "StimulantUseDisorderSeverity",
+            "target_entity": "SeverityLevel",
+            "description": "Relates CNS stimulant use disorder severity to its level (mild, moderate, severe, or no past year use disorder)."
+        },
+        {
+            "relationship": "hasSeverityLevel",
+            "source_entity": "DrugUseDisorderSeverity",
+            "target_entity": "SeverityLevel",
+            "description": "Relates drug use disorder severity to its level (mild, moderate, severe, or no past year use disorder)."
+        },
+        {
+            "relationship": "hasSeverityLevel",
+            "source_entity": "SubstanceUseDisorderSeverity",
+            "target_entity": "SeverityLevel",
+            "description": "Relates substance use disorder severity to its level (mild, moderate, severe, or no past year use disorder)."
+        },
+        {
+            "relationship": "definesSeverity",
+            "source_entity": "SeverityLevel",
+            "target_entity": "MildDisorder",
+            "description": "Defines the mild severity level of a use disorder."
+        },
+        {
+            "relationship": "definesSeverity",
+            "source_entity": "SeverityLevel",
+            "target_entity": "ModerateDisorder",
+            "description": "Defines the moderate severity level of a use disorder."
+        },
+        {
+            "relationship": "definesSeverity",
+            "source_entity": "SeverityLevel",
+            "target_entity": "SevereDisorder",
+            "description": "Defines the severe severity level of a use disorder."
+        },
+        {
+            "relationship": "definesSeverity",
+            "source_entity": "SeverityLevel",
+            "target_entity": "NoPastYearUseDisorder",
+            "description": "Defines the absence of a use disorder in the past year."
+        }
+    ]
+}

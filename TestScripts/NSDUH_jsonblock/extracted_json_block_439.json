@@ -1,0 +1,93 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 30 days, including today's date."
+        },
+        {
+            "entity": "SickOrInjuredDays",
+            "description": "Number of whole days missed from school due to sickness or injury."
+        },
+        {
+            "entity": "SchoolAbsenceReason",
+            "description": "The reason for missing school, specifically due to being sick or injured."
+        },
+        {
+            "entity": "FamilyCareAbsence",
+            "description": "Number of days missed due to staying home with a sick child or family member."
+        },
+        {
+            "entity": "MonthOfLastCigaretteUse",
+            "description": "The month when the respondent last smoked all or part of a cigarette."
+        },
+        {
+            "entity": "AgeOfLastCigaretteUse",
+            "description": "The age of the respondent when they last smoked cigarettes daily."
+        },
+        {
+            "entity": "YearOfLastCigaretteUse",
+            "description": "The year when the respondent last smoked cigarettes daily."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 30 days."
+        },
+        {
+            "relationship": "hasSickOrInjuredDays",
+            "source_entity": "Respondent",
+            "target_entity": "SickOrInjuredDays",
+            "description": "Indicates the number of days the respondent missed school due to sickness or injury."
+        },
+        {
+            "relationship": "hasAbsenceReason",
+            "source_entity": "SchoolAbsence",
+            "target_entity": "SchoolAbsenceReason",
+            "description": "Defines the reason for the school absence, such as being sick or injured."
+        },
+        {
+            "relationship": "hasFamilyCareAbsence",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyCareAbsence",
+            "description": "Indicates the number of days the respondent missed school due to caring for a sick child or family member."
+        },
+        {
+            "relationship": "hasMonthOfLastCigaretteUse",
+            "source_entity": "Respondent",
+            "target_entity": "MonthOfLastCigaretteUse",
+            "description": "Indicates the month when the respondent last smoked all or part of a cigarette."
+        },
+        {
+            "relationship": "hasAgeOfLastCigaretteUse",
+            "source_entity": "Respondent",
+            "target_entity": "AgeOfLastCigaretteUse",
+            "description": "Indicates how old the respondent was when they last smoked cigarettes daily."
+        },
+        {
+            "relationship": "hasYearOfLastCigaretteUse",
+            "source_entity": "Respondent",
+            "target_entity": "YearOfLastCigaretteUse",
+            "description": "Indicates the year when the respondent last smoked cigarettes daily."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "lastSmokedCigaretteInMonth",
+            "object": "MonthOfLastCigaretteUse"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "lastSmokedCigaretteAtAge",
+            "object": "AgeOfLastCigaretteUse"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "lastSmokedCigaretteInYear",
+            "object": "YearOfLastCigaretteUse"
+        }
+    ]
+}

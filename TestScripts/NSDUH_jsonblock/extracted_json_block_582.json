@@ -1,0 +1,97 @@
+{
+    "entities": [
+        {
+            "entity": "Youth General Practitioner/FAM MD",
+            "description": "Youth saw or talked to a general practitioner or family medical doctor about major depressive episode (MDE) during the past year."
+        },
+        {
+            "entity": "Youth Other MD",
+            "description": "Youth saw or talked to another type of medical doctor about MDE during the past year."
+        },
+        {
+            "entity": "Youth Psychologist",
+            "description": "Youth saw or talked to a psychologist about MDE during the past year."
+        },
+        {
+            "entity": "Youth Psychiatrist",
+            "description": "Youth saw or talked to a psychiatrist about MDE during the past year."
+        },
+        {
+            "entity": "Youth Social Worker",
+            "description": "Youth saw or talked to a social worker about MDE during the past year."
+        },
+        {
+            "entity": "Youth Counselor",
+            "description": "Youth saw or talked to a counselor about MDE during the past year."
+        },
+        {
+            "entity": "Youth Mental Health Professional",
+            "description": "Youth saw or talked to a mental health professional about MDE during the past year."
+        },
+        {
+            "entity": "Youth Nurse",
+            "description": "Youth saw or talked to a nurse or occupational therapist about MDE during the past year."
+        },
+        {
+            "entity": "Youth Religious Advisor",
+            "description": "Youth saw or talked to a religious advisor about MDE during the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth General Practitioner/FAM MD",
+            "description": "Relates the youth to interaction with a general practitioner or family medical doctor."
+        },
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth Other MD",
+            "description": "Relates the youth to interaction with another type of medical doctor."
+        },
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth Psychologist",
+            "description": "Relates the youth to interaction with a psychologist."
+        },
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth Psychiatrist",
+            "description": "Relates the youth to interaction with a psychiatrist."
+        },
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth Social Worker",
+            "description": "Relates the youth to interaction with a social worker."
+        },
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth Counselor",
+            "description": "Relates the youth to interaction with a counselor."
+        },
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth Mental Health Professional",
+            "description": "Relates the youth to interaction with a mental health professional."
+        },
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth Nurse",
+            "description": "Relates the youth to interaction with a nurse or occupational therapist."
+        },
+        {
+            "relationship": "hasInteractionWith",
+            "source_entity": "Youth",
+            "target_entity": "Youth Religious Advisor",
+            "description": "Relates the youth to interaction with a religious advisor."
+        }
+    ],
+    "triplets": []
+}

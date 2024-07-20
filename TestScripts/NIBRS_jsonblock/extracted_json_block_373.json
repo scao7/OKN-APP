@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "entity": "EthnicityOfArrestee",
+            "description": "The reported ethnicity of the arrestee."
+        },
+        {
+            "entity": "ResidentStatusOfArrestee",
+            "description": "The residency status (resident or nonresident) of the arrestee."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEthnicity",
+            "source_entity": "Arrestee",
+            "target_entity": "EthnicityOfArrestee",
+            "description": "Specifies the ethnicity of the arrestee."
+        },
+        {
+            "relationship": "hasResidentStatus",
+            "source_entity": "Arrestee",
+            "target_entity": "ResidentStatusOfArrestee",
+            "description": "Specifies the residency status of the arrestee."
+        }
+    ]
+}

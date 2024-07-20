@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "SurveySection",
+            "description": "A specific part or section of the survey, such as risk/availability."
+        },
+        {
+            "entity": "Substance",
+            "description": "Type of substance used, such as LSD, heroin, or cocaine."
+        },
+        {
+            "entity": "UseFrequency",
+            "description": "Frequency of substance use, such as once or twice, weekly, or monthly."
+        },
+        {
+            "entity": "RiskPerception",
+            "description": "The perceived risk of harm from using substances."
+        },
+        {
+            "entity": "SurveyResponse",
+            "description": "Participant's responses to survey questions, indicating their perception of risk."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isPartOf",
+            "source_entity": "SurveyResponse",
+            "target_entity": "SurveySection",
+            "description": "Indicates that the survey response is part of a specific section of the survey."
+        },
+        {
+            "relationship": "relatesToSubstance",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Substance",
+            "description": "Connects the survey response to a specific type of substance."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UseFrequency",
+            "description": "Connects the survey response to the frequency of substance use."
+        },
+        {
+            "relationship": "hasPerceivedRisk",
+            "source_entity": "SurveyResponse",
+            "target_entity": "RiskPerception",
+            "description": "Indicates the respondent's perception of risk or harm from substance use."
+        }
+    ]
+}

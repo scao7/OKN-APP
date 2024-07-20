@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "FinalEditedAge",
+            "description": "The final age variable, determined using the birthdate and interview date."
+        },
+        {
+            "entity": "NumberOfTimesMarried",
+            "description": "The number of times the respondent has been married."
+        },
+        {
+            "entity": "EverBeenInUSArmedForces",
+            "description": "Indicates whether the respondent has ever been in the United States Armed Forces."
+        },
+        {
+            "entity": "CurrentMilitaryStatus",
+            "description": "The current military status of the respondent, including reserve component or retired."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFinalEditedAge",
+            "source_entity": "Respondent",
+            "target_entity": "FinalEditedAge",
+            "description": "Relates the respondent to their final edited age category."
+        },
+        {
+            "relationship": "hasNumberOfTimesMarried",
+            "source_entity": "Respondent",
+            "target_entity": "NumberOfTimesMarried",
+            "description": "Indicates the number of times the respondent has been married."
+        },
+        {
+            "relationship": "hasEverBeenInUSArmedForces",
+            "source_entity": "Respondent",
+            "target_entity": "EverBeenInUSArmedForces",
+            "description": "Indicates whether the respondent has ever been in the US Armed Forces."
+        },
+        {
+            "relationship": "hasCurrentMilitaryStatus",
+            "source_entity": "Respondent",
+            "target_entity": "CurrentMilitaryStatus",
+            "description": "Relates the respondent to their current military status."
+        }
+    ]
+}

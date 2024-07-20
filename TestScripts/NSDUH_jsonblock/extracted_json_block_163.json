@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "FirstUseMonth",
+            "description": "The month in which the respondent first used heroin."
+        },
+        {
+            "entity": "FirstUseYear",
+            "description": "The year in which the respondent first used heroin."
+        },
+        {
+            "entity": "TimeSinceLastUse",
+            "description": "The duration since the respondent last used heroin."
+        },
+        {
+            "entity": "DaysUsedPast12Months",
+            "description": "Total number of days the respondent used heroin in the past 12 months."
+        },
+        {
+            "entity": "TrimmedUseIndicator",
+            "description": "Indicator for whether the number of days of heroin use has been trimmed relative to the 30-day frequency."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFirstUseMonth",
+            "source_entity": "Respondent",
+            "target_entity": "FirstUseMonth",
+            "description": "The respondent has a recorded month of first heroin use."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "Respondent",
+            "target_entity": "FirstUseYear",
+            "description": "The respondent has a recorded year of first heroin use."
+        },
+        {
+            "relationship": "hasTimeSinceLastUse",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastUse",
+            "description": "The respondent has a recorded duration since their last heroin use."
+        },
+        {
+            "relationship": "hasDaysUsedPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedPast12Months",
+            "description": "The respondent has a recorded number of days they used heroin in the past 12 months."
+        },
+        {
+            "relationship": "hasTrimmedUseIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "TrimmedUseIndicator",
+            "description": "The respondent has a recorded indicator for trimmed frequency of heroin use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Month",
+            "predicate": "isFirstUseMonth",
+            "object": "FirstUseMonth"
+        },
+        {
+            "subject": "Year",
+            "predicate": "isFirstUseYear",
+            "object": "FirstUseYear"
+        },
+        {
+            "subject": "Past 30 days",
+            "predicate": "isTimeSinceLastUse",
+            "object": "TimeSinceLastUse"
+        },
+        {
+            "subject": "Total # of Days used Heroin in past 12 months",
+            "predicate": "isDaysUsedPast12Months",
+            "object": "DaysUsedPast12Months"
+        },
+        {
+            "subject": "Trimming Indicator",
+            "predicate": "isTrimmedUseIndicator",
+            "object": "TrimmedUseIndicator"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "DiazepamProductsPastYearMisuse",
+            "description": "Past year misuse of diazepam products including Valium, generic diazepam, or other tranquilizers containing diazepam."
+        },
+        {
+            "entity": "MuscleRelaxantsPastYearMisuse",
+            "description": "Past year misuse of muscle relaxants like Flexeril and Soma."
+        },
+        {
+            "entity": "CyclobenzaprineProductsPastYearMisuse",
+            "description": "Past year misuse of cyclobenzaprine products including Flexeril."
+        },
+        {
+            "entity": "SomaProductsPastYearMisuse",
+            "description": "Past year misuse of Soma or other muscle relaxants containing carisoprodol."
+        },
+        {
+            "entity": "OtherTranquilizerProductsPastYearMisuse",
+            "description": "Past year misuse of other tranquilizers including benzodiazepine tranquilizers, muscle relaxants, or over-the-counter products."
+        },
+        {
+            "entity": "Frequency",
+            "description": "Frequency of occurrence of responses."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage of occurrence of responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMisused",
+            "source_entity": "Respondent",
+            "target_entity": "DiazepamProductsPastYearMisuse",
+            "description": "Indicates whether the respondent has misused diazepam products in the past year."
+        },
+        {
+            "relationship": "hasMisused",
+            "source_entity": "Respondent",
+            "target_entity": "MuscleRelaxantsPastYearMisuse",
+            "description": "Indicates whether the respondent has misused muscle relaxants in the past year."
+        },
+        {
+            "relationship": "hasMisused",
+            "source_entity": "Respondent",
+            "target_entity": "CyclobenzaprineProductsPastYearMisuse",
+            "description": "Indicates whether the respondent has misused cyclobenzaprine products in the past year."
+        },
+        {
+            "relationship": "hasMisused",
+            "source_entity": "Respondent",
+            "target_entity": "SomaProductsPastYearMisuse",
+            "description": "Indicates whether the respondent has misused Soma products in the past year."
+        },
+        {
+            "relationship": "hasMisused",
+            "source_entity": "Respondent",
+            "target_entity": "OtherTranquilizerProductsPastYearMisuse",
+            "description": "Indicates whether the respondent has misused other tranquilizers in the past year."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "MisuseCategory",
+            "target_entity": "Frequency",
+            "description": "Relates the misuse category to the frequency of responses."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "MisuseCategory",
+            "target_entity": "Percentage",
+            "description": "Relates the misuse category to the percentage of responses."
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyDate",
+            "description": "The specific date when the survey was conducted."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of survey responses without any weighting adjustments."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of the unweighted frequency out of the total responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyDate",
+            "source_entity": "Survey",
+            "target_entity": "SurveyDate",
+            "description": "Relates the survey to the specific date it was conducted."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyDate",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the number of responses collected on that survey date."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "UnweightedFrequency",
+            "target_entity": "Percentage",
+            "description": "Represents the unweighted frequency as a percentage of the total responses."
+        }
+    ]
+}

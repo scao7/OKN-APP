@@ -1,0 +1,71 @@
+{
+    "entities": [
+        {
+            "entity": "ALCDAYS",
+            "description": "Number of days had one or more drinks past 30 days."
+        },
+        {
+            "entity": "AL30EST",
+            "description": "Best estimate of number of days had one or more drinks."
+        },
+        {
+            "entity": "ALCUS30D",
+            "description": "Usual number of drinks per day past 30 days."
+        },
+        {
+            "entity": "RevisionIndicator",
+            "description": "Revision indicator for ALCDAYS, edited for consistency with other measures."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasALCDAYS",
+            "source_entity": "Survey",
+            "target_entity": "ALCDAYS",
+            "description": "Relates the survey to the number of days the respondent had at least one drink in the past 30 days."
+        },
+        {
+            "relationship": "hasAL30EST",
+            "source_entity": "Survey",
+            "target_entity": "AL30EST",
+            "description": "Relates the survey to the best estimate of days the respondent had one or more drinks."
+        },
+        {
+            "relationship": "hasALCUS30D",
+            "source_entity": "Survey",
+            "target_entity": "ALCUS30D",
+            "description": "Relates the survey to the usual number of drinks per day the respondent had in the past 30 days."
+        },
+        {
+            "relationship": "isConsistentWith",
+            "source_entity": "RevisionIndicator",
+            "target_entity": [
+                "ALCYRTOT",
+                "ALCBNG30D"
+            ],
+            "description": "Indicates that revisions to ALCDAYS were made to ensure consistency with other alcohol consumption measures."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Survey",
+            "predicate": "includes",
+            "object": "ALCDAYS"
+        },
+        {
+            "subject": "Survey",
+            "predicate": "includes",
+            "object": "AL30EST"
+        },
+        {
+            "subject": "Survey",
+            "predicate": "includes",
+            "object": "ALCUS30D"
+        },
+        {
+            "subject": "ALCDAYS",
+            "predicate": "hasRevisionIndicator",
+            "object": "RevisionIndicator"
+        }
+    ]
+}

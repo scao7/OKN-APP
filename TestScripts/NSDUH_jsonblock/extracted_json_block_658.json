@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "Substance",
+            "description": "Any of the listed substances in the survey."
+        },
+        {
+            "entity": "SubstanceType",
+            "description": "The category or specific type of a substance, such as 'OTC' (over-the-counter) or specific stimulant names."
+        },
+        {
+            "entity": "Medication",
+            "description": "Specific medications and their uses, including those for pain, mental health, or other diagnoses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstance",
+            "source_entity": "Survey",
+            "target_entity": "Substance",
+            "description": "Indicates the survey includes references to various substances."
+        },
+        {
+            "relationship": "subtypeOf",
+            "source_entity": "Substance",
+            "target_entity": "SubstanceType",
+            "description": "Specifies the type or category of the substance."
+        },
+        {
+            "relationship": "includesMedication",
+            "source_entity": "Substance",
+            "target_entity": "Medication",
+            "description": "Lists the specific medications mentioned as substances."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Yaba",
+            "predicate": "is a type of",
+            "object": "Substance"
+        },
+        {
+            "subject": "Primatene Mist",
+            "predicate": "is a type of",
+            "object": "Substance"
+        },
+        {
+            "subject": "Amphetamine/dextroamphetamine salts",
+            "predicate": "is a type of",
+            "object": "Substance"
+        },
+        {
+            "subject": "Actron, Ketoprofen, Orudis, Oruvail",
+            "predicate": "is a type of",
+            "object": "Medication"
+        },
+        {
+            "subject": "Ritalin LA",
+            "predicate": "is a type of",
+            "object": "Substance"
+        },
+        {
+            "subject": "Methadone",
+            "predicate": "is a type of",
+            "object": "Substance"
+        }
+    ]
+}

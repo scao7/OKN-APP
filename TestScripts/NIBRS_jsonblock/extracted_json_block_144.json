@@ -1,0 +1,126 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseCategory",
+            "description": "Categories that respondents can choose from in the survey."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of responses without any statistical weighting applied."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each response category in the survey."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "Total number of cases considered valid for analysis after exclusions."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of all cases, including both valid and invalid."
+        },
+        {
+            "entity": "Mean",
+            "description": "The average value for a variable across all respondents."
+        },
+        {
+            "entity": "VariableType",
+            "description": "Describes the type of the variable, e.g., numeric."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "A measure of the amount of variation or dispersion in a set of values."
+        },
+        {
+            "entity": "MinimumValue",
+            "description": "The smallest value in a set of responses."
+        },
+        {
+            "entity": "MaximumValue",
+            "description": "The largest value in a set of responses."
+        },
+        {
+            "entity": "Location",
+            "description": "The data column location of the variable within a dataset."
+        },
+        {
+            "entity": "RangeOfMissingValues",
+            "description": "Specified range for values that are considered missing in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasResponseCategory",
+            "source_entity": "SurveyQuestion",
+            "target_entity": "ResponseCategory",
+            "description": "Associates a survey question with its possible response categories."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the raw count of responses for each category."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "ResponseCategory",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage representation of each response category."
+        },
+        {
+            "relationship": "comprisesValidCases",
+            "source_entity": "Dataset",
+            "target_entity": "ValidCases",
+            "description": "Specifies the number of valid cases within the dataset."
+        },
+        {
+            "relationship": "comprisesTotalCases",
+            "source_entity": "Dataset",
+            "target_entity": "TotalCases",
+            "description": "Specifies the total number of cases within the dataset."
+        },
+        {
+            "relationship": "hasMean",
+            "source_entity": "Variable",
+            "target_entity": "Mean",
+            "description": "Indicates the average value for a variable."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "VariableType",
+            "description": "Defines the type of the variable, such as numeric."
+        },
+        {
+            "relationship": "hasStandardDeviation",
+            "source_entity": "Variable",
+            "target_entity": "StandardDeviation",
+            "description": "Indicates the measure of variation for the variable."
+        },
+        {
+            "relationship": "hasMinimumValue",
+            "source_entity": "Variable",
+            "target_entity": "MinimumValue",
+            "description": "Indicates the smallest value observed for the variable."
+        },
+        {
+            "relationship": "hasMaximumValue",
+            "source_entity": "Variable",
+            "target_entity": "MaximumValue",
+            "description": "Indicates the largest value observed for the variable."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "Variable",
+            "target_entity": "Location",
+            "description": "Specifies the data column location for the variable."
+        },
+        {
+            "relationship": "definesRangeOfMissingValues",
+            "source_entity": "Variable",
+            "target_entity": "RangeOfMissingValues",
+            "description": "Identifies the range considered for missing values in the variable."
+        }
+    ]
+}

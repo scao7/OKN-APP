@@ -1,0 +1,138 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "A unique identifier for a specific drug mentioned in the survey."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug mentioned in the survey, which can include over-the-counter medications and other substances."
+        },
+        {
+            "entity": "NumberTimesMentioned",
+            "description": "The number of times a particular drug is mentioned in the 'OTHER, Specifies' category."
+        },
+        {
+            "entity": "PercentageSpecified",
+            "description": "The percentage that a specific drug constitutes out of all drugs specified in this context."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Survey",
+            "target_entity": "DrugCode",
+            "description": "Relates the survey to the unique identifier for a specific drug."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "DrugCode",
+            "target_entity": "DrugName",
+            "description": "Defines the name of the drug for the associated drug code."
+        },
+        {
+            "relationship": "hasNumberTimesMentioned",
+            "source_entity": "DrugName",
+            "target_entity": "NumberTimesMentioned",
+            "description": "Indicates how many times the drug is mentioned in the 'OTHER, Specifies' category."
+        },
+        {
+            "relationship": "hasPercentageSpecified",
+            "source_entity": "DrugName",
+            "target_entity": "PercentageSpecified",
+            "description": "Indicates the percentage of all drugs specified that the drug accounts for."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "425",
+            "predicate": "hasDrugName",
+            "object": "Advil <OTC>"
+        },
+        {
+            "subject": "425",
+            "predicate": "hasNumberTimesMentioned",
+            "object": "69"
+        },
+        {
+            "subject": "425",
+            "predicate": "hasPercentageSpecified",
+            "object": "3.07"
+        },
+        {
+            "subject": "434",
+            "predicate": "hasDrugName",
+            "object": "Vicodin"
+        },
+        {
+            "subject": "434",
+            "predicate": "hasNumberTimesMentioned",
+            "object": "2"
+        },
+        {
+            "subject": "434",
+            "predicate": "hasPercentageSpecified",
+            "object": "0.09"
+        },
+        {
+            "subject": "450",
+            "predicate": "hasDrugName",
+            "object": "Acetaminophen, incl. non-Tylenol brands <OTC>"
+        },
+        {
+            "subject": "450",
+            "predicate": "hasNumberTimesMentioned",
+            "object": "5"
+        },
+        {
+            "subject": "450",
+            "predicate": "hasPercentageSpecified",
+            "object": "0.22"
+        },
+        {
+            "subject": "503",
+            "predicate": "hasDrugName",
+            "object": "Other aerosol sprays"
+        },
+        {
+            "subject": "503",
+            "predicate": "hasNumberTimesMentioned",
+            "object": "19"
+        },
+        {
+            "subject": "503",
+            "predicate": "hasPercentageSpecified",
+            "object": "0.85"
+        },
+        {
+            "subject": "508",
+            "predicate": "hasDrugName",
+            "object": "Nitrous oxide, 'whippets,' dentist gas"
+        },
+        {
+            "subject": "508",
+            "predicate": "hasNumberTimesMentioned",
+            "object": "16"
+        },
+        {
+            "subject": "508",
+            "predicate": "hasPercentageSpecified",
+            "object": "0.71"
+        },
+        {
+            "subject": "553",
+            "predicate": "hasDrugName",
+            "object": "Pixie sticks"
+        },
+        {
+            "subject": "553",
+            "predicate": "hasNumberTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "553",
+            "predicate": "hasPercentageSpecified",
+            "object": "0.04"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "MethamphetamineUseDisorder",
+            "description": "Classification of methamphetamine use disorder based on the number of criteria met."
+        },
+        {
+            "entity": "UsingMethamphetamine",
+            "description": "Consumption of methamphetamine, either intended or repeated use."
+        },
+        {
+            "entity": "PhysicalHurt",
+            "description": "Increased chances of getting physically hurt due to methamphetamine use."
+        },
+        {
+            "entity": "FamilyProblems",
+            "description": "Problems or arguments with family caused or worsened by the use of substances."
+        },
+        {
+            "entity": "OccupationalImpact",
+            "description": "Impact on work, school, or home due to substance use, such as job loss or poor academic performance."
+        },
+        {
+            "entity": "EmotionsAndMentalHealth",
+            "description": "Problems with emotions, mental health, or physical health due to substance use."
+        },
+        {
+            "entity": "MethamphetamineEffects",
+            "description": "Effects or issues caused by the use of methamphetamine, such as feeling effects or needing more to feel the desired effects."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "classifies",
+            "source_entity": "Respondent",
+            "target_entity": "MethamphetamineUseDisorder",
+            "description": "Determines the classification of methamphetamine use disorder based on criteria met by the respondent."
+        },
+        {
+            "relationship": "uses",
+            "source_entity": "Respondent",
+            "target_entity": "UsingMethamphetamine",
+            "description": "Indicates that the respondent is consuming or has consumed methamphetamine."
+        },
+        {
+            "relationship": "increasesRisk",
+            "source_entity": "UsingMethamphetamine",
+            "target_entity": "PhysicalHurt",
+            "description": "Using methamphetamine increases the likelihood of physical harm."
+        },
+        {
+            "relationship": "worsens",
+            "source_entity": "UsingMethamphetamine",
+            "target_entity": "FamilyProblems",
+            "description": "Continued use of methamphetamine worsens family-related problems."
+        },
+        {
+            "relationship": "impacts",
+            "source_entity": "UsingMethamphetamine",
+            "target_entity": "OccupationalImpact",
+            "description": "Methamphetamine use affects work, school, or home responsibilities."
+        },
+        {
+            "relationship": "causes",
+            "source_entity": "UsingMethamphetamine",
+            "target_entity": "EmotionsAndMentalHealth",
+            "description": "Methamphetamine use causes issues with emotions and mental health."
+        },
+        {
+            "relationship": "experiences",
+            "source_entity": "Respondent",
+            "target_entity": "MethamphetamineEffects",
+            "description": "Respondent experiences effects or issues related to methamphetamine use."
+        }
+    ]
+}

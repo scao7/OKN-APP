@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of occurrences of each response category without any adjustment."
+        },
+        {
+            "entity": "ResponseCategory",
+            "description": "The label representing each unique response to survey questions."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data points that were not provided or left unanswered by participants."
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "The total number of survey responses collected for that particular item."
+        },
+        {
+            "entity": "Statistics",
+            "description": "Statistical measures such as mean, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of data collected; in this case, it is numeric."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid responses excluding any missing data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Associates each response category with its respective count."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the count or proportion of missing data in the survey."
+        },
+        {
+            "relationship": "hasTotalResponses",
+            "source_entity": "Survey",
+            "target_entity": "TotalResponses",
+            "description": "Reflects the total number of responses for the survey item."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "SurveyResults",
+            "target_entity": "Statistics",
+            "description": "Links the survey results to their respective statistical measures."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "SurveyItem",
+            "target_entity": "VariableType",
+            "description": "Defines the type of variable for the survey item."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Survey",
+            "target_entity": "ValidCases",
+            "description": "Indicates the number of valid responses excluding any missing data."
+        }
+    ]
+}

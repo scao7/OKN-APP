@@ -1,0 +1,72 @@
+{
+    "entities": [
+        {
+            "entity": "LSD",
+            "description": "A hallucinogenic drug that is measured in terms of its availability."
+        },
+        {
+            "entity": "Cocaine",
+            "description": "A stimulant drug often subject to abuse, measured in terms of its availability."
+        },
+        {
+            "entity": "Crack",
+            "description": "A form of cocaine that is smoked, measured in terms of its availability."
+        },
+        {
+            "entity": "Heroin",
+            "description": "An opioid drug measured in terms of its availability."
+        },
+        {
+            "entity": "DrugAvailabilityDifficulty",
+            "description": "The perceived difficulty of obtaining a specified drug (LSD, Cocaine, Crack, or Heroin)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAvailabilityDifficulty",
+            "source_entity": "LSD",
+            "target_entity": "DrugAvailabilityDifficulty",
+            "description": "Relates LSD to the difficulty of obtaining the drug."
+        },
+        {
+            "relationship": "hasAvailabilityDifficulty",
+            "source_entity": "Cocaine",
+            "target_entity": "DrugAvailabilityDifficulty",
+            "description": "Relates Cocaine to the difficulty of obtaining the drug."
+        },
+        {
+            "relationship": "hasAvailabilityDifficulty",
+            "source_entity": "Crack",
+            "target_entity": "DrugAvailabilityDifficulty",
+            "description": "Relates Crack to the difficulty of obtaining the drug."
+        },
+        {
+            "relationship": "hasAvailabilityDifficulty",
+            "source_entity": "Heroin",
+            "target_entity": "DrugAvailabilityDifficulty",
+            "description": "Relates Heroin to the difficulty of obtaining the drug."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "LSD",
+            "predicate": "how difficult to get",
+            "object": "Distribution of respondents' answers"
+        },
+        {
+            "subject": "Cocaine",
+            "predicate": "how difficult to get",
+            "object": "Distribution of respondents' answers"
+        },
+        {
+            "subject": "Crack",
+            "predicate": "how difficult to get",
+            "object": "Distribution of respondents' answers"
+        },
+        {
+            "subject": "Heroin",
+            "predicate": "how difficult to get",
+            "object": "Distribution of respondents' answers"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "SyntheticMarijuanaUsage",
+            "description": "Indicates whether the respondent has ever used synthetic marijuana or fake weed."
+        },
+        {
+            "entity": "LastSyntheticMarijuanaUsage",
+            "description": "The time period since the respondent last used synthetic marijuana or fake weed."
+        },
+        {
+            "entity": "SyntheticStimulantUsage",
+            "description": "Indicates whether the respondent has ever used synthetic stimulants such as bath salts or flakka."
+        },
+        {
+            "entity": "LastSyntheticStimulantUsage",
+            "description": "The time period since the respondent last used synthetic stimulants such as bath salts or flakka."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSyntheticMarijuanaUsage",
+            "source_entity": "Respondent",
+            "target_entity": "SyntheticMarijuanaUsage",
+            "description": "Indicates whether the respondent has ever used synthetic marijuana or fake weed."
+        },
+        {
+            "relationship": "hasLastSyntheticMarijuanaUsage",
+            "source_entity": "Respondent",
+            "target_entity": "LastSyntheticMarijuanaUsage",
+            "description": "The time period since the respondent last used synthetic marijuana or fake weed."
+        },
+        {
+            "relationship": "hasSyntheticStimulantUsage",
+            "source_entity": "Respondent",
+            "target_entity": "SyntheticStimulantUsage",
+            "description": "Indicates whether the respondent has ever used synthetic stimulants such as bath salts or flakka."
+        },
+        {
+            "relationship": "hasLastSyntheticStimulantUsage",
+            "source_entity": "Respondent",
+            "target_entity": "LastSyntheticStimulantUsage",
+            "description": "The time period since the respondent last used synthetic stimulants such as bath salts or flakka."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "has ever used",
+            "object": "Synthetic Marijuana"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has time since last used",
+            "object": "Synthetic Marijuana"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has ever used",
+            "object": "Synthetic Stimulants"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has time since last used",
+            "object": "Synthetic Stimulants"
+        }
+    ]
+}

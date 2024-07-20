@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "CrackRecencyImputationIndicator",
+            "description": "Indicator of the recency of crack use based on questionnaire data or statistically imputed data."
+        },
+        {
+            "entity": "HeroinRecencyImputationIndicator",
+            "description": "Indicator of the recency of heroin use based on questionnaire data or statistically imputed data."
+        },
+        {
+            "entity": "HeroinRecencyImputationRevised",
+            "description": "Revised indicator for the recency of heroin use within various time frames."
+        },
+        {
+            "entity": "HallucinogenRecencyImputationIndicator",
+            "description": "Indicator of the recency of hallucinogen use based on questionnaire data or statistically imputed data."
+        },
+        {
+            "entity": "HallucinogenRecencyImputationRevised",
+            "description": "Revised indicator for the recency of hallucinogen use within various time frames."
+        },
+        {
+            "entity": "LSDRecencyImputationRevised",
+            "description": "Revised indicator for the recency of LSD use within various time frames."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCrackRecencyImputation",
+            "source_entity": "Respondent",
+            "target_entity": "CrackRecencyImputationIndicator",
+            "description": "Indicates the recency of crack use for the respondent utilizing either questionnaire data or statistically imputed data."
+        },
+        {
+            "relationship": "hasHeroinRecencyImputation",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinRecencyImputationIndicator",
+            "description": "Indicates the recency of heroin use for the respondent using either questionnaire data or statistically imputed data."
+        },
+        {
+            "relationship": "hasRevisedHeroinRecency",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinRecencyImputationRevised",
+            "description": "Provides updated information about the recency of heroin use based on various time periods."
+        },
+        {
+            "relationship": "hasHallucinogenRecencyImputation",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogenRecencyImputationIndicator",
+            "description": "Indicates the recency of hallucinogen use for the respondent utilizing either questionnaire data or statistically imputed data."
+        },
+        {
+            "relationship": "hasRevisedHallucinogenRecency",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogenRecencyImputationRevised",
+            "description": "Provides updated information about the recency of hallucinogen use based on various time periods."
+        },
+        {
+            "relationship": "hasRevisedLSDRecency",
+            "source_entity": "Respondent",
+            "target_entity": "LSDRecencyImputationRevised",
+            "description": "Provides updated information about the recency of LSD use based on various time periods."
+        }
+    ]
+}

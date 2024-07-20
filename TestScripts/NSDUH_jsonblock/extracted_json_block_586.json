@@ -1,0 +1,108 @@
+{
+    "entities": [
+        {
+            "entity": "UnmetTreatmentNeed_Insurance",
+            "description": "Needing mental health treatment but health insurance did not cover enough of the costs."
+        },
+        {
+            "entity": "UnmetTreatmentNeed_DidNotKnowWhere",
+            "description": "Needing mental health treatment but did not know how or where to get treatment."
+        },
+        {
+            "entity": "UnmetTreatmentNeed_CouldNotFindProvider",
+            "description": "Needing mental health treatment but could not find preferred provider."
+        },
+        {
+            "entity": "UnmetTreatmentNeed_NoOpenings",
+            "description": "Needing mental health treatment but there were no openings with preferred provider."
+        },
+        {
+            "entity": "UnmetTreatmentNeed_ProblemsWithServices",
+            "description": "Needing mental health treatment but had problems with transportation, childcare, or getting appointments at convenient times."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnmetTreatmentNeedInsurance",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetTreatmentNeed_Insurance",
+            "description": "Indicates that the respondent needed mental health treatment but health insurance coverage was insufficient."
+        },
+        {
+            "relationship": "hasUnmetTreatmentNeedDidNotKnowWhere",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetTreatmentNeed_DidNotKnowWhere",
+            "description": "Indicates that the respondent needed mental health treatment but did not know how or where to get treatment."
+        },
+        {
+            "relationship": "hasUnmetTreatmentNeedCouldNotFindProvider",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetTreatmentNeed_CouldNotFindProvider",
+            "description": "Indicates that the respondent needed mental health treatment but could not find a preferred provider."
+        },
+        {
+            "relationship": "hasUnmetTreatmentNeedNoOpenings",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetTreatmentNeed_NoOpenings",
+            "description": "Indicates that the respondent needed mental health treatment but there were no openings with the preferred provider."
+        },
+        {
+            "relationship": "hasUnmetTreatmentNeedProblemsWithServices",
+            "source_entity": "Respondent",
+            "target_entity": "UnmetTreatmentNeed_ProblemsWithServices",
+            "description": "Indicates that the respondent needed mental health treatment but faced issues like transportation, childcare, or scheduling."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Unmet MH TRMT NEED: HEALTH INSURANCE DID NOT COVER ENOUGH",
+            "predicate": "hasFrequency",
+            "object": "942"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: HEALTH INSURANCE DID NOT COVER ENOUGH",
+            "predicate": "hasPercentage",
+            "object": "1.59"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: DID NOT KNOW HOW/WHERE TO GET TREATMENT",
+            "predicate": "hasFrequency",
+            "object": "1761"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: DID NOT KNOW HOW/WHERE TO GET TREATMENT",
+            "predicate": "hasPercentage",
+            "object": "2.98"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: COULD NOT FIND PREFERRED PROVIDER",
+            "predicate": "hasFrequency",
+            "object": "1365"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: COULD NOT FIND PREFERRED PROVIDER",
+            "predicate": "hasPercentage",
+            "object": "2.31"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: NO OPENINGS WITH PREFERRED PROVIDER",
+            "predicate": "hasFrequency",
+            "object": "479"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: NO OPENINGS WITH PREFERRED PROVIDER",
+            "predicate": "hasPercentage",
+            "object": "0.81"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: PROB W/TRANS, CHILD CARE, APPT TIMES",
+            "predicate": "hasFrequency",
+            "object": "864"
+        },
+        {
+            "subject": "Unmet MH TRMT NEED: PROB W/TRANS, CHILD CARE, APPT TIMES",
+            "predicate": "hasPercentage",
+            "object": "1.46"
+        }
+    ]
+}

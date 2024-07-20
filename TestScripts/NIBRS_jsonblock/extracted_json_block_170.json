@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of survey responses without statistical weighting."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The amount of data that is missing from the survey responses."
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "The total number of responses received in the survey."
+        },
+        {
+            "entity": "CaseStatistics",
+            "description": "Statistical data related to the survey cases such as mean, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "ResponseLabel",
+            "description": "Labels for response categories in survey metadata."
+        },
+        {
+            "entity": "VariableType",
+            "description": "Specifies whether the variable is numeric or categorical."
+        },
+        {
+            "entity": "RangeOfMissingValues",
+            "description": "The range of values indicating missing responses."
+        },
+        {
+            "entity": "SurveyVariableLocation",
+            "description": "The location information for a survey variable in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates survey responses to their unweighted frequencies."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Relates the survey to its proportion of missing data."
+        },
+        {
+            "relationship": "hasTotalResponses",
+            "source_entity": "Survey",
+            "target_entity": "TotalResponses",
+            "description": "Indicates the total number of responses received in the survey."
+        },
+        {
+            "relationship": "includesCaseStatistics",
+            "source_entity": "Survey",
+            "target_entity": "CaseStatistics",
+            "description": "Includes statistical data on survey cases such as mean, minimum, and maximum values."
+        },
+        {
+            "relationship": "hasResponseLabel",
+            "source_entity": "SurveyResponse",
+            "target_entity": "ResponseLabel",
+            "description": "Relates survey responses to their categorical labels."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "SurveyVariable",
+            "target_entity": "VariableType",
+            "description": "Specifies the type of the survey variable."
+        },
+        {
+            "relationship": "hasRangeOfMissingValues",
+            "source_entity": "Survey",
+            "target_entity": "RangeOfMissingValues",
+            "description": "Indicates the range of values that denote missing data."
+        },
+        {
+            "relationship": "hasSurveyVariableLocation",
+            "source_entity": "SurveyVariable",
+            "target_entity": "SurveyVariableLocation",
+            "description": "Specifies the location information for a survey variable in the dataset."
+        }
+    ]
+}

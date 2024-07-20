@@ -1,0 +1,110 @@
+{
+    "entities": [
+        {
+            "entity": "HeroinWithdrawalSymptoms",
+            "description": "Symptoms experienced due to heroin withdrawal."
+        },
+        {
+            "entity": "YawningSymptom",
+            "description": "Yawning as a symptom of heroin withdrawal experienced in the past 12 months."
+        },
+        {
+            "entity": "FeverSymptom",
+            "description": "Having a fever as a symptom of heroin withdrawal experienced in the past 12 months."
+        },
+        {
+            "entity": "TroubleSleepingSymptom",
+            "description": "Having trouble sleeping as a symptom of heroin withdrawal experienced in the past 12 months."
+        },
+        {
+            "entity": "AvoidWithdrawal",
+            "description": "Using heroin or another drug to avoid heroin withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "Respondent",
+            "description": "The individual providing responses to the survey."
+        },
+        {
+            "entity": "Past12Months",
+            "description": "The time frame representing the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHeroinWithdrawalSymptoms",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinWithdrawalSymptoms",
+            "description": "Indicates that the respondent experienced heroin withdrawal symptoms."
+        },
+        {
+            "relationship": "includesYawningSymptom",
+            "source_entity": "HeroinWithdrawalSymptoms",
+            "target_entity": "YawningSymptom",
+            "description": "Associates yawning with heroin withdrawal symptoms."
+        },
+        {
+            "relationship": "includesFeverSymptom",
+            "source_entity": "HeroinWithdrawalSymptoms",
+            "target_entity": "FeverSymptom",
+            "description": "Associates having a fever with heroin withdrawal symptoms."
+        },
+        {
+            "relationship": "includesTroubleSleepingSymptom",
+            "source_entity": "HeroinWithdrawalSymptoms",
+            "target_entity": "TroubleSleepingSymptom",
+            "description": "Associates trouble sleeping with heroin withdrawal symptoms."
+        },
+        {
+            "relationship": "indicatesAvoidWithdrawal",
+            "source_entity": "Respondent",
+            "target_entity": "AvoidWithdrawal",
+            "description": "Indicates whether the respondent used heroin or another drug to avoid withdrawal symptoms in the past 12 months."
+        },
+        {
+            "relationship": "pertainsToTimeFrame",
+            "source_entity": "YawningSymptom",
+            "target_entity": "Past12Months",
+            "description": "Specifies the time frame (past 12 months) during which yawning was experienced as a withdrawal symptom."
+        },
+        {
+            "relationship": "pertainsToTimeFrame",
+            "source_entity": "FeverSymptom",
+            "target_entity": "Past12Months",
+            "description": "Specifies the time frame (past 12 months) during which having a fever was experienced as a withdrawal symptom."
+        },
+        {
+            "relationship": "pertainsToTimeFrame",
+            "source_entity": "TroubleSleepingSymptom",
+            "target_entity": "Past12Months",
+            "description": "Specifies the time frame (past 12 months) during which trouble sleeping was experienced as a withdrawal symptom."
+        },
+        {
+            "relationship": "pertainsToTimeFrame",
+            "source_entity": "AvoidWithdrawal",
+            "target_entity": "Past12Months",
+            "description": "Specifies the time frame (past 12 months) during which the respondent used heroin or another drug to avoid withdrawal symptoms."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "hasHeroinWithdrawalSymptoms",
+            "object": "YawningSymptom"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasHeroinWithdrawalSymptoms",
+            "object": "FeverSymptom"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasHeroinWithdrawalSymptoms",
+            "object": "TroubleSleepingSymptom"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "indicatesAvoidWithdrawal",
+            "object": "AvoidWithdrawal"
+        }
+    ]
+}

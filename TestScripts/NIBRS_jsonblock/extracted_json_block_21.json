@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "CountryDivision",
+            "description": "A categorization of the country into specific geographical regions, such as New England, Middle Atlantic, etc."
+        },
+        {
+            "entity": "CountryRegion",
+            "description": "A broader categorization of the country into regions such as North East, North Central, etc."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw, unadjusted count of cases within each category."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of cases within each category."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "containsDivision",
+            "source_entity": "Country",
+            "target_entity": "CountryDivision",
+            "description": "Indicates that a country is divided into multiple smaller divisions for survey purposes."
+        },
+        {
+            "relationship": "containsRegion",
+            "source_entity": "Country",
+            "target_entity": "CountryRegion",
+            "description": "Indicates that a country is divided into broader regions for survey purposes."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "CountryDivision",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency count for each country division."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "CountryDivision",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage representation for each country division."
+        }
+    ]
+}

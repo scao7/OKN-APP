@@ -1,0 +1,103 @@
+{
+    "entities": [
+        {
+            "entity": "MarijuanaUsageMethod",
+            "description": "The method by which marijuana or any cannabis product was used in the past 12 months."
+        },
+        {
+            "entity": "MarijuanaUsageFrequency",
+            "description": "The frequency of marijuana or any cannabis product usage within the past 12 months."
+        },
+        {
+            "entity": "Smoking",
+            "description": "One of the methods of using marijuana, specifically smoking."
+        },
+        {
+            "entity": "Vaping",
+            "description": "One of the methods of using marijuana, specifically vaping."
+        },
+        {
+            "entity": "Dabbing",
+            "description": "One of the methods of using marijuana, specifically dabbing waxes, shatter, or concentrate."
+        },
+        {
+            "entity": "EatingOrDrinking",
+            "description": "One of the methods of using marijuana, specifically eating or drinking marijuana products."
+        },
+        {
+            "entity": "DropsOrStrips",
+            "description": "One of the methods of using marijuana, specifically using drops, strips, lozenges, or sprays in the mouth."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMarijuanaUsageMethod",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "MarijuanaUsageMethod",
+            "description": "Indicates the methods by which marijuana was used by the survey respondent."
+        },
+        {
+            "relationship": "hasMarijuanaUsageFrequency",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "MarijuanaUsageFrequency",
+            "description": "Indicates the frequency of marijuana usage by the survey respondent."
+        },
+        {
+            "relationship": "includesMethod",
+            "source_entity": "MarijuanaUsageMethod",
+            "target_entity": "Smoking",
+            "description": "Includes smoking as one of the methods of marijuana usage."
+        },
+        {
+            "relationship": "includesMethod",
+            "source_entity": "MarijuanaUsageMethod",
+            "target_entity": "Vaping",
+            "description": "Includes vaping as one of the methods of marijuana usage."
+        },
+        {
+            "relationship": "includesMethod",
+            "source_entity": "MarijuanaUsageMethod",
+            "target_entity": "Dabbing",
+            "description": "Includes dabbing as one of the methods of marijuana usage."
+        },
+        {
+            "relationship": "includesMethod",
+            "source_entity": "MarijuanaUsageMethod",
+            "target_entity": "EatingOrDrinking",
+            "description": "Includes eating or drinking as one of the methods of marijuana usage."
+        },
+        {
+            "relationship": "includesMethod",
+            "source_entity": "MarijuanaUsageMethod",
+            "target_entity": "DropsOrStrips",
+            "description": "Includes using drops, strips, lozenges, or sprays in the mouth as one of the methods of marijuana usage."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "MarijuanaUsage",
+            "predicate": "hasMethod",
+            "object": "Smoking"
+        },
+        {
+            "subject": "MarijuanaUsage",
+            "predicate": "hasMethod",
+            "object": "Vaping"
+        },
+        {
+            "subject": "MarijuanaUsage",
+            "predicate": "hasMethod",
+            "object": "Dabbing"
+        },
+        {
+            "subject": "MarijuanaUsage",
+            "predicate": "hasMethod",
+            "object": "EatingOrDrinking"
+        },
+        {
+            "subject": "MarijuanaUsage",
+            "predicate": "hasMethod",
+            "object": "DropsOrStrips"
+        }
+    ]
+}

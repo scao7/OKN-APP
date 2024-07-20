@@ -1,0 +1,93 @@
+{
+    "entities": [
+        {
+            "entity": "UsedBleachToCleanNeedle",
+            "description": "Indicates if the respondent used bleach to clean the last needle before use."
+        },
+        {
+            "entity": "SomeoneElseUsedNeedle",
+            "description": "Indicates if someone else used the needle after the respondent."
+        },
+        {
+            "entity": "NeedleSource",
+            "description": "Identifies how the respondent obtained the needle the last time they used drugs."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsedBleachToCleanNeedle",
+            "source_entity": "Respondent",
+            "target_entity": "UsedBleachToCleanNeedle",
+            "description": "Indicates whether the respondent used bleach to clean the needle before use."
+        },
+        {
+            "relationship": "hasSomeoneElseUsedNeedle",
+            "source_entity": "Respondent",
+            "target_entity": "SomeoneElseUsedNeedle",
+            "description": "Indicates whether someone else used the needle after the respondent."
+        },
+        {
+            "relationship": "obtainedNeedleFrom",
+            "source_entity": "Respondent",
+            "target_entity": "NeedleSource",
+            "description": "Details where or how the respondent obtained the needle the last time they used drugs."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "bleach to clean needle"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "had",
+            "object": "someone else use needle after them"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "pharmacy"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "needle exchange"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "street"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "shooting gallery"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "other way"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "friend/relative"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "dealer"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "medical professional"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "obtained needle from",
+            "object": "internet"
+        }
+    ]
+}

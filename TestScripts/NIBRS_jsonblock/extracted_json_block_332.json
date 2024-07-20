@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of survey responses prior to any weighting adjustments."
+        },
+        {
+            "entity": "SurveyResponses",
+            "description": "The total number of valid survey responses."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is not available or missing from the survey responses."
+        },
+        {
+            "entity": "StatisticalMeasures",
+            "description": "Calculated measures such as mean, median, mode, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of variable, which in this case is numeric."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the raw frequency count of each survey response."
+        },
+        {
+            "relationship": "hasTotalResponses",
+            "source_entity": "Survey",
+            "target_entity": "SurveyResponses",
+            "description": "Relates the survey to the overall count of valid responses."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the presence of missing data in the survey responses."
+        },
+        {
+            "relationship": "hasStatisticalMeasures",
+            "source_entity": "SurveyResponses",
+            "target_entity": "StatisticalMeasures",
+            "description": "Relates the survey responses to various statistical measures derived from the data."
+        },
+        {
+            "relationship": "describesVariableType",
+            "source_entity": "Survey",
+            "target_entity": "VariableType",
+            "description": "Describes the type of data, which is numeric in this context."
+        }
+    ]
+}

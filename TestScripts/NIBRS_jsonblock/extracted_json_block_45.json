@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "MasterFileYear",
+            "description": "Year of the master file used in the NSDUH survey."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of responses in the survey."
+        },
+        {
+            "entity": "AgencyActivityIndicator",
+            "description": "Categories of agency activities recorded in the survey for the month of January."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total valid cases recorded in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMasterFileYear",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "MasterFileYear",
+            "description": "Indicates the year of the master file used in the NSDUH survey."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency of responses in the survey."
+        },
+        {
+            "relationship": "hasAgencyActivityIndicator",
+            "source_entity": "SurveyResponse",
+            "target_entity": "AgencyActivityIndicator",
+            "description": "Indicates the type of agency activities recorded in the survey for January."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of valid cases recorded in the survey."
+        }
+    ]
+}

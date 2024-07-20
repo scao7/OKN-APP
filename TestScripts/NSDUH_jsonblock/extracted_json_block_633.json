@@ -1,0 +1,38 @@
+{
+    "entities": [
+        {
+            "entity": "LanguageVersion",
+            "description": "The language in which the survey is conducted, either English or Spanish."
+        },
+        {
+            "entity": "GroupQuarterType",
+            "description": "The type of group quarters where the respondent resides, such as Not a Group Quarter, College Dorm, or Other."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLanguageVersion",
+            "source_entity": "Survey",
+            "target_entity": "LanguageVersion",
+            "description": "Indicates the language version of the survey administered to the respondent."
+        },
+        {
+            "relationship": "hasGroupQuarterType",
+            "source_entity": "Respondent",
+            "target_entity": "GroupQuarterType",
+            "description": "Specifies the type of group quarters where the respondent resides."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Survey",
+            "predicate": "includes",
+            "object": "LanguageVersion"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "resides in",
+            "object": "GroupQuarterType"
+        }
+    ]
+}

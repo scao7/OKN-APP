@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "HospitalInpatientNights",
+            "description": "Number of nights stayed in the hospital overnight or longer in the past 12 months."
+        },
+        {
+            "entity": "OutpatientVisitsPast12Months",
+            "description": "Number of outpatient visits in the past 12 months."
+        },
+        {
+            "entity": "DoctorVisitsAboutOwnHealth",
+            "description": "Number of times visited a doctor, nurse, physician assistant, or nurse practitioner about one's own health in the past year."
+        },
+        {
+            "entity": "TelehealthUsePast12Months",
+            "description": "Frequency of talking to a doctor, physician assistant, or nurse practitioner about health over the phone, by email, or through video calling in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHospitalInpatientNights",
+            "source_entity": "Respondent",
+            "target_entity": "HospitalInpatientNights",
+            "description": "Indicates the number of nights the respondent stayed in the hospital overnight or longer in the past 12 months."
+        },
+        {
+            "relationship": "hasOutpatientVisits",
+            "source_entity": "Respondent",
+            "target_entity": "OutpatientVisitsPast12Months",
+            "description": "Indicates the number of outpatient visits the respondent had in the past 12 months."
+        },
+        {
+            "relationship": "hasDoctorVisitsAboutOwnHealth",
+            "source_entity": "Respondent",
+            "target_entity": "DoctorVisitsAboutOwnHealth",
+            "description": "Indicates the number of times the respondent visited a doctor, nurse, physician assistant, or nurse practitioner about their own health in the past year."
+        },
+        {
+            "relationship": "hasTelehealthUse",
+            "source_entity": "Respondent",
+            "target_entity": "TelehealthUsePast12Months",
+            "description": "Indicates the respondent talked to a doctor, physician assistant, or nurse practitioner about health via phone, email, or video calling instead of in-person appointments in the past 12 months."
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "WANTED TO USE SED BADLY IN PAST 12 MOS",
+            "description": "Frequency of wanting to use prescription sedatives so badly you couldn't think of anything else in the past 12 months."
+        },
+        {
+            "entity": "STRONG URGE TO USE SED IN PAST 12 MOS",
+            "description": "Frequency of having a strong urge to use any prescription sedatives in the past 12 months."
+        },
+        {
+            "entity": "NEEDED A LOT MORE SED TO GET FEELING YOU WANT",
+            "description": "Frequency of needing a lot more prescription sedatives to get the feeling you wanted."
+        },
+        {
+            "entity": "SAME AMT SED HAS LESS EFFECT THAN IT USED TO",
+            "description": "Frequency of using the same amount of prescription sedatives having much less effect than it used to."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsageDesire",
+            "source_entity": "Respondent",
+            "target_entity": "WANTED TO USE SED BADLY IN PAST 12 MOS",
+            "description": "Indicates the respondent's desire to use prescription sedatives badly in the past 12 months."
+        },
+        {
+            "relationship": "hasStrongUrge",
+            "source_entity": "Respondent",
+            "target_entity": "STRONG URGE TO USE SED IN PAST 12 MOS",
+            "description": "Indicates the respondent's strong urge to use prescription sedatives in the past 12 months."
+        },
+        {
+            "relationship": "hasIncreasedNeed",
+            "source_entity": "Respondent",
+            "target_entity": "NEEDED A LOT MORE SED TO GET FEELING YOU WANT",
+            "description": "Indicates the respondent's need for a higher dosage of prescription sedatives to achieve the desired effects."
+        },
+        {
+            "relationship": "hasDecreasedEffect",
+            "source_entity": "Respondent",
+            "target_entity": "SAME AMT SED HAS LESS EFFECT THAN IT USED TO",
+            "description": "Indicates the respondent's experience of reduced effects with the same amount of prescription sedatives."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "WANTED TO USE SED BADLY IN PAST 12 MOS",
+            "predicate": "frequency",
+            "object": "50 = 0.08, 2372 = 4.02, 174 = 0.29, 17 = 0.03, 53028 = 89.77, 3090 = 5.23, 9 = 0.02, 2 = 0.00, 327 = 0.55"
+        },
+        {
+            "subject": "STRONG URGE TO USE SED IN PAST 12 MOS",
+            "predicate": "frequency",
+            "object": "82 = 0.14, 2289 = 3.88, 174 = 0.29, 11 = 0.02, 53028 = 89.77, 3090 = 5.23, 9 = 0.02, 3 = 0.01, 327 = 0.55"
+        },
+        {
+            "subject": "NEEDED A LOT MORE SED TO GET FEELING YOU WANT",
+            "predicate": "frequency",
+            "object": "65 = 0.11, 2358 = 3.99, 174 = 0.29, 17 = 0.03, 53028 = 89.77, 3090 = 5.23, 7 = 0.01, 3 = 0.01, 327 = 0.55"
+        },
+        {
+            "subject": "SAME AMT SED HAS LESS EFFECT THAN IT USED TO",
+            "predicate": "frequency",
+            "object": "96 = 0.16, 2251 = 3.81, 174 = 0.29, 10 = 0.02, 53028 = 89.77, 3090 = 5.23, 16 = 0.03, 5 = 0.01, 334 = 0.57, 65 = 0.11"
+        }
+    ]
+}

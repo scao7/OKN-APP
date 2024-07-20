@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "LastStimulantUsed",
+            "description": "The last stimulant used by the respondent not directed by a doctor in the past 12 months."
+        },
+        {
+            "entity": "StimulantUseReasons",
+            "description": "Reasons for using the last stimulant including weight loss, concentration, etc."
+        },
+        {
+            "entity": "SurveyRespondent",
+            "description": "The participant of the survey."
+        },
+        {
+            "entity": "PrescriptionStimulants",
+            "description": "A list of prescription stimulants including Adderall, Ritalin, etc."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLastStimulantUsed",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "LastStimulantUsed",
+            "description": "Indicates the last stimulant used by the survey respondent not directed by a doctor in the past 12 months."
+        },
+        {
+            "relationship": "usesPrescriptionStimulant",
+            "source_entity": "LastStimulantUsed",
+            "target_entity": "PrescriptionStimulants",
+            "description": "Describes that the last stimulant used falls under the category of prescription stimulants."
+        },
+        {
+            "relationship": "hasStimulantUseReasons",
+            "source_entity": "LastStimulantUsed",
+            "target_entity": "StimulantUseReasons",
+            "description": "Specifies the reasons for using the last stimulant."
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "entities": [
+        {
+            "entity": "2022 National Survey on Drug Use and Health",
+            "description": "A comprehensive survey collecting data on drug use and health in the United States for the year 2022."
+        },
+        {
+            "entity": "Methodological Summary and Definitions",
+            "description": "Part of the report detailing methods and definitions used in the 2022 NSDUH survey."
+        },
+        {
+            "entity": "Substance Abuse and Mental Health Services Administration",
+            "description": "The administrative body responsible for conducting the NSDUH and other substance and mental health-related research."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasResults",
+            "source_entity": "2022 National Survey on Drug Use and Health",
+            "target_entity": "Detailed Tables",
+            "description": "The survey provides detailed tables of the collected data."
+        },
+        {
+            "relationship": "isAdministeredBy",
+            "source_entity": "2022 National Survey on Drug Use and Health",
+            "target_entity": "Substance Abuse and Mental Health Services Administration",
+            "description": "The administrative body that conducts the survey."
+        },
+        {
+            "relationship": "includesMethodology",
+            "source_entity": "2022 National Survey on Drug Use and Health",
+            "target_entity": "Methodological Summary and Definitions",
+            "description": "The survey includes a section on methods and definitions used."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "2022 National Survey on Drug Use and Health",
+            "predicate": "provides",
+            "object": "detailed tables"
+        },
+        {
+            "subject": "Substance Abuse and Mental Health Services Administration",
+            "predicate": "conducts",
+            "object": "2022 National Survey on Drug Use and Health"
+        },
+        {
+            "subject": "2022 National Survey on Drug Use and Health",
+            "predicate": "includes",
+            "object": "Methodological Summary and Definitions"
+        }
+    ]
+}

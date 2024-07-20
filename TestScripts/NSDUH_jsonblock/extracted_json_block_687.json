@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "Code assigned to a specific drug."
+        },
+        {
+            "entity": "DrugName",
+            "description": "Name of the specific drug."
+        },
+        {
+            "entity": "OtherSpecifiesCount",
+            "description": "Number of times mentioned in OTHER, specifies category."
+        },
+        {
+            "entity": "PercentageOfAllInhalantDrugsSpecified",
+            "description": "Percentage of all inhalant drugs that are specified."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Relates a drug to its specific code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Relates a drug to its name."
+        },
+        {
+            "relationship": "hasOtherSpecifiesCount",
+            "source_entity": "Drug",
+            "target_entity": "OtherSpecifiesCount",
+            "description": "Relates a drug to the number of times it is mentioned in the OTHER, specifies category."
+        },
+        {
+            "relationship": "hasPercentageOfAllInhalantDrugsSpecified",
+            "source_entity": "Drug",
+            "target_entity": "PercentageOfAllInhalantDrugsSpecified",
+            "description": "Relates a drug to the percentage of all inhalant drugs specified."
+        }
+    ]
+}

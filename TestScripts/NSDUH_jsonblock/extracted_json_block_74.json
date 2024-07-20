@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "MentalOrEmotionalDifficulties",
+            "description": "Indicates whether the individual has mental or emotional difficulties."
+        },
+        {
+            "entity": "HealthInsuranceCoverage",
+            "description": "Indicates whether the individual is currently covered by any kind of health insurance."
+        },
+        {
+            "entity": "NoHealthInsurancePast12Months",
+            "description": "Indicates whether there was a time in the past 12 months when the individual did not have any kind of health insurance."
+        },
+        {
+            "entity": "MonthsWithoutCoverage",
+            "description": "The number of months without any health insurance coverage during the past 12 months."
+        },
+        {
+            "entity": "TimeSinceLastHealthCareCoverage",
+            "description": "Indicates the time period since the individual last had any kind of health care coverage."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMentalOrEmotionalDifficulties",
+            "source_entity": "Respondent",
+            "target_entity": "MentalOrEmotionalDifficulties",
+            "description": "Indicates whether the respondent has mental or emotional difficulties."
+        },
+        {
+            "relationship": "hasHealthInsuranceCoverage",
+            "source_entity": "Respondent",
+            "target_entity": "HealthInsuranceCoverage",
+            "description": "Indicates whether the respondent is currently covered by any kind of health insurance."
+        },
+        {
+            "relationship": "hasNoHealthInsurancePast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "NoHealthInsurancePast12Months",
+            "description": "Indicates whether the respondent did not have any health insurance at some point during the past 12 months."
+        },
+        {
+            "relationship": "hasMonthsWithoutCoverage",
+            "source_entity": "Respondent",
+            "target_entity": "MonthsWithoutCoverage",
+            "description": "Indicates the number of months the respondent was without health insurance during the past 12 months."
+        },
+        {
+            "relationship": "hasTimeSinceLastHealthCareCoverage",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastHealthCareCoverage",
+            "description": "Indicates the time period since the respondent last had health care coverage."
+        }
+    ]
+}

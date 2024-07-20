@@ -1,0 +1,132 @@
+{
+    "entities": [
+        {
+            "entity": "PainRelieverUse",
+            "description": "Indicates the use of pain relievers, not directed by a doctor."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The frequency or count of respondents for each response."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of respondents for each response."
+        },
+        {
+            "entity": "ReasonForUse",
+            "description": "The reason for using pain relievers, including specific reasons such as physical pain, tension relief, etc."
+        },
+        {
+            "entity": "TimePeriod",
+            "description": "The time frame associated with pain reliever use (e.g., Past 12 months)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "PainRelieverUse",
+            "target_entity": "Frequency",
+            "description": "Indicates the frequency count of responses for each category of pain reliever use."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "PainRelieverUse",
+            "target_entity": "Percentage",
+            "description": "Represents the percentage of respondents for each category of pain reliever use."
+        },
+        {
+            "relationship": "hasReasonForUse",
+            "source_entity": "PainRelieverUse",
+            "target_entity": "ReasonForUse",
+            "description": "classifies the reason for using pain relievers."
+        },
+        {
+            "relationship": "hasTimePeriod",
+            "source_entity": "PainRelieverUse",
+            "target_entity": "TimePeriod",
+            "description": "Indicates the time frame related to pain reliever use (e.g., past 12 months)."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "To relieve physical pain"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "To relax or relieve tension"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "To experiment or to see what it\u2019s like"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "To feel good or get high"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "To help with feelings or emotions"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "Because I\u2019m hooked or have to use them"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "For cold/flu/fever/sick/illness: pain not specified"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "Suicide attempt/suicidal thoughts"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "Peer pressure/friends/feel cool"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "To make sex more pleasurable"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "To replace other drugs/alcohol I am addicted to"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "Symptom relief, otherwise unspecified"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "Just because/available/for no reason/otherwise unspecified"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "Discontinued use because didn\u2019t trust/like/need"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "They are prescribed to me; misuse not indicated"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "hasReason",
+            "object": "Took a drug laced with another drug; intent unspecified"
+        }
+    ]
+}

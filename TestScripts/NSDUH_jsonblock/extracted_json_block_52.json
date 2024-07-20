@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "DifficultyRememberingOrConcentrating",
+            "description": "Level of difficulty remembering or concentrating."
+        },
+        {
+            "entity": "DifficultyWithSelfCare",
+            "description": "Level of difficulty with self-care such as washing all over or dressing."
+        },
+        {
+            "entity": "DifficultyCommunicating",
+            "description": "Level of difficulty communicating using usual language."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDifficultyRememberingOrConcentrating",
+            "source_entity": "Respondent",
+            "target_entity": "DifficultyRememberingOrConcentrating",
+            "description": "Indicates the level of difficulty the respondent has with remembering or concentrating."
+        },
+        {
+            "relationship": "hasDifficultyWithSelfCare",
+            "source_entity": "Respondent",
+            "target_entity": "DifficultyWithSelfCare",
+            "description": "Indicates the level of difficulty the respondent has with self-care."
+        },
+        {
+            "relationship": "hasDifficultyCommunicating",
+            "source_entity": "Respondent",
+            "target_entity": "DifficultyCommunicating",
+            "description": "Indicates the level of difficulty the respondent has with communication using usual language."
+        }
+    ]
+}

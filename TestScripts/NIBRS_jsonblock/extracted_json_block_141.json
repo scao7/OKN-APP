@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceUse",
+            "description": "The use of substances such as tobacco, alcohol, and drugs among individuals."
+        },
+        {
+            "entity": "MentalHealthIssue",
+            "description": "Conditions related to mental health such as depression, anxiety, etc."
+        },
+        {
+            "entity": "TreatmentReceived",
+            "description": "Details about the receipt of substance use or mental health treatment."
+        },
+        {
+            "entity": "DemographicInfo",
+            "description": "Demographic details of the survey respondents, such as age, gender, and socioeconomic status."
+        },
+        {
+            "entity": "RuralArea",
+            "description": "Areas defined by lower population density and limited access to large urban centers."
+        },
+        {
+            "entity": "InfrastructureAvailability",
+            "description": "Availability of facilities and services such as healthcare, education, and transportation."
+        },
+        {
+            "entity": "EconomicStatus",
+            "description": "The financial status of individuals or households, often categorized by income levels."
+        },
+        {
+            "entity": "EducationLevel",
+            "description": "Details about the educational attainment of individuals."
+        },
+        {
+            "entity": "LawRegulation",
+            "description": "Legal regulations and policies related to substance use and mental health."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstanceUse",
+            "source_entity": "Individual",
+            "target_entity": "SubstanceUse",
+            "description": "Indicates an individual's use of substances such as tobacco, alcohol, or drugs."
+        },
+        {
+            "relationship": "hasMentalHealthIssue",
+            "source_entity": "Individual",
+            "target_entity": "MentalHealthIssue",
+            "description": "Indicates an individual experiencing a mental health issue."
+        },
+        {
+            "relationship": "receivedTreatment",
+            "source_entity": "Individual",
+            "target_entity": "TreatmentReceived",
+            "description": "Indicates that the individual has received some form of treatment for substance use or mental health issues."
+        },
+        {
+            "relationship": "belongsToDemographic",
+            "source_entity": "Individual",
+            "target_entity": "DemographicInfo",
+            "description": "Relates an individual to their demographic information such as age, gender, and socioeconomic status."
+        },
+        {
+            "relationship": "residesInRuralArea",
+            "source_entity": "Individual",
+            "target_entity": "RuralArea",
+            "description": "Indicates that the individual resides in a rural area."
+        },
+        {
+            "relationship": "benefitsFromInfrastructure",
+            "source_entity": "RuralArea",
+            "target_entity": "InfrastructureAvailability",
+            "description": "Describes the availability of infrastructure in a rural area."
+        },
+        {
+            "relationship": "hasEconomicStatus",
+            "source_entity": "Individual",
+            "target_entity": "EconomicStatus",
+            "description": "Describes the economic status of an individual or household."
+        },
+        {
+            "relationship": "attainedEducationLevel",
+            "source_entity": "Individual",
+            "target_entity": "EducationLevel",
+            "description": "Details the education level attained by an individual."
+        },
+        {
+            "relationship": "affectedByPolicy",
+            "source_entity": "Individual",
+            "target_entity": "LawRegulation",
+            "description": "Indicates that an individual is affected by specific laws or regulations related to substance use and mental health."
+        }
+    ]
+}

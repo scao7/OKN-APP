@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "AlcoholWithdrawalTreatment",
+            "description": "Used something else to get over/avoid alcohol withdrawal in the past 12 months."
+        },
+        {
+            "entity": "MarijuanaUseDuration",
+            "description": "Spent a great deal of time using or feeling the effects of marijuana or any cannabis product in the past 12 months."
+        },
+        {
+            "entity": "MarijuanaAcquisitionEffort",
+            "description": "Spent a great deal of time trying to get marijuana or any cannabis product in the past 12 months."
+        },
+        {
+            "entity": "MarijuanaOveruse",
+            "description": "Used marijuana or any cannabis product in larger amounts or for longer periods of time than intended in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWithdrawalTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholWithdrawalTreatment",
+            "description": "Indicates that the respondent used something else to manage alcohol withdrawal symptoms in the past 12 months."
+        },
+        {
+            "relationship": "hasMarijuanaUseDuration",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaUseDuration",
+            "description": "Indicates the duration of marijuana or any cannabis product use by the respondent in the past 12 months."
+        },
+        {
+            "relationship": "hasMarijuanaAcquisitionEffort",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaAcquisitionEffort",
+            "description": "Indicates the effort spent by the respondent trying to acquire marijuana or any cannabis product in the past 12 months."
+        },
+        {
+            "relationship": "hasMarijuanaOveruse",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaOveruse",
+            "description": "Indicates that the respondent used marijuana or any cannabis product in larger amounts or for longer than intended in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "DPALUSE",
+            "predicate": "used",
+            "object": "something else to get over/avoid alcohol withdrawal in past 12 months"
+        },
+        {
+            "subject": "DPMJFEEL",
+            "predicate": "spent",
+            "object": "great deal of time using/feeling effect of marijuana or cannabis product in past 12 months"
+        },
+        {
+            "subject": "UDMJTMGEFT",
+            "predicate": "spent",
+            "object": "great deal of time trying to get marijuana in past 12 months"
+        },
+        {
+            "subject": "DPMJLRGAMTS",
+            "predicate": "used",
+            "object": "marijuana in larger amounts or for longer time than meant to in past 12 months"
+        }
+    ]
+}

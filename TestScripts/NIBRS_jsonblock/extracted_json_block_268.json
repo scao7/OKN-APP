@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "InjuryType",
+            "description": "Categories of observed injuries such as minor injuries, broken bones, major injuries, internal injuries, loss of teeth, severe laceration, and unconsciousness."
+        },
+        {
+            "entity": "Unconsciousness",
+            "description": "The state of being unaware and unresponsive to one's surroundings, as recorded in the survey."
+        },
+        {
+            "entity": "SurveyData",
+            "description": "Represents the survey data with unweighted frequency and percentages of various responses."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Category for missing or incomplete survey responses."
+        },
+        {
+            "entity": "SurveyValidCases",
+            "description": "Number of valid cases included in the survey out of the total cases."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "includesInjuryType",
+            "source_entity": "SurveyData",
+            "target_entity": "InjuryType",
+            "description": "Indicates the types of injuries recorded in the survey."
+        },
+        {
+            "relationship": "includesUnconsciousnessData",
+            "source_entity": "SurveyData",
+            "target_entity": "Unconsciousness",
+            "description": "Captures data related to instances of unconsciousness in the survey."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "SurveyData",
+            "target_entity": "MissingData",
+            "description": "Represents the missing responses recorded in the survey data."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Survey",
+            "target_entity": "SurveyValidCases",
+            "description": "Relates to the number of valid cases in the survey out of the total cases recorded."
+        }
+    ]
+}

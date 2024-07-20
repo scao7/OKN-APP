@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "OffenseCode",
+            "description": "The code representing a specific criminal offense."
+        },
+        {
+            "entity": "OffenseDescription",
+            "description": "A brief description of the specific criminal offense."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of occurrences of the offense in the dataset, without weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of total cases represented by the specific offense."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffenseCode",
+            "source_entity": "OffenseRecord",
+            "target_entity": "OffenseCode",
+            "description": "Associates an offense record with its code."
+        },
+        {
+            "relationship": "hasDescription",
+            "source_entity": "OffenseRecord",
+            "target_entity": "OffenseDescription",
+            "description": "Provides the description for a particular offense code."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "OffenseRecord",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency of the offense in the dataset."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "OffenseRecord",
+            "target_entity": "Percentage",
+            "description": "Shows the percentage of total cases for a given offense."
+        }
+    ]
+}

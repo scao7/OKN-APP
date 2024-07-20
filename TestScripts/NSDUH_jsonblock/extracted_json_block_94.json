@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "FirstCigaretteUseYear",
+            "description": "The year when the person first smoked part or all of a cigarette."
+        },
+        {
+            "entity": "FirstCigaretteUseMonth",
+            "description": "The month when the person first smoked part or all of a cigarette."
+        },
+        {
+            "entity": "LastSmokedCigarette",
+            "description": "The time since the person last smoked part or all of a cigarette."
+        },
+        {
+            "entity": "DaysSmokedInPast30Days",
+            "description": "Number of days the person smoked part or all of a cigarette in the past 30 days."
+        },
+        {
+            "entity": "NeverUsedCigarettes",
+            "description": "Indicator that the person has never used cigarettes."
+        },
+        {
+            "entity": "Refused",
+            "description": "Indicator that the person refused to answer the question."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "firstSmokedInYear",
+            "source_entity": "Respondent",
+            "target_entity": "FirstCigaretteUseYear",
+            "description": "Indicates the year the respondent first smoked a cigarette."
+        },
+        {
+            "relationship": "firstSmokedInMonth",
+            "source_entity": "Respondent",
+            "target_entity": "FirstCigaretteUseMonth",
+            "description": "Indicates the month the respondent first smoked a cigarette."
+        },
+        {
+            "relationship": "lastSmokedTime",
+            "source_entity": "Respondent",
+            "target_entity": "LastSmokedCigarette",
+            "description": "Indicates the time since the respondent last smoked a cigarette."
+        },
+        {
+            "relationship": "smokedDaysInPast30",
+            "source_entity": "Respondent",
+            "target_entity": "DaysSmokedInPast30Days",
+            "description": "Indicates the number of days the respondent smoked in the past 30 days."
+        },
+        {
+            "relationship": "neverUsedCigarettes",
+            "source_entity": "Respondent",
+            "target_entity": "NeverUsedCigarettes",
+            "description": "Indicates that the respondent has never used cigarettes."
+        },
+        {
+            "relationship": "refusedToAnswer",
+            "source_entity": "Respondent",
+            "target_entity": "Refused",
+            "description": "Indicates that the respondent refused to answer the question."
+        }
+    ]
+}

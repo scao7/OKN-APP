@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderCount",
+            "description": "Number of offenders involved in the incident, with unknown reported offenders being represented by '0'."
+        },
+        {
+            "entity": "VictimOffenderRelationship",
+            "description": "Relationship between the victim and the offender(s), with '0' indicating unknown relationship."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "reportsOffenderCount",
+            "source_entity": "SurveyResponse",
+            "target_entity": "OffenderCount",
+            "description": "Indicates the number of offenders reported in the survey response."
+        },
+        {
+            "relationship": "hasVictimOffenderRelationship",
+            "source_entity": "SurveyResponse",
+            "target_entity": "VictimOffenderRelationship",
+            "description": "Describes the relationship between the victim and the offender(s) in the survey response."
+        }
+    ]
+}

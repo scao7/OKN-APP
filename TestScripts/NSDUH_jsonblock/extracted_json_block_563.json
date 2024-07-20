@@ -1,0 +1,47 @@
+[
+    {
+        "subject": "AdolescentDepression",
+        "predicate": "includesSymptom",
+        "object": "sleep changes"
+    },
+    {
+        "subject": "AdolescentDepression",
+        "predicate": "includesSymptom",
+        "object": "eating changes"
+    },
+    {
+        "subject": "AdolescentDepression",
+        "predicate": "includesSymptom",
+        "object": "changes in energy"
+    },
+    {
+        "subject": "AdolescentDepression",
+        "predicate": "includesSymptom",
+        "object": "difficulty keeping mind on things"
+    },
+    {
+        "subject": "AdolescentDepression",
+        "predicate": "includesSymptom",
+        "object": "feeling badly about themselves"
+    },
+    {
+        "subject": "DepressionSymptoms",
+        "predicate": "lastsFor",
+        "object": "Duration"
+    },
+    {
+        "subject": "AdolescentDepression",
+        "predicate": "hasDuration",
+        "object": "two weeks or longer"
+    },
+    {
+        "subject": "WorstPeriod",
+        "predicate": "startedAtAge",
+        "object": "AGE WHEN WORST PERIOD OF TIME STARTED"
+    },
+    {
+        "subject": "FeelingDepressed",
+        "predicate": "occursDuringWorstPeriod",
+        "object": "nearly every day"
+    }
+]

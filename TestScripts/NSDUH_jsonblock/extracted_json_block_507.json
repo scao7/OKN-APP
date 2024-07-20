@@ -1,0 +1,82 @@
+[
+    {
+        "subject": "YFLEMPMJ",
+        "predicate": "hasFrequency",
+        "object": "47303"
+    },
+    {
+        "subject": "YFLEMPMJ",
+        "predicate": "hasPercentage",
+        "object": "80.08"
+    },
+    {
+        "subject": "YFLMJMO",
+        "predicate": "hasFrequency",
+        "object": "47260"
+    },
+    {
+        "subject": "YFLMJMO",
+        "predicate": "hasPercentage",
+        "object": "80.07"
+    },
+    {
+        "subject": "YFLADL2Y",
+        "predicate": "hasFrequency",
+        "object": "47290"
+    },
+    {
+        "subject": "YFLADL2Y",
+        "predicate": "hasPercentage",
+        "object": "80.06"
+    },
+    {
+        "subject": "YEFPKCIG",
+        "predicate": "hasFrequency",
+        "object": "47352"
+    },
+    {
+        "subject": "YEFPKCIG",
+        "predicate": "hasPercentage",
+        "object": "80.16"
+    },
+    {
+        "subject": "YEFMEVR",
+        "predicate": "hasFrequency",
+        "object": "47360"
+    },
+    {
+        "subject": "YEFMEVR",
+        "predicate": "hasPercentage",
+        "object": "80.18"
+    },
+    {
+        "subject": "YEFLMJMO",
+        "predicate": "hasFrequency",
+        "object": "47370"
+    },
+    {
+        "subject": "YEFLMJMO",
+        "predicate": "hasPercentage",
+        "object": "80.19"
+    },
+    {
+        "subject": "YEFLADL2Y",
+        "predicate": "hasFrequency",
+        "object": "47363"
+    },
+    {
+        "subject": "YEFLADL2Y",
+        "predicate": "hasPercentage",
+        "object": "80.18"
+    },
+    {
+        "subject": "TALKPROB",
+        "predicate": "hasFrequency",
+        "object": "47659"
+    },
+    {
+        "subject": "TALKPROB",
+        "predicate": "hasPercentage",
+        "object": "80.53"
+    }
+]

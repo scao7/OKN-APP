@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "InhalantUseMonth",
+            "description": "The month in which the respondent first used an inhalant."
+        },
+        {
+            "entity": "PastYearInhalantUse",
+            "description": "Indicates if the respondent used inhalants within the past year."
+        },
+        {
+            "entity": "InhalantUseFrequency",
+            "description": "The total number of days the respondent used inhalants in the past 12 months."
+        },
+        {
+            "entity": "TrimmedIndicator",
+            "description": "Indicates if the frequency data was trimmed based on certain criteria."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInhalantUseMonth",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUseMonth",
+            "description": "Relates the respondent to the month they first used an inhalant."
+        },
+        {
+            "relationship": "hasPastYearInhalantUse",
+            "source_entity": "Respondent",
+            "target_entity": "PastYearInhalantUse",
+            "description": "Indicates if the respondent used inhalants in the past year."
+        },
+        {
+            "relationship": "hasInhalantUseFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUseFrequency",
+            "description": "Indicates the frequency of inhalant use by the respondent in the past 12 months."
+        },
+        {
+            "relationship": "hasTrimmedIndicator",
+            "source_entity": "InhalantUseFrequency",
+            "target_entity": "TrimmedIndicator",
+            "description": "Indicates if the inhalant use frequency data was trimmed."
+        }
+    ]
+}

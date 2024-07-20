@@ -1,0 +1,158 @@
+{
+    "entities": [
+        {
+            "entity": "MurderOrNonnegligentManslaughter",
+            "description": "Criminal homicide through murder or nonnegligent manslaughter."
+        },
+        {
+            "entity": "NegligentManslaughter",
+            "description": "Homicide through negligent actions."
+        },
+        {
+            "entity": "JustifiableHomicide",
+            "description": "Homicide considered to be legally justified."
+        },
+        {
+            "entity": "KidnapingOrAbduction",
+            "description": "Unlawful seizure or carrying away of a person by force."
+        },
+        {
+            "entity": "Rape",
+            "description": "Sexual intercourse compelled by force or threat, against the will of the victim."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Engaging in sodomy against the will of the victim."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "Sexual assault involving penetration with an object."
+        },
+        {
+            "entity": "Fondling",
+            "description": "Indecent liberties or child molesting through fondling."
+        },
+        {
+            "entity": "Robbery",
+            "description": "Taking property from a person by force or threat of force."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "Attack with intent to cause severe injury, often involving a weapon."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "Assault that does not involve significant physical injury."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "Placing someone in fear of bodily harm without physical attack."
+        },
+        {
+            "entity": "Arson",
+            "description": "Malicious burning of property."
+        },
+        {
+            "entity": "ExtortionOrBlackmail",
+            "description": "Obtaining money or property through threats of violence or other harm."
+        },
+        {
+            "entity": "BurglaryOrBreakingAndEntering",
+            "description": "Illegal entry into a building for the purpose of committing a crime."
+        },
+        {
+            "entity": "PocketPicking",
+            "description": "Stealing from a person's pocket or purse."
+        },
+        {
+            "entity": "PurseSnatching",
+            "description": "Grabbing a purse or bag from someone."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "Stealing goods from a retail establishment."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "Stealing property from within a building."
+        },
+        {
+            "entity": "TheftFromCoinOperatedMachineOrDevice",
+            "description": "Stealing from a machine where money is inserted."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "Stealing property from a motor vehicle."
+        },
+        {
+            "entity": "TheftOfMotorVehiclePartsOrAccessories",
+            "description": "Stealing components or accessories of a motor vehicle."
+        },
+        {
+            "entity": "AllOtherLarceny",
+            "description": "Various other forms of theft not classified under specific categories."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "Stealing or attempting to steal a motor vehicle."
+        },
+        {
+            "entity": "CounterfeitingOrForgery",
+            "description": "Illegal replication or alteration of documents or money."
+        },
+        {
+            "entity": "FalsePretensesOrSwindleOrConfidenceGame",
+            "description": "Obtaining property through deception or trickery."
+        },
+        {
+            "entity": "CreditCardOrAutomaticTellerMachineFraud",
+            "description": "Fraud involving credit cards or ATM transactions."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Assuming someone else's identity for fraudulent purposes."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "Providing false information to obtain welfare benefits."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "committedBy",
+            "source_entity": "Crime",
+            "target_entity": "Person",
+            "description": "Indicates that a crime was committed by a person."
+        },
+        {
+            "relationship": "reportedIn",
+            "source_entity": "Crime",
+            "target_entity": "Survey",
+            "description": "Indicates that a crime was reported in the survey."
+        },
+        {
+            "relationship": "classifiedAs",
+            "source_entity": "Crime",
+            "target_entity": "CrimeType",
+            "description": "Defines the type of crime that was committed."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Crime",
+            "target_entity": "Victim",
+            "description": "Indicates that a crime involves a victim."
+        },
+        {
+            "relationship": "recordedIn",
+            "source_entity": "Crime",
+            "target_entity": "TimePeriod",
+            "description": "Indicates the time period during which the crime was recorded."
+        },
+        {
+            "relationship": "occursIn",
+            "source_entity": "Crime",
+            "target_entity": "Location",
+            "description": "Indicates the location where the crime occurred."
+        }
+    ]
+}

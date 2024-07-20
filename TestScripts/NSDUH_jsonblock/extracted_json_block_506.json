@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "YFLEMPMJ",
+            "description": "Youth's feelings about peers trying marijuana."
+        },
+        {
+            "entity": "YFLMJMO",
+            "description": "Youth's feelings about peers using marijuana monthly."
+        },
+        {
+            "entity": "YFLADL2Y",
+            "description": "Youth's feelings about peers drinking 1-2 alcoholic beverages per day."
+        },
+        {
+            "entity": "YEFPKCIG",
+            "description": "Youth's perception of close friends' feelings about youth smoking 1+ packs of cigarettes daily."
+        },
+        {
+            "entity": "YEFMEVR",
+            "description": "Youth's perception of close friends' feelings about youth trying marijuana."
+        },
+        {
+            "entity": "YEFLMJMO",
+            "description": "Youth's perception of close friends' feelings about youth using marijuana monthly."
+        },
+        {
+            "entity": "YEFADL2Y",
+            "description": "Youth's perception of close friends' feelings about youth drinking 1-2 alcoholic beverages per day."
+        },
+        {
+            "entity": "TALKPROB",
+            "description": "Youth's engagement in talking about serious problems with various sources."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasResponse",
+            "source_entity": "YFLEMPMJ",
+            "target_entity": "YouthResponse",
+            "description": "Relates youth feelings about peers trying marijuana to their response options."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "YFLMJMO",
+            "target_entity": "YouthResponse",
+            "description": "Relates youth feelings about peers using marijuana monthly to their response options."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "YFLADL2Y",
+            "target_entity": "YouthResponse",
+            "description": "Relates youth feelings about peers drinking 1-2 alcoholic beverages per day to their response options."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "YEFPKCIG",
+            "target_entity": "YouthResponse",
+            "description": "Relates youth perception of close friends' feelings about youth smoking 1+ packs of cigarettes daily to their response options."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "YEFMEVR",
+            "target_entity": "YouthResponse",
+            "description": "Relates youth perception of close friends' feelings about youth trying marijuana to their response options."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "YEFLMJMO",
+            "target_entity": "YouthResponse",
+            "description": "Relates youth perception of close friends' feelings about youth using marijuana monthly to their response options."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "YEFADL2Y",
+            "target_entity": "YouthResponse",
+            "description": "Relates youth perception of close friends' feelings about youth drinking 1-2 alcoholic beverages per day to their response options."
+        },
+        {
+            "relationship": "hasResponse",
+            "source_entity": "TALKPROB",
+            "target_entity": "YouthResponse",
+            "description": "Relates youth engagement in talking about serious problems to their response options."
+        }
+    ]
+}

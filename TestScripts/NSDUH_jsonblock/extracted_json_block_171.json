@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "Hallucinogens",
+            "description": "Class of psychoactive substances that cause hallucinations or perceptual distortions."
+        },
+        {
+            "entity": "Substance",
+            "description": "Specific drugs or compounds listed under the Hallucinogens category."
+        },
+        {
+            "entity": "Frequency",
+            "description": "Number of times the substance was reported being used."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage representation of the substance usage among respondents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isTypeOf",
+            "source_entity": "Substance",
+            "target_entity": "Hallucinogens",
+            "description": "Classifies the specific drugs as types of hallucinogens."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "Substance",
+            "target_entity": "Frequency",
+            "description": "Associates the reported use frequency with a specific substance."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Substance",
+            "target_entity": "Percentage",
+            "description": "Associates the percentage representation of usage with a specific substance."
+        }
+    ]
+}

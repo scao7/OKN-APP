@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "SubstanceUse",
+            "description": "Use of substances such as tobacco, alcohol, or drugs."
+        },
+        {
+            "entity": "MentalHealthIssue",
+            "description": "Issues related to mental health, including disorders or general psychological well-being."
+        },
+        {
+            "entity": "TreatmentReceived",
+            "description": "Mental health or substance use treatment received by the individual."
+        },
+        {
+            "entity": "Demographics",
+            "description": "Demographic information of the respondent including age, gender, and socioeconomic status."
+        },
+        {
+            "entity": "SurveyResponse",
+            "description": "Response provided by the individual in the survey."
+        },
+        {
+            "entity": "RuralArea",
+            "description": "Indicates whether the individual resides in a rural area."
+        },
+        {
+            "entity": "EducationLevel",
+            "description": "Highest level of education attained by the individual."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstanceUseData",
+            "source_entity": "SurveyResponse",
+            "target_entity": "SubstanceUse",
+            "description": "Links the survey response to data on substance use."
+        },
+        {
+            "relationship": "hasMentalHealthData",
+            "source_entity": "SurveyResponse",
+            "target_entity": "MentalHealthIssue",
+            "description": "Links the survey response to data on mental health issues."
+        },
+        {
+            "relationship": "receivedTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "TreatmentReceived",
+            "description": "Indicates whether the respondent received treatment for substance use or mental health issues."
+        },
+        {
+            "relationship": "hasDemographics",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Demographics",
+            "description": "Links the survey response to the demographic information of the respondent."
+        },
+        {
+            "relationship": "residesInRuralArea",
+            "source_entity": "Respondent",
+            "target_entity": "RuralArea",
+            "description": "Indicates whether the respondent resides in a rural area."
+        },
+        {
+            "relationship": "hasEducationLevel",
+            "source_entity": "Demographics",
+            "target_entity": "EducationLevel",
+            "description": "Links the demographics entity to the education level of the respondent."
+        }
+    ]
+}

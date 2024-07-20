@@ -1,0 +1,13 @@
+{
+    "entities": [
+        {
+            "entity": "UADALWSTIUF",
+            "description": "Code related to substance use dataset."
+        },
+        {
+            "entity": "UDADFWJOB",
+            "description": "Code related to employment status in the substance use dataset."
+        }
+    ],
+    "relationships": []
+}

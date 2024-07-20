@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "UDALCUTSTOP",
+            "description": "Unable to cut down or stop alcohol use more than one time past 12 months"
+        },
+        {
+            "entity": "UDALWISHSTOP",
+            "description": "Often wished to cut down or stop alcohol use past 12 months"
+        },
+        {
+            "entity": "UDALHLTHPRB",
+            "description": "Had any long-lasting or repeated physical health problems caused or made worse by drinking alcohol past 12 months"
+        },
+        {
+            "entity": "UDALHLTHCTD",
+            "description": "Continued to use alcohol despite causing or worsening physical health problems past 12 months"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "unableToCutDown",
+            "source_entity": "Respondent",
+            "target_entity": "UDALCUTSTOP",
+            "description": "Indicates whether the respondent was unable to cut down or stop alcohol use more than one time in the past 12 months"
+        },
+        {
+            "relationship": "wishToCutDown",
+            "source_entity": "Respondent",
+            "target_entity": "UDALWISHSTOP",
+            "description": "Indicates if the respondent often wished to cut down or stop alcohol use in the past 12 months"
+        },
+        {
+            "relationship": "hasHealthProblemsFromAlcohol",
+            "source_entity": "Respondent",
+            "target_entity": "UDALHLTHPRB",
+            "description": "Indicates if the respondent had any long-lasting or repeated physical health problems caused or made worse by drinking alcohol in the past 12 months"
+        },
+        {
+            "relationship": "continuedDespiteHealthProblems",
+            "source_entity": "Respondent",
+            "target_entity": "UDALHLTHCTD",
+            "description": "Indicates if the respondent continued to use alcohol despite it causing or worsening physical health problems in the past 12 months"
+        }
+    ]
+}

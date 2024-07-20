@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderSuspectedUse",
+            "description": "The suspected use of substances or equipment by offenders."
+        },
+        {
+            "entity": "Alcohol",
+            "description": "Use of alcohol by offenders."
+        },
+        {
+            "entity": "ComputerEquipment",
+            "description": "Use of computer equipment by offenders."
+        },
+        {
+            "entity": "DrugNarcotics",
+            "description": "Use of drugs or narcotics by offenders."
+        },
+        {
+            "entity": "SurveyCaseCount",
+            "description": "The total number of cases surveyed."
+        },
+        {
+            "entity": "ValidCaseCount",
+            "description": "The number of valid cases from the survey."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is missing from the survey responses."
+        },
+        {
+            "entity": "CasePercentage",
+            "description": "The percentage of each category within the valid cases."
+        },
+        {
+            "entity": "VariableType",
+            "description": "Type of variable, in this case, numeric."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSuspectedUse",
+            "source_entity": "Offender",
+            "target_entity": "OffenderSuspectedUse",
+            "description": "Indicates the suspected use of substances or equipment by offenders."
+        },
+        {
+            "relationship": "hasSubstanceUse",
+            "source_entity": "OffenderSuspectedUse",
+            "target_entity": "Alcohol",
+            "description": "Indicates the suspected use of alcohol by offenders."
+        },
+        {
+            "relationship": "hasSubstanceUse",
+            "source_entity": "OffenderSuspectedUse",
+            "target_entity": "ComputerEquipment",
+            "description": "Indicates the suspected use of computer equipment by offenders."
+        },
+        {
+            "relationship": "hasSubstanceUse",
+            "source_entity": "OffenderSuspectedUse",
+            "target_entity": "DrugNarcotics",
+            "description": "Indicates the suspected use of drugs or narcotics by offenders."
+        },
+        {
+            "relationship": "hasCaseCount",
+            "source_entity": "Survey",
+            "target_entity": "SurveyCaseCount",
+            "description": "Indicates the total number of cases surveyed."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "SurveyCaseCount",
+            "target_entity": "ValidCaseCount",
+            "description": "Indicates the number of valid cases from the survey."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "SurveyCaseCount",
+            "target_entity": "MissingData",
+            "description": "Indicates the data that is missing from the survey responses."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "ValidCaseCount",
+            "target_entity": "CasePercentage",
+            "description": "Indicates the percentage representation of each category within the valid cases."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Survey",
+            "target_entity": "VariableType",
+            "description": "Defines the type of variable used in the survey."
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "entity": "Substance",
+            "description": "A drug or medication listed in the NSDUH dataset."
+        },
+        {
+            "entity": "OTC Substance",
+            "description": "Over-the-counter drugs listed in the NSDUH dataset."
+        },
+        {
+            "entity": "Medication",
+            "description": "Medications for mental health and other ailments listed in the NSDUH dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isOTCSubstance",
+            "source_entity": "Substance",
+            "target_entity": "OTC Substance",
+            "description": "Indicates that the substance is available over the counter."
+        },
+        {
+            "relationship": "isMedicationForMentalHealth",
+            "source_entity": "Substance",
+            "target_entity": "Medication",
+            "description": "Indicates that the substance is a medication specifically for mental health issues."
+        }
+    ]
+}

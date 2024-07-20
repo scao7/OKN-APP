@@ -1,0 +1,92 @@
+{
+    "entities": [
+        {
+            "entity": "INHALANT_USAGE",
+            "description": "The behavior of using inhalants."
+        },
+        {
+            "entity": "PAST_12_MONTHS",
+            "description": "The time frame of the past 12 months."
+        },
+        {
+            "entity": "FREQUENCY",
+            "description": "The frequency of inhalant usage."
+        },
+        {
+            "entity": "RESPONDENT",
+            "description": "The individual responding to the survey questions."
+        },
+        {
+            "entity": "INHALANT_USAGE_REASON",
+            "description": "The reasons for using inhalants in the past 12 months."
+        },
+        {
+            "entity": "INHALANT_ADDICTION_LEVEL",
+            "description": "The level of addiction to inhalants based on various behaviors such as spending time trying to get inhalants."
+        },
+        {
+            "entity": "INHALANT_QUANTITY",
+            "description": "The quantity of inhalants used by the respondent."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsageFrequency",
+            "source_entity": "INHALANT_USAGE",
+            "target_entity": "FREQUENCY",
+            "description": "Relates the inhalant usage to its frequency in the past 12 months."
+        },
+        {
+            "relationship": "occurredDuring",
+            "source_entity": "INHALANT_USAGE",
+            "target_entity": "PAST_12_MONTHS",
+            "description": "Relates the inhalant usage to the time frame of the past 12 months."
+        },
+        {
+            "relationship": "reportedBy",
+            "source_entity": "INHALANT_USAGE",
+            "target_entity": "RESPONDENT",
+            "description": "Relates the inhalant usage to the individual who reported it."
+        },
+        {
+            "relationship": "hasUsageReason",
+            "source_entity": "INHALANT_USAGE",
+            "target_entity": "INHALANT_USAGE_REASON",
+            "description": "Defines the reasons for inhalant usage in the past 12 months."
+        },
+        {
+            "relationship": "hasAddictionLevel",
+            "source_entity": "INHALANT_USAGE",
+            "target_entity": "INHALANT_ADDICTION_LEVEL",
+            "description": "Defines the level of inhalant addiction based on behavior."
+        },
+        {
+            "relationship": "involvesQuantity",
+            "source_entity": "INHALANT_USAGE",
+            "target_entity": "INHALANT_QUANTITY",
+            "description": "Specifies the quantity of inhalants used."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "spend a great deal of time",
+            "object": "getting or trying to get inhalants"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "use inhalants",
+            "object": "in larger amounts or for a longer time"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "have a strong urge",
+            "object": "to use inhalants"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "need a lot more inhalants",
+            "object": "to get the feeling wanted"
+        }
+    ]
+}

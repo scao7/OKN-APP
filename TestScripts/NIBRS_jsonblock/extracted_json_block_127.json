@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseDate",
+            "description": "The date when the survey response was recorded."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of the recorded responses on a specific date."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The amount of data missing from the survey."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of survey cases."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDate",
+            "source_entity": "SurveyResponse",
+            "target_entity": "ResponseDate",
+            "description": "Indicates the date when the survey response was recorded."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency of responses recorded on a specific date."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the amount of data missing from the overall survey."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of survey cases."
+        }
+    ]
+}

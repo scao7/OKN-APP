@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "VictimType",
+            "description": "The various relationships of the victim to the offender."
+        },
+        {
+            "entity": "HomosexualRelationship",
+            "description": "Specifies if the victim was involved in a homosexual relationship with the offender."
+        },
+        {
+            "entity": "ExSpouse",
+            "description": "Indicates if the victim was an ex-spouse of the offender."
+        },
+        {
+            "entity": "Employee",
+            "description": "Indicates if the victim was an employee of the offender."
+        },
+        {
+            "entity": "Employer",
+            "description": "Indicates if the victim was an employer of the offender."
+        },
+        {
+            "entity": "OtherwiseKnown",
+            "description": "Indicates if the victim was otherwise known to the offender."
+        },
+        {
+            "entity": "Stranger",
+            "description": "Indicates if the victim was a stranger to the offender."
+        },
+        {
+            "entity": "ExRelation",
+            "description": "Indicates if the victim was in an ex-relationship with the offender."
+        },
+        {
+            "entity": "OffenderNumber",
+            "description": "Describes the number of offenders involved in the instance."
+        },
+        {
+            "entity": "UnknownOffenders",
+            "description": "Indicates if the number of offenders is unknown."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVictimType",
+            "source_entity": "Survey",
+            "target_entity": "VictimType",
+            "description": "Defines the relationship of the victim to the offender."
+        },
+        {
+            "relationship": "isVictimOf",
+            "source_entity": "Victim",
+            "target_entity": "HomosexualRelationship",
+            "description": "Indicates if the victim was involved in a homosexual relationship with the offender."
+        },
+        {
+            "relationship": "isVictimOf",
+            "source_entity": "Victim",
+            "target_entity": "ExSpouse",
+            "description": "Indicates if the victim was an ex-spouse of the offender."
+        },
+        {
+            "relationship": "isVictimOf",
+            "source_entity": "Victim",
+            "target_entity": "Employee",
+            "description": "Indicates if the victim was an employee of the offender."
+        },
+        {
+            "relationship": "isVictimOf",
+            "source_entity": "Victim",
+            "target_entity": "Employer",
+            "description": "Indicates if the victim was an employer of the offender."
+        },
+        {
+            "relationship": "isVictimOf",
+            "source_entity": "Victim",
+            "target_entity": "OtherwiseKnown",
+            "description": "Indicates if the victim was otherwise known to the offender."
+        },
+        {
+            "relationship": "isVictimOf",
+            "source_entity": "Victim",
+            "target_entity": "Stranger",
+            "description": "Indicates if the victim was a stranger to the offender."
+        },
+        {
+            "relationship": "isVictimOf",
+            "source_entity": "Victim",
+            "target_entity": "ExRelation",
+            "description": "Indicates if the victim was in an ex-relationship with the offender."
+        },
+        {
+            "relationship": "hasOffenderNumber",
+            "source_entity": "Survey",
+            "target_entity": "OffenderNumber",
+            "description": "Specifies the number of offenders involved."
+        },
+        {
+            "relationship": "isOffenderNumber",
+            "source_entity": "Offender",
+            "target_entity": "UnknownOffenders",
+            "description": "Indicates if the number of offenders is unknown."
+        }
+    ]
+}

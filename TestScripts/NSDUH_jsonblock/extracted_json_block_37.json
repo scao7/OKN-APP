@@ -1,0 +1,78 @@
+{
+    "entities": [
+        {
+            "entity": "AgeGroup",
+            "description": "Different age ranges categorized for the survey."
+        },
+        {
+            "entity": "Gender",
+            "description": "The gender categories of the survey respondents."
+        },
+        {
+            "entity": "RaceOrEthnicity",
+            "description": "Categories describing the race or ethnicity of the survey respondents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAgeGroup",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "AgeGroup",
+            "description": "Indicates the age group category of the survey respondent."
+        },
+        {
+            "relationship": "hasGender",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "Gender",
+            "description": "Indicates the gender of the survey respondent."
+        },
+        {
+            "relationship": "isRaceOrEthnicity",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "RaceOrEthnicity",
+            "description": "Represents the race or ethnicity of the survey respondent."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "AgeGroup",
+            "predicate": "includes",
+            "object": "12-17"
+        },
+        {
+            "subject": "AgeGroup",
+            "predicate": "includes",
+            "object": "18-25"
+        },
+        {
+            "subject": "AgeGroup",
+            "predicate": "includes",
+            "object": "26-34"
+        },
+        {
+            "subject": "AgeGroup",
+            "predicate": "includes",
+            "object": "35+"
+        },
+        {
+            "subject": "Gender",
+            "predicate": "includes",
+            "object": "Male"
+        },
+        {
+            "subject": "Gender",
+            "predicate": "includes",
+            "object": "Female"
+        },
+        {
+            "subject": "RaceOrEthnicity",
+            "predicate": "includes",
+            "object": "Hispanic or Latino"
+        },
+        {
+            "subject": "RaceOrEthnicity",
+            "predicate": "includes",
+            "object": "Not Hispanic or Latino, White"
+        }
+    ]
+}

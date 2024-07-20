@@ -1,0 +1,90 @@
+{
+    "entities": [
+        {
+            "entity": "PrevalenceRate",
+            "description": "The proportion of the population exhibiting characteristics of interest (e.g., substance use)."
+        },
+        {
+            "entity": "Domain",
+            "description": "A specific demographic or geographic area of study within the population."
+        },
+        {
+            "entity": "EstimatedNumberIndividuals",
+            "description": "An estimate of the number of individuals in the population exhibiting the characteristic of interest."
+        },
+        {
+            "entity": "Estimator",
+            "description": "A method or formula used to calculate estimates, such as prevalence rates."
+        },
+        {
+            "entity": "SamplingError",
+            "description": "The error caused by the process of sampling rather than conducting a complete census."
+        },
+        {
+            "entity": "StandardError",
+            "description": "A measure used to identify unreliable estimates and test for statistical significance."
+        },
+        {
+            "entity": "Weight",
+            "description": "A variable representing the analysis weight for sample units."
+        },
+        {
+            "entity": "IndicatorVariable",
+            "description": "A variable defined as 1 if a condition is met (e.g., being in a specific domain) and 0 otherwise."
+        },
+        {
+            "entity": "ProbabilitySamplingMethod",
+            "description": "A sampling method allowing estimation of sampling error and reducing sampling error."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasPrevalenceRate",
+            "source_entity": "Domain",
+            "target_entity": "PrevalenceRate",
+            "description": "Associates a domain with its respective prevalence rate of interest."
+        },
+        {
+            "relationship": "hasEstimator",
+            "source_entity": "PrevalenceRate",
+            "target_entity": "Estimator",
+            "description": "Defines the method used to calculate the prevalence rate for a domain."
+        },
+        {
+            "relationship": "hasEstimatedNumberIndividuals",
+            "source_entity": "PrevalenceRate",
+            "target_entity": "EstimatedNumberIndividuals",
+            "description": "Provides an estimate of the number of individuals with the characteristic of interest in a domain."
+        },
+        {
+            "relationship": "hasSamplingError",
+            "source_entity": "Estimator",
+            "target_entity": "SamplingError",
+            "description": "Indicates the error associated with the sampling process in estimation."
+        },
+        {
+            "relationship": "hasStandardError",
+            "source_entity": "EstimatedNumberIndividuals",
+            "target_entity": "StandardError",
+            "description": "Indicates the reliability of the estimate of the number of individuals with the characteristic of interest."
+        },
+        {
+            "relationship": "usesWeight",
+            "source_entity": "Estimator",
+            "target_entity": "Weight",
+            "description": "Utilizes analysis weights to calculate more accurate estimates."
+        },
+        {
+            "relationship": "usesIndicatorVariable",
+            "source_entity": "Estimator",
+            "target_entity": "IndicatorVariable",
+            "description": "Employs indicator variables to define conditions in the estimation process."
+        },
+        {
+            "relationship": "appliesProbabilitySamplingMethod",
+            "source_entity": "Estimator",
+            "target_entity": "ProbabilitySamplingMethod",
+            "description": "Uses probability sampling methods to reduce and estimate sampling error."
+        }
+    ]
+}

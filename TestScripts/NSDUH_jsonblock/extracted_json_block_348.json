@@ -1,0 +1,78 @@
+{
+    "entities": [
+        {
+            "entity": "MJWithdrawalSymptoms",
+            "description": "Symptoms experienced during marijuana withdrawal in the past 12 months."
+        },
+        {
+            "entity": "UsedMarijuanaToAvoidWithdrawal",
+            "description": "Use of marijuana to get over or avoid marijuana withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "MarijuanaOrCannabisProduct",
+            "description": "Any marijuana or cannabis product used to avoid withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "SymptomType",
+            "description": "Types of symptoms experienced, such as chills or headaches, during marijuana withdrawal."
+        },
+        {
+            "entity": "Response",
+            "description": "The respondent's answer to survey questions related to marijuana use and withdrawal symptoms."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWithdrawalSymptomType",
+            "source_entity": "MJWithdrawalSymptoms",
+            "target_entity": "SymptomType",
+            "description": "Specifies the type of marijuana withdrawal symptoms experienced."
+        },
+        {
+            "relationship": "experiencedWithdrawalSymptoms",
+            "source_entity": "Respondent",
+            "target_entity": "MJWithdrawalSymptoms",
+            "description": "Indicates that the respondent experienced marijuana withdrawal symptoms."
+        },
+        {
+            "relationship": "usedMarijuanaToAvoidWithdrawal",
+            "source_entity": "Respondent",
+            "target_entity": "UsedMarijuanaToAvoidWithdrawal",
+            "description": "Indicates that the respondent used marijuana to avoid withdrawal symptoms."
+        },
+        {
+            "relationship": "usedSubstanceForSymptomRelief",
+            "source_entity": "UsedMarijuanaToAvoidWithdrawal",
+            "target_entity": "MarijuanaOrCannabisProduct",
+            "description": "Specifies that marijuana or a cannabis product was used for relief from withdrawal symptoms."
+        },
+        {
+            "relationship": "providedResponse",
+            "source_entity": "Respondent",
+            "target_entity": "Response",
+            "description": "Indicates the response provided by the respondent to the survey questions."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "experienced",
+            "object": "MJWithdrawalSymptoms"
+        },
+        {
+            "subject": "MJWithdrawalSymptoms",
+            "predicate": "includes",
+            "object": "SymptomType"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "UsedMarijuanaToAvoidWithdrawal"
+        },
+        {
+            "subject": "UsedMarijuanaToAvoidWithdrawal",
+            "predicate": "involves",
+            "object": "MarijuanaOrCannabisProduct"
+        }
+    ]
+}

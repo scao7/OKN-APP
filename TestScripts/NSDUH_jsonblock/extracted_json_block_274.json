@@ -1,0 +1,128 @@
+{
+    "entities": [
+        {
+            "entity": "RC-ANY STIMULANTS - EVER USED",
+            "description": "Indicator for whether any stimulants were ever used, with values: 0 = Never used, 1 = Ever used."
+        },
+        {
+            "entity": "RC-ANY STIMULANTS - PAST YEAR USE",
+            "description": "Indicator for whether any stimulants were used in the past year, with values: 0 = Did not use in the past year, 1 = Used within the past year."
+        },
+        {
+            "entity": "RC-ANY SEDATIVES - EVER USED",
+            "description": "Indicator for whether any sedatives were ever used, with values: 0 = Never used, 1 = Ever used."
+        },
+        {
+            "entity": "RC-ANY SEDATIVES - PAST YEAR USE",
+            "description": "Indicator for whether any sedatives were used in the past year, with values: 0 = Did not use in the past year, 1 = Used within the past year."
+        },
+        {
+            "entity": "RC-ANY TRANQUILIZERS OR SEDATIVES - EVER USED",
+            "description": "Indicator for whether any tranquilizers or sedatives were ever used, with values: 0 = Never used, 1 = Ever used."
+        },
+        {
+            "entity": "RC-ANY TRANQUILIZERS OR SEDATIVES - PAST YEAR USE",
+            "description": "Indicator for whether any tranquilizers or sedatives were used in the past year, with values: 0 = Did not use in the past year, 1 = Used within the past year."
+        },
+        {
+            "entity": "RC - ANY BENZODIAZEPINES - PAST YEAR USE",
+            "description": "Indicator for whether any Benzodiazepines were used in the past year, with values: 1 = Yes, 0 = No, -9 = Missing."
+        },
+        {
+            "entity": "RC-ANY PSYCHOTHERAPEUTICS - EVER USED",
+            "description": "Indicator for whether any psychotherapeutics were ever used, with values: 0 = Never used, 1 = Ever used."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasStimulantUseEver",
+            "source_entity": "Respondent",
+            "target_entity": "RC-ANY STIMULANTS - EVER USED",
+            "description": "Indicates whether the respondent has ever used any stimulants."
+        },
+        {
+            "relationship": "hasStimulantUsePastYear",
+            "source_entity": "Respondent",
+            "target_entity": "RC-ANY STIMULANTS - PAST YEAR USE",
+            "description": "Indicates whether the respondent has used any stimulants in the past year."
+        },
+        {
+            "relationship": "hasSedativeUseEver",
+            "source_entity": "Respondent",
+            "target_entity": "RC-ANY SEDATIVES - EVER USED",
+            "description": "Indicates whether the respondent has ever used any sedatives."
+        },
+        {
+            "relationship": "hasSedativeUsePastYear",
+            "source_entity": "Respondent",
+            "target_entity": "RC-ANY SEDATIVES - PAST YEAR USE",
+            "description": "Indicates whether the respondent has used any sedatives in the past year."
+        },
+        {
+            "relationship": "hasTranquilizerOrSedativeUseEver",
+            "source_entity": "Respondent",
+            "target_entity": "RC-ANY TRANQUILIZERS OR SEDATIVES - EVER USED",
+            "description": "Indicates whether the respondent has ever used any tranquilizers or sedatives."
+        },
+        {
+            "relationship": "hasTranquilizerOrSedativeUsePastYear",
+            "source_entity": "Respondent",
+            "target_entity": "RC-ANY TRANQUILIZERS OR SEDATIVES - PAST YEAR USE",
+            "description": "Indicates whether the respondent has used any tranquilizers or sedatives in the past year."
+        },
+        {
+            "relationship": "hasBenzodiazepineUsePastYear",
+            "source_entity": "Respondent",
+            "target_entity": "RC - ANY BENZODIAZEPINES - PAST YEAR USE",
+            "description": "Indicates whether the respondent has used any Benzodiazepines in the past year."
+        },
+        {
+            "relationship": "hasPsychotherapeuticUseEver",
+            "source_entity": "Respondent",
+            "target_entity": "RC-ANY PSYCHOTHERAPEUTICS - EVER USED",
+            "description": "Indicates whether the respondent has ever used any psychotherapeutics."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "has ever used",
+            "object": "any stimulants"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has used within the past year",
+            "object": "any stimulants"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has ever used",
+            "object": "any sedatives"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has used within the past year",
+            "object": "any sedatives"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has ever used",
+            "object": "any tranquilizers or sedatives"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has used within the past year",
+            "object": "any tranquilizers or sedatives"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has used within the past year",
+            "object": "any Benzodiazepines"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has ever used",
+            "object": "any psychotherapeutics"
+        }
+    ]
+}

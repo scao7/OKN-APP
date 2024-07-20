@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "TotalCases",
+            "description": "Total number of cases considered in the survey, with a value of 11,207,634."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of respondents for each type of property loss without weights applied."
+        },
+        {
+            "entity": "PercentOfTotal",
+            "description": "The percentage of the total cases that each property loss type represents."
+        },
+        {
+            "entity": "TypePropertyLoss",
+            "description": "Type of property loss experienced, with specific categories like 'None', 'Burned', 'Counterfeited/Forged', 'Destroyed/Damaged Vandalized', 'Recovered', 'Seized', 'Stolen/Etc.'"
+        },
+        {
+            "entity": "MissingData",
+            "description": "Indicates missing data entries, with specific numeric codes to represent different missing data scenarios."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Describes the total number of cases considered in the survey."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "PropertyLossCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Connects each property loss category with its unweighted frequency of occurrence."
+        },
+        {
+            "relationship": "hasPercentOfTotal",
+            "source_entity": "PropertyLossCategory",
+            "target_entity": "PercentOfTotal",
+            "description": "Connects each property loss category with the percentage it represents of the total cases."
+        },
+        {
+            "relationship": "hasPropertyLossType",
+            "source_entity": "Survey",
+            "target_entity": "TypePropertyLoss",
+            "description": "Identifies the different types of property loss considered in the survey."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Describes the data entries that are missing and categorizes them by specific numeric codes."
+        }
+    ]
+}

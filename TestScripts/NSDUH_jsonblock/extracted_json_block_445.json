@@ -1,0 +1,53 @@
+{
+    "entities": [
+        {
+            "entity": "MonthOfLastCrackUse",
+            "description": "The month of the last reported use of crack."
+        },
+        {
+            "entity": "YearOfLastHeroinUse",
+            "description": "The year of the last reported use of heroin."
+        },
+        {
+            "entity": "AgeAtLastHeroinUse",
+            "description": "The reported age at the last time heroin was used."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLastCrackUseMonth",
+            "source_entity": "Respondent",
+            "target_entity": "MonthOfLastCrackUse",
+            "description": "Records the month when the respondent last used crack."
+        },
+        {
+            "relationship": "hasLastHeroinUseYear",
+            "source_entity": "Respondent",
+            "target_entity": "YearOfLastHeroinUse",
+            "description": "Records the year when the respondent last used heroin."
+        },
+        {
+            "relationship": "hasAgeAtLastHeroinUse",
+            "source_entity": "Respondent",
+            "target_entity": "AgeAtLastHeroinUse",
+            "description": "Records the age of the respondent at the last time they used heroin."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "CrackUse",
+            "predicate": "month",
+            "object": "MonthOfLastCrackUse"
+        },
+        {
+            "subject": "HeroinUse",
+            "predicate": "year",
+            "object": "YearOfLastHeroinUse"
+        },
+        {
+            "subject": "HeroinUse",
+            "predicate": "age",
+            "object": "AgeAtLastHeroinUse"
+        }
+    ]
+}

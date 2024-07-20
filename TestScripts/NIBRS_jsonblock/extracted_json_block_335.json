@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Count of responses without weighting."
+        },
+        {
+            "entity": "AgeOfOffender",
+            "description": "Age range categories for the offenders."
+        },
+        {
+            "entity": "FrequencyPercentage",
+            "description": "Percentage representation of each age category for offenders."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data points that are missing or not recorded."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "Total number of cases considered for the survey."
+        },
+        {
+            "entity": "Statistics",
+            "description": "Statistical measures including Mean, Median, Mode, Minimum, Maximum, and Standard Deviation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "AgeCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates age categories to their respective unweighted frequency counts."
+        },
+        {
+            "relationship": "hasFrequencyPercentage",
+            "source_entity": "AgeCategory",
+            "target_entity": "FrequencyPercentage",
+            "description": "Relates age categories to their respective percentage representation."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the amount of data missing in the survey."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of cases considered for the survey."
+        },
+        {
+            "relationship": "providesStatistics",
+            "source_entity": "Survey",
+            "target_entity": "Statistics",
+            "description": "Relates the survey to statistical measures such as Mean, Median, Mode, Minimum, Maximum, and Standard Deviation."
+        }
+    ]
+}

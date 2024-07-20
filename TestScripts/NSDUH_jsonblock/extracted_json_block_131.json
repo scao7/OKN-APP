@@ -1,0 +1,302 @@
+{
+    "entities": [
+        {
+            "entity": "UnderageAlcoholPurchasePlace",
+            "description": "Different places where underage drinkers purchased their most recent alcohol."
+        },
+        {
+            "entity": "AgeGroupOfAlcoholPurchaser",
+            "description": "The age group of the person who purchased alcohol for the underage drinker."
+        },
+        {
+            "entity": "GaveUnderageAlcohol",
+            "description": "People who gave alcohol to an underage drinker."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The frequency of each response provided in the survey."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of each response provided in the survey."
+        },
+        {
+            "entity": "SurveyResponse",
+            "description": "The responses provided by participants in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasPurchasePlace",
+            "source_entity": "UnderageAlcoholPurchase",
+            "target_entity": "UnderageAlcoholPurchasePlace",
+            "description": "Indicates the place where underage drinkers purchased their most recent alcohol."
+        },
+        {
+            "relationship": "hasAlcoholPurchaserAgeGroup",
+            "source_entity": "AlcoholPurchaser",
+            "target_entity": "AgeGroupOfAlcoholPurchaser",
+            "description": "Indicates the age group of the person who purchased alcohol for the underage drinker."
+        },
+        {
+            "relationship": "gaveAlcohol",
+            "source_entity": "Individual",
+            "target_entity": "GaveUnderageAlcohol",
+            "description": "Indicates the person who gave alcohol to the underage drinker."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Frequency",
+            "description": "Indicates the frequency of each response provided in the survey."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage of each response provided in the survey."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Unknown",
+            "predicate": "hasFrequency",
+            "object": "327"
+        },
+        {
+            "subject": "Unknown",
+            "predicate": "hasPercentage",
+            "object": "0.55"
+        },
+        {
+            "subject": "Bought at Liquor/Grocery Store",
+            "predicate": "hasFrequency",
+            "object": "145"
+        },
+        {
+            "subject": "Bought at Liquor/Grocery Store",
+            "predicate": "hasPercentage",
+            "object": "0.25"
+        },
+        {
+            "subject": "Bought at Restaurant/Bar/Club",
+            "predicate": "hasFrequency",
+            "object": "66"
+        },
+        {
+            "subject": "Bought at Restaurant/Bar/Club",
+            "predicate": "hasPercentage",
+            "object": "0.11"
+        },
+        {
+            "subject": "Bought at Concert/Sports/Event",
+            "predicate": "hasFrequency",
+            "object": "4"
+        },
+        {
+            "subject": "Bought at Concert/Sports/Event",
+            "predicate": "hasPercentage",
+            "object": "0.01"
+        },
+        {
+            "subject": "No PM Alc/21+/Pst/No Pay/Buy",
+            "predicate": "hasFrequency",
+            "object": "58527"
+        },
+        {
+            "subject": "No PM Alc/21+/Pst/No Pay/Buy",
+            "predicate": "hasPercentage",
+            "object": "99.08"
+        },
+        {
+            "subject": "Unknown",
+            "predicate": "hasFrequency",
+            "object": "326"
+        },
+        {
+            "subject": "Unknown",
+            "predicate": "hasPercentage",
+            "object": "0.55"
+        },
+        {
+            "subject": "Under Age 21",
+            "predicate": "hasFrequency",
+            "object": "11"
+        },
+        {
+            "subject": "Under Age 21",
+            "predicate": "hasPercentage",
+            "object": "0.02"
+        },
+        {
+            "subject": "Aged 21 or Older",
+            "predicate": "hasFrequency",
+            "object": "244"
+        },
+        {
+            "subject": "Aged 21 or Older",
+            "predicate": "hasPercentage",
+            "object": "0.44"
+        },
+        {
+            "subject": "No PM Alc/21+/Pst/No Pay/Buy",
+            "predicate": "hasFrequency",
+            "object": "58208"
+        },
+        {
+            "subject": "No PM Alc/21+/Pst/No Pay/Buy",
+            "predicate": "hasPercentage",
+            "object": "99.39"
+        },
+        {
+            "subject": "Unknown",
+            "predicate": "hasFrequency",
+            "object": "339"
+        },
+        {
+            "subject": "Unknown",
+            "predicate": "hasPercentage",
+            "object": "0.57"
+        },
+        {
+            "subject": "Parent or Guardian",
+            "predicate": "hasFrequency",
+            "object": "22"
+        },
+        {
+            "subject": "Parent or Guardian",
+            "predicate": "hasPercentage",
+            "object": "0.04"
+        },
+        {
+            "subject": "Another Family Member Aged 21 or Older",
+            "predicate": "hasFrequency",
+            "object": "38"
+        },
+        {
+            "subject": "Another Family Member Aged 21 or Older",
+            "predicate": "hasPercentage",
+            "object": "0.06"
+        },
+        {
+            "subject": "Someone Not Related Aged 21 or Older",
+            "predicate": "hasFrequency",
+            "object": "196"
+        },
+        {
+            "subject": "Someone Not Related Aged 21 or Older",
+            "predicate": "hasPercentage",
+            "object": "0.33"
+        },
+        {
+            "subject": "Someone Under the Age of 21",
+            "predicate": "hasFrequency",
+            "object": "48"
+        },
+        {
+            "subject": "Someone Under the Age of 21",
+            "predicate": "hasPercentage",
+            "object": "0.08"
+        },
+        {
+            "subject": "No PM Alc/21+/Pst/No Pay/Buy Self",
+            "predicate": "hasFrequency",
+            "object": "58428"
+        },
+        {
+            "subject": "No PM Alc/21+/Pst/No Pay/Buy Self",
+            "predicate": "hasPercentage",
+            "object": "98.91"
+        },
+        {
+            "subject": "Unknown",
+            "predicate": "hasFrequency",
+            "object": "422"
+        },
+        {
+            "subject": "Unknown",
+            "predicate": "hasPercentage",
+            "object": "0.71"
+        },
+        {
+            "subject": "Parent or Guardian",
+            "predicate": "hasFrequency",
+            "object": "272"
+        },
+        {
+            "subject": "Parent or Guardian",
+            "predicate": "hasPercentage",
+            "object": "0.46"
+        },
+        {
+            "subject": "Another Family Member, 21 or Older",
+            "predicate": "hasFrequency",
+            "object": "250"
+        },
+        {
+            "subject": "Another Family Member, 21 or Older",
+            "predicate": "hasPercentage",
+            "object": "0.42"
+        },
+        {
+            "subject": "Someone Not Related, 21 or Older",
+            "predicate": "hasFrequency",
+            "object": "480"
+        },
+        {
+            "subject": "Someone Not Related, 21 or Older",
+            "predicate": "hasPercentage",
+            "object": "0.81"
+        },
+        {
+            "subject": "Someone Under the Age of 21",
+            "predicate": "hasFrequency",
+            "object": "237"
+        },
+        {
+            "subject": "Someone Under the Age of 21",
+            "predicate": "hasPercentage",
+            "object": "0.40"
+        },
+        {
+            "subject": "Took from My Home",
+            "predicate": "hasFrequency",
+            "object": "182"
+        },
+        {
+            "subject": "Took from My Home",
+            "predicate": "hasPercentage",
+            "object": "0.31"
+        },
+        {
+            "subject": "Took from Someone Else's Home",
+            "predicate": "hasFrequency",
+            "object": "52"
+        },
+        {
+            "subject": "Took from Someone Else's Home",
+            "predicate": "hasPercentage",
+            "object": "0.09"
+        },
+        {
+            "subject": "Some Other Way",
+            "predicate": "hasFrequency",
+            "object": "117"
+        },
+        {
+            "subject": "Some Other Way",
+            "predicate": "hasPercentage",
+            "object": "0.20"
+        },
+        {
+            "subject": "No PM Alc/Aged 21+/Pay",
+            "predicate": "hasFrequency",
+            "object": "57057"
+        },
+        {
+            "subject": "No PM Alc/Aged 21+/Pay",
+            "predicate": "hasPercentage",
+            "object": "96.59"
+        }
+    ]
+}

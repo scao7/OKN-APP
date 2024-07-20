@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "Substance",
+            "description": "A type of drug or hallucinogen listed in the NSDUH survey."
+        },
+        {
+            "entity": "Category",
+            "description": "The categorization of substances into different types, such as hallucinogens, synthetic drugs, or over-the-counter medications."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstance",
+            "source_entity": "Survey",
+            "target_entity": "Substance",
+            "description": "Lists various substances queried in the survey, including hallucinogens, synthetic drugs, and OTC medications."
+        },
+        {
+            "relationship": "belongsToCategory",
+            "source_entity": "Substance",
+            "target_entity": "Category",
+            "description": "Associates each substance with its specific category."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "5-MeO-DALT",
+            "predicate": "belongsToCategory",
+            "object": "Hallucinogen"
+        },
+        {
+            "subject": "LSD analogue",
+            "predicate": "belongsToCategory",
+            "object": "Synthetic Hallucinogen"
+        },
+        {
+            "subject": "Robitussin elixir",
+            "predicate": "belongsToCategory",
+            "object": "OTC"
+        },
+        {
+            "subject": "Ketamine analogue",
+            "predicate": "belongsToCategory",
+            "object": "Synthetic Hallucinogen"
+        },
+        {
+            "subject": "Synthetic LSD/acid",
+            "predicate": "belongsToCategory",
+            "object": "Synthetic Hallucinogen"
+        },
+        {
+            "subject": "Benadryl",
+            "predicate": "belongsToCategory",
+            "object": "OTC"
+        },
+        {
+            "subject": "Jenkem",
+            "predicate": "belongsToCategory",
+            "object": "Inhalant"
+        },
+        {
+            "subject": "Mescaline analogue",
+            "predicate": "belongsToCategory",
+            "object": "Synthetic Hallucinogen"
+        }
+    ]
+}

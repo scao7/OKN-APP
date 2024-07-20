@@ -1,0 +1,97 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency count of responses in the survey without any weighting applied."
+        },
+        {
+            "entity": "ResponseCategory",
+            "description": "The specific category or response option for the survey items."
+        },
+        {
+            "entity": "Percent",
+            "description": "The percentage of respondents who selected a particular response option."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid responses out of the total cases surveyed."
+        },
+        {
+            "entity": "Mean",
+            "description": "The average value for the survey item responses."
+        },
+        {
+            "entity": "Minimum",
+            "description": "The minimum value observed in the survey item responses."
+        },
+        {
+            "entity": "Maximum",
+            "description": "The maximum value observed in the survey item responses."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The standard deviation of the responses for the survey item."
+        },
+        {
+            "entity": "Location",
+            "description": "The field location details in the dataset, including width and decimal information."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of the variable in the dataset, specifying whether it's numeric, categorical, etc."
+        },
+        {
+            "entity": "UCRCountyCode",
+            "description": "The UCR (Uniform Crime Reporting) code for counties used in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates a response category to its unweighted frequency count."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "ResponseCategory",
+            "target_entity": "Percent",
+            "description": "Indicates the percentage representation of a specific response category."
+        },
+        {
+            "relationship": "includesValidCases",
+            "source_entity": "Survey",
+            "target_entity": "ValidCases",
+            "description": "Indicates the number of valid cases included in the survey analysis."
+        },
+        {
+            "relationship": "hasDescriptiveStatistics",
+            "source_entity": "SurveyItem",
+            "target_entity": [
+                "Mean",
+                "Minimum",
+                "Maximum",
+                "StandardDeviation"
+            ],
+            "description": "Relates a survey item to its descriptive statistics, including mean, minimum, maximum, and standard deviation."
+        },
+        {
+            "relationship": "hasLocationDetails",
+            "source_entity": "Dataset",
+            "target_entity": "Location",
+            "description": "Indicates the location details of the field within the dataset."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "SurveyItem",
+            "target_entity": "VariableType",
+            "description": "Indicates the variable type for a survey item in the dataset."
+        },
+        {
+            "relationship": "hasUCRCountyCode",
+            "source_entity": "Respondent",
+            "target_entity": "UCRCountyCode",
+            "description": "Associates a respondent with the UCR county code used in the survey."
+        }
+    ]
+}

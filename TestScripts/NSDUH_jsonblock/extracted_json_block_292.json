@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "Benzodiazepine_Tranquilizers_Misuse",
+            "description": "Past year misuse of benzodiazepine tranquilizers including Xanax, Ativan, Lorazepam, Klonopin, and their equivalents."
+        },
+        {
+            "entity": "Alprazolam_Products_Misuse",
+            "description": "Past year misuse of Alprazolam products including Xanax and its equivalents."
+        },
+        {
+            "entity": "Lorazepam_Products_Misuse",
+            "description": "Past year misuse of Lorazepam products including Ativan and its equivalents."
+        },
+        {
+            "entity": "Clonazepam_Products_Misuse",
+            "description": "Past year misuse of Clonazepam products including Klonopin and its equivalents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBenzodiazepineMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "Benzodiazepine_Tranquilizers_Misuse",
+            "description": "Indicates whether the respondent misused benzodiazepine tranquilizers in the past year."
+        },
+        {
+            "relationship": "hasAlprazolamMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "Alprazolam_Products_Misuse",
+            "description": "Indicates whether the respondent misused Alprazolam products in the past year."
+        },
+        {
+            "relationship": "hasLorazepamMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "Lorazepam_Products_Misuse",
+            "description": "Indicates whether the respondent misused Lorazepam products in the past year."
+        },
+        {
+            "relationship": "hasClonazepamMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "Clonazepam_Products_Misuse",
+            "description": "Indicates whether the respondent misused Clonazepam products in the past year."
+        }
+    ]
+}

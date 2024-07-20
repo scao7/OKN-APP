@@ -1,0 +1,52 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 30 days, including today's date."
+        },
+        {
+            "entity": "PremisesEntered",
+            "description": "Number of different premises entered as recorded in the survey."
+        },
+        {
+            "entity": "MethodOfEntry",
+            "description": "The method used to enter premises, categorized as 'Force' or 'No Force'."
+        },
+        {
+            "entity": "DataMissing",
+            "description": "Indicates the presence of missing data for the given category."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 30 days."
+        },
+        {
+            "relationship": "reportsPremisesEntered",
+            "source_entity": "Respondent",
+            "target_entity": "PremisesEntered",
+            "description": "Indicates the number of premises entered by the respondent."
+        },
+        {
+            "relationship": "usesEntryMethod",
+            "source_entity": "PremisesEntered",
+            "target_entity": "MethodOfEntry",
+            "description": "Indicates the method used to enter the premises."
+        },
+        {
+            "relationship": "hasDataMissing",
+            "source_entity": "PremisesEntered",
+            "target_entity": "DataMissing",
+            "description": "Highlights missing data in the recorded entries."
+        },
+        {
+            "relationship": "hasDataMissing",
+            "source_entity": "MethodOfEntry",
+            "target_entity": "DataMissing",
+            "description": "Highlights missing data in the method of entry."
+        }
+    ]
+}

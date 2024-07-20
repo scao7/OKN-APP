@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "LastAlcoholicBeverageBuyerAge",
+            "description": "Age group of the individual who bought the last alcoholic beverage if the buyer was under age 21 or age 21 or older."
+        },
+        {
+            "entity": "AlcoholBuyerRelationship",
+            "description": "The relationship of the person who bought the alcoholic beverage to the respondent."
+        },
+        {
+            "entity": "LastAlcoholicBeverageSource",
+            "description": "The source from which the respondent obtained the last alcoholic beverage they drank."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLastAlcoholicBeverageBuyerAge",
+            "source_entity": "Respondent",
+            "target_entity": "LastAlcoholicBeverageBuyerAge",
+            "description": "Specifies the age group of the person who bought the last alcoholic beverage for the respondent."
+        },
+        {
+            "relationship": "hasAlcoholBuyerRelationship",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholBuyerRelationship",
+            "description": "Indicates the respondent's relationship to the person who bought the alcoholic beverage for them."
+        },
+        {
+            "relationship": "hasLastAlcoholicBeverageSource",
+            "source_entity": "Respondent",
+            "target_entity": "LastAlcoholicBeverageSource",
+            "description": "Describes the source from which the respondent obtained the last alcoholic beverage they consumed."
+        }
+    ]
+}

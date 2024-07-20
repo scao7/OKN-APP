@@ -1,0 +1,57 @@
+{
+    "entities": [
+        {
+            "entity": "TobaccoUse",
+            "description": "Use of cigarettes or any other tobacco products in the past 12 months."
+        },
+        {
+            "entity": "AlcoholUse",
+            "description": "Consumption of alcohol in the past 12 months."
+        },
+        {
+            "entity": "DrugUse",
+            "description": "Use of marijuana or other illegal drugs in the past 12 months."
+        },
+        {
+            "entity": "HealthcareProfessional",
+            "description": "Any doctor or other health care professional who asked about substance use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "askedAboutTobaccoUse",
+            "source_entity": "HealthcareProfessional",
+            "target_entity": "TobaccoUse",
+            "description": "Relates a healthcare professional to inquiring about the respondent's tobacco use."
+        },
+        {
+            "relationship": "askedAboutAlcoholUse",
+            "source_entity": "HealthcareProfessional",
+            "target_entity": "AlcoholUse",
+            "description": "Relates a healthcare professional to inquiring about the respondent's alcohol use."
+        },
+        {
+            "relationship": "askedAboutDrugUse",
+            "source_entity": "HealthcareProfessional",
+            "target_entity": "DrugUse",
+            "description": "Relates a healthcare professional to inquiring about the respondent's drug use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "HealthcareProfessional",
+            "predicate": "askedAbout",
+            "object": "TobaccoUse"
+        },
+        {
+            "subject": "HealthcareProfessional",
+            "predicate": "askedAbout",
+            "object": "AlcoholUse"
+        },
+        {
+            "subject": "HealthcareProfessional",
+            "predicate": "askedAbout",
+            "object": "DrugUse"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "AgeOfVictim",
+            "description": "The age of the victim classified into various categories."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The absolute number of survey responses without any adjustments."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The proportion of survey responses represented by the unweighted frequency."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is either unknown or not reported in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "classifiesAge",
+            "source_entity": "V40183",
+            "target_entity": "AgeOfVictim",
+            "description": "Categorizes the age of the victim using variable V40183."
+        },
+        {
+            "relationship": "reportsUnweightedFrequency",
+            "source_entity": "V40183",
+            "target_entity": "UnweightedFrequency",
+            "description": "Reports the number of responses without any weighing under variable V40183."
+        },
+        {
+            "relationship": "reportsPercentage",
+            "source_entity": "V40183",
+            "target_entity": "Percentage",
+            "description": "Reports the percentage of responses relative to the total for variable V40183."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "V40183",
+            "target_entity": "MissingData",
+            "description": "Indicates whether data is missing or unreported for variable V40183."
+        }
+    ]
+}

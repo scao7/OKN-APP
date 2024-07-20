@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "AppendixA",
+            "description": "An appendix that lists drug codes for open-ended questions."
+        },
+        {
+            "entity": "DrugCode",
+            "description": "A specific code assigned to a drug mentioned in open-ended questions."
+        },
+        {
+            "entity": "OpenEndedQuestion",
+            "description": "A survey question that allows respondents to answer in their own words."
+        },
+        {
+            "entity": "SubstanceAbuse",
+            "description": "The misuse of drugs or alcohol."
+        },
+        {
+            "entity": "SurveySection",
+            "description": "A specific section of the survey, in this context focusing on drug codes."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "containsDrugCode",
+            "source_entity": "AppendixA",
+            "target_entity": "DrugCode",
+            "description": "Indicates that Appendix A contains specific codes for various drugs."
+        },
+        {
+            "relationship": "isRelatedTo",
+            "source_entity": "DrugCode",
+            "target_entity": "SubstanceAbuse",
+            "description": "Relates the drug code to substance misuse situations."
+        },
+        {
+            "relationship": "isAnsweredBy",
+            "source_entity": "OpenEndedQuestion",
+            "target_entity": "DrugCode",
+            "description": "Establishes that an open-ended question can be answered with specified drug codes."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "DrugCode",
+            "target_entity": "SurveySection",
+            "description": "Indicates that drug codes are part of a designated section in the survey."
+        }
+    ]
+}

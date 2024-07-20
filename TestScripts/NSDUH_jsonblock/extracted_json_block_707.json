@@ -1,0 +1,216 @@
+{
+    "entities": [
+        {
+            "entity": "SmokingDrive",
+            "description": "Compulsion to smoke driven by nicotine craving and withdrawal."
+        },
+        {
+            "entity": "NicotineTolerance",
+            "description": "Requirement of increasing amounts of nicotine to achieve the same effects."
+        },
+        {
+            "entity": "ContinuousSmoking",
+            "description": "Regular smoking habits and patterns over time."
+        },
+        {
+            "entity": "BehavioralPriority",
+            "description": "Preferring smoking over other reinforcing activities."
+        },
+        {
+            "entity": "Stereotypy",
+            "description": "Fixed patterns of smoking behavior."
+        },
+        {
+            "entity": "CIGIRTBL",
+            "description": "Need to smoke to feel less restless and irritable after not smoking for a while."
+        },
+        {
+            "entity": "CIGCRAVE",
+            "description": "Starting to crave cigarettes after a few hours of not smoking."
+        },
+        {
+            "entity": "CIGCRAGP",
+            "description": "Feeling strong cravings for a cigarette controlled by a force."
+        },
+        {
+            "entity": "CIGINCTL",
+            "description": "Sense of control over smoking."
+        },
+        {
+            "entity": "CIGRNOUT",
+            "description": "Worry about running out of cigarettes."
+        },
+        {
+            "entity": "CIGINCRS",
+            "description": "Increase in the amount of smoking since starting."
+        },
+        {
+            "entity": "CIGSATIS",
+            "description": "Need to smoke more for satisfaction compared to when first started."
+        },
+        {
+            "entity": "CIGLOTMR",
+            "description": "Ability to smoke more now before feeling any effects compared to when first started."
+        },
+        {
+            "entity": "CIGREGDY",
+            "description": "Smoking fairly regularly throughout the day."
+        },
+        {
+            "entity": "CIGREGWK",
+            "description": "Smoking about the same amount on weekends as on weekdays."
+        },
+        {
+            "entity": "CIGREGNM",
+            "description": "Smoking about the same number of cigarettes from day to day."
+        },
+        {
+            "entity": "CIGNMCHG",
+            "description": "Difficulty in saying how many cigarettes are smoked per day due to changes."
+        },
+        {
+            "entity": "CIGSVLHR",
+            "description": "Smoking several cigarettes in an hour, then not another one for hours."
+        },
+        {
+            "entity": "CIGAVOID",
+            "description": "Tending to avoid places that don\u2019t allow smoking."
+        },
+        {
+            "entity": "CIGFNLKE",
+            "description": "Choosing not to be around friends who don\u2019t smoke."
+        },
+        {
+            "entity": "CIGPLANE",
+            "description": "Avoiding traveling by airplane because smoking is not allowed."
+        },
+        {
+            "entity": "CIGFNSMK",
+            "description": "Having friends who do not smoke."
+        },
+        {
+            "entity": "CIGNFLU",
+            "description": "Smoking behavior influenced by feelings or activities."
+        },
+        {
+            "entity": "CIGNOINF",
+            "description": "Smoking not affected by other things such as relaxation, work, happiness or sadness."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasComponent",
+            "source_entity": "SmokingDrive",
+            "target_entity": "CIGIRTBL",
+            "description": "Smoking drive includes the need to smoke to feel less restless and irritable."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "SmokingDrive",
+            "target_entity": "CIGCRAVE",
+            "description": "Smoking drive includes starting to crave cigarettes after a few hours."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "SmokingDrive",
+            "target_entity": "CIGCRAGP",
+            "description": "Smoking drive includes feeling strong cravings controlled by a force."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "SmokingDrive",
+            "target_entity": "CIGINCTL",
+            "description": "Smoking drive includes sense of control over smoking."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "SmokingDrive",
+            "target_entity": "CIGRNOUT",
+            "description": "Smoking drive includes worry about running out of cigarettes."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "NicotineTolerance",
+            "target_entity": "CIGINCRS",
+            "description": "Nicotine tolerance includes increase in the amount of smoking since starting."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "NicotineTolerance",
+            "target_entity": "CIGSATIS",
+            "description": "Nicotine tolerance includes needing more for satisfaction compared to when first started."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "NicotineTolerance",
+            "target_entity": "CIGLOTMR",
+            "description": "Nicotine tolerance includes ability to smoke more now before feeling effects compared to when first started."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "ContinuousSmoking",
+            "target_entity": "CIGREGDY",
+            "description": "Continuous smoking includes smoking fairly regularly throughout the day."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "ContinuousSmoking",
+            "target_entity": "CIGREGWK",
+            "description": "Continuous smoking includes smoking about the same amount on weekends as on weekdays."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "ContinuousSmoking",
+            "target_entity": "CIGREGNM",
+            "description": "Continuous smoking includes smoking about the same number of cigarettes from day to day."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "ContinuousSmoking",
+            "target_entity": "CIGNMCHG",
+            "description": "Continuous smoking includes difficulty in saying how many cigarettes are smoked due to changes."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "ContinuousSmoking",
+            "target_entity": "CIGSVLHR",
+            "description": "Continuous smoking includes smoking several cigarettes in an hour, then not another for hours."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "BehavioralPriority",
+            "target_entity": "CIGAVOID",
+            "description": "Behavioral priority includes avoiding places that don\u2019t allow smoking."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "BehavioralPriority",
+            "target_entity": "CIGFNLKE",
+            "description": "Behavioral priority includes choosing not to be around friends who don\u2019t smoke."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "BehavioralPriority",
+            "target_entity": "CIGPLANE",
+            "description": "Behavioral priority includes avoiding travel by airplane because smoking is not allowed."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "Stereotypy",
+            "target_entity": "CIGFNSMK",
+            "description": "Stereotypy includes having friends who do not smoke."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "Stereotypy",
+            "target_entity": "CIGNFLU",
+            "description": "Stereotypy includes smoking behavior influenced by feelings or activities."
+        },
+        {
+            "relationship": "hasComponent",
+            "source_entity": "Stereotypy",
+            "target_entity": "CIGNOINF",
+            "description": "Stereotypy includes smoking not affected by other things such as relaxation, work, happiness or sadness."
+        }
+    ]
+}

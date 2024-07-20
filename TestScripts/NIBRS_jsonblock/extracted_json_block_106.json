@@ -1,0 +1,124 @@
+{
+    "entities": [
+        {
+            "entity": "Anti-LGBT",
+            "description": "Bias motivation against Lesbian, Gay, Bisexual, or Transgender, Mixed Group."
+        },
+        {
+            "entity": "Anti-Heterosexual",
+            "description": "Bias motivation against heterosexual individuals."
+        },
+        {
+            "entity": "Anti-Bisexual",
+            "description": "Bias motivation against bisexual individuals."
+        },
+        {
+            "entity": "Anti-PhysicalDisability",
+            "description": "Bias motivation against people with physical disabilities."
+        },
+        {
+            "entity": "Anti-MentalDisability",
+            "description": "Bias motivation against people with mental disabilities."
+        },
+        {
+            "entity": "Anti-Male",
+            "description": "Bias motivation against males."
+        },
+        {
+            "entity": "Anti-Female",
+            "description": "Bias motivation against females."
+        },
+        {
+            "entity": "Anti-Transgender",
+            "description": "Bias motivation against transgender individuals."
+        },
+        {
+            "entity": "Anti-GenderNonConforming",
+            "description": "Bias motivation against gender non-conforming individuals."
+        },
+        {
+            "entity": "Anti-EasternOrthodox",
+            "description": "Bias motivation against Eastern Orthodox individuals (e.g., Greek, Russian, etc.)"
+        },
+        {
+            "entity": "Anti-OtherChristian",
+            "description": "Bias motivation against other Christian individuals."
+        },
+        {
+            "entity": "Anti-Buddhist",
+            "description": "Bias motivation against Buddhist individuals."
+        },
+        {
+            "entity": "Anti-Hindu",
+            "description": "Bias motivation against Hindu individuals."
+        },
+        {
+            "entity": "Anti-Sikh",
+            "description": "Bias motivation against Sikh individuals."
+        },
+        {
+            "entity": "NoneBiasMotivation",
+            "description": "No bias motivation."
+        },
+        {
+            "entity": "UnknownBiasMotivation",
+            "description": "Unknown bias motivation."
+        },
+        {
+            "entity": "Anti-White",
+            "description": "Bias motivation against White people."
+        },
+        {
+            "entity": "Anti-BlackOrAfricanAmerican",
+            "description": "Bias motivation against Black or African American people."
+        },
+        {
+            "entity": "Anti-AmericanIndianOrAlaskaNative",
+            "description": "Bias motivation against American Indian or Alaska Native individuals."
+        },
+        {
+            "entity": "Anti-Asian",
+            "description": "Bias motivation against Asian people."
+        },
+        {
+            "entity": "Anti-MultiRacialGroup",
+            "description": "Bias motivation against multi-racial groups."
+        },
+        {
+            "entity": "Anti-NativeHawaiianOrOtherPacificIslander",
+            "description": "Bias motivation against Native Hawaiian or Other Pacific Islander individuals."
+        },
+        {
+            "entity": "Anti-Jewish",
+            "description": "Bias motivation against Jewish people."
+        },
+        {
+            "entity": "Anti-Catholic",
+            "description": "Bias motivation against Catholic individuals."
+        },
+        {
+            "entity": "Anti-Protestant",
+            "description": "Bias motivation against Protestant individuals."
+        },
+        {
+            "entity": "Anti-Islamic",
+            "description": "Bias motivation against Islamic (Muslim) people."
+        },
+        {
+            "entity": "Anti-OtherReligion",
+            "description": "Bias motivation against other religions."
+        },
+        {
+            "entity": "Anti-MultiReligiousGroup",
+            "description": "Bias motivation against multi-religious groups."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Case",
+            "target_entity": "BiasMotivation",
+            "description": "Indicates the bias motivation associated with a case."
+        }
+    ]
+}

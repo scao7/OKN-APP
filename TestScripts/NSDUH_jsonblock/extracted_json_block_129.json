@@ -1,0 +1,113 @@
+{
+    "entities": [
+        {
+            "entity": "SocialContextOfRecentAlcoholUse",
+            "description": "Defines the social context of a respondent's last alcohol use, including whether they drank alone or with others."
+        },
+        {
+            "entity": "MostRecentAlcoholUseInCar",
+            "description": "Defines whether the respondent's most recent alcohol use occurred in a car."
+        },
+        {
+            "entity": "MostRecentAlcoholUseAtHome",
+            "description": "Defines whether the respondent's most recent alcohol use occurred at home."
+        },
+        {
+            "entity": "MostRecentAlcoholUseAtSomeoneElsesHome",
+            "description": "Defines whether the respondent's most recent alcohol use occurred at someone else's home."
+        },
+        {
+            "entity": "MostRecentAlcoholUseAtParkBeachOrLot",
+            "description": "Defines whether the respondent's most recent alcohol use occurred at a park, beach, or lot."
+        },
+        {
+            "entity": "MostRecentAlcoholUseAtRestaurantBarOrClub",
+            "description": "Defines whether the respondent's most recent alcohol use occurred at a restaurant, bar, or club."
+        },
+        {
+            "entity": "MostRecentAlcoholUseAtConcertOrSportsGame",
+            "description": "Defines whether the respondent's most recent alcohol use occurred at a concert or sports game."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSocialContext",
+            "source_entity": "RecentAlcoholUse",
+            "target_entity": "SocialContextOfRecentAlcoholUse",
+            "description": "Relates recent alcohol use to the social context in which it occurred."
+        },
+        {
+            "relationship": "hasMostRecentAlcoholUseLocation",
+            "source_entity": "RecentAlcoholUse",
+            "target_entity": "MostRecentAlcoholUseInCar",
+            "description": "Specifies that the most recent alcohol use occurred in a car."
+        },
+        {
+            "relationship": "hasMostRecentAlcoholUseLocation",
+            "source_entity": "RecentAlcoholUse",
+            "target_entity": "MostRecentAlcoholUseAtHome",
+            "description": "Specifies that the most recent alcohol use occurred at home."
+        },
+        {
+            "relationship": "hasMostRecentAlcoholUseLocation",
+            "source_entity": "RecentAlcoholUse",
+            "target_entity": "MostRecentAlcoholUseAtSomeoneElsesHome",
+            "description": "Specifies that the most recent alcohol use occurred at someone else's home."
+        },
+        {
+            "relationship": "hasMostRecentAlcoholUseLocation",
+            "source_entity": "RecentAlcoholUse",
+            "target_entity": "MostRecentAlcoholUseAtParkBeachOrLot",
+            "description": "Specifies that the most recent alcohol use occurred at a park, beach, or lot."
+        },
+        {
+            "relationship": "hasMostRecentAlcoholUseLocation",
+            "source_entity": "RecentAlcoholUse",
+            "target_entity": "MostRecentAlcoholUseAtRestaurantBarOrClub",
+            "description": "Specifies that the most recent alcohol use occurred at a restaurant, bar, or club."
+        },
+        {
+            "relationship": "hasMostRecentAlcoholUseLocation",
+            "source_entity": "RecentAlcoholUse",
+            "target_entity": "MostRecentAlcoholUseAtConcertOrSportsGame",
+            "description": "Specifies that the most recent alcohol use occurred at a concert or sports game."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "RecentAlcoholUse",
+            "predicate": "context",
+            "object": "SocialContextOfRecentAlcoholUse"
+        },
+        {
+            "subject": "RecentAlcoholUse",
+            "predicate": "location",
+            "object": "MostRecentAlcoholUseInCar"
+        },
+        {
+            "subject": "RecentAlcoholUse",
+            "predicate": "location",
+            "object": "MostRecentAlcoholUseAtHome"
+        },
+        {
+            "subject": "RecentAlcoholUse",
+            "predicate": "location",
+            "object": "MostRecentAlcoholUseAtSomeoneElsesHome"
+        },
+        {
+            "subject": "RecentAlcoholUse",
+            "predicate": "location",
+            "object": "MostRecentAlcoholUseAtParkBeachOrLot"
+        },
+        {
+            "subject": "RecentAlcoholUse",
+            "predicate": "location",
+            "object": "MostRecentAlcoholUseAtRestaurantBarOrClub"
+        },
+        {
+            "subject": "RecentAlcoholUse",
+            "predicate": "location",
+            "object": "MostRecentAlcoholUseAtConcertOrSportsGame"
+        }
+    ]
+}

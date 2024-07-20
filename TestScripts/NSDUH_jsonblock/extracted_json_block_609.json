@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "TypeOfCancer-Skin",
+            "description": "Skin cancer type is unknown."
+        },
+        {
+            "entity": "TypeOfCancer-Thyroid",
+            "description": "Thyroid cancer"
+        },
+        {
+            "entity": "TypeOfCancer-Uterus",
+            "description": "Uterine cancer found in females."
+        },
+        {
+            "entity": "CancerPast12Months",
+            "description": "Whether an individual had any type of cancer in the past 12 months."
+        },
+        {
+            "entity": "AgeHeartConditionFirstDiagnosed",
+            "description": "Age when the respondent was first diagnosed with a heart condition."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSkinCancer",
+            "source_entity": "Respondent",
+            "target_entity": "TypeOfCancer-Skin",
+            "description": "Indicates if the respondent had an unidentified type of skin cancer."
+        },
+        {
+            "relationship": "hasThyroidCancer",
+            "source_entity": "Respondent",
+            "target_entity": "TypeOfCancer-Thyroid",
+            "description": "Indicates if the respondent had thyroid cancer."
+        },
+        {
+            "relationship": "hasUterineCancer",
+            "source_entity": "Respondent",
+            "target_entity": "TypeOfCancer-Uterus",
+            "description": "Indicates if the respondent had uterine cancer."
+        },
+        {
+            "relationship": "hasHadCancerPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "CancerPast12Months",
+            "description": "Indicates whether the respondent had any cancer in the past 12 months."
+        },
+        {
+            "relationship": "hasAgeHeartConditionDiagnosed",
+            "source_entity": "Respondent",
+            "target_entity": "AgeHeartConditionFirstDiagnosed",
+            "description": "Indicates the age at which the respondent was first diagnosed with a heart condition."
+        }
+    ]
+}

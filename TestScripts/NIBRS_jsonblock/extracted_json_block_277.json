@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "NOffendersUnknown",
+            "description": "Number of unknown 'N' offenders in the dataset."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Number of missing data entries."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of recorded occurrences."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of recorded occurrences."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasNOffendersUnknown",
+            "source_entity": "Survey",
+            "target_entity": "NOffendersUnknown",
+            "description": "Relates the survey to the count of unknown 'N' offenders."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the number of responses missing or not recorded in the survey."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyEntry",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the raw count of a specific survey entry."
+        },
+        {
+            "relationship": "hasPercentageRepresentation",
+            "source_entity": "SurveyEntry",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage representation of a specific survey entry."
+        }
+    ]
+}

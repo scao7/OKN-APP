@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "A numerical code assigned to a specific drug."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The common or brand name given to a drug."
+        },
+        {
+            "entity": "OTC",
+            "description": "Over-the-counter drugs that do not require a prescription."
+        },
+        {
+            "entity": "NonOTC",
+            "description": "Drugs that require a prescription."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Associates a drug with its corresponding code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Associates a drug with its common or brand name."
+        },
+        {
+            "relationship": "isTypeOf",
+            "source_entity": "Drug",
+            "target_entity": "OTC",
+            "description": "Indicates that a drug is an over-the-counter medication."
+        },
+        {
+            "relationship": "isTypeOf",
+            "source_entity": "Drug",
+            "target_entity": "NonOTC",
+            "description": "Indicates that a drug requires a prescription."
+        }
+    ]
+}

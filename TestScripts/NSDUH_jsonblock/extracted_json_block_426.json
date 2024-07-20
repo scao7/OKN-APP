@@ -1,0 +1,98 @@
+{
+    "entities": [
+        {
+            "entity": "MethamphetamineUseDisorderPastYear",
+            "description": "Methamphetamine use disorder in the past year, imputed indicator."
+        },
+        {
+            "entity": "PainRelieverUseDisorderPastYearMisusers",
+            "description": "Pain reliever use disorder in the past year, misuses of pain relievers, imputed indicator."
+        },
+        {
+            "entity": "PainRelieverUseDisorderPastYearUsersButNotMisusers",
+            "description": "Pain reliever use disorder in the past year, users of pain relievers but not misusers, imputed indicator."
+        },
+        {
+            "entity": "TranquilizerUseDisorderPastYearMisusers",
+            "description": "Tranquilizer use disorder in the past year, misuses of tranquilizers, imputed indicator."
+        },
+        {
+            "entity": "TranquilizerUseDisorderPastYearUsersButNotMisusers",
+            "description": "Tranquilizer use disorder in the past year, users of tranquilizers but not misusers, imputed indicator."
+        },
+        {
+            "entity": "ImputedData",
+            "description": "Statistically imputed data for respondents."
+        },
+        {
+            "entity": "QuestionnaireData",
+            "description": "Data collected through questionnaires."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "No use or misuse in the past year, legitimate skip."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "MethamphetamineUseDisorderPastYear",
+            "target_entity": "ImputedData",
+            "description": "Indicates methamphetamine use disorder in the past year using imputed data."
+        },
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "PainRelieverUseDisorderPastYearMisusers",
+            "target_entity": "QuestionnaireData",
+            "description": "Indicates pain reliever use disorder in the past year for misusers using questionnaire data."
+        },
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "PainRelieverUseDisorderPastYearMisusers",
+            "target_entity": "ImputedData",
+            "description": "Indicates pain reliever use disorder in the past year for misusers using imputed data."
+        },
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "PainRelieverUseDisorderPastYearUsersButNotMisusers",
+            "target_entity": "QuestionnaireData",
+            "description": "Indicates pain reliever use disorder in the past year for users but not misusers using questionnaire data."
+        },
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "PainRelieverUseDisorderPastYearUsersButNotMisusers",
+            "target_entity": "ImputedData",
+            "description": "Indicates pain reliever use disorder in the past year for users but not misusers using imputed data."
+        },
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "TranquilizerUseDisorderPastYearMisusers",
+            "target_entity": "QuestionnaireData",
+            "description": "Indicates tranquilizer use disorder in the past year for misusers using questionnaire data."
+        },
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "TranquilizerUseDisorderPastYearMisusers",
+            "target_entity": "ImputedData",
+            "description": "Indicates tranquilizer use disorder in the past year for misusers using imputed data."
+        },
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "TranquilizerUseDisorderPastYearUsersButNotMisusers",
+            "target_entity": "QuestionnaireData",
+            "description": "Indicates tranquilizer use disorder in the past year for users but not misusers using questionnaire data."
+        },
+        {
+            "relationship": "hasIndicator",
+            "source_entity": "TranquilizerUseDisorderPastYearUsersButNotMisusers",
+            "target_entity": "ImputedData",
+            "description": "Indicates tranquilizer use disorder in the past year for users but not misusers using imputed data."
+        },
+        {
+            "relationship": "hasNoUseOrMisuse",
+            "source_entity": "Respondent",
+            "target_entity": "LegitimateSkip",
+            "description": "Indicates that the respondent did not use or misuse substances in the past year."
+        }
+    ]
+}

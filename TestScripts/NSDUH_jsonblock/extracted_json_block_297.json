@@ -1,0 +1,98 @@
+{
+    "entities": [
+        {
+            "entity": "DaysUsedCocaine",
+            "description": "Number of days respondent used cocaine in the past year."
+        },
+        {
+            "entity": "DaysUsedCrack",
+            "description": "Number of days respondent used crack in the past year."
+        },
+        {
+            "entity": "DaysUsedHeroin",
+            "description": "Number of days respondent used heroin in the past year."
+        },
+        {
+            "entity": "DaysUsedHallucinogens",
+            "description": "Number of days respondent used hallucinogens in the past year."
+        },
+        {
+            "entity": "DaysUsedInhalants",
+            "description": "Number of days respondent used inhalants in the past year."
+        },
+        {
+            "entity": "DaysUsedMethamphetamine",
+            "description": "Number of days respondent used methamphetamine in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDaysUsedCocaine",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedCocaine",
+            "description": "Indicates the number of days the respondent used cocaine in the past year."
+        },
+        {
+            "relationship": "hasDaysUsedCrack",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedCrack",
+            "description": "Indicates the number of days the respondent used crack in the past year."
+        },
+        {
+            "relationship": "hasDaysUsedHeroin",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedHeroin",
+            "description": "Indicates the number of days the respondent used heroin in the past year."
+        },
+        {
+            "relationship": "hasDaysUsedHallucinogens",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedHallucinogens",
+            "description": "Indicates the number of days the respondent used hallucinogens in the past year."
+        },
+        {
+            "relationship": "hasDaysUsedInhalants",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedInhalants",
+            "description": "Indicates the number of days the respondent used inhalants in the past year."
+        },
+        {
+            "relationship": "hasDaysUsedMethamphetamine",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedMethamphetamine",
+            "description": "Indicates the number of days the respondent used methamphetamine in the past year."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "usedCocaine",
+            "object": "DaysUsedCocaine"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedCrack",
+            "object": "DaysUsedCrack"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedHeroin",
+            "object": "DaysUsedHeroin"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedHallucinogens",
+            "object": "DaysUsedHallucinogens"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedInhalants",
+            "object": "DaysUsedInhalants"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedMethamphetamine",
+            "object": "DaysUsedMethamphetamine"
+        }
+    ]
+}

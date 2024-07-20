@@ -1,0 +1,17 @@
+[
+    {
+        "subject": "PrescriptionPainRelievers",
+        "predicate": "used_by",
+        "object": "respondents"
+    },
+    {
+        "subject": "Heroin",
+        "predicate": "used_by",
+        "object": "respondents"
+    },
+    {
+        "subject": "Tranquilizers",
+        "predicate": "used_by",
+        "object": "respondents"
+    }
+]

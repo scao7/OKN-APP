@@ -1,0 +1,63 @@
+{
+    "entities": [
+        {
+            "entity": "LooseMarijuanaAmount",
+            "description": "The amount of loose marijuana bought last time in ounces."
+        },
+        {
+            "entity": "MarijuanaUsageLast12Months",
+            "description": "Indication whether marijuana was used in the past 12 months."
+        },
+        {
+            "entity": "SoldMarijuanaLast12Months",
+            "description": "Indication whether marijuana or cannabis products were sold in the past 12 months."
+        },
+        {
+            "entity": "PurchasedMarijuanaAmount",
+            "description": "Number of ounces of loose marijuana purchased last time."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "boughtLooseMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "LooseMarijuanaAmount",
+            "description": "Indicates the amount of loose marijuana bought by the respondent."
+        },
+        {
+            "relationship": "usedMarijuanaLast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaUsageLast12Months",
+            "description": "Denotes whether the respondent used marijuana in the past 12 months."
+        },
+        {
+            "relationship": "soldMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "SoldMarijuanaLast12Months",
+            "description": "Indicates if the respondent sold marijuana or cannabis products in the past 12 months."
+        },
+        {
+            "relationship": "purchasedAmount",
+            "source_entity": "LooseMarijuanaAmount",
+            "target_entity": "PurchasedMarijuanaAmount",
+            "description": "Defines the specific amount of marijuana purchased by the respondent last time."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "bought",
+            "object": "LooseMarijuanaAmount"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "MarijuanaUsageLast12Months"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "sold",
+            "object": "SoldMarijuanaLast12Months"
+        }
+    ]
+}

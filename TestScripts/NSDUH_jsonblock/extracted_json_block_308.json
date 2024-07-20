@@ -1,0 +1,104 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 30 days, including today's date."
+        },
+        {
+            "entity": "Respondent",
+            "description": "An individual who provides answers in the NSDUH survey."
+        },
+        {
+            "entity": "SEDMAINRSN",
+            "description": "Main reason for misusing sedatives last episode."
+        },
+        {
+            "entity": "SEDRELX",
+            "description": "To relax or relieve tension as a reason for misusing sedatives."
+        },
+        {
+            "entity": "SEDSEXPT",
+            "description": "To experiment or see what it\u2019s like when misusing sedatives."
+        },
+        {
+            "entity": "SEDRSHIGH",
+            "description": "To feel good or get high as a reason for misusing sedatives."
+        },
+        {
+            "entity": "SEDRSLP",
+            "description": "To help with sleep as a reason for misusing sedatives."
+        },
+        {
+            "entity": "SEDRSEMOT",
+            "description": "To help with feelings or emotions as a reason for misusing sedatives."
+        },
+        {
+            "entity": "SEDRSDFX",
+            "description": "To increase or decrease the effects of other drugs."
+        },
+        {
+            "entity": "SEDRSHOOK",
+            "description": "Being hooked or having to have the drug."
+        },
+        {
+            "entity": "SEDRSOR",
+            "description": "Some other reason for misusing sedatives."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "providedBy",
+            "source_entity": "SEDMAINRSN",
+            "target_entity": "Respondent",
+            "description": "Indicates the respondent provided the main reason for misusing sedatives last episode."
+        },
+        {
+            "relationship": "isClassifiedAs",
+            "source_entity": "SEDMAINRSN",
+            "target_entity": "SEDRELX",
+            "description": "Classifies relaxation or tension relief as a main reason for misusing sedatives."
+        },
+        {
+            "relationship": "isClassifiedAs",
+            "source_entity": "SEDMAINRSN",
+            "target_entity": "SEDSEXPT",
+            "description": "Classifies experimentation or curiosity as a main reason for misusing sedatives."
+        },
+        {
+            "relationship": "isClassifiedAs",
+            "source_entity": "SEDMAINRSN",
+            "target_entity": "SEDRSHIGH",
+            "description": "Classifies feeling good or getting high as a main reason for misusing sedatives."
+        },
+        {
+            "relationship": "isClassifiedAs",
+            "source_entity": "SEDMAINRSN",
+            "target_entity": "SEDRSLP",
+            "description": "Classifies helping with sleep as a main reason for misusing sedatives."
+        },
+        {
+            "relationship": "isClassifiedAs",
+            "source_entity": "SEDMAINRSN",
+            "target_entity": "SEDRSEMOT",
+            "description": "Classifies helping with feelings or emotions as a main reason for misusing sedatives."
+        },
+        {
+            "relationship": "isCoveredUnder",
+            "source_entity": "SEDRSDFX",
+            "target_entity": "SEDMAINRSN",
+            "description": "Includes increasing or decreasing effects of other drugs as a reason for misusing sedatives."
+        },
+        {
+            "relationship": "isCoveredUnder",
+            "source_entity": "SEDRSHOOK",
+            "target_entity": "SEDMAINRSN",
+            "description": "Includes being hooked or having to have sedatives as a reason for misusing them."
+        },
+        {
+            "relationship": "isCoveredUnder",
+            "source_entity": "SEDRSOR",
+            "target_entity": "SEDMAINRSN",
+            "description": "Includes some other reason for misusing sedatives as a classification."
+        }
+    ]
+}

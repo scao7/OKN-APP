@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "HEROVER",
+            "description": "Ever used heroin"
+        },
+        {
+            "entity": "HERAGE",
+            "description": "Age when first used heroin"
+        },
+        {
+            "entity": "HERYFU",
+            "description": "Year of first heroin use - recode"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHeroinUseStatus",
+            "source_entity": "Respondent",
+            "target_entity": "HEROVER",
+            "description": "Indicates if the respondent has ever used heroin."
+        },
+        {
+            "relationship": "hasFirstHeroinUseAge",
+            "source_entity": "Respondent",
+            "target_entity": "HERAGE",
+            "description": "Specifies the age at which the respondent first used heroin."
+        },
+        {
+            "relationship": "hasFirstHeroinUseYear",
+            "source_entity": "Respondent",
+            "target_entity": "HERYFU",
+            "description": "Specifies the year when the respondent first used heroin."
+        }
+    ]
+}

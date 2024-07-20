@@ -1,0 +1,117 @@
+{
+    "entities": [
+        {
+            "entity": "AMDEY",
+            "description": "Indicator for adults with past year MDE (0 or 1)."
+        },
+        {
+            "entity": "AMDEIMP",
+            "description": "Indicator for adults with past year MDE and severe role impairment."
+        },
+        {
+            "entity": "ASDSHOM2",
+            "description": "SDS domain variable: home management."
+        },
+        {
+            "entity": "ASDSWRK2",
+            "description": "SDS domain variable: ability to work."
+        },
+        {
+            "entity": "ASDSREL2",
+            "description": "SDS domain variable: close relationships."
+        },
+        {
+            "entity": "ASDSSOC2",
+            "description": "SDS domain variable: social life."
+        },
+        {
+            "entity": "AMDEIMP_Category",
+            "description": "Category of AMDEIMP values including 'Aged 12-17/Unknown', 'Yes', and 'No'."
+        },
+        {
+            "entity": "IRAMDEIMP",
+            "description": "Imputation-revised variable used in analysis."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "derivedFrom",
+            "source_entity": "AMDEIMP",
+            "target_entity": "AMDEY",
+            "description": "AMDEIMP is derived from adults with past year MDE."
+        },
+        {
+            "relationship": "associatedWith",
+            "source_entity": "AMDEIMP",
+            "target_entity": "ASDSHOM2",
+            "description": "AMDEIMP is associated with SDS domain of home management."
+        },
+        {
+            "relationship": "associatedWith",
+            "source_entity": "AMDEIMP",
+            "target_entity": "ASDSWRK2",
+            "description": "AMDEIMP is associated with SDS domain of ability to work."
+        },
+        {
+            "relationship": "associatedWith",
+            "source_entity": "AMDEIMP",
+            "target_entity": "ASDSREL2",
+            "description": "AMDEIMP is associated with SDS domain of close relationships."
+        },
+        {
+            "relationship": "associatedWith",
+            "source_entity": "AMDEIMP",
+            "target_entity": "ASDSSOC2",
+            "description": "AMDEIMP is associated with SDS domain of social life."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "AMDEIMP",
+            "target_entity": "AMDEIMP_Category",
+            "description": "AMDEIMP is categorized as 'Aged 12-17/Unknown', 'Yes', or 'No'."
+        },
+        {
+            "relationship": "imputationRevisedBy",
+            "source_entity": "AMDEIMP",
+            "target_entity": "IRAMDEIMP",
+            "description": "AMDEIMP values are revised using IRAMDEIMP in analysis starting 2021."
+        }
+    ],
+    "triples": [
+        {
+            "subject": "AMDEIMP",
+            "predicate": "derivedFrom",
+            "object": "AMDEY"
+        },
+        {
+            "subject": "AMDEIMP",
+            "predicate": "associatedWith",
+            "object": "ASDSHOM2"
+        },
+        {
+            "subject": "AMDEIMP",
+            "predicate": "associatedWith",
+            "object": "ASDSWRK2"
+        },
+        {
+            "subject": "AMDEIMP",
+            "predicate": "associatedWith",
+            "object": "ASDSREL2"
+        },
+        {
+            "subject": "AMDEIMP",
+            "predicate": "associatedWith",
+            "object": "ASDSSOC2"
+        },
+        {
+            "subject": "AMDEIMP",
+            "predicate": "categorizedAs",
+            "object": "AMDEIMP_Category"
+        },
+        {
+            "subject": "AMDEIMP",
+            "predicate": "imputationRevisedBy",
+            "object": "IRAMDEIMP"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "SUBOUTDRGPY",
+            "description": "Receipt of substance use treatment as an outpatient for drug use in the past year."
+        },
+        {
+            "entity": "SUBOUTALCPY",
+            "description": "Receipt of substance use treatment as an outpatient for alcohol use in the past year."
+        },
+        {
+            "entity": "SUBOUTUNSPPY",
+            "description": "Receipt of substance use treatment as an outpatient for unspecified reasons in the past year."
+        },
+        {
+            "entity": "SUPTIVIDRG",
+            "description": "Receipt of phone or video services for drug use in the past year."
+        },
+        {
+            "entity": "SUPTIVIALC",
+            "description": "Receipt of phone or video services for alcohol use in the past year."
+        },
+        {
+            "entity": "SURTTPY",
+            "description": "Receipt of substance use treatment in the past year."
+        },
+        {
+            "entity": "SURTTRDGPY",
+            "description": "Receipt of substance use treatment for drug use in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasReceivedOutpatientDrugTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "SUBOUTDRGPY",
+            "description": "Indicates whether the respondent received substance use treatment as an outpatient for drug use in the past year."
+        },
+        {
+            "relationship": "hasReceivedOutpatientAlcoholTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "SUBOUTALCPY",
+            "description": "Indicates whether the respondent received substance use treatment as an outpatient for alcohol use in the past year."
+        },
+        {
+            "relationship": "hasReceivedUnspecifiedOutpatientTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "SUBOUTUNSPPY",
+            "description": "Indicates whether the respondent received substance use treatment as an outpatient for unspecified reasons in the past year."
+        },
+        {
+            "relationship": "hasReceivedPhoneVideoDrugServices",
+            "source_entity": "Respondent",
+            "target_entity": "SUPTIVIDRG",
+            "description": "Indicates whether the respondent received phone or video services for drug use in the past year."
+        },
+        {
+            "relationship": "hasReceivedPhoneVideoAlcoholServices",
+            "source_entity": "Respondent",
+            "target_entity": "SUPTIVIALC",
+            "description": "Indicates whether the respondent received phone or video services for alcohol use in the past year."
+        },
+        {
+            "relationship": "hasReceivedSubstanceUseTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "SURTTPY",
+            "description": "Indicates whether the respondent received substance use treatment in the past year."
+        },
+        {
+            "relationship": "hasReceivedDrugUseTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "SURTTRDGPY",
+            "description": "Indicates whether the respondent received substance use treatment for drug use in the past year."
+        }
+    ]
+}

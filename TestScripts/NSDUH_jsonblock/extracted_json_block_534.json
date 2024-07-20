@@ -1,0 +1,139 @@
+{
+    "entities": [
+        {
+            "entity": "SMISUDANY",
+            "description": "Indicator for serious mental illness (SMI), substance use disorder (SUD), both, or neither in the past year according to DSM-5."
+        },
+        {
+            "entity": "AgeGroup12to17",
+            "description": "Age group 12 to 17 years."
+        },
+        {
+            "entity": "AgeGroup18Plus",
+            "description": "Age group 18 years and older."
+        },
+        {
+            "entity": "AMIRSUDANY",
+            "description": "Indicator for serious mental illness (AMI) and/or substance use disorder (SUD) in the past year according to DSM-5."
+        },
+        {
+            "entity": "IRSUICTHNK",
+            "description": "Indicator for having serious thoughts of suicide."
+        },
+        {
+            "entity": "IRSUICPLAN",
+            "description": "Indicator for having made a suicide plan."
+        },
+        {
+            "entity": "IRSUICATT",
+            "description": "Indicator for having attempted suicide."
+        },
+        {
+            "entity": "ADSUITPAXR",
+            "description": "Indicator for serious thoughts, planned, or attempted suicide in the past year."
+        },
+        {
+            "entity": "ADSUITPACOM",
+            "description": "Combination of suicide thoughts, plans, and attempts in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTimeFrame",
+            "source_entity": "Survey",
+            "target_entity": "TimeFrame",
+            "description": "Relates the survey to the time frame of the past year."
+        },
+        {
+            "relationship": "hasAgeGroup",
+            "source_entity": "Respondent",
+            "target_entity": "AgeGroup12to17",
+            "description": "Indicates the age group 12 to 17 years."
+        },
+        {
+            "relationship": "hasAgeGroup",
+            "source_entity": "Respondent",
+            "target_entity": "AgeGroup18Plus",
+            "description": "Indicates the age group 18 years and older."
+        },
+        {
+            "relationship": "hasMentalHealthIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "SMISUDANY",
+            "description": "Indicates the mental health status regarding SMI and SUD in the past year."
+        },
+        {
+            "relationship": "hasMentalHealthIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "AMIRSUDANY",
+            "description": "Indicates the mental health status regarding AMI and SUD in the past year."
+        },
+        {
+            "relationship": "hasSuicidalThoughts",
+            "source_entity": "Respondent",
+            "target_entity": "IRSUICTHNK",
+            "description": "Indicates serious thoughts of suicide."
+        },
+        {
+            "relationship": "hasSuicidalPlans",
+            "source_entity": "Respondent",
+            "target_entity": "IRSUICPLAN",
+            "description": "Indicates having made a suicide plan."
+        },
+        {
+            "relationship": "hasSuicideAttempts",
+            "source_entity": "Respondent",
+            "target_entity": "IRSUICATT",
+            "description": "Indicates having attempted suicide."
+        },
+        {
+            "relationship": "hasSuicideActivities",
+            "source_entity": "Respondent",
+            "target_entity": "ADSUITPAXR",
+            "description": "Indicates serious thoughts, plans, or attempts of suicide in the past year."
+        },
+        {
+            "relationship": "hasCombinedSuicideIndicators",
+            "source_entity": "Respondent",
+            "target_entity": "ADSUITPACOM",
+            "description": "Combines indicators for suicidal thoughts, plans, and attempts in the past year."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "SMISUDANY",
+            "predicate": "includes",
+            "object": "AMI"
+        },
+        {
+            "subject": "SMISUDANY",
+            "predicate": "includes",
+            "object": "SUD"
+        },
+        {
+            "subject": "AMIRSUDANY",
+            "predicate": "includes",
+            "object": "SMI"
+        },
+        {
+            "subject": "AMIRSUDANY",
+            "predicate": "includes",
+            "object": "SUD"
+        },
+        {
+            "subject": "ADSUITPACOM",
+            "predicate": "combines",
+            "object": "IRSUICTHNK"
+        },
+        {
+            "subject": "ADSUITPACOM",
+            "predicate": "combines",
+            "object": "IRSUICPLAN"
+        },
+        {
+            "subject": "ADSUITPACOM",
+            "predicate": "combines",
+            "object": "IRSUICATT"
+        }
+    ]
+}

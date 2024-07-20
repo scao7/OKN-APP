@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "TryToCutDownOrStopPainRelievers",
+            "description": "Action of trying to cut down or stop using any prescription pain relievers in the past 12 months."
+        },
+        {
+            "entity": "UnableToCutDownOrStopPainRelievers",
+            "description": "Being unable to cut down or stop using prescription pain relievers more than one time in the past 12 months."
+        },
+        {
+            "entity": "OftenWishedToCutDownOrStopPainRelievers",
+            "description": "Often wishing to cut down or stop using prescription pain relievers in the past 12 months."
+        },
+        {
+            "entity": "LongLastingPhysicalProblems",
+            "description": "Any long-lasting or repeated physical health problems caused or made worse by using a prescription pain reliever in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCutDownOrStopAttempt",
+            "source_entity": "Respondent",
+            "target_entity": "TryToCutDownOrStopPainRelievers",
+            "description": "Indicates the respondent's attempt to cut down or stop using prescription pain relievers in the past 12 months."
+        },
+        {
+            "relationship": "hasFailedCutDownOrStop",
+            "source_entity": "Respondent",
+            "target_entity": "UnableToCutDownOrStopPainRelievers",
+            "description": "Indicates the respondent's failure to cut down or stop using prescription pain relievers more than once in the past 12 months."
+        },
+        {
+            "relationship": "hasWishedCutDownOrStop",
+            "source_entity": "Respondent",
+            "target_entity": "OftenWishedToCutDownOrStopPainRelievers",
+            "description": "Indicates the respondent's frequent wish to cut down or stop using prescription pain relievers in the past 12 months."
+        },
+        {
+            "relationship": "hasPhysicalProblems",
+            "source_entity": "Respondent",
+            "target_entity": "LongLastingPhysicalProblems",
+            "description": "Indicates the respondent's long-lasting or repeated physical health problems caused or made worse by using prescription pain relievers in the past 12 months."
+        }
+    ]
+}

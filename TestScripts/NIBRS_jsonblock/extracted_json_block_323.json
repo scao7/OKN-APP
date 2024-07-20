@@ -1,0 +1,16 @@
+{
+    "relationships": [
+        {
+            "relationship": "reportsStats",
+            "source_entity": "Survey",
+            "target_entity": "SurveyDataStats",
+            "description": "Relates the survey to statistical data such as mean, median, and mode."
+        },
+        {
+            "relationship": "hasVictimOffenderRelationship",
+            "source_entity": "Survey",
+            "target_entity": "VictimOffenderRelationship",
+            "description": "Indicates the nature of relationship between victims and offenders reported in the survey."
+        }
+    ]
+}

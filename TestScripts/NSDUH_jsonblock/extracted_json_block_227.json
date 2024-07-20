@@ -1,0 +1,58 @@
+{
+    "entities": [
+        {
+            "entity": "MainReasonForLastStimulantUse",
+            "description": "The respondent's main reason for using a stimulant the last time."
+        },
+        {
+            "entity": "StimulantUseFreq",
+            "description": "The frequency count of respondents for each reason for using stimulants."
+        },
+        {
+            "entity": "StimulantUsePercentage",
+            "description": "The percentage of respondents for each reason for using stimulants."
+        },
+        {
+            "entity": "StimulantMisuseLastYear",
+            "description": "Indicates whether the respondent misused stimulants in the past year without a prescription."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasReasonForStimulantUse",
+            "source_entity": "Respondent",
+            "target_entity": "MainReasonForLastStimulantUse",
+            "description": "Identifies the main reason a respondent used a stimulant the last time."
+        },
+        {
+            "relationship": "hasStimulantUseFrequency",
+            "source_entity": "MainReasonForLastStimulantUse",
+            "target_entity": "StimulantUseFreq",
+            "description": "Links the reason for stimulant use to the frequency count of respondents who gave that reason."
+        },
+        {
+            "relationship": "hasStimulantUsePercentage",
+            "source_entity": "MainReasonForLastStimulantUse",
+            "target_entity": "StimulantUsePercentage",
+            "description": "Links the reason for stimulant use to the percentage of respondents who gave that reason."
+        },
+        {
+            "relationship": "hasStimulantMisuseInLastYear",
+            "source_entity": "Respondent",
+            "target_entity": "StimulantMisuseLastYear",
+            "description": "Indicates whether the respondent misused stimulants without a prescription in the past year."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "MainReasonForLastStimulantUse",
+            "predicate": "hasAttribute",
+            "object": "StimulantUseFreq"
+        },
+        {
+            "subject": "MainReasonForLastStimulantUse",
+            "predicate": "hasAttribute",
+            "object": "StimulantUsePercentage"
+        }
+    ]
+}

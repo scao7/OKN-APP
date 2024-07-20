@@ -1,0 +1,44 @@
+{
+    "entities": [
+        {
+            "entity": "PrescriptionSedativeUseDisorder",
+            "description": "Past year misuse of prescription sedatives classified with the disorder if meeting two or more criteria."
+        },
+        {
+            "entity": "StimulantMisuseProblems",
+            "description": "Problems caused by stimulant misuse, including issues with family or friends, mental health, or physical health."
+        },
+        {
+            "entity": "StimulantWithdrawalSymptoms",
+            "description": "Symptoms experienced when reducing or stopping stimulant use, such as feeling tired, dreams, sleeping issues, and emotional changes."
+        },
+        {
+            "entity": "PrescriptionSedativeMisuseCriteria",
+            "description": "Criteria to classify past year misusers of prescription sedatives into varying severity levels."
+        },
+        {
+            "entity": "PastYearMisusers",
+            "description": "Respondents who misused substances within the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMisuseProblems",
+            "source_entity": "PastYearMisusers",
+            "target_entity": "StimulantMisuseProblems",
+            "description": "Indicates issues faced by stimulant misusers, such as problems with family or friends, reduced social activities, and increased physical harm."
+        },
+        {
+            "relationship": "hasWithdrawalSymptoms",
+            "source_entity": "PastYearMisusers",
+            "target_entity": "StimulantWithdrawalSymptoms",
+            "description": "Details the withdrawal symptoms experienced by stimulant misusers."
+        },
+        {
+            "relationship": "classifiedByCriteria",
+            "source_entity": "PrescriptionSedativeUseDisorder",
+            "target_entity": "PrescriptionSedativeMisuseCriteria",
+            "description": "Prescription sedative use disorder is classified based on specific misuse criteria."
+        }
+    ]
+}

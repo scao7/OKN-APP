@@ -1,0 +1,98 @@
+{
+    "entities": [
+        {
+            "entity": "Erythromycin",
+            "description": "An antibiotic used to treat a variety of bacterial infections."
+        },
+        {
+            "entity": "GHB",
+            "description": "A central nervous system depressant."
+        },
+        {
+            "entity": "NutritionalSupplement",
+            "description": "Products such as liquid vitamins and monosodium glutamate (MSG)."
+        },
+        {
+            "entity": "Antibiotic",
+            "description": "A medicine that inhibits the growth of or destroys microorganisms."
+        },
+        {
+            "entity": "Contraceptives",
+            "description": "Products used to prevent pregnancy."
+        },
+        {
+            "entity": "Depressant",
+            "description": "A class of drugs that reduce neural activity and slow body functions."
+        },
+        {
+            "entity": "Stimulant",
+            "description": "A class of drugs that increase neural activity and speed up body functions."
+        },
+        {
+            "entity": "HealthCondition",
+            "description": "Conditions like mental health issues or substance use disorders."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isUsedFor",
+            "source_entity": "Erythromycin",
+            "target_entity": "HealthCondition",
+            "description": "Erythromycin is used for treating bacterial infections."
+        },
+        {
+            "relationship": "isClassifiedAs",
+            "source_entity": "GHB",
+            "target_entity": "Depressant",
+            "description": "GHB is classified as a central nervous system depressant."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "NutritionalSupplement",
+            "target_entity": "LiquidVitamin",
+            "description": "Nutritional supplements include products like liquid vitamins."
+        },
+        {
+            "relationship": "isClassifiedAs",
+            "source_entity": "Antibiotic",
+            "target_entity": "Amoxicillin",
+            "description": "Amoxicillin is classified as an antibiotic."
+        },
+        {
+            "relationship": "isType",
+            "source_entity": "Contraceptive",
+            "target_entity": "Fertual",
+            "description": "Fertual is a type of contraceptive."
+        },
+        {
+            "relationship": "isClassifiedAs",
+            "source_entity": "Methazolamide",
+            "target_entity": "Antibiotic",
+            "description": "Methazolamide is classified as an antibiotic."
+        },
+        {
+            "relationship": "isUsedFor",
+            "source_entity": "Tartrate",
+            "target_entity": "HealthCondition",
+            "description": "Tartrate is used for treating various medical conditions."
+        },
+        {
+            "relationship": "isUsedFor",
+            "source_entity": "Antidepressants",
+            "target_entity": "MentalHealth",
+            "description": "Antidepressants are used for treating mental health conditions."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Erythromycin",
+            "predicate": "isUsedFor",
+            "object": "Bacterial Infections"
+        },
+        {
+            "subject": "GHB",
+            "predicate": "isClassifiedAs",
+            "object": "Depressant"
+        }
+    ]
+}

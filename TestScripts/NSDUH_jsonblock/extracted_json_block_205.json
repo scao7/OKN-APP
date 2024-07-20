@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The past 30 days timeframe referenced in the survey questions."
+        },
+        {
+            "entity": "PainRelieverNonMedicalUseLast30Days",
+            "description": "The frequency of using pain relievers not directed by a doctor in the past 30 days."
+        },
+        {
+            "entity": "PainRelieverNonMedicalUseLast12Months",
+            "description": "The frequency of using pain relievers without a doctor's direction in the past 12 months."
+        },
+        {
+            "entity": "PainRelieverExceedingPrescriptionLast12Months",
+            "description": "The frequency of using pain relievers in greater amounts than prescribed in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the past 30 days timeframe."
+        },
+        {
+            "relationship": "reportsNonMedicalUseLast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "PainRelieverNonMedicalUseLast30Days",
+            "description": "Indicates the frequency with which the respondent used pain relievers not directed by a doctor in the past 30 days."
+        },
+        {
+            "relationship": "reportsNonMedicalUseLast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "PainRelieverNonMedicalUseLast12Months",
+            "description": "Indicates the frequency with which the respondent used pain relievers without a doctor's direction in the past 12 months."
+        },
+        {
+            "relationship": "reportsExceedingPrescriptionLast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "PainRelieverExceedingPrescriptionLast12Months",
+            "description": "Indicates the frequency with which the respondent used pain relievers in greater amounts than prescribed in the past 12 months."
+        }
+    ]
+}

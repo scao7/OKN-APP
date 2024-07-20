@@ -1,0 +1,123 @@
+{
+    "entities": [
+        {
+            "entity": "PrescriptionStimulantUse",
+            "description": "Use of prescription stimulants at any point in a person's lifetime."
+        },
+        {
+            "entity": "RecentPrescriptionStimulantUse",
+            "description": "Most recent use of prescription stimulants, whether within or beyond the past 12 months."
+        },
+        {
+            "entity": "LifetimeUse",
+            "description": "Indicator of any stimulant use in an individual's lifetime."
+        },
+        {
+            "entity": "Past12MonthsUse",
+            "description": "Indicator of stimulant use within the past 12 months."
+        },
+        {
+            "entity": "NoUse12Months",
+            "description": "Indicator of no stimulant use in the past 12 months."
+        },
+        {
+            "entity": "NeverUsedStimulants",
+            "description": "Indicator of never having used stimulants."
+        },
+        {
+            "entity": "UnknownUse",
+            "description": "Uncertainty of stimulant use in the past or lifetime."
+        },
+        {
+            "entity": "RefusedToAnswer",
+            "description": "Refusal to answer the survey question about stimulant use."
+        },
+        {
+            "entity": "BlankAnswer",
+            "description": "No response provided for the survey question about stimulant use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasPrescriptionStimulantUse",
+            "source_entity": "STIMANYLIF",
+            "target_entity": "PrescriptionStimulantUse",
+            "description": "Relates the survey query about any lifetime use of prescription stimulants."
+        },
+        {
+            "relationship": "hasRecentPrescriptionStimulantUse",
+            "source_entity": "STIMANYREC",
+            "target_entity": "RecentPrescriptionStimulantUse",
+            "description": "Relates the survey query about the most recent use of prescription stimulants."
+        },
+        {
+            "relationship": "hasLifetimeUse",
+            "source_entity": "PrescriptionStimulantUse",
+            "target_entity": "LifetimeUse",
+            "description": "Indicates any use of stimulants in a respondent's lifetime."
+        },
+        {
+            "relationship": "hasPast12MonthsUse",
+            "source_entity": "PrescriptionStimulantUse",
+            "target_entity": "Past12MonthsUse",
+            "description": "Indicates any use of stimulants in the past 12 months."
+        },
+        {
+            "relationship": "hasNoUse12Months",
+            "source_entity": "PrescriptionStimulantUse",
+            "target_entity": "NoUse12Months",
+            "description": "Indicates no use of stimulants in the past 12 months."
+        },
+        {
+            "relationship": "hasNeverUsedStimulants",
+            "source_entity": "PrescriptionStimulantUse",
+            "target_entity": "NeverUsedStimulants",
+            "description": "Indicates that the individual has never used stimulants."
+        },
+        {
+            "relationship": "hasUnknownUse",
+            "source_entity": "PrescriptionStimulantUse",
+            "target_entity": "UnknownUse",
+            "description": "Indicates uncertainty regarding stimulant use."
+        },
+        {
+            "relationship": "hasRefusedToAnswer",
+            "source_entity": "PrescriptionStimulantUse",
+            "target_entity": "RefusedToAnswer",
+            "description": "Indicates refusal to answer the question about stimulant use."
+        },
+        {
+            "relationship": "hasBlankAnswer",
+            "source_entity": "PrescriptionStimulantUse",
+            "target_entity": "BlankAnswer",
+            "description": "Indicates no response was provided for the question about stimulant use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Survey",
+            "predicate": "asks",
+            "object": "PrescriptionStimulantUse"
+        },
+        {
+            "subject": "PrescriptionStimulantUse",
+            "predicate": "categorizedBy",
+            "object": "RecentPrescriptionStimulantUse"
+        },
+        {
+            "subject": "RecentPrescriptionStimulantUse",
+            "predicate": "includes",
+            "object": "Past12MonthsUse"
+        },
+        {
+            "subject": "RecentPrescriptionStimulantUse",
+            "predicate": "includes",
+            "object": "NoUse12Months"
+        },
+        {
+            "subject": "RecentPrescriptionStimulantUse",
+            "predicate": "includes",
+            "object": "NeverUsedStimulants"
+        }
+    ]
+}

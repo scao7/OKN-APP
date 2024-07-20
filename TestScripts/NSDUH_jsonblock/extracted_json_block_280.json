@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "RC_MARIJUANA_USE_DABBING_WAXES_SHATTER_OR_CONC_PST_YR",
+            "description": "Response indicating the use of dabbing waxes, shatter, or concentrates in the past year."
+        },
+        {
+            "entity": "RC_MARIJUANA_USE_EATING_OR_DRINKING_PAST_YEAR",
+            "description": "Response indicating the ingestion of marijuana through eating or drinking in the past year."
+        },
+        {
+            "entity": "RC_MARIJUANA_USE_SOME_OTHER_MODE_PAST_YEAR",
+            "description": "Response indicating the use of marijuana through some other mode in the past year."
+        },
+        {
+            "entity": "RC_MARIJUANA_USE_DRPS_STRPS_LZNGS_SPRYS_IN_MOUTH_PST_12_MOS",
+            "description": "Response indicating the use of drops, strips, lozenges, or sprays in the mouth in the past 12 months."
+        },
+        {
+            "entity": "RC_MARIJUANA_USE_LOTION_CREAM_PATCH_TO_SKIN_PST_12_MOS",
+            "description": "Response indicating the use of marijuana through lotions, creams, or patches on the skin in the past 12 months."
+        },
+        {
+            "entity": "RC_MARIJUANA_USE_PILLS_PAST_12_MONTHS",
+            "description": "Response indicating the use of marijuana in pill form during the past 12 months."
+        },
+        {
+            "entity": "RC_MARIJUANA_USE_SMOKING_PAST_MONTH",
+            "description": "Response indicating the use of marijuana through smoking in the past month."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMethodOfUse",
+            "source_entity": "RC_MARIJUANA_USE_DABBING_WAXES_SHATTER_OR_CONC_PST_YR",
+            "target_entity": "Respondent",
+            "description": "Indicates whether the respondent used dabbing waxes, shatter, or concentrates to consume marijuana in the past year."
+        },
+        {
+            "relationship": "hasMethodOfUse",
+            "source_entity": "RC_MARIJUANA_USE_EATING_OR_DRINKING_PAST_YEAR",
+            "target_entity": "Respondent",
+            "description": "Indicates whether the respondent used eating or drinking methods to consume marijuana in the past year."
+        },
+        {
+            "relationship": "hasOtherMethodOfUse",
+            "source_entity": "RC_MARIJUANA_USE_SOME_OTHER_MODE_PAST_YEAR",
+            "target_entity": "Respondent",
+            "description": "Indicates whether the respondent used an unspecified or other mode to consume marijuana in the past year."
+        },
+        {
+            "relationship": "hasMethodOfUse",
+            "source_entity": "RC_MARIJUANA_USE_DRPS_STRPS_LZNGS_SPRYS_IN_MOUTH_PST_12_MOS",
+            "target_entity": "Respondent",
+            "description": "Indicates whether the respondent used drops, strips, lozenges, or sprays in the mouth to consume marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasMethodOfUse",
+            "source_entity": "RC_MARIJUANA_USE_LOTION_CREAM_PATCH_TO_SKIN_PST_12_MOS",
+            "target_entity": "Respondent",
+            "description": "Indicates whether the respondent used lotions, creams, or patches on the skin to consume marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasMethodOfUse",
+            "source_entity": "RC_MARIJUANA_USE_PILLS_PAST_12_MONTHS",
+            "target_entity": "Respondent",
+            "description": "Indicates whether the respondent used pills to consume marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasMethodOfUse",
+            "source_entity": "RC_MARIJUANA_USE_SMOKING_PAST_MONTH",
+            "target_entity": "Respondent",
+            "description": "Indicates whether the respondent used smoking to consume marijuana in the past month."
+        }
+    ]
+}

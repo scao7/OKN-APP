@@ -1,0 +1,78 @@
+{
+    "entities": [
+        {
+            "entity": "MarijuanaUseLotion",
+            "description": "Use of marijuana in the form of lotion, cream, or patch to the skin in the past 12 months."
+        },
+        {
+            "entity": "MarijuanaUsePills",
+            "description": "Use of marijuana in the form of pills in the past 12 months."
+        },
+        {
+            "entity": "MarijuanaUseOther",
+            "description": "Use of marijuana in some other way in the past 12 months."
+        },
+        {
+            "entity": "MarijuanaUseSmoking",
+            "description": "Use of marijuana by smoking in the past 30 days."
+        },
+        {
+            "entity": "Survey",
+            "description": "A survey conducted to gather information about marijuana use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsageType",
+            "source_entity": "MarijuanaUse",
+            "target_entity": "MarijuanaUseLotion",
+            "description": "Type of marijuana use involving application as lotion, cream, or patch in the past 12 months."
+        },
+        {
+            "relationship": "hasUsageType",
+            "source_entity": "MarijuanaUse",
+            "target_entity": "MarijuanaUsePills",
+            "description": "Type of marijuana use involving ingestion of pills in the past 12 months."
+        },
+        {
+            "relationship": "hasUsageType",
+            "source_entity": "MarijuanaUse",
+            "target_entity": "MarijuanaUseOther",
+            "description": "Type of marijuana use involving any other methods in the past 12 months."
+        },
+        {
+            "relationship": "hasUsageType",
+            "source_entity": "MarijuanaUse",
+            "target_entity": "MarijuanaUseSmoking",
+            "description": "Type of marijuana use involving smoking in the past 30 days."
+        },
+        {
+            "relationship": "conductsSurvey",
+            "source_entity": "SurveyAgency",
+            "target_entity": "Survey",
+            "description": "The agency conducting the survey on marijuana use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "MarijuanaUse",
+            "predicate": "involves",
+            "object": "LotionCreamPatch"
+        },
+        {
+            "subject": "MarijuanaUse",
+            "predicate": "involves",
+            "object": "Pills"
+        },
+        {
+            "subject": "MarijuanaUse",
+            "predicate": "involves",
+            "object": "SomeOtherWay"
+        },
+        {
+            "subject": "MarijuanaUse",
+            "predicate": "involves",
+            "object": "Smoking"
+        }
+    ]
+}

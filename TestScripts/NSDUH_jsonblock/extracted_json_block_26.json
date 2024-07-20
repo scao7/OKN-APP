@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "UsabilityCriteria",
+            "description": "Criteria for assessing the usability of responses in the survey."
+        },
+        {
+            "entity": "DrugType",
+            "description": "Various drug categories including (h) inhalants, (i) methamphetamine, (j) prescription pain relievers, (k) prescription tranquilizers, (l) prescription stimulants, and (m) prescription sedatives."
+        },
+        {
+            "entity": "LifetimeUse",
+            "description": "Lifetime use or nonuse must be determined for multiple drug types."
+        },
+        {
+            "entity": "FollowUpProbes",
+            "description": "Follow-up questions for respondents who initially refused to answer 'yes' or 'no' to the gate questions."
+        },
+        {
+            "entity": "NicotineVaping",
+            "description": "Nicotine vaping which was not included in the usability criteria."
+        },
+        {
+            "entity": "PipeTobacco",
+            "description": "Pipe tobacco which was excluded despite one related question."
+        },
+        {
+            "entity": "PrescriptionDrugUse",
+            "description": "Use of specific prescription drugs within the past year."
+        },
+        {
+            "entity": "SpecificDrugUse",
+            "description": "Use or nonuse of all specific prescription drugs, regardless of whether usage can be determined."
+        },
+        {
+            "entity": "Hallucinogens",
+            "description": "Specific hallucinogens needing follow-up questions, such as LSD, PCP, and MDMA."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsabilityCriteria",
+            "source_entity": "Survey",
+            "target_entity": "UsabilityCriteria",
+            "description": "Links the survey to criteria used for assessing the usability of responses."
+        },
+        {
+            "relationship": "includesDrugType",
+            "source_entity": "UsabilityCriteria",
+            "target_entity": "DrugType",
+            "description": "Describes the types of drugs considered in usability criteria."
+        },
+        {
+            "relationship": "requiresDeterminationOfLifetimeUse",
+            "source_entity": "UsabilityCriteria",
+            "target_entity": "LifetimeUse",
+            "description": "Indicates that lifetime use or nonuse must be determined for specific drug categories."
+        },
+        {
+            "relationship": "includesFollowUpProbes",
+            "source_entity": "UsabilityCriteria",
+            "target_entity": "FollowUpProbes",
+            "description": "Describes that follow-up probes were included for certain drug use responses."
+        },
+        {
+            "relationship": "excludesFromUsabilityCriteria",
+            "source_entity": "Survey",
+            "target_entity": "NicotineVaping",
+            "description": "Indicates that nicotine vaping was not included in the usability criteria."
+        },
+        {
+            "relationship": "excludesFromUsabilityCriteria",
+            "source_entity": "Survey",
+            "target_entity": "PipeTobacco",
+            "description": "Indicates that pipe tobacco was excluded from the usability criteria."
+        },
+        {
+            "relationship": "includesPrescriptionDrugUse",
+            "source_entity": "UsabilityCriteria",
+            "target_entity": "PrescriptionDrugUse",
+            "description": "Use of specific prescription drugs in the past year considered in usability criteria."
+        },
+        {
+            "relationship": "requiresSpecificDrugUseData",
+            "source_entity": "UsabilityCriteria",
+            "target_entity": "SpecificDrugUse",
+            "description": "Indicates necessity for data on use or nonuse of all specific prescription drugs."
+        },
+        {
+            "relationship": "includesSpecificHallucinogens",
+            "source_entity": "UsabilityCriteria",
+            "target_entity": "Hallucinogens",
+            "description": "Details hallucinogens that required follow-up questioning."
+        }
+    ]
+}

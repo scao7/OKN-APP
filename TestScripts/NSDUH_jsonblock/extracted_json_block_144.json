@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "MarijuanaUseInOtherWayPast12Months",
+            "description": "Information on whether the respondent got marijuana in some other way in the past 12 months."
+        },
+        {
+            "entity": "TimeSinceLastPaidForMarijuana",
+            "description": "Time since the respondent last paid for or bought marijuana or cannabis products."
+        },
+        {
+            "entity": "DaysPaidForMarijuanaPast30Days",
+            "description": "The number of days in the past 30 days the respondent paid for or bought marijuana or cannabis products."
+        },
+        {
+            "entity": "AmountPaidForLastMarijuanaPurchase",
+            "description": "The amount of money paid for the last marijuana purchase in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMarijuanaUseInOtherWayPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaUseInOtherWayPast12Months",
+            "description": "Indicates whether the respondent got marijuana in some other way in the past 12 months."
+        },
+        {
+            "relationship": "hasTimeSinceLastPaidForMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastPaidForMarijuana",
+            "description": "Indicates the time since the respondent last paid for or bought marijuana or cannabis products."
+        },
+        {
+            "relationship": "hasDaysPaidForMarijuanaPast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "DaysPaidForMarijuanaPast30Days",
+            "description": "Indicates the number of days the respondent paid for or bought marijuana or cannabis products in the past 30 days."
+        },
+        {
+            "relationship": "hasAmountPaidForLastMarijuanaPurchase",
+            "source_entity": "Respondent",
+            "target_entity": "AmountPaidForLastMarijuanaPurchase",
+            "description": "Indicates the amount of money paid by the respondent for the last marijuana purchase in the past 12 months."
+        }
+    ]
+}

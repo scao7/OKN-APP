@@ -1,0 +1,80 @@
+{
+    "entities": [
+        {
+            "entity": "PublicUseFile",
+            "description": "Data file available for public use."
+        },
+        {
+            "entity": "StandardErrorEstimationMethod",
+            "description": "Method for calculating the standard errors of the estimated number of individuals."
+        },
+        {
+            "entity": "MarijuanaPrevalence",
+            "description": "The rate of marijuana usage within the past month."
+        },
+        {
+            "entity": "HeroinPrevalence",
+            "description": "The rate of heroin usage within the past year."
+        },
+        {
+            "entity": "StandardErrorRatios",
+            "description": "Ratios of standard errors across different domains."
+        },
+        {
+            "entity": "PublicUseFileSubsample",
+            "description": "A subsample of the public use file."
+        },
+        {
+            "entity": "NDSUHSuppressionRules",
+            "description": "Rules for suppressing NSDUH data to protect privacy."
+        },
+        {
+            "entity": "Domains",
+            "description": "Various domains represented in the data analysis."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesEstimationMethod",
+            "source_entity": "PublicUseFile",
+            "target_entity": "StandardErrorEstimationMethod",
+            "description": "The Public Use File uses a specific method for estimating standard errors."
+        },
+        {
+            "relationship": "hasMarijuanaPrevalence",
+            "source_entity": "PublicUseFile",
+            "target_entity": "MarijuanaPrevalence",
+            "description": "The Public Use File includes data on the prevalence of marijuana use."
+        },
+        {
+            "relationship": "hasHeroinPrevalence",
+            "source_entity": "PublicUseFile",
+            "target_entity": "HeroinPrevalence",
+            "description": "The Public Use File includes data on the prevalence of heroin use."
+        },
+        {
+            "relationship": "hasStandardErrorRatios",
+            "source_entity": "DataFile",
+            "target_entity": "StandardErrorRatios",
+            "description": "The data file includes ratios of standard errors across different domains."
+        },
+        {
+            "relationship": "isSubsampleOf",
+            "source_entity": "PublicUseFileSubsample",
+            "target_entity": "PublicUseFile",
+            "description": "The subsample is a subset of the Public Use File."
+        },
+        {
+            "relationship": "containsDomains",
+            "source_entity": "DataFile",
+            "target_entity": "Domains",
+            "description": "The data file contains multiple domains for analysis."
+        },
+        {
+            "relationship": "followsSuppressionRules",
+            "source_entity": "NSDUHData",
+            "target_entity": "NDSUHSuppressionRules",
+            "description": "The NSDUH data adheres to suppression rules to protect privacy."
+        }
+    ]
+}

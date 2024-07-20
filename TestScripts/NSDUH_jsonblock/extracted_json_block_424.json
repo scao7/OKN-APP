@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "AlcoholUseDisorder",
+            "description": "Indicates whether the respondent had an alcohol use disorder in the past year."
+        },
+        {
+            "entity": "MarijuanaUseDisorder",
+            "description": "Indicates whether the respondent had a marijuana use disorder in the past year."
+        },
+        {
+            "entity": "CocaineUseDisorder",
+            "description": "Indicates whether the respondent had a cocaine use disorder in the past year."
+        },
+        {
+            "entity": "DiagnosticAndStatisticalManual",
+            "description": "Refers to the Diagnostic and Statistical Manual of Mental Disorders, 5th edition, used as criteria for various disorders."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAlcoholUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholUseDisorder",
+            "description": "Indicates whether the respondent experienced alcohol use disorder in the past year."
+        },
+        {
+            "relationship": "hasMarijuanaUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaUseDisorder",
+            "description": "Indicates whether the respondent experienced marijuana use disorder in the past year."
+        },
+        {
+            "relationship": "hasCocaineUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineUseDisorder",
+            "description": "Indicates whether the respondent experienced cocaine use disorder in the past year."
+        },
+        {
+            "relationship": "followsCriteria",
+            "source_entity": "SubstanceUseDisorder",
+            "target_entity": "DiagnosticAndStatisticalManual",
+            "description": "Relates the substance use disorder to the criteria outlined in the Diagnostic and Statistical Manual of Mental Disorders, 5th edition."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "had",
+            "object": "AlcoholUseDisorder"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "had",
+            "object": "MarijuanaUseDisorder"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "had",
+            "object": "CocaineUseDisorder"
+        },
+        {
+            "subject": "SubstanceUseDisorder",
+            "predicate": "isBasedOn",
+            "object": "DiagnosticAndStatisticalManual"
+        }
+    ]
+}

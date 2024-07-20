@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "CocaineUseDisorder",
+            "description": "The classification of a respondent with cocaine use disorder based on meeting two or more criteria in the past year."
+        },
+        {
+            "entity": "ADemoted",
+            "description": "Demotion at work as an outcome of cocaine use."
+        },
+        {
+            "entity": "AJobLoss",
+            "description": "Losing a job as a consequence of cocaine use."
+        },
+        {
+            "entity": "AAbsenteeism",
+            "description": "Missing a lot of work or school due to cocaine use."
+        },
+        {
+            "entity": "CarEscape",
+            "description": "Getting suspended, expelled, or dropping out of school due to cocaine use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCocaineUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineUseDisorder",
+            "description": "Indicates that the respondent meets the criteria for cocaine use disorder within the past year."
+        },
+        {
+            "relationship": "causesDemotion",
+            "source_entity": "CocaineUse",
+            "target_entity": "ADemoted",
+            "description": "Cocaine use resulting in getting demoted at work."
+        },
+        {
+            "relationship": "causesJobLoss",
+            "source_entity": "CocaineUse",
+            "target_entity": "AJobLoss",
+            "description": "Cocaine use resulting in job loss."
+        },
+        {
+            "relationship": "causesAbsenteeism",
+            "source_entity": "CocaineUse",
+            "target_entity": "AAbsenteeism",
+            "description": "Cocaine use leading to frequent absenteeism at work or school."
+        },
+        {
+            "relationship": "causesSchoolEscape",
+            "source_entity": "CocaineUse",
+            "target_entity": "CarEscape",
+            "description": "Cocaine use leading to school suspension, expulsion, or dropping out."
+        }
+    ]
+}

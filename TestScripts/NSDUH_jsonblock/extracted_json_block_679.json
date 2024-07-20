@@ -1,0 +1,268 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "A code identifying specific drugs."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug being mentioned."
+        },
+        {
+            "entity": "TimesMentioned",
+            "description": "The number of times the drug is mentioned in the 'Other' category."
+        },
+        {
+            "entity": "PercentageSpecified",
+            "description": "The percentage of all drugs specified that this drug represents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Relates a drug to its identification code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Relates a drug to its name."
+        },
+        {
+            "relationship": "hasTimesMentioned",
+            "source_entity": "Drug",
+            "target_entity": "TimesMentioned",
+            "description": "Indicates the number of times a drug is mentioned in the 'Other' category."
+        },
+        {
+            "relationship": "hasPercentageSpecified",
+            "source_entity": "Drug",
+            "target_entity": "PercentageSpecified",
+            "description": "Indicates the percentage of all drugs specified that the drug represents."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "110",
+            "predicate": "isCodeFor",
+            "object": "Triunal"
+        },
+        {
+            "subject": "116",
+            "predicate": "isCodeFor",
+            "object": "Methaqualone, Sopor, Quaalude"
+        },
+        {
+            "subject": "120",
+            "predicate": "isCodeFor",
+            "object": "Downers; OTHER Sedative, NOT OTHERWISE SPECIFIED"
+        },
+        {
+            "subject": "121",
+            "predicate": "isCodeFor",
+            "object": "USED SEDATIVE, DON\u2019T KNOW NAME"
+        },
+        {
+            "subject": "123",
+            "predicate": "isCodeFor",
+            "object": "Unisom"
+        },
+        {
+            "subject": "127",
+            "predicate": "isCodeFor",
+            "object": "Nytol"
+        },
+        {
+            "subject": "130",
+            "predicate": "isCodeFor",
+            "object": "Promethazine"
+        },
+        {
+            "subject": "145",
+            "predicate": "isCodeFor",
+            "object": "Red devil(s)"
+        },
+        {
+            "subject": "171",
+            "predicate": "isCodeFor",
+            "object": "NyQuil"
+        },
+        {
+            "subject": "174",
+            "predicate": "isCodeFor",
+            "object": "Ambien"
+        },
+        {
+            "subject": "176",
+            "predicate": "isCodeFor",
+            "object": "Melatonin"
+        },
+        {
+            "subject": "201",
+            "predicate": "isCodeFor",
+            "object": "Valium"
+        },
+        {
+            "subject": "202",
+            "predicate": "isCodeFor",
+            "object": "Librium"
+        },
+        {
+            "subject": "207",
+            "predicate": "isCodeFor",
+            "object": "Ativan"
+        },
+        {
+            "subject": "209",
+            "predicate": "isCodeFor",
+            "object": "Xanax"
+        },
+        {
+            "subject": "211",
+            "predicate": "isCodeFor",
+            "object": "BuSpar"
+        },
+        {
+            "subject": "215",
+            "predicate": "isCodeFor",
+            "object": "Vistaril"
+        },
+        {
+            "subject": "221",
+            "predicate": "isCodeFor",
+            "object": "OTHER Tranquilizer, NOT OTHERWISE SPECIFIED"
+        },
+        {
+            "subject": "223",
+            "predicate": "isCodeFor",
+            "object": "Meprobamate"
+        },
+        {
+            "subject": "234",
+            "predicate": "isCodeFor",
+            "object": "Flexeril"
+        },
+        {
+            "subject": "246",
+            "predicate": "isCodeFor",
+            "object": "Klonopin"
+        },
+        {
+            "subject": "278",
+            "predicate": "isCodeFor",
+            "object": "Benzodiazepines"
+        },
+        {
+            "subject": "288",
+            "predicate": "isCodeFor",
+            "object": "Baclofen"
+        },
+        {
+            "subject": "311",
+            "predicate": "isCodeFor",
+            "object": "Preludin"
+        },
+        {
+            "subject": "313",
+            "predicate": "isCodeFor",
+            "object": "Adipex-P"
+        },
+        {
+            "subject": "318",
+            "predicate": "isCodeFor",
+            "object": "Ritalin"
+        },
+        {
+            "subject": "322",
+            "predicate": "isCodeFor",
+            "object": "Methamphetamine (\u2018ice\u2019 or \u2018crank\u2019), Meth"
+        },
+        {
+            "subject": "324",
+            "predicate": "isCodeFor",
+            "object": "Uppers; OTHER Stimulant, NOT OTHERWISE SPECIFIED"
+        },
+        {
+            "subject": "336",
+            "predicate": "isCodeFor",
+            "object": "Diet pills/medications/drugs, otherwise unspecified"
+        },
+        {
+            "subject": "339",
+            "predicate": "isCodeFor",
+            "object": "Amphetamines, otherwise unspecified"
+        },
+        {
+            "subject": "348",
+            "predicate": "isCodeFor",
+            "object": "Crystal"
+        },
+        {
+            "subject": "351",
+            "predicate": "isCodeFor",
+            "object": "Cathinone, cat, khat, Q\u2019at"
+        },
+        {
+            "subject": "353",
+            "predicate": "isCodeFor",
+            "object": "No-Doz"
+        },
+        {
+            "subject": "355",
+            "predicate": "isCodeFor",
+            "object": "Crystal meth, crystal methamphetamine"
+        },
+        {
+            "subject": "374",
+            "predicate": "isCodeFor",
+            "object": "Christmas tree(s)"
+        },
+        {
+            "subject": "377",
+            "predicate": "isCodeFor",
+            "object": "Albuterol"
+        },
+        {
+            "subject": "407",
+            "predicate": "isCodeFor",
+            "object": "Demerol"
+        },
+        {
+            "subject": "408",
+            "predicate": "isCodeFor",
+            "object": "Dilaudid, Hydromorphone"
+        },
+        {
+            "subject": "415",
+            "predicate": "isCodeFor",
+            "object": "Codeine pills"
+        },
+        {
+            "subject": "417",
+            "predicate": "isCodeFor",
+            "object": "Morphine"
+        },
+        {
+            "subject": "418",
+            "predicate": "isCodeFor",
+            "object": "Methadone"
+        },
+        {
+            "subject": "420",
+            "predicate": "isCodeFor",
+            "object": "OTHER Pain Reliever, NOT OTHERWISE SPECIFIED"
+        },
+        {
+            "subject": "422",
+            "predicate": "isCodeFor",
+            "object": "Motrin"
+        },
+        {
+            "subject": "423",
+            "predicate": "isCodeFor",
+            "object": "Percocet"
+        }
+    ]
+}

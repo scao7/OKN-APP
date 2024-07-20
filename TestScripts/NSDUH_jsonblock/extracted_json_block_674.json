@@ -1,0 +1,126 @@
+{
+    "entities": [
+        {
+            "entity": "Phenphedrine",
+            "description": "An over-the-counter medication listed in the NSDUH survey."
+        },
+        {
+            "entity": "AntiAnxietyMedication",
+            "description": "An unspecified type of anti-anxiety medication listed in the NSDUH survey."
+        },
+        {
+            "entity": "FluMedication",
+            "description": "A type of flu medication with no other information provided."
+        },
+        {
+            "entity": "Mucinez",
+            "description": "An over-the-counter medication listed in the NSDUH survey."
+        },
+        {
+            "entity": "DMAA_Methylhexanamine",
+            "description": "A specific substance listed in the NSDUH survey."
+        },
+        {
+            "entity": "SyntheticCannabis",
+            "description": "A type of synthetic cannabis listed in the NSDUH survey."
+        },
+        {
+            "entity": "Peptides",
+            "description": "Unspecified peptides listed in the NSDUH survey."
+        },
+        {
+            "entity": "ElectronicCigarette",
+            "description": "An electronic cigarette, a type of device listed in the NSDUH survey."
+        },
+        {
+            "entity": "5HourEnergy",
+            "description": "A type of energy drink listed in the NSDUH survey."
+        },
+        {
+            "entity": "MarijuanaAlternatives",
+            "description": "CBD/hemp oil/edibles/vape (not marijuana) listed in the NSDUH survey."
+        },
+        {
+            "entity": "PainKillers",
+            "description": "Various types of painkillers listed in the NSDUH survey, including opioids and other substances."
+        },
+        {
+            "entity": "MentalHealthMedication",
+            "description": "Medications used for mental health treatment listed in the NSDUH survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "Phenphedrine",
+            "description": "Indicates that the NSDUH survey lists Phenphedrine as a substance."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "AntiAnxietyMedication",
+            "description": "Indicates that the NSDUH survey lists an unspecified type of anti-anxiety medication."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "FluMedication",
+            "description": "Indicates that the NSDUH survey lists a type of flu medication with no other information."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "Mucinez",
+            "description": "Indicates that the NSDUH survey lists Mucinez as an over-the-counter medication."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "DMAA_Methylhexanamine",
+            "description": "Indicates that the NSDUH survey lists DMAA Methylhexanamine as a specific substance."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "SyntheticCannabis",
+            "description": "Indicates that the NSDUH survey lists Synthetic Cannabis."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "Peptides",
+            "description": "Indicates that the NSDUH survey lists unspecified peptides."
+        },
+        {
+            "relationship": "containsDevice",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "ElectronicCigarette",
+            "description": "Indicates that the NSDUH survey lists an electronic cigarette."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "5HourEnergy",
+            "description": "Indicates that the NSDUH survey lists a type of energy drink called 5 Hour Energy."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "MarijuanaAlternatives",
+            "description": "Indicates that the NSDUH survey lists CBD/hemp oil/edibles/vape (not marijuana)."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "PainKillers",
+            "description": "Indicates that the NSDUH survey lists various types of painkillers, including opioids."
+        },
+        {
+            "relationship": "containsSubstance",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "MentalHealthMedication",
+            "description": "Indicates that the NSDUH survey lists medications used for mental health treatment."
+        }
+    ]
+}

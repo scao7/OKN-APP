@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "TranquilizerUse",
+            "description": "Use of prescription tranquilizers causing long-lasting or repeated emotional or mental health problems."
+        },
+        {
+            "entity": "SeriousProblemActivity",
+            "description": "Important activities potentially affected by tranquilizer use, such as spending time with friends and family, attending events, participating in hobbies and sports, and attending religious services."
+        },
+        {
+            "entity": "WorkSchoolProblems",
+            "description": "Serious problems at work, school, or home caused by tranquilizer use, including missing work or school, getting demoted, not being able to keep a job, getting suspended or expelled, or failing to take care of family."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTranquilizerUse",
+            "source_entity": "Respondent",
+            "target_entity": "TranquilizerUse",
+            "description": "Indicates whether the respondent has used prescription tranquilizers."
+        },
+        {
+            "relationship": "hasSeriousProblemActivity",
+            "source_entity": "TranquilizerUse",
+            "target_entity": "SeriousProblemActivity",
+            "description": "Links tranquilizer use with the negative impact on important activities."
+        },
+        {
+            "relationship": "hasWorkSchoolProblems",
+            "source_entity": "TranquilizerUse",
+            "target_entity": "WorkSchoolProblems",
+            "description": "Links tranquilizer use with serious problems at work, school, or home."
+        }
+    ]
+}

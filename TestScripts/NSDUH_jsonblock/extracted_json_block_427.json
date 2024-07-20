@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "TRAQUILIZER_USE_DISORDER",
+            "description": "Indicator of tranquilizer use disorder in the past year, including those who used but did not misuse."
+        },
+        {
+            "entity": "STIMULANT_USE_DISORDER_IMP_REV",
+            "description": "Indicator of stimulant use disorder in the past year, including those who misused, based on imputed review data."
+        },
+        {
+            "entity": "STIMULANT_USE_DISORDER_IMP_IND",
+            "description": "Indicator of stimulant use disorder in the past year, including those who misused, based on imputed individual data."
+        },
+        {
+            "entity": "SEDATIVE_USE_DISORDER_IMP_REV",
+            "description": "Indicator of sedative use disorder in the past year, including those who misused, based on imputed review data."
+        },
+        {
+            "entity": "SEDATIVE_USE_DISORDER_IMP_IND",
+            "description": "Indicator of sedative use disorder in the past year, including those who misused, based on imputed individual data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyQuestionnaireData",
+            "source_entity": "TRAQUILIZER_USE_DISORDER",
+            "target_entity": "SurveyData",
+            "description": "Indicates that the data for tranquilizer use disorder comes from the survey questionnaire."
+        },
+        {
+            "relationship": "hasStatisticalImputationData",
+            "source_entity": "TRAQUILIZER_USE_DISORDER",
+            "target_entity": "StatisticalImputation",
+            "description": "Indicates that the data for tranquilizer use disorder includes statistically imputed data."
+        },
+        {
+            "relationship": "misuseIndicator",
+            "source_entity": "TRAQUILIZER_USE_DISORDER",
+            "target_entity": "PastYearUsers",
+            "description": "Indicates that past year users of tranquilizers may not have misused the substance."
+        },
+        {
+            "relationship": "hasSurveyQuestionnaireData",
+            "source_entity": "STIMULANT_USE_DISORDER_IMP_REV",
+            "target_entity": "SurveyData",
+            "description": "Indicates that the data for stimulant use disorder (review) comes from the survey questionnaire."
+        },
+        {
+            "relationship": "hasSurveyQuestionnaireData",
+            "source_entity": "STIMULANT_USE_DISORDER_IMP_IND",
+            "target_entity": "SurveyData",
+            "description": "Indicates that the data for stimulant use disorder (individual) comes from the survey questionnaire."
+        },
+        {
+            "relationship": "hasSurveyQuestionnaireData",
+            "source_entity": "SEDATIVE_USE_DISORDER_IMP_REV",
+            "target_entity": "SurveyData",
+            "description": "Indicates that the data for sedative use disorder (review) comes from the survey questionnaire."
+        },
+        {
+            "relationship": "hasSurveyQuestionnaireData",
+            "source_entity": "SEDATIVE_USE_DISORDER_IMP_IND",
+            "target_entity": "SurveyData",
+            "description": "Indicates that the data for sedative use disorder (individual) comes from the survey questionnaire."
+        }
+    ]
+}

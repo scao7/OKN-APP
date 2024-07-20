@@ -1,0 +1,72 @@
+{
+    "entities": [
+        {
+            "entity": "LessActivities",
+            "description": "Giving up or spending less time on important activities due to the use of prescription stimulants in the past 12 months."
+        },
+        {
+            "entity": "SeriousProblemsAtWorkSchoolHome",
+            "description": "Having serious problems at work, school, or home due to the use of prescription stimulants in the past 12 months."
+        },
+        {
+            "entity": "ArgumentsWithFamilyFriends",
+            "description": "Having arguments or other problems with family or friends caused by or made worse by the use of prescription stimulants in the past 12 months."
+        },
+        {
+            "entity": "PrescriptionStimulantUse",
+            "description": "Use of prescription stimulants by the respondent."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "The past 12 months period."
+        },
+        {
+            "entity": "Respondent",
+            "description": "Individual participating in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLessActivities",
+            "source_entity": "Respondent",
+            "target_entity": "LessActivities",
+            "description": "Indicates that the respondent gave up or spent less time on important activities due to prescription stimulant use."
+        },
+        {
+            "relationship": "hasSeriousProblemsAtWorkSchoolHome",
+            "source_entity": "Respondent",
+            "target_entity": "SeriousProblemsAtWorkSchoolHome",
+            "description": "Indicates that the respondent had serious problems at work, school, or home due to prescription stimulant use."
+        },
+        {
+            "relationship": "hasArgumentsWithFamilyFriends",
+            "source_entity": "Respondent",
+            "target_entity": "ArgumentsWithFamilyFriends",
+            "description": "Indicates that the respondent had arguments or problems with family or friends worsened by prescription stimulant use."
+        },
+        {
+            "relationship": "usesPrescriptionStimulant",
+            "source_entity": "Respondent",
+            "target_entity": "PrescriptionStimulantUse",
+            "description": "Indicates that the respondent uses prescription stimulants."
+        },
+        {
+            "relationship": "withinSurveyPeriod",
+            "source_entity": "LessActivities",
+            "target_entity": "SurveyPeriod",
+            "description": "The giving up or spending less time on important activities occurred within the past 12 months."
+        },
+        {
+            "relationship": "withinSurveyPeriod",
+            "source_entity": "SeriousProblemsAtWorkSchoolHome",
+            "target_entity": "SurveyPeriod",
+            "description": "The serious problems at work, school, or home occurred within the past 12 months."
+        },
+        {
+            "relationship": "withinSurveyPeriod",
+            "source_entity": "ArgumentsWithFamilyFriends",
+            "target_entity": "SurveyPeriod",
+            "description": "The arguments or problems with family or friends occurred within the past 12 months."
+        }
+    ]
+}

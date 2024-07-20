@@ -1,0 +1,62 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 12 months from [DATEFILL] through today."
+        },
+        {
+            "entity": "MethamphetamineUsageFrequency",
+            "description": "Frequency of methamphetamine use, categorized by the mode or period, such as per week, month, or year."
+        },
+        {
+            "entity": "MethamphetamineUsageDays",
+            "description": "Number of days methamphetamine was used in the past 12 months."
+        },
+        {
+            "entity": "AverageMethamphetamineUsageDays",
+            "description": "Average number of days methamphetamine was used each month during the past 12 months."
+        },
+        {
+            "entity": "AverageMethamphetamineUsageDaysPerWeek",
+            "description": "Average number of days methamphetamine was used each week during the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 12 months."
+        },
+        {
+            "relationship": "categorizesUsageFrequency",
+            "source_entity": "MethamphetamineUsageFrequency",
+            "target_entity": "MethamphetamineUsageDays",
+            "description": "Classifies the number of days methamphetamine was used based on the specified frequency period."
+        },
+        {
+            "relationship": "hasAvgMonthlyUsage",
+            "source_entity": "Respondent",
+            "target_entity": "AverageMethamphetamineUsageDays",
+            "description": "Indicates the average number of days the respondent used methamphetamine each month during the past 12 months."
+        },
+        {
+            "relationship": "hasAvgWeeklyUsage",
+            "source_entity": "Respondent",
+            "target_entity": "AverageMethamphetamineUsageDaysPerWeek",
+            "description": "Indicates the average number of days the respondent used methamphetamine each week during the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "uses methamphetamine",
+            "object": "MethamphetamineUsageFrequency"
+        },
+        {
+            "subject": "MethamphetamineUsageFrequency",
+            "predicate": "has days used",
+            "object": "MethamphetamineUsageDays"
+        }
+    ]
+}

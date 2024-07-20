@@ -1,0 +1,116 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderNumber",
+            "description": "The number of offenders associated with a particular case or survey response."
+        },
+        {
+            "entity": "CaseCount",
+            "description": "The total number of cases being considered in the dataset, which is 11,207,634."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid cases after excluding invalid or missing responses, with a count of 454,740."
+        },
+        {
+            "entity": "Mean",
+            "description": "The average value from the valid cases, calculated to 2.09."
+        },
+        {
+            "entity": "Median",
+            "description": "The middle value when valid cases are arranged in ascending order, which is 2.00."
+        },
+        {
+            "entity": "Mode",
+            "description": "The value that appears most frequently in the valid cases, which is 2.00."
+        },
+        {
+            "entity": "Minimum",
+            "description": "The minimum value in the valid cases, which is 2.00."
+        },
+        {
+            "entity": "Maximum",
+            "description": "The maximum value in the valid cases, which is 60.00."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The measure of the dispersion of valid case values from their mean, calculated to 0.67."
+        },
+        {
+            "entity": "VariableType",
+            "description": "Defines the type of variable used in the survey, specified as 'numeric.'"
+        },
+        {
+            "entity": "MissingValues",
+            "description": "Represents the range of missing values in the data: -9, -8, -7, -6, -5."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffenderNumber",
+            "source_entity": "Case",
+            "target_entity": "OffenderNumber",
+            "description": "Indicates the number of offenders associated with a particular case."
+        },
+        {
+            "relationship": "hasCaseCount",
+            "source_entity": "Dataset",
+            "target_entity": "CaseCount",
+            "description": "Defines the total number of cases in the dataset."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Dataset",
+            "target_entity": "ValidCases",
+            "description": "Indicates the number of valid cases in the dataset after excluding invalid or missing responses."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "ValidCases",
+            "target_entity": "Mean",
+            "description": "Describes the average value of the valid cases."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "ValidCases",
+            "target_entity": "Median",
+            "description": "Describes the median value of the valid cases."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "ValidCases",
+            "target_entity": "Mode",
+            "description": "Describes the mode value of the valid cases."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "ValidCases",
+            "target_entity": "Minimum",
+            "description": "Describes the minimum value of the valid cases."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "ValidCases",
+            "target_entity": "Maximum",
+            "description": "Describes the maximum value of the valid cases."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "ValidCases",
+            "target_entity": "StandardDeviation",
+            "description": "Describes the standard deviation of the valid case values."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "VariableType",
+            "description": "Defines the type of variable used in the survey as numeric."
+        },
+        {
+            "relationship": "hasMissingValues",
+            "source_entity": "Variable",
+            "target_entity": "MissingValues",
+            "description": "Indicates the range of missing values in the dataset."
+        }
+    ]
+}

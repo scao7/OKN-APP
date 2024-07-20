@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "ParentDiscussion",
+            "description": "RC-TALKED WITH PARENT ABOUT DANGER TOB/ALC/DRG"
+        },
+        {
+            "entity": "PRBSVLParticipation",
+            "description": "RC-PARTICIPATED IN PRBSVL/COMMSKILL/SELFESTEEM GROUP"
+        },
+        {
+            "entity": "ViolencePreventionProgram",
+            "description": "RC-PARTICIPATED IN VIOLENCE PREVENTION PROGRAM"
+        },
+        {
+            "entity": "SubstancePreventionProgram",
+            "description": "RC-PARTICIPATED IN SUBSTANCE PREV PROGRAM OUTSIDE SCHOOL"
+        },
+        {
+            "entity": "HelpSubstanceUseProgram",
+            "description": "RC-PARTICIPATED IN PROGRAM TO HELP SUBSTANCE USE"
+        },
+        {
+            "entity": "PregSTDPreventionProgram",
+            "description": "RC-PARTICIPATED IN PREG/STD PREVENTION PROGRAM"
+        },
+        {
+            "entity": "YouthActivitiesParticipation",
+            "description": "RC-YTH PARTICIPATED IN YOUTH ACTIVITIES"
+        },
+        {
+            "entity": "PreventionMessage",
+            "description": "RC-YTH SEEN ALC OR DRUG PREVENTION MESSAGE OUTSIDE SCHOOL"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "participatedIn",
+            "source_entity": "Respondent",
+            "target_entity": "PRBSVLParticipation",
+            "description": "Indicates that the respondent participated in PRBSVL/comm skill/self-esteem group."
+        },
+        {
+            "relationship": "participatedIn",
+            "source_entity": "Respondent",
+            "target_entity": "ViolencePreventionProgram",
+            "description": "Indicates that the respondent participated in a violence prevention program."
+        },
+        {
+            "relationship": "discussedWith",
+            "source_entity": "Respondent",
+            "target_entity": "ParentDiscussion",
+            "description": "Indicates that the respondent discussed the dangers of tobacco, alcohol, or drugs with a parent."
+        },
+        {
+            "relationship": "participatedIn",
+            "source_entity": "Respondent",
+            "target_entity": "SubstancePreventionProgram",
+            "description": "Indicates that the respondent participated in a substance prevention program outside school."
+        },
+        {
+            "relationship": "participatedIn",
+            "source_entity": "Respondent",
+            "target_entity": "HelpSubstanceUseProgram",
+            "description": "Indicates that the respondent participated in a program to help substance use."
+        },
+        {
+            "relationship": "participatedIn",
+            "source_entity": "Respondent",
+            "target_entity": "PregSTDPreventionProgram",
+            "description": "Indicates that the respondent participated in a pregnancy/STD prevention program."
+        },
+        {
+            "relationship": "participationStatus",
+            "source_entity": "YouthActivitiesParticipation",
+            "target_entity": "YouthActivitiesLevel",
+            "description": "Defines the level of participation in youth activities (none or activity, two or more activities, etc.)."
+        },
+        {
+            "relationship": "seenMessage",
+            "source_entity": "Respondent",
+            "target_entity": "PreventionMessage",
+            "description": "Indicates whether the respondent saw an alcohol or drug prevention message outside school."
+        }
+    ]
+}

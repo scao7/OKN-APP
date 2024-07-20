@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "AnxietySymptom",
+            "description": "Feeling anxious as an alcohol withdrawal symptom in the past 12 months."
+        },
+        {
+            "entity": "AlcoholUsage",
+            "description": "Usage of alcohol or other drugs to get over or avoid having alcohol withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "AlcoholAvoidance",
+            "description": "Avoiding using alcohol or drugs to get over or avoid alcohol withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "PrescriptionUsage",
+            "description": "Usage of prescription sedatives, tranquilizers, sleeping pills, or downers to avoid alcohol withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "SurveyResponse",
+            "description": "Various options indicating the respondent's answer, such as 'Yes', 'No', 'Never used alcohol', 'Blank', 'Refused', etc."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "AlcoholWithdrawal",
+            "target_entity": "AnxietySymptom",
+            "description": "Indicates experiencing the anxiety symptom as part of alcohol withdrawal."
+        },
+        {
+            "relationship": "usedForAvoidance",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholUsage",
+            "description": "Indicates the respondent used alcohol or another drug to avoid alcohol withdrawal symptoms."
+        },
+        {
+            "relationship": "avoidedUsage",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholAvoidance",
+            "description": "Indicates the respondent avoided using alcohol or drugs to get over or avoid withdrawal symptoms."
+        },
+        {
+            "relationship": "usedPrescriptions",
+            "source_entity": "Respondent",
+            "target_entity": "PrescriptionUsage",
+            "description": "Indicates the respondent used prescription sedatives, tranquilizers, sleeping pills, or downers to avoid alcohol withdrawal symptoms."
+        },
+        {
+            "relationship": "recordedResponse",
+            "source_entity": "SurveyQuestion",
+            "target_entity": "SurveyResponse",
+            "description": "The survey question's response options recorded for various scenarios like 'Yes', 'No', 'Never used alcohol', 'Don't know', etc."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "AlcoholWithdrawal",
+            "predicate": "hasSymptom",
+            "object": "Feeling anxious"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedForAvoidance",
+            "object": "Alcohol or drug"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "avoidedUsage",
+            "object": "Alcohol and drugs"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "usedPrescriptions",
+            "object": "Sedatives, tranquilizers, sleeping pills, downers"
+        },
+        {
+            "subject": "SurveyQuestion",
+            "predicate": "recordedResponse",
+            "object": "Various options like 'Yes', 'No', 'Never used alcohol'"
+        }
+    ]
+}

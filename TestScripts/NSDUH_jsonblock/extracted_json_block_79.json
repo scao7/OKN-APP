@@ -1,0 +1,108 @@
+{
+    "entities": [
+        {
+            "entity": "HealthInsuranceFlag",
+            "description": "Indicates if every form of health insurance was reported."
+        },
+        {
+            "entity": "CurrentHealthInsurance",
+            "description": "Indicates if the respondent has answered yes to all current health insurance questions."
+        },
+        {
+            "entity": "MedicareMedicaidCHAMPUSPRVHLTIN",
+            "description": "Indicates if the respondent has answered yes to Medicare/Medicaid/CHAMPUS/PRVHLTIN."
+        },
+        {
+            "entity": "AnyHealthInsurance",
+            "description": "Indicates if the respondent is covered by any health insurance."
+        },
+        {
+            "entity": "InsuranceCoverageTypes",
+            "description": "Types of health insurance coverage used in survey, including Medicare, Medicaid, CHAMPUS, and private insurance."
+        },
+        {
+            "entity": "OverallHealthInsurance",
+            "description": "Indicates the overall health insurance coverage status of the respondent."
+        },
+        {
+            "entity": "HealthInsuranceImputation",
+            "description": "Notes on imputed data for health insurance variables."
+        },
+        {
+            "entity": "OtherHealthInsurance",
+            "description": "Indicates if the respondent has health insurance other than private, Medicaid/CHIP."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHealthInsuranceFlag",
+            "source_entity": "SurveyResponse",
+            "target_entity": "HealthInsuranceFlag",
+            "description": "Indicates if every form of health insurance was reported in the survey."
+        },
+        {
+            "relationship": "hasCurrentHealthInsurance",
+            "source_entity": "HealthInsuranceFlag",
+            "target_entity": "CurrentHealthInsurance",
+            "description": "Details whether the respondent has current health insurance."
+        },
+        {
+            "relationship": "hasMedicareMedicaidCHAMPUSPRVHLTIN",
+            "source_entity": "MedicareMedicaidCHAMPUSPRVHLTIN",
+            "target_entity": "HealthInsuranceFlag",
+            "description": "Indicates if the respondent has answered yes to Medicare/Medicaid/CHAMPUS/PRVHLTIN."
+        },
+        {
+            "relationship": "hasAnyHealthInsurance",
+            "source_entity": "Respondent",
+            "target_entity": "AnyHealthInsurance",
+            "description": "Indicates if the respondent is covered by any health insurance."
+        },
+        {
+            "relationship": "coversInsuranceCoverageTypes",
+            "source_entity": "SurveyResponse",
+            "target_entity": "InsuranceCoverageTypes",
+            "description": "Details the types of health insurance coverage used in the survey."
+        },
+        {
+            "relationship": "hasOverallHealthInsurance",
+            "source_entity": "Respondent",
+            "target_entity": "OverallHealthInsurance",
+            "description": "Indicates the overall health insurance coverage status of the respondent."
+        },
+        {
+            "relationship": "hasHealthInsuranceImputation",
+            "source_entity": "SurveyMethod",
+            "target_entity": "HealthInsuranceImputation",
+            "description": "Notes on imputed data for health insurance variables."
+        },
+        {
+            "relationship": "hasOtherHealthInsurance",
+            "source_entity": "Respondent",
+            "target_entity": "OtherHealthInsurance",
+            "description": "Indicates if the respondent has health insurance other than private, Medicaid/CHIP."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "isCoveredBy",
+            "object": "MedicareMedicaidCHAMPUSPRVHLTIN"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "has",
+            "object": "CurrentHealthInsurance"
+        },
+        {
+            "subject": "SurveyResponse",
+            "predicate": "records",
+            "object": "HealthInsuranceFlag"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "isClassifiedAs",
+            "object": "OverallHealthInsurance"
+        }
+    ]
+}

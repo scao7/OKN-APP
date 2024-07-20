@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "entity": "State",
+            "description": "U.S. state identified by its abbreviation."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted number of survey responses from the state."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of survey responses from the state as part of the overall survey response."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "State",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the state to the number of unweighted survey responses from that state."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "State",
+            "target_entity": "Percentage",
+            "description": "Relates the state to the percentage of total survey responses from that state."
+        }
+    ]
+}

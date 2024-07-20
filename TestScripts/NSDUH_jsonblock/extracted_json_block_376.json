@@ -1,0 +1,57 @@
+{
+    "entities": [
+        {
+            "entity": "MethamphetamineUsage",
+            "description": "Usage of methamphetamine in larger amounts or longer time than intended in past 12 months."
+        },
+        {
+            "entity": "StrongUrgeToUseMethamphetamine",
+            "description": "Strong urge to use methamphetamine in the past 12 months."
+        },
+        {
+            "entity": "NeedMoreMethForDesiredEffect",
+            "description": "Need to use a lot more methamphetamine than used to in order to get the desired feeling."
+        },
+        {
+            "entity": "MethUsageFrequency",
+            "description": "Frequency of methamphetamine use within the specified period."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMethUsageFrequency",
+            "source_entity": "MethamphetamineUsage",
+            "target_entity": "MethUsageFrequency",
+            "description": "Relates the methamphetamine usage to its frequency as captured in the survey."
+        },
+        {
+            "relationship": "hasStrongUrge",
+            "source_entity": "Respondent",
+            "target_entity": "StrongUrgeToUseMethamphetamine",
+            "description": "Indicates that a respondent had a strong urge to use methamphetamine in the past 12 months."
+        },
+        {
+            "relationship": "needsMoreMeth",
+            "source_entity": "Respondent",
+            "target_entity": "NeedMoreMethForDesiredEffect",
+            "description": "Indicates that a respondent needed to use more methamphetamine to get the desired feeling."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "MethamphetamineUsage",
+            "predicate": "UsedInLargerAmountsOrLongerTime",
+            "object": "Past12Months"
+        },
+        {
+            "subject": "StrongUrgeToUseMethamphetamine",
+            "predicate": "Experienced",
+            "object": "Past12Months"
+        },
+        {
+            "subject": "NeedMoreMethForDesiredEffect",
+            "predicate": "Experienced",
+            "object": "Past12Months"
+        }
+    ]
+}

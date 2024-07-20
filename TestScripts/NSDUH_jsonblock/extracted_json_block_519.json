@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "COVIDPandemic",
+            "description": "The context of the COVID-19 pandemic."
+        },
+        {
+            "entity": "SuicideIdeation",
+            "description": "Adult thinking about killing themselves due to the COVID-19 pandemic."
+        },
+        {
+            "entity": "SuicidePlan",
+            "description": "Plans to kill self in the past 12 months."
+        },
+        {
+            "entity": "PsychologicalDistress",
+            "description": "Total score of level of psychological distress experienced in the past 30 days."
+        },
+        {
+            "entity": "SuicideReason",
+            "description": "Reason for considering or planning suicide, such as COVID-19."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isContextOf",
+            "source_entity": "COVIDPandemic",
+            "target_entity": "SuicideIdeation",
+            "description": "Indicates that the suicide ideation is considered in the context of the COVID-19 pandemic."
+        },
+        {
+            "relationship": "hasSuicidePlan",
+            "source_entity": "Respondent",
+            "target_entity": "SuicidePlan",
+            "description": "Relates the respondent to their plan for suicide in the past 12 months."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "SuicidePlan",
+            "target_entity": "SuicideReason",
+            "description": "The reason behind the suicide plan, such as the COVID-19 pandemic."
+        },
+        {
+            "relationship": "hasPsychologicalDistressScore",
+            "source_entity": "Respondent",
+            "target_entity": "PsychologicalDistress",
+            "description": "Relates the respondent to their score of psychological distress in the past 30 days."
+        }
+    ]
+}

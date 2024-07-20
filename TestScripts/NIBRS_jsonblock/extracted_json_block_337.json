@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "AgeOfOffender",
+            "description": "The age of the offender as categorized in the survey data."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of occurrences of each response category without applying survey weights."
+        },
+        {
+            "entity": "ResponsePercentage",
+            "description": "The percentage of occurrences of each response category relative to the total number of responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAgeOfOffender",
+            "source_entity": "Respondent",
+            "target_entity": "AgeOfOffender",
+            "description": "Relates the respondent to the age category of the offender."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "AgeOfOffender",
+            "target_entity": "UnweightedFrequency",
+            "description": "Defines the unweighted frequency of occurrences for each age category of offenders."
+        },
+        {
+            "relationship": "hasResponsePercentage",
+            "source_entity": "AgeOfOffender",
+            "target_entity": "ResponsePercentage",
+            "description": "Indicates the response percentage of each age category of offenders."
+        }
+    ]
+}

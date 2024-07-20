@@ -1,0 +1,246 @@
+{
+    "entities": [
+        {
+            "entity": "WireFraud",
+            "description": "Crime involving fraud conducted through electronic communications."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "The fraudulent acquisition and use of someone's personal identifying information."
+        },
+        {
+            "entity": "HackingInvasion",
+            "description": "Unauthorized access to computers and networks."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Theft or misappropriation of funds placed in one's trust or belonging to one's employer."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Crimes involving the receipt, possession, or selling of stolen property."
+        },
+        {
+            "entity": "DestructionDamageVandalism",
+            "description": "Acts of destroying or damaging property."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Crimes related to illegal drugs and narcotics."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Crimes involving the possession or distribution of drug paraphernalia."
+        },
+        {
+            "entity": "Incest",
+            "description": "Sexual activity between family members who are not spouses."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Sexual activity with a person who is below the age of consent."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "Crimes related to the production, distribution, or consumption of pornographic material."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "The act of gambling or placing bets."
+        },
+        {
+            "entity": "GamblingPromotion",
+            "description": "Crimes involving the promotion or facilitation of gambling activities."
+        },
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Offenses related to the illegal use or possession of gambling devices."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Manipulating a sports event for illicit gain."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "The act or practice of engaging in sexual activity for payment."
+        },
+        {
+            "entity": "PromotingProstitution",
+            "description": "Assisting or encouraging the act of prostitution."
+        },
+        {
+            "entity": "PurchasingProstitution",
+            "description": "Buying or attempting to buy sexual services."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Offering, giving, receiving, or soliciting something of value for the purpose of influencing the action of an official."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Crimes related to the illegal possession or use of firearms and other weapons."
+        },
+        {
+            "entity": "HumanTraffickingSexActs",
+            "description": "Crimes involving the trafficking of individuals for the purpose of commercial sex acts."
+        },
+        {
+            "entity": "MurderManslaughter",
+            "description": "The unlawful killing of another human without justification or valid excuse."
+        },
+        {
+            "entity": "NegligentManslaughter",
+            "description": "Killing someone through gross negligence."
+        },
+        {
+            "entity": "JustifiableHomicide",
+            "description": "Killing someone in a manner that is justified by law, typically in self-defense."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "WireFraud",
+            "description": "Survey includes data on wire fraud offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "IdentityTheft",
+            "description": "Survey includes data on identity theft offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "HackingInvasion",
+            "description": "Survey includes data on hacking and computer invasion offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "Embezzlement",
+            "description": "Survey includes data on embezzlement offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "StolenPropertyOffenses",
+            "description": "Survey includes data on stolen property offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "DestructionDamageVandalism",
+            "description": "Survey includes data on destruction, damage, and vandalism of property."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "DrugNarcoticViolations",
+            "description": "Survey includes data on drug and narcotic violations."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "DrugEquipmentViolations",
+            "description": "Survey includes data on drug equipment violations."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "Incest",
+            "description": "Survey includes data on incest offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "StatutoryRape",
+            "description": "Survey includes data on statutory rape."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "PornographyObsceneMaterial",
+            "description": "Survey includes data on pornography and obscene material offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "BettingWagering",
+            "description": "Survey includes data on betting and wagering offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "GamblingPromotion",
+            "description": "Survey includes data on promoting or assisting gambling."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "GamblingEquipmentViolations",
+            "description": "Survey includes data on gambling equipment violations."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "SportsTampering",
+            "description": "Survey includes data on sports tampering offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "Prostitution",
+            "description": "Survey includes data on prostitution."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "PromotingProstitution",
+            "description": "Survey includes data on assisting or promoting prostitution."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "PurchasingProstitution",
+            "description": "Survey includes data on purchasing prostitution."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "Bribery",
+            "description": "Survey includes data on bribery offenses."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "WeaponLawViolations",
+            "description": "Survey includes data on weapon law violations."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "HumanTraffickingSexActs",
+            "description": "Survey includes data on human trafficking for commercial sex acts."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "MurderManslaughter",
+            "description": "Survey includes data on murder or nonnegligent manslaughter."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "NegligentManslaughter",
+            "description": "Survey includes data on negligent manslaughter."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Survey",
+            "target_entity": "JustifiableHomicide",
+            "description": "Survey includes data on justifiable homicide."
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of responses without any weight adjustment."
+        },
+        {
+            "entity": "JudicialDistrict",
+            "description": "The designated judicial district for the respondent."
+        },
+        {
+            "entity": "MeanValue",
+            "description": "The average value of the responses."
+        },
+        {
+            "entity": "MedianValue",
+            "description": "The middle value of the responses when ordered."
+        },
+        {
+            "entity": "ModeValue",
+            "description": "The most frequently occurring value in the responses."
+        },
+        {
+            "entity": "MinimumValue",
+            "description": "The lowest value recorded in the responses."
+        },
+        {
+            "entity": "MaximumValue",
+            "description": "The highest value recorded in the responses."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The amount of variation or dispersion of the responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Each response category includes an unweighted frequency value."
+        },
+        {
+            "relationship": "belongsJudicialDistrict",
+            "source_entity": "Respondent",
+            "target_entity": "JudicialDistrict",
+            "description": "Relates a respondent to their respective judicial district."
+        },
+        {
+            "relationship": "hasMeanValue",
+            "source_entity": "ResponseStatistics",
+            "target_entity": "MeanValue",
+            "description": "Statistics of responses include a mean value."
+        },
+        {
+            "relationship": "hasMedianValue",
+            "source_entity": "ResponseStatistics",
+            "target_entity": "MedianValue",
+            "description": "Statistics of responses include a median value."
+        },
+        {
+            "relationship": "hasModeValue",
+            "source_entity": "ResponseStatistics",
+            "target_entity": "ModeValue",
+            "description": "Statistics of responses include a mode value."
+        },
+        {
+            "relationship": "hasMinimumValue",
+            "source_entity": "ResponseStatistics",
+            "target_entity": "MinimumValue",
+            "description": "Statistics of responses include a minimum value."
+        },
+        {
+            "relationship": "hasMaximumValue",
+            "source_entity": "ResponseStatistics",
+            "target_entity": "MaximumValue",
+            "description": "Statistics of responses include a maximum value."
+        },
+        {
+            "relationship": "hasStandardDeviation",
+            "source_entity": "ResponseStatistics",
+            "target_entity": "StandardDeviation",
+            "description": "Statistics of responses include a standard deviation."
+        }
+    ]
+}

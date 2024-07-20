@@ -1,0 +1,72 @@
+{
+    "entities": [
+        {
+            "entity": "CocaineUse",
+            "description": "Usage of any form of cocaine such as powder, crack, free base, and coca paste."
+        },
+        {
+            "entity": "EverUsedCocaine",
+            "description": "Indicates whether the respondent has ever used any form of cocaine."
+        },
+        {
+            "entity": "AgeFirstUsedCocaine",
+            "description": "The age at which the respondent first used cocaine."
+        },
+        {
+            "entity": "YearFirstUsedCocaineRecode",
+            "description": "Recode of the year when the respondent first used cocaine."
+        },
+        {
+            "entity": "MonthFirstUsedCocaineRecode",
+            "description": "Recode of the month when the respondent first used cocaine."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEverUsedCocaine",
+            "source_entity": "CocaineUse",
+            "target_entity": "EverUsedCocaine",
+            "description": "Relates cocaine use to whether the respondent has ever used cocaine."
+        },
+        {
+            "relationship": "hasAgeFirstUsedCocaine",
+            "source_entity": "CocaineUse",
+            "target_entity": "AgeFirstUsedCocaine",
+            "description": "Relates cocaine use to the age when the respondent first used cocaine."
+        },
+        {
+            "relationship": "hasYearFirstUsedCocaineRecode",
+            "source_entity": "CocaineUse",
+            "target_entity": "YearFirstUsedCocaineRecode",
+            "description": "Relates cocaine use to the recoded year when the respondent first used cocaine."
+        },
+        {
+            "relationship": "hasMonthFirstUsedCocaineRecode",
+            "source_entity": "CocaineUse",
+            "target_entity": "MonthFirstUsedCocaineRecode",
+            "description": "Relates cocaine use to the recoded month when the respondent first used cocaine."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "Cocaine"
+        },
+        {
+            "subject": "Cocaine",
+            "predicate": "first used at age",
+            "object": "AgeFirstUsedCocaine"
+        },
+        {
+            "subject": "Cocaine",
+            "predicate": "first used in year",
+            "object": "YearFirstUsedCocaineRecode"
+        },
+        {
+            "subject": "Cocaine",
+            "predicate": "first used in month",
+            "object": "MonthFirstUsedCocaineRecode"
+        }
+    ]
+}

@@ -1,0 +1,249 @@
+{
+    "entities": [
+        {
+            "entity": "CocaineUseDisorderSeverityPastYear",
+            "description": "Severity of cocaine use disorder within the past year."
+        },
+        {
+            "entity": "HeroinUseDisorderSeverityPastYear",
+            "description": "Severity of heroin use disorder within the past year."
+        },
+        {
+            "entity": "HallucinogenUseDisorderSeverityPastYear",
+            "description": "Severity of hallucinogen use disorder within the past year."
+        },
+        {
+            "entity": "InhalantUseDisorderSeverityPastYear",
+            "description": "Severity of inhalant use disorder within the past year."
+        },
+        {
+            "entity": "QuestionnaireData",
+            "description": "Data collected from questionnaire responses."
+        },
+        {
+            "entity": "StatisticallyImputedData",
+            "description": "Data that has been statistically imputed."
+        },
+        {
+            "entity": "LegitimateSkipNoPastYearUseDisorder",
+            "description": "Legitimate skip due to no past year use disorder."
+        },
+        {
+            "entity": "MildDisorder",
+            "description": "Mild level of substance use disorder."
+        },
+        {
+            "entity": "ModerateDisorder",
+            "description": "Moderate level of substance use disorder."
+        },
+        {
+            "entity": "SevereDisorder",
+            "description": "Severe level of substance use disorder."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineUseDisorderSeverityPastYear",
+            "description": "Indicates the respondent's severity of cocaine use disorder in the past year."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinUseDisorderSeverityPastYear",
+            "description": "Indicates the respondent's severity of heroin use disorder in the past year."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogenUseDisorderSeverityPastYear",
+            "description": "Indicates the respondent's severity of hallucinogen use disorder in the past year."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUseDisorderSeverityPastYear",
+            "description": "Indicates the respondent's severity of inhalant use disorder in the past year."
+        },
+        {
+            "relationship": "isBasedOn",
+            "source_entity": "CocaineUseDisorderSeverityPastYear",
+            "target_entity": "QuestionnaireData",
+            "description": "The severity measure based on questionnaire data."
+        },
+        {
+            "relationship": "isBasedOn",
+            "source_entity": "HeroinUseDisorderSeverityPastYear",
+            "target_entity": "QuestionnaireData",
+            "description": "The severity measure based on questionnaire data."
+        },
+        {
+            "relationship": "isBasedOn",
+            "source_entity": "HallucinogenUseDisorderSeverityPastYear",
+            "target_entity": "QuestionnaireData",
+            "description": "The severity measure based on questionnaire data."
+        },
+        {
+            "relationship": "isBasedOn",
+            "source_entity": "InhalantUseDisorderSeverityPastYear",
+            "target_entity": "QuestionnaireData",
+            "description": "The severity measure based on questionnaire data."
+        },
+        {
+            "relationship": "isImputedBy",
+            "source_entity": "CocaineUseDisorderSeverityPastYear",
+            "target_entity": "StatisticallyImputedData",
+            "description": "The severity measure imputed statistically."
+        },
+        {
+            "relationship": "isImputedBy",
+            "source_entity": "HeroinUseDisorderSeverityPastYear",
+            "target_entity": "StatisticallyImputedData",
+            "description": "The severity measure imputed statistically."
+        },
+        {
+            "relationship": "isImputedBy",
+            "source_entity": "HallucinogenUseDisorderSeverityPastYear",
+            "target_entity": "StatisticallyImputedData",
+            "description": "The severity measure imputed statistically."
+        },
+        {
+            "relationship": "isImputedBy",
+            "source_entity": "InhalantUseDisorderSeverityPastYear",
+            "target_entity": "StatisticallyImputedData",
+            "description": "The severity measure imputed statistically."
+        },
+        {
+            "relationship": "isSkippedDueTo",
+            "source_entity": "Respondent",
+            "target_entity": "LegitimateSkipNoPastYearUseDisorder",
+            "description": "The survey is skipped due to no past year use disorder."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "MildDisorder",
+            "description": "Indicates a mild level of substance use disorder for the respondent."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "ModerateDisorder",
+            "description": "Indicates a moderate level of substance use disorder for the respondent."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "SevereDisorder",
+            "description": "Indicates a severe level of substance use disorder for the respondent."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "CocaineUseDisorderSeverityPastYear",
+            "predicate": "hasData",
+            "object": "QuestionnaireData"
+        },
+        {
+            "subject": "CocaineUseDisorderSeverityPastYear",
+            "predicate": "hasData",
+            "object": "StatisticallyImputedData"
+        },
+        {
+            "subject": "CocaineUseDisorderSeverityPastYear",
+            "predicate": "hasSkipReason",
+            "object": "LegitimateSkipNoPastYearUseDisorder"
+        },
+        {
+            "subject": "HeroinUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "MildDisorder"
+        },
+        {
+            "subject": "HeroinUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "ModerateDisorder"
+        },
+        {
+            "subject": "HeroinUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "SevereDisorder"
+        },
+        {
+            "subject": "HeroinUseDisorderSeverityPastYear",
+            "predicate": "hasData",
+            "object": "QuestionnaireData"
+        },
+        {
+            "subject": "HeroinUseDisorderSeverityPastYear",
+            "predicate": "hasData",
+            "object": "StatisticallyImputedData"
+        },
+        {
+            "subject": "HeroinUseDisorderSeverityPastYear",
+            "predicate": "hasSkipReason",
+            "object": "LegitimateSkipNoPastYearUseDisorder"
+        },
+        {
+            "subject": "HallucinogenUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "MildDisorder"
+        },
+        {
+            "subject": "HallucinogenUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "ModerateDisorder"
+        },
+        {
+            "subject": "HallucinogenUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "SevereDisorder"
+        },
+        {
+            "subject": "HallucinogenUseDisorderSeverityPastYear",
+            "predicate": "hasData",
+            "object": "QuestionnaireData"
+        },
+        {
+            "subject": "HallucinogenUseDisorderSeverityPastYear",
+            "predicate": "hasData",
+            "object": "StatisticallyImputedData"
+        },
+        {
+            "subject": "HallucinogenUseDisorderSeverityPastYear",
+            "predicate": "hasSkipReason",
+            "object": "LegitimateSkipNoPastYearUseDisorder"
+        },
+        {
+            "subject": "InhalantUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "MildDisorder"
+        },
+        {
+            "subject": "InhalantUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "ModerateDisorder"
+        },
+        {
+            "subject": "InhalantUseDisorderSeverityPastYear",
+            "predicate": "hasLevel",
+            "object": "SevereDisorder"
+        },
+        {
+            "subject": "InhalantUseDisorderSeverityPastYear",
+            "predicate": "hasData",
+            "object": "QuestionnaireData"
+        },
+        {
+            "subject": "InhalantUseDisorderSeverityPastYear",
+            "predicate": "hasData",
+            "object": "StatisticallyImputedData"
+        },
+        {
+            "subject": "InhalantUseDisorderSeverityPastYear",
+            "predicate": "hasSkipReason",
+            "object": "LegitimateSkipNoPastYearUseDisorder"
+        }
+    ]
+}

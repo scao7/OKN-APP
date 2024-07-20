@@ -1,0 +1,80 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderNumber",
+            "description": "The number assigned to each offender in the survey."
+        },
+        {
+            "entity": "OffenderUnknown",
+            "description": "A category indicating that the number of offenders is unknown."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The unweighted frequency of responses for each offender number."
+        },
+        {
+            "entity": "Percent",
+            "description": "The percentage of total cases represented by each frequency."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is missing or not reported in the survey responses."
+        },
+        {
+            "entity": "SurveyStatistics",
+            "description": "Statistical measures related to the survey data."
+        },
+        {
+            "entity": "SurveyCases",
+            "description": "The total number of valid and total survey cases."
+        },
+        {
+            "entity": "SurveyMethod",
+            "description": "The methods used in the survey such as mean, median, mode, minimum, maximum, and standard deviation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffenderNumber",
+            "source_entity": "Survey",
+            "target_entity": "OffenderNumber",
+            "description": "Identifies the offender number in the survey data."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "OffenderNumber",
+            "target_entity": "Frequency",
+            "description": "Relates each offender number to its corresponding frequency in the survey."
+        },
+        {
+            "relationship": "hasPercent",
+            "source_entity": "OffenderNumber",
+            "target_entity": "Percent",
+            "description": "Indicates the percentage of total cases represented by each frequency."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Identifies data that is missing or not reported in the survey."
+        },
+        {
+            "relationship": "hasSurveyStatistics",
+            "source_entity": "Survey",
+            "target_entity": "SurveyStatistics",
+            "description": "Encompasses statistical measures related to the survey data."
+        },
+        {
+            "relationship": "hasSurveyCases",
+            "source_entity": "SurveyStatistics",
+            "target_entity": "SurveyCases",
+            "description": "Indicates the number of valid and total survey cases."
+        },
+        {
+            "relationship": "usesSurveyMethod",
+            "source_entity": "SurveyStatistics",
+            "target_entity": "SurveyMethod",
+            "description": "Defines the methods used to calculate survey statistics such as mean, median, mode, minimum, maximum, and standard deviation."
+        }
+    ]
+}

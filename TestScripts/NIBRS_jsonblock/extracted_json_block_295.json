@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "Victim",
+            "description": "The individual who suffered harm or injury."
+        },
+        {
+            "entity": "Offender",
+            "description": "The individual who inflicted harm or injury upon the victim."
+        },
+        {
+            "entity": "RelationshipType",
+            "description": "The type of relationship between the victim and the offender."
+        },
+        {
+            "entity": "RelationshipDetails",
+            "description": "Detailed categorization of the specific relationship between victim and offender, such as spouse, parent, friend, etc."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The unweighted count of cases for each relationship type."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of total cases for each relationship type."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Information about missing data in the survey results."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isVictimizedBy",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Indicates that the victim suffered harm or injury inflicted by the offender."
+        },
+        {
+            "relationship": "hasRelationshipType",
+            "source_entity": "Victim",
+            "target_entity": "RelationshipType",
+            "description": "Describes the type of relationship between the victim and the offender."
+        },
+        {
+            "relationship": "hasRelationshipDetails",
+            "source_entity": "RelationshipType",
+            "target_entity": "RelationshipDetails",
+            "description": "Provides detailed categorization of the specific relationship between victim and offender."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "RelationshipDetails",
+            "target_entity": "Frequency",
+            "description": "Specifies the unweighted count of cases for each specific relationship type."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "RelationshipDetails",
+            "target_entity": "Percentage",
+            "description": "Specifies the percentage of total cases for each specific relationship type."
+        },
+        {
+            "relationship": "containsMissingData",
+            "source_entity": "SurveyResults",
+            "target_entity": "MissingData",
+            "description": "Indicates the presence of missing data in the survey results."
+        }
+    ]
+}

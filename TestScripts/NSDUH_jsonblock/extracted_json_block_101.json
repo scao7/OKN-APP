@@ -1,0 +1,62 @@
+{
+    "entities": [
+        {
+            "entity": "SmokelessTobaccoUse",
+            "description": "The use of smokeless tobacco products such as snuff, dip, chewing tobacco, or snus."
+        },
+        {
+            "entity": "EverUsedSmokelessTobacco",
+            "description": "Indicates whether the respondent has ever used smokeless tobacco, even once."
+        },
+        {
+            "entity": "AgeFirstUsedSmokelessTobacco",
+            "description": "The age at which the respondent first used smokeless tobacco."
+        },
+        {
+            "entity": "YearOfFirstSmokelessTobaccoUse",
+            "description": "The year when the respondent first used smokeless tobacco."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEverUsedSmokelessTobacco",
+            "source_entity": "Respondent",
+            "target_entity": "EverUsedSmokelessTobacco",
+            "description": "Indicates whether the respondent has ever used smokeless tobacco."
+        },
+        {
+            "relationship": "hasAgeFirstUsedSmokelessTobacco",
+            "source_entity": "Respondent",
+            "target_entity": "AgeFirstUsedSmokelessTobacco",
+            "description": "Indicates the age at which the respondent first used smokeless tobacco."
+        },
+        {
+            "relationship": "hasYearOfFirstSmokelessTobaccoUse",
+            "source_entity": "Respondent",
+            "target_entity": "YearOfFirstSmokelessTobaccoUse",
+            "description": "Indicates the year in which the respondent first used smokeless tobacco."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "use",
+            "object": "smokeless tobacco"
+        },
+        {
+            "subject": "EverUsedSmokelessTobacco",
+            "predicate": "binary_response",
+            "object": "Yes/No"
+        },
+        {
+            "subject": "AgeFirstUsedSmokelessTobacco",
+            "predicate": "range",
+            "object": "1-77"
+        },
+        {
+            "subject": "YearOfFirstSmokelessTobaccoUse",
+            "predicate": "range",
+            "object": "2020-2022"
+        }
+    ]
+}

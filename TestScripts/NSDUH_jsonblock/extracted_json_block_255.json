@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "CigaretteAgeFirstUse",
+            "description": "The age at which the respondent first used a cigarette, including imputed data."
+        },
+        {
+            "entity": "CigaretteFirstUseImputationIndicator",
+            "description": "Indicator of whether the cigarette age of first use is based on questionnaire data, logically assigned data, statistically imputed data, or if the respondent never used a cigarette."
+        },
+        {
+            "entity": "CigaretteYearFirstUse",
+            "description": "The year in which the respondent first used a cigarette, including imputed data."
+        },
+        {
+            "entity": "DailyCigaretteAgeFirstUse",
+            "description": "The age at which the respondent first used a cigarette daily, including imputed data."
+        },
+        {
+            "entity": "DailyCigaretteFirstUseImputationIndicator",
+            "description": "Indicator of whether the daily cigarette age of first use is based on questionnaire data, statistically imputed data, or if the respondent never used a cigarette daily."
+        },
+        {
+            "entity": "DailyCigaretteYearFirstUse",
+            "description": "The year in which the respondent first used a cigarette daily, including imputed data."
+        },
+        {
+            "entity": "CigarAgeFirstUse",
+            "description": "The age at which the respondent first used a cigar, including imputed data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCigaretteAgeFirstUse",
+            "source_entity": "Respondent",
+            "target_entity": "CigaretteAgeFirstUse",
+            "description": "Indicates the age the respondent first used a cigarette."
+        },
+        {
+            "relationship": "hasCigaretteFirstUseImputationIndicator",
+            "source_entity": "CigaretteAgeFirstUse",
+            "target_entity": "CigaretteFirstUseImputationIndicator",
+            "description": "Specifies the imputation indicator for the respondent's age of first cigarette use."
+        },
+        {
+            "relationship": "hasCigaretteYearFirstUse",
+            "source_entity": "Respondent",
+            "target_entity": "CigaretteYearFirstUse",
+            "description": "Indicates the year the respondent first used a cigarette."
+        },
+        {
+            "relationship": "hasDailyCigaretteAgeFirstUse",
+            "source_entity": "Respondent",
+            "target_entity": "DailyCigaretteAgeFirstUse",
+            "description": "Indicates the age the respondent first used a cigarette daily."
+        },
+        {
+            "relationship": "hasDailyCigaretteFirstUseImputationIndicator",
+            "source_entity": "DailyCigaretteAgeFirstUse",
+            "target_entity": "DailyCigaretteFirstUseImputationIndicator",
+            "description": "Specifies the imputation indicator for the respondent's age of first daily cigarette use."
+        },
+        {
+            "relationship": "hasDailyCigaretteYearFirstUse",
+            "source_entity": "Respondent",
+            "target_entity": "DailyCigaretteYearFirstUse",
+            "description": "Indicates the year the respondent first used a cigarette daily."
+        },
+        {
+            "relationship": "hasCigarAgeFirstUse",
+            "source_entity": "Respondent",
+            "target_entity": "CigarAgeFirstUse",
+            "description": "Indicates the age the respondent first used a cigar."
+        }
+    ]
+}

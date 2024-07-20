@@ -1,0 +1,78 @@
+{
+    "entities": [
+        {
+            "entity": "PainRelieverUse",
+            "description": "Use of pain relievers despite causing arguments or problems with family or friends."
+        },
+        {
+            "entity": "IncreasedHurtRisk",
+            "description": "Increased chance of getting hurt due to use of prescription pain relievers."
+        },
+        {
+            "entity": "WithdrawalSymptom",
+            "description": "Symptoms experienced following withdrawal from pain relievers."
+        },
+        {
+            "entity": "FeelingBlueOrDown",
+            "description": "Feeling blue or down as a withdrawal symptom from pain relievers."
+        },
+        {
+            "entity": "VomitingOrNausea",
+            "description": "Feeling nauseous or vomiting as a withdrawal symptom from pain relievers."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasPainRelieverUse",
+            "source_entity": "Respondent",
+            "target_entity": "PainRelieverUse",
+            "description": "Relates to the respondent's use of pain relievers despite causing arguments or problems with family or friends."
+        },
+        {
+            "relationship": "hasIncreasedHurtRisk",
+            "source_entity": "Respondent",
+            "target_entity": "IncreasedHurtRisk",
+            "description": "Relates to the respondent's increased chance of getting hurt due to the use of prescription pain relievers."
+        },
+        {
+            "relationship": "hasWithdrawalSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "WithdrawalSymptom",
+            "description": "Relates to the respondent experiencing withdrawal symptoms following the use of pain relievers."
+        },
+        {
+            "relationship": "hasFeelingBlueOrDown",
+            "source_entity": "WithdrawalSymptom",
+            "target_entity": "FeelingBlueOrDown",
+            "description": "Relates feeling blue or down to withdrawal from pain relievers."
+        },
+        {
+            "relationship": "hasVomitingOrNausea",
+            "source_entity": "WithdrawalSymptom",
+            "target_entity": "VomitingOrNausea",
+            "description": "Relates vomiting or nausea to withdrawal from pain relievers."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "causes",
+            "object": "ArgumentsOrProblemsWithFamilyOrFriends"
+        },
+        {
+            "subject": "PainRelieverUse",
+            "predicate": "increases",
+            "object": "HurtRisk"
+        },
+        {
+            "subject": "PainRelieverWithdrawal",
+            "predicate": "causes",
+            "object": "FeelingBlueOrDown"
+        },
+        {
+            "subject": "PainRelieverWithdrawal",
+            "predicate": "causes",
+            "object": "VomitingOrNausea"
+        }
+    ]
+}

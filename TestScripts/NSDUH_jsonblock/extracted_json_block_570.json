@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "FeltWorthlessNearlyEveryDay",
+            "description": "Frequency of feeling worthless nearly every day."
+        },
+        {
+            "entity": "InabilityToConcentrateOrMakeDecisions",
+            "description": "Frequency of inability to concentrate or make decisions."
+        },
+        {
+            "entity": "ScoreOfSymptomIndicators",
+            "description": "Score of symptom indicators 1 through 9."
+        },
+        {
+            "entity": "InterferenceWithSchoolOrPersonalLife",
+            "description": "Frequency of problems interfering with school or personal life."
+        },
+        {
+            "entity": "UnableToCarryOutDailyActivities",
+            "description": "Frequency of being unable to carry out daily activities due to problems with mood."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFeltWorthlessNearlyEveryDay",
+            "source_entity": "Respondent",
+            "target_entity": "FeltWorthlessNearlyEveryDay",
+            "description": "Indicates how often the respondent felt worthless nearly every day in a given period."
+        },
+        {
+            "relationship": "hasInabilityToConcentrateOrMakeDecisions",
+            "source_entity": "Respondent",
+            "target_entity": "InabilityToConcentrateOrMakeDecisions",
+            "description": "Indicates how often the respondent had difficulty concentrating or making decisions."
+        },
+        {
+            "relationship": "hasScoreOfSymptomIndicators",
+            "source_entity": "Respondent",
+            "target_entity": "ScoreOfSymptomIndicators",
+            "description": "Relates the respondent to their score of symptom indicators."
+        },
+        {
+            "relationship": "hasInterferenceWithSchoolOrPersonalLife",
+            "source_entity": "Respondent",
+            "target_entity": "InterferenceWithSchoolOrPersonalLife",
+            "description": "Indicates how often the respondent's problems interfered with their school or personal life."
+        },
+        {
+            "relationship": "hasUnableToCarryOutDailyActivities",
+            "source_entity": "Respondent",
+            "target_entity": "UnableToCarryOutDailyActivities",
+            "description": "Indicates how often the respondent was unable to carry out daily activities due to problems with mood."
+        }
+    ]
+}

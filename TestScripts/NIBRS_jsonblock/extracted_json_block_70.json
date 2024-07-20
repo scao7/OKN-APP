@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Violations related to gambling equipment."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Incidents involving tampering in sports."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Incidents related to prostitution."
+        },
+        {
+            "entity": "AssistingPromotingProstitution",
+            "description": "Activities assisting or promoting prostitution."
+        },
+        {
+            "entity": "PurchasingProstitution",
+            "description": "Incidents of purchasing prostitution services."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Incidents of bribery."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Violations of weapon laws."
+        },
+        {
+            "entity": "HumanTraffickingCommercialSexActs",
+            "description": "Incidents of human trafficking for commercial sex acts."
+        },
+        {
+            "entity": "OffenseAttemptedCompleted",
+            "description": "Status of an offense as either attempted or completed."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is missing from the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasViolationType",
+            "source_entity": "NSDUH",
+            "target_entity": "GamblingEquipmentViolations",
+            "description": "Includes violations related to gambling equipment."
+        },
+        {
+            "relationship": "hasViolationType",
+            "source_entity": "NSDUH",
+            "target_entity": "SportsTampering",
+            "description": "Includes tampering in sports incidents."
+        },
+        {
+            "relationship": "hasProstitutionRelatedIncidents",
+            "source_entity": "NSDUH",
+            "target_entity": "Prostitution",
+            "description": "Includes incidents related to prostitution."
+        },
+        {
+            "relationship": "hasProstitutionPromotion",
+            "source_entity": "NSDUH",
+            "target_entity": "AssistingPromotingProstitution",
+            "description": "Includes activities assisting or promoting prostitution."
+        },
+        {
+            "relationship": "hasProstitutionPurchase",
+            "source_entity": "NSDUH",
+            "target_entity": "PurchasingProstitution",
+            "description": "Includes incidents of purchasing prostitution services."
+        },
+        {
+            "relationship": "hasFinancialCrime",
+            "source_entity": "NSDUH",
+            "target_entity": "Bribery",
+            "description": "Includes incidents of bribery."
+        },
+        {
+            "relationship": "hasWeaponRelatedViolation",
+            "source_entity": "NSDUH",
+            "target_entity": "WeaponLawViolations",
+            "description": "Includes violations of weapon laws."
+        },
+        {
+            "relationship": "hasHumanTrafficking",
+            "source_entity": "NSDUH",
+            "target_entity": "HumanTraffickingCommercialSexActs",
+            "description": "Includes incidents of human trafficking for commercial sex acts."
+        },
+        {
+            "relationship": "hasOffenseStatus",
+            "source_entity": "NSDUH",
+            "target_entity": "OffenseAttemptedCompleted",
+            "description": "Indicates whether the offense was attempted or completed."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "NSDUH",
+            "target_entity": "MissingData",
+            "description": "Indicates data that is missing from the dataset."
+        }
+    ]
+}

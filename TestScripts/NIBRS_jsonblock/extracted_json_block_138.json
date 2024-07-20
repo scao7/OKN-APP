@@ -1,0 +1,186 @@
+{
+    "entities": [
+        {
+            "entity": "SuspectedDrugType",
+            "description": "The type of drug suspected in drug-related incidents."
+        },
+        {
+            "entity": "CrackCocaine",
+            "description": "A specific type of drug categorized under suspected drug types."
+        },
+        {
+            "entity": "Cocaine",
+            "description": "A specific type of drug (all forms except Crack) categorized under suspected drug types."
+        },
+        {
+            "entity": "Hashish",
+            "description": "A specific type of drug categorized under suspected drug types."
+        },
+        {
+            "entity": "Heroin",
+            "description": "A specific type of drug categorized under suspected drug types."
+        },
+        {
+            "entity": "Marijuana",
+            "description": "A specific type of drug categorized under suspected drug types."
+        },
+        {
+            "entity": "Morphine",
+            "description": "A specific type of drug categorized under suspected drug types."
+        },
+        {
+            "entity": "Opium",
+            "description": "A specific type of drug categorized under suspected drug types."
+        },
+        {
+            "entity": "OtherNarcotics",
+            "description": "A category of drugs excluding the specifically named types."
+        },
+        {
+            "entity": "LSD",
+            "description": "A specific type of hallucinogen categorized under suspected drug types."
+        },
+        {
+            "entity": "PCP",
+            "description": "A specific type of hallucinogen categorized under suspected drug types."
+        },
+        {
+            "entity": "OtherHallucinogens",
+            "description": "A category of hallucinogenic drugs excluding the specifically named types."
+        },
+        {
+            "entity": "AmphetaminesMethamphetamines",
+            "description": "A specific type of stimulant drug."
+        },
+        {
+            "entity": "OtherStimulants",
+            "description": "A category of stimulant drugs excluding the specifically named types."
+        },
+        {
+            "entity": "Barbiturates",
+            "description": "A specific type of drug categorized under depressants."
+        },
+        {
+            "entity": "OtherDepressants",
+            "description": "A category of depressant drugs excluding the specifically named types."
+        },
+        {
+            "entity": "OtherDrugsAntidepressants",
+            "description": "A category of drugs categorized under antidepressants."
+        },
+        {
+            "entity": "EstimatedQuantity",
+            "description": "The estimated quantity of suspected drug types."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSuspectedDrugType",
+            "source_entity": "Incident",
+            "target_entity": "SuspectedDrugType",
+            "description": "Links drug-related incidents to the types of drugs suspected."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "CrackCocaine",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Crack Cocaine as a type of suspected drug."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "Cocaine",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Cocaine as a type of suspected drug."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "Hashish",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Hashish as a type of suspected drug."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "Heroin",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Heroin as a type of suspected drug."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "Marijuana",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Marijuana as a type of suspected drug."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "Morphine",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Morphine as a type of suspected drug."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "Opium",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Opium as a type of suspected drug."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "OtherNarcotics",
+            "target_entity": "SuspectedDrugType",
+            "description": "Categorizes various narcotic drugs under a general category."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "LSD",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates LSD as a type of hallucinogen."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "PCP",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates PCP as a type of hallucinogen."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "OtherHallucinogens",
+            "target_entity": "SuspectedDrugType",
+            "description": "Categorizes various hallucinogens under a general category."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "AmphetaminesMethamphetamines",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Amphetamines/Methamphetamines as stimulants."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "OtherStimulants",
+            "target_entity": "SuspectedDrugType",
+            "description": "Categorizes various stimulants under a general category."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "Barbiturates",
+            "target_entity": "SuspectedDrugType",
+            "description": "Indicates Barbiturates as depressants."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "OtherDepressants",
+            "target_entity": "SuspectedDrugType",
+            "description": "Categorizes various depressants under a general category."
+        },
+        {
+            "relationship": "isA",
+            "source_entity": "OtherDrugsAntidepressants",
+            "target_entity": "SuspectedDrugType",
+            "description": "Categorizes various drugs under antidepressants."
+        },
+        {
+            "relationship": "hasEstimatedQuantity",
+            "source_entity": "SuspectedDrugType",
+            "target_entity": "EstimatedQuantity",
+            "description": "Links the type of suspected drug to its estimated quantity."
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "entities": [
+        {
+            "entity": "SEEstimationMethod",
+            "description": "Method used for estimating standard errors, which may vary based on whether domain size estimates are fixed or not."
+        },
+        {
+            "entity": "DomainSizeEstimate",
+            "description": "The estimated number of individuals in a specific domain, which can be fixed or varied for standard error estimation."
+        },
+        {
+            "entity": "USCensusBureauEstimates",
+            "description": "Population estimates provided by the U.S. Census Bureau used in the weight calibration process."
+        },
+        {
+            "entity": "ACSPopulationEstimates",
+            "description": "Population estimates provided by the American Community Survey used in the weight calibration process."
+        },
+        {
+            "entity": "NSDUHDesign",
+            "description": "National Survey on Drug Use and Health statistical design that underpins the survey methodology, including sampling and weight calibration."
+        },
+        {
+            "entity": "SUDAN",
+            "description": "Software used for complex survey data analysis, which calculates SEs directly for means and proportions."
+        },
+        {
+            "entity": "Table1",
+            "description": "Table included in the document that lists domains that should use the alternative SE estimation method due to fixed domain size estimates in the 2022 PUF."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesSEEstimationMethod",
+            "source_entity": "NSDUHDesign",
+            "target_entity": "SEEstimationMethod",
+            "description": "Relates the NSDUH survey design to the method used for estimating standard errors."
+        },
+        {
+            "relationship": "usesPopulationEstimates",
+            "source_entity": "WeightCalibrationProcess",
+            "target_entity": "USCensusBureauEstimates",
+            "description": "Relates the weight calibration process to the population estimates provided by the U.S. Census Bureau."
+        },
+        {
+            "relationship": "usesPopulationEstimates",
+            "source_entity": "WeightCalibrationProcess",
+            "target_entity": "ACSPopulationEstimates",
+            "description": "Relates the weight calibration process to the population estimates provided by the American Community Survey."
+        },
+        {
+            "relationship": "usesSoftware",
+            "source_entity": "SEEstimationMethod",
+            "target_entity": "SUDAN",
+            "description": "Relates the method for estimating standard errors to the SUDAN software used to calculate them."
+        },
+        {
+            "relationship": "listedInTable1",
+            "source_entity": "SEEstimationMethod",
+            "target_entity": "Table1",
+            "description": "Indicates that the table lists domain sizes that should use the alternative SE estimation method."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "NSDUHDesign",
+            "predicate": "usesSEEstimationMethod",
+            "object": "SEEstimationMethod"
+        },
+        {
+            "subject": "WeightCalibrationProcess",
+            "predicate": "usesPopulationEstimates",
+            "object": "USCensusBureauEstimates"
+        },
+        {
+            "subject": "WeightCalibrationProcess",
+            "predicate": "usesPopulationEstimates",
+            "object": "ACSPopulationEstimates"
+        },
+        {
+            "subject": "SEEstimationMethod",
+            "predicate": "usesSoftware",
+            "object": "SUDAN"
+        },
+        {
+            "subject": "SEEstimationMethod",
+            "predicate": "listedInTable1",
+            "object": "Table1"
+        }
+    ]
+}

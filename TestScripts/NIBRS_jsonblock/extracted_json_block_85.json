@@ -1,0 +1,166 @@
+{
+    "entities": [
+        {
+            "entity": "CriminalActivityType",
+            "description": "Types of criminal activities and gang involvements listed in the survey."
+        },
+        {
+            "entity": "BuyingReceiving",
+            "description": "Involvement in buying or receiving illegal substances."
+        },
+        {
+            "entity": "CultivatingManufacturingPublishing",
+            "description": "Involvement in cultivating, manufacturing, or publishing illegal substances."
+        },
+        {
+            "entity": "DistributingSelling",
+            "description": "Involvement in distributing or selling illegal substances."
+        },
+        {
+            "entity": "ExploitingChildren",
+            "description": "Involvement in criminal activities exploiting children."
+        },
+        {
+            "entity": "OtherGang",
+            "description": "Involvement in other types of gangs."
+        },
+        {
+            "entity": "JuvenileGang",
+            "description": "Involvement in juvenile gangs."
+        },
+        {
+            "entity": "UnknownGangInvolvement",
+            "description": "No known gang involvement."
+        },
+        {
+            "entity": "OperatingPromotingAssisting",
+            "description": "Involvement in operating, promoting, or assisting criminal activities."
+        },
+        {
+            "entity": "PossessingConcealing",
+            "description": "Involvement in possessing or concealing illegal substances."
+        },
+        {
+            "entity": "TransportingTransmittingImporting",
+            "description": "Involvement in transporting, transmitting, or importing illegal substances."
+        },
+        {
+            "entity": "UsingConsuming",
+            "description": "Involvement in using or consuming illegal substances."
+        },
+        {
+            "entity": "IntentionalAbuseTorture",
+            "description": "Involvement in intentional abuse and torture."
+        },
+        {
+            "entity": "SimpleGrossNeglect",
+            "description": "Involvement in simple or gross neglect."
+        },
+        {
+            "entity": "OrganizedAbuse",
+            "description": "Involvement in organized abuse activities."
+        },
+        {
+            "entity": "AnimalSexualAbuse",
+            "description": "Involvement in sexual abuse of animals."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCriminalActivityType",
+            "source_entity": "Survey",
+            "target_entity": "CriminalActivityType",
+            "description": "Classifies the types of criminal activities and gang involvements."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "BuyingReceiving",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates buying and receiving illegal substances with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "CultivatingManufacturingPublishing",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates cultivating, manufacturing, and publishing illegal substances with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "DistributingSelling",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates distributing and selling illegal substances with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "ExploitingChildren",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates exploiting children with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "OtherGang",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates other types of gang involvement with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "JuvenileGang",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates juvenile gang involvement with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "UnknownGangInvolvement",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates unknown gang involvement with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "OperatingPromotingAssisting",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates operating, promoting, and assisting criminal activities with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "PossessingConcealing",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates possessing and concealing illegal substances with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "TransportingTransmittingImporting",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates transporting, transmitting, and importing illegal substances with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "UsingConsuming",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates using and consuming illegal substances with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "IntentionalAbuseTorture",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates intentional abuse and torture with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "SimpleGrossNeglect",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates simple and gross neglect with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "OrganizedAbuse",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates organized abuse activities with criminal activity types."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "AnimalSexualAbuse",
+            "target_entity": "CriminalActivityType",
+            "description": "Associates sexual abuse of animals with criminal activity types."
+        }
+    ]
+}

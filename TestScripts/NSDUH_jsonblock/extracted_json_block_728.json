@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "entity": "RecodedMentalHealth",
+            "description": "Appendix containing recoded mental health variables and their definitions."
+        },
+        {
+            "entity": "MentalHealth",
+            "description": "General category referring to mental health status and conditions."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "contains",
+            "source_entity": "AppendixD",
+            "target_entity": "RecodedMentalHealth",
+            "description": "Specifies that Appendix D contains recoded variables related to mental health."
+        },
+        {
+            "relationship": "isRecodedFrom",
+            "source_entity": "RecodedMentalHealth",
+            "target_entity": "MentalHealth",
+            "description": "Indicates that the recoded mental health variables are derived from broader mental health data."
+        }
+    ]
+}

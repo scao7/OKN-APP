@@ -1,0 +1,220 @@
+{
+    "entities": [
+        {
+            "entity": "CIGIRTBL",
+            "description": "Item related to the truthfulness of statements about smoking behavior."
+        },
+        {
+            "entity": "CIGCRAVE",
+            "description": "Item related to craving for cigarettes."
+        },
+        {
+            "entity": "CIGCRAGP",
+            "description": "Item related to grouping with other cigarette users."
+        },
+        {
+            "entity": "CIGAVOID",
+            "description": "Item related to avoidance behavior in relation to smoking."
+        },
+        {
+            "entity": "CIGPLANE",
+            "description": "Item related to planning smoking activities."
+        },
+        {
+            "entity": "CIGNOUT",
+            "description": "Item related to not smoking."
+        },
+        {
+            "entity": "CIGREGDY",
+            "description": "Item related to regular cigarette usage."
+        },
+        {
+            "entity": "CIGREGWK",
+            "description": "Item related to weekly cigarette usage."
+        },
+        {
+            "entity": "CIGREGNM",
+            "description": "Item related to naming regular cigarette brands or types."
+        },
+        {
+            "entity": "CIGNOINF",
+            "description": "Item related to not being influenced in smoking decisions."
+        },
+        {
+            "entity": "CIGINCRS",
+            "description": "Item related to increased cigarette usage."
+        },
+        {
+            "entity": "CIGSATIS",
+            "description": "Item related to satisfaction derived from smoking."
+        },
+        {
+            "entity": "CIGLOTMR",
+            "description": "Item related to the overall measurement of cigarette usage."
+        },
+        {
+            "entity": "CIGNCTL",
+            "description": "Reverse coded item related to control over smoking."
+        },
+        {
+            "entity": "CIGNMCHG",
+            "description": "Reverse coded item related to changes in cigarette usage."
+        },
+        {
+            "entity": "CIGSVLHR",
+            "description": "Reverse coded item related to the severity of loss of habit for smoking."
+        },
+        {
+            "entity": "CIGINFLU",
+            "description": "Reverse coded item related to the influence of smoking behavior."
+        },
+        {
+            "entity": "NDSSEDEPND",
+            "description": "Nicotine dependence score based on the NDSS."
+        },
+        {
+            "entity": "NDSDEP",
+            "description": "Nicotine dependence classification based on NDSS score."
+        },
+        {
+            "entity": "FTND",
+            "description": "Fagerstrom Test of Nicotine Dependence."
+        },
+        {
+            "entity": "FTNDDEPND",
+            "description": "Nicotine dependence score based on FTND."
+        },
+        {
+            "entity": "CIGWAKE",
+            "description": "Item related to smoking within 30 minutes of waking."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasScore",
+            "source_entity": "NDSS",
+            "target_entity": "NDSSEDEPND",
+            "description": "Relates NDSS to its corresponding nicotine dependence score."
+        },
+        {
+            "relationship": "hasClassification",
+            "source_entity": "NDSS",
+            "target_entity": "NDSDEP",
+            "description": "Classifies the nicotine dependence based on NDSS score."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGIRTBL",
+            "description": "NDSS contains item CIGIRTBL related to truthfulness in smoking behavior."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGCRAVE",
+            "description": "NDSS contains item CIGCRAVE related to cigarette cravings."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGCRAGP",
+            "description": "NDSS contains item CIGCRAGP related to grouping with other smokers."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGAVOID",
+            "description": "NDSS contains item CIGAVOID related to avoidance behaviors in smoking."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGPLANE",
+            "description": "NDSS contains item CIGPLANE related to planning smoking activities."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGNOUT",
+            "description": "NDSS contains item CIGNOUT related to not smoking."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGREGDY",
+            "description": "NDSS contains item CIGREGDY related to regular cigarette usage."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGREGWK",
+            "description": "NDSS contains item CIGREGWK related to weekly cigarette usage."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGREGNM",
+            "description": "NDSS contains item CIGREGNM related to naming regular cigarette brands."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGNOINF",
+            "description": "NDSS contains item related to not being influenced in smoking decisions."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGINCRS",
+            "description": "NDSS contains item related to increased cigarette usage."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGSATIS",
+            "description": "NDSS contains item CIGSATIS related to smoking satisfaction."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGLOTMR",
+            "description": "NDSS contains item CIGLOTMR related to overall cigarette usage."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGNCTL",
+            "description": "NDSS contains reverse coded item CIGNCTL."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGNMCHG",
+            "description": "NDSS contains reverse coded item CIGNMCHG."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGSVLHR",
+            "description": "NDSS contains reverse coded item CIGSVLHR."
+        },
+        {
+            "relationship": "containsItem",
+            "source_entity": "NDSS",
+            "target_entity": "CIGINFLU",
+            "description": "NDSS contains reverse coded item CIGINFLU."
+        },
+        {
+            "relationship": "hasScore",
+            "source_entity": "FTND",
+            "target_entity": "FTNDDEPND",
+            "description": "Relates FTND to its corresponding nicotine dependence score."
+        },
+        {
+            "relationship": "examinesItem",
+            "source_entity": "FTND",
+            "target_entity": "CIGWAKE",
+            "description": "FTND examines how soon after waking the respondent smokes."
+        }
+    ]
+}

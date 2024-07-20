@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of responses without applying any weights."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of responses relative to the total count."
+        },
+        {
+            "entity": "ResponseCode",
+            "description": "The code associated with each specific survey response."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The count and percentage of missing data responses."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The count of valid cases used in the analysis."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases included in the survey."
+        },
+        {
+            "entity": "SummaryStatistics",
+            "description": "Statistical properties of the data such as mean, median, mode, minimum, and maximum."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Response",
+            "target_entity": "UnweightedFrequency",
+            "description": "Links a survey response to its unweighted frequency count."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Response",
+            "target_entity": "Percentage",
+            "description": "Links a survey response to its percentage of the total responses."
+        },
+        {
+            "relationship": "hasResponseCode",
+            "source_entity": "Survey",
+            "target_entity": "ResponseCode",
+            "description": "Assigns a unique code to each response in the survey."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the amount of missing data in the survey."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Survey",
+            "target_entity": "ValidCases",
+            "description": "Denotes the number of valid responses in the survey."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of cases considered in the survey."
+        },
+        {
+            "relationship": "hasSummaryStatistics",
+            "source_entity": "Survey",
+            "target_entity": "SummaryStatistics",
+            "description": "Links the survey data to its summary statistics like mean, median, mode, minimum, and maximum."
+        }
+    ]
+}

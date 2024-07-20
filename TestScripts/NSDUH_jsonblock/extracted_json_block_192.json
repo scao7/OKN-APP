@@ -1,0 +1,58 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The past 30 days, up to and including today."
+        },
+        {
+            "entity": "#DaysUsedInhalantPast30Days",
+            "description": "Number of days inhalants were used in the past 30 days."
+        },
+        {
+            "entity": "InhalantUseForKicks",
+            "description": "Inhalant use for kicks or to get high."
+        },
+        {
+            "entity": "BestEstimate#DaysUsedInhalantsPast30Days",
+            "description": "Best estimate of number of days inhalants were used in the past 30 days."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 30 days."
+        },
+        {
+            "relationship": "hasInhalantUseForKicks",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUseForKicks",
+            "description": "Indicates whether the respondent used inhalants for kicks or to get high within the past 30 days."
+        },
+        {
+            "relationship": "hasDaysUsedInhalantPast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "#DaysUsedInhalantPast30Days",
+            "description": "Indicates the number of days the respondent used inhalants in the past 30 days."
+        },
+        {
+            "relationship": "hasBestEstimateUsedInhalants",
+            "source_entity": "Respondent",
+            "target_entity": "BestEstimate#DaysUsedInhalantsPast30Days",
+            "description": "Indicates the respondent's best estimate of the number of days inhalants were used in the past 30 days."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "usedInhalantForKicks",
+            "object": "#DaysUsedInhalantPast30Days"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "bestEstimateUsedInhalants",
+            "object": "BestEstimate#DaysUsedInhalantsPast30Days"
+        }
+    ]
+}

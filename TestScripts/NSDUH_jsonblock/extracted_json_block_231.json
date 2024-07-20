@@ -1,0 +1,63 @@
+{
+    "entities": [
+        {
+            "entity": "SedativeUse",
+            "description": "Use of sedatives in the past 30 days, 12 months, or longer, whether directed or not directed by a doctor."
+        },
+        {
+            "entity": "Misuse",
+            "description": "Instances where respondents misused sedatives, including using without a prescription or taking them more frequently or for a longer duration than directed."
+        },
+        {
+            "entity": "PrescriptionStatus",
+            "description": "Status of sedative use with or without a doctor's prescription."
+        },
+        {
+            "entity": "DurationOfUse",
+            "description": "The length of time sedatives have been used, such as past 30 days, past 12 months, or longer."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSedativeUse",
+            "source_entity": "Respondent",
+            "target_entity": "SedativeUse",
+            "description": "Indicates whether the respondent used sedatives in various time frames and contexts."
+        },
+        {
+            "relationship": "hasMisuse",
+            "source_entity": "SedativeUse",
+            "target_entity": "Misuse",
+            "description": "Indicates whether sedative use included misuse, such as using without a prescription or contrary to medical advice."
+        },
+        {
+            "relationship": "hasPrescriptionStatus",
+            "source_entity": "SedativeUse",
+            "target_entity": "PrescriptionStatus",
+            "description": "Specifies if the sedative use was with or without a prescription."
+        },
+        {
+            "relationship": "hasDurationOfUse",
+            "source_entity": "SedativeUse",
+            "target_entity": "DurationOfUse",
+            "description": "Specifies the time period over which sedatives were used."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "SedativeUse",
+            "predicate": "includes",
+            "object": "Misuse"
+        },
+        {
+            "subject": "SedativeUse",
+            "predicate": "has",
+            "object": "PrescriptionStatus"
+        },
+        {
+            "subject": "SedativeUse",
+            "predicate": "has",
+            "object": "DurationOfUse"
+        }
+    ]
+}

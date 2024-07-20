@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "COVID_NEG_MH",
+            "description": "Extent to which the COVID-19 pandemic has negatively affected the respondent's emotional or mental health."
+        },
+        {
+            "entity": "COVID_ALC_USE",
+            "description": "Extent to which the COVID-19 pandemic has affected the respondent's alcohol consumption."
+        },
+        {
+            "entity": "COVID_DRUG_USE",
+            "description": "Extent to which the COVID-19 pandemic has affected the respondent's drug use other than alcohol."
+        },
+        {
+            "entity": "COVID_FINANCIAL_WORRIES",
+            "description": "Frequency of experiencing serious financial worries due to the COVID-19 pandemic."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasNegativeMentalHealthImpact",
+            "source_entity": "COVID-19",
+            "target_entity": "COVID_NEG_MH",
+            "description": "Connects the COVID-19 pandemic to its negative impact on mental health."
+        },
+        {
+            "relationship": "hasIncreasedAlcoholConsumption",
+            "source_entity": "COVID-19",
+            "target_entity": "COVID_ALC_USE",
+            "description": "Indicates the increase or change in alcohol consumption due to the COVID-19 pandemic."
+        },
+        {
+            "relationship": "hasIncreasedDrugUse",
+            "source_entity": "COVID-19",
+            "target_entity": "COVID_DRUG_USE",
+            "description": "Indicates the increase or change in drug use other than alcohol due to the COVID-19 pandemic."
+        },
+        {
+            "relationship": "hasFinancialWorries",
+            "source_entity": "COVID-19",
+            "target_entity": "COVID_FINANCIAL_WORRIES",
+            "description": "Connects the COVID-19 pandemic to the frequency of serious financial worries."
+        }
+    ]
+}

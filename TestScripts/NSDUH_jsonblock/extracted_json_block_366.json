@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "IncreasedHallucinogenUsage",
+            "description": "Needing a lot more hallucinogens to get the feeling you want."
+        },
+        {
+            "entity": "DecreasedHallucinogenEffect",
+            "description": "Using the same amount of hallucinogens has much less effect than it used to."
+        },
+        {
+            "entity": "AttemptsToCutDownHallucinogenUsage",
+            "description": "Attempting to cut down or stop using hallucinogens in the past 12 months."
+        },
+        {
+            "entity": "UnableToCutDownHallucinogenUsage",
+            "description": "Unable to cut down or stop hallucinogen usage more than one time in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasIncreasedUsage",
+            "source_entity": "Respondent",
+            "target_entity": "IncreasedHallucinogenUsage",
+            "description": "Indicates if the respondent needed a lot more hallucinogens to get the desired feeling."
+        },
+        {
+            "relationship": "hasDecreasedEffect",
+            "source_entity": "Respondent",
+            "target_entity": "DecreasedHallucinogenEffect",
+            "description": "Indicates if the respondent feels that the same amount of hallucinogens has much less effect than it used to."
+        },
+        {
+            "relationship": "hasAttemptedToCutDown",
+            "source_entity": "Respondent",
+            "target_entity": "AttemptsToCutDownHallucinogenUsage",
+            "description": "Indicates if the respondent has tried to cut down or stop using hallucinogens in the past 12 months."
+        },
+        {
+            "relationship": "hasFailedToCutDown",
+            "source_entity": "Respondent",
+            "target_entity": "UnableToCutDownHallucinogenUsage",
+            "description": "Indicates if the respondent has been unable to cut down or stop using hallucinogens more than one time in the past 12 months."
+        }
+    ]
+}

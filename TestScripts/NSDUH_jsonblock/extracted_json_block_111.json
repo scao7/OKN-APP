@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "FirstCigaretteTiming",
+            "description": "The timing of the first cigarette after waking up."
+        },
+        {
+            "entity": "CigaretteUsagePast30Days",
+            "description": "The usage of cigarettes in the past 30 days."
+        },
+        {
+            "entity": "NicotineDependenceNDSS",
+            "description": "Nicotine dependence based on the Nicotine Dependence Syndrome Scale (NDSS)."
+        },
+        {
+            "entity": "NicotineDependenceFTND",
+            "description": "Nicotine dependence based on the Fagerstrom Test of Nicotine Dependence (FTND)."
+        },
+        {
+            "entity": "NicotineDependenceStatus",
+            "description": "Nicotine dependence status in the past month."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "assessedBy",
+            "source_entity": "NicotineDependence",
+            "target_entity": "NicotineDependenceNDSS",
+            "description": "Nicotine dependence assessed by the Nicotine Dependence Syndrome Scale (NDSS)."
+        },
+        {
+            "relationship": "assessedBy",
+            "source_entity": "NicotineDependence",
+            "target_entity": "NicotineDependenceFTND",
+            "description": "Nicotine dependence assessed by the Fagerstrom Test of Nicotine Dependence (FTND)."
+        },
+        {
+            "relationship": "hasTiming",
+            "source_entity": "FirstCigarette",
+            "target_entity": "FirstCigaretteTiming",
+            "description": "The timing of the first cigarette after waking up is recorded."
+        },
+        {
+            "relationship": "hasUsage",
+            "source_entity": "CigaretteUsage",
+            "target_entity": "CigaretteUsagePast30Days",
+            "description": "The usage of cigarettes recorded over the past 30 days."
+        },
+        {
+            "relationship": "hasDependenceStatus",
+            "source_entity": "NicotineDependence",
+            "target_entity": "NicotineDependenceStatus",
+            "description": "The status of nicotine dependence in the past month."
+        }
+    ]
+}

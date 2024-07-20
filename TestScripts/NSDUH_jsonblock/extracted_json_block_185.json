@@ -1,0 +1,22 @@
+[
+    {
+        "subject": "LighterGases",
+        "predicate": "hasResponse",
+        "object": "Yes"
+    },
+    {
+        "subject": "LighterGases",
+        "predicate": "hasResponse",
+        "object": "No"
+    },
+    {
+        "subject": "NitrousOxide",
+        "predicate": "hasResponse",
+        "object": "Yes"
+    },
+    {
+        "subject": "NitrousOxide",
+        "predicate": "hasResponse",
+        "object": "No"
+    }
+]

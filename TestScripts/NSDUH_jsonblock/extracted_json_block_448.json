@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "LastLSDUseMonth",
+            "description": "The month of the last LSD use."
+        },
+        {
+            "entity": "LastPCPAge",
+            "description": "The age when the respondent last used PCP."
+        },
+        {
+            "entity": "LastPCPUseYear",
+            "description": "The year of the last PCP use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLastLSDUseMonth",
+            "source_entity": "Respondent",
+            "target_entity": "LastLSDUseMonth",
+            "description": "The respondent's last month of LSD use."
+        },
+        {
+            "relationship": "hasLastPCPAge",
+            "source_entity": "Respondent",
+            "target_entity": "LastPCPAge",
+            "description": "The age of the respondent when they last used PCP."
+        },
+        {
+            "relationship": "hasLastPCPUseYear",
+            "source_entity": "Respondent",
+            "target_entity": "LastPCPUseYear",
+            "description": "The year of the respondent's last PCP use."
+        }
+    ]
+}

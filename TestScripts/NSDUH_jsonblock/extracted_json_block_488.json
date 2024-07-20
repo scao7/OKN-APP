@@ -1,0 +1,47 @@
+{
+    "entities": [
+        {
+            "entity": "AlcoholConsumptionGrade",
+            "description": "The perception of how many students in the respondent's grade drink alcohol."
+        },
+        {
+            "entity": "FrequentDrunkGrade",
+            "description": "The perception of how many students in the respondent's grade get drunk at least once a week."
+        },
+        {
+            "entity": "HomeworkCheckedByParents",
+            "description": "Frequency with which the respondent's parents check if they have done their homework in the past 12 months."
+        },
+        {
+            "entity": "HomeworkHelpByParents",
+            "description": "Frequency with which the respondent's parents help them with homework in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "perceiveAlcoholConsumption",
+            "source_entity": "Student",
+            "target_entity": "AlcoholConsumptionGrade",
+            "description": "Relates the perception of alcohol consumption among students in the same grade."
+        },
+        {
+            "relationship": "perceiveFrequentDrunk",
+            "source_entity": "Student",
+            "target_entity": "FrequentDrunkGrade",
+            "description": "Relates the perception of frequent drunkenness among students in the same grade."
+        },
+        {
+            "relationship": "checkHomework",
+            "source_entity": "Parents",
+            "target_entity": "HomeworkCheckedByParents",
+            "description": "Indicates the frequency with which parents checked if the homework was done."
+        },
+        {
+            "relationship": "helpHomework",
+            "source_entity": "Parents",
+            "target_entity": "HomeworkHelpByParents",
+            "description": "Indicates the frequency with which parents helped with homework."
+        }
+    ],
+    "triples": []
+}

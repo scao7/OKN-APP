@@ -1,0 +1,303 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "The code representing a specific drug."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug."
+        },
+        {
+            "entity": "TimesMentioned",
+            "description": "The number of times the drug is mentioned in the OTHER, Specifies category."
+        },
+        {
+            "entity": "PercentageOfPainRelieverDrugsSpecified",
+            "description": "The percentage of all pain reliever drugs specified that this drug represents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Associates the drug with its specific code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Associates the drug with its specific name."
+        },
+        {
+            "relationship": "hasTimesMentioned",
+            "source_entity": "Drug",
+            "target_entity": "TimesMentioned",
+            "description": "Indicates the number of times the drug is mentioned."
+        },
+        {
+            "relationship": "hasPercentageOfPainRelieverDrugsSpecified",
+            "source_entity": "Drug",
+            "target_entity": "PercentageOfPainRelieverDrugsSpecified",
+            "description": "Indicates the percentage of all pain reliever drugs specified that this drug represents."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "4501",
+            "predicate": "is a",
+            "object": "Lortab"
+        },
+        {
+            "subject": "4501",
+            "predicate": "mentioned times",
+            "object": "3"
+        },
+        {
+            "subject": "4501",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.75"
+        },
+        {
+            "subject": "4502",
+            "predicate": "is a",
+            "object": "Norco"
+        },
+        {
+            "subject": "4502",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "4502",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        },
+        {
+            "subject": "4506",
+            "predicate": "is a",
+            "object": "Codeine, not in pill form"
+        },
+        {
+            "subject": "4506",
+            "predicate": "mentioned times",
+            "object": "2"
+        },
+        {
+            "subject": "4506",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.50"
+        },
+        {
+            "subject": "8007",
+            "predicate": "is a",
+            "object": "Gabapentin, Neurontin"
+        },
+        {
+            "subject": "8007",
+            "predicate": "mentioned times",
+            "object": "7"
+        },
+        {
+            "subject": "8007",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "1.76"
+        },
+        {
+            "subject": "8010",
+            "predicate": "is a",
+            "object": "Zyrtec, Cetirizine <OTC>"
+        },
+        {
+            "subject": "8010",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "8010",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        },
+        {
+            "subject": "8016",
+            "predicate": "is a",
+            "object": "Icy Hot <OTC>"
+        },
+        {
+            "subject": "8016",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "8016",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        },
+        {
+            "subject": "8027",
+            "predicate": "is a",
+            "object": "Alavert, Claritin, Loratadine <OTC>"
+        },
+        {
+            "subject": "8027",
+            "predicate": "mentioned times",
+            "object": "2"
+        },
+        {
+            "subject": "8027",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.50"
+        },
+        {
+            "subject": "8035",
+            "predicate": "is a",
+            "object": "Prednisone"
+        },
+        {
+            "subject": "8035",
+            "predicate": "mentioned times",
+            "object": "2"
+        },
+        {
+            "subject": "8035",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.50"
+        },
+        {
+            "subject": "8097",
+            "predicate": "is a",
+            "object": "Tizanidine, Zanaflex"
+        },
+        {
+            "subject": "8097",
+            "predicate": "mentioned times",
+            "object": "2"
+        },
+        {
+            "subject": "8097",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.50"
+        },
+        {
+            "subject": "8236",
+            "predicate": "is a",
+            "object": "Lyrica, Pregabalin"
+        },
+        {
+            "subject": "8236",
+            "predicate": "mentioned times",
+            "object": "2"
+        },
+        {
+            "subject": "8236",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.50"
+        },
+        {
+            "subject": "8237",
+            "predicate": "is a",
+            "object": "Kratom"
+        },
+        {
+            "subject": "8237",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "8237",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        },
+        {
+            "subject": "8283",
+            "predicate": "is a",
+            "object": "Synthetic cannabinoids (eg. K2, Spice, JWH-018)"
+        },
+        {
+            "subject": "8283",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "8283",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        },
+        {
+            "subject": "8309",
+            "predicate": "is a",
+            "object": "Mucinex <OTC>"
+        },
+        {
+            "subject": "8309",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "8309",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        },
+        {
+            "subject": "8411",
+            "predicate": "is a",
+            "object": "Tamiflu"
+        },
+        {
+            "subject": "8411",
+            "predicate": "mentioned times",
+            "object": "2"
+        },
+        {
+            "subject": "8411",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.50"
+        },
+        {
+            "subject": "8508",
+            "predicate": "is a",
+            "object": "Meclizine"
+        },
+        {
+            "subject": "8508",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "8508",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        },
+        {
+            "subject": "8541",
+            "predicate": "is a",
+            "object": "Mirtazapine, Remeron"
+        },
+        {
+            "subject": "8541",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "8541",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        },
+        {
+            "subject": "8549",
+            "predicate": "is a",
+            "object": "Escitalopram, Lexapro"
+        },
+        {
+            "subject": "8549",
+            "predicate": "mentioned times",
+            "object": "1"
+        },
+        {
+            "subject": "8549",
+            "predicate": "percentage of all pain reliever drugs specified",
+            "object": "0.25"
+        }
+    ]
+}

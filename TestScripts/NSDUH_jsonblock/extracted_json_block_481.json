@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "RiskCategory",
+            "description": "A category that signifies the level of risk associated with substance use."
+        },
+        {
+            "entity": "Substance",
+            "description": "Type of drug or substance being assessed for risk or availability."
+        },
+        {
+            "entity": "Availability",
+            "description": "Ease of obtaining a particular substance."
+        },
+        {
+            "entity": "SurveyResponse",
+            "description": "The recorded response of an individual to a specific survey question."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasRiskCategory",
+            "source_entity": "SurveyResponse",
+            "target_entity": "RiskCategory",
+            "description": "Relates a survey response to a particular risk category for substance use."
+        },
+        {
+            "relationship": "concernsSubstance",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Substance",
+            "description": "Indicates the specific substance that the survey response is related to."
+        },
+        {
+            "relationship": "hasAvailability",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Availability",
+            "description": "Relates a survey response to the perceived availability of the substance."
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "FeelingHungryCocWithdrawalSymptom",
+            "description": "Frequency of feeling hungry as a symptom of cocaine withdrawal in the past 12 months."
+        },
+        {
+            "entity": "SlowedDownCocWithdrawalSymptom",
+            "description": "Frequency of feeling slowed down or restless as a symptom of cocaine withdrawal in the past 12 months."
+        },
+        {
+            "entity": "UseDrugToAvoidCocWithdrawalSymptom",
+            "description": "Usage of any COCAINE/OTHER drugs to get over or avoid having cocaine withdrawal symptoms in the past 12 months."
+        },
+        {
+            "entity": "UsedCocaineToAvoidCocWithdrawalSymptom",
+            "description": "Usage of cocaine specifically to get over or avoid having cocaine withdrawal symptoms in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFeelingHungryWithdrawalSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "FeelingHungryCocWithdrawalSymptom",
+            "description": "Indicates the respondent's frequency of feeling hungry as a symptom of cocaine withdrawal in the past 12 months."
+        },
+        {
+            "relationship": "hasSlowedDownWithdrawalSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "SlowedDownCocWithdrawalSymptom",
+            "description": "Indicates the respondent's frequency of feeling slowed down or restless as a symptom of cocaine withdrawal in the past 12 months."
+        },
+        {
+            "relationship": "usesDrugToAvoidWithdrawalSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "UseDrugToAvoidCocWithdrawalSymptom",
+            "description": "Indicates whether the respondent used any drugs to get over or avoid having cocaine withdrawal symptoms in the past 12 months."
+        },
+        {
+            "relationship": "usesCocaineToAvoidWithdrawalSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "UsedCocaineToAvoidCocWithdrawalSymptom",
+            "description": "Indicates whether the respondent used cocaine specifically to get over or avoid having cocaine withdrawal symptoms in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Feeling Hungry",
+            "predicate": "is symptom of",
+            "object": "Cocaine Withdrawal"
+        },
+        {
+            "subject": "Slowed Down/Restless",
+            "predicate": "is symptom of",
+            "object": "Cocaine Withdrawal"
+        },
+        {
+            "subject": "Cocaine",
+            "predicate": "used to",
+            "object": "avoid Cocaine Withdrawal"
+        },
+        {
+            "subject": "COC/Other Drug",
+            "predicate": "used to",
+            "object": "avoid Cocaine Withdrawal"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "entities": [
+        {
+            "entity": "ChronicBronchitisOrCOPD",
+            "description": "Diagnosis status of chronic bronchitis or chronic obstructive pulmonary disease (COPD)."
+        },
+        {
+            "entity": "LiverCirrhosis",
+            "description": "Diagnosis status of cirrhosis of the liver."
+        },
+        {
+            "entity": "HepatitisBorC",
+            "description": "Diagnosis status of Hepatitis B or C."
+        },
+        {
+            "entity": "KidneyDisease",
+            "description": "Diagnosis status of kidney disease."
+        },
+        {
+            "entity": "Asthma",
+            "description": "Diagnosis status of asthma."
+        },
+        {
+            "entity": "HIVorAIDS",
+            "description": "Diagnosis status of HIV or AIDS."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasChronicBronchitisOrCOPD",
+            "source_entity": "Respondent",
+            "target_entity": "ChronicBronchitisOrCOPD",
+            "description": "Indicates the respondent's diagnosis status of chronic bronchitis or COPD."
+        },
+        {
+            "relationship": "hasLiverCirrhosis",
+            "source_entity": "Respondent",
+            "target_entity": "LiverCirrhosis",
+            "description": "Indicates the respondent's diagnosis status of cirrhosis of the liver."
+        },
+        {
+            "relationship": "hasHepatitisBorC",
+            "source_entity": "Respondent",
+            "target_entity": "HepatitisBorC",
+            "description": "Indicates the respondent's diagnosis status of Hepatitis B or C."
+        },
+        {
+            "relationship": "hasKidneyDisease",
+            "source_entity": "Respondent",
+            "target_entity": "KidneyDisease",
+            "description": "Indicates the respondent's diagnosis status of kidney disease."
+        },
+        {
+            "relationship": "hasAsthma",
+            "source_entity": "Respondent",
+            "target_entity": "Asthma",
+            "description": "Indicates the respondent's diagnosis status of asthma."
+        },
+        {
+            "relationship": "hasHIVorAIDS",
+            "source_entity": "Respondent",
+            "target_entity": "HIVorAIDS",
+            "description": "Indicates the respondent's diagnosis status of HIV or AIDS."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Chronic Bronchitis or COPD",
+            "predicate": "diagnosed",
+            "object": "Respondent"
+        },
+        {
+            "subject": "Cirrhosis of the Liver",
+            "predicate": "diagnosed",
+            "object": "Respondent"
+        },
+        {
+            "subject": "Hepatitis B or C",
+            "predicate": "diagnosed",
+            "object": "Respondent"
+        },
+        {
+            "subject": "Kidney Disease",
+            "predicate": "diagnosed",
+            "object": "Respondent"
+        },
+        {
+            "subject": "Asthma",
+            "predicate": "diagnosed",
+            "object": "Respondent"
+        },
+        {
+            "subject": "HIV or AIDS",
+            "predicate": "diagnosed",
+            "object": "Respondent"
+        }
+    ]
+}

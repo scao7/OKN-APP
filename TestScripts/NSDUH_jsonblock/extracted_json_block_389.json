@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "ImportantActivities",
+            "description": "Types of important activities such as spending time with friends and family, attending special events at work or school, participating in hobbies and sports, and attending religious services and events."
+        },
+        {
+            "entity": "LessActivities",
+            "description": "Reduction in the level of participation in important activities over the past 12 months due to the use of prescription pain relievers."
+        },
+        {
+            "entity": "PainRelievers",
+            "description": "Prescription pain relievers referenced in the context of their usage leading to reduced activity participation."
+        },
+        {
+            "entity": "MissedWorkOrSchool",
+            "description": "Missing a lot of work or school due to the use of prescription pain relievers."
+        },
+        {
+            "entity": "JobLossOrDemotion",
+            "description": "Getting demoted, having your hours cut, or losing a job due to the use of prescription pain relievers."
+        },
+        {
+            "entity": "SchoolFailure",
+            "description": "Getting suspended, expelled, or dropping out of school due to the use of prescription pain relievers."
+        },
+        {
+            "entity": "FamilyCareFailure",
+            "description": "Failing to take care of family due to the use of prescription pain relievers."
+        },
+        {
+            "entity": "SeriousProblems",
+            "description": "Serious problems at work, school, or home arising from the use of prescription pain relievers."
+        },
+        {
+            "entity": "ArgumentsWithFamilyOrFriends",
+            "description": "Arguments or other problems with family or friends caused or made worse by the use of prescription pain relievers."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "causesReducedParticipation",
+            "source_entity": "PainRelievers",
+            "target_entity": "LessActivities",
+            "description": "The usage of prescription pain relievers causes a reduction in participation in important activities over the past 12 months."
+        },
+        {
+            "relationship": "isImportantActivity",
+            "source_entity": "ImportantActivities",
+            "target_entity": "SpendingTimeWithFamily",
+            "description": "An important activity is spending time with friends and family."
+        },
+        {
+            "relationship": "isImportantActivity",
+            "source_entity": "ImportantActivities",
+            "target_entity": "AttendingEvents",
+            "description": "An important activity is attending special events at work or school."
+        },
+        {
+            "relationship": "causesMissedWorkOrSchool",
+            "source_entity": "PainRelievers",
+            "target_entity": "MissedWorkOrSchool",
+            "description": "The usage of prescription pain relievers causes missing a lot of work or school."
+        },
+        {
+            "relationship": "causesJobLossOrDemotion",
+            "source_entity": "PainRelievers",
+            "target_entity": "JobLossOrDemotion",
+            "description": "The usage of prescription pain relievers causes getting demoted, having hours cut, or losing jobs."
+        },
+        {
+            "relationship": "causesSchoolFailure",
+            "source_entity": "PainRelievers",
+            "target_entity": "SchoolFailure",
+            "description": "The usage of prescription pain relievers causes getting suspended, expelled, or dropping out of school."
+        },
+        {
+            "relationship": "causesFamilyCareFailure",
+            "source_entity": "PainRelievers",
+            "target_entity": "FamilyCareFailure",
+            "description": "The usage of prescription pain relievers causes failing to take care of family."
+        },
+        {
+            "relationship": "causesSeriousProblems",
+            "source_entity": "PainRelievers",
+            "target_entity": "SeriousProblems",
+            "description": "The usage of prescription pain relievers causes serious problems at work, school, or home."
+        },
+        {
+            "relationship": "causesArgumentsWithFamilyOrFriends",
+            "source_entity": "PainRelievers",
+            "target_entity": "ArgumentsWithFamilyOrFriends",
+            "description": "The usage of prescription pain relievers causes arguments or other problems with family or friends."
+        }
+    ]
+}

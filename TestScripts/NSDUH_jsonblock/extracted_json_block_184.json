@@ -1,0 +1,32 @@
+[
+    {
+        "subject": "Glue",
+        "predicate": "hasResponse",
+        "object": "Yes"
+    },
+    {
+        "subject": "Glue",
+        "predicate": "hasResponse",
+        "object": "No"
+    },
+    {
+        "subject": "Ether",
+        "predicate": "hasResponse",
+        "object": "Yes"
+    },
+    {
+        "subject": "Ether",
+        "predicate": "hasResponse",
+        "object": "No"
+    },
+    {
+        "subject": "Solvent",
+        "predicate": "hasResponse",
+        "object": "Yes"
+    },
+    {
+        "subject": "Solvent",
+        "predicate": "hasResponse",
+        "object": "No"
+    }
+]

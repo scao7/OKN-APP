@@ -1,0 +1,102 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of cases unadjusted for sample weighting."
+        },
+        {
+            "entity": "OffendersUnknown",
+            "description": "Number of cases where the offenders are unknown."
+        },
+        {
+            "entity": "VictimSpouse",
+            "description": "Number of cases where the victim was the offender's spouse."
+        },
+        {
+            "entity": "VictimCommonLawSpouse",
+            "description": "Number of cases where the victim was the offender's common-law spouse."
+        },
+        {
+            "entity": "VictimParent",
+            "description": "Number of cases where the victim was the offender's parent."
+        },
+        {
+            "entity": "VictimSibling",
+            "description": "Number of cases where the victim was the offender's sibling."
+        },
+        {
+            "entity": "VictimChild",
+            "description": "Number of cases where the victim was the offender's child."
+        },
+        {
+            "entity": "VictimGrandparent",
+            "description": "Number of cases where the victim was the offender's grandparent."
+        },
+        {
+            "entity": "VictimGrandchild",
+            "description": "Number of cases where the victim was the offender's grandchild."
+        },
+        {
+            "entity": "VictimInLaw",
+            "description": "Number of cases where the victim was the offender's in-law."
+        },
+        {
+            "entity": "VictimStepParent",
+            "description": "Number of cases where the victim was the offender's step parent."
+        },
+        {
+            "entity": "VictimStepChild",
+            "description": "Number of cases where the victim was the offender's step child."
+        },
+        {
+            "entity": "VictimStepSibling",
+            "description": "Number of cases where the victim was the offender's step sibling."
+        },
+        {
+            "entity": "VictimOtherFamilyMember",
+            "description": "Number of cases where the victim was another family member of the offender."
+        },
+        {
+            "entity": "VictimOffender",
+            "description": "Number of cases where the victim was also the offender."
+        },
+        {
+            "entity": "VictimAcquaintance",
+            "description": "Number of cases where the victim was the offender's acquaintance."
+        },
+        {
+            "entity": "VictimFriend",
+            "description": "Number of cases where the victim was the offender's friend."
+        },
+        {
+            "entity": "VictimNeighbor",
+            "description": "Number of cases where the victim was the offender's neighbor."
+        },
+        {
+            "entity": "VictimBabysittee",
+            "description": "Number of cases where the victim was the offender's babysittee."
+        },
+        {
+            "entity": "VictimBoyfriendGirlfriend",
+            "description": "Number of cases where the victim was the offender's boyfriend/girlfriend."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Number of missing data cases."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Survey",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the survey to the number of unadjusted cases."
+        },
+        {
+            "relationship": "hasOffenderRelationship",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Defines the relationship between the victim and the offender in terms of family, acquaintance, or other relationships."
+        }
+    ]
+}

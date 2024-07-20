@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "VapedNicotineFirstMonth",
+            "description": "The month in which the respondent first vaped nicotine with an e-cigarette or other vaping device."
+        },
+        {
+            "entity": "TimeSinceLastVapedNicotine",
+            "description": "The time since the respondent last vaped nicotine with an e-cigarette or other vaping device."
+        },
+        {
+            "entity": "DaysVapedNicotinePast30Days",
+            "description": "Number of days the respondent vaped nicotine with an e-cigarette or other vaping device in the past 30 days."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "firstVapedNicotineInMonth",
+            "source_entity": "Respondent",
+            "target_entity": "VapedNicotineFirstMonth",
+            "description": "Association of the respondent with the month they first vaped nicotine."
+        },
+        {
+            "relationship": "hasTimeSinceLastVapedNicotine",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastVapedNicotine",
+            "description": "Time period since the respondent last vaped nicotine with an e-cigarette or other vaping device."
+        },
+        {
+            "relationship": "hasDaysVapedNicotinePast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "DaysVapedNicotinePast30Days",
+            "description": "Number of days the respondent vaped nicotine with an e-cigarette or other vaping device within the last 30 days."
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+{
+    "entities": [
+        {
+            "entity": "OtherDrugInjected",
+            "description": "Other drugs injected specified by the respondent."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The frequency of occurrence of a specified response."
+        },
+        {
+            "entity": "TimeSinceLastInjection",
+            "description": "The period since the respondent last used a needle to inject drugs."
+        },
+        {
+            "entity": "ReuseNeedle",
+            "description": "Indicates whether the respondent reused a needle for injecting drugs."
+        },
+        {
+            "entity": "NeedleUsedBySomeoneElse",
+            "description": "Indicates whether the respondent used a needle that was previously used by someone else."
+        },
+        {
+            "entity": "LastNeedleUsePeriod",
+            "description": "Time period since the last use of a needle by the respondent."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Respondent",
+            "target_entity": "OtherDrugInjected",
+            "description": "Indicates the drugs that were injected by the respondent."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "OtherDrugInjected",
+            "target_entity": "Frequency",
+            "description": "Relates the drug injected by the respondent to the frequency of its occurrence."
+        },
+        {
+            "relationship": "hasTimeSinceLastInjection",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastInjection",
+            "description": "Indicates the time period since the respondent last injected a drug."
+        },
+        {
+            "relationship": "reusedNeedle",
+            "source_entity": "Respondent",
+            "target_entity": "ReuseNeedle",
+            "description": "Indicates whether the respondent reused a needle for injecting drugs."
+        },
+        {
+            "relationship": "usedNeedleFromSomeoneElse",
+            "source_entity": "Respondent",
+            "target_entity": "NeedleUsedBySomeoneElse",
+            "description": "Indicates whether the respondent used a needle that was used by someone else before."
+        },
+        {
+            "relationship": "hasNeedleReusePeriod",
+            "source_entity": "Respondent",
+            "target_entity": "LastNeedleUsePeriod",
+            "description": "Indicates the time period since the last time the respondent reused a needle."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Xanax"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Ritalin"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Methamphetamine"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Dilaudid"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Percocet"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Special K"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Heroin"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Other Drugs, NOT OTHERWISE SPECIFIED"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Cocaine, coca, cocaine, coke, perico"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Adderall"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "OxyContin"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Suboxone"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "Oxycodone product, unspecified"
+        },
+        {
+            "subject": "OtherDrugInjected",
+            "predicate": "includes",
+            "object": "alpha-PVP, alpha-Pyrrolidinopentiophenone"
+        },
+        {
+            "subject": "TimeSinceLastInjection",
+            "predicate": "includes",
+            "object": "Within past 30 days"
+        },
+        {
+            "subject": "TimeSinceLastInjection",
+            "predicate": "includes",
+            "object": "More than 30 days but within past 12 months"
+        },
+        {
+            "subject": "TimeSinceLastInjection",
+            "predicate": "includes",
+            "object": "More than 12 months ago"
+        },
+        {
+            "subject": "TimeSinceLastInjection",
+            "predicate": "includes",
+            "object": "At some point in lifetime"
+        }
+    ]
+}

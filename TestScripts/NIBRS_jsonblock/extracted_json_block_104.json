@@ -1,0 +1,276 @@
+{
+    "entities": [
+        {
+            "entity": "AntiWhiteDiscrimination",
+            "description": "Bias motivation against people identified as White."
+        },
+        {
+            "entity": "AntiBlackDiscrimination",
+            "description": "Bias motivation against people identified as Black or African American."
+        },
+        {
+            "entity": "AntiAmericanIndianDiscrimination",
+            "description": "Bias motivation against people identified as American Indian or Alaska Native."
+        },
+        {
+            "entity": "AntiAsianDiscrimination",
+            "description": "Bias motivation against people identified as Asian."
+        },
+        {
+            "entity": "AntiMultiRacialGroupDiscrimination",
+            "description": "Bias motivation against multi-racial groups."
+        },
+        {
+            "entity": "AntiPacificIslanderDiscrimination",
+            "description": "Bias motivation against people identified as Native Hawaiian or Other Pacific Islander."
+        },
+        {
+            "entity": "AntiJewishDiscrimination",
+            "description": "Bias motivation against Jewish individuals."
+        },
+        {
+            "entity": "AntiCatholicDiscrimination",
+            "description": "Bias motivation against Catholic individuals."
+        },
+        {
+            "entity": "AntiProtestantDiscrimination",
+            "description": "Bias motivation against Protestant individuals."
+        },
+        {
+            "entity": "AntiIslamicDiscrimination",
+            "description": "Bias motivation against Muslim individuals."
+        },
+        {
+            "entity": "AntiOtherReligionDiscrimination",
+            "description": "Bias motivation against other unspecified religious groups."
+        },
+        {
+            "entity": "AntiAtheismAgnosticismDiscrimination",
+            "description": "Bias motivation against atheists or agnostics."
+        },
+        {
+            "entity": "AntiMormonDiscrimination",
+            "description": "Bias motivation against Mormon individuals."
+        },
+        {
+            "entity": "AntiJehovahsWitnessDiscrimination",
+            "description": "Bias motivation against Jehovah's Witness individuals."
+        },
+        {
+            "entity": "AntiArabDiscrimination",
+            "description": "Bias motivation against Arab individuals."
+        },
+        {
+            "entity": "AntiHispanicDiscrimination",
+            "description": "Bias motivation against people identified as Hispanic or Latino."
+        },
+        {
+            "entity": "AntiNonHispanicDiscrimination",
+            "description": "Bias motivation against people not identified as Hispanic or Latino."
+        },
+        {
+            "entity": "AntiGayDiscrimination",
+            "description": "Bias motivation against gay individuals."
+        },
+        {
+            "entity": "AntiLesbianDiscrimination",
+            "description": "Bias motivation against lesbian individuals."
+        },
+        {
+            "entity": "AntiBisexualDiscrimination",
+            "description": "Bias motivation against bisexual individuals."
+        },
+        {
+            "entity": "AntiLGBTDiscrimination",
+            "description": "Bias motivation against LGBT groups (Lesbian, Gay, Bisexual, or Transgender)."
+        },
+        {
+            "entity": "AntiHeterosexualDiscrimination",
+            "description": "Bias motivation against heterosexual individuals."
+        },
+        {
+            "entity": "AntiPhysicalDisabilityDiscrimination",
+            "description": "Bias motivation against individuals with physical disabilities."
+        },
+        {
+            "entity": "AntiMentalDisabilityDiscrimination",
+            "description": "Bias motivation against individuals with mental disabilities."
+        },
+        {
+            "entity": "AntiMaleDiscrimination",
+            "description": "Bias motivation against male individuals."
+        },
+        {
+            "entity": "AntiFemaleDiscrimination",
+            "description": "Bias motivation against female individuals."
+        },
+        {
+            "entity": "AntiTransgenderDiscrimination",
+            "description": "Bias motivation against transgender individuals."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiWhiteDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-White discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiBlackDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Black discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiAmericanIndianDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-American Indian discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiAsianDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Asian discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiMultiRacialGroupDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Multi-Racial group discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiPacificIslanderDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Pacific Islander discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiJewishDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Jewish discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiCatholicDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Catholic discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiProtestantDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Protestant discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiIslamicDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Islamic discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiOtherReligionDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-other religion discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiAtheismAgnosticismDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-atheism/agnosticism discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiMormonDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Mormon discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiJehovahsWitnessDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Jehovah's Witness discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiArabDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Arab discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiHispanicDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-Hispanic discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiNonHispanicDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-non-Hispanic discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiGayDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-gay discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiLesbianDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-lesbian discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiBisexualDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-bisexual discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiLGBTDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-LGBT discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiHeterosexualDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-heterosexual discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiPhysicalDisabilityDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-physical disability discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiMentalDisabilityDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-mental disability discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiMaleDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-male discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiFemaleDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-female discrimination."
+        },
+        {
+            "relationship": "indicatesBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "AntiTransgenderDiscrimination",
+            "description": "Indicates the respondent's experience or perception of anti-transgender discrimination."
+        }
+    ]
+}

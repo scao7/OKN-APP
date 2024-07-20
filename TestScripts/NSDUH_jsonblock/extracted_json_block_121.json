@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "I_DRANK_AT_SCHOOL",
+            "description": "The location where alcohol was consumed, specifically at school."
+        },
+        {
+            "entity": "I_DRANK_AT_SOME_OTHER_PLACE",
+            "description": "The location where alcohol was consumed, specifically at another place."
+        },
+        {
+            "entity": "ResponseCategory",
+            "description": "The type of response entered by the survey participant."
+        },
+        {
+            "entity": "NEVER_USED_ALCOHOL",
+            "description": "Indicates that the participant has never used alcohol."
+        },
+        {
+            "entity": "DID_NOT_USE_ALCOHOL_IN_THE_PAST_30_DAYS",
+            "description": "Indicates that the participant did not use alcohol in the past 30 days."
+        },
+        {
+            "entity": "OtherPlaceLastDrankAlcohol",
+            "description": "The location where the participant last drank alcohol, which could be various places."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrinkingLocation",
+            "source_entity": "Respondent",
+            "target_entity": "I_DRANK_AT_SCHOOL",
+            "description": "Relates the respondent to the location where alcohol was consumed at school."
+        },
+        {
+            "relationship": "hasDrinkingLocation",
+            "source_entity": "Respondent",
+            "target_entity": "I_DRANK_AT_SOME_OTHER_PLACE",
+            "description": "Relates the respondent to the location where alcohol was consumed at another place."
+        },
+        {
+            "relationship": "containsResponseCategory",
+            "source_entity": "SurveyQuestion",
+            "target_entity": "ResponseCategory",
+            "description": "Relates the survey question to the type of response entered."
+        },
+        {
+            "relationship": "categorizesNeverUsedAlcohol",
+            "source_entity": "ResponseCategory",
+            "target_entity": "NEVER_USED_ALCOHOL",
+            "description": "Categorizes the participant who has never used alcohol."
+        },
+        {
+            "relationship": "categorizesNoRecentUse",
+            "source_entity": "ResponseCategory",
+            "target_entity": "DID_NOT_USE_ALCOHOL_IN_THE_PAST_30_DAYS",
+            "description": "Categorizes the participant who did not use alcohol in the past 30 days."
+        },
+        {
+            "relationship": "detailsLastDrankLocation",
+            "source_entity": "SurveyQuestion",
+            "target_entity": "OtherPlaceLastDrankAlcohol",
+            "description": "Relates the survey question to the location where the participant last drank alcohol."
+        }
+    ]
+}

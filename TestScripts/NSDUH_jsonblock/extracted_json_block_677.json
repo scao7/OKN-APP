@@ -1,0 +1,132 @@
+[
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Serzone"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Anafranil, Clomipramine"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Fluvoxamine, Luvox"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Mirtazapine, Remeron"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Acepromazine, PromAce"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Nitroglycerine"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Cogentin"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Dimenhydrinate, Dramamine, sea/motion sickness pill <OTC>"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Scopolamine"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Seroquel XR"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Insidon, Opripramol"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Escitalopram, Lexapro"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Geodon, Ziprasidone"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Invega"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Lidone, Moban, Molindone"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Bupropion, Wellbutrin, Zyban"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Effexor"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Spancap"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Orlistat, Xenical"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Strattera"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Wellbutrin XL"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "alli weight loss pills <OTC>"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Obitrol"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Akineton, Biperiden"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Flarex"
+    },
+    {
+        "subject": "Survey",
+        "predicate": "includes",
+        "object": "Suprax"
+    }
+]

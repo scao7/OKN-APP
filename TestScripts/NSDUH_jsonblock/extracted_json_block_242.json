@@ -1,0 +1,93 @@
+{
+    "entities": [
+        {
+            "entity": "MethamphetamineUseRecencyImputationIndicator",
+            "description": "Indicator of methamphetamine use recency based on imputation."
+        },
+        {
+            "entity": "PainRelieverRecencyImputationRevised",
+            "description": "Revised indicator of pain reliever use recency based on imputation."
+        },
+        {
+            "entity": "OxycontinRecencyImputationIndicator",
+            "description": "Indicator of oxycontin use recency based on imputation."
+        },
+        {
+            "entity": "FentanylPastYearUseImputationRevised",
+            "description": "Revised indicator of fentanyl products use in the past year based on imputation."
+        },
+        {
+            "entity": "FentanylPastYearUseImputationIndicator",
+            "description": "Indicator of fentanyl products use in the past year based on imputation."
+        },
+        {
+            "entity": "TranquilizersRecencyImputationRevised",
+            "description": "Revised indicator of tranquilizer use recency based on imputation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesMethamphetamineUseRecency",
+            "source_entity": "Respondent",
+            "target_entity": "MethamphetamineUseRecencyImputationIndicator",
+            "description": "Indicates the recency of methamphetamine use for the respondent based on imputation."
+        },
+        {
+            "relationship": "usesPainRelieverRecency",
+            "source_entity": "Respondent",
+            "target_entity": "PainRelieverRecencyImputationRevised",
+            "description": "Indicates the recency of pain reliever use for the respondent based on imputation."
+        },
+        {
+            "relationship": "usesOxycontinRecency",
+            "source_entity": "Respondent",
+            "target_entity": "OxycontinRecencyImputationIndicator",
+            "description": "Indicates the recency of oxycontin use for the respondent based on imputation."
+        },
+        {
+            "relationship": "usesFentanylPastYear",
+            "source_entity": "Respondent",
+            "target_entity": "FentanylPastYearUseImputationRevised",
+            "description": "Indicates the use of fentanyl products in the past year for the respondent based on imputation."
+        },
+        {
+            "relationship": "usesFentanylPastYearIndicator",
+            "source_entity": "Respondent",
+            "target_entity": "FentanylPastYearUseImputationIndicator",
+            "description": "Indicates the use of fentanyl products in the past year for the respondent based on imputation."
+        },
+        {
+            "relationship": "usesTranquilizersRecency",
+            "source_entity": "Respondent",
+            "target_entity": "TranquilizersRecencyImputationRevised",
+            "description": "Indicates the recency of tranquilizer use for the respondent based on imputation."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Methamphetamine Use Recency",
+            "predicate": "imputation indicator",
+            "object": "Recency data based on imputation"
+        },
+        {
+            "subject": "Any Pain Reliever Recency",
+            "predicate": "imputation revised",
+            "object": "Revised recency data"
+        },
+        {
+            "subject": "Any Oxycontin Recency",
+            "predicate": "imputation indicator",
+            "object": "Recency data based on imputation"
+        },
+        {
+            "subject": "Fentanyl Products Any Past Year Use",
+            "predicate": "imputation revised",
+            "object": "Past year use data based on imputation"
+        },
+        {
+            "subject": "Any Tranquilizers Recency",
+            "predicate": "imputation revised",
+            "object": "Revised recency data"
+        }
+    ]
+}

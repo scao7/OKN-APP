@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseCategory",
+            "description": "The various labeled categories for responses in the survey."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency of responses in a specific category without any weight adjustments."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of respondents who fall into a specific response category."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data entries that are missing or not provided."
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "Total number of responses in the survey data."
+        },
+        {
+            "entity": "Statistic",
+            "description": "Various statistical measures such as mean, minimum, maximum, and standard deviation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Associates the frequency of responses to each category."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "ResponseCategory",
+            "target_entity": "Percentage",
+            "description": "Associates the percentage of responses to each category."
+        },
+        {
+            "relationship": "includesMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Identifies the data entries that are missing within the survey."
+        },
+        {
+            "relationship": "hasTotalResponses",
+            "source_entity": "Survey",
+            "target_entity": "TotalResponses",
+            "description": "Indicates the total number of responses recorded in the survey."
+        },
+        {
+            "relationship": "isDescribedBy",
+            "source_entity": "Survey",
+            "target_entity": "Statistic",
+            "description": "Describes the survey data using various statistical measures."
+        }
+    ]
+}

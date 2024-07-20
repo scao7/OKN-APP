@@ -1,0 +1,57 @@
+{
+    "entities": [
+        {
+            "entity": "AdolescentDepression",
+            "description": "A survey section focusing on periods of depression lasting two weeks or longer."
+        },
+        {
+            "entity": "RespondentAge",
+            "description": "The exact age of the respondent when a 2+ week period of depression started."
+        },
+        {
+            "entity": "TimesFeltDepressed",
+            "description": "The number of times the respondent felt depressed in their life for two weeks or longer."
+        },
+        {
+            "entity": "DepressionInPastYear",
+            "description": "If the respondent experienced a two-week period of depression with other problems in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasRespondentAge",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "RespondentAge",
+            "description": "Relates to the age of the respondent when a 2+ week period of depression started."
+        },
+        {
+            "relationship": "hasTimesFeltDepressed",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "TimesFeltDepressed",
+            "description": "Relates to the count of times the respondent felt depressed for two weeks or longer."
+        },
+        {
+            "relationship": "hasDepressionInPastYear",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "DepressionInPastYear",
+            "description": "Indicates whether the respondent had a period of depression with other problems in the past year."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "AgeWhenFirstDepressed",
+            "object": "RespondentAge"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "TimesFeltDepressed",
+            "object": "TimesFeltDepressed"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "FeltDepressedInPastYear",
+            "object": "DepressionInPastYear"
+        }
+    ]
+}

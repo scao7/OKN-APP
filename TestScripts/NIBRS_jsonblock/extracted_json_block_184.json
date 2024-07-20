@@ -1,0 +1,48 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 30 days, including today's date."
+        },
+        {
+            "entity": "SickOrInjuredDays",
+            "description": "Number of whole days missed from school due to sickness or injury."
+        },
+        {
+            "entity": "SchoolAbsenceReason",
+            "description": "The reason for missing school, specifically due to being sick or injured."
+        },
+        {
+            "entity": "FamilyCareAbsence",
+            "description": "Number of days missed due to staying home with a sick child or family member."
+        },
+        {
+            "entity": "EconomicStatus",
+            "description": "The economic background of an individual, possibly related to income or employment status."
+        },
+        {
+            "entity": "EducationLevel",
+            "description": "The highest level of education completed by an individual."
+        },
+        {
+            "entity": "MentalHealthStatus",
+            "description": "The mental health condition or status of an individual."
+        },
+        {
+            "entity": "RuralArea",
+            "description": "An area defined as rural based on geographic or population criteria."
+        },
+        {
+            "entity": "SubstanceUsage",
+            "description": "The usage of tobacco, alcohol, or drugs by an individual."
+        },
+        {
+            "entity": "SubstanceUseDisorder",
+            "description": "A diagnosed disorder related to the abuse of substances."
+        },
+        {
+            "entity": "TreatmentReceived",
+            "description": "The receipt of treatment for substance use or mental health issues."
+        }
+    ]
+}

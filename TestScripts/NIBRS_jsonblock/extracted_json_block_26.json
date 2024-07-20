@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseCode",
+            "description": "Specific codes (e.g., 205W, 210A, etc.) available in the survey response categories."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of responses received for a particular response code without any weighting applied."
+        },
+        {
+            "entity": "ResponsePercentage",
+            "description": "The percentage of the total survey responses corresponding to each response code."
+        },
+        {
+            "entity": "SurveyCases",
+            "description": "The total number of valid survey cases."
+        },
+        {
+            "entity": "AgencyNIBRSFlag",
+            "description": "Indicates whether the agency participates in the National Incident-Based Reporting System (NIBRS)."
+        },
+        {
+            "entity": "AgencyInactiveDate",
+            "description": "A date indicating when an agency became inactive."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is not available or not provided in the survey results."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCode",
+            "target_entity": "UnweightedFrequency",
+            "description": "Links a specific response code to the number of responses received for that code."
+        },
+        {
+            "relationship": "hasResponsePercentage",
+            "source_entity": "ResponseCode",
+            "target_entity": "ResponsePercentage",
+            "description": "Links a specific response code to the percentage of the total survey responses for that code."
+        },
+        {
+            "relationship": "hasSurveyCases",
+            "source_entity": "Survey",
+            "target_entity": "SurveyCases",
+            "description": "Indicates the total number of valid survey cases."
+        },
+        {
+            "relationship": "participatesInNIBRS",
+            "source_entity": "Agency",
+            "target_entity": "AgencyNIBRSFlag",
+            "description": "Indicates whether the agency participates in the NIBRS program."
+        },
+        {
+            "relationship": "becameInactiveOn",
+            "source_entity": "Agency",
+            "target_entity": "AgencyInactiveDate",
+            "description": "Indicates the date when the agency became inactive."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the presence of missing data in the survey results."
+        }
+    ]
+}

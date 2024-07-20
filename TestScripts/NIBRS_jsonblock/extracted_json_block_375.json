@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "DispositionStatus",
+            "description": "Indicates the status of handling an arrestee, e.g., referred or handled."
+        },
+        {
+            "entity": "IncidentOffenseCode",
+            "description": "Represents the offense codes for the incidents."
+        },
+        {
+            "entity": "Frequency",
+            "description": "Represents the frequency count of each disposition status."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "Represents the count of valid cases for a particular disposition."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "Represents the total count of cases."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDispositionStatus",
+            "source_entity": "ArresteeUnder18",
+            "target_entity": "DispositionStatus",
+            "description": "Relates the arrestee under 18 to their disposition status."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "DispositionStatus",
+            "target_entity": "Frequency",
+            "description": "Relates the disposition status to its frequency count."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "DispositionStatus",
+            "target_entity": "ValidCases",
+            "description": "Indicates the count of valid cases associated with a specific disposition."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of cases reported in the survey."
+        },
+        {
+            "relationship": "hasIncidentOffenseCode",
+            "source_entity": "Incident",
+            "target_entity": "IncidentOffenseCode",
+            "description": "Associates an offense code with an incident."
+        }
+    ]
+}

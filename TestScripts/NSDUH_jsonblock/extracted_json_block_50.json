@@ -1,0 +1,167 @@
+[
+    {
+        "subject": "CombatZoneDuty",
+        "predicate": "hasOption",
+        "object": "YES"
+    },
+    {
+        "subject": "CombatZoneDuty",
+        "predicate": "hasOption",
+        "object": "NO"
+    },
+    {
+        "subject": "CombatZoneDuty",
+        "predicate": "hasOption",
+        "object": "BAD DATA"
+    },
+    {
+        "subject": "CombatZoneDuty",
+        "predicate": "hasOption",
+        "object": "DON'T KNOW"
+    },
+    {
+        "subject": "CombatZoneDuty",
+        "predicate": "hasOption",
+        "object": "REFUSED"
+    },
+    {
+        "subject": "CombatZoneDuty",
+        "predicate": "hasOption",
+        "object": "BLANK (NO ANSWER)"
+    },
+    {
+        "subject": "CombatZoneDuty",
+        "predicate": "hasOption",
+        "object": "LEGITIMATE SKIP"
+    },
+    {
+        "subject": "OverallHealth",
+        "predicate": "hasOption",
+        "object": "Excellent"
+    },
+    {
+        "subject": "OverallHealth",
+        "predicate": "hasOption",
+        "object": "Very good"
+    },
+    {
+        "subject": "OverallHealth",
+        "predicate": "hasOption",
+        "object": "Good"
+    },
+    {
+        "subject": "OverallHealth",
+        "predicate": "hasOption",
+        "object": "Fair"
+    },
+    {
+        "subject": "OverallHealth",
+        "predicate": "hasOption",
+        "object": "Poor"
+    },
+    {
+        "subject": "OverallHealth",
+        "predicate": "hasOption",
+        "object": "DON'T KNOW"
+    },
+    {
+        "subject": "OverallHealth",
+        "predicate": "hasOption",
+        "object": "REFUSED"
+    },
+    {
+        "subject": "TimesMovedPast12Months",
+        "predicate": "hasOption",
+        "object": "0 = 0 times"
+    },
+    {
+        "subject": "TimesMovedPast12Months",
+        "predicate": "hasOption",
+        "object": "1 time"
+    },
+    {
+        "subject": "TimesMovedPast12Months",
+        "predicate": "hasOption",
+        "object": "Two times"
+    },
+    {
+        "subject": "TimesMovedPast12Months",
+        "predicate": "hasOption",
+        "object": "Three or more times"
+    },
+    {
+        "subject": "TimesMovedPast12Months",
+        "predicate": "hasOption",
+        "object": "BAD DATA"
+    },
+    {
+        "subject": "TimesMovedPast12Months",
+        "predicate": "hasOption",
+        "object": "DON'T KNOW"
+    },
+    {
+        "subject": "TimesMovedPast12Months",
+        "predicate": "hasOption",
+        "object": "REFUSED"
+    },
+    {
+        "subject": "TimesMovedPast12Months",
+        "predicate": "hasOption",
+        "object": "BLANK (NO ANSWER)"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "I am only attracted to opposite sex"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "I am mostly attracted to opposite sex"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "I am equally attracted to males and females"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "I am mostly attracted to same sex"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "I am only attracted to same sex"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "I am not sure"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "BAD DATA"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "DON'T KNOW"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "REFUSED"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "BLANK (NO ANSWER)"
+    },
+    {
+        "subject": "SexualAttraction",
+        "predicate": "hasOption",
+        "object": "LEGITIMATE SKIP"
+    }
+]

@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "LastWorkedYear",
+            "description": "The year in which the respondent last worked at a job or business."
+        },
+        {
+            "entity": "MissedWorkDaysInjuryIllness",
+            "description": "Number of whole days missed from work due to injury or illness in the past 30 days."
+        },
+        {
+            "entity": "MissedWorkDaysOtherReasons",
+            "description": "Number of whole days skipped from work due to reasons other than injury or illness in the past 30 days."
+        },
+        {
+            "entity": "WorkplaceDrugAlcoholPolicy",
+            "description": "Whether the workplace has a written policy on employee use of alcohol or drugs."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "workedInYear",
+            "source_entity": "Respondent",
+            "target_entity": "LastWorkedYear",
+            "description": "Indicates the last year the respondent worked at a job or business."
+        },
+        {
+            "relationship": "missedWorkDueToInjuryIllness",
+            "source_entity": "Respondent",
+            "target_entity": "MissedWorkDaysInjuryIllness",
+            "description": "Indicates the number of days the respondent missed work due to injury or illness in the past 30 days."
+        },
+        {
+            "relationship": "missedWorkDueToOtherReasons",
+            "source_entity": "Respondent",
+            "target_entity": "MissedWorkDaysOtherReasons",
+            "description": "Indicates the number of days the respondent skipped work due to other reasons in the past 30 days."
+        },
+        {
+            "relationship": "hasWorkplaceDrugAlcoholPolicy",
+            "source_entity": "Workplace",
+            "target_entity": "WorkplaceDrugAlcoholPolicy",
+            "description": "Indicates whether the respondent's workplace has a written policy about employee use of alcohol or drugs."
+        }
+    ]
+}

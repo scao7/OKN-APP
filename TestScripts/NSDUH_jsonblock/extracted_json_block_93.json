@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "CigaretteSmoking",
+            "description": "Questions about the respondent's cigarette smoking habits."
+        },
+        {
+            "entity": "EverSmokedCigarette",
+            "description": "Indicates whether the respondent has ever smoked part or all of a cigarette."
+        },
+        {
+            "entity": "AgeFirstSmokedCigarette",
+            "description": "The age at which the respondent first smoked part or all of a cigarette."
+        },
+        {
+            "entity": "YearFirstCigaretteUse",
+            "description": "The year in which the respondent first smoked part or all of a cigarette."
+        },
+        {
+            "entity": "ResponseCode",
+            "description": "Different response codes used in the survey for data such as 'NEVER USED CIGARETTES', 'REFUSED', 'DON'T KNOW', etc."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEverSmokedCigarette",
+            "source_entity": "Respondent",
+            "target_entity": "EverSmokedCigarette",
+            "description": "Indicates whether the respondent has ever smoked part or all of a cigarette."
+        },
+        {
+            "relationship": "hasAgeFirstSmokedCigarette",
+            "source_entity": "Respondent",
+            "target_entity": "AgeFirstSmokedCigarette",
+            "description": "Indicates the age at which the respondent first smoked part or all of a cigarette."
+        },
+        {
+            "relationship": "hasYearFirstCigaretteUse",
+            "source_entity": "Respondent",
+            "target_entity": "YearFirstCigaretteUse",
+            "description": "Indicates the year in which the respondent first smoked part or all of a cigarette."
+        },
+        {
+            "relationship": "hasResponseCode",
+            "source_entity": "SurveyResponse",
+            "target_entity": "ResponseCode",
+            "description": "Associates a survey response with the corresponding response code (such as 'NEVER USED CIGARETTES', 'REFUSED', 'DON'T KNOW', etc.)."
+        }
+    ]
+}

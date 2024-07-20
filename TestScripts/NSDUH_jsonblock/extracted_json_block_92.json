@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "DRVINALCO",
+            "description": "Drove Under Influence of Alcohol in the Past Year"
+        },
+        {
+            "entity": "DRVINMARJ",
+            "description": "Drove Under Influence of Marijuana in the Past Year"
+        },
+        {
+            "entity": "DRVINDRG",
+            "description": "Drove Under Influence of Selected Illicit Drugs in the Past Year"
+        },
+        {
+            "entity": "DRVINPOTMJ",
+            "description": "Drove Under Influence of Selected Illicit Drugs or Marijuana in the Past Year"
+        },
+        {
+            "entity": "DRVINALDRG",
+            "description": "Drove Under Influence of Alcohol or Selected Illicit Drugs in the Past Year"
+        },
+        {
+            "entity": "PAROL",
+            "description": "Parole/Supervised release status in the past year"
+        },
+        {
+            "entity": "PROB",
+            "description": "Probation status in the past year"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrivingInfluenceOfAlcohol",
+            "source_entity": "Respondent",
+            "target_entity": "DRVINALCO",
+            "description": "Indicates if the respondent drove under the influence of alcohol in the past year."
+        },
+        {
+            "relationship": "hasDrivingInfluenceOfMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "DRVINMARJ",
+            "description": "Indicates if the respondent drove under the influence of marijuana in the past year."
+        },
+        {
+            "relationship": "hasDrivingInfluenceOfSelectedIllicitDrugs",
+            "source_entity": "Respondent",
+            "target_entity": "DRVINDRG",
+            "description": "Indicates if the respondent drove under the influence of selected illicit drugs in the past year."
+        },
+        {
+            "relationship": "hasDrivingInfluenceOfSelectedIllicitDrugsOrMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "DRVINPOTMJ",
+            "description": "Indicates if the respondent drove under the influence of selected illicit drugs or marijuana in the past year."
+        },
+        {
+            "relationship": "hasDrivingInfluenceOfAlcoholOrSelectedIllicitDrugs",
+            "source_entity": "Respondent",
+            "target_entity": "DRVINALDRG",
+            "description": "Indicates if the respondent drove under the influence of alcohol or selected illicit drugs in the past year."
+        },
+        {
+            "relationship": "hasParoleStatus",
+            "source_entity": "Respondent",
+            "target_entity": "PAROL",
+            "description": "Indicates the respondent's parole/supervised release status in the past year."
+        },
+        {
+            "relationship": "hasProbationStatus",
+            "source_entity": "Respondent",
+            "target_entity": "PROB",
+            "description": "Indicates the respondent's probation status in the past year."
+        }
+    ]
+}

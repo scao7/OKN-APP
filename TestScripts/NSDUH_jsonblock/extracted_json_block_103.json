@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "SmokelessTobaccoUse",
+            "description": "The estimated number of days smokeless tobacco was used in the past 30 days."
+        },
+        {
+            "entity": "CigarUse",
+            "description": "Indicates whether the respondent has ever smoked part or all of a cigar or cigarillo."
+        },
+        {
+            "entity": "AgeFirstSmokedCigar",
+            "description": "The age when the respondent first smoked a cigar."
+        },
+        {
+            "entity": "YearFirstCigarUse",
+            "description": "The year when the respondent first started smoking cigars."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTobaccoUse",
+            "source_entity": "Respondent",
+            "target_entity": "SmokelessTobaccoUse",
+            "description": "Relates the respondent to their estimated smokeless tobacco use in the past 30 days."
+        },
+        {
+            "relationship": "hasCigarUse",
+            "source_entity": "Respondent",
+            "target_entity": "CigarUse",
+            "description": "Indicates whether the respondent has tried smoking cigars or cigarillos."
+        },
+        {
+            "relationship": "hasAgeFirstSmoked",
+            "source_entity": "Respondent",
+            "target_entity": "AgeFirstSmokedCigar",
+            "description": "Relates the respondent to the age when they first smoked a cigar."
+        },
+        {
+            "relationship": "hasYearFirstCigarUse",
+            "source_entity": "Respondent",
+            "target_entity": "YearFirstCigarUse",
+            "description": "Relates the respondent to the year when they first started smoking cigars."
+        }
+    ]
+}

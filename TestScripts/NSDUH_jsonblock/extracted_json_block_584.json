@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "RC-YOUTH",
+            "description": "Youth respondents in the NSDUH survey."
+        },
+        {
+            "entity": "MDE",
+            "description": "Major Depressive Episode"
+        },
+        {
+            "entity": "MDEImpairment",
+            "description": "Major Depressive Episode with Severe Impairment"
+        },
+        {
+            "entity": "ALC",
+            "description": "Alcohol Use"
+        },
+        {
+            "entity": "UDSILALAny",
+            "description": "Any Illicit Drug Use Disorder"
+        },
+        {
+            "entity": "IPYUD5ALC",
+            "description": "Past Year Illicit Drug Use with Alcohol Use Combination"
+        },
+        {
+            "entity": "ILL DRG USE DIS",
+            "description": "Illicit Drug Use Disorder"
+        },
+        {
+            "entity": "SUB USE DIS",
+            "description": "Substance Use Disorder"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMDE",
+            "source_entity": "RC-YOUTH",
+            "target_entity": "MDE",
+            "description": "Indicates the presence of a Major Depressive Episode among youth respondents."
+        },
+        {
+            "relationship": "hasMDEImpairment",
+            "source_entity": "MDE",
+            "target_entity": "MDEImpairment",
+            "description": "Indicates that the Major Depressive Episode is accompanied by severe impairment."
+        },
+        {
+            "relationship": "hasALC",
+            "source_entity": "MDEImpairment",
+            "target_entity": "ALC",
+            "description": "Indicates that the Major Depressive Episode with severe impairment includes alcohol use."
+        },
+        {
+            "relationship": "hasIPYUD5ALC",
+            "source_entity": "MDEImpairment",
+            "target_entity": "IPYUD5ALC",
+            "description": "Indicates that the Major Depressive Episode with severe impairment includes past year illicit drug use with alcohol use combination."
+        },
+        {
+            "relationship": "hasUDSILALAny",
+            "source_entity": "MDEImpairment",
+            "target_entity": "UDSILALAny",
+            "description": "Indicates that the Major Depressive Episode with severe impairment includes any illicit drug use disorder."
+        },
+        {
+            "relationship": "hasILLDRGUSEDIS",
+            "source_entity": "MDEImpairment",
+            "target_entity": "ILL DRG USE DIS",
+            "description": "Indicates that the Major Depressive Episode with severe impairment includes illicit drug use disorder."
+        },
+        {
+            "relationship": "hasSUBUSEDIS",
+            "source_entity": "MDEImpairment",
+            "target_entity": "SUB USE DIS",
+            "description": "Indicates that the Major Depressive Episode with severe impairment includes substance use disorder."
+        }
+    ],
+    "tables": [
+        {
+            "subject": "MDEImpairment",
+            "predicate": "INCLUDES",
+            "object": "IPYUD5ALC",
+            "description": "Major Depressive Episode with Severe Impairment includes Past Year Illicit Drug Use with Alcohol Use Combination."
+        },
+        {
+            "subject": "MDEImpairment",
+            "predicate": "INCLUDES",
+            "object": "UDSILALAny",
+            "description": "Major Depressive Episode with Severe Impairment includes Any Illicit Drug Use Disorder."
+        },
+        {
+            "subject": "MDEImpairment",
+            "predicate": "INCLUDES",
+            "object": "ILL DRG USE DIS",
+            "description": "Major Depressive Episode with Severe Impairment includes Illicit Drug Use Disorder."
+        },
+        {
+            "subject": "MDEImpairment",
+            "predicate": "INCLUDES",
+            "object": "SUB USE DIS",
+            "description": "Major Depressive Episode with Severe Impairment includes Substance Use Disorder."
+        }
+    ]
+}

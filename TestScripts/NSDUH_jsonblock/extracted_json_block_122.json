@@ -1,0 +1,102 @@
+[
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "I drank in a car or other vehicle"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "I drank at my home"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "I drank at someone else's home"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "I drank at a park, on a beach, or in a parking lot"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "I drank in a restaurant, bar or club"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "I drank at a concert or sports game"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "I drank at school"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "I drank at some other place"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "at respondent's place of work/business"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "at a cabin, cottage, vacation home/vacation condo"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "Hotel/motel/resort/BB; restaurant/club not spec"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "at a house/apt/garage; no other information"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "at a swimming pool"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "river/lake/waterfront/harbor; park/beach unspc"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "camping/hunting/fishing; no other information"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "street/road/alley/neighborhood"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "outside; park, beach, parking lot, water unspc"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "place of entertainment; club/sports/concert unspc"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "at a party/wedding/celebration/event; not othr info"
+    },
+    {
+        "subject": "SurveyQuestion",
+        "predicate": "hasOption",
+        "object": "city/State/County/vacation, location unspecified"
+    }
+]

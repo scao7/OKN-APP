@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "HallucinogenUse",
+            "description": "The use of hallucinogenic substances."
+        },
+        {
+            "entity": "HallucinogenType",
+            "description": "Specific types of hallucinogenic substances."
+        },
+        {
+            "entity": "FirstHallucinogenUseAge",
+            "description": "The age when an individual first used hallucinogens."
+        },
+        {
+            "entity": "FirstHallucinogenUseYear",
+            "description": "The year when an individual first used hallucinogens."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "includesType",
+            "source_entity": "HallucinogenUse",
+            "target_entity": "HallucinogenType",
+            "description": "Specifies the type of hallucinogen used."
+        },
+        {
+            "relationship": "recordedAge",
+            "source_entity": "HallucinogenUse",
+            "target_entity": "FirstHallucinogenUseAge",
+            "description": "Records the age at which an individual first used hallucinogens."
+        },
+        {
+            "relationship": "recordedYear",
+            "source_entity": "HallucinogenUse",
+            "target_entity": "FirstHallucinogenUseYear",
+            "description": "Records the year in which an individual first used hallucinogens."
+        }
+    ]
+}

@@ -1,0 +1,457 @@
+{
+    "entities": [
+        {
+            "entity": "SedativeDrug",
+            "description": "A type of medication used to induce calmness or sleep."
+        },
+        {
+            "entity": "DrugCode",
+            "description": "A unique identifier assigned to a specific drug."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of a specific drug."
+        },
+        {
+            "entity": "TimesMentioned",
+            "description": "The number of times a specific drug is mentioned in the context of sedative use."
+        },
+        {
+            "entity": "PercentageOfDrugSpecified",
+            "description": "The percentage of all specified sedative drugs that a specific drug represents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "SedativeDrug",
+            "target_entity": "DrugCode",
+            "description": "Relates a sedative drug to its unique identifier."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "SedativeDrug",
+            "target_entity": "DrugName",
+            "description": "Relates a sedative drug to its name."
+        },
+        {
+            "relationship": "hasTimesMentioned",
+            "source_entity": "SedativeDrug",
+            "target_entity": "TimesMentioned",
+            "description": "Indicates the number of times a sedative drug is mentioned."
+        },
+        {
+            "relationship": "hasPercentageOfDrugSpecified",
+            "source_entity": "SedativeDrug",
+            "target_entity": "PercentageOfDrugSpecified",
+            "description": "Indicates the percentage of all specified sedative drugs that a specific drug represents."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "120",
+            "predicate": "drugName",
+            "object": "Downers; OTHER Sedative, NOT OTHERWISE SPECIFIED"
+        },
+        {
+            "subject": "120",
+            "predicate": "timesMentioned",
+            "object": "5"
+        },
+        {
+            "subject": "120",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "8.20"
+        },
+        {
+            "subject": "121",
+            "predicate": "drugName",
+            "object": "USED SEDATIVE, DON'T KNOW NAME"
+        },
+        {
+            "subject": "121",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "121",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "123",
+            "predicate": "drugName",
+            "object": "Unisom <OTC>"
+        },
+        {
+            "subject": "123",
+            "predicate": "timesMentioned",
+            "object": "2"
+        },
+        {
+            "subject": "123",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "3.28"
+        },
+        {
+            "subject": "127",
+            "predicate": "drugName",
+            "object": "Nytol <OTC>"
+        },
+        {
+            "subject": "127",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "127",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "171",
+            "predicate": "drugName",
+            "object": "NyQuil <OTC>"
+        },
+        {
+            "subject": "171",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "171",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "201",
+            "predicate": "drugName",
+            "object": "Valium"
+        },
+        {
+            "subject": "201",
+            "predicate": "timesMentioned",
+            "object": "2"
+        },
+        {
+            "subject": "201",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "3.28"
+        },
+        {
+            "subject": "207",
+            "predicate": "drugName",
+            "object": "Ativan"
+        },
+        {
+            "subject": "207",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "207",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "209",
+            "predicate": "drugName",
+            "object": "Xanax"
+        },
+        {
+            "subject": "209",
+            "predicate": "timesMentioned",
+            "object": "2"
+        },
+        {
+            "subject": "209",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "3.28"
+        },
+        {
+            "subject": "215",
+            "predicate": "drugName",
+            "object": "Vistaril"
+        },
+        {
+            "subject": "215",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "215",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "415",
+            "predicate": "drugName",
+            "object": "Codeine pills"
+        },
+        {
+            "subject": "415",
+            "predicate": "timesMentioned",
+            "object": "2"
+        },
+        {
+            "subject": "415",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "3.28"
+        },
+        {
+            "subject": "420",
+            "predicate": "drugName",
+            "object": "OTHER Pain Reliever, NOT OTHERWISE SPECIFIED"
+        },
+        {
+            "subject": "420",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "420",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "423",
+            "predicate": "drugName",
+            "object": "Percocet"
+        },
+        {
+            "subject": "423",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "423",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "425",
+            "predicate": "drugName",
+            "object": "Advil <OTC>"
+        },
+        {
+            "subject": "425",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "425",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "435",
+            "predicate": "drugName",
+            "object": "Tylenol, Tylenol Extra-Strength <OTC>"
+        },
+        {
+            "subject": "435",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "435",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "601",
+            "predicate": "drugName",
+            "object": "LSD ('acid')"
+        },
+        {
+            "subject": "601",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "601",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "883",
+            "predicate": "drugName",
+            "object": "Dextromethorphan hydrobromide <OTC>"
+        },
+        {
+            "subject": "883",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "883",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "896",
+            "predicate": "drugName",
+            "object": "Catapres, Clonidine"
+        },
+        {
+            "subject": "896",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "896",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "1001",
+            "predicate": "drugName",
+            "object": "Benadryl, Diphenhydramine <OTC>"
+        },
+        {
+            "subject": "1001",
+            "predicate": "timesMentioned",
+            "object": "10"
+        },
+        {
+            "subject": "1001",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "16.39"
+        },
+        {
+            "subject": "2001",
+            "predicate": "drugName",
+            "object": "Soma"
+        },
+        {
+            "subject": "2001",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "2001",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "2503",
+            "predicate": "drugName",
+            "object": "Lorazepam"
+        },
+        {
+            "subject": "2503",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "2503",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "2512",
+            "predicate": "drugName",
+            "object": "Hydroxyzine"
+        },
+        {
+            "subject": "2512",
+            "predicate": "timesMentioned",
+            "object": "3"
+        },
+        {
+            "subject": "2512",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "4.92"
+        },
+        {
+            "subject": "4501",
+            "predicate": "drugName",
+            "object": "Lortab"
+        },
+        {
+            "subject": "4501",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "4501",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "8192",
+            "predicate": "drugName",
+            "object": "Delsym, Dextromethorphan polistirex <OTC>"
+        },
+        {
+            "subject": "8192",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8192",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "8505",
+            "predicate": "drugName",
+            "object": "Quetiapine, Seroquel"
+        },
+        {
+            "subject": "8505",
+            "predicate": "timesMentioned",
+            "object": "2"
+        },
+        {
+            "subject": "8505",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "3.28"
+        },
+        {
+            "subject": "8510",
+            "predicate": "drugName",
+            "object": "Desyrel, Trazodone hydrochloride"
+        },
+        {
+            "subject": "8510",
+            "predicate": "timesMentioned",
+            "object": "15"
+        },
+        {
+            "subject": "8510",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "24.59"
+        },
+        {
+            "subject": "8535",
+            "predicate": "drugName",
+            "object": "Risperdal, Risperidol, Risperidone"
+        },
+        {
+            "subject": "8535",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8535",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        },
+        {
+            "subject": "8549",
+            "predicate": "drugName",
+            "object": "Escitalopram, Lexapro"
+        },
+        {
+            "subject": "8549",
+            "predicate": "timesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8549",
+            "predicate": "percentageOfDrugSpecified",
+            "object": "1.64"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "subject": "Respondent",
+        "predicate": "hadDrugOrAlcoholProblem",
+        "object": "Yes"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "hadDrugOrAlcoholProblem",
+        "object": "No"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "recoveredFromDrugOrAlcoholProblem",
+        "object": "Yes"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "recoveredFromDrugOrAlcoholProblem",
+        "object": "No"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "hadMentalHealthProblem",
+        "object": "Yes"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "hadMentalHealthProblem",
+        "object": "No"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "recoveredFromMentalHealthProblem",
+        "object": "Yes"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "recoveredFromMentalHealthProblem",
+        "object": "No"
+    }
+]

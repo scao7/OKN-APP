@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "CigarSmokingFrequency",
+            "description": "Frequency of cigar or cigarillo smoking in the past 30 days."
+        },
+        {
+            "entity": "PipeTobaccoUsage",
+            "description": "History of ever using pipe tobacco."
+        },
+        {
+            "entity": "PipeTobaccoSmokingPast30Days",
+            "description": "Pipe tobacco smoking in the past 30 days."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCigarSmokingFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "CigarSmokingFrequency",
+            "description": "Indicates the frequency of cigar or cigarillo smoking by the respondent in the past 30 days."
+        },
+        {
+            "relationship": "hasPipeTobaccoUsage",
+            "source_entity": "Respondent",
+            "target_entity": "PipeTobaccoUsage",
+            "description": "Indicates whether the respondent has ever used pipe tobacco."
+        },
+        {
+            "relationship": "hasPipeTobaccoSmokingPast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "PipeTobaccoSmokingPast30Days",
+            "description": "Indicates whether the respondent has smoked pipe tobacco in the past 30 days."
+        }
+    ]
+}

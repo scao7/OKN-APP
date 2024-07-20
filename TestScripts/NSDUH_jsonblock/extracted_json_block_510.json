@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "SuicidePlan",
+            "description": "The plan made by youth to kill oneself due to COVID-19 in the past year."
+        },
+        {
+            "entity": "Youth",
+            "description": "Individuals aged 12 or older who are surveyed in the NSDUH study."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "The specific timeframe over which the data was collected, in this case, the past year."
+        },
+        {
+            "entity": "COVID-19",
+            "description": "The global pandemic caused by the coronavirus, influencing mental health and behavior."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the specific timeframe over which the data was collected."
+        },
+        {
+            "relationship": "hasSuicidePlan",
+            "source_entity": "Youth",
+            "target_entity": "SuicidePlan",
+            "description": "Indicates whether the youth made plans to commit suicide due to COVID-19."
+        },
+        {
+            "relationship": "isInfluencedBy",
+            "source_entity": "SuicidePlan",
+            "target_entity": "COVID-19",
+            "description": "Shows that the suicide plan was influenced by the COVID-19 pandemic."
+        }
+    ]
+}

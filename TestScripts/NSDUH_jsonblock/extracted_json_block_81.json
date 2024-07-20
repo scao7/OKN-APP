@@ -1,0 +1,108 @@
+{
+    "entities": [
+        {
+            "entity": "ImputedIncome",
+            "description": "The income data that has been adjusted for non-responses or inaccuracies."
+        },
+        {
+            "entity": "FamilyReceiveSSorRR",
+            "description": "Family receiving Social Security or Railroad Retirement payments."
+        },
+        {
+            "entity": "FamilyReceiveSSI",
+            "description": "Family receiving Supplemental Security Income."
+        },
+        {
+            "entity": "FamilyReceiveFoodStamps",
+            "description": "Family receiving food stamps."
+        },
+        {
+            "entity": "FamilyReceivePublicAssist",
+            "description": "Family receiving public assistance."
+        },
+        {
+            "entity": "FamilyReceiveWelfareJobChildcare",
+            "description": "Family receiving welfare, job placements, or childcare assistance."
+        },
+        {
+            "entity": "MonthsOnWelfare",
+            "description": "Number of months the family has spent on welfare."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasImputedIncome",
+            "source_entity": "Survey",
+            "target_entity": "ImputedIncome",
+            "description": "Indicates that the survey includes imputed income data."
+        },
+        {
+            "relationship": "hasFamilyReceiveSSorRR",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyReceiveSSorRR",
+            "description": "Indicates that the respondent's family receives Social Security or Railroad Retirement payments."
+        },
+        {
+            "relationship": "hasFamilyReceiveSSI",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyReceiveSSI",
+            "description": "Indicates that the respondent's family receives Supplemental Security Income."
+        },
+        {
+            "relationship": "hasFamilyReceiveFoodStamps",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyReceiveFoodStamps",
+            "description": "Indicates that the respondent's family receives food stamps."
+        },
+        {
+            "relationship": "hasFamilyReceivePublicAssist",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyReceivePublicAssist",
+            "description": "Indicates that the respondent's family receives public assistance."
+        },
+        {
+            "relationship": "hasFamilyReceiveWelfareJobChildcare",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyReceiveWelfareJobChildcare",
+            "description": "Indicates that the respondent's family receives welfare, job placements, or childcare assistance."
+        },
+        {
+            "relationship": "hasMonthsOnWelfare",
+            "source_entity": "Respondent",
+            "target_entity": "MonthsOnWelfare",
+            "description": "Indicates the number of months the respondent's family has spent on welfare."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "FamilyReceiveSSorRR",
+            "predicate": "isImputed",
+            "object": "Yes"
+        },
+        {
+            "subject": "FamilyReceiveSSI",
+            "predicate": "isImputed",
+            "object": "Yes"
+        },
+        {
+            "subject": "FamilyReceiveFoodStamps",
+            "predicate": "isImputed",
+            "object": "Yes"
+        },
+        {
+            "subject": "FamilyReceivePublicAssist",
+            "predicate": "isImputed",
+            "object": "Yes"
+        },
+        {
+            "subject": "FamilyReceiveWelfareJobChildcare",
+            "predicate": "isImputed",
+            "object": "Yes"
+        },
+        {
+            "subject": "MonthsOnWelfare",
+            "predicate": "range",
+            "object": "1-12 Months"
+        }
+    ]
+}

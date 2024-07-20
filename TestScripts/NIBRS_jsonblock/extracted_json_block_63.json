@@ -1,0 +1,100 @@
+{
+    "entities": [
+        {
+            "entity": "Survey",
+            "description": "A system for gathering data from respondents."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "The specific time frame relevant to the survey data."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Information that is not available or applicable in the dataset."
+        },
+        {
+            "entity": "ExceptionallyCleared",
+            "description": "Cases where exceptional conditions led to resolution."
+        },
+        {
+            "entity": "DeathOfOffender",
+            "description": "Instances where the case was cleared due to the death of an offender."
+        },
+        {
+            "entity": "ProsecutionDeclined",
+            "description": "Instances where prosecution was declined."
+        },
+        {
+            "entity": "OtherJurisdictionCustody",
+            "description": "Cases cleared due to offender custody in other jurisdictions."
+        },
+        {
+            "entity": "VictimRefusal",
+            "description": "Instances where the victim refused to cooperate, leading to case clearance."
+        },
+        {
+            "entity": "JuvenileNoCustody",
+            "description": "Cases involving juveniles where no custody was applied."
+        },
+        {
+            "entity": "ExceptionalClearanceDate",
+            "description": "The date on which an exceptional clearance was recorded."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to its relevant time frame."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates that certain data points are missing or not applicable."
+        },
+        {
+            "relationship": "hasExceptionallyCleared",
+            "source_entity": "Survey",
+            "target_entity": "ExceptionallyCleared",
+            "description": "Indicates cases cleared under exceptional circumstances."
+        },
+        {
+            "relationship": "hasDeathOfOffender",
+            "source_entity": "ExceptionallyCleared",
+            "target_entity": "DeathOfOffender",
+            "description": "Details the cases where clearance was due to the death of an offender."
+        },
+        {
+            "relationship": "hasProsecutionDeclined",
+            "source_entity": "ExceptionallyCleared",
+            "target_entity": "ProsecutionDeclined",
+            "description": "Indicates cases cleared because prosecution was declined."
+        },
+        {
+            "relationship": "hasOtherJurisdictionCustody",
+            "source_entity": "ExceptionallyCleared",
+            "target_entity": "OtherJurisdictionCustody",
+            "description": "Relates cases cleared due to offender custody in other jurisdictions."
+        },
+        {
+            "relationship": "hasVictimRefusal",
+            "source_entity": "ExceptionallyCleared",
+            "target_entity": "VictimRefusal",
+            "description": "Describes cases cleared because the victim refused to cooperate."
+        },
+        {
+            "relationship": "hasJuvenileNoCustody",
+            "source_entity": "ExceptionallyCleared",
+            "target_entity": "JuvenileNoCustody",
+            "description": "Marks cases involving juveniles where no custody occurred."
+        },
+        {
+            "relationship": "hasExceptionalClearanceDate",
+            "source_entity": "ExceptionallyCleared",
+            "target_entity": "ExceptionalClearanceDate",
+            "description": "Connects exceptionally cleared cases to their clearance dates."
+        }
+    ]
+}

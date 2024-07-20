@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "ParentalFeelingOnSmoking",
+            "description": "How parents would feel about the respondent smoking one or more packs of cigarettes per day."
+        },
+        {
+            "entity": "ParentalFeelingOnTryingMarijuana",
+            "description": "How parents would feel about the respondent trying marijuana or any cannabis product once or twice."
+        },
+        {
+            "entity": "ParentalFeelingOnUsingMarijuanaMonthly",
+            "description": "How parents would feel about the respondent using marijuana or any cannabis product once a month or more."
+        },
+        {
+            "entity": "ParentalFeelingOnDrinkingAlcohol",
+            "description": "How parents would feel about the respondent having one or two drinks of an alcoholic beverage nearly every day."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasParentalFeelingOnSmoking",
+            "source_entity": "Respondent",
+            "target_entity": "ParentalFeelingOnSmoking",
+            "description": "Indicates the respondent's perception of how their parents feel about them smoking cigarettes."
+        },
+        {
+            "relationship": "hasParentalFeelingOnTryingMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "ParentalFeelingOnTryingMarijuana",
+            "description": "Indicates the respondent's perception of how their parents feel about them trying marijuana or cannabis."
+        },
+        {
+            "relationship": "hasParentalFeelingOnUsingMarijuanaMonthly",
+            "source_entity": "Respondent",
+            "target_entity": "ParentalFeelingOnUsingMarijuanaMonthly",
+            "description": "Indicates the respondent's perception of how their parents feel about them using marijuana or cannabis monthly."
+        },
+        {
+            "relationship": "hasParentalFeelingOnDrinkingAlcohol",
+            "source_entity": "Respondent",
+            "target_entity": "ParentalFeelingOnDrinkingAlcohol",
+            "description": "Indicates the respondent's perception of how their parents feel about them drinking alcohol nearly every day."
+        }
+    ]
+}

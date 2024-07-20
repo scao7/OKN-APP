@@ -1,0 +1,206 @@
+{
+    "entities": [
+        {
+            "entity": "PurseSnatching",
+            "description": "Incidents of theft where a purse is snatched."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "Incidents of theft from a retail establishment."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "Incidents of theft occurring within a building."
+        },
+        {
+            "entity": "TheftFromCoinOperatedMachineOrDevice",
+            "description": "Incidents of theft from machines or devices operated by coins."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "Incidents of theft from motor vehicles."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "Incidents where motor vehicles are stolen."
+        },
+        {
+            "entity": "CounterfeitingForging",
+            "description": "Incidents of producing fraudulent copies or documents."
+        },
+        {
+            "entity": "FalsePretenses",
+            "description": "Incidents of obtaining something through deceptive means."
+        },
+        {
+            "entity": "CreditCardFraud",
+            "description": "Incidents of fraud involving credit cards or ATMs."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Incidents where an individual pretends to be someone else."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "Incidents of fraud related to welfare benefits."
+        },
+        {
+            "entity": "WireFraud",
+            "description": "Incidents of fraud conducted via electronic communications."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "Incidents of personal identity being stolen and fraudulently used."
+        },
+        {
+            "entity": "ComputerInvasion",
+            "description": "Incidents involving unauthorized access to computer systems."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Incidents where someone steals money they were trusted to manage."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Incidents involving possession or distribution of stolen property."
+        },
+        {
+            "entity": "Vandalism",
+            "description": "Incidents involving deliberate damage or destruction of property."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Incidents involving illegal drugs or narcotic substances."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Incidents involving illegal equipment related to drug use."
+        },
+        {
+            "entity": "Incest",
+            "description": "Incidents involving sexual relations between close relatives."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Incidents of sexual activity with individuals below the age of consent."
+        },
+        {
+            "entity": "ObsceneMaterial",
+            "description": "Incidents involving pornography or other obscene materials."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "Incidents involving illegal betting or wagering."
+        },
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Incidents involving violations related to gambling equipment."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Incidents involving tampering with sports events."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Incidents involving engagement in or promotion of prostitution."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Incidents involving offering, giving, receiving, or soliciting something of value to influence the actions of someone."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Incidents involving violations of laws regulating weapons."
+        },
+        {
+            "entity": "HumanTrafficking",
+            "description": "Incidents involving the illegal trade of humans for purposes such as sexual exploitation or forced labor."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "involvesTheft",
+            "source_entity": "CriminalActivity",
+            "target_entity": "TheftFromBuilding",
+            "description": "Relates criminal activities to incidents of theft occurring within buildings."
+        },
+        {
+            "relationship": "involvesTheft",
+            "source_entity": "CriminalActivity",
+            "target_entity": "TheftFromMotorVehicle",
+            "description": "Relates criminal activities to incidents of theft occurring from motor vehicles."
+        },
+        {
+            "relationship": "involvesTheft",
+            "source_entity": "CriminalActivity",
+            "target_entity": "MotorVehicleTheft",
+            "description": "Relates criminal activities to incidents of motor vehicle theft."
+        },
+        {
+            "relationship": "involvesFraud",
+            "source_entity": "CriminalActivity",
+            "target_entity": "CounterfeitingForging",
+            "description": "Relates criminal activities to incidents of producing fraudulent copies or documents."
+        },
+        {
+            "relationship": "involvesFraud",
+            "source_entity": "CriminalActivity",
+            "target_entity": "CreditCardFraud",
+            "description": "Relates criminal activities to incidents of credit card or ATM fraud."
+        },
+        {
+            "relationship": "involvesFraud",
+            "source_entity": "CriminalActivity",
+            "target_entity": "WelfareFraud",
+            "description": "Relates criminal activities to incidents of welfare fraud."
+        },
+        {
+            "relationship": "involvesIdentityTheft",
+            "source_entity": "CriminalActivity",
+            "target_entity": "IdentityTheft",
+            "description": "Relates criminal activities to incidents of identity theft."
+        },
+        {
+            "relationship": "involvesCyberCrime",
+            "source_entity": "CriminalActivity",
+            "target_entity": "ComputerInvasion",
+            "description": "Relates criminal activities to incidents of unauthorized access to computer systems."
+        },
+        {
+            "relationship": "involvesPropertyDamage",
+            "source_entity": "CriminalActivity",
+            "target_entity": "Vandalism",
+            "description": "Relates criminal activities to incidents of deliberate damage or destruction of property."
+        },
+        {
+            "relationship": "involvesDrugViolations",
+            "source_entity": "CriminalActivity",
+            "target_entity": "DrugNarcoticViolations",
+            "description": "Relates criminal activities to incidents involving illegal drugs or narcotic substances."
+        },
+        {
+            "relationship": "involvesDrugViolations",
+            "source_entity": "CriminalActivity",
+            "target_entity": "DrugEquipmentViolations",
+            "description": "Relates criminal activities to incidents involving illegal equipment related to drug use."
+        },
+        {
+            "relationship": "involvesSexualOffense",
+            "source_entity": "CriminalActivity",
+            "target_entity": "Incest",
+            "description": "Relates criminal activities to incidents involving sexual relations between close relatives."
+        },
+        {
+            "relationship": "involvesSexualOffense",
+            "source_entity": "CriminalActivity",
+            "target_entity": "StatutoryRape",
+            "description": "Relates criminal activities to incidents of sexual activity with individuals below the age of consent."
+        },
+        {
+            "relationship": "involvesSexualOffense",
+            "source_entity": "CriminalActivity",
+            "target_entity": "HumanTrafficking",
+            "description": "Relates criminal activities to incidents involving the illegal trade of humans for purposes such as sexual exploitation or forced labor."
+        }
+    ]
+}

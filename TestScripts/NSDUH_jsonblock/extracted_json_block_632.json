@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "TelehealthDueToCovid19",
+            "description": "Substance use treatment appointments moved to telehealth due to COVID-19."
+        },
+        {
+            "entity": "DelayCancellationInSubUseTrtApptsDueToCovid19",
+            "description": "Delays or cancellations in substance use treatment appointments due to COVID-19."
+        },
+        {
+            "entity": "DelayGettingSubUseTrtPrescriptionsDueToCovid19",
+            "description": "Delays in getting substance use treatment prescriptions due to COVID-19."
+        },
+        {
+            "entity": "LackOfSubUseTrtImpactToHealthDueToCovid19",
+            "description": "Lack of substance use treatment caused an impact on health due to COVID-19."
+        },
+        {
+            "entity": "MedCareAppointmentsMovedToTelehealthDueToCovid19",
+            "description": "Medical care appointments moved to telehealth due to COVID-19."
+        },
+        {
+            "entity": "DelayCancellationInMedCareApptsDueToCovid19",
+            "description": "Delays or cancellations in medical care appointments due to COVID-19."
+        },
+        {
+            "entity": "DelayGettingMedCarePrescriptionsDueToCovid19",
+            "description": "Delays in getting medical care prescriptions due to COVID-19."
+        },
+        {
+            "entity": "LackOfMedCareImpactToHealthDueToCovid19",
+            "description": "Lack of medical care caused an impact on health due to COVID-19."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTelehealthDueToCovid19",
+            "source_entity": "SubUseTrtAppts",
+            "target_entity": "TelehealthDueToCovid19",
+            "description": "Indicates that substance use treatment appointments were moved to telehealth due to COVID-19."
+        },
+        {
+            "relationship": "hasDelayCancellationInSubUseTrtApptsDueToCovid19",
+            "source_entity": "SubUseTrt",
+            "target_entity": "DelayCancellationInSubUseTrtApptsDueToCovid19",
+            "description": "Indicates delays or cancellations in substance use treatment appointments due to COVID-19."
+        },
+        {
+            "relationship": "hasDelayGettingSubUseTrtPrescriptionsDueToCovid19",
+            "source_entity": "SubUseTrt",
+            "target_entity": "DelayGettingSubUseTrtPrescriptionsDueToCovid19",
+            "description": "Indicates delays in getting substance use treatment prescriptions due to COVID-19."
+        },
+        {
+            "relationship": "hasLackOfSubUseTrtImpactToHealthDueToCovid19",
+            "source_entity": "SubUseTrt",
+            "target_entity": "LackOfSubUseTrtImpactToHealthDueToCovid19",
+            "description": "Indicates that lack of substance use treatment caused an impact on health due to COVID-19."
+        },
+        {
+            "relationship": "hasMedCareAppointmentsMovedToTelehealthDueToCovid19",
+            "source_entity": "MedCareAppts",
+            "target_entity": "MedCareAppointmentsMovedToTelehealthDueToCovid19",
+            "description": "Indicates that medical care appointments were moved to telehealth due to COVID-19."
+        },
+        {
+            "relationship": "hasDelayCancellationInMedCareApptsDueToCovid19",
+            "source_entity": "MedCare",
+            "target_entity": "DelayCancellationInMedCareApptsDueToCovid19",
+            "description": "Indicates delays or cancellations in medical care appointments due to COVID-19."
+        },
+        {
+            "relationship": "hasDelayGettingMedCarePrescriptionsDueToCovid19",
+            "source_entity": "MedCare",
+            "target_entity": "DelayGettingMedCarePrescriptionsDueToCovid19",
+            "description": "Indicates delays in getting medical care prescriptions due to COVID-19."
+        },
+        {
+            "relationship": "hasLackOfMedCareImpactToHealthDueToCovid19",
+            "source_entity": "MedCare",
+            "target_entity": "LackOfMedCareImpactToHealthDueToCovid19",
+            "description": "Indicates that lack of medical care caused an impact on health due to COVID-19."
+        }
+    ]
+}

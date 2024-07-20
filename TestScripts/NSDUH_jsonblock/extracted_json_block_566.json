@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "AdolescentDepression",
+            "description": "A mental health condition often characterized by persistent feelings of sadness or loss of interest in activities."
+        },
+        {
+            "entity": "WeightLossWithoutTrying",
+            "description": "A notable decrease in weight without the intention to lose weight, often experienced when problems are at their worst."
+        },
+        {
+            "entity": "SleepProblems",
+            "description": "Issues related to falling asleep, staying asleep, or waking up early, especially when problems are at their worst."
+        },
+        {
+            "entity": "ExcessiveSleep",
+            "description": "Sleeping a lot more than usual, observed during the most recent or worst period of problems."
+        },
+        {
+            "entity": "SurveyAnswerChoices",
+            "description": "Options provided to respondents for answering survey questions, including choices like Yes, No, Don't Know, Refused, etc."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "WeightLossWithoutTrying",
+            "description": "Indicates weight loss without trying as a symptom of adolescent depression."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "SleepProblems",
+            "description": "Indicates sleep problems as a symptom of adolescent depression."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "ExcessiveSleep",
+            "description": "Indicates excessive sleep as a symptom of adolescent depression."
+        },
+        {
+            "relationship": "offersChoicesFor",
+            "source_entity": "Survey",
+            "target_entity": "SurveyAnswerChoices",
+            "description": "Describes the answer choices provided to respondents in the survey."
+        }
+    ]
+}

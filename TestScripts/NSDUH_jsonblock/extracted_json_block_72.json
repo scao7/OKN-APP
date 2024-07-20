@@ -1,0 +1,57 @@
+{
+    "entities": [
+        {
+            "entity": "HealthInsuranceCoverage",
+            "description": "The type and extent of health insurance coverage respondents and their family members possess."
+        },
+        {
+            "entity": "MedicareCoverage",
+            "description": "Indicates if the Medicare program covers the respondent."
+        },
+        {
+            "entity": "MedicaidChipCoverage",
+            "description": "Indicates if the Medicaid/CHIP program covers the respondent."
+        },
+        {
+            "entity": "MilitaryHealthCareCoverage",
+            "description": "Indicates if the TRICARE, CHAMPUS, CHAMPVA, VA, or other military health care programs cover the respondent."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMedicareCoverage",
+            "source_entity": "Respondent",
+            "target_entity": "MedicareCoverage",
+            "description": "Indicates if the respondent is covered by the Medicare program."
+        },
+        {
+            "relationship": "hasMedicaidChipCoverage",
+            "source_entity": "Respondent",
+            "target_entity": "MedicaidChipCoverage",
+            "description": "Indicates if the respondent is covered by the Medicaid/CHIP program."
+        },
+        {
+            "relationship": "hasMilitaryHealthCareCoverage",
+            "source_entity": "Respondent",
+            "target_entity": "MilitaryHealthCareCoverage",
+            "description": "Indicates if the respondent is covered by any military health care programs such as TRICARE, CHAMPUS, CHAMPVA, or the VA."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "MedicareCoverage",
+            "predicate": "involves",
+            "object": "respondent"
+        },
+        {
+            "subject": "MedicaidChipCoverage",
+            "predicate": "involves",
+            "object": "respondent"
+        },
+        {
+            "subject": "MilitaryHealthCareCoverage",
+            "predicate": "involves",
+            "object": "respondent"
+        }
+    ]
+}

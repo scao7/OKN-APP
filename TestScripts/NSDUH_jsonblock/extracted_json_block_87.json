@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "ArrestedForRobbery",
+            "description": "Indicates if the respondent was arrested and booked for robbery in the past 12 months."
+        },
+        {
+            "entity": "ArrestedForArson",
+            "description": "Indicates if the respondent was arrested and booked for arson in the past 12 months."
+        },
+        {
+            "entity": "ArrestedForDUI",
+            "description": "Indicates if the respondent was arrested and booked for driving under the influence of alcohol or drugs in the past 12 months."
+        },
+        {
+            "entity": "ArrestedForDrunkenness",
+            "description": "Indicates if the respondent was arrested and booked for drunkenness or other liquor law violations in the past 12 months."
+        },
+        {
+            "entity": "ArrestedForPossessionOfTobacco",
+            "description": "Indicates if the respondent was arrested and booked for possession of tobacco in the past 12 months."
+        },
+        {
+            "entity": "YesResponse",
+            "description": "The respondent answered 'Yes' to being arrested and booked."
+        },
+        {
+            "entity": "NoResponse",
+            "description": "The respondent answered 'No' to being arrested and booked."
+        },
+        {
+            "entity": "RefusedResponse",
+            "description": "The respondent refused to answer the question."
+        },
+        {
+            "entity": "BlankResponse",
+            "description": "No answer was provided by the respondent."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "Logically assigned legitimate skip by the survey designer."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasArrestRecord",
+            "source_entity": "Respondent",
+            "target_entity": "ArrestedForRobbery",
+            "description": "Indicates if the respondent was arrested and booked for robbery in the past 12 months."
+        },
+        {
+            "relationship": "hasArrestRecord",
+            "source_entity": "Respondent",
+            "target_entity": "ArrestedForArson",
+            "description": "Indicates if the respondent was arrested and booked for arson in the past 12 months."
+        },
+        {
+            "relationship": "hasArrestRecord",
+            "source_entity": "Respondent",
+            "target_entity": "ArrestedForDUI",
+            "description": "Indicates if the respondent was arrested and booked for driving under the influence of alcohol or drugs in the past 12 months."
+        },
+        {
+            "relationship": "hasArrestRecord",
+            "source_entity": "Respondent",
+            "target_entity": "ArrestedForDrunkenness",
+            "description": "Indicates if the respondent was arrested and booked for drunkenness or other liquor law violations in the past 12 months."
+        },
+        {
+            "relationship": "hasArrestRecord",
+            "source_entity": "Respondent",
+            "target_entity": "ArrestedForPossessionOfTobacco",
+            "description": "Indicates if the respondent was arrested and booked for possession of tobacco in the past 12 months."
+        },
+        {
+            "relationship": "gaveResponse",
+            "source_entity": "Respondent",
+            "target_entity": "YesResponse",
+            "description": "The respondent answered 'Yes' to being arrested and booked."
+        },
+        {
+            "relationship": "gaveResponse",
+            "source_entity": "Respondent",
+            "target_entity": "NoResponse",
+            "description": "The respondent answered 'No' to being arrested and booked."
+        },
+        {
+            "relationship": "gaveResponse",
+            "source_entity": "Respondent",
+            "target_entity": "RefusedResponse",
+            "description": "The respondent refused to answer the question."
+        },
+        {
+            "relationship": "gaveResponse",
+            "source_entity": "Respondent",
+            "target_entity": "BlankResponse",
+            "description": "No answer was provided by the respondent."
+        },
+        {
+            "relationship": "wasSkippable",
+            "source_entity": "SurveyQuestion",
+            "target_entity": "LegitimateSkip",
+            "description": "The response was logically assigned as a legitimate skip by the survey designer."
+        }
+    ]
+}

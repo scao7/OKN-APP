@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderNumber",
+            "description": "A unique identifier for an offender."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Frequency count of responses without weighting."
+        },
+        {
+            "entity": "ResponseCategory",
+            "description": "Specific categories of responses such as 'N offenders unknown'."
+        },
+        {
+            "entity": "Statistic",
+            "description": "Statistical measure, such as mean, median, mode, etc."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Information regarding cases with missing data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "OffenderNumber",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the frequency count of responses for a given offender number."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "OffenderNumber",
+            "target_entity": "ResponseCategory",
+            "description": "Relates an offender number to a specific response category."
+        },
+        {
+            "relationship": "measuredBy",
+            "source_entity": "Statistic",
+            "target_entity": "ResponseCategory",
+            "description": "Provides statistical measures for the various response categories."
+        },
+        {
+            "relationship": "containsMissingData",
+            "source_entity": "OffenderNumber",
+            "target_entity": "MissingData",
+            "description": "Indicates that some data for a given offender number is missing."
+        }
+    ]
+}

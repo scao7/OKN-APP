@@ -1,0 +1,126 @@
+{
+    "entities": [
+        {
+            "entity": "SedativeMisuseUnder18",
+            "description": "First misuse of sedatives prior to age 18."
+        },
+        {
+            "entity": "SedativeMisuseUnder21",
+            "description": "First misuse of sedatives prior to age 21."
+        },
+        {
+            "entity": "MainReasonPainRelieverMisuse",
+            "description": "The main reason for misusing pain relievers based on the respondent's last episode."
+        },
+        {
+            "entity": "PhysicalPainRelief",
+            "description": "Reason for misusing pain relievers to relieve physical pain."
+        },
+        {
+            "entity": "RelaxationOrTensionRelief",
+            "description": "Reason for misusing pain relievers to relax or relieve tension."
+        },
+        {
+            "entity": "Experiment",
+            "description": "Reason for misusing pain relievers to experiment or see what it is like."
+        },
+        {
+            "entity": "FeelGoodOrGetHigh",
+            "description": "Reason for misusing pain relievers to feel good or get high."
+        },
+        {
+            "entity": "SleepAid",
+            "description": "Reason for misusing pain relievers to help with sleep."
+        },
+        {
+            "entity": "HelpWithFeelings",
+            "description": "Reason for misusing pain relievers to help with feelings or emotions."
+        },
+        {
+            "entity": "OtherDrugEffect",
+            "description": "Reason for misusing pain relievers to increase/decrease the effects of other drugs."
+        },
+        {
+            "entity": "Hooked",
+            "description": "Reason for misusing pain relievers because the respondent was hooked or had to have the drug."
+        },
+        {
+            "entity": "OtherReason",
+            "description": "Other specified reason for misusing pain relievers."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFirstMisuseAge",
+            "source_entity": "Respondent",
+            "target_entity": "SedativeMisuseUnder18",
+            "description": "Indicates the first misuse of sedatives by the respondent before age 18."
+        },
+        {
+            "relationship": "hasFirstMisuseAge",
+            "source_entity": "Respondent",
+            "target_entity": "SedativeMisuseUnder21",
+            "description": "Indicates the first misuse of sedatives by the respondent before age 21."
+        },
+        {
+            "relationship": "hasMainReason",
+            "source_entity": "PainRelieverMisuse",
+            "target_entity": "MainReasonPainRelieverMisuse",
+            "description": "Describes the main reason for the misuse of pain relievers during the respondent's last episode."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "PhysicalPainRelief",
+            "description": "Includes physical pain relief as a reason for misusing pain relievers."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "RelaxationOrTensionRelief",
+            "description": "Includes relaxation or tension relief as a reason for misusing pain relievers."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "Experiment",
+            "description": "Includes experimenting or seeing what it is like as a reason for misusing pain relievers."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "FeelGoodOrGetHigh",
+            "description": "Includes feeling good or getting high as a reason for misusing pain relievers."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "SleepAid",
+            "description": "Includes aiding sleep as a reason for misusing pain relievers."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "HelpWithFeelings",
+            "description": "Includes helping with feelings or emotions as a reason for misusing pain relievers."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "OtherDrugEffect",
+            "description": "Includes increasing or decreasing the effects of other drugs as a reason for misusing pain relievers."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "Hooked",
+            "description": "Includes being hooked or having to have the drug as a reason for misusing pain relievers."
+        },
+        {
+            "relationship": "hasReason",
+            "source_entity": "MainReasonPainRelieverMisuse",
+            "target_entity": "OtherReason",
+            "description": "Includes other specified reasons for misusing pain relievers."
+        }
+    ]
+}

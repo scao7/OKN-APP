@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "NumWeeksMentalHealthDifficulties",
+            "description": "Number of weeks in the past 12 months the respondent had difficulties due to mental health."
+        },
+        {
+            "entity": "DaysWithDifficultiesPerWeek",
+            "description": "Number of days per week the respondent experienced difficulties due to mental health."
+        },
+        {
+            "entity": "DaysUnableToWork",
+            "description": "Number of days in the past year the respondent was unable to work due to mental health issues."
+        },
+        {
+            "entity": "SuicidalThoughtsPast12Months",
+            "description": "Whether the respondent seriously thought about killing themselves in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasNumWeeksMentalHealthDifficulties",
+            "source_entity": "Respondent",
+            "target_entity": "NumWeeksMentalHealthDifficulties",
+            "description": "Indicates the number of weeks the respondent had mental health difficulties in the past 12 months."
+        },
+        {
+            "relationship": "hasDaysWithDifficultiesPerWeek",
+            "source_entity": "Respondent",
+            "target_entity": "DaysWithDifficultiesPerWeek",
+            "description": "Indicates the number of days per week the respondent had difficulties due to mental health."
+        },
+        {
+            "relationship": "hasDaysUnableToWork",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUnableToWork",
+            "description": "Indicates the number of days the respondent was unable to work due to mental health issues in the past year."
+        },
+        {
+            "relationship": "hasSuicidalThoughtsPast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "SuicidalThoughtsPast12Months",
+            "description": "Indicates whether the respondent seriously thought about killing themselves in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "NumWeeksMentalHealthDifficulties",
+            "predicate": "hasFrequency",
+            "object": "26874"
+        },
+        {
+            "subject": "DaysWithDifficultiesPerWeek",
+            "predicate": "hasFrequency",
+            "object": "159086"
+        },
+        {
+            "subject": "DaysUnableToWork",
+            "predicate": "hasFrequency",
+            "object": "27141"
+        },
+        {
+            "subject": "SuicidalThoughtsPast12Months",
+            "predicate": "hasFrequency",
+            "object": "3363"
+        }
+    ]
+}

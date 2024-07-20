@@ -1,0 +1,43 @@
+{
+    "entities": [
+        {
+            "entity": "HouseholdAge65PlusComposition",
+            "description": "Number of people aged 65 or older in the household."
+        },
+        {
+            "entity": "ImputationIndicator",
+            "description": "Indicator for whether data is from the questionnaire or statistically imputed."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHouseholdAge65PlusComposition",
+            "source_entity": "Household",
+            "target_entity": "HouseholdAge65PlusComposition",
+            "description": "Relates the household to the number of people aged 65 or older."
+        },
+        {
+            "relationship": "hasImputationIndicator",
+            "source_entity": "DataRecord",
+            "target_entity": "ImputationIndicator",
+            "description": "Indicates whether the data is from a questionnaire or statistically imputed."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Household",
+            "predicate": "contains",
+            "object": "No people 65 or older in household"
+        },
+        {
+            "subject": "Household",
+            "predicate": "contains",
+            "object": "One person 65 or older in household"
+        },
+        {
+            "subject": "Household",
+            "predicate": "contains",
+            "object": "Two or more people 65 or older in household"
+        }
+    ]
+}

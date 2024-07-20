@@ -1,0 +1,82 @@
+{
+    "entities": [
+        {
+            "entity": "IMPFDTOUL",
+            "description": "Difficulty going out one month in past 12 months due to imposed revision."
+        },
+        {
+            "entity": "IMPGOUT",
+            "description": "Difficulty going out one month in past 12 months due to imposed indication."
+        },
+        {
+            "entity": "IMPGOUTM",
+            "description": "Emotional problems keep you from leaving house due to imposed revision."
+        },
+        {
+            "entity": "IIMPGOUTM",
+            "description": "Emotional problems keep you from leaving house due to imposed indication."
+        },
+        {
+            "entity": "IMPPEOP",
+            "description": "Difficulty dealing with strangers one month in past 12 months due to imposed revision."
+        },
+        {
+            "entity": "IIMPEOP",
+            "description": "Difficulty dealing with strangers one month in past 12 months due to imposed indication."
+        },
+        {
+            "entity": "IMPPEOPM",
+            "description": "Emotional problems keep you from dealing with strangers due to imposed revision."
+        },
+        {
+            "entity": "IIMPEOPM",
+            "description": "Emotional problems keep you from dealing with strangers due to imposed indication."
+        },
+        {
+            "entity": "DifficultyLevel",
+            "description": "Specifies the level of difficulty experienced."
+        },
+        {
+            "entity": "ResponseFormat",
+            "description": "The format in which the responses are collected."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "measuresDifficulty",
+            "source_entity": "IMPFDTOUL",
+            "target_entity": "DifficultyLevel",
+            "description": "Measures the level of difficulty in going out one month in past 12 months due to imposed revision."
+        },
+        {
+            "relationship": "measuresDifficulty",
+            "source_entity": "IMPPEOP",
+            "target_entity": "DifficultyLevel",
+            "description": "Measures the level of difficulty in dealing with strangers one month in past 12 months due to imposed revision."
+        },
+        {
+            "relationship": "measuresDifficulty",
+            "source_entity": "IMPGOUT",
+            "target_entity": "DifficultyLevel",
+            "description": "Measures the level of difficulty in going out one month in past 12 months due to imposed indication."
+        },
+        {
+            "relationship": "recordsResponse",
+            "source_entity": "IMPFDTOUL",
+            "target_entity": "ResponseFormat",
+            "description": "Records the responses for difficulty in going out one month in past 12 months due to imposed revision."
+        },
+        {
+            "relationship": "recordsResponse",
+            "source_entity": "IMPPEOP",
+            "target_entity": "ResponseFormat",
+            "description": "Records the responses for difficulty in dealing with strangers one month in past 12 months due to imposed revision."
+        },
+        {
+            "relationship": "recordsResponse",
+            "source_entity": "IMPGOUT",
+            "target_entity": "ResponseFormat",
+            "description": "Records the responses for difficulty in going out one month in past 12 months due to imposed indication."
+        }
+    ]
+}

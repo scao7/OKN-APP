@@ -1,0 +1,72 @@
+{
+    "entities": [
+        {
+            "entity": "SedativeUseDisorder",
+            "description": "Severity of sedative use disorder according to DSM-5 criteria."
+        },
+        {
+            "entity": "AlcoholUseDisorder",
+            "description": "Severity of alcohol use disorder according to DSM-5 criteria."
+        },
+        {
+            "entity": "MarijuanaUseDisorder",
+            "description": "Severity of marijuana use disorder according to DSM-5 criteria."
+        },
+        {
+            "entity": "CocaineUseDisorder",
+            "description": "Severity of cocaine use disorder according to DSM-5 criteria."
+        },
+        {
+            "entity": "SeverityLevel",
+            "description": "The degree of severity for a substance use disorder (mild, moderate, severe)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSeverityLevel",
+            "source_entity": "SedativeUseDisorder",
+            "target_entity": "SeverityLevel",
+            "description": "Relates severity levels to sedative use disorder."
+        },
+        {
+            "relationship": "hasSeverityLevel",
+            "source_entity": "AlcoholUseDisorder",
+            "target_entity": "SeverityLevel",
+            "description": "Relates severity levels to alcohol use disorder."
+        },
+        {
+            "relationship": "hasSeverityLevel",
+            "source_entity": "MarijuanaUseDisorder",
+            "target_entity": "SeverityLevel",
+            "description": "Relates severity levels to marijuana use disorder."
+        },
+        {
+            "relationship": "hasSeverityLevel",
+            "source_entity": "CocaineUseDisorder",
+            "target_entity": "SeverityLevel",
+            "description": "Relates severity levels to cocaine use disorder."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "SedativeUseDisorder",
+            "predicate": "hasSeverityLevel",
+            "object": "SeverityLevel"
+        },
+        {
+            "subject": "AlcoholUseDisorder",
+            "predicate": "hasSeverityLevel",
+            "object": "SeverityLevel"
+        },
+        {
+            "subject": "MarijuanaUseDisorder",
+            "predicate": "hasSeverityLevel",
+            "object": "SeverityLevel"
+        },
+        {
+            "subject": "CocaineUseDisorder",
+            "predicate": "hasSeverityLevel",
+            "object": "SeverityLevel"
+        }
+    ]
+}

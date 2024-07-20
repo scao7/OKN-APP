@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "HeroinUseMethod",
+            "description": "The method of using heroin, such as smoking, sniffing, or injecting."
+        },
+        {
+            "entity": "HeroinUseHistory",
+            "description": "The history of heroin use, including whether someone has ever used heroin."
+        },
+        {
+            "entity": "NeedleInjectionPeriodForHeroin",
+            "description": "The period since last using a needle to inject heroin."
+        },
+        {
+            "entity": "MethamphetamineUseHistory",
+            "description": "The history of methamphetamine use, including whether someone has ever used methamphetamine."
+        },
+        {
+            "entity": "NeedleInjectionPeriodForMethamphetamine",
+            "description": "The period since last using a needle to inject methamphetamine."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHeroinUseMethod",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinUseMethod",
+            "description": "Relates the respondent to the method they used for heroin."
+        },
+        {
+            "relationship": "hasHeroinUseHistory",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinUseHistory",
+            "description": "Indicates whether the respondent has a history of using heroin."
+        },
+        {
+            "relationship": "hasNeedleInjectionPeriodForHeroin",
+            "source_entity": "Respondent",
+            "target_entity": "NeedleInjectionPeriodForHeroin",
+            "description": "Indicates the period since the respondent last used a needle to inject heroin."
+        },
+        {
+            "relationship": "hasMethamphetamineUseHistory",
+            "source_entity": "Respondent",
+            "target_entity": "MethamphetamineUseHistory",
+            "description": "Indicates whether the respondent has a history of using methamphetamine."
+        },
+        {
+            "relationship": "hasNeedleInjectionPeriodForMethamphetamine",
+            "source_entity": "Respondent",
+            "target_entity": "NeedleInjectionPeriodForMethamphetamine",
+            "description": "Indicates the period since the respondent last used a needle to inject methamphetamine."
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+[
+    {
+        "subject": "AGE",
+        "predicate": "hasAlcoholUse",
+        "object": [
+            "12-17: 7.0%",
+            "18-25: 50.3%",
+            "26 or Older: 53.4%"
+        ]
+    },
+    {
+        "subject": "AGE",
+        "predicate": "hasBingeAlcoholUse",
+        "object": [
+            "12-17: 3.3%",
+            "18-25: 29.5%",
+            "26 or Older: 22.6%"
+        ]
+    },
+    {
+        "subject": "AGE",
+        "predicate": "hasHeavyAlcoholUse",
+        "object": [
+            "12-17: 0.2%",
+            "18-25: 7.6%",
+            "26 or Older: 6.0%"
+        ]
+    },
+    {
+        "subject": "GENDER",
+        "predicate": "hasAlcoholUse",
+        "object": [
+            "Male: 51.1%",
+            "Female: 46.6%"
+        ]
+    },
+    {
+        "subject": "GENDER",
+        "predicate": "hasBingeAlcoholUse",
+        "object": [
+            "Male: 24.1%",
+            "Female: 19.4%"
+        ]
+    },
+    {
+        "subject": "GENDER",
+        "predicate": "hasHeavyAlcoholUse",
+        "object": [
+            "Male: 7.4%",
+            "Female: 4.1%"
+        ]
+    },
+    {
+        "subject": "HISPANIC ORIGIN AND RACE",
+        "predicate": "hasAlcoholUse",
+        "object": [
+            "Not Hispanic or Latino: 49.9%",
+            "American Indian or Alaska Native: 37.8%",
+            "Asian: 35.3%",
+            "Black or African American: 41.3%",
+            "White: 53.5%",
+            "Two or More Races: 44.2%",
+            "Hispanic or Latino: 43.8%"
+        ]
+    },
+    {
+        "subject": "HISPANIC ORIGIN AND RACE",
+        "predicate": "hasBingeAlcoholUse",
+        "object": [
+            "Not Hispanic or Latino: 21.4%",
+            "American Indian or Alaska Native: 26.9%",
+            "Asian: 9.9%",
+            "Black or African American: 20.6%",
+            "White: 22.7%",
+            "Two or More Races: 21.9%",
+            "Hispanic or Latino: 23.1%"
+        ]
+    },
+    {
+        "subject": "HISPANIC ORIGIN AND RACE",
+        "predicate": "hasHeavyAlcoholUse",
+        "object": [
+            "Not Hispanic or Latino: 5.8%",
+            "American Indian or Alaska Native: 8.5%",
+            "Asian: 1.8%",
+            "Black or African American: 4.1%",
+            "White: 6.7%",
+            "Two or More Races: 4.7%",
+            "Hispanic or Latino: 5.1%"
+        ]
+    }
+]

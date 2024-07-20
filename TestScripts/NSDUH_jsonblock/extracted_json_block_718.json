@@ -1,0 +1,64 @@
+{
+    "entities": [
+        {
+            "entity": "PrescriptionPainRelievers",
+            "description": "Use of prescription pain relievers and related behaviors."
+        },
+        {
+            "entity": "PrescriptionTranquilizers",
+            "description": "Use of prescription tranquilizers and related criteria for disorders."
+        },
+        {
+            "entity": "SubstanceUseDisorder",
+            "description": "Classification of substance use disorder based on various criteria."
+        },
+        {
+            "entity": "WorkImpact",
+            "description": "Impact of substance use on work, school, or home responsibilities."
+        },
+        {
+            "entity": "SocialFunctioning",
+            "description": "Impact of substance use on social, occupational, or recreational activities."
+        },
+        {
+            "entity": "PhysicalHealthImpact",
+            "description": "Impact of substance use on physical health and specific symptoms."
+        },
+        {
+            "entity": "MentalHealthImpact",
+            "description": "Impact of substance use on mental health and emotional well-being."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDisorderCriteria",
+            "source_entity": "PrescriptionTranquilizers",
+            "target_entity": "SubstanceUseDisorder",
+            "description": "Criteria for classifying prescription tranquilizer use disorder."
+        },
+        {
+            "relationship": "hasWorkImpact",
+            "source_entity": "PrescriptionPainRelievers",
+            "target_entity": "WorkImpact",
+            "description": "Substance use causing serious problems at work, school, or home."
+        },
+        {
+            "relationship": "hasSocialImpact",
+            "source_entity": "PrescriptionPainRelievers",
+            "target_entity": "SocialFunctioning",
+            "description": "Reduced social, occupational, or recreational activities due to substance use."
+        },
+        {
+            "relationship": "hasPhysicalImpact",
+            "source_entity": "PrescriptionPainRelievers",
+            "target_entity": "PhysicalHealthImpact",
+            "description": "Physical health problems associated with substance use."
+        },
+        {
+            "relationship": "hasMentalImpact",
+            "source_entity": "PrescriptionPainRelievers",
+            "target_entity": "MentalHealthImpact",
+            "description": "Mental health issues stemming from substance use."
+        }
+    ]
+}

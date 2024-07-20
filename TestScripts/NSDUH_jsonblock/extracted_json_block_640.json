@@ -1,0 +1,116 @@
+{
+    "entities": [
+        {
+            "entity": "METH1FINALS",
+            "description": "Final data on methamphetamine use."
+        },
+        {
+            "entity": "MENTHEALTHS",
+            "description": "General term referring to mental health statistics and information."
+        },
+        {
+            "entity": "METHRELLXR",
+            "description": "Annual relapse information regarding methamphetamine."
+        },
+        {
+            "entity": "METHRELDC",
+            "description": "District or county-specific data on methamphetamine relapse."
+        },
+        {
+            "entity": "METHRELALYR",
+            "description": "Yearly data on methamphetamine relapse."
+        },
+        {
+            "entity": "MILSTAT",
+            "description": "Status of military personnel."
+        },
+        {
+            "entity": "MILFAMLY",
+            "description": "Information related to military families."
+        },
+        {
+            "entity": "EMPLOY",
+            "description": "Employment status information."
+        },
+        {
+            "entity": "INCOME",
+            "description": "Income level data."
+        },
+        {
+            "entity": "EDUCFIN",
+            "description": "Final educational attainment data."
+        },
+        {
+            "entity": "RURALPOP",
+            "description": "Data on the rural population."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFinalData",
+            "source_entity": "Survey",
+            "target_entity": "METH1FINALS",
+            "description": "Relates the survey to its final data on methamphetamine use."
+        },
+        {
+            "relationship": "hasMentalHealthInfo",
+            "source_entity": "Survey",
+            "target_entity": "MENTHEALTHS",
+            "description": "Indicates the survey contains information on mental health statistics."
+        },
+        {
+            "relationship": "hasRelapseAnnual",
+            "source_entity": "Survey",
+            "target_entity": "METHRELLXR",
+            "description": "Indicates the survey includes annual data on methamphetamine relapse."
+        },
+        {
+            "relationship": "hasRelapseDistrict",
+            "source_entity": "Survey",
+            "target_entity": "METHRELDC",
+            "description": "Indicates district or county-specific data on methamphetamine relapse."
+        },
+        {
+            "relationship": "hasRelapseYearly",
+            "source_entity": "Survey",
+            "target_entity": "METHRELALYR",
+            "description": "Indicates yearly relapse data on methamphetamine."
+        },
+        {
+            "relationship": "hasMilitaryStatus",
+            "source_entity": "Survey",
+            "target_entity": "MILSTAT",
+            "description": "Relates the survey to the status of military personnel."
+        },
+        {
+            "relationship": "hasMilitaryFamiliesInfo",
+            "source_entity": "Survey",
+            "target_entity": "MILFAMLY",
+            "description": "Contains information related to military families."
+        },
+        {
+            "relationship": "hasEmploymentStatus",
+            "source_entity": "Survey",
+            "target_entity": "EMPLOY",
+            "description": "Indicates the survey includes employment status information."
+        },
+        {
+            "relationship": "hasIncomeData",
+            "source_entity": "Survey",
+            "target_entity": "INCOME",
+            "description": "Includes income level data."
+        },
+        {
+            "relationship": "hasEducationData",
+            "source_entity": "Survey",
+            "target_entity": "EDUCFIN",
+            "description": "Contains final educational attainment data."
+        },
+        {
+            "relationship": "hasRuralPopulationData",
+            "source_entity": "Survey",
+            "target_entity": "RURALPOP",
+            "description": "Indicates the survey contains data on rural population."
+        }
+    ]
+}

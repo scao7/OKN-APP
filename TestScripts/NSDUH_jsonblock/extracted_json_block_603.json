@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "DoctorAdviceFrequency",
+            "description": "How often a doctor asked the respondent about their drinking habits."
+        },
+        {
+            "entity": "DoctorAskedDrinkingProblems",
+            "description": "Whether a doctor inquired if the respondent had any drinking problems."
+        },
+        {
+            "entity": "DoctorAdvisedCuttingDown",
+            "description": "If a doctor advised the respondent to cut down on their drinking."
+        },
+        {
+            "entity": "DoctorOfferedAlcoholTreatment",
+            "description": "Whether a doctor offered information about alcohol treatment to the respondent."
+        },
+        {
+            "entity": "DoctorDidNotDiscussAlcoholUse",
+            "description": "Whether a doctor did not discuss the respondent's alcohol use with them."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDoctorAdviceFrequency",
+            "source_entity": "Respondent",
+            "target_entity": "DoctorAdviceFrequency",
+            "description": "Indicates how often the respondent's doctor asked about their drinking habits."
+        },
+        {
+            "relationship": "hasDoctorAskedDrinkingProblems",
+            "source_entity": "Respondent",
+            "target_entity": "DoctorAskedDrinkingProblems",
+            "description": "Indicates whether the respondent's doctor inquired if they had any drinking problems."
+        },
+        {
+            "relationship": "hasDoctorAdvisedCuttingDown",
+            "source_entity": "Respondent",
+            "target_entity": "DoctorAdvisedCuttingDown",
+            "description": "Indicates whether the respondent's doctor advised them to cut down on drinking."
+        },
+        {
+            "relationship": "hasDoctorOfferedAlcoholTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "DoctorOfferedAlcoholTreatment",
+            "description": "Indicates whether the respondent's doctor offered information about alcohol treatment."
+        },
+        {
+            "relationship": "hasDoctorDidNotDiscussAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "DoctorDidNotDiscussAlcoholUse",
+            "description": "Indicates whether the respondent's doctor did not discuss their alcohol use with them."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Doctor",
+            "predicate": "askedAboutDrinkingFrequency",
+            "object": "Respondent"
+        },
+        {
+            "subject": "Doctor",
+            "predicate": "askedAboutDrinkingProblems",
+            "object": "Respondent"
+        },
+        {
+            "subject": "Doctor",
+            "predicate": "advisedToCutDown",
+            "object": "Respondent"
+        },
+        {
+            "subject": "Doctor",
+            "predicate": "offeredAlcoholTreatmentInfo",
+            "object": "Respondent"
+        },
+        {
+            "subject": "Doctor",
+            "predicate": "didNotDiscussAlcoholUse",
+            "object": "Respondent"
+        }
+    ]
+}

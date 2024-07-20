@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "VictimRelationship",
+            "description": "The relationship between the victim and the offender, categorized into various types of relationships such as family members, friends, or others."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency count of occurrences for each type of victim relationship."
+        },
+        {
+            "entity": "OffenderNumber",
+            "description": "The identification number of the offender in cases where the number of offenders is documented."
+        },
+        {
+            "entity": "Cases",
+            "description": "The total number of cases included in the survey data."
+        },
+        {
+            "entity": "MinimumCases",
+            "description": "The minimum number of cases recorded for a particular variable or assessment."
+        },
+        {
+            "entity": "MaximumCases",
+            "description": "The maximum number of cases recorded for a particular variable or assessment."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVictimRelationship",
+            "source_entity": "Victim",
+            "target_entity": "VictimRelationship",
+            "description": "Defines the relationship of the victim to the offender, such as family members or other acquaintances."
+        },
+        {
+            "relationship": "isCountedBy",
+            "source_entity": "VictimRelationship",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the frequency count of each type of victim relationship without weighting adjustment."
+        },
+        {
+            "relationship": "documentsOffender",
+            "source_entity": "Survey",
+            "target_entity": "OffenderNumber",
+            "description": "Indicates the offender number in the documented cases."
+        },
+        {
+            "relationship": "includesCases",
+            "source_entity": "Survey",
+            "target_entity": "Cases",
+            "description": "Relates the survey to the total number of documented cases included in the dataset."
+        },
+        {
+            "relationship": "hasMinimumCases",
+            "source_entity": "Survey",
+            "target_entity": "MinimumCases",
+            "description": "Specifies the minimum number of cases recorded for a specific variable or assessment in the survey."
+        },
+        {
+            "relationship": "hasMaximumCases",
+            "source_entity": "Survey",
+            "target_entity": "MaximumCases",
+            "description": "Specifies the maximum number of cases recorded for a specific variable or assessment in the survey."
+        }
+    ]
+}

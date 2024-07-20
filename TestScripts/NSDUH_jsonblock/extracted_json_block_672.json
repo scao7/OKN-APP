@@ -1,0 +1,47 @@
+[
+    {
+        "subject": "Buscapina",
+        "predicate": "isTypeOf",
+        "object": "Medication"
+    },
+    {
+        "subject": "Claritin",
+        "predicate": "isTypeOf",
+        "object": "OTCMedication"
+    },
+    {
+        "subject": "Augmentin",
+        "predicate": "isTypeOf",
+        "object": "PrescriptionMedication"
+    },
+    {
+        "subject": "Sustiva",
+        "predicate": "isTypeOf",
+        "object": "PrescriptionMedication"
+    },
+    {
+        "subject": "Tylenol Cold Medication",
+        "predicate": "isTypeOf",
+        "object": "OTCMedication"
+    },
+    {
+        "subject": "Heparin",
+        "predicate": "isTypeOf",
+        "object": "PrescriptionMedication"
+    },
+    {
+        "subject": "Hemorrhoid cream",
+        "predicate": "isTypeOf",
+        "object": "OTCMedication"
+    },
+    {
+        "subject": "Azmat",
+        "predicate": "isTypeOf",
+        "object": "Medication"
+    },
+    {
+        "subject": "Prilosec",
+        "predicate": "treats",
+        "object": "Heartburn"
+    }
+]

@@ -1,0 +1,288 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "A unique code assigned to each drug mentioned in the survey."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the drug as specified in the survey."
+        },
+        {
+            "entity": "TimesMentioned",
+            "description": "Number of times the drug was mentioned in the 'OTHER, Specifies' category."
+        },
+        {
+            "entity": "HallucinogenPercentage",
+            "description": "Percentage of all hallucinogen drugs specified that this particular drug accounts for."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "Drug",
+            "target_entity": "DrugCode",
+            "description": "Associates a drug with its unique code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "Drug",
+            "target_entity": "DrugName",
+            "description": "Associates a drug with its name."
+        },
+        {
+            "relationship": "hasTimesMentioned",
+            "source_entity": "Drug",
+            "target_entity": "TimesMentioned",
+            "description": "Indicates the number of times a particular drug was mentioned."
+        },
+        {
+            "relationship": "hasHallucinogenPercentage",
+            "source_entity": "Drug",
+            "target_entity": "HallucinogenPercentage",
+            "description": "Specifies the percentage of all hallucinogen drugs that this drug accounts for."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "8127",
+            "predicate": "hasDrugName",
+            "object": "Damiana <OTC>"
+        },
+        {
+            "subject": "8127",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8127",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8192",
+            "predicate": "hasDrugName",
+            "object": "Delsym, Dextromethorphan polistirex <OTC>"
+        },
+        {
+            "subject": "8192",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8192",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8237",
+            "predicate": "hasDrugName",
+            "object": "Kratom"
+        },
+        {
+            "subject": "8237",
+            "predicate": "hasTimesMentioned",
+            "object": "4"
+        },
+        {
+            "subject": "8237",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.52"
+        },
+        {
+            "subject": "8240",
+            "predicate": "hasDrugName",
+            "object": "Lamictal, Lamotrigine"
+        },
+        {
+            "subject": "8240",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8240",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8282",
+            "predicate": "hasDrugName",
+            "object": "Saline solution, salt, sodium chloride <OTC>"
+        },
+        {
+            "subject": "8282",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8282",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8283",
+            "predicate": "hasDrugName",
+            "object": "Synthetic cannabinoids (eg, K2, Spice, JWH-018)"
+        },
+        {
+            "subject": "8283",
+            "predicate": "hasTimesMentioned",
+            "object": "12"
+        },
+        {
+            "subject": "8283",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "1.56"
+        },
+        {
+            "subject": "8301",
+            "predicate": "hasDrugName",
+            "object": "Bath salts/synthetic cathinone; otherwise unspcfd"
+        },
+        {
+            "subject": "8301",
+            "predicate": "hasTimesMentioned",
+            "object": "6"
+        },
+        {
+            "subject": "8301",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.78"
+        },
+        {
+            "subject": "8309",
+            "predicate": "hasDrugName",
+            "object": "Mucinex <OTC>"
+        },
+        {
+            "subject": "8309",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8309",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8315",
+            "predicate": "hasDrugName",
+            "object": "Synthetic cannabis/cannabinoid, otherwise unspcfd"
+        },
+        {
+            "subject": "8315",
+            "predicate": "hasTimesMentioned",
+            "object": "2"
+        },
+        {
+            "subject": "8315",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.26"
+        },
+        {
+            "subject": "8368",
+            "predicate": "hasDrugName",
+            "object": "alpha-PVP, alpha-Pyrrolidinopentiophenone"
+        },
+        {
+            "subject": "8368",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8368",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8389",
+            "predicate": "hasDrugName",
+            "object": "CBD/hemp oil/edibles/vape (not marijuana) <OTC>"
+        },
+        {
+            "subject": "8389",
+            "predicate": "hasTimesMentioned",
+            "object": "2"
+        },
+        {
+            "subject": "8389",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.26"
+        },
+        {
+            "subject": "8447",
+            "predicate": "hasDrugName",
+            "object": "Aricept, donepezil"
+        },
+        {
+            "subject": "8447",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8447",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8448",
+            "predicate": "hasDrugName",
+            "object": "Phenethylamine analogue; otherwise unspecified"
+        },
+        {
+            "subject": "8448",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8448",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8456",
+            "predicate": "hasDrugName",
+            "object": "Dokha (tobacco and herbs/spices mixture)"
+        },
+        {
+            "subject": "8456",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8456",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        },
+        {
+            "subject": "8545",
+            "predicate": "hasDrugName",
+            "object": "Dimenhydrinate, Dramamine, sea/motion sickness <OTC>"
+        },
+        {
+            "subject": "8545",
+            "predicate": "hasTimesMentioned",
+            "object": "3"
+        },
+        {
+            "subject": "8545",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.39"
+        },
+        {
+            "subject": "8553",
+            "predicate": "hasDrugName",
+            "object": "Bupropion, Wellbutrin, Zyban"
+        },
+        {
+            "subject": "8553",
+            "predicate": "hasTimesMentioned",
+            "object": "1"
+        },
+        {
+            "subject": "8553",
+            "predicate": "hasHallucinogenPercentage",
+            "object": "0.13"
+        }
+    ]
+}

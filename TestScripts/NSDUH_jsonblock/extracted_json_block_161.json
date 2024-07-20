@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "DaysPerMonthUsedCrack",
+            "description": "Number of days per month the respondent used crack during the past 12 months."
+        },
+        {
+            "entity": "DaysPerWeekUsedCrack",
+            "description": "Number of days per week the respondent used crack during the past 12 months."
+        },
+        {
+            "entity": "DaysUsedCrackPast30Days",
+            "description": "Number of days the respondent used crack in the past 30 days."
+        },
+        {
+            "entity": "BestEstimateDaysUsedCrackPast30Days",
+            "description": "Respondent's best estimate of the number of days they used crack in the past 30 days."
+        },
+        {
+            "entity": "Past30Days",
+            "description": "The time frame of the past 30 days, including today's date."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDaysPerMonthUsedCrack",
+            "source_entity": "Respondent",
+            "target_entity": "DaysPerMonthUsedCrack",
+            "description": "Indicates the number of days the respondent used crack per month during the past 12 months."
+        },
+        {
+            "relationship": "hasDaysPerWeekUsedCrack",
+            "source_entity": "Respondent",
+            "target_entity": "DaysPerWeekUsedCrack",
+            "description": "Indicates the number of days the respondent used crack per week during the past 12 months."
+        },
+        {
+            "relationship": "hasDaysUsedCrackPast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "DaysUsedCrackPast30Days",
+            "description": "Indicates the number of days the respondent used crack in the past 30 days."
+        },
+        {
+            "relationship": "hasBestEstimateDaysUsedCrackPast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "BestEstimateDaysUsedCrackPast30Days",
+            "description": "Indicates the respondent's best estimate of the number of days they used crack in the past 30 days."
+        },
+        {
+            "relationship": "inPast30Days",
+            "source_entity": "Survey",
+            "target_entity": "Past30Days",
+            "description": "Relates the survey to the time period of the past 30 days."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "used crack per month",
+            "object": "DaysPerMonthUsedCrack"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used crack per week",
+            "object": "DaysPerWeekUsedCrack"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used crack in the past 30 days",
+            "object": "DaysUsedCrackPast30Days"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "estimated days used crack in the past 30 days",
+            "object": "BestEstimateDaysUsedCrackPast30Days"
+        },
+        {
+            "subject": "Survey",
+            "predicate": "time period",
+            "object": "Past30Days"
+        }
+    ]
+}

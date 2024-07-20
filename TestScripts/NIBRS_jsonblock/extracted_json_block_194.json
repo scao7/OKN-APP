@@ -1,0 +1,246 @@
+{
+    "entities": [
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Violation involving gambling equipment."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Involvement in tampering with sports outcomes."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Engaging in or soliciting for prostitution."
+        },
+        {
+            "entity": "PromotingProstitution",
+            "description": "Assisting or promoting prostitution activities."
+        },
+        {
+            "entity": "PurchasingProstitution",
+            "description": "Engaging in purchasing prostitution services."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Involvement in bribery acts."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Violation of laws related to weapons."
+        },
+        {
+            "entity": "HumanTraffickingCommercialSexActs",
+            "description": "Engagement in commercial sex acts as part of human trafficking."
+        },
+        {
+            "entity": "MurderNonnegligentManslaughter",
+            "description": "Committing murder or non-negligent manslaughter."
+        },
+        {
+            "entity": "NegligentManslaughter",
+            "description": "Committing manslaughter through negligence."
+        },
+        {
+            "entity": "JustifiableHomicide",
+            "description": "Committing homicide that is considered justifiable."
+        },
+        {
+            "entity": "KidnappingAbduction",
+            "description": "Engaging in kidnapping or abduction."
+        },
+        {
+            "entity": "Rape",
+            "description": "Committing rape."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "Engaging in acts of sodomy."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "Committing sexual assault using an object."
+        },
+        {
+            "entity": "Fondling",
+            "description": "Engaging in indecent liberties or child molesting through fondling."
+        },
+        {
+            "entity": "Robbery",
+            "description": "Committing robbery."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "Engaging in aggravated assault."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "Engaging in simple assault."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "Engaging in acts of intimidation."
+        },
+        {
+            "entity": "Arson",
+            "description": "Engaging in arson."
+        },
+        {
+            "entity": "ExtortionBlackmail",
+            "description": "Engaging in extortion or blackmail."
+        },
+        {
+            "entity": "BurglaryBreakingAndEntering",
+            "description": "Engaging in burglary or breaking and entering."
+        },
+        {
+            "entity": "PocketPicking",
+            "description": "Engaging in pocket-picking."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isPartOfViolations",
+            "source_entity": "GamblingEquipmentViolations",
+            "target_entity": "Violations",
+            "description": "Classifies gambling equipment violations under violations."
+        },
+        {
+            "relationship": "isPartOfViolations",
+            "source_entity": "SportsTampering",
+            "target_entity": "Violations",
+            "description": "Classifies sports tampering under violations."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "Prostitution",
+            "target_entity": "Offenses",
+            "description": "Classifies prostitution under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "PromotingProstitution",
+            "target_entity": "Offenses",
+            "description": "Classifies promoting prostitution under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "PurchasingProstitution",
+            "target_entity": "Offenses",
+            "description": "Classifies purchasing prostitution under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "Bribery",
+            "target_entity": "Offenses",
+            "description": "Classifies bribery under offenses."
+        },
+        {
+            "relationship": "isPartOfViolations",
+            "source_entity": "WeaponLawViolations",
+            "target_entity": "Violations",
+            "description": "Classifies weapon law violations under violations."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "HumanTraffickingCommercialSexActs",
+            "target_entity": "Offenses",
+            "description": "Classifies human trafficking commercial sex acts under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "MurderNonnegligentManslaughter",
+            "target_entity": "Offenses",
+            "description": "Classifies murder non-negligent manslaughter under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "NegligentManslaughter",
+            "target_entity": "Offenses",
+            "description": "Classifies negligent manslaughter under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "JustifiableHomicide",
+            "target_entity": "Offenses",
+            "description": "Classifies justifiable homicide under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "KidnappingAbduction",
+            "target_entity": "Offenses",
+            "description": "Classifies kidnapping and abduction under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "Rape",
+            "target_entity": "Offenses",
+            "description": "Classifies rape under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "Sodomy",
+            "target_entity": "Offenses",
+            "description": "Classifies sodomy under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "SexualAssaultWithAnObject",
+            "target_entity": "Offenses",
+            "description": "Classifies sexual assault with an object under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "Fondling",
+            "target_entity": "Offenses",
+            "description": "Classifies fondling under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "Robbery",
+            "target_entity": "Offenses",
+            "description": "Classifies robbery under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "AggravatedAssault",
+            "target_entity": "Offenses",
+            "description": "Classifies aggravated assault under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "SimpleAssault",
+            "target_entity": "Offenses",
+            "description": "Classifies simple assault under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "Intimidation",
+            "target_entity": "Offenses",
+            "description": "Classifies intimidation under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "Arson",
+            "target_entity": "Offenses",
+            "description": "Classifies arson under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "ExtortionBlackmail",
+            "target_entity": "Offenses",
+            "description": "Classifies extortion or blackmail under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "BurglaryBreakingAndEntering",
+            "target_entity": "Offenses",
+            "description": "Classifies burglary or breaking and entering under offenses."
+        },
+        {
+            "relationship": "isPartOfOffenses",
+            "source_entity": "PocketPicking",
+            "target_entity": "Offenses",
+            "description": "Classifies pocket-picking under offenses."
+        }
+    ]
+}

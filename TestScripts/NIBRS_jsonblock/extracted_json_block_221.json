@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Incidents related to the illegal possession, sale, use, or manufacture of drugs and narcotics."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Incidents related to the possession, sale, or use of equipment used to ingest, prepare, or manufacture drugs."
+        },
+        {
+            "entity": "Incest",
+            "description": "Engaging in sexual relations with a close family member that is illegal and prohibited by law."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Sexual intercourse with a minor who is below the statutory age of consent."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "Creation, possession, distribution, or exhibition of obscene materials including pornography."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "Engaging in betting or wagering activities that are illegal or unregulated."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "Engaging in sexual activities in exchange for money or goods."
+        },
+        {
+            "entity": "HumanTrafficking_CommercialSexActs",
+            "description": "The act of recruiting, harboring, transporting, providing, or obtaining a person for commercial sex acts through force, fraud, or coercion."
+        },
+        {
+            "entity": "MurderNonnegligentManslaughter",
+            "description": "The willful (non-negligent) killing of one human being by another."
+        },
+        {
+            "entity": "SexualAssault",
+            "description": "Non-consensual sexual contact or behavior, including rape and fondling."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "reportsDrugNarcoticViolations",
+            "source_entity": "Survey",
+            "target_entity": "DrugNarcoticViolations",
+            "description": "Relates the survey to the reporting of drug/narcotic violations."
+        },
+        {
+            "relationship": "reportsDrugEquipmentViolations",
+            "source_entity": "Survey",
+            "target_entity": "DrugEquipmentViolations",
+            "description": "Relates the survey to the reporting of drug equipment violations."
+        },
+        {
+            "relationship": "includesSexualViolence",
+            "source_entity": "Survey",
+            "target_entity": "SexualAssault",
+            "description": "Indicates the inclusion of data related to sexual assault or violence in the survey."
+        },
+        {
+            "relationship": "reportsHumanTrafficking",
+            "source_entity": "Survey",
+            "target_entity": "HumanTrafficking_CommercialSexActs",
+            "description": "Indicates the inclusion of data related to human trafficking for commercial sex acts."
+        },
+        {
+            "relationship": "reportsViolentCrime",
+            "source_entity": "Survey",
+            "target_entity": "MurderNonnegligentManslaughter",
+            "description": "Relates the survey to incidents of murder or non-negligent manslaughter."
+        }
+    ]
+}

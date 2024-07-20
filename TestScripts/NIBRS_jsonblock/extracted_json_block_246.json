@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "entity": "AgeOfVictim",
+            "description": "The age of the victim in the survey, ranging from under 24 hours to 34 years."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of responses for each age category."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each age category's unweighted frequency."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "AgeOfVictim",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency for each age category of the victim."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "AgeOfVictim",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage for each age category of the victim based on the total responses."
+        }
+    ]
+}

@@ -1,0 +1,186 @@
+{
+    "entities": [
+        {
+            "entity": "OtherStimulants",
+            "description": "Stimulant drugs that do not fall into primary categories listed."
+        },
+        {
+            "entity": "Barbiturates",
+            "description": "A class of sedative and sleep-inducing drugs."
+        },
+        {
+            "entity": "OtherDepressants",
+            "description": "Depressant drugs that do not fall into primary categories listed."
+        },
+        {
+            "entity": "OtherDrugsAntidepressants",
+            "description": "Antidepressant drugs that do not fall into primary categories listed."
+        },
+        {
+            "entity": "Over3DrugTypes",
+            "description": "Instances involving more than three types of drugs."
+        },
+        {
+            "entity": "CrackCocaine",
+            "description": "A solid, smokable form of cocaine."
+        },
+        {
+            "entity": "Cocaine",
+            "description": "A stimulant drug in all forms except crack."
+        },
+        {
+            "entity": "Hashish",
+            "description": "A drug made from the resin of cannabis."
+        },
+        {
+            "entity": "Heroin",
+            "description": "An opioid drug made from morphine."
+        },
+        {
+            "entity": "Marijuana",
+            "description": "A psychoactive drug from the Cannabis plant."
+        },
+        {
+            "entity": "Morphine",
+            "description": "A potent pain reliever and the main psychoactive chemical in opium."
+        },
+        {
+            "entity": "Opium",
+            "description": "A narcotic drug obtained from the unripe seed pods of the poppy plant."
+        },
+        {
+            "entity": "OtherNarcotics",
+            "description": "Narcotic drugs that do not fall into primary categories listed."
+        },
+        {
+            "entity": "LSD",
+            "description": "Lysergic acid diethylamide, a powerful hallucinogenic drug."
+        },
+        {
+            "entity": "PCP",
+            "description": "Phencyclidine, a dissociative drug."
+        },
+        {
+            "entity": "OtherHallucinogens",
+            "description": "Hallucinogenic drugs that do not fall into primary categories listed."
+        },
+        {
+            "entity": "AmphetaminesMethamphetamines",
+            "description": "Stimulant drugs that include amphetamine and methamphetamine."
+        },
+        {
+            "entity": "UnknownMissingDNR",
+            "description": "Unknown, missing data, or did not respond."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "includesStimulants",
+            "source_entity": "DrugCategory",
+            "target_entity": "OtherStimulants",
+            "description": "Categorizes other stimulant drugs not listed separately."
+        },
+        {
+            "relationship": "includesBarbiturates",
+            "source_entity": "DrugCategory",
+            "target_entity": "Barbiturates",
+            "description": "Categorizes barbiturate drugs."
+        },
+        {
+            "relationship": "includesDepressants",
+            "source_entity": "DrugCategory",
+            "target_entity": "OtherDepressants",
+            "description": "Categorizes other depressant drugs not listed separately."
+        },
+        {
+            "relationship": "includesAntidepressants",
+            "source_entity": "DrugCategory",
+            "target_entity": "OtherDrugsAntidepressants",
+            "description": "Categorizes other antidepressant drugs not listed separately."
+        },
+        {
+            "relationship": "hasDrugCount",
+            "source_entity": "SurveyData",
+            "target_entity": "Over3DrugTypes",
+            "description": "Indicates cases involving more than three drug types."
+        },
+        {
+            "relationship": "categorizesCrackCocaine",
+            "source_entity": "DrugCategory",
+            "target_entity": "CrackCocaine",
+            "description": "Categorizes crack cocaine drugs."
+        },
+        {
+            "relationship": "categorizesCocaine",
+            "source_entity": "DrugCategory",
+            "target_entity": "Cocaine",
+            "description": "Categorizes cocaine drugs in all forms except crack."
+        },
+        {
+            "relationship": "categorizesHashish",
+            "source_entity": "DrugCategory",
+            "target_entity": "Hashish",
+            "description": "Categorizes hashish."
+        },
+        {
+            "relationship": "categorizesHeroin",
+            "source_entity": "DrugCategory",
+            "target_entity": "Heroin",
+            "description": "Categorizes heroin drugs."
+        },
+        {
+            "relationship": "categorizesMarijuana",
+            "source_entity": "DrugCategory",
+            "target_entity": "Marijuana",
+            "description": "Categorizes marijuana drugs."
+        },
+        {
+            "relationship": "categorizesMorphine",
+            "source_entity": "DrugCategory",
+            "target_entity": "Morphine",
+            "description": "Categorizes morphine drugs."
+        },
+        {
+            "relationship": "categorizesOpium",
+            "source_entity": "DrugCategory",
+            "target_entity": "Opium",
+            "description": "Categorizes opium drugs."
+        },
+        {
+            "relationship": "categorizesNarcotics",
+            "source_entity": "DrugCategory",
+            "target_entity": "OtherNarcotics",
+            "description": "Categorizes other narcotic drugs not listed separately."
+        },
+        {
+            "relationship": "categorizesLSD",
+            "source_entity": "DrugCategory",
+            "target_entity": "LSD",
+            "description": "Categorizes LSD drugs."
+        },
+        {
+            "relationship": "categorizesPCP",
+            "source_entity": "DrugCategory",
+            "target_entity": "PCP",
+            "description": "Categorizes PCP drugs."
+        },
+        {
+            "relationship": "categorizesHallucinogens",
+            "source_entity": "DrugCategory",
+            "target_entity": "OtherHallucinogens",
+            "description": "Categorizes other hallucinogenic drugs not listed separately."
+        },
+        {
+            "relationship": "categorizesAmphetamines",
+            "source_entity": "DrugCategory",
+            "target_entity": "AmphetaminesMethamphetamines",
+            "description": "Categorizes amphetamine and methamphetamine drugs."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "SurveyData",
+            "target_entity": "UnknownMissingDNR",
+            "description": "Indicates missing, unknown, or did not respond data in the survey."
+        }
+    ]
+}

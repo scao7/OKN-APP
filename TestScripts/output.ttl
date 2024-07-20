@@ -1,0 +1,9 @@
+@prefix ex: <http://example.org/> .
+
+ex:SAMHSA ex:determines "terms of use agreement has been violated" .
+ex:possible_sanctions ex:include "report of the violation to the Research Integrity Officer" .
+ex:possible_sanctions ex:include "report of the violation to the Institutional Review Board" .
+ex:possible_sanctions ex:include "report of the violation to the Human Subjects Review Committee" .
+ex:possible_sanctions ex:include "report of the violation to the Federal Office for Human Research Protections" .
+ex:possible_sanctions ex:include "report of the violation to the United States Attorney General" .
+ex:possible_sanctions ex:include "court-awarded payments of damages" .

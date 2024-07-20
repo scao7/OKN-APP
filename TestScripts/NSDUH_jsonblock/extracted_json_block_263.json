@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "PainRelieverFirstMisuseYear",
+            "description": "Year of first misuse of pain relievers."
+        },
+        {
+            "entity": "PainRelieverFirstMisuseYearImputation",
+            "description": "Imputation indicator for the year of first misuse of pain relievers."
+        },
+        {
+            "entity": "PainRelieverFirstMisuseAge",
+            "description": "Age of first misuse of pain relievers."
+        },
+        {
+            "entity": "PainRelieverFirstMisuseAgeImputation",
+            "description": "Imputation indicator for the age of first misuse of pain relievers."
+        },
+        {
+            "entity": "TranquilizerFirstMisuseYear",
+            "description": "Year of first misuse of tranquilizers."
+        },
+        {
+            "entity": "TranquilizerFirstMisuseYearImputation",
+            "description": "Imputation indicator for the year of first misuse of tranquilizers."
+        },
+        {
+            "entity": "TranquilizerFirstMisuseAge",
+            "description": "Age of first misuse of tranquilizers."
+        },
+        {
+            "entity": "TranquilizerFirstMisuseAgeImputation",
+            "description": "Imputation indicator for the age of first misuse of tranquilizers."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFirstMisuseYear",
+            "source_entity": "PainRelieverMisuse",
+            "target_entity": "PainRelieverFirstMisuseYear",
+            "description": "Relates pain reliever misuse to the year of first misuse."
+        },
+        {
+            "relationship": "hasFirstMisuseYearImputation",
+            "source_entity": "PainRelieverFirstMisuseYear",
+            "target_entity": "PainRelieverFirstMisuseYearImputation",
+            "description": "Indicates the imputation type for the year of first misuse of pain relievers."
+        },
+        {
+            "relationship": "hasFirstMisuseAge",
+            "source_entity": "PainRelieverMisuse",
+            "target_entity": "PainRelieverFirstMisuseAge",
+            "description": "Relates pain reliever misuse to the age of first misuse."
+        },
+        {
+            "relationship": "hasFirstMisuseAgeImputation",
+            "source_entity": "PainRelieverFirstMisuseAge",
+            "target_entity": "PainRelieverFirstMisuseAgeImputation",
+            "description": "Indicates the imputation type for the age of first misuse of pain relievers."
+        },
+        {
+            "relationship": "hasFirstMisuseYear",
+            "source_entity": "TranquilizerMisuse",
+            "target_entity": "TranquilizerFirstMisuseYear",
+            "description": "Relates tranquilizer misuse to the year of first misuse."
+        },
+        {
+            "relationship": "hasFirstMisuseYearImputation",
+            "source_entity": "TranquilizerFirstMisuseYear",
+            "target_entity": "TranquilizerFirstMisuseYearImputation",
+            "description": "Indicates the imputation type for the year of first misuse of tranquilizers."
+        },
+        {
+            "relationship": "hasFirstMisuseAge",
+            "source_entity": "TranquilizerMisuse",
+            "target_entity": "TranquilizerFirstMisuseAge",
+            "description": "Relates tranquilizer misuse to the age of first misuse."
+        },
+        {
+            "relationship": "hasFirstMisuseAgeImputation",
+            "source_entity": "TranquilizerFirstMisuseAge",
+            "target_entity": "TranquilizerFirstMisuseAgeImputation",
+            "description": "Indicates the imputation type for the age of first misuse of tranquilizers."
+        }
+    ]
+}

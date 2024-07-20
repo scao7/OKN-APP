@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 2 weeks, including today's date."
+        },
+        {
+            "entity": "SevereMoodDuration",
+            "description": "The duration of the most severe and frequent mood during the past 2 weeks."
+        },
+        {
+            "entity": "MoodSeverity",
+            "description": "The strength of bad feelings experienced during the past 2 weeks."
+        },
+        {
+            "entity": "MoodImpact",
+            "description": "The frequency of bad feelings so severe that nothing could cheer up the respondent during the past 2 weeks."
+        },
+        {
+            "entity": "DailyActivityImpact",
+            "description": "The frequency of moods being so severe that they prevented the respondent from carrying out daily activities during the past 2 weeks."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 2 weeks."
+        },
+        {
+            "relationship": "hasSevereMoodDuration",
+            "source_entity": "Respondent",
+            "target_entity": "SevereMoodDuration",
+            "description": "Indicates the duration of the most severe and frequent mood experienced by the respondent."
+        },
+        {
+            "relationship": "hasMoodSeverity",
+            "source_entity": "Respondent",
+            "target_entity": "MoodSeverity",
+            "description": "Indicates the strength of the bad feelings experienced by the respondent during the past 2 weeks."
+        },
+        {
+            "relationship": "hasMoodImpact",
+            "source_entity": "Respondent",
+            "target_entity": "MoodImpact",
+            "description": "Indicates the impact of bad feelings so severe that nothing could cheer up the respondent."
+        },
+        {
+            "relationship": "hasDailyActivityImpact",
+            "source_entity": "Respondent",
+            "target_entity": "DailyActivityImpact",
+            "description": "Indicates the impact of mood severity on the respondent's ability to carry out daily activities."
+        }
+    ]
+}

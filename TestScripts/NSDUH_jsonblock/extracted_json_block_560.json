@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "EverLoseInterestWhenSad",
+            "description": "Whether the respondent ever loses interest in activities when feeling sad, empty, or depressed."
+        },
+        {
+            "entity": "EverLoseInterestWhenDiscouraged",
+            "description": "Whether the respondent ever loses interest in activities when feeling discouraged."
+        },
+        {
+            "entity": "PeriodOfDepression",
+            "description": "A period of time that lasted most of the day, almost every day, for two weeks or longer feeling depressed."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEverLoseInterestWhenSad",
+            "source_entity": "Respondent",
+            "target_entity": "EverLoseInterestWhenSad",
+            "description": "Indicates whether the respondent ever loses interest in things when feeling sad, empty, or depressed."
+        },
+        {
+            "relationship": "hasEverLoseInterestWhenDiscouraged",
+            "source_entity": "Respondent",
+            "target_entity": "EverLoseInterestWhenDiscouraged",
+            "description": "Indicates whether the respondent ever loses interest in things when feeling discouraged."
+        },
+        {
+            "relationship": "hasPeriodOfDepression",
+            "source_entity": "Respondent",
+            "target_entity": "PeriodOfDepression",
+            "description": "Indicates whether the respondent had a period of depression that lasted most of the day, almost every day, for two weeks or longer."
+        }
+    ]
+}

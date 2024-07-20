@@ -1,0 +1,34 @@
+{
+    "entities": [
+        {
+            "entity": "Offender",
+            "description": "A person suspected of using a substance or equipment listed in the survey."
+        },
+        {
+            "entity": "Substance",
+            "description": "The type of substance used by the offender, such as alcohol, computer equipment, or drug/narcotics."
+        },
+        {
+            "entity": "SurveyCase",
+            "description": "A case recorded in the survey, representing the data collected on each instance."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The unweighted frequency or count of instances for each substance."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSubstance",
+            "source_entity": "Offender",
+            "target_entity": "Substance",
+            "description": "Indicates the type of substance suspected to be used by the offender."
+        },
+        {
+            "relationship": "reportedIn",
+            "source_entity": "SurveyCase",
+            "target_entity": "Frequency",
+            "description": "Relates each survey case to the count or frequency of instances recorded."
+        }
+    ]
+}

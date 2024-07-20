@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyVariable",
+            "description": "Identifies a specific variable being measured in the survey."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of the variable, which in this case is numeric."
+        },
+        {
+            "entity": "MissingValues",
+            "description": "The range of values that indicate missing data for the variable."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of occurrences of each value before applying survey weights."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of the total for each specific value."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "The number of stolen motor vehicles as reported in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "SurveyVariable",
+            "target_entity": "VariableType",
+            "description": "Specifies the type of the survey variable."
+        },
+        {
+            "relationship": "hasMissingValues",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MissingValues",
+            "description": "Links the survey variable to the range of values that indicate missing data."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SurveyVariable",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the number of occurrences of each value before weighting."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyVariable",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage of the total each specific value represents."
+        },
+        {
+            "relationship": "measures",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MotorVehicleTheft",
+            "description": "Indicates that the survey variable measures the number of stolen motor vehicles."
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "AdultLifetimeMDE",
+            "description": "Lifetime Major Depressive Episode (MDE) status among adults."
+        },
+        {
+            "entity": "AdultPastYearMDE",
+            "description": "Past year Major Depressive Episode (MDE) status among adults."
+        },
+        {
+            "entity": "AdultMDESevereRoleImpairment",
+            "description": "Major Depressive Episode (MDE) with severe role impairment among adults."
+        },
+        {
+            "entity": "AgeGroup",
+            "description": "The age group of the respondent (e.g., Aged 12-17)."
+        },
+        {
+            "entity": "ResponseCode",
+            "description": "Response to the survey question (e.g., Yes or No)."
+        },
+        {
+            "entity": "DataType",
+            "description": "Type of data provided (e.g., Questionnaire data, Statistically imputed data)."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "Legitimate reasons for skipping the question."
+        },
+        {
+            "entity": "Frequency",
+            "description": "Frequency of responses."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage of responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMDEStatus",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "AdultLifetimeMDE",
+            "description": "Indicates the lifetime MDE status of an adult respondent."
+        },
+        {
+            "relationship": "hasMDEStatus",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "AdultPastYearMDE",
+            "description": "Indicates the past year MDE status of an adult respondent."
+        },
+        {
+            "relationship": "hasMDEStatus",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "AdultMDESevereRoleImpairment",
+            "description": "Indicates the severe role impairment due to MDE status of an adult respondent."
+        },
+        {
+            "relationship": "belongsToAgeGroup",
+            "source_entity": "SurveyRespondent",
+            "target_entity": "AgeGroup",
+            "description": "Classifies the respondent into a specific age group."
+        },
+        {
+            "relationship": "hasResponseCode",
+            "source_entity": "SurveyAnswer",
+            "target_entity": "ResponseCode",
+            "description": "Specifies the respondent's answer to the survey question."
+        },
+        {
+            "relationship": "hasDataType",
+            "source_entity": "SurveyAnswer",
+            "target_entity": "DataType",
+            "description": "Indicates the type of data provided for the survey response."
+        },
+        {
+            "relationship": "hasLegitimateSkip",
+            "source_entity": "SurveyAnswer",
+            "target_entity": "LegitimateSkip",
+            "description": "Indicates if the question was skipped for a legitimate reason."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SurveyData",
+            "target_entity": "Frequency",
+            "description": "Specifies the frequency of the responses."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyData",
+            "target_entity": "Percentage",
+            "description": "Specifies the percentage of the responses."
+        }
+    ]
+}

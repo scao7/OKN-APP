@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "Date",
+            "description": "Specific dates mentioned in the survey period."
+        },
+        {
+            "entity": "Frequency",
+            "description": "Unweighted frequency of responses for each specific date."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage representation of unweighted frequency of responses for each specific date."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDate",
+            "source_entity": "Response",
+            "target_entity": "Date",
+            "description": "Relates the survey response to specific dates listed."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "Date",
+            "target_entity": "Frequency",
+            "description": "Assigns the unweighted frequency value to each date."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Date",
+            "target_entity": "Percentage",
+            "description": "Assigns the percentage value to each date's frequency."
+        }
+    ]
+}

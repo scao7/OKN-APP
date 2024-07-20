@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "JurisdictionType",
+            "description": "The type of agency that has jurisdiction, such as city, county, university, state police, etc."
+        },
+        {
+            "entity": "CoreCityStatus",
+            "description": "Indicates whether the respondent is in a core city or not."
+        },
+        {
+            "entity": "AgencyLabel",
+            "description": "A specific code representing various agencies."
+        },
+        {
+            "entity": "RespondentCount",
+            "description": "Number of respondents for each jurisdiction type or core city status."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isCoveredBy",
+            "source_entity": "Jurisdiction",
+            "target_entity": "JurisdictionType",
+            "description": "Indicates the type of jurisdiction that covers the area."
+        },
+        {
+            "relationship": "hasCoreCityStatus",
+            "source_entity": "Respondent",
+            "target_entity": "CoreCityStatus",
+            "description": "Indicates the core city status of the respondent."
+        },
+        {
+            "relationship": "hasAgencyLabel",
+            "source_entity": "Agency",
+            "target_entity": "AgencyLabel",
+            "description": "Connects an agency to its corresponding code label."
+        },
+        {
+            "relationship": "hasRespondentCount",
+            "source_entity": "SurveyResult",
+            "target_entity": "RespondentCount",
+            "description": "Indicates the number of respondents with specific jurisdiction types or core city status."
+        }
+    ]
+}

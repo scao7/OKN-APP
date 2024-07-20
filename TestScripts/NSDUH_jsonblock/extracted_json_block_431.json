@@ -1,0 +1,84 @@
+{
+    "entities": [
+        {
+            "entity": "TranquilizerUseDisorderSeverity",
+            "description": "The severity of tranquilizer use disorder among past-year misusers as indicated by various levels of disorder severity."
+        },
+        {
+            "entity": "TranquilizerUseDisSeverityPY",
+            "description": "The severity of tranquilizer use disorder among past-year users excluding misusers."
+        },
+        {
+            "entity": "StimulantUseDisorderSeverity",
+            "description": "The severity of stimulant use disorder among past-year misusers as indicated by various levels of disorder severity."
+        },
+        {
+            "entity": "StimulantUseDisSeverityPY",
+            "description": "The severity of stimulant use disorder among past-year users excluding misusers."
+        },
+        {
+            "entity": "DisorderSeverity",
+            "description": "Severity level of the substance use disorder, categorized as mild, moderate, or severe."
+        },
+        {
+            "entity": "QuestionnaireData",
+            "description": "Data derived directly from survey questionnaires."
+        },
+        {
+            "entity": "StatisticallyImputedData",
+            "description": "Data that has been statistically imputed."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "Responses indicating 'No past year use disorder' or legitimate skip."
+        },
+        {
+            "entity": "Prevalence",
+            "description": "The frequency or percentage of respondents with a particular response."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "TranquilizerUseDisorderSeverity",
+            "target_entity": "DisorderSeverity",
+            "description": "Indicates the severity level of tranquilizer use disorder."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "TranquilizerUseDisSeverityPY",
+            "target_entity": "DisorderSeverity",
+            "description": "Indicates the severity level of tranquilizer use disorder excluding misusers."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "StimulantUseDisorderSeverity",
+            "target_entity": "DisorderSeverity",
+            "description": "Indicates the severity level of stimulant use disorder."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "StimulantUseDisSeverityPY",
+            "target_entity": "DisorderSeverity",
+            "description": "Indicates the severity level of stimulant use disorder excluding misusers."
+        },
+        {
+            "relationship": "derivedFrom",
+            "source_entity": "DisorderSeverity",
+            "target_entity": "QuestionnaireData",
+            "description": "Indicates that disorder severity data is derived from questionnaire data."
+        },
+        {
+            "relationship": "derivedFrom",
+            "source_entity": "DisorderSeverity",
+            "target_entity": "StatisticallyImputedData",
+            "description": "Indicates that disorder severity data may be statistically imputed."
+        },
+        {
+            "relationship": "hasPrevalence",
+            "source_entity": "DisorderSeverity",
+            "target_entity": "Prevalence",
+            "description": "Indicates the prevalence of each level of disorder severity."
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the survey period."
+        },
+        {
+            "entity": "FieldEnumerator",
+            "description": "Specially trained listers who visited each field enumeration segment and listed all addresses."
+        },
+        {
+            "entity": "SurveyEligibleIndividual",
+            "description": "An individual identified as eligible for participating in the survey."
+        },
+        {
+            "entity": "HousingUnits",
+            "description": "Addresses listed for housing units and eligible group quarters units."
+        },
+        {
+            "entity": "SystematicSampling",
+            "description": "Method used to select the allocated sample of addresses."
+        },
+        {
+            "entity": "RosterInformation",
+            "description": "Information about survey-eligible individuals provided by an eligible member of the selected dwelling unit."
+        },
+        {
+            "entity": "ABSFrame",
+            "description": "The frame used in the Address-based Sampling (ABS) segments."
+        },
+        {
+            "entity": "SSRs",
+            "description": "Secondary Sampling Units (SSRs) formed within each state based on composite size measures."
+        },
+        {
+            "entity": "PSUs",
+            "description": "Primary Sampling Units (PSUs) selected for the sample."
+        },
+        {
+            "entity": "SEGIDVariables",
+            "description": "Variables used for identification of the survey segments."
+        },
+        {
+            "entity": "TemporaryResidents",
+            "description": "Temporary residents living in noninstitutional group quarters like shelters, dormitories, and rooming houses who may be selected through the sampling process."
+        },
+        {
+            "entity": "GeographicPartitioning",
+            "description": "Dividing the state into equally sized regions based on geography for the purposes of sampling."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Defines the period during which the survey is conducted."
+        },
+        {
+            "relationship": "coordinatesFieldEnumeration",
+            "source_entity": "Survey",
+            "target_entity": "FieldEnumerator",
+            "description": "Involves specially trained listers to visit field enumeration segments."
+        },
+        {
+            "relationship": "includesHousingUnits",
+            "source_entity": "FieldEnumerator",
+            "target_entity": "HousingUnits",
+            "description": "Includes all addresses listed for housing units and eligible group quarters units."
+        },
+        {
+            "relationship": "employsSystematicSampling",
+            "source_entity": "AddressSelection",
+            "target_entity": "SystematicSampling",
+            "description": "Uses systematic sampling to select the allocated sample of addresses."
+        },
+        {
+            "relationship": "receivesRosterInformation",
+            "source_entity": "Survey",
+            "target_entity": "RosterInformation",
+            "description": "Roster information provided by an eligible member of the selected dwelling unit."
+        },
+        {
+            "relationship": "usesABSFrame",
+            "source_entity": "AddressSelection",
+            "target_entity": "ABSFrame",
+            "description": "Constructed from the ABS frame to identify addresses."
+        },
+        {
+            "relationship": "formsSSRs",
+            "source_entity": "Survey",
+            "target_entity": "SSRs",
+            "description": "The sample includes Secondary Sampling Units formed based on composite size measures."
+        },
+        {
+            "relationship": "selectsPSUs",
+            "source_entity": "Survey",
+            "target_entity": "PSUs",
+            "description": "Samples from Primary Sampling Units."
+        },
+        {
+            "relationship": "identifiesSegments",
+            "source_entity": "Survey",
+            "target_entity": "SEGIDVariables",
+            "description": "Uses SEGID variables for segment identification."
+        },
+        {
+            "relationship": "considersTemporaryResidents",
+            "source_entity": "Survey",
+            "target_entity": "TemporaryResidents",
+            "description": "Temporary residents living in noninstitutional group quarters like shelters, dormitories, and rooming houses."
+        },
+        {
+            "relationship": "partitionsGeographically",
+            "source_entity": "SurveyDesign",
+            "target_entity": "GeographicPartitioning",
+            "description": "Partitions the state into equally sized regions for sampling based on geography."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "NSDUH-2022",
+            "predicate": "includesSample",
+            "object": "50 States and District of Columbia"
+        },
+        {
+            "subject": "SSRs",
+            "predicate": "formedWithin",
+            "object": "Each State"
+        },
+        {
+            "subject": "Sample",
+            "predicate": "selectedFrom",
+            "object": "48 Census Tracts within Each SSR"
+        },
+        {
+            "subject": "Census Tracts",
+            "predicate": "identifiedUsing",
+            "object": "STATE, SSREGION, and SEGID Variables"
+        },
+        {
+            "subject": "Sample",
+            "predicate": "initially selected",
+            "object": "Eight Census Tracts per SSR"
+        }
+    ]
+}

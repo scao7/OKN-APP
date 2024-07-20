@@ -1,0 +1,328 @@
+{
+    "entities": [
+        {
+            "entity": "DrugCode",
+            "description": "A unique identifier assigned to each tranquilizer drug in the survey."
+        },
+        {
+            "entity": "DrugName",
+            "description": "The name of the tranquilizer drug."
+        },
+        {
+            "entity": "TimesMentioned",
+            "description": "The number of times a specific tranquilizer drug was mentioned in the survey."
+        },
+        {
+            "entity": "PercentageOfAllTranquilizerDrugs",
+            "description": "The percentage that each tranquilizer drug represents out of all tranquilizer drugs specified in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDrugCode",
+            "source_entity": "TranquilizerDrug",
+            "target_entity": "DrugCode",
+            "description": "Relates the tranquilizer drug to its unique drug code."
+        },
+        {
+            "relationship": "hasDrugName",
+            "source_entity": "TranquilizerDrug",
+            "target_entity": "DrugName",
+            "description": "Relates the tranquilizer drug to its name."
+        },
+        {
+            "relationship": "hasTimesMentioned",
+            "source_entity": "TranquilizerDrug",
+            "target_entity": "TimesMentioned",
+            "description": "Shows the number of times the tranquilizer drug was mentioned in the survey."
+        },
+        {
+            "relationship": "hasPercentageOfAllTranquilizerDrugs",
+            "source_entity": "TranquilizerDrug",
+            "target_entity": "PercentageOfAllTranquilizerDrugs",
+            "description": "Indicates the percentage that each tranquilizer drug represents out of all tranquilizer drugs specified in the survey."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Ambien",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Ambien",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Valium",
+            "predicate": "hasMentionedTimes",
+            "object": "2"
+        },
+        {
+            "subject": "Valium",
+            "predicate": "hasPercentage",
+            "object": "4.44%"
+        },
+        {
+            "subject": "Librium",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Librium",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Ativan",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Ativan",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Xanax",
+            "predicate": "hasMentionedTimes",
+            "object": "4"
+        },
+        {
+            "subject": "Xanax",
+            "predicate": "hasPercentage",
+            "object": "8.89%"
+        },
+        {
+            "subject": "BuSpar",
+            "predicate": "hasMentionedTimes",
+            "object": "2"
+        },
+        {
+            "subject": "BuSpar",
+            "predicate": "hasPercentage",
+            "object": "4.44%"
+        },
+        {
+            "subject": "OTHER Tranquilizer, NOT OTHERWISE SPECIFIED",
+            "predicate": "hasMentionedTimes",
+            "object": "6"
+        },
+        {
+            "subject": "OTHER Tranquilizer, NOT OTHERWISE SPECIFIED",
+            "predicate": "hasPercentage",
+            "object": "13.33%"
+        },
+        {
+            "subject": "Methocarbamol",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Methocarbamol",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Ritalin",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Ritalin",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Diet pills/medications/drugs, otherwise unspec.",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Diet pills/medications/drugs, otherwise unspec.",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Cocaine, coca, cocaine, coke, perico",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Cocaine, coca, cocaine, coke, perico",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Diuretics, water pills",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Diuretics, water pills",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Muscle relaxers",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Muscle relaxers",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Etizolam",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Etizolam",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Clonozolam",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Clonozolam",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Alprazolam",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Alprazolam",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Oxazepam",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Oxazepam",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Hydroxyzine",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Hydroxyzine",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Adderall",
+            "predicate": "hasMentionedTimes",
+            "object": "3"
+        },
+        {
+            "subject": "Adderall",
+            "predicate": "hasPercentage",
+            "object": "6.67%"
+        },
+        {
+            "subject": "Norco",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Norco",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Tizanidine, Zanaflex",
+            "predicate": "hasMentionedTimes",
+            "object": "3"
+        },
+        {
+            "subject": "Tizanidine, Zanaflex",
+            "predicate": "hasPercentage",
+            "object": "6.67%"
+        },
+        {
+            "subject": "Cymbalta, Duloxetine",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Cymbalta, Duloxetine",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Lyrica, Pregabalin",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Lyrica, Pregabalin",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Quetiapine, Seroquel",
+            "predicate": "hasMentionedTimes",
+            "object": "2"
+        },
+        {
+            "subject": "Quetiapine, Seroquel",
+            "predicate": "hasPercentage",
+            "object": "4.44%"
+        },
+        {
+            "subject": "Desyrel, Trazodone hydrochloride",
+            "predicate": "hasMentionedTimes",
+            "object": "4"
+        },
+        {
+            "subject": "Desyrel, Trazodone hydrochloride",
+            "predicate": "hasPercentage",
+            "object": "8.89%"
+        },
+        {
+            "subject": "Prozac, Fluoxetine",
+            "predicate": "hasMentionedTimes",
+            "object": "2"
+        },
+        {
+            "subject": "Prozac, Fluoxetine",
+            "predicate": "hasPercentage",
+            "object": "4.44%"
+        },
+        {
+            "subject": "Sertraline hydrochloride, Zoloft",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Sertraline hydrochloride, Zoloft",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        },
+        {
+            "subject": "Risperdal, Risperdol, Risperidone",
+            "predicate": "hasMentionedTimes",
+            "object": "1"
+        },
+        {
+            "subject": "Risperdal, Risperdol, Risperidone",
+            "predicate": "hasPercentage",
+            "object": "2.22%"
+        }
+    ]
+}

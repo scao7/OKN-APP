@@ -1,0 +1,44 @@
+{
+    "entities": [
+        {
+            "entity": "VictimRelation",
+            "description": "The relationship between the victim and the offender."
+        },
+        {
+            "entity": "Victim",
+            "description": "An individual who has been harmed or affected by an offense."
+        },
+        {
+            "entity": "Offender",
+            "description": "An individual who has committed an offense."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of cases without any statistical weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of total cases for each type of victim-offender relationship."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVictimRelation",
+            "source_entity": "Victim",
+            "target_entity": "VictimRelation",
+            "description": "Defines the relationship of the victim to the offender."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "VictimRelation",
+            "target_entity": "UnweightedFrequency",
+            "description": "Shows the unweighted count of cases for each victim-offender relationship."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "VictimRelation",
+            "target_entity": "Percentage",
+            "description": "Shows the percentage of total cases for each victim-offender relationship."
+        }
+    ]
+}

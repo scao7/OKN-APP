@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "RecoveredMotorVehicles",
+            "description": "The number of recovered motor vehicles in a specified period."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame when data on recovered motor vehicles was collected."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency counts for each category of recovered motor vehicles."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Cases with missing data on the number of recovered motor vehicles."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the period of data collection on recovered motor vehicles."
+        },
+        {
+            "relationship": "reportsUnweightedFrequency",
+            "source_entity": "RecoveredMotorVehicles",
+            "target_entity": "UnweightedFrequency",
+            "description": "Denotes the unweighted frequency counts of recovered motor vehicles."
+        },
+        {
+            "relationship": "containsMissingData",
+            "source_entity": "RecoveredMotorVehicles",
+            "target_entity": "MissingData",
+            "description": "Indicates the presence of missing data in the recovered motor vehicles dataset."
+        }
+    ]
+}

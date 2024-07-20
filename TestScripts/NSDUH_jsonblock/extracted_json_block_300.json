@@ -1,0 +1,113 @@
+{
+    "entities": [
+        {
+            "entity": "DaysMisusedStimulants",
+            "description": "Number of days stimulants were misused in the past month."
+        },
+        {
+            "entity": "DaysMisusedSedatives",
+            "description": "Number of days sedatives were misused in the past month."
+        },
+        {
+            "entity": "DaysBingeAlcohol",
+            "description": "Number of days binge alcohol was used in the past month."
+        },
+        {
+            "entity": "CigarettesPerDay",
+            "description": "Number of cigarettes smoked per day among daily smokers."
+        },
+        {
+            "entity": "PackCigarettesPerDay",
+            "description": "Number of packs of cigarettes smoked per day among daily smokers."
+        },
+        {
+            "entity": "AvgCigarettesPerDay",
+            "description": "Average number of cigarettes smoked per day."
+        },
+        {
+            "entity": "TotalCigarettesPerMonth",
+            "description": "Total number of cigarettes smoked per user in past month."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDaysMisusedStimulants",
+            "source_entity": "Respondent",
+            "target_entity": "DaysMisusedStimulants",
+            "description": "Indicates the number of days the respondent misused stimulants in the past month."
+        },
+        {
+            "relationship": "hasDaysMisusedSedatives",
+            "source_entity": "Respondent",
+            "target_entity": "DaysMisusedSedatives",
+            "description": "Indicates the number of days the respondent misused sedatives in the past month."
+        },
+        {
+            "relationship": "hasDaysBingeAlcohol",
+            "source_entity": "Respondent",
+            "target_entity": "DaysBingeAlcohol",
+            "description": "Indicates the number of days the respondent engaged in binge drinking in the past month."
+        },
+        {
+            "relationship": "hasCigarettesPerDay",
+            "source_entity": "Respondent",
+            "target_entity": "CigarettesPerDay",
+            "description": "Indicates the number of cigarettes smoked per day among daily smokers."
+        },
+        {
+            "relationship": "hasPackCigarettesPerDay",
+            "source_entity": "Respondent",
+            "target_entity": "PackCigarettesPerDay",
+            "description": "Indicates the number of packs of cigarettes smoked per day among daily smokers."
+        },
+        {
+            "relationship": "hasAvgCigarettesPerDay",
+            "source_entity": "Respondent",
+            "target_entity": "AvgCigarettesPerDay",
+            "description": "Indicates the average number of cigarettes smoked per day."
+        },
+        {
+            "relationship": "hasTotalCigarettesPerMonth",
+            "source_entity": "Respondent",
+            "target_entity": "TotalCigarettesPerMonth",
+            "description": "Indicates the total number of cigarettes smoked per user in the past month."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "DaysMisusedStimulants",
+            "predicate": "rangesFrom",
+            "object": "1 to 2 days, 3 to 5 days, 6 to 19 days, 20 to 30 days"
+        },
+        {
+            "subject": "DaysMisusedSedatives",
+            "predicate": "rangesFrom",
+            "object": "1 to 2 days, 3 to 5 days, 6 to 19 days, 20 to 30 days"
+        },
+        {
+            "subject": "DaysBingeAlcohol",
+            "predicate": "rangesFrom",
+            "object": "1 to 2 days, 3 to 5 days, 6 to 19 days, 20 to 30 days"
+        },
+        {
+            "subject": "CigarettesPerDay",
+            "predicate": "rangesFrom",
+            "object": "1 to 2, 3 to 5, 6 to 15, 16 to 25, 26 or more"
+        },
+        {
+            "subject": "PackCigarettesPerDay",
+            "predicate": "rangesFrom",
+            "object": "none, half pack or less, one pack or more"
+        },
+        {
+            "subject": "AvgCigarettesPerDay",
+            "predicate": "rangesFrom",
+            "object": "less than 1, 1, 3.5 to 5, 10.5 to 15, 20.5 to 25, 35 or more"
+        },
+        {
+            "subject": "TotalCigarettesPerMonth",
+            "predicate": "rangesFrom",
+            "object": "5 to 1500"
+        }
+    ]
+}

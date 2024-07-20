@@ -1,0 +1,120 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseCategory",
+            "description": "Categories representing various survey responses."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Number of times each response was selected, not adjusted for any sampling weights."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage of respondents selecting each response category."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "Total number of survey responses."
+        },
+        {
+            "entity": "Mean",
+            "description": "Average value of the survey responses."
+        },
+        {
+            "entity": "Median",
+            "description": "Middle value of the survey responses when ordered."
+        },
+        {
+            "entity": "Mode",
+            "description": "Most frequently occurring value in the survey responses."
+        },
+        {
+            "entity": "Minimum",
+            "description": "Smallest value in the survey responses."
+        },
+        {
+            "entity": "Maximum",
+            "description": "Largest value in the survey responses."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "Measure of the amount of variation or dispersion in the survey responses."
+        },
+        {
+            "entity": "Location",
+            "description": "Position of the variable in the dataset; includes starting and ending column numbers, width, and decimal places."
+        },
+        {
+            "entity": "VariableType",
+            "description": "Data type of the variable in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates each response category to its unweighted frequency."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "ResponseCategory",
+            "target_entity": "Percentage",
+            "description": "Relates each response category to its percentage."
+        },
+        {
+            "relationship": "totalCasesInSurvey",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of cases in the survey."
+        },
+        {
+            "relationship": "hasMeanScore",
+            "source_entity": "Survey",
+            "target_entity": "Mean",
+            "description": "Indicates the average score from the survey responses."
+        },
+        {
+            "relationship": "hasMedianScore",
+            "source_entity": "Survey",
+            "target_entity": "Median",
+            "description": "Indicates the median score from the survey responses."
+        },
+        {
+            "relationship": "hasModeScore",
+            "source_entity": "Survey",
+            "target_entity": "Mode",
+            "description": "Indicates the modal score from the survey responses."
+        },
+        {
+            "relationship": "hasMinimumScore",
+            "source_entity": "Survey",
+            "target_entity": "Minimum",
+            "description": "Indicates the minimum score from the survey responses."
+        },
+        {
+            "relationship": "hasMaximumScore",
+            "source_entity": "Survey",
+            "target_entity": "Maximum",
+            "description": "Indicates the maximum score from the survey responses."
+        },
+        {
+            "relationship": "hasStandardDeviation",
+            "source_entity": "Survey",
+            "target_entity": "StandardDeviation",
+            "description": "Indicates the standard deviation from the survey responses."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "Variable",
+            "target_entity": "Location",
+            "description": "Indicates the position of the variable within the dataset."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "VariableType",
+            "description": "Indicates the data type of the variable in the dataset."
+        }
+    ]
+}

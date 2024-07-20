@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "InhalantUse",
+            "description": "The use of inhalants for kicks or to get high."
+        },
+        {
+            "entity": "InhalantTypes",
+            "description": "Specific types of inhalants such as air duster, amyl nitrite, etc."
+        },
+        {
+            "entity": "FirstInhalantUseAge",
+            "description": "Age when the respondent first used an inhalant for kicks or to get high."
+        },
+        {
+            "entity": "FirstInhalantUseYear",
+            "description": "Year when the respondent first used an inhalant for kicks or to get high."
+        },
+        {
+            "entity": "CurrentYearUse",
+            "description": "Description of inhalant use in the current year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usedForGettingHigh",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUse",
+            "description": "Indicates whether the respondent used inhalants to get high."
+        },
+        {
+            "relationship": "includesInhalantTypes",
+            "source_entity": "InhalantUse",
+            "target_entity": "InhalantTypes",
+            "description": "Lists the specific types of inhalants that were used."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "InhalantUse",
+            "target_entity": "FirstInhalantUseAge",
+            "description": "Defines the age at which inhalant use first occurred."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "InhalantUse",
+            "target_entity": "FirstInhalantUseYear",
+            "description": "Defines the year in which inhalant use first occurred."
+        },
+        {
+            "relationship": "includesCurrentYearUse",
+            "source_entity": "Survey",
+            "target_entity": "CurrentYearUse",
+            "description": "Refers to the inhalant use in the current year."
+        }
+    ]
+}

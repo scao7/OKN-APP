@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "UCROffenseCode",
+            "description": "The code associated with various criminal offenses as classified by the Uniform Crime Reporting (UCR) program."
+        },
+        {
+            "entity": "OffenseName",
+            "description": "The name or description of the criminal offense."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency count of the specified offense."
+        },
+        {
+            "entity": "OffensePercentage",
+            "description": "The percentage representation of the specified offense based on frequency."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffenseCode",
+            "source_entity": "CriminalOffense",
+            "target_entity": "UCROffenseCode",
+            "description": "Associates a criminal offense with its corresponding UCR offense code."
+        },
+        {
+            "relationship": "hasOffenseName",
+            "source_entity": "UCROffenseCode",
+            "target_entity": "OffenseName",
+            "description": "Relates the UCR offense code to its descriptive offense name."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "CriminalOffense",
+            "target_entity": "UnweightedFrequency",
+            "description": "Specifies the frequency of the criminal offense as observed in the survey."
+        },
+        {
+            "relationship": "hasOffensePercentage",
+            "source_entity": "CriminalOffense",
+            "target_entity": "OffensePercentage",
+            "description": "Indicates the percentage of the criminal offense."
+        }
+    ]
+}

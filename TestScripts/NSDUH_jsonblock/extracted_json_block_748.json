@@ -1,0 +1,27 @@
+[
+    {
+        "subject": "SUDAAN DESCRIPT Procedure",
+        "predicate": "uses",
+        "object": "BY VESTR_C VEREP"
+    },
+    {
+        "subject": "SUDAAN DESCRIPT Procedure",
+        "predicate": "uses",
+        "object": "ANALWT2_C"
+    },
+    {
+        "subject": "Stata COMMANDS",
+        "predicate": "uses",
+        "object": "VESR_C VEREP"
+    },
+    {
+        "subject": "Stata COMMANDS",
+        "predicate": "uses",
+        "object": "analwt2_c"
+    },
+    {
+        "subject": "Survey Data",
+        "predicate": "categorized by",
+        "object": "Gender"
+    }
+]

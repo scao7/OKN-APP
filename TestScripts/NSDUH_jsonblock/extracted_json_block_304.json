@@ -1,0 +1,110 @@
+{
+    "entities": [
+        {
+            "entity": "RECodedDrugUse",
+            "description": "Recorded use of drugs including inhalants, methamphetamine, pain relievers, tranquilizers, and stimulants."
+        },
+        {
+            "entity": "InhalantUseBefore18",
+            "description": "First use of inhalants prior to age 18."
+        },
+        {
+            "entity": "InhalantUseBefore21",
+            "description": "First use of inhalants prior to age 21."
+        },
+        {
+            "entity": "MethamphetamineUseBefore18",
+            "description": "First use of methamphetamine prior to age 18."
+        },
+        {
+            "entity": "MethamphetamineUseBefore21",
+            "description": "First use of methamphetamine prior to age 21."
+        },
+        {
+            "entity": "PainRelieverMisuseBefore18",
+            "description": "First misuse of pain relievers prior to age 18."
+        },
+        {
+            "entity": "PainRelieverMisuseBefore21",
+            "description": "First misuse of pain relievers prior to age 21."
+        },
+        {
+            "entity": "TranquilizerMisuseBefore18",
+            "description": "First misuse of tranquilizers prior to age 18."
+        },
+        {
+            "entity": "TranquilizerMisuseBefore21",
+            "description": "First misuse of tranquilizers prior to age 21."
+        },
+        {
+            "entity": "StimulantMisuseBefore18",
+            "description": "First misuse of stimulants prior to age 18."
+        },
+        {
+            "entity": "StimulantMisuseBefore21",
+            "description": "First misuse of stimulants prior to age 21."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "reportsInhalantUse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "InhalantUseBefore18",
+            "description": "Reports first use of inhalants prior to age 18."
+        },
+        {
+            "relationship": "reportsInhalantUse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "InhalantUseBefore21",
+            "description": "Reports first use of inhalants prior to age 21."
+        },
+        {
+            "relationship": "reportsMethamphetamineUse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "MethamphetamineUseBefore18",
+            "description": "Reports first use of methamphetamine prior to age 18."
+        },
+        {
+            "relationship": "reportsMethamphetamineUse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "MethamphetamineUseBefore21",
+            "description": "Reports first use of methamphetamine prior to age 21."
+        },
+        {
+            "relationship": "reportsPainRelieverMisuse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "PainRelieverMisuseBefore18",
+            "description": "Reports first misuse of pain relievers prior to age 18."
+        },
+        {
+            "relationship": "reportsPainRelieverMisuse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "PainRelieverMisuseBefore21",
+            "description": "Reports first misuse of pain relievers prior to age 21."
+        },
+        {
+            "relationship": "reportsTranquilizerMisuse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "TranquilizerMisuseBefore18",
+            "description": "Reports first misuse of tranquilizers prior to age 18."
+        },
+        {
+            "relationship": "reportsTranquilizerMisuse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "TranquilizerMisuseBefore21",
+            "description": "Reports first misuse of tranquilizers prior to age 21."
+        },
+        {
+            "relationship": "reportsStimulantMisuse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "StimulantMisuseBefore18",
+            "description": "Reports first misuse of stimulants prior to age 18."
+        },
+        {
+            "relationship": "reportsStimulantMisuse",
+            "source_entity": "RECodedDrugUse",
+            "target_entity": "StimulantMisuseBefore21",
+            "description": "Reports first misuse of stimulants prior to age 21."
+        }
+    ]
+}

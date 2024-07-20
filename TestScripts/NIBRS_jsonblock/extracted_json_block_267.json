@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "InjuryType",
+            "description": "The type of injury sustained, such as minor injury, broken bones, or other major injuries."
+        },
+        {
+            "entity": "None",
+            "description": "No injury reported."
+        },
+        {
+            "entity": "ApparentMinorInjury",
+            "description": "An apparent minor injury sustained by an individual."
+        },
+        {
+            "entity": "ApparentBrokenBones",
+            "description": "An apparent broken bone sustained by an individual."
+        },
+        {
+            "entity": "OtherMajorInjury",
+            "description": "An unspecified major injury other than broken bones."
+        },
+        {
+            "entity": "PossibleInternalInjury",
+            "description": "A potential internal injury that may have been sustained."
+        },
+        {
+            "entity": "LossOfTeeth",
+            "description": "The loss of teeth sustained as an injury."
+        },
+        {
+            "entity": "SevereLaceration",
+            "description": "A severe cut or wound."
+        },
+        {
+            "entity": "Unconsciousness",
+            "description": "A state of being unconscious due to injury."
+        },
+        {
+            "entity": "Respondent",
+            "description": "A person who is providing responses to the survey."
+        },
+        {
+            "entity": "Survey",
+            "description": "A data collection method used to gather information from respondents."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time span within which the survey responses are collected."
+        },
+        {
+            "entity": "SchoolAbsence",
+            "description": "Absence from school by a respondent."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInjuryType",
+            "source_entity": "Respondent",
+            "target_entity": "InjuryType",
+            "description": "The type of injury sustained by the respondent."
+        },
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 30 days."
+        }
+    ]
+}

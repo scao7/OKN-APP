@@ -1,0 +1,126 @@
+{
+    "entities": [
+        {
+            "entity": "OperatingPromotingAssistingGambling",
+            "description": "The act of operating, promoting, or assisting gambling activities."
+        },
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Violations related to gambling equipment."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Tampering with sports events."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "The act of engaging in or providing services for prostitution."
+        },
+        {
+            "entity": "AssistingPromotingProstitution",
+            "description": "The act of assisting or promoting prostitution."
+        },
+        {
+            "entity": "PurchasingProstitution",
+            "description": "The act of purchasing services for prostitution."
+        },
+        {
+            "entity": "Bribery",
+            "description": "The act of offering or receiving bribes."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Violations related to weapon laws."
+        },
+        {
+            "entity": "HumanTraffickingCommercialSexActs",
+            "description": "Involvement in human trafficking for commercial sex acts."
+        },
+        {
+            "entity": "MurderNonnegligentManslaughter",
+            "description": "The act of murder or nonnegligent manslaughter."
+        },
+        {
+            "entity": "NegligentManslaughter",
+            "description": "The act of negligent manslaughter."
+        },
+        {
+            "entity": "JustifiableHomicide",
+            "description": "The act of justifiable homicide."
+        },
+        {
+            "entity": "KidnapingAbduction",
+            "description": "The act of kidnapping or abduction."
+        },
+        {
+            "entity": "Rape",
+            "description": "The act of rape."
+        },
+        {
+            "entity": "Sodomy",
+            "description": "The act of sodomy."
+        },
+        {
+            "entity": "SexualAssaultWithAnObject",
+            "description": "Sexual assault involving an object."
+        },
+        {
+            "entity": "FondlingIndecentLibertiesChildMolesting",
+            "description": "Fondling or taking indecent liberties, or molesting a child."
+        },
+        {
+            "entity": "Robbery",
+            "description": "The act of robbery."
+        },
+        {
+            "entity": "AggravatedAssault",
+            "description": "The act of aggravated assault."
+        },
+        {
+            "entity": "SimpleAssault",
+            "description": "The act of simple assault."
+        },
+        {
+            "entity": "Intimidation",
+            "description": "The act of intimidation."
+        },
+        {
+            "entity": "Arson",
+            "description": "The act of arson."
+        },
+        {
+            "entity": "ExtortionBlackmail",
+            "description": "The act of extortion or blackmail."
+        },
+        {
+            "entity": "BurglaryBreakingEntering",
+            "description": "The act of burglary, breaking, or entering."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "involvesCrimeType",
+            "source_entity": "Survey",
+            "target_entity": "Crime",
+            "description": "Indicates that the survey involves different types of crime."
+        },
+        {
+            "relationship": "hasDescription",
+            "source_entity": "Crime",
+            "target_entity": "CrimeTypeDescription",
+            "description": "Defines the description for each type of crime."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "Crime",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency of each type of crime."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Crime",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage of each type of crime."
+        }
+    ]
+}

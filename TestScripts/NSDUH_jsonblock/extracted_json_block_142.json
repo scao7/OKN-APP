@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "PaidForMarijuana",
+            "description": "Indicates whether the respondent paid for or bought marijuana in the past 12 months."
+        },
+        {
+            "entity": "TradedForMarijuana",
+            "description": "Indicates whether the respondent traded something for marijuana in the past 12 months."
+        },
+        {
+            "entity": "GotMarijuanaForFree",
+            "description": "Indicates whether the respondent got marijuana for free or shared someone else's marijuana in the past 12 months."
+        },
+        {
+            "entity": "GrewOwnMarijuana",
+            "description": "Indicates whether the respondent grew their own marijuana in the past 12 months."
+        },
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 12 months, including today's date."
+        },
+        {
+            "entity": "Frequency",
+            "description": "The frequency of each response option regarding marijuana acquisition."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 12 months."
+        },
+        {
+            "relationship": "hasPaidForMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "PaidForMarijuana",
+            "description": "Indicates whether the respondent paid for or bought marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasTradedForMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "TradedForMarijuana",
+            "description": "Indicates whether the respondent traded something for marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasGotMarijuanaForFree",
+            "source_entity": "Respondent",
+            "target_entity": "GotMarijuanaForFree",
+            "description": "Indicates whether the respondent got marijuana for free or shared someone else's marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasGrewOwnMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "GrewOwnMarijuana",
+            "description": "Indicates whether the respondent grew their own marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "Frequency",
+            "description": "Defines the frequency of each response option regarding marijuana acquisition in the survey."
+        }
+    ]
+}

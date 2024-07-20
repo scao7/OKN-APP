@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted number of occurrences for each category in the dataset."
+        },
+        {
+            "entity": "MeanValue",
+            "description": "The average value calculated from the valid cases in the dataset."
+        },
+        {
+            "entity": "MedianValue",
+            "description": "The median value calculated from the valid cases in the dataset."
+        },
+        {
+            "entity": "ModeValue",
+            "description": "The mode value or most frequently occurring value from the valid cases in the dataset."
+        },
+        {
+            "entity": "MinimumValue",
+            "description": "The minimum value recorded in the dataset."
+        },
+        {
+            "entity": "MaximumValue",
+            "description": "The maximum value recorded in the dataset."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The standard deviation value calculated from the valid cases in the dataset."
+        },
+        {
+            "entity": "ArrestTransactionNumber",
+            "description": "Arrest transaction number used to identify specific arrest incidents."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The number of missing data points in the dataset."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid cases used for calculations in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasValue",
+            "source_entity": "Dataset",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted number of occurrences for each category in the dataset."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "DatasetStatistics",
+            "target_entity": "MeanValue",
+            "description": "Provides the average value calculated from the valid cases."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "DatasetStatistics",
+            "target_entity": "MedianValue",
+            "description": "Provides the median value calculated from the valid cases."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "DatasetStatistics",
+            "target_entity": "ModeValue",
+            "description": "Provides the mode value calculated from the valid cases."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "DatasetStatistics",
+            "target_entity": "MinimumValue",
+            "description": "Provides the minimum value recorded in the dataset."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "DatasetStatistics",
+            "target_entity": "MaximumValue",
+            "description": "Provides the maximum value recorded in the dataset."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "DatasetStatistics",
+            "target_entity": "StandardDeviation",
+            "description": "Provides the standard deviation value calculated from the valid cases."
+        },
+        {
+            "relationship": "hasValue",
+            "source_entity": "Dataset",
+            "target_entity": "ArrestTransactionNumber",
+            "description": "Indicates the arrest transaction number used to identify specific arrest incidents."
+        },
+        {
+            "relationship": "hasValue",
+            "source_entity": "MissingDataInformation",
+            "target_entity": "MissingData",
+            "description": "Provides the number of missing data points in the dataset."
+        },
+        {
+            "relationship": "hasValue",
+            "source_entity": "DatasetStatistics",
+            "target_entity": "ValidCases",
+            "description": "Provides the number of valid cases used for calculations in the dataset."
+        }
+    ]
+}

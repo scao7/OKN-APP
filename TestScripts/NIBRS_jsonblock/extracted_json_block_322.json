@@ -1,0 +1,12 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyDataStats",
+            "description": "Statistics derived from survey data such as mean, median, mode, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "VictimOffenderRelationship",
+            "description": "The type of relationship between victim and offender in reported cases."
+        }
+    ]
+}

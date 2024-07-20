@@ -1,0 +1,156 @@
+{
+    "entities": [
+        {
+            "entity": "BuyingReceiving",
+            "description": "Activity involving the purchase or receipt of illegal goods."
+        },
+        {
+            "entity": "CultivatingManufacturingPublishing",
+            "description": "Activity involving the creation, production, or distribution of illegal goods or propaganda."
+        },
+        {
+            "entity": "DistributingSelling",
+            "description": "Activity involving the distribution or sale of illegal goods."
+        },
+        {
+            "entity": "ExploitingChildren",
+            "description": "Activity involving the abuse or exploitation of minors."
+        },
+        {
+            "entity": "OtherGang",
+            "description": "Involvement in gang activities not otherwise specified."
+        },
+        {
+            "entity": "JuvenileGang",
+            "description": "Involvement in gang activities specific to juveniles."
+        },
+        {
+            "entity": "NoneUnknownGangInvolvement",
+            "description": "No known involvement in gang activities."
+        },
+        {
+            "entity": "OperatingPromotingAssisting",
+            "description": "Activity involving the support or operation of illegal activities."
+        },
+        {
+            "entity": "PossessingConcealing",
+            "description": "Activity involving the possession or hiding of illegal goods."
+        },
+        {
+            "entity": "TransportingTransmittingImporting",
+            "description": "Activity involving the transportation, transmission, or importation of illegal goods."
+        },
+        {
+            "entity": "UsingConsuming",
+            "description": "Activity involving the use or consumption of illegal substances."
+        },
+        {
+            "entity": "IntentionalAbuseAndTorture",
+            "description": "Activity involving deliberate harm or torture."
+        },
+        {
+            "entity": "SimpleGrossNeglect",
+            "description": "Activity involving neglect, either simple or severe."
+        },
+        {
+            "entity": "OrganizedAbuse",
+            "description": "Coordinated activity involving systematic abuse."
+        },
+        {
+            "entity": "AnimalSexualAbuse",
+            "description": "Activity involving the sexual abuse of animals."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "BuyingReceiving",
+            "description": "Relation denoting a gang member's involvement in buying or receiving illegal goods."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "CultivatingManufacturingPublishing",
+            "description": "Relation denoting a gang member's involvement in the cultivation, manufacturing, or publishing of illegal items."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "DistributingSelling",
+            "description": "Relation denoting a gang member's involvement in distributing or selling illegal goods."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "ExploitingChildren",
+            "description": "Relation denoting a gang member's involvement in the exploitation of children."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "OtherGang",
+            "description": "Relation denoting a gang member's involvement in unspecified gang activities."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "JuvenileGang",
+            "description": "Relation denoting a gang member's involvement in juvenile-specific gang activities."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "NoneUnknownGangInvolvement",
+            "description": "Indicates no known involvement in gang activities by a gang member."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "OperatingPromotingAssisting",
+            "description": "Relation denoting a gang member's involvement in operating, promoting, or assisting illegal activities."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "PossessingConcealing",
+            "description": "Relation denoting a gang member's involvement in the possession or concealing of illegal goods."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "TransportingTransmittingImporting",
+            "description": "Relation denoting a gang member's involvement in transporting, transmitting, or importing illegal goods."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "UsingConsuming",
+            "description": "Relation denoting a gang member's involvement in using or consuming illegal substances."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "IntentionalAbuseAndTorture",
+            "description": "Relation denoting a gang member's involvement in intentional abuse and torture."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "SimpleGrossNeglect",
+            "description": "Relation denoting a gang member's involvement in simple or gross neglect."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "OrganizedAbuse",
+            "description": "Relation denoting a gang member's involvement in organized abuse."
+        },
+        {
+            "relationship": "involvesActivity",
+            "source_entity": "GangMember",
+            "target_entity": "AnimalSexualAbuse",
+            "description": "Relation denoting a gang member's involvement in animal sexual abuse."
+        }
+    ]
+}

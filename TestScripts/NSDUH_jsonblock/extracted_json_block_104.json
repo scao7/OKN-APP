@@ -1,0 +1,142 @@
+{
+    "entities": [
+        {
+            "entity": "FirstCigarUseMonth",
+            "description": "The month in which the respondent first smoked part or all of a cigar or cigarillo."
+        },
+        {
+            "entity": "TimeSinceLastSmokedCigar",
+            "description": "The duration of time since the respondent last smoked part or all of a cigar."
+        },
+        {
+            "entity": "DaysSmokedCigarInPast30Days",
+            "description": "Number of days the respondent smoked part or all of a cigar in the past 30 days."
+        },
+        {
+            "entity": "NeverUsedCigars",
+            "description": "Indicates that the respondent has never used cigars."
+        },
+        {
+            "entity": "Don'tKnowCigarUse",
+            "description": "Indicates that the respondent does not remember the details of their cigar use."
+        },
+        {
+            "entity": "RefusedCigarUse",
+            "description": "Indicates that the respondent refused to answer questions about their cigar use."
+        },
+        {
+            "entity": "BlankCigarUseAnswer",
+            "description": "Indicates that the respondent left the cigar use question blank."
+        },
+        {
+            "entity": "BadDataCigarUse",
+            "description": "Logically assigned bad data for cigar use information."
+        },
+        {
+            "entity": "LegitimateSkipCigarUse",
+            "description": "Logically assigned legitimate skip for cigar use information."
+        },
+        {
+            "entity": "ValidCigarUseResponse",
+            "description": "Valid responses provided by the respondent for cigar use questions."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFirstCigarUseMonth",
+            "source_entity": "Respondent",
+            "target_entity": "FirstCigarUseMonth",
+            "description": "Indicates the month when the respondent first smoked part or all of a cigar or cigarillo."
+        },
+        {
+            "relationship": "hasTimeSinceLastSmokedCigar",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastSmokedCigar",
+            "description": "Relates the respondent to the duration since they last smoked part or all of a cigar."
+        },
+        {
+            "relationship": "hasDaysSmokedCigarInPast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "DaysSmokedCigarInPast30Days",
+            "description": "Indicates the number of days the respondent smoked part or all of a cigar in the past 30 days."
+        },
+        {
+            "relationship": "isCategoryOfCigarUseResponse",
+            "source_entity": "ValidCigarUseResponse",
+            "target_entity": "NeverUsedCigars",
+            "description": "Categorizes 'Never used cigars' as a valid response."
+        },
+        {
+            "relationship": "isCategoryOfCigarUseResponse",
+            "source_entity": "ValidCigarUseResponse",
+            "target_entity": "Don'tKnowCigarUse",
+            "description": "Categorizes 'Don't know' as a valid response regarding cigar use."
+        },
+        {
+            "relationship": "isCategoryOfCigarUseResponse",
+            "source_entity": "ValidCigarUseResponse",
+            "target_entity": "RefusedCigarUse",
+            "description": "Categorizes 'Refused' as a valid response regarding cigar use."
+        },
+        {
+            "relationship": "isCategoryOfCigarUseResponse",
+            "source_entity": "ValidCigarUseResponse",
+            "target_entity": "BlankCigarUseAnswer",
+            "description": "Categorizes 'Blank' as a valid response regarding cigar use."
+        },
+        {
+            "relationship": "isCategoryOfCigarUseResponse",
+            "source_entity": "ValidCigarUseResponse",
+            "target_entity": "BadDataCigarUse",
+            "description": "Categorizes 'Bad data' as a valid response regarding cigar use."
+        },
+        {
+            "relationship": "isCategoryOfCigarUseResponse",
+            "source_entity": "ValidCigarUseResponse",
+            "target_entity": "LegitimateSkipCigarUse",
+            "description": "Categorizes 'Legitimate skip' as a valid response regarding cigar use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "CIGARFLMJ",
+            "predicate": "Len",
+            "object": "2"
+        },
+        {
+            "subject": "CIGARFMLJ",
+            "predicate": "MONTH OF FIRST CIGAR USE - RECODE",
+            "object": "Freq"
+        },
+        {
+            "subject": "CG32",
+            "predicate": "DATEFILL",
+            "object": "CigarsLast30Days"
+        },
+        {
+            "subject": "CIGAREC",
+            "predicate": "Len",
+            "object": "2"
+        },
+        {
+            "subject": "CIGARREC",
+            "predicate": "TIME SINCE LAST SMOKED CIGAR",
+            "object": "Freq"
+        },
+        {
+            "subject": "CG38",
+            "predicate": "DATEFILL",
+            "object": "DaysSmokedCigar"
+        },
+        {
+            "subject": "CGR30USE",
+            "predicate": "Len",
+            "object": "2"
+        },
+        {
+            "subject": "CGR30USE",
+            "predicate": "HOW MANY DAYS SMOKED CIGAR IN PAST 30 DAYS",
+            "object": "Freq"
+        }
+    ]
+}

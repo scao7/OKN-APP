@@ -1,0 +1,102 @@
+{
+    "entities": [
+        {
+            "entity": "MentalHealthTreatmentReceivement",
+            "description": "Receiving mental health treatment within a specified time."
+        },
+        {
+            "entity": "RC_UNMET_PMH_TRT_NEED_AFRAID_OF_BEING_FORCED_AGAINST_WILL",
+            "description": "Unmet need for mental health treatment because of fear of being forced against will."
+        },
+        {
+            "entity": "RC_UNMET_PMH_TRT_NEED_THOUGHT_TOLD_TO_TAKE_MEDS",
+            "description": "Unmet need for mental health treatment because of concern over being told to take medications."
+        },
+        {
+            "entity": "RC_UNMET_PMH_TRT_NEED_DIDN'T_THINK_TRT_WOULD_HELP",
+            "description": "Unmet need for mental health treatment due to belief that treatment would not help."
+        },
+        {
+            "entity": "RC_UNMET_PMH_TRT_NEED_NO_ONE_WOULD_CARE_IF_BETTER",
+            "description": "Unmet need for mental health treatment because of thinking that no one would care if they got better."
+        },
+        {
+            "entity": "NonSubstanceUseMentalHealthTreatment",
+            "description": "Received mental health treatment but not substance use treatment in the past year."
+        },
+        {
+            "entity": "SubstanceUseMentalHealthTreatment",
+            "description": "Received both substance use and mental health treatment in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "relatesToFear",
+            "source_entity": "MentalHealthTreatmentReceivement",
+            "target_entity": "RC_UNMET_PMH_TRT_NEED_AFRAID_OF_BEING_FORCED_AGAINST_WILL",
+            "description": "Relates the treatment receivement to the concern of being forced against will."
+        },
+        {
+            "relationship": "relatesToMedicationConcerns",
+            "source_entity": "MentalHealthTreatmentReceivement",
+            "target_entity": "RC_UNMET_PMH_TRT_NEED_THOUGHT_TOLD_TO_TAKE_MEDS",
+            "description": "Relates the treatment receivement to the concern over taking medications."
+        },
+        {
+            "relationship": "relatesToDoubtInEffectiveness",
+            "source_entity": "MentalHealthTreatmentReceivement",
+            "target_entity": "RC_UNMET_PMH_TRT_NEED_DIDN'T_THINK_TRT_WOULD_HELP",
+            "description": "Relates the treatment receivement to doubt in the effectiveness of treatment."
+        },
+        {
+            "relationship": "relatesToLackOfCare",
+            "source_entity": "MentalHealthTreatmentReceivement",
+            "target_entity": "RC_UNMET_PMH_TRT_NEED_NO_ONE_WOULD_CARE_IF_BETTER",
+            "description": "Relates the treatment receivement to the belief that no one would care if they got better."
+        },
+        {
+            "relationship": "includesNonSubstanceTreatment",
+            "source_entity": "MentalHealthTreatmentReceivement",
+            "target_entity": "NonSubstanceUseMentalHealthTreatment",
+            "description": "Includes individuals who received mental health treatment but not substance use treatment."
+        },
+        {
+            "relationship": "includesSubstanceTreatment",
+            "source_entity": "MentalHealthTreatmentReceivement",
+            "target_entity": "SubstanceUseMentalHealthTreatment",
+            "description": "Includes individuals who received both substance use and mental health treatment."
+        }
+    ],
+    "triples": [
+        {
+            "subject": "MentalHealthTreatmentReceivement",
+            "predicate": "concern",
+            "object": "RC_UNMET_PMH_TRT_NEED_AFRAID_OF_BEING_FORCED_AGAINST_WILL"
+        },
+        {
+            "subject": "MentalHealthTreatmentReceivement",
+            "predicate": "concern",
+            "object": "RC_UNMET_PMH_TRT_NEED_THOUGHT_TOLD_TO_TAKE_MEDS"
+        },
+        {
+            "subject": "MentalHealthTreatmentReceivement",
+            "predicate": "doubt",
+            "object": "RC_UNMET_PMH_TRT_NEED_DIDN'T_THINK_TRT_WOULD_HELP"
+        },
+        {
+            "subject": "MentalHealthTreatmentReceivement",
+            "predicate": "lackOfCare",
+            "object": "RC_UNMET_PMH_TRT_NEED_NO_ONE_WOULD_CARE_IF_BETTER"
+        },
+        {
+            "subject": "MentalHealthTreatmentReceivement",
+            "predicate": "includes",
+            "object": "NonSubstanceUseMentalHealthTreatment"
+        },
+        {
+            "subject": "MentalHealthTreatmentReceivement",
+            "predicate": "includes",
+            "object": "SubstanceUseMentalHealthTreatment"
+        }
+    ]
+}

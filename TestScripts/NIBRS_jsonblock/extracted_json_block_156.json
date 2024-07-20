@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "MeanValue",
+            "description": "The average value of the variable, which is 895.98."
+        },
+        {
+            "entity": "MinimumValue",
+            "description": "The minimum value of the variable, which is 0.00."
+        },
+        {
+            "entity": "MaximumValue",
+            "description": "The maximum value of the variable, which is 1000000000.00."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The standard deviation of the variable, which is 203581.93."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid cases, which is 300,438."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases, which is 11,207,634."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMeanValue",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MeanValue",
+            "description": "Provides the average value of the survey variable."
+        },
+        {
+            "relationship": "hasMinimumValue",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MinimumValue",
+            "description": "Provides the minimum value of the survey variable."
+        },
+        {
+            "relationship": "hasMaximumValue",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MaximumValue",
+            "description": "Provides the maximum value of the survey variable."
+        },
+        {
+            "relationship": "hasStandardDeviation",
+            "source_entity": "SurveyVariable",
+            "target_entity": "StandardDeviation",
+            "description": "Provides the standard deviation of the survey variable."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Survey",
+            "target_entity": "ValidCases",
+            "description": "Specifies the number of valid cases in the survey."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Survey",
+            "target_entity": "TotalCases",
+            "description": "Specifies the total number of cases in the survey."
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "entities": [
+        {
+            "entity": "HeroinUseDespiteProblems",
+            "description": "Continued use of heroin despite emotional or mental health problems in the past 12 months."
+        },
+        {
+            "entity": "ActivityInterferenceDueToHeroin",
+            "description": "Reduced participation in important activities due to heroin use in the past 12 months."
+        },
+        {
+            "entity": "SeriousProblemsFromHeroin",
+            "description": "Serious problems at work, school, or home caused by heroin use in the past 12 months."
+        },
+        {
+            "entity": "ImportantActivities",
+            "description": "Refers to social, special work or school events, hobbies, sports, religious services and events."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHeroinUseDespiteProblems",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinUseDespiteProblems",
+            "description": "Indicates the recent use of heroin despite emotional or mental health problems."
+        },
+        {
+            "relationship": "hasActivityInterferenceDueToHeroin",
+            "source_entity": "Respondent",
+            "target_entity": "ActivityInterferenceDueToHeroin",
+            "description": "Indicates less participation in important activities because of heroin use."
+        },
+        {
+            "relationship": "hasSeriousProblemsFromHeroin",
+            "source_entity": "Respondent",
+            "target_entity": "SeriousProblemsFromHeroin",
+            "description": "Identifies serious problems at work, school, or home due to heroin use."
+        },
+        {
+            "relationship": "hasProblemIn",
+            "source_entity": "ActivityInterferenceDueToHeroin",
+            "target_entity": "ImportantActivities",
+            "description": "Defines the activities affected by heroin use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "used heroin despite problems",
+            "object": "past 12 months"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "had less activities",
+            "object": "due to heroin use"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "had serious problems from heroin",
+            "object": "at work, school, or home"
+        }
+    ]
+}

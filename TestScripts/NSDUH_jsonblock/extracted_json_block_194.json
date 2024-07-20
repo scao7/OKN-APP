@@ -1,0 +1,128 @@
+{
+    "entities": [
+        {
+            "entity": "FirstUseYear",
+            "description": "The year when the respondent first used methamphetamine."
+        },
+        {
+            "entity": "FirstUseMonth",
+            "description": "The month in which the respondent first used methamphetamine."
+        },
+        {
+            "entity": "LastUsePeriod",
+            "description": "The period of time since the respondent last used methamphetamine."
+        },
+        {
+            "entity": "TotalUseDays",
+            "description": "The total number of days the respondent used methamphetamine in the past 12 months."
+        },
+        {
+            "entity": "TrimmingIndicator",
+            "description": "An indicator for trimming the frequency data related to methamphetamine use."
+        },
+        {
+            "entity": "TrimmedFrequency",
+            "description": "Trimmed methamphetamine use frequency if it was used less than 12 months ago."
+        },
+        {
+            "entity": "ResponseFrequency",
+            "description": "The frequency of the responses for a given question option."
+        },
+        {
+            "entity": "ResponsePercentage",
+            "description": "The percentage of the total responses for a given question option."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "firstUsedInMonth",
+            "source_entity": "Respondent",
+            "target_entity": "FirstUseMonth",
+            "description": "Indicates the month when the respondent first used methamphetamine."
+        },
+        {
+            "relationship": "firstUsedInYear",
+            "source_entity": "Respondent",
+            "target_entity": "FirstUseYear",
+            "description": "Indicates the year when the respondent first used methamphetamine."
+        },
+        {
+            "relationship": "lastUsedPeriod",
+            "source_entity": "Respondent",
+            "target_entity": "LastUsePeriod",
+            "description": "Indicates the period since the respondent last used methamphetamine."
+        },
+        {
+            "relationship": "totalUseDays",
+            "source_entity": "Respondent",
+            "target_entity": "TotalUseDays",
+            "description": "Indicates the total number of days the respondent used methamphetamine in the past 12 months."
+        },
+        {
+            "relationship": "hasTrimmingIndicator",
+            "source_entity": "FrequencyData",
+            "target_entity": "TrimmingIndicator",
+            "description": "Indicates the presence of a trimming indicator for the frequency data."
+        },
+        {
+            "relationship": "trimmedFrequency",
+            "source_entity": "FrequencyData",
+            "target_entity": "TrimmedFrequency",
+            "description": "Indicates the trimmed methamphetamine use frequency if used less than 12 months ago."
+        },
+        {
+            "relationship": "hasResponseFrequency",
+            "source_entity": "ResponseOption",
+            "target_entity": "ResponseFrequency",
+            "description": "Indicates the frequency of the responses for a given option."
+        },
+        {
+            "relationship": "hasResponsePercentage",
+            "source_entity": "ResponseOption",
+            "target_entity": "ResponsePercentage",
+            "description": "Indicates the percentage of the total responses for a given option."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "firstUsedInMonth",
+            "object": "FirstUseMonth"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "firstUsedInYear",
+            "object": "FirstUseYear"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "lastUsedPeriod",
+            "object": "LastUsePeriod"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "totalUseDays",
+            "object": "TotalUseDays"
+        },
+        {
+            "subject": "FrequencyData",
+            "predicate": "hasTrimmingIndicator",
+            "object": "TrimmingIndicator"
+        },
+        {
+            "subject": "FrequencyData",
+            "predicate": "trimmedFrequency",
+            "object": "TrimmedFrequency"
+        },
+        {
+            "subject": "ResponseOption",
+            "predicate": "hasResponseFrequency",
+            "object": "ResponseFrequency"
+        },
+        {
+            "subject": "ResponseOption",
+            "predicate": "hasResponsePercentage",
+            "object": "ResponsePercentage"
+        }
+    ]
+}

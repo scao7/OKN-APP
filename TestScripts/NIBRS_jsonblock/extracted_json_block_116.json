@@ -1,0 +1,304 @@
+{
+    "entities": [
+        {
+            "entity": "Anti-Discrimination",
+            "description": "A category describing various forms of discrimination and bias against individuals based on religion, race, gender, sexual orientation, or physical/mental disabilities."
+        },
+        {
+            "entity": "Anti-NativeHawaiian",
+            "description": "Discrimination specifically against Native Hawaiian or other Pacific Islanders."
+        },
+        {
+            "entity": "Anti-Jewish",
+            "description": "Discrimination specifically against Jewish individuals."
+        },
+        {
+            "entity": "Anti-Catholic",
+            "description": "Discrimination specifically against Catholic individuals."
+        },
+        {
+            "entity": "Anti-Protestant",
+            "description": "Discrimination specifically against Protestant individuals."
+        },
+        {
+            "entity": "Anti-Islamic",
+            "description": "Discrimination specifically against Muslim individuals."
+        },
+        {
+            "entity": "Anti-OtherReligion",
+            "description": "Discrimination against individuals based on other religions not specified."
+        },
+        {
+            "entity": "Anti-MultiReligiousGroup",
+            "description": "Discrimination specifically against a multi-religious group."
+        },
+        {
+            "entity": "Anti-Atheism",
+            "description": "Discrimination specifically against atheism or agnosticism."
+        },
+        {
+            "entity": "Anti-Mormon",
+            "description": "Discrimination specifically against Mormon individuals."
+        },
+        {
+            "entity": "Anti-JehovahsWitness",
+            "description": "Discrimination specifically against Jehovah's Witness individuals."
+        },
+        {
+            "entity": "Anti-Arab",
+            "description": "Discrimination specifically against Arab individuals."
+        },
+        {
+            "entity": "Anti-Hispanic",
+            "description": "Discrimination specifically against Hispanic or Latino individuals."
+        },
+        {
+            "entity": "Anti-NotHispanic",
+            "description": "Discrimination specifically against non-Hispanic or Latino individuals."
+        },
+        {
+            "entity": "Anti-Gay",
+            "description": "Discrimination specifically against gay individuals."
+        },
+        {
+            "entity": "Anti-Lesbian",
+            "description": "Discrimination specifically against lesbian individuals."
+        },
+        {
+            "entity": "Anti-LGBT",
+            "description": "Discrimination specifically against LGBT (Lesbian, Gay, Bisexual, or Transgender) individuals."
+        },
+        {
+            "entity": "Anti-Heterosexual",
+            "description": "Discrimination specifically against heterosexual individuals."
+        },
+        {
+            "entity": "Anti-Bisexual",
+            "description": "Discrimination specifically against bisexual individuals."
+        },
+        {
+            "entity": "Anti-PhysicalDisability",
+            "description": "Discrimination specifically against individuals with physical disabilities."
+        },
+        {
+            "entity": "Anti-MentalDisability",
+            "description": "Discrimination specifically against individuals with mental disabilities."
+        },
+        {
+            "entity": "Anti-Male",
+            "description": "Discrimination specifically against male individuals."
+        },
+        {
+            "entity": "Anti-Female",
+            "description": "Discrimination specifically against female individuals."
+        },
+        {
+            "entity": "Anti-Transgender",
+            "description": "Discrimination specifically against transgender individuals."
+        },
+        {
+            "entity": "Anti-GenderNonConforming",
+            "description": "Discrimination specifically against gender non-conforming individuals."
+        },
+        {
+            "entity": "Anti-EasternOrthodox",
+            "description": "Discrimination specifically against Eastern Orthodox individuals."
+        },
+        {
+            "entity": "Anti-OtherChristian",
+            "description": "Discrimination against individuals following other Christian denominations not specified."
+        },
+        {
+            "entity": "Anti-Buddhist",
+            "description": "Discrimination specifically against Buddhist individuals."
+        },
+        {
+            "entity": "Anti-Hindu",
+            "description": "Discrimination specifically against Hindu individuals."
+        },
+        {
+            "entity": "Anti-Sikh",
+            "description": "Discrimination specifically against Sikh individuals."
+        },
+        {
+            "entity": "Unknown",
+            "description": "Unspecified or unknown form of discrimination."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-NativeHawaiian",
+            "description": "Instances of discrimination against Native Hawaiian or other Pacific Islander individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Jewish",
+            "description": "Instances of discrimination against Jewish individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Catholic",
+            "description": "Instances of discrimination against Catholic individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Protestant",
+            "description": "Instances of discrimination against Protestant individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Islamic",
+            "description": "Instances of discrimination against Muslim individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-OtherReligion",
+            "description": "Instances of discrimination against individuals based on other religions not specified."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-MultiReligiousGroup",
+            "description": "Instances of discrimination against a multi-religious group."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Atheism",
+            "description": "Instances of discrimination against atheism or agnosticism."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Mormon",
+            "description": "Instances of discrimination against Mormon individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-JehovahsWitness",
+            "description": "Instances of discrimination against Jehovah's Witness individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Arab",
+            "description": "Instances of discrimination against Arab individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Hispanic",
+            "description": "Instances of discrimination against Hispanic or Latino individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-NotHispanic",
+            "description": "Instances of discrimination against non-Hispanic or Latino individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Gay",
+            "description": "Instances of discrimination against gay individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Lesbian",
+            "description": "Instances of discrimination against lesbian individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-LGBT",
+            "description": "Instances of discrimination against LGBT (Lesbian, Gay, Bisexual, or Transgender) individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Heterosexual",
+            "description": "Instances of discrimination against heterosexual individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Bisexual",
+            "description": "Instances of discrimination against bisexual individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-PhysicalDisability",
+            "description": "Instances of discrimination against individuals with physical disabilities."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-MentalDisability",
+            "description": "Instances of discrimination against individuals with mental disabilities."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Male",
+            "description": "Instances of discrimination against male individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Female",
+            "description": "Instances of discrimination against female individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Transgender",
+            "description": "Instances of discrimination against transgender individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-GenderNonConforming",
+            "description": "Instances of discrimination against gender non-conforming individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-EasternOrthodox",
+            "description": "Instances of discrimination against Eastern Orthodox individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-OtherChristian",
+            "description": "Instances of discrimination against individuals following other Christian denominations not specified."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Buddhist",
+            "description": "Instances of discrimination against Buddhist individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Hindu",
+            "description": "Instances of discrimination against Hindu individuals."
+        },
+        {
+            "relationship": "instancesOfDiscrimination",
+            "source_entity": "Anti-Discrimination",
+            "target_entity": "Anti-Sikh",
+            "description": "Instances of discrimination against Sikh individuals."
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyDate",
+            "description": "Specific date a survey was conducted, including month, day, and year."
+        },
+        {
+            "entity": "Label",
+            "description": "The category label description for a specific survey date."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of responses that fall into a certain category for a specific survey date."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of responses for a specific survey date."
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "Total number of valid survey responses."
+        },
+        {
+            "entity": "VariableType",
+            "description": "Type or format of survey variable."
+        },
+        {
+            "entity": "RECSBH",
+            "description": "Batch header records per ORI-incident number."
+        },
+        {
+            "entity": "RECSADM",
+            "description": "N administrative records per ORI-incident number."
+        },
+        {
+            "entity": "FrequencyDistribution",
+            "description": "Statistical measures for the distribution, including mean, median, mode, minimum, maximum, and standard deviation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLabel",
+            "source_entity": "SurveyDate",
+            "target_entity": "Label",
+            "description": "Relates the survey date to the category label description."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Label",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the number of responses for a specific category."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Label",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage representation for a specific category."
+        },
+        {
+            "relationship": "hasTotalResponses",
+            "source_entity": "Survey",
+            "target_entity": "TotalResponses",
+            "description": "Indicates the total number of valid survey responses."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Survey",
+            "target_entity": "VariableType",
+            "description": "Indicates the type or format of the survey variable."
+        },
+        {
+            "relationship": "includesBatchHeaderRecords",
+            "source_entity": "Survey",
+            "target_entity": "RECSBH",
+            "description": "Associates the survey with the batch header records per ORI-incident number."
+        },
+        {
+            "relationship": "includesAdminRecords",
+            "source_entity": "Survey",
+            "target_entity": "RECSADM",
+            "description": "Associates the survey with the administrative records per ORI-incident number."
+        },
+        {
+            "relationship": "hasFrequencyDistribution",
+            "source_entity": "SurveyData",
+            "target_entity": "FrequencyDistribution",
+            "description": "Describes the statistical measures for the data distribution."
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "entities": [
+        {
+            "entity": "ADWRGROW",
+            "description": "Respondent gained weight without trying because of growing."
+        },
+        {
+            "entity": "ADWRPREG",
+            "description": "Respondent gained weight without trying because of pregnancy."
+        },
+        {
+            "entity": "ADWRGNLL",
+            "description": "Amount of weight gained without trying."
+        },
+        {
+            "entity": "ADWRLOSE",
+            "description": "Respondent lost weight without trying."
+        },
+        {
+            "entity": "ADWRDIET",
+            "description": "Respondent lost weight without trying because of sickness or diet."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasWeightGainWithoutTrying",
+            "source_entity": "Respondent",
+            "target_entity": "ADWRGROW",
+            "description": "Indicates the respondent gained weight without trying because of growing."
+        },
+        {
+            "relationship": "hasWeightGainWithoutTrying",
+            "source_entity": "Respondent",
+            "target_entity": "ADWRPREG",
+            "description": "Indicates the respondent gained weight without trying because of pregnancy."
+        },
+        {
+            "relationship": "hasWeightGainAmount",
+            "source_entity": "Respondent",
+            "target_entity": "ADWRGNLL",
+            "description": "Indicates the amount of weight the respondent gained without trying."
+        },
+        {
+            "relationship": "hasWeightLossWithoutTrying",
+            "source_entity": "Respondent",
+            "target_entity": "ADWRLOSE",
+            "description": "Indicates the respondent lost weight without trying."
+        },
+        {
+            "relationship": "hasWeightLossDueToSickOrDiet",
+            "source_entity": "Respondent",
+            "target_entity": "ADWRDIET",
+            "description": "Indicates the respondent lost weight without trying because of being sick or on a diet."
+        }
+    ],
+    "triplets": []
+}

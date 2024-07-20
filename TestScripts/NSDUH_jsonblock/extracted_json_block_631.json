@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "MentalHealthImpactDueToCovid19",
+            "description": "How COVID-19 negatively affected mental health."
+        },
+        {
+            "entity": "AlcoholUseDueToCovid19",
+            "description": "How COVID-19 affected the amount of alcohol consumption."
+        },
+        {
+            "entity": "DrugUseDueToCovid19",
+            "description": "How COVID-19 affected drug use."
+        },
+        {
+            "entity": "FinancialWorriesDueToCovid19",
+            "description": "How often serious financial worries occurred due to COVID-19."
+        },
+        {
+            "entity": "TelehealthMentalHealthApptsDueToCovid19",
+            "description": "Mental health appointments moved to telehealth due to COVID-19."
+        },
+        {
+            "entity": "DelayMentalHealthApptsDueToCovid19",
+            "description": "Delays or cancellations in mental health appointments due to COVID-19."
+        },
+        {
+            "entity": "DelayMentalHealthPrescriptionsDueToCovid19",
+            "description": "Delays in getting mental health prescriptions due to COVID-19."
+        },
+        {
+            "entity": "ImpactToHealthDueToLackOfMentalHealthCare",
+            "description": "Lack of mental health care caused impact to health due to COVID-19."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMentalHealthImpactDueToCovid19",
+            "source_entity": "Individual",
+            "target_entity": "MentalHealthImpactDueToCovid19",
+            "description": "Indicates how an individual's mental health was negatively affected by COVID-19."
+        },
+        {
+            "relationship": "hasAlcoholUseDueToCovid19",
+            "source_entity": "Individual",
+            "target_entity": "AlcoholUseDueToCovid19",
+            "description": "Indicates how an individual's alcohol consumption was affected by COVID-19."
+        },
+        {
+            "relationship": "hasDrugUseDueToCovid19",
+            "source_entity": "Individual",
+            "target_entity": "DrugUseDueToCovid19",
+            "description": "Indicates how an individual's drug use was affected by COVID-19."
+        },
+        {
+            "relationship": "hasFinancialWorriesDueToCovid19",
+            "source_entity": "Individual",
+            "target_entity": "FinancialWorriesDueToCovid19",
+            "description": "Indicates the frequency of financial worries due to COVID-19."
+        },
+        {
+            "relationship": "hasTelehealthMentalHealthApptsDueToCovid19",
+            "source_entity": "Individual",
+            "target_entity": "TelehealthMentalHealthApptsDueToCovid19",
+            "description": "Indicates if an individual's mental health appointments were moved to telehealth due to COVID-19."
+        },
+        {
+            "relationship": "hasDelayMentalHealthApptsDueToCovid19",
+            "source_entity": "Individual",
+            "target_entity": "DelayMentalHealthApptsDueToCovid19",
+            "description": "Indicates if an individual's mental health appointments were delayed or canceled due to COVID-19."
+        },
+        {
+            "relationship": "hasDelayMentalHealthPrescriptionsDueToCovid19",
+            "source_entity": "Individual",
+            "target_entity": "DelayMentalHealthPrescriptionsDueToCovid19",
+            "description": "Indicates if an individual experienced delays in getting mental health prescriptions due to COVID-19."
+        },
+        {
+            "relationship": "hasImpactToHealthDueToLackOfMentalHealthCare",
+            "source_entity": "Individual",
+            "target_entity": "ImpactToHealthDueToLackOfMentalHealthCare",
+            "description": "Indicates if lack of mental health care caused health impacts to an individual due to COVID-19."
+        }
+    ]
+}

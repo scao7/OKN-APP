@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "State",
+            "description": "A state within the United States where the survey data was collected."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of responses from the state, not adjusted for weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of the total responses that come from the state."
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "The total number of valid responses recorded in the survey."
+        },
+        {
+            "entity": "ResponseRange",
+            "description": "The minimum and maximum range of response values."
+        },
+        {
+            "entity": "Location",
+            "description": "The location in the dataset where this particular set of responses can be found."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of variable (e.g., numeric) for the responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "State",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted count of survey responses from the state."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "State",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage of total survey responses that come from the state."
+        },
+        {
+            "relationship": "formsPartOf",
+            "source_entity": "UnweightedFrequency",
+            "target_entity": "TotalResponses",
+            "description": "Indicates that the unweighted frequency contributes to the total number of responses."
+        },
+        {
+            "relationship": "formsPartOf",
+            "source_entity": "Percentage",
+            "target_entity": "TotalResponses",
+            "description": "Indicates that the percentage contributes to the total number of responses."
+        },
+        {
+            "relationship": "hasResponseRange",
+            "source_entity": "Survey",
+            "target_entity": "ResponseRange",
+            "description": "Defines the range of responses (minimum to maximum) recorded in the survey."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "Dataset",
+            "target_entity": "Location",
+            "description": "Indicates where in the dataset the responses can be found."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "ResponseValue",
+            "target_entity": "VariableType",
+            "description": "Indicates the type of variable used for the response values."
+        }
+    ]
+}

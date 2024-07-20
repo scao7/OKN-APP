@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "Methamphetamine",
+            "description": "A stimulant that comes in crystal or powder forms and can be smoked, snorted, swallowed, or injected."
+        },
+        {
+            "entity": "METHAMEVR",
+            "description": "Variable representing whether the respondent has ever used methamphetamine."
+        },
+        {
+            "entity": "METHAMAGE",
+            "description": "Variable representing the age at which the respondent first used methamphetamine."
+        },
+        {
+            "entity": "METHAMYEAR",
+            "description": "Variable representing the year the respondent first used methamphetamine."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEverUsedMethamphetamine",
+            "source_entity": "Respondent",
+            "target_entity": "METHAMEVR",
+            "description": "Indicates whether the respondent has ever used methamphetamine."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "Respondent",
+            "target_entity": "METHAMAGE",
+            "description": "Indicates the age at which the respondent first used methamphetamine."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "Respondent",
+            "target_entity": "METHAMYEAR",
+            "description": "Indicates the year in which the respondent first used methamphetamine."
+        }
+    ]
+}

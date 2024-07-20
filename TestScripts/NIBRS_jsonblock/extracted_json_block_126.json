@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "DateRecovered",
+            "description": "The specific date when the data was recovered."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of occurrences without applying any weights."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of the unweighted frequency."
+        },
+        {
+            "entity": "MissingValuesRange",
+            "description": "Range of values indicating missing data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasDateRecovered",
+            "source_entity": "SurveyResponse",
+            "target_entity": "DateRecovered",
+            "description": "Associates each survey response with the date it was recovered."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyData",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the survey data to its unweighted frequency count."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyData",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage representation of the unweighted frequency in the survey data."
+        },
+        {
+            "relationship": "hasMissingValuesRange",
+            "source_entity": "SurveyData",
+            "target_entity": "MissingValuesRange",
+            "description": "Specifies the range of missing values in the survey data."
+        }
+    ]
+}

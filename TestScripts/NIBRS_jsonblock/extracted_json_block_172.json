@@ -1,0 +1,62 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseCategory",
+            "description": "Labels of the possible responses for the survey item."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of responses from the total sample without weighting adjustments."
+        },
+        {
+            "entity": "LabelDescription",
+            "description": "Short description for each label used in the response category."
+        },
+        {
+            "entity": "TotalResponses",
+            "description": "The total number of responses received for the survey item."
+        },
+        {
+            "entity": "SummaryStatistics",
+            "description": "Statistical summary including mean, minimum, maximum, and standard deviation for the numeric variable."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasResponseCategory",
+            "source_entity": "SurveyItem",
+            "target_entity": "ResponseCategory",
+            "description": "Associates the survey item with its possible response categories."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseCategory",
+            "target_entity": "UnweightedFrequency",
+            "description": "Associates each response category with the unweighted frequency count."
+        },
+        {
+            "relationship": "hasLabelDescription",
+            "source_entity": "ResponseCategory",
+            "target_entity": "LabelDescription",
+            "description": "Provides a description for each response label."
+        },
+        {
+            "relationship": "hasTotalResponses",
+            "source_entity": "SurveyItem",
+            "target_entity": "TotalResponses",
+            "description": "Defines the total number of responses received for the item."
+        },
+        {
+            "relationship": "hasSummaryStatistics",
+            "source_entity": "SurveyItem",
+            "target_entity": "SummaryStatistics",
+            "description": "Associates the survey item with its summary statistics."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "SummaryStatistics",
+            "target_entity": "StatisticsDetail",
+            "description": "Lists detailed statistical values such as mean, minimum, maximum, and standard deviation."
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "relationships": [
+        {
+            "relationship": "hasSurveyPeriod",
+            "source_entity": "Survey",
+            "target_entity": "SurveyPeriod",
+            "description": "Relates the survey to the time period of the past 30 days."
+        },
+        {
+            "relationship": "hasSickOrInjuredDays",
+            "source_entity": "Respondent",
+            "target_entity": "SickOrInjuredDays",
+            "description": "Indicates the number of days the respondent missed school due to sickness or injury."
+        },
+        {
+            "relationship": "hasAbsenceReason",
+            "source_entity": "SchoolAbsence",
+            "target_entity": "SchoolAbsenceReason",
+            "description": "Defines the reason for the school absence, such as being sick or injured."
+        },
+        {
+            "relationship": "hasFamilyCareAbsence",
+            "source_entity": "Respondent",
+            "target_entity": "FamilyCareAbsence",
+            "description": "Indicates the number of days the respondent missed school due to caring for a sick child or family member."
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Incident",
+            "target_entity": "BiasMotivation",
+            "description": "Defines the bias motivation behind a reported incident."
+        }
+    ]
+}

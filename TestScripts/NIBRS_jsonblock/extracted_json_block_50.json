@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "ActivityIndicator",
+            "description": "An indicator related to agency activities, such as Blk, GrpAB, Window."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of the occurrence of a specific activity indicator."
+        },
+        {
+            "entity": "Month",
+            "description": "The month during which the agency activity indicator was measured, such as November or December."
+        },
+        {
+            "entity": "CasesTotal",
+            "description": "Total number of cases used for measuring the activity indicators."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ActivityIndicator",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates activity indicators to their respective unweighted frequencies."
+        },
+        {
+            "relationship": "hasActivityIndicator",
+            "source_entity": "Month",
+            "target_entity": "ActivityIndicator",
+            "description": "Associates a month with its respective agency activity indicators."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Month",
+            "target_entity": "CasesTotal",
+            "description": "Relates a month to the total number of cases for its activity indicators."
+        }
+    ]
+}

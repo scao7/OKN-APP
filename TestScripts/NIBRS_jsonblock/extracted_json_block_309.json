@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Numeric values indicating frequency counts without weighting applied."
+        },
+        {
+            "entity": "CasesValid",
+            "description": "The number of valid cases out of total cases."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The data points that are missing or not reported in the dataset."
+        },
+        {
+            "entity": "StatisticData",
+            "description": "Summary statistics including mean, median, mode, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "RangeOfValues",
+            "description": "The range of missing values represented by specific numeric codes."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of variable, in this case, numeric."
+        },
+        {
+            "entity": "VariableLocation",
+            "description": "The location information indicating width and decimal precision of the variable."
+        },
+        {
+            "entity": "OffenderNumber",
+            "description": "Numeric identifier for offenders, with specific values indicating unknown offenders or missing data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResult",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the unweighted frequency for the survey result."
+        },
+        {
+            "relationship": "hasCasesValid",
+            "source_entity": "SurveyResult",
+            "target_entity": "CasesValid",
+            "description": "Indicates the number of valid cases from the survey result."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "SurveyResult",
+            "target_entity": "MissingData",
+            "description": "Indicates the count of missing data from the survey result."
+        },
+        {
+            "relationship": "hasStatisticData",
+            "source_entity": "SurveySummary",
+            "target_entity": "StatisticData",
+            "description": "Summarizes the statistical data for valid cases in the survey."
+        },
+        {
+            "relationship": "hasRangeOfValues",
+            "source_entity": "Variable",
+            "target_entity": "RangeOfValues",
+            "description": "Indicates the range of valid and missing values for a variable."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "VariableType",
+            "description": "Specifies the type of the variable, such as numeric."
+        },
+        {
+            "relationship": "hasVariableLocation",
+            "source_entity": "Variable",
+            "target_entity": "VariableLocation",
+            "description": "Specifies the location details, such as width and decimal precision, for the variable."
+        },
+        {
+            "relationship": "hasOffenderNumber",
+            "source_entity": "Offender",
+            "target_entity": "OffenderNumber",
+            "description": "Provides the offender number with specific values indicating unknown or missing data."
+        }
+    ]
+}

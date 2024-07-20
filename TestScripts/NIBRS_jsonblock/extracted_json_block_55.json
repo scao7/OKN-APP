@@ -1,0 +1,136 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Frequency of the unweighted cases."
+        },
+        {
+            "entity": "Percentage",
+            "description": "Percentage representation of the cases."
+        },
+        {
+            "entity": "Mean",
+            "description": "The mean value of the dataset."
+        },
+        {
+            "entity": "Median",
+            "description": "The median value of the dataset."
+        },
+        {
+            "entity": "Mode",
+            "description": "The mode value of the dataset."
+        },
+        {
+            "entity": "MinimumValue",
+            "description": "The minimum value observed in the dataset."
+        },
+        {
+            "entity": "MaximumValue",
+            "description": "The maximum value observed in the dataset."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The standard deviation of the values in the dataset."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid cases considered for the analysis."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases in the dataset."
+        },
+        {
+            "entity": "FIPSCounty",
+            "description": "Federal Information Processing Standards (FIPS) code for the county."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Information about the missing data in the dataset."
+        },
+        {
+            "entity": "NumericVariableType",
+            "description": "Type of the variable which is numeric."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Dataset",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the frequency of unweighted cases in the dataset."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Dataset",
+            "target_entity": "Percentage",
+            "description": "Represents the percentage value of cases in the dataset."
+        },
+        {
+            "relationship": "hasStatisticalMeasure",
+            "source_entity": "Dataset",
+            "target_entity": "Mean",
+            "description": "Represents the mean value of the dataset."
+        },
+        {
+            "relationship": "hasStatisticalMeasure",
+            "source_entity": "Dataset",
+            "target_entity": "Median",
+            "description": "Represents the median value of the dataset."
+        },
+        {
+            "relationship": "hasStatisticalMeasure",
+            "source_entity": "Dataset",
+            "target_entity": "Mode",
+            "description": "Represents the mode value of the dataset."
+        },
+        {
+            "relationship": "hasStatisticalMeasure",
+            "source_entity": "Dataset",
+            "target_entity": "MinimumValue",
+            "description": "Represents the minimum value observed in the dataset."
+        },
+        {
+            "relationship": "hasStatisticalMeasure",
+            "source_entity": "Dataset",
+            "target_entity": "MaximumValue",
+            "description": "Represents the maximum value observed in the dataset."
+        },
+        {
+            "relationship": "hasStatisticalMeasure",
+            "source_entity": "Dataset",
+            "target_entity": "StandardDeviation",
+            "description": "Represents the standard deviation of the dataset."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Dataset",
+            "target_entity": "ValidCases",
+            "description": "Indicates the number of valid cases in the dataset."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Dataset",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of cases in the dataset."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Dataset",
+            "target_entity": "MissingData",
+            "description": "Indicates information about the missing data in the dataset."
+        },
+        {
+            "relationship": "hasFIPSCounty",
+            "source_entity": "Dataset",
+            "target_entity": "FIPSCounty",
+            "description": "Represents the FIPS county code for the dataset."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Variable",
+            "target_entity": "NumericVariableType",
+            "description": "Indicates that the variable type is numeric."
+        }
+    ]
+}

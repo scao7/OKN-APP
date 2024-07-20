@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "VomitingNauseous",
+            "description": "Experience of vomiting or nausea as a symptom of heroin withdrawal in the past 12 months."
+        },
+        {
+            "entity": "MuscleCrampsAches",
+            "description": "Experience of muscle cramps or aches as a symptom of heroin withdrawal in the past 12 months."
+        },
+        {
+            "entity": "TearyEyesRunnyNose",
+            "description": "Experience of teary eyes or runny nose as a symptom of heroin withdrawal in the past 12 months."
+        },
+        {
+            "entity": "SweatyLargePupilsHairStanding",
+            "description": "Feeling sweaty, having enlarged pupils, or having hair standing up as a symptom of heroin withdrawal in the past 12 months."
+        },
+        {
+            "entity": "Diarrhea",
+            "description": "Experience of diarrhea as a symptom of heroin withdrawal in the past 12 months."
+        },
+        {
+            "entity": "NeverUsedHeroin",
+            "description": "Indicates that the respondent has never used heroin."
+        },
+        {
+            "entity": "HeroinUseInPast12Months",
+            "description": "Indicates whether the respondent used heroin in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "VomitingNauseous",
+            "description": "Indicates that the respondent experienced vomiting or nausea as a symptom of heroin withdrawal."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "MuscleCrampsAches",
+            "description": "Indicates that the respondent experienced muscle cramps or aches as a symptom of heroin withdrawal."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "TearyEyesRunnyNose",
+            "description": "Indicates that the respondent experienced teary eyes or runny nose as a symptom of heroin withdrawal."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "SweatyLargePupilsHairStanding",
+            "description": "Indicates that the respondent experienced feeling sweaty, having enlarged pupils, or having hair standing up as a symptom of heroin withdrawal."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "Respondent",
+            "target_entity": "Diarrhea",
+            "description": "Indicates that the respondent experienced diarrhea as a symptom of heroin withdrawal."
+        },
+        {
+            "relationship": "heroinUseStatus",
+            "source_entity": "Respondent",
+            "target_entity": "NeverUsedHeroin",
+            "description": "Indicates that the respondent has never used heroin."
+        },
+        {
+            "relationship": "heroinUseStatus",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinUseInPast12Months",
+            "description": "Indicates whether the respondent used heroin in the past 12 months."
+        }
+    ]
+}

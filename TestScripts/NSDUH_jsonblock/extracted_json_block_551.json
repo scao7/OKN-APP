@@ -1,0 +1,83 @@
+{
+    "entities": [
+        {
+            "entity": "NumProblems",
+            "description": "Number of problems discussed during professional treatment or counseling."
+        },
+        {
+            "entity": "ProfessionalTreatment",
+            "description": "Receiving professional treatment or counseling for mood."
+        },
+        {
+            "entity": "PrescriptionMedication",
+            "description": "Taking prescription medication prescribed for mood."
+        },
+        {
+            "entity": "HerbalistConsultation",
+            "description": "Consultation with a herbalist about feelings in the past 12 months."
+        },
+        {
+            "entity": "HelpFromProfessional",
+            "description": "Help from a professional other than a herbalist about feelings in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasHerbalistConsultation",
+            "source_entity": "Respondent",
+            "target_entity": "HerbalistConsultation",
+            "description": "Indicates whether the respondent consulted with a herbalist about feelings in the past 12 months."
+        },
+        {
+            "relationship": "hasHelpFromProfessional",
+            "source_entity": "Respondent",
+            "target_entity": "HelpFromProfessional",
+            "description": "Indicates whether the respondent received help from a professional other than a herbalist about feelings in the past 12 months."
+        },
+        {
+            "relationship": "receivesProfessionalTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "ProfessionalTreatment",
+            "description": "Indicates whether the respondent is currently receiving professional treatment or counseling for mood."
+        },
+        {
+            "relationship": "takesPrescriptionMedication",
+            "source_entity": "Respondent",
+            "target_entity": "PrescriptionMedication",
+            "description": "Indicates whether the respondent took prescription medication prescribed for mood in the past 12 months."
+        },
+        {
+            "relationship": "takesCurrentPrescriptionMedication",
+            "source_entity": "Respondent",
+            "target_entity": "PrescriptionMedication",
+            "description": "Indicates whether the respondent is currently taking prescription medication prescribed for mood."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Respondent",
+            "predicate": "consulted_with",
+            "object": "Herbalist"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "received_help_from",
+            "object": "Professional"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "receives",
+            "object": "ProfessionalTreatment"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "takes",
+            "object": "PrescriptionMedication"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "currently_takes",
+            "object": "PrescriptionMedication"
+        }
+    ]
+}

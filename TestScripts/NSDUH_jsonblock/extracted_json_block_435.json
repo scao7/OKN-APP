@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "entity": "StimulantUseDisorder",
+            "description": "Recode stimulant use disorder based on past year usage."
+        },
+        {
+            "entity": "TranquilizerUseDisorder",
+            "description": "Recode tranquilizer use disorder based on past year usage."
+        },
+        {
+            "entity": "PainRelieverUseDisorderSeverity",
+            "description": "Severity of pain reliever use disorder in the past year."
+        },
+        {
+            "entity": "TranquilizerUseDisorderSeverity",
+            "description": "Severity of tranquilizer use disorder in the past year."
+        },
+        {
+            "entity": "StimulantUseDisorderSeverity",
+            "description": "Severity of stimulant use disorder in the past year."
+        },
+        {
+            "entity": "SedativeUseDisorderSeverity",
+            "description": "Severity of sedative use disorder in the past year."
+        },
+        {
+            "entity": "TranquilizerOrSedativeUseDisorderSeverity",
+            "description": "Severity of tranquilizer or sedative use disorder in the past year."
+        },
+        {
+            "entity": "PsychotherapeuticUseDisorderSeverity",
+            "description": "Severity of psychotherapeutic use disorder in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isCategorizedAs",
+            "source_entity": "StimulantUseDisorder",
+            "target_entity": "RC-STIMULANT USE DISORDER, PY USERS",
+            "description": "Categorizes stimulant use disorder based on past year usage."
+        },
+        {
+            "relationship": "isCategorizedAs",
+            "source_entity": "TranquilizerUseDisorder",
+            "target_entity": "RC-TRANQUILIZER USE DISORDER, PY USERS",
+            "description": "Categorizes tranquilizer use disorder based on past year usage."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "PainRelieverUseDisorder",
+            "target_entity": "PainRelieverUseDisorderSeverity",
+            "description": "Defines the severity level of pain reliever use disorder."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "TranquilizerUseDisorder",
+            "target_entity": "TranquilizerUseDisorderSeverity",
+            "description": "Defines the severity level of tranquilizer use disorder."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "StimulantUseDisorder",
+            "target_entity": "StimulantUseDisorderSeverity",
+            "description": "Defines the severity level of stimulant use disorder."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "SedativeUseDisorder",
+            "target_entity": "SedativeUseDisorderSeverity",
+            "description": "Defines the severity level of sedative use disorder."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "TranquilizerOrSedativeUseDisorder",
+            "target_entity": "TranquilizerOrSedativeUseDisorderSeverity",
+            "description": "Defines the severity level of tranquilizer or sedative use disorder."
+        },
+        {
+            "relationship": "hasSeverity",
+            "source_entity": "PsychotherapeuticUseDisorder",
+            "target_entity": "PsychotherapeuticUseDisorderSeverity",
+            "description": "Defines the severity level of psychotherapeutic use disorder."
+        }
+    ]
+}

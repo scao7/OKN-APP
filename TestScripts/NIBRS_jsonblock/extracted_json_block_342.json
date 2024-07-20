@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "EthnicityOfOffender1",
+            "description": "The ethnicity of the offender in the dataset, categorized as Not Hispanic or Latino, Hispanic or Latino, or Native Hawaiian or Other Pacific Islander, with respective frequencies."
+        },
+        {
+            "entity": "EthnicityOfOffender2",
+            "description": "The ethnicity of the offender in another part of the dataset, similarly categorized as Not Hispanic or Latino, Hispanic or Latino, or Native Hawaiian or Other Pacific Islander, with respective frequencies."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is missing, unknown, or not reported, including specific missing value codes like -9, -8, -7, -6, and -5."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw frequency count of occurrences in the dataset, without any statistical weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each category in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEthnicity",
+            "source_entity": "Offender",
+            "target_entity": "EthnicityOfOffender1",
+            "description": "Indicates the ethnicity of the offender in the first part of the dataset."
+        },
+        {
+            "relationship": "hasEthnicity",
+            "source_entity": "Offender",
+            "target_entity": "EthnicityOfOffender2",
+            "description": "Indicates the ethnicity of the offender in the second part of the dataset."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates that some data points are missing, unknown, or not reported."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Dataset",
+            "target_entity": "UnweightedFrequency",
+            "description": "Provides the unweighted frequency count for each category in the dataset."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Category",
+            "target_entity": "Percentage",
+            "description": "Provides the percentage representation of each category in the dataset."
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "Victim",
+            "description": "The person who suffered from the offense."
+        },
+        {
+            "entity": "Offender",
+            "description": "The person who committed the offense."
+        },
+        {
+            "entity": "Relationship",
+            "description": "The nature of the relationship between the victim and the offender."
+        },
+        {
+            "entity": "Acquaintance",
+            "description": "A recognized individual who is not familial or intimate."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data that is not available or not provided."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasRelationship",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Defines the specific relationship between the victim and the offender."
+        },
+        {
+            "relationship": "isSpouseOf",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Indicates that the victim is the spouse of the offender."
+        },
+        {
+            "relationship": "isParentOf",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Indicates that the victim is the parent of the offender."
+        },
+        {
+            "relationship": "isSiblingOf",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Indicates that the victim is the sibling of the offender."
+        },
+        {
+            "relationship": "isChildOf",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Indicates that the victim is the child of the offender."
+        },
+        {
+            "relationship": "isAcquaintanceOf",
+            "source_entity": "Victim",
+            "target_entity": "Offender",
+            "description": "Indicates that the victim is an acquaintance of the offender."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates cases where data is missing or not provided."
+        }
+    ]
+}

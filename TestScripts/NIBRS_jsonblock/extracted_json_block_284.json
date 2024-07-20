@@ -1,0 +1,90 @@
+{
+    "entities": [
+        {
+            "entity": "VictimType",
+            "description": "The type of relationship the victim had with the perpetrator."
+        },
+        {
+            "entity": "ExSpouseVictim",
+            "description": "Victim was Ex-Spouse."
+        },
+        {
+            "entity": "EmployeeVictim",
+            "description": "Victim was Employee."
+        },
+        {
+            "entity": "EmployerVictim",
+            "description": "Victim was Employer."
+        },
+        {
+            "entity": "KnownVictim",
+            "description": "Victim was Otherwise Known."
+        },
+        {
+            "entity": "StrangerVictim",
+            "description": "Victim was Stranger."
+        },
+        {
+            "entity": "ExRelationshipVictim",
+            "description": "Victim was Ex-relationship (Ex-boyfriend/ex-girlfriend)."
+        },
+        {
+            "entity": "SurveyCase",
+            "description": "An individual case in the survey data collection."
+        },
+        {
+            "entity": "OffenderType",
+            "description": "The type of offenders in the survey section."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVictimType",
+            "source_entity": "SurveyCase",
+            "target_entity": "VictimType",
+            "description": "Connects a survey case with the type of victim involved."
+        },
+        {
+            "relationship": "includesOffenderType",
+            "source_entity": "SurveyCase",
+            "target_entity": "OffenderType",
+            "description": "Connects a survey case with the type of offenders involved."
+        },
+        {
+            "relationship": "isTypeOfVictim",
+            "source_entity": "VictimType",
+            "target_entity": "ExSpouseVictim",
+            "description": "Specifies that the victim was an ex-spouse."
+        },
+        {
+            "relationship": "isTypeOfVictim",
+            "source_entity": "VictimType",
+            "target_entity": "EmployeeVictim",
+            "description": "Specifies that the victim was an employee."
+        },
+        {
+            "relationship": "isTypeOfVictim",
+            "source_entity": "VictimType",
+            "target_entity": "EmployerVictim",
+            "description": "Specifies that the victim was an employer."
+        },
+        {
+            "relationship": "isTypeOfVictim",
+            "source_entity": "VictimType",
+            "target_entity": "KnownVictim",
+            "description": "Specifies that the victim was otherwise known to the perpetrator."
+        },
+        {
+            "relationship": "isTypeOfVictim",
+            "source_entity": "VictimType",
+            "target_entity": "StrangerVictim",
+            "description": "Specifies that the victim was a stranger."
+        },
+        {
+            "relationship": "isTypeOfVictim",
+            "source_entity": "VictimType",
+            "target_entity": "ExRelationshipVictim",
+            "description": "Specifies that the victim was an ex-boyfriend or ex-girlfriend."
+        }
+    ]
+}

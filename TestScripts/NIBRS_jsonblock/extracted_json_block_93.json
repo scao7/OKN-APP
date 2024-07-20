@@ -1,0 +1,206 @@
+{
+    "entities": [
+        {
+            "entity": "Shotgun",
+            "description": "Unweighted frequency of Shotgun use as a weapon."
+        },
+        {
+            "entity": "ShotgunAutomatic",
+            "description": "Unweighted frequency of automatic Shotgun use as a weapon."
+        },
+        {
+            "entity": "OtherFirearm",
+            "description": "Unweighted frequency of other Firearm use as a weapon."
+        },
+        {
+            "entity": "OtherFirearmAutomatic",
+            "description": "Unweighted frequency of automatic other Firearm use as a weapon."
+        },
+        {
+            "entity": "KnifeCuttingInstrument",
+            "description": "Unweighted frequency of Knife/Cutting Instrument use as a weapon."
+        },
+        {
+            "entity": "BluntObject",
+            "description": "Unweighted frequency of Blunt Object use as a weapon."
+        },
+        {
+            "entity": "MotorVehicleVessel",
+            "description": "Unweighted frequency of Motor Vehicle/Vessel use."
+        },
+        {
+            "entity": "PersonalWeapons",
+            "description": "Unweighted frequency of Personal Weapons use (hands, feet, teeth, etc.)."
+        },
+        {
+            "entity": "Poison",
+            "description": "Unweighted frequency of Poison (include gas) use."
+        },
+        {
+            "entity": "Explosives",
+            "description": "Unweighted frequency of Explosives use."
+        },
+        {
+            "entity": "FireIncendiaryDevice",
+            "description": "Unweighted frequency of Fire/Incendiary Device use."
+        },
+        {
+            "entity": "DrugsNarcoticsSleepingPills",
+            "description": "Unweighted frequency of Drugs/Narcotics/Sleeping Pills use as a weapon."
+        },
+        {
+            "entity": "Asphyxiation",
+            "description": "Unweighted frequency of Asphyxiation use as a weapon."
+        },
+        {
+            "entity": "OtherWeapons",
+            "description": "Unweighted frequency of other Weapons use (BB guns, pellet guns, Tasers, pepper spray, stun guns, etc.)."
+        },
+        {
+            "entity": "NoWeapon",
+            "description": "Unweighted frequency of no weapon used."
+        },
+        {
+            "entity": "FirearmType",
+            "description": "Unweighted frequency of unspecified Firearm type use as a weapon."
+        },
+        {
+            "entity": "Handgun",
+            "description": "Unweighted frequency of Handgun use as a weapon."
+        },
+        {
+            "entity": "HandgunAutomatic",
+            "description": "Unweighted frequency of automatic Handgun use as a weapon."
+        },
+        {
+            "entity": "Rifle",
+            "description": "Unweighted frequency of Rifle use as a weapon."
+        },
+        {
+            "entity": "RifleAutomatic",
+            "description": "Unweighted frequency of automatic Rifle use as a weapon."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "Shotgun",
+            "description": "Indicates the respondent used a Shotgun as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "ShotgunAutomatic",
+            "description": "Indicates the respondent used an automatic Shotgun as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "OtherFirearm",
+            "description": "Indicates the respondent used a Firearm other than listed types."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "OtherFirearmAutomatic",
+            "description": "Indicates the respondent used an automatic Firearm other than listed types."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "KnifeCuttingInstrument",
+            "description": "Indicates the respondent used a Knife or Cutting Instrument as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "BluntObject",
+            "description": "Indicates the respondent used a Blunt Object as a weapon."
+        },
+        {
+            "relationship": "usesVehicle",
+            "source_entity": "Respondent",
+            "target_entity": "MotorVehicleVessel",
+            "description": "Indicates the respondent was involved in the use of a Motor Vehicle or Vessel."
+        },
+        {
+            "relationship": "usesPersonalWeapons",
+            "source_entity": "Respondent",
+            "target_entity": "PersonalWeapons",
+            "description": "Indicates the respondent used Personal Weapons (hands, feet, teeth, etc.)."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "Poison",
+            "description": "Indicates the respondent used Poison (include gas) as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "Explosives",
+            "description": "Indicates the respondent used Explosives as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "FireIncendiaryDevice",
+            "description": "Indicates the respondent used a Fire or Incendiary Device as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "DrugsNarcoticsSleepingPills",
+            "description": "Indicates the respondent used Drugs, Narcotics, or Sleeping Pills as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "Asphyxiation",
+            "description": "Indicates the respondent used Asphyxiation as a method."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "OtherWeapons",
+            "description": "Indicates the respondent used other types of Weapons (BB guns, pellet guns, Tasers, pepper spray, stun guns, etc.)."
+        },
+        {
+            "relationship": "didNotUseWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "NoWeapon",
+            "description": "Indicates the respondent did not use any weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "FirearmType",
+            "description": "Indicates the respondent used an unspecified type of Firearm."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "Handgun",
+            "description": "Indicates the respondent used a Handgun as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "HandgunAutomatic",
+            "description": "Indicates the respondent used an automatic Handgun as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "Rifle",
+            "description": "Indicates the respondent used a Rifle as a weapon."
+        },
+        {
+            "relationship": "usesWeapon",
+            "source_entity": "Respondent",
+            "target_entity": "RifleAutomatic",
+            "description": "Indicates the respondent used an automatic Rifle as a weapon."
+        }
+    ]
+}

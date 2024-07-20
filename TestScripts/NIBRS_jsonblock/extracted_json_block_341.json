@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "Race",
+            "description": "Classification of respondents based on their race."
+        },
+        {
+            "entity": "Offender",
+            "description": "Individuals involved in offenses, characterized based on various attributes such as race."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw frequency count of the respondents without applying any weighting."
+        },
+        {
+            "entity": "RespondentCases",
+            "description": "The total number of respondent cases in the survey."
+        },
+        {
+            "entity": "RaceOfOffender",
+            "description": "Classification of offenders based on their race."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasRace",
+            "source_entity": "Offender",
+            "target_entity": "Race",
+            "description": "Relates offenders to their racial classification."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Offender",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the raw frequency count of offenders in the survey."
+        },
+        {
+            "relationship": "hasRespondentCases",
+            "source_entity": "Survey",
+            "target_entity": "RespondentCases",
+            "description": "Indicates the total number of respondent cases in the survey."
+        },
+        {
+            "relationship": "hasRaceOfOffender",
+            "source_entity": "Offender",
+            "target_entity": "RaceOfOffender",
+            "description": "Indicates the racial classification of offenders."
+        }
+    ]
+}

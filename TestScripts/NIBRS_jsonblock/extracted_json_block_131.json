@@ -1,0 +1,110 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyPeriod",
+            "description": "The time frame of the past 30 days, including today's date."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of responses collected before weighting."
+        },
+        {
+            "entity": "ResponsePercentage",
+            "description": "The percentage representation of the raw response counts."
+        },
+        {
+            "entity": "MeanScore",
+            "description": "The average score of the responses."
+        },
+        {
+            "entity": "MedianScore",
+            "description": "The median value of the responses."
+        },
+        {
+            "entity": "ModeScore",
+            "description": "The mode value of the responses."
+        },
+        {
+            "entity": "MinimumScore",
+            "description": "The minimum score value of the responses."
+        },
+        {
+            "entity": "MaximumScore",
+            "description": "The maximum score value of the responses."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The standard deviation of the response scores."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid (non-missing) response cases."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases, including missing data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFrequencyData",
+            "source_entity": "SurveyData",
+            "target_entity": "UnweightedFrequency",
+            "description": "Links survey data entries to their unweighted frequency counts."
+        },
+        {
+            "relationship": "hasResponsePercentage",
+            "source_entity": "SurveyData",
+            "target_entity": "ResponsePercentage",
+            "description": "Links survey data entries to their respective percentage representations."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "SurveySummary",
+            "target_entity": "MeanScore",
+            "description": "Links the survey summary to the calculated mean score of the responses."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "SurveySummary",
+            "target_entity": "MedianScore",
+            "description": "Links the survey summary to the calculated median score of the responses."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "SurveySummary",
+            "target_entity": "ModeScore",
+            "description": "Links the survey summary to the calculated mode score of the responses."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "SurveySummary",
+            "target_entity": "MinimumScore",
+            "description": "Links the survey summary to the observed minimum score of the responses."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "SurveySummary",
+            "target_entity": "MaximumScore",
+            "description": "Links the survey summary to the observed maximum score of the responses."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "SurveySummary",
+            "target_entity": "StandardDeviation",
+            "description": "Links the survey summary to the calculated standard deviation of the responses."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "OverallResults",
+            "target_entity": "ValidCases",
+            "description": "Links the survey results summary to the number of valid response cases."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "OverallResults",
+            "target_entity": "TotalCases",
+            "description": "Links the survey results summary to the total number of cases, including those with missing data."
+        }
+    ]
+}

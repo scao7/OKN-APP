@@ -1,0 +1,32 @@
+[
+    {
+        "subject": "RCVD MNTL HLTH TRMT AT OTHER PLACE AS INPATIENT-PY-IMP IND",
+        "predicate": "is of type",
+        "object": "Questionnaire data"
+    },
+    {
+        "subject": "RCVD MNTL HLTH TRMT AT OUTPTNT MNTL HLTH TRMT CTR-PY-IMP REV",
+        "predicate": "has statistics",
+        "object": "57152 96.75"
+    },
+    {
+        "subject": "RCVD MNTL HLTH TRMT AT OUTPTNT SUB REHAB/TRMT CTR-PY-IMP REV",
+        "predicate": "is determined by",
+        "object": "58725 99.42"
+    },
+    {
+        "subject": "RCVD MNTL HLTH TRMT AT THERAPIST OFFICE - PY - IMP REV",
+        "predicate": "has percentage",
+        "object": "11.87%"
+    },
+    {
+        "subject": "RCVD MNTL HLTH TRMT AT GENERAL MEDICAL OFFICE - PY - IMP REV",
+        "predicate": "has frequency",
+        "object": "54297"
+    },
+    {
+        "subject": "RCVD MNTL HLTH TRMT AT HOSPITAL AS OUTPTNT - PY - IMP REV",
+        "predicate": "has imputed data",
+        "object": "804 1.36"
+    }
+]

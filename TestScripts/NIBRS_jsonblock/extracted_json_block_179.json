@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "TotalCases",
+            "description": "Total number of unweighted cases recorded."
+        },
+        {
+            "entity": "VictimSequenceNumber",
+            "description": "Sequence number assigned to each victim."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency count of cases without weighting."
+        },
+        {
+            "entity": "VariableDetails",
+            "description": "Details of the variable including location, type, and range of missing values."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Dataset",
+            "target_entity": "TotalCases",
+            "description": "Relates the dataset to the total number of cases recorded."
+        },
+        {
+            "relationship": "hasVictimSequenceNumber",
+            "source_entity": "Dataset",
+            "target_entity": "VictimSequenceNumber",
+            "description": "Relates the dataset to the sequence numbers assigned to victims."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "VictimSequenceNumber",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the victim sequence numbers to their respective unweighted frequency counts."
+        },
+        {
+            "relationship": "hasVariableDetails",
+            "source_entity": "Dataset",
+            "target_entity": "VariableDetails",
+            "description": "Relates the dataset to the details of the variable including location, type, and range of missing values."
+        }
+    ]
+}

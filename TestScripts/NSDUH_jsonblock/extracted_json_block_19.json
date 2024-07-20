@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "CensusBlockGroup",
+            "description": "A block group within a census tract selected with probability proportionate to a composite size measure."
+        },
+        {
+            "entity": "FieldEnumeration",
+            "description": "A process of counting people by direct contact, used in the selection of census block groups for the 2022 NSDUH."
+        },
+        {
+            "entity": "GeographicArea",
+            "description": "A small geographic area composed of adjacent census blocks, used for field enumeration."
+        },
+        {
+            "entity": "FieldEnumerationSegment",
+            "description": "A segment formed to contain a minimum number of dwelling units (DUs) in urban and rural areas."
+        },
+        {
+            "entity": "SamplingStage",
+            "description": "One of the stages of selecting census block groups and field enumeration segments."
+        },
+        {
+            "entity": "DwellingUnit",
+            "description": "A housing unit or a group quarters listing unit, such as a dormitory room or a shelter bed, in the NSDUH."
+        },
+        {
+            "entity": "SampleSize",
+            "description": "The minimum number of dwelling units (DUs) needed in each segment."
+        },
+        {
+            "entity": "AgeGroup",
+            "description": "One of the age categories used in sample allocation for the 2014-2022 NSDUH sample."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSamplingStage",
+            "source_entity": "Survey",
+            "target_entity": "SamplingStage",
+            "description": "Indicates the stage of sampling within the survey process."
+        },
+        {
+            "relationship": "hasGeographicArea",
+            "source_entity": "CensusBlockGroup",
+            "target_entity": "GeographicArea",
+            "description": "Defines the small geographic areas selected within each sampled census block group."
+        },
+        {
+            "relationship": "hasFieldEnumeration",
+            "source_entity": "SamplingStage",
+            "target_entity": "FieldEnumeration",
+            "description": "Indicates that field enumeration is a part of the sampling stage."
+        },
+        {
+            "relationship": "hasFieldEnumerationSegment",
+            "source_entity": "GeographicArea",
+            "target_entity": "FieldEnumerationSegment",
+            "description": "Indicates that field enumeration segments are formed within small geographic areas."
+        },
+        {
+            "relationship": "hasDwellingUnit",
+            "source_entity": "FieldEnumerationSegment",
+            "target_entity": "DwellingUnit",
+            "description": "Indicates that field enumeration segments contain a minimum number of dwelling units."
+        },
+        {
+            "relationship": "allocatedToAgeGroup",
+            "source_entity": "SampleSize",
+            "target_entity": "AgeGroup",
+            "description": "Indicates that the sample size is allocated to different age groups."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "SamplingStage",
+            "predicate": "contains",
+            "object": "CensusBlockGroup"
+        },
+        {
+            "subject": "CensusBlockGroup",
+            "predicate": "contains",
+            "object": "GeographicArea"
+        },
+        {
+            "subject": "GeographicArea",
+            "predicate": "contains",
+            "object": "FieldEnumerationSegment"
+        },
+        {
+            "subject": "FieldEnumerationSegment",
+            "predicate": "contains",
+            "object": "DwellingUnit"
+        },
+        {
+            "subject": "Survey",
+            "predicate": "has",
+            "object": "SamplingStage"
+        },
+        {
+            "subject": "SampleSize",
+            "predicate": "allocatedTo",
+            "object": "AgeGroup"
+        }
+    ]
+}

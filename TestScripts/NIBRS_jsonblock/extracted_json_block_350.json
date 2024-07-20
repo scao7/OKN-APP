@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "ArrestDate",
+            "description": "The specific date on which an arrest was made."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of occurrences for each arrest date."
+        },
+        {
+            "entity": "MissingValues",
+            "description": "Instances where data values are missing for a given variable."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasArrestDate",
+            "source_entity": "Survey",
+            "target_entity": "ArrestDate",
+            "description": "Relates the survey to the specific arrest dates recorded."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ArrestDate",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the number of occurrences for each specified arrest date."
+        },
+        {
+            "relationship": "hasMissingValues",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MissingValues",
+            "description": "Indicates instances where data for a variable is missing."
+        }
+    ]
+}

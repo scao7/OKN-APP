@@ -1,0 +1,17 @@
+[
+    {
+        "subject": "Respondent",
+        "predicate": "hasLevelOfDifficulty",
+        "object": "DifficultyRememberingOrConcentrating"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "hasLevelOfDifficulty",
+        "object": "DifficultyWithSelfCare"
+    },
+    {
+        "subject": "Respondent",
+        "predicate": "hasLevelOfDifficulty",
+        "object": "DifficultyCommunicating"
+    }
+]

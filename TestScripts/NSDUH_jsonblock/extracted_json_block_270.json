@@ -1,0 +1,158 @@
+{
+    "entities": [
+        {
+            "entity": "CocainePastMonthUse",
+            "description": "Indicates whether the respondent used cocaine in the past month."
+        },
+        {
+            "entity": "CrackEverUsed",
+            "description": "Indicates whether the respondent has ever used crack."
+        },
+        {
+            "entity": "CrackPastYearUse",
+            "description": "Indicates whether the respondent used crack in the past year."
+        },
+        {
+            "entity": "CrackPastMonthUse",
+            "description": "Indicates whether the respondent used crack in the past month."
+        },
+        {
+            "entity": "HeroinEverUsed",
+            "description": "Indicates whether the respondent has ever used heroin."
+        },
+        {
+            "entity": "HeroinPastYearUse",
+            "description": "Indicates whether the respondent used heroin in the past year."
+        },
+        {
+            "entity": "HeroinPastMonthUse",
+            "description": "Indicates whether the respondent used heroin in the past month."
+        },
+        {
+            "entity": "HallucinogensEverUsed",
+            "description": "Indicates whether the respondent has ever used hallucinogens."
+        },
+        {
+            "entity": "HallucinogensPastYearUse",
+            "description": "Indicates whether the respondent used hallucinogens in the past year."
+        },
+        {
+            "entity": "HallucinogensPastMonthUse",
+            "description": "Indicates whether the respondent used hallucinogens in the past month."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsedCocainePastMonth",
+            "source_entity": "Respondent",
+            "target_entity": "CocainePastMonthUse",
+            "description": "Indicates if the respondent used cocaine in the past month."
+        },
+        {
+            "relationship": "hasEverUsedCrack",
+            "source_entity": "Respondent",
+            "target_entity": "CrackEverUsed",
+            "description": "Indicates if the respondent has ever used crack."
+        },
+        {
+            "relationship": "hasUsedCrackPastYear",
+            "source_entity": "Respondent",
+            "target_entity": "CrackPastYearUse",
+            "description": "Indicates if the respondent used crack in the past year."
+        },
+        {
+            "relationship": "hasUsedCrackPastMonth",
+            "source_entity": "Respondent",
+            "target_entity": "CrackPastMonthUse",
+            "description": "Indicates if the respondent used crack in the past month."
+        },
+        {
+            "relationship": "hasEverUsedHeroin",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinEverUsed",
+            "description": "Indicates if the respondent has ever used heroin."
+        },
+        {
+            "relationship": "hasUsedHeroinPastYear",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinPastYearUse",
+            "description": "Indicates if the respondent used heroin in the past year."
+        },
+        {
+            "relationship": "hasUsedHeroinPastMonth",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinPastMonthUse",
+            "description": "Indicates if the respondent used heroin in the past month."
+        },
+        {
+            "relationship": "hasEverUsedHallucinogens",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogensEverUsed",
+            "description": "Indicates if the respondent has ever used hallucinogens."
+        },
+        {
+            "relationship": "hasUsedHallucinogensPastYear",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogensPastYearUse",
+            "description": "Indicates if the respondent used hallucinogens in the past year."
+        },
+        {
+            "relationship": "hasUsedHallucinogensPastMonth",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogensPastMonthUse",
+            "description": "Indicates if the respondent used hallucinogens in the past month."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "RC-COCAINE - PAST MONTH USE",
+            "predicate": "use",
+            "object": "past month"
+        },
+        {
+            "subject": "RC-CRACK - EVER USED",
+            "predicate": "use",
+            "object": "ever"
+        },
+        {
+            "subject": "RC-CRACK - PAST YEAR USE",
+            "predicate": "use",
+            "object": "past year"
+        },
+        {
+            "subject": "RC-CRACK - PAST MONTH USE",
+            "predicate": "use",
+            "object": "past month"
+        },
+        {
+            "subject": "RC-HEROIN - EVER USED",
+            "predicate": "use",
+            "object": "ever"
+        },
+        {
+            "subject": "RC-HEROIN - PAST YEAR USE",
+            "predicate": "use",
+            "object": "past year"
+        },
+        {
+            "subject": "RC-HEROIN - PAST MONTH USE",
+            "predicate": "use",
+            "object": "past month"
+        },
+        {
+            "subject": "RC-HALLUCINOGENS - EVER USED",
+            "predicate": "use",
+            "object": "ever"
+        },
+        {
+            "subject": "RC-HALLUCINOGENS - PAST YEAR USE",
+            "predicate": "use",
+            "object": "past year"
+        },
+        {
+            "subject": "RC-HALLUCINOGENS - PAST MONTH USE",
+            "predicate": "use",
+            "object": "past month"
+        }
+    ]
+}

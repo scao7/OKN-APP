@@ -1,0 +1,87 @@
+{
+    "entities": [
+        {
+            "entity": "UnmetSubstanceUseTreatmentNeed",
+            "description": "Indicates unmet need for substance use treatment."
+        },
+        {
+            "entity": "BeliefTreatmentWouldNotHelp",
+            "description": "Did not think treatment would help."
+        },
+        {
+            "entity": "BeliefNoOneWouldCare",
+            "description": "Thought no one would care if they got better."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "indicatesBeliefTreatmentWouldNotHelp",
+            "source_entity": "UnmetSubstanceUseTreatmentNeed",
+            "target_entity": "BeliefTreatmentWouldNotHelp",
+            "description": "Relates unmet substance use treatment need to the belief that treatment would not help."
+        },
+        {
+            "relationship": "indicatesBeliefNoOneWouldCare",
+            "source_entity": "UnmetSubstanceUseTreatmentNeed",
+            "target_entity": "BeliefNoOneWouldCare",
+            "description": "Relates unmet substance use treatment need to the belief that no one would care if they got better."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "UnmetSubstanceUseTreatmentNeed",
+            "predicate": "hasResponse",
+            "object": "Yes"
+        },
+        {
+            "subject": "UnmetSubstanceUseTreatmentNeed",
+            "predicate": "hasResponse",
+            "object": "No"
+        },
+        {
+            "subject": "UnmetSubstanceUseTreatmentNeed",
+            "predicate": "hasResponse",
+            "object": "NeverUsedAlcoholOrDrugs"
+        },
+        {
+            "subject": "UnmetSubstanceUseTreatmentNeed",
+            "predicate": "hasResponse",
+            "object": "DontKnow"
+        },
+        {
+            "subject": "UnmetSubstanceUseTreatmentNeed",
+            "predicate": "hasResponse",
+            "object": "Refused"
+        },
+        {
+            "subject": "UnmetSubstanceUseTreatmentNeed",
+            "predicate": "hasResponse",
+            "object": "Blank"
+        },
+        {
+            "subject": "UnmetSubstanceUseTreatmentNeed",
+            "predicate": "hasResponse",
+            "object": "LegitimateSkip"
+        },
+        {
+            "subject": "BeliefTreatmentWouldNotHelp",
+            "predicate": "hasFrequency",
+            "object": "Freq"
+        },
+        {
+            "subject": "BeliefTreatmentWouldNotHelp",
+            "predicate": "hasPercentage",
+            "object": "Pet"
+        },
+        {
+            "subject": "BeliefNoOneWouldCare",
+            "predicate": "hasFrequency",
+            "object": "Freq"
+        },
+        {
+            "subject": "BeliefNoOneWouldCare",
+            "predicate": "hasPercentage",
+            "object": "Pet"
+        }
+    ]
+}

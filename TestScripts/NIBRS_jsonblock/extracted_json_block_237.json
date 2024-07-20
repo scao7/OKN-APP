@@ -1,0 +1,130 @@
+{
+    "entities": [
+        {
+            "entity": "Traffic Pursuits",
+            "description": "An activity type in the survey where an officer engages in pursuing traffic violators."
+        },
+        {
+            "entity": "Respond Disturbance",
+            "description": "An activity type in the survey where an officer responds to a disturbance."
+        },
+        {
+            "entity": "Burglary in Process",
+            "description": "An activity type in the survey where an officer responds to a burglary in process."
+        },
+        {
+            "entity": "Robbery in Process",
+            "description": "An activity type in the survey where an officer responds to a robbery in process."
+        },
+        {
+            "entity": "Attempt Other Arrest",
+            "description": "An activity type in the survey where an officer attempts to make an arrest other than the primary target."
+        },
+        {
+            "entity": "Civil Disorder",
+            "description": "An activity type in the survey where an officer responds to a civil disorder."
+        },
+        {
+            "entity": "Custody Prisoners",
+            "description": "An activity type in the survey where an officer is involved in the custody of prisoners."
+        },
+        {
+            "entity": "Investigating",
+            "description": "An activity type in the survey where an officer is investigating a situation."
+        },
+        {
+            "entity": "Ambush Without Warning",
+            "description": "An activity type in the survey where an officer is ambushed without prior warning."
+        },
+        {
+            "entity": "Deranged Assailant",
+            "description": "An activity type in the survey where an officer encounters a deranged assailant."
+        },
+        {
+            "entity": "All Other",
+            "description": "An activity category in the survey that includes all other activities not explicitly listed."
+        },
+        {
+            "entity": "Officer",
+            "description": "The survey respondent who is a law enforcement officer."
+        },
+        {
+            "entity": "Activity Type",
+            "description": "The classification of activities an officer might engage in as reported in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "engagesIn",
+            "source_entity": "Officer",
+            "target_entity": "Activity Type",
+            "description": "Indicates that an officer engages in specific types of activities as classified in the survey."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Traffic Pursuits",
+            "target_entity": "Activity Type",
+            "description": "Classifies traffic pursuits as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Respond Disturbance",
+            "target_entity": "Activity Type",
+            "description": "Classifies responding to disturbances as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Burglary in Process",
+            "target_entity": "Activity Type",
+            "description": "Classifies responding to burglaries in process as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Robbery in Process",
+            "target_entity": "Activity Type",
+            "description": "Classifies responding to robberies in process as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Attempt Other Arrest",
+            "target_entity": "Activity Type",
+            "description": "Classifies attempting other arrests as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Civil Disorder",
+            "target_entity": "Activity Type",
+            "description": "Classifies responding to civil disorders as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Custody Prisoners",
+            "target_entity": "Activity Type",
+            "description": "Classifies custodying prisoners as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Investigating",
+            "target_entity": "Activity Type",
+            "description": "Classifies investigating as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Ambush Without Warning",
+            "target_entity": "Activity Type",
+            "description": "Classifies ambush without warning as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "Deranged Assailant",
+            "target_entity": "Activity Type",
+            "description": "Classifies encountering a deranged assailant as a specific type of activity."
+        },
+        {
+            "relationship": "isATypeOf",
+            "source_entity": "All Other",
+            "target_entity": "Activity Type",
+            "description": "Classifies all other activities as a specific type of activity."
+        }
+    ]
+}

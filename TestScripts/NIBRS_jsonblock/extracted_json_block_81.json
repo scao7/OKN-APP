@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "ResponseFrequency",
+            "description": "The frequency of responses for specific survey items."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of responses for survey items without any statistical weighting."
+        },
+        {
+            "entity": "PercentageFrequency",
+            "description": "The percentage representation of the unweighted frequency for survey items."
+        },
+        {
+            "entity": "MissingData",
+            "description": "Data points that are missing or not provided in the survey responses."
+        },
+        {
+            "entity": "NumericalMetrics",
+            "description": "Statistical measures (e.g., mean, median, mode, maximum, minimum) of survey responses."
+        },
+        {
+            "entity": "NumberOfPremisesEntered",
+            "description": "Survey item measuring the count of premises (locations) entered by the respondent."
+        },
+        {
+            "entity": "CaseCount",
+            "description": "Total number of cases or responses collected in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "ResponseFrequency",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the response frequency to the unweighted count of responses."
+        },
+        {
+            "relationship": "hasPercentageFrequency",
+            "source_entity": "ResponseFrequency",
+            "target_entity": "PercentageFrequency",
+            "description": "Relates the response frequency to the percentage representation of the responses."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the presence of missing data in the survey responses."
+        },
+        {
+            "relationship": "hasNumericalMetrics",
+            "source_entity": "Survey",
+            "target_entity": "NumericalMetrics",
+            "description": "Relates the survey to various statistical measures of the responses."
+        },
+        {
+            "relationship": "hasResponseFrequency",
+            "source_entity": "NumberOfPremisesEntered",
+            "target_entity": "ResponseFrequency",
+            "description": "Relates the survey item about the number of premises entered to the frequency of responses."
+        },
+        {
+            "relationship": "isPartOf",
+            "source_entity": "ResponseFrequency",
+            "target_entity": "CaseCount",
+            "description": "Indicates that response frequency is part of the total case count."
+        }
+    ]
+}

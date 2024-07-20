@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "LSDFirstUseYear",
+            "description": "The first year of LSD usage, including imputation adjustments."
+        },
+        {
+            "entity": "LSDFirstUseYearImputationIndicator",
+            "description": "Indicators of how the first use year data for LSD was collected or imputed."
+        },
+        {
+            "entity": "PCPFirstUseAge",
+            "description": "Age at the first use of PCP, including imputation adjustments."
+        },
+        {
+            "entity": "PCPFirstUseAgeImputationIndicator",
+            "description": "Indicators of how the first use age data for PCP was collected or imputed."
+        },
+        {
+            "entity": "PCPFirstUseYear",
+            "description": "The first year of PCP usage, including imputation adjustments."
+        },
+        {
+            "entity": "PCPFirstUseYearImputationIndicator",
+            "description": "Indicators of how the first use year data for PCP was collected or imputed."
+        },
+        {
+            "entity": "EcstasyFirstUseAge",
+            "description": "Age at the first use of ecstasy, including imputation adjustments."
+        },
+        {
+            "entity": "EcstasyFirstUseAgeImputationIndicator",
+            "description": "Indicators of how the first use age data for ecstasy was collected or imputed."
+        },
+        {
+            "entity": "EcstasyFirstUseYear",
+            "description": "The first year of ecstasy usage, including imputation adjustments."
+        },
+        {
+            "entity": "EcstasyFirstUseYearImputationIndicator",
+            "description": "Indicators of how the first use year data for ecstasy was collected or imputed."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "LSD",
+            "target_entity": "LSDFirstUseYear",
+            "description": "Relates LSD to the year of its first use."
+        },
+        {
+            "relationship": "hasImputationIndicator",
+            "source_entity": "LSDFirstUseYear",
+            "target_entity": "LSDFirstUseYearImputationIndicator",
+            "description": "Indicates how the first use year data for LSD was collected or imputed."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "PCP",
+            "target_entity": "PCPFirstUseAge",
+            "description": "Relates PCP to the age at its first use."
+        },
+        {
+            "relationship": "hasImputationIndicator",
+            "source_entity": "PCPFirstUseAge",
+            "target_entity": "PCPFirstUseAgeImputationIndicator",
+            "description": "Indicates how the first use age data for PCP was collected or imputed."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "PCP",
+            "target_entity": "PCPFirstUseYear",
+            "description": "Relates PCP to the year of its first use."
+        },
+        {
+            "relationship": "hasImputationIndicator",
+            "source_entity": "PCPFirstUseYear",
+            "target_entity": "PCPFirstUseYearImputationIndicator",
+            "description": "Indicates how the first use year data for PCP was collected or imputed."
+        },
+        {
+            "relationship": "hasFirstUseAge",
+            "source_entity": "Ecstasy",
+            "target_entity": "EcstasyFirstUseAge",
+            "description": "Relates ecstasy to the age at its first use."
+        },
+        {
+            "relationship": "hasImputationIndicator",
+            "source_entity": "EcstasyFirstUseAge",
+            "target_entity": "EcstasyFirstUseAgeImputationIndicator",
+            "description": "Indicates how the first use age data for ecstasy was collected or imputed."
+        },
+        {
+            "relationship": "hasFirstUseYear",
+            "source_entity": "Ecstasy",
+            "target_entity": "EcstasyFirstUseYear",
+            "description": "Relates ecstasy to the year of its first use."
+        },
+        {
+            "relationship": "hasImputationIndicator",
+            "source_entity": "EcstasyFirstUseYear",
+            "target_entity": "EcstasyFirstUseYearImputationIndicator",
+            "description": "Indicates how the first use year data for ecstasy was collected or imputed."
+        }
+    ]
+}

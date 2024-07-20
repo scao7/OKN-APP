@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "HERNEEDL",
+            "description": "Usage of a needle to inject heroin."
+        },
+        {
+            "entity": "HEOTSMK",
+            "description": "Usage of heroin by smoking it."
+        },
+        {
+            "entity": "HEOTSNF",
+            "description": "Usage of heroin by sniffing it."
+        },
+        {
+            "entity": "HEOTNDL",
+            "description": "Usage of heroin by injecting with a needle."
+        },
+        {
+            "entity": "HEOTOTH",
+            "description": "Usage of heroin by some other method."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInjectionMethod",
+            "source_entity": "HeroinUse",
+            "target_entity": "HERNEEDL",
+            "description": "Describes the use of a needle to inject heroin."
+        },
+        {
+            "relationship": "hasSmokingMethod",
+            "source_entity": "HeroinUse",
+            "target_entity": "HEOTSMK",
+            "description": "Describes the use of heroin by smoking it."
+        },
+        {
+            "relationship": "hasSniffingMethod",
+            "source_entity": "HeroinUse",
+            "target_entity": "HEOTSNF",
+            "description": "Describes the use of heroin by sniffing it."
+        },
+        {
+            "relationship": "hasInjectionNeedleMethod",
+            "source_entity": "HeroinUse",
+            "target_entity": "HEOTNDL",
+            "description": "Describes the use of heroin by injecting it with a needle."
+        },
+        {
+            "relationship": "hasOtherMethod",
+            "source_entity": "HeroinUse",
+            "target_entity": "HEOTOTH",
+            "description": "Describes the use of heroin by some other method."
+        }
+    ]
+}

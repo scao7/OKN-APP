@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "MRDAYPMO",
+            "description": "Number of days per month the respondent used marijuana or cannabis in the past 12 months."
+        },
+        {
+            "entity": "MRDAYPWK",
+            "description": "Number of days per week the respondent used marijuana or cannabis in the past 12 months."
+        },
+        {
+            "entity": "MJDAY30A",
+            "description": "Number of days the respondent used marijuana or cannabis in the past 30 days."
+        },
+        {
+            "entity": "MR30EST",
+            "description": "Best estimate of the number of days the respondent used marijuana or cannabis in the past 30 days."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUsageOver12Months",
+            "source_entity": "Respondent",
+            "target_entity": "MRDAYPMO",
+            "description": "Relates the respondent to their marijuana/cannabis usage over the past 12 months."
+        },
+        {
+            "relationship": "hasWeeklyUsageOver12Months",
+            "source_entity": "Respondent",
+            "target_entity": "MRDAYPWK",
+            "description": "Relates the respondent to their marijuana/cannabis weekly usage over the past 12 months."
+        },
+        {
+            "relationship": "hasMonthlyUsagePast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "MJDAY30A",
+            "description": "Relates the respondent to their marijuana/cannabis usage in the past 30 days."
+        },
+        {
+            "relationship": "hasEstimatedUsagePast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "MR30EST",
+            "description": "Relates the respondent to their estimated marijuana/cannabis usage in the past 30 days."
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "entities": [
+        {
+            "entity": "MissingData",
+            "description": "Data instances that are missing, unknown, or did not receive a response."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "Total number of valid cases reported for a particular substance."
+        },
+        {
+            "entity": "CrackCocaine",
+            "description": "A type of drug listed under suspected drug types."
+        },
+        {
+            "entity": "Cocaine",
+            "description": "All forms of cocaine except crack are listed under suspected drug types."
+        },
+        {
+            "entity": "Hashish",
+            "description": "A type of drug listed under suspected drug types."
+        },
+        {
+            "entity": "Heroin",
+            "description": "A type of drug listed under suspected drug types."
+        },
+        {
+            "entity": "Marijuana",
+            "description": "A type of drug listed under suspected drug types."
+        },
+        {
+            "entity": "Morphine",
+            "description": "A type of drug listed under suspected drug types."
+        },
+        {
+            "entity": "Opium",
+            "description": "A type of drug listed under suspected drug types."
+        },
+        {
+            "entity": "OtherNarcotics",
+            "description": "Any other narcotic drugs listed under suspected drug types."
+        },
+        {
+            "entity": "LSD",
+            "description": "A hallucinogenic drug listed under suspected drug types."
+        },
+        {
+            "entity": "PCP",
+            "description": "A type of drug listed under suspected drug types."
+        },
+        {
+            "entity": "OtherHallucinogens",
+            "description": "Other hallucinogenic drugs listed under suspected drug types."
+        },
+        {
+            "entity": "Amphetamines",
+            "description": "Includes all forms of amphetamines and methamphetamines under suspected drug types."
+        },
+        {
+            "entity": "OtherStimulants",
+            "description": "Other stimulant drugs listed under suspected drug types."
+        },
+        {
+            "entity": "Barbiturates",
+            "description": "A type of drug listed under suspected drug types."
+        },
+        {
+            "entity": "OtherDepressants",
+            "description": "Other depressant drugs listed under suspected drug types."
+        },
+        {
+            "entity": "OtherDrugsAntidepressants",
+            "description": "Other drugs categorized as antidepressants listed under suspected drug types."
+        },
+        {
+            "entity": "Over3DrugTypes",
+            "description": "Instances where over three drug types are suspected."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Frequency counts of responses without any weights applied."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "SubstanceUseSurvey",
+            "target_entity": "MissingData",
+            "description": "Indicates data instances that are missing or unknown in the substance use survey."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "SubstanceUseSurvey",
+            "target_entity": "ValidCases",
+            "description": "Relates the substance use survey to the number of valid cases reported."
+        },
+        {
+            "relationship": "reportsUnweightedFrequency",
+            "source_entity": "SubstanceUseReport",
+            "target_entity": "UnweightedFrequency",
+            "description": "Reports the frequency counts of different suspected drug types without applying weights."
+        }
+    ]
+}

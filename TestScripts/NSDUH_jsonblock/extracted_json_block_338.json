@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "MarijuanaReductionAttempt",
+            "description": "An attempt to cut down or stop using marijuana within the past 12 months."
+        },
+        {
+            "entity": "MultipleReductionAttempts",
+            "description": "Inability to stop using marijuana despite multiple attempts within the past 12 months."
+        },
+        {
+            "entity": "DesireToStopUsingMarijuana",
+            "description": "The respondent often wishes to cut down or stop using marijuana within the past 12 months."
+        },
+        {
+            "entity": "PhysicalHealthProblems",
+            "description": "Any long-lasting or repeated physical health problems caused or worsened by marijuana use within the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMarijuanaReductionAttempt",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaReductionAttempt",
+            "description": "Indicates whether the respondent attempted to cut down or stop using marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasMultipleReductionAttempts",
+            "source_entity": "Respondent",
+            "target_entity": "MultipleReductionAttempts",
+            "description": "Indicates whether the respondent was unable to stop using marijuana despite multiple attempts in the past 12 months."
+        },
+        {
+            "relationship": "hasDesireToStopUsingMarijuana",
+            "source_entity": "Respondent",
+            "target_entity": "DesireToStopUsingMarijuana",
+            "description": "Indicates whether the respondent often wished to cut down or stop using marijuana in the past 12 months."
+        },
+        {
+            "relationship": "hasPhysicalHealthProblems",
+            "source_entity": "Respondent",
+            "target_entity": "PhysicalHealthProblems",
+            "description": "Indicates whether the respondent experienced long-lasting physical health problems caused or worsened by marijuana use."
+        }
+    ]
+}

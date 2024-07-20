@@ -15,7 +15,6 @@ feature you must install dash-bootstrap-components >= 0.11.0.
 For more details on building multi-page Dash applications, check out the Dash
 documentation: https://dash.plot.ly/urls
 """
-
 import dash
 import dash_bootstrap_components as dbc
 from dash import Input, Output, State, dcc, html
@@ -71,11 +70,11 @@ def render_page_content(pathname):
     [Input("sidebar-toggle", "n_clicks")],
     [State("sidebar", "className")],
 )
+
 def toggle_classname(n, classname):
     if n and classname == "":
         return "collapsed"
     return ""
-
 
 @app.callback(
     Output("collapse", "is_open"),
@@ -86,9 +85,6 @@ def toggle_collapse(n, is_open):
     if n:
         return not is_open
     return is_open
-
-
-
 
 if __name__ == "__main__":
     app.run_server(debug=True)

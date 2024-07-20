@@ -1,0 +1,30 @@
+{
+    "entities": [
+        {
+            "entity": "BiasMotivation",
+            "description": "This is the motivation behind bias incidents reported by respondents in various categories such as race, religion, disability, gender, etc."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw, or unweighted, count of bias incidents reported in each category."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of bias incidents reported in each category relative to the total incidents."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "BiasMotivation",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the bias motivation category to the raw count of incidents."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "BiasMotivation",
+            "target_entity": "Percentage",
+            "description": "Relates the bias motivation category to the percentage of incidents."
+        }
+    ]
+}

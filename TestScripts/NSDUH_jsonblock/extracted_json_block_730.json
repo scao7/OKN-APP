@@ -1,0 +1,130 @@
+{
+    "entities": [
+        {
+            "entity": "SMI_Weighted_Logistic_Regression_Model",
+            "description": "A weighted logistic regression model for predicting serious mental illness (SMI) in the population."
+        },
+        {
+            "entity": "SAMHSA",
+            "description": "Substance Abuse and Mental Health Services Administration, responsible for overseeing and making adjustments to models and survey methodologies based on clinical data."
+        },
+        {
+            "entity": "MHSS_Clinical_Data",
+            "description": "Clinical data collected from the Mental Health Surveillance Study from the years 2008 to 2012."
+        },
+        {
+            "entity": "SMI_Diagnosis",
+            "description": "The diagnosis of serious mental illness identified during clinical interviews."
+        },
+        {
+            "entity": "AMI_Diagnosis",
+            "description": "The diagnosis of any mental illness identified during clinical interviews."
+        },
+        {
+            "entity": "MHSS_Respondents",
+            "description": "Participants in the Mental Health Surveillance Study clinical interviews."
+        },
+        {
+            "entity": "WHODAS",
+            "description": "World Health Organization Disability Assessment Schedule used as an abbreviated assessment tool."
+        },
+        {
+            "entity": "Survey_Year_2008",
+            "description": "The NSDUH survey conducted in the year 2008."
+        },
+        {
+            "entity": "Survey_Year_2012",
+            "description": "The NSDUH survey conducted in the year 2012."
+        },
+        {
+            "entity": "Survey_Language",
+            "description": "The language in which the survey was taken, which is English for the mentioned participants."
+        },
+        {
+            "entity": "Explanatory_Variables",
+            "description": "A vector of variables used in the weighted logistic regression model for prediction."
+        },
+        {
+            "entity": "Response_Probability",
+            "description": "The estimated probability of a response being positive for SMI in the logistic regression model."
+        },
+        {
+            "entity": "Age_Variable",
+            "description": "An age-related variable added to the prediction model to reduce bias and improve prediction."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesData",
+            "source_entity": "SMI_Weighted_Logistic_Regression_Model",
+            "target_entity": "MHSS_Clinical_Data",
+            "description": "The SMI weighted logistic regression model uses clinical data collected from MHSS."
+        },
+        {
+            "relationship": "oversees",
+            "source_entity": "SAMHSA",
+            "target_entity": "SMI_Weighted_Logistic_Regression_Model",
+            "description": "SAMHSA oversees and makes adjustments to the SMI weighted logistic regression model."
+        },
+        {
+            "relationship": "predicts",
+            "source_entity": "SMI_Weighted_Logistic_Regression_Model",
+            "target_entity": "SMI_Diagnosis",
+            "description": "The logistic regression model predicts the likelihood of an SMI diagnosis."
+        },
+        {
+            "relationship": "predicts",
+            "source_entity": "SMI_Weighted_Logistic_Regression_Model",
+            "target_entity": "AMI_Diagnosis",
+            "description": "The logistic regression model also includes predictions for any mental illness diagnosis (AMI)."
+        },
+        {
+            "relationship": "providesData",
+            "source_entity": "MHSS_Respondents",
+            "target_entity": "MHSS_Clinical_Data",
+            "description": "MHSS respondents provide the data used in the clinical data collection."
+        },
+        {
+            "relationship": "assesses",
+            "source_entity": "WHODAS",
+            "target_entity": "MHSS_Respondents",
+            "description": "WHODAS is used to assess a subset of respondents."
+        },
+        {
+            "relationship": "coversYear",
+            "source_entity": "Survey_Year_2008",
+            "target_entity": "MHSS_Respondents",
+            "description": "The 2008 survey year includes specific MHSS respondents."
+        },
+        {
+            "relationship": "coversYear",
+            "source_entity": "Survey_Year_2012",
+            "target_entity": "MHSS_Respondents",
+            "description": "The 2012 survey year includes specific MHSS respondents."
+        },
+        {
+            "relationship": "administeredIn",
+            "source_entity": "Survey_Language",
+            "target_entity": "MHSS_Respondents",
+            "description": "The survey was administered in English to the respondents."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Explanatory_Variables",
+            "target_entity": "SMI_Weighted_Logistic_Regression_Model",
+            "description": "Explanatory variables are included in the weighted logistic regression model for predicting SMI."
+        },
+        {
+            "relationship": "estimates",
+            "source_entity": "Response_Probability",
+            "target_entity": "SMI_Weighted_Logistic_Regression_Model",
+            "description": "Response probability is estimated by the logistic regression model."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "Age_Variable",
+            "target_entity": "SMI_Weighted_Logistic_Regression_Model",
+            "description": "An age variable is included in the prediction model to enhance accuracy."
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "VictimAcquaintanceRelationship",
+            "description": "Considers the relationship where the victim is acquainted with the offender."
+        },
+        {
+            "entity": "VictimFamilyRelationship",
+            "description": "Defines the relationship between the victim and the offender as family members."
+        },
+        {
+            "entity": "VictimNonFamilyRelationship",
+            "description": "Defines the relationship between the victim and the offender as non-family members."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasAcquaintanceRelationship",
+            "source_entity": "Victim",
+            "target_entity": "VictimAcquaintanceRelationship",
+            "description": "Indicates that the victim has an acquaintance relationship with the offender."
+        },
+        {
+            "relationship": "hasFamilyRelationship",
+            "source_entity": "Victim",
+            "target_entity": "VictimFamilyRelationship",
+            "description": "Indicates that the victim has a family relationship with the offender."
+        },
+        {
+            "relationship": "hasNonFamilyRelationship",
+            "source_entity": "Victim",
+            "target_entity": "VictimNonFamilyRelationship",
+            "description": "Indicates that the victim has a non-family relationship with the offender."
+        }
+    ]
+}

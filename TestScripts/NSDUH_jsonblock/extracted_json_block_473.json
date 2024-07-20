@@ -1,0 +1,100 @@
+{
+    "entities": [
+        {
+            "entity": "Survey",
+            "description": "An instrument to collect data on various topics related to substance use and mental health."
+        },
+        {
+            "entity": "UnmetTreatmentNeed",
+            "description": "Indication that the respondent needed treatment for substance use but did not receive it."
+        },
+        {
+            "entity": "JobLossFear",
+            "description": "Fear of losing job, home, or child custody due to substance use treatment."
+        },
+        {
+            "entity": "NotReadyToStartTreatment",
+            "description": "Not ready to initiate substance use treatment due to various reasons."
+        },
+        {
+            "entity": "NotReadyToStopUse",
+            "description": "Not ready to stop or reduce substance use despite recognizing a problem."
+        },
+        {
+            "entity": "ThoughtHandleOnOwn",
+            "description": "Belief that one could handle substance use issues without treatment."
+        },
+        {
+            "entity": "FamilyFriendsDisapproval",
+            "description": "Fear of disapproval from family, friends, or religious communities about seeking treatment."
+        },
+        {
+            "entity": "ForcedAgainstWill",
+            "description": "Fear of being forced against one's will to receive treatment."
+        },
+        {
+            "entity": "TRTWouldNotHelp",
+            "description": "Belief that treatment for substance use would not be helpful."
+        },
+        {
+            "entity": "NoOneCares",
+            "description": "Belief that no one would care if the respondent got better."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnmetTreatmentNeed",
+            "source_entity": "Survey",
+            "target_entity": "UnmetTreatmentNeed",
+            "description": "Indicates that the respondent needed substance use treatment but did not receive it."
+        },
+        {
+            "relationship": "fearsJobLoss",
+            "source_entity": "UnmetTreatmentNeed",
+            "target_entity": "JobLossFear",
+            "description": "Relates unmet treatment need to the fear of losing job, home, or child custody."
+        },
+        {
+            "relationship": "isNotReadyToStart",
+            "source_entity": "UnmetTreatmentNeed",
+            "target_entity": "NotReadyToStartTreatment",
+            "description": "Indicates that the respondent was not ready to start substance use treatment."
+        },
+        {
+            "relationship": "isNotReadyToStop",
+            "source_entity": "UnmetTreatmentNeed",
+            "target_entity": "NotReadyToStopUse",
+            "description": "Indicates that the respondent was not ready to stop using substances."
+        },
+        {
+            "relationship": "believesCanHandleAlone",
+            "source_entity": "UnmetTreatmentNeed",
+            "target_entity": "ThoughtHandleOnOwn",
+            "description": "Relates unmet treatment need to the belief that treatment was unnecessary because the respondent could handle it on their own."
+        },
+        {
+            "relationship": "fearsDisapproval",
+            "source_entity": "UnmetTreatmentNeed",
+            "target_entity": "FamilyFriendsDisapproval",
+            "description": "Indicates that the respondent feared disapproval from family, friends, or religious communities for seeking treatment."
+        },
+        {
+            "relationship": "fearsBeingForced",
+            "source_entity": "UnmetTreatmentNeed",
+            "target_entity": "ForcedAgainstWill",
+            "description": "Relates unmet treatment need to the fear of being forced to seek treatment against one's will."
+        },
+        {
+            "relationship": "believesTrtWouldNotHelp",
+            "source_entity": "UnmetTreatmentNeed",
+            "target_entity": "TRTWouldNotHelp",
+            "description": "Indicates that the respondent believed that treatment would not help their situation."
+        },
+        {
+            "relationship": "believesNoOneCares",
+            "source_entity": "UnmetTreatmentNeed",
+            "target_entity": "NoOneCares",
+            "description": "Indicates that the respondent believed that no one would care if they got better."
+        }
+    ]
+}

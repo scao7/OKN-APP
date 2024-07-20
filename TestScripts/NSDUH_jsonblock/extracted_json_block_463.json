@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "DrugTreatment",
+            "description": "Indicates if the respondent has received any treatment related to substance or drug use."
+        },
+        {
+            "entity": "SupportGroupParticipation",
+            "description": "Indicates if the respondent participated in a support group for substance use."
+        },
+        {
+            "entity": "EmergencyRoomVisit",
+            "description": "Indicates if the respondent has been seen in the emergency room or department due to substance use."
+        },
+        {
+            "entity": "HospitalInpatientTreatment",
+            "description": "Indicates if the respondent received substance use treatment as a hospital inpatient."
+        },
+        {
+            "entity": "ResidentialSubstanceRehab",
+            "description": "Indicates if the respondent received substance use treatment at a residential rehabilitation center."
+        },
+        {
+            "entity": "ResidentialMentalHealthTreatment",
+            "description": "Indicates if the respondent received mental health treatment at a residential mental health center."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSupportGroupParticipation",
+            "source_entity": "Respondent",
+            "target_entity": "SupportGroupParticipation",
+            "description": "Indicates if the respondent participated in a support group for substance use."
+        },
+        {
+            "relationship": "visitedEmergencyRoom",
+            "source_entity": "Respondent",
+            "target_entity": "EmergencyRoomVisit",
+            "description": "Indicates if the respondent has been seen in the emergency room or department due to substance use."
+        },
+        {
+            "relationship": "receivedHospitalInpatientTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "HospitalInpatientTreatment",
+            "description": "Indicates if the respondent received substance use treatment as a hospital inpatient."
+        },
+        {
+            "relationship": "receivedResidentialSubstanceRehab",
+            "source_entity": "Respondent",
+            "target_entity": "ResidentialSubstanceRehab",
+            "description": "Indicates if the respondent received substance use treatment at a residential rehabilitation center."
+        },
+        {
+            "relationship": "receivedResidentialMentalHealthTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "ResidentialMentalHealthTreatment",
+            "description": "Indicates if the respondent received mental health treatment at a residential mental health center."
+        }
+    ]
+}

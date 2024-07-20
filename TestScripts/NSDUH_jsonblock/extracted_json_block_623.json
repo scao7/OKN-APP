@@ -1,0 +1,52 @@
+[
+    {
+        "subject": "RC-ONLY FLAVORING VAPING",
+        "predicate": "past month use",
+        "object": "Used within the past month"
+    },
+    {
+        "subject": "RC-SYNTHETIC MARIJUANA",
+        "predicate": "ever used",
+        "object": "Ever used"
+    },
+    {
+        "subject": "RC-SYNTHETIC MARIJUANA",
+        "predicate": "past year use",
+        "object": "Used within the past year"
+    },
+    {
+        "subject": "RC-SYNTHETIC MARIJUANA",
+        "predicate": "past month use",
+        "object": "Used within the past month"
+    },
+    {
+        "subject": "RC-SYNTHETIC STIMULANTS",
+        "predicate": "ever used",
+        "object": "Ever used"
+    },
+    {
+        "subject": "RC-SYNTHETIC STIMULANTS",
+        "predicate": "past year use",
+        "object": "Used within the past year"
+    },
+    {
+        "subject": "RC-SYNTHETIC STIMULANTS",
+        "predicate": "past month use",
+        "object": "Used within the past month"
+    },
+    {
+        "subject": "RC-ILLEGALLY MADE FENTANYL",
+        "predicate": "ever used",
+        "object": "Ever used"
+    },
+    {
+        "subject": "RC-ILLEGALLY MADE FENTANYL",
+        "predicate": "past year use",
+        "object": "Used within the past year"
+    },
+    {
+        "subject": "RC-ILLEGALLY MADE FENTANYL",
+        "predicate": "past month use",
+        "object": "Used within the past month"
+    }
+]

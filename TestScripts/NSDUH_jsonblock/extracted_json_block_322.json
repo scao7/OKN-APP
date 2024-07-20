@@ -1,0 +1,354 @@
+{
+    "entities": [
+        {
+            "entity": "Valium",
+            "description": "A type of other drug injected, specified under category 3"
+        },
+        {
+            "entity": "Xanax",
+            "description": "A type of other drug injected, specified under category 3"
+        },
+        {
+            "entity": "Ritalin",
+            "description": "A type of other drug injected, specified under category 3"
+        },
+        {
+            "entity": "Methamphetamine",
+            "description": "A type of methamphetamine, also known as 'ice' or 'crank', injected as specified under category 3 or 4"
+        },
+        {
+            "entity": "Dilaudid",
+            "description": "A type of injected drug specified under category 3 or 4"
+        },
+        {
+            "entity": "Morphine",
+            "description": "A type of injected drug specified under category 3 or 4"
+        },
+        {
+            "entity": "Methadone",
+            "description": "A type of other drug injected, specified under category 3"
+        },
+        {
+            "entity": "Other Pain Reliever",
+            "description": "Other pain relievers not otherwise specified, injected under category 3"
+        },
+        {
+            "entity": "Percocet",
+            "description": "A type of other drug injected, specified under category 3 or 4"
+        },
+        {
+            "entity": "Fentanyl",
+            "description": "A type of other drug injected, specified under category 3 or 4"
+        },
+        {
+            "entity": "Other Hallucinogen",
+            "description": "Other hallucinogens not otherwise specified, injected under category 3"
+        },
+        {
+            "entity": "Other Opiates",
+            "description": "Other opiates not otherwise specified, injected under category 3 or 4"
+        },
+        {
+            "entity": "Heroin",
+            "description": "A type of injected drug specified under category 3 or 4"
+        },
+        {
+            "entity": "Other Drugs Injected",
+            "description": "Other drugs not otherwise specified, injected under category 3 or 4"
+        },
+        {
+            "entity": "Cocaine",
+            "description": "Cocaine or similar substances like coca, cocaina, coke, perico, injected under category 3 or 4"
+        },
+        {
+            "entity": "Crack",
+            "description": "Crack or rock, injected under category 3 or 4"
+        },
+        {
+            "entity": "Adderall",
+            "description": "A type of other drug injected, specified under category 3"
+        },
+        {
+            "entity": "Hydrocodone",
+            "description": "A type of other drug injected, specified under category 3 or 4"
+        },
+        {
+            "entity": "Oxycodone",
+            "description": "A type of other drug injected, specified under category 3"
+        },
+        {
+            "entity": "Roxicodone",
+            "description": "A type of other drug injected, specified under category 4"
+        },
+        {
+            "entity": "OxyContin",
+            "description": "A type of other drug injected, specified under category 3 or 4"
+        },
+        {
+            "entity": "Suboxone",
+            "description": "A type of other drug injected, specified under category 3 or 4"
+        },
+        {
+            "entity": "Opana",
+            "description": "A type of other drug injected, specified under category 3"
+        },
+        {
+            "entity": "Oxydone",
+            "description": "A type of other drug injected, product unspecified, under category 3 or 4"
+        },
+        {
+            "entity": "Testosterone",
+            "description": "A type of other drug injected, specified under category 3"
+        },
+        {
+            "entity": "Ecstasy",
+            "description": "A type of other drug injected, also known as MDMA, X, TC, XTC, specified under category 4"
+        },
+        {
+            "entity": "Bath salts",
+            "description": "A type of synthetic cathinone, injected under category 4"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Valium",
+            "description": "Valium is a type of other drug injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Xanax",
+            "description": "Xanax is a type of other drug injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Ritalin",
+            "description": "Ritalin is a type of other drug injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Methamphetamine",
+            "description": "Methamphetamine, also known as 'ice' or 'crank', is injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Methamphetamine",
+            "description": "Methamphetamine, also known as 'ice' or 'crank', is injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Dilaudid",
+            "description": "Dilaudid is a type of other drug injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Dilaudid",
+            "description": "Dilaudid is a type of other drug injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Morphine",
+            "description": "Morphine is a type of other drug injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Morphine",
+            "description": "Morphine is a type of other drug injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Methadone",
+            "description": "Methadone is a type of other drug injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "OtherPainReliever",
+            "description": "Other pain relievers not otherwise specified are injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Percocet",
+            "description": "Percocet is a type of other drug injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Percocet",
+            "description": "Percocet is a type of other drug injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Fentanyl",
+            "description": "Fentanyl is a type of other drug injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Fentanyl",
+            "description": "Fentanyl is a type of other drug injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "OtherHallucinogen",
+            "description": "Other hallucinogens not otherwise specified are injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "OtherOpiates",
+            "description": "Other opiates not otherwise specified are injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "OtherOpiates",
+            "description": "Other opiates not otherwise specified are injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Heroin",
+            "description": "Heroin is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Heroin",
+            "description": "Heroin is a type of injected drug under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "OtherDrugsInjected",
+            "description": "Other drugs not otherwise specified are injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "OtherDrugsInjected",
+            "description": "Other drugs not otherwise specified are injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Cocaine",
+            "description": "Cocaine or similar substances like coca, cocaina, coke, perico are injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Cocaine",
+            "description": "Cocaine or similar substances like coca, cocaina, coke, perico are injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Crack",
+            "description": "Crack or rock is injected under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Crack",
+            "description": "Crack or rock is injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Adderall",
+            "description": "Adderall is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Hydrocodone",
+            "description": "Hydrocodone is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Hydrocodone",
+            "description": "Hydrocodone is a type of injected drug under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Oxycodone",
+            "description": "Oxycodone is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "OxyContin",
+            "description": "OxyContin is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "OxyContin",
+            "description": "OxyContin is a type of injected drug under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Suboxone",
+            "description": "Suboxone is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Suboxone",
+            "description": "Suboxone is a type of injected drug under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Opana",
+            "description": "Opana is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Oxydone",
+            "description": "Oxydone, unspecified product is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Oxydone",
+            "description": "Oxydone, unspecified product is a type of injected drug under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category3OtherDrugInjected",
+            "target_entity": "Testosterone",
+            "description": "Testosterone is a type of injected drug under category 3"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "Ecstasy",
+            "description": "Ecstasy, also known as MDMA, X, TC, or XTC, is injected under category 4"
+        },
+        {
+            "relationship": "hasInjectedDrug",
+            "source_entity": "Category4OtherDrugInjected",
+            "target_entity": "BathSalts",
+            "description": "Bath salts/synthetic cathinone are injected under category 4"
+        }
+    ]
+}

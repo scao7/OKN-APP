@@ -1,0 +1,104 @@
+{
+    "entities": [
+        {
+            "entity": "FeltEffortWorseMonth",
+            "description": "Frequency of feeling that everything takes significant effort in the worst month."
+        },
+        {
+            "entity": "FeltEverythingEffortMonthRev",
+            "description": "How often respondent felt everything took effort in the worst month (imputed revised data)."
+        },
+        {
+            "entity": "FeltEverythingEffortMonthInd",
+            "description": "How often respondent felt everything took effort in the worst month (imputed individual data)."
+        },
+        {
+            "entity": "FeltDownWthlssNoGoodMonth",
+            "description": "Frequency of feeling down, worthless, or no good in the worst month."
+        },
+        {
+            "entity": "FeltDownWthlssNoGoodMonthRev",
+            "description": "How often respondent felt down, worthless, or no good in the worst month (imputed revised data)."
+        },
+        {
+            "entity": "FeltDownWthlssNoGoodMonthInd",
+            "description": "How often respondent felt down, worthless, or no good in the worst month (imputed individual data)."
+        },
+        {
+            "entity": "DifficultyRememberingMonth",
+            "description": "Difficulty remembering any events in the past month."
+        },
+        {
+            "entity": "DifficultyRememberingYearRev",
+            "description": "How often had difficulty remembering in the past year (imputed revised data)."
+        },
+        {
+            "entity": "DifficultyRememberingYearInd",
+            "description": "How often had difficulty remembering in the past year (imputed individual data)."
+        },
+        {
+            "entity": "DifficultyConcentratingMonth",
+            "description": "Difficulty concentrating on tasks in the past month."
+        },
+        {
+            "entity": "DifficultyConcentratingYearRev",
+            "description": "How often had difficulty concentrating in the past year (imputed revised data)."
+        },
+        {
+            "entity": "DifficultyConcentratingYearInd",
+            "description": "How often had difficulty concentrating in the past year (imputed individual data)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasImputedDataRev",
+            "source_entity": "Survey",
+            "target_entity": [
+                "FeltEverythingEffortMonthRev",
+                "FeltDownWthlssNoGoodMonthRev",
+                "DifficultyRememberingYearRev",
+                "DifficultyConcentratingYearRev"
+            ],
+            "description": "Indicates the survey collects revised imputed data for various mental health measures."
+        },
+        {
+            "relationship": "hasImputedDataInd",
+            "source_entity": "Survey",
+            "target_entity": [
+                "FeltEverythingEffortMonthInd",
+                "FeltDownWthlssNoGoodMonthInd",
+                "DifficultyRememberingYearInd",
+                "DifficultyConcentratingYearInd"
+            ],
+            "description": "Indicates the survey collects individual imputed data for various mental health measures."
+        },
+        {
+            "relationship": "measuresMentalHealth",
+            "source_entity": "Survey",
+            "target_entity": [
+                "FeltEffortWorseMonth",
+                "FeltDownWthlssNoGoodMonth",
+                "DifficultyRememberingMonth",
+                "DifficultyConcentratingMonth"
+            ],
+            "description": "Indicates the survey measures mental health aspects such as feeling effortful, down, difficulty in remembering or concentrating over the worst months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Survey",
+            "predicate": "hasImputedDataRev",
+            "object": "FeltEverythingEffortMonthRev"
+        },
+        {
+            "subject": "Survey",
+            "predicate": "hasImputedDataInd",
+            "object": "FeltEverythingEffortMonthInd"
+        },
+        {
+            "subject": "Survey",
+            "predicate": "measuresMentalHealth",
+            "object": "FeltEffortWorseMonth"
+        }
+    ]
+}

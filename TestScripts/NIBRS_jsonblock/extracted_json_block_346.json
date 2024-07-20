@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "entity": "MissingData",
+            "description": "The count of missing data in the survey responses."
+        },
+        {
+            "entity": "ArresteeSequenceNumber",
+            "description": "The sequence number assigned to an arrestee."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The unweighted frequency of the survey responses."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of valid cases out of the total cases."
+        },
+        {
+            "entity": "MeanValue",
+            "description": "The mean value of the survey responses."
+        },
+        {
+            "entity": "MedianValue",
+            "description": "The median value of the survey responses."
+        },
+        {
+            "entity": "ModeValue",
+            "description": "The mode value of the survey responses."
+        },
+        {
+            "entity": "MinValue",
+            "description": "The minimum value of the survey responses."
+        },
+        {
+            "entity": "MaxValue",
+            "description": "The maximum value of the survey responses."
+        },
+        {
+            "entity": "StandardDeviation",
+            "description": "The standard deviation of the survey responses."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the count of missing data in the survey responses."
+        },
+        {
+            "relationship": "hasArresteeSequenceNumber",
+            "source_entity": "Arrestee",
+            "target_entity": "ArresteeSequenceNumber",
+            "description": "Assigns a sequence number to an arrestee."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Specifies the unweighted frequency of the survey responses."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Survey",
+            "target_entity": "ValidCases",
+            "description": "Indicates the number of valid cases out of the total cases."
+        },
+        {
+            "relationship": "hasMeanValue",
+            "source_entity": "Survey",
+            "target_entity": "MeanValue",
+            "description": "Indicates the mean value of the survey responses."
+        },
+        {
+            "relationship": "hasMedianValue",
+            "source_entity": "Survey",
+            "target_entity": "MedianValue",
+            "description": "Indicates the median value of the survey responses."
+        },
+        {
+            "relationship": "hasModeValue",
+            "source_entity": "Survey",
+            "target_entity": "ModeValue",
+            "description": "Indicates the mode value of the survey responses."
+        },
+        {
+            "relationship": "hasMinValue",
+            "source_entity": "Survey",
+            "target_entity": "MinValue",
+            "description": "Indicates the minimum value of the survey responses."
+        },
+        {
+            "relationship": "hasMaxValue",
+            "source_entity": "Survey",
+            "target_entity": "MaxValue",
+            "description": "Indicates the maximum value of the survey responses."
+        },
+        {
+            "relationship": "hasStandardDeviation",
+            "source_entity": "Survey",
+            "target_entity": "StandardDeviation",
+            "description": "Indicates the standard deviation of the survey responses."
+        }
+    ]
+}

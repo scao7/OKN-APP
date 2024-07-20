@@ -1,0 +1,64 @@
+{
+    "entities": [
+        {
+            "entity": "HallucinogenUse",
+            "description": "Use of hallucinogenic substances."
+        },
+        {
+            "entity": "EmotionalOrMentalHealthProblems",
+            "description": "Long-lasting or repeated emotional or mental health issues."
+        },
+        {
+            "entity": "HallucinogenUsageImpact",
+            "description": "Impact of hallucinogen use on emotional or mental health problems."
+        },
+        {
+            "entity": "ImportantActivities",
+            "description": "Activities such as spending time with friends and family, attending special events at work or school, participating in hobbies and sports, and attending religious services and events."
+        },
+        {
+            "entity": "ActivityReductionDueToHallucinogens",
+            "description": "Reduction in participation in important activities due to hallucinogen use."
+        },
+        {
+            "entity": "WorkSchoolHomeProblems",
+            "description": "Problems such as missing a lot of work or school, getting demoted, losing a job, getting suspended, being expelled, dropping out of school, or failing to take care of family."
+        },
+        {
+            "entity": "HallucinogenAbuseImpact",
+            "description": "Impact of hallucinogen use causing serious problems at work, school, or home."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "causes",
+            "source_entity": "HallucinogenUse",
+            "target_entity": "EmotionalOrMentalHealthProblems",
+            "description": "Hallucinogen use causing emotional or mental health problems."
+        },
+        {
+            "relationship": "impacts",
+            "source_entity": "HallucinogenUse",
+            "target_entity": "ImportantActivities",
+            "description": "Hallucinogen use impacting participation in important activities."
+        },
+        {
+            "relationship": "reducesParticipationIn",
+            "source_entity": "HallucinogenUse",
+            "target_entity": "ImportantActivities",
+            "description": "Hallucinogen use reducing participation in important activities."
+        },
+        {
+            "relationship": "causes",
+            "source_entity": "HallucinogenUse",
+            "target_entity": "WorkSchoolHomeProblems",
+            "description": "Hallucinogen use causing serious problems at work, school, or home."
+        },
+        {
+            "relationship": "hasImpact",
+            "source_entity": "HallucinogenUse",
+            "target_entity": "HallucinogenUsageImpact",
+            "description": "Hallucinogen use having an impact on emotional or mental health problems."
+        }
+    ]
+}

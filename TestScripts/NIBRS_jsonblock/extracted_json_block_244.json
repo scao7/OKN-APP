@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "Label",
+            "description": "Categories representing the age group of victims."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of responses in each category without any weighting."
+        },
+        {
+            "entity": "FrequencyPercentage",
+            "description": "The percentage of responses in each category without any weighting."
+        },
+        {
+            "entity": "AgeOfVictim",
+            "description": "The age of the victim categorized by age ranges."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasLabel",
+            "source_entity": "Survey",
+            "target_entity": "Label",
+            "description": "Relates the survey to the descriptive labels used to categorize data."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "AgeOfVictim",
+            "target_entity": "UnweightedFrequency",
+            "description": "Links the age of the victim categories with their respective unweighted frequencies."
+        },
+        {
+            "relationship": "hasFrequencyPercentage",
+            "source_entity": "AgeOfVictim",
+            "target_entity": "FrequencyPercentage",
+            "description": "Associates the age of the victim categories with their respective frequency percentages in the survey data."
+        }
+    ]
+}

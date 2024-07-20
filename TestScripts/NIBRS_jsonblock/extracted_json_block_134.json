@@ -1,0 +1,40 @@
+{
+    "entities": [
+        {
+            "entity": "NumberOfRecoveredMotorVehicles",
+            "description": "The number of motor vehicles recovered, with the variable type as numeric."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency of cases observed without weighting adjustments, related to the number of recovered motor vehicles."
+        },
+        {
+            "entity": "CaseStatistics",
+            "description": "Statistical measures related to the recovered motor vehicles including mean, median, mode, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The proportion or number of cases with missing data in the study."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "NumberOfRecoveredMotorVehicles",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the frequency of cases observed without weighting adjustments."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "NumberOfRecoveredMotorVehicles",
+            "target_entity": "CaseStatistics",
+            "description": "Relates the number of recovered motor vehicles to various statistical measures."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the number or proportion of cases with missing data in the survey."
+        }
+    ]
+}

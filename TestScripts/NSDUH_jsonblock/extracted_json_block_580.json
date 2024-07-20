@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "RC-YOUTH: PY MDE AND ILL DRUG USE DISORDER-DSM-5 - ANY",
+            "description": "Response class for youth regarding past year MDE and any ill drug use disorder based on DSM-5."
+        },
+        {
+            "entity": "RC-YOUTH: PY MDE AND SUB USE DISORDER-DSM-5 - ANY",
+            "description": "Response class for youth regarding past year MDE and any substance use disorder based on DSM-5."
+        },
+        {
+            "entity": "RC-YOUTH: MDE OR SUBSTANCE USE DISORDER-PAST YEAR-DSM-5-ANY",
+            "description": "Response class for youth regarding past year MDE or substance use disorder based on DSM-5."
+        },
+        {
+            "entity": "RC-YOUTH: ONLY MDE, ONLY SUD, BOTH, OR NEITHER-PY-DSM-5-ANY",
+            "description": "Response class for youth regarding categorization of MDE and SUD: only MDE, only SUD, both, or neither in the past year based on DSM-5."
+        },
+        {
+            "entity": "RC-YOUTH: SAW OR TALK TO MD/PROF FOR MDE IN PAST YEAR",
+            "description": "Response class for youth regarding whether they saw or talked to a medical doctor or professional for MDE in the past year."
+        },
+        {
+            "entity": "RC-YOUTH: USED RX MEDICATION FOR MDE IN PAST YEAR",
+            "description": "Response class for youth regarding whether they used prescription medication for MDE in the past year."
+        },
+        {
+            "entity": "RC-YOUTH: RCVD TRT/CNSLG OR RX MED FOR MDE IN PST YR",
+            "description": "Response class for youth regarding whether they received treatment/counseling or prescription medication for MDE in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "respondedTo",
+            "source_entity": "Youth",
+            "target_entity": "RC-YOUTH: PY MDE AND ILL DRUG USE DISORDER-DSM-5 - ANY",
+            "description": "Indicates whether youth responded to questions about past year MDE and ill drug use disorder based on DSM-5."
+        },
+        {
+            "relationship": "respondedTo",
+            "source_entity": "Youth",
+            "target_entity": "RC-YOUTH: PY MDE AND SUB USE DISORDER-DSM-5 - ANY",
+            "description": "Indicates whether youth responded to questions about past year MDE and substance use disorder based on DSM-5."
+        },
+        {
+            "relationship": "respondedTo",
+            "source_entity": "Youth",
+            "target_entity": "RC-YOUTH: MDE OR SUBSTANCE USE DISORDER-PAST YEAR-DSM-5-ANY",
+            "description": "Indicates whether youth responded to questions about past year MDE or substance use disorder based on DSM-5."
+        },
+        {
+            "relationship": "categorizedAs",
+            "source_entity": "Youth",
+            "target_entity": "RC-YOUTH: ONLY MDE, ONLY SUD, BOTH, OR NEITHER-PY-DSM-5-ANY",
+            "description": "Indicates the categorization of MDE and SUD among youth: only MDE, only SUD, both, or neither in the past year based on DSM-5."
+        },
+        {
+            "relationship": "sawOrTalkedTo",
+            "source_entity": "Youth",
+            "target_entity": "RC-YOUTH: SAW OR TALK TO MD/PROF FOR MDE IN PAST YEAR",
+            "description": "Indicates whether youth saw or talked to a medical doctor or professional for MDE in the past year."
+        },
+        {
+            "relationship": "usedMedication",
+            "source_entity": "Youth",
+            "target_entity": "RC-YOUTH: USED RX MEDICATION FOR MDE IN PAST YEAR",
+            "description": "Indicates whether youth used prescription medication for MDE in the past year."
+        },
+        {
+            "relationship": "receivedTreatment",
+            "source_entity": "Youth",
+            "target_entity": "RC-YOUTH: RCVD TRT/CNSLG OR RX MED FOR MDE IN PST YR",
+            "description": "Indicates whether youth received treatment/counseling or prescription medication for MDE in the past year."
+        }
+    ]
+}

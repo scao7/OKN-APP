@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "CocaineUsage",
+            "description": "The best estimate of the number of days the respondent used cocaine during the past 30 days."
+        },
+        {
+            "entity": "NeverUsedCocaine",
+            "description": "Indicates the respondent has never used cocaine."
+        },
+        {
+            "entity": "NoCocaineUsagePast30Days",
+            "description": "Indicates the respondent did not use cocaine in the past 30 days."
+        },
+        {
+            "entity": "UnknownCocaineUsage",
+            "description": "Indicates the respondent does not know the number of days they used cocaine."
+        },
+        {
+            "entity": "RefusedToRespond",
+            "description": "Indicates the respondent refused to provide an answer."
+        },
+        {
+            "entity": "BlankResponse",
+            "description": "Indicates the respondent left the answer blank."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "Indicates the respondent legitimately skipped the question."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "estimatedCocaineUsage",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineUsage",
+            "description": "Relates the respondent to their estimated cocaine usage over the past 30 days."
+        },
+        {
+            "relationship": "noCocaineUsageReported",
+            "source_entity": "Respondent",
+            "target_entity": "NeverUsedCocaine",
+            "description": "Indicates that the respondent has never used cocaine."
+        },
+        {
+            "relationship": "noCocaineUsageInPast30Days",
+            "source_entity": "Respondent",
+            "target_entity": "NoCocaineUsagePast30Days",
+            "description": "Indicates that the respondent did not use cocaine in the past 30 days."
+        },
+        {
+            "relationship": "unknownCocaineUsage",
+            "source_entity": "Respondent",
+            "target_entity": "UnknownCocaineUsage",
+            "description": "Indicates that the respondent does not know the number of days they used cocaine."
+        },
+        {
+            "relationship": "refusedCocaineUsageResponse",
+            "source_entity": "Respondent",
+            "target_entity": "RefusedToRespond",
+            "description": "Indicates that the respondent refused to answer the question about cocaine usage."
+        },
+        {
+            "relationship": "blankCocaineUsageResponse",
+            "source_entity": "Respondent",
+            "target_entity": "BlankResponse",
+            "description": "Indicates that the respondent left the cocaine usage question blank."
+        },
+        {
+            "relationship": "legitimatelySkippedCocaineUsage",
+            "source_entity": "Respondent",
+            "target_entity": "LegitimateSkip",
+            "description": "Indicates that the respondent legitimately skipped the cocaine usage question."
+        }
+    ]
+}

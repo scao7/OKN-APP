@@ -1,0 +1,143 @@
+{
+    "entities": [
+        {
+            "entity": "MostRecentAlcoholObtainMethod",
+            "description": "Method through which respondent obtained their most recent alcohol, whether from a friend or other sources."
+        },
+        {
+            "entity": "FrequentAlcoholObtainMethod",
+            "description": "Frequency distribution of the most recent alcohol obtainment method."
+        },
+        {
+            "entity": "MarijuanaWithLastAlcoholUse",
+            "description": "Indicates whether the respondent used marijuana during their last alcohol use."
+        },
+        {
+            "entity": "CocaineWithLastAlcoholUse",
+            "description": "Indicates whether the respondent used cocaine during their last alcohol use."
+        },
+        {
+            "entity": "HeroinWithLastAlcoholUse",
+            "description": "Indicates whether the respondent used heroin during their last alcohol use."
+        },
+        {
+            "entity": "HallucinogensWithLastAlcoholUse",
+            "description": "Indicates whether the respondent used hallucinogens during their last alcohol use."
+        },
+        {
+            "entity": "InhalantsWithLastAlcoholUse",
+            "description": "Indicates whether the respondent used inhalants during their last alcohol use."
+        },
+        {
+            "entity": "MethamphetamineWithLastAlcoholUse",
+            "description": "Indicates whether the respondent used methamphetamine during their last alcohol use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMostRecentAlcoholObtainMethod",
+            "source_entity": "Respondent",
+            "target_entity": "MostRecentAlcoholObtainMethod",
+            "description": "Relates the respondent to the method of obtaining their most recent alcohol."
+        },
+        {
+            "relationship": "hasFrequentAlcoholObtainMethod",
+            "source_entity": "MostRecentAlcoholObtainMethod",
+            "target_entity": "FrequentAlcoholObtainMethod",
+            "description": "Shows the frequency distribution of alcohol obtainment methods."
+        },
+        {
+            "relationship": "hasMarijuanaWithLastAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "MarijuanaWithLastAlcoholUse",
+            "description": "Indicates if the respondent used marijuana with their last alcohol use."
+        },
+        {
+            "relationship": "hasCocaineWithLastAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineWithLastAlcoholUse",
+            "description": "Indicates if the respondent used cocaine with their last alcohol use."
+        },
+        {
+            "relationship": "hasHeroinWithLastAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinWithLastAlcoholUse",
+            "description": "Indicates if the respondent used heroin with their last alcohol use."
+        },
+        {
+            "relationship": "hasHallucinogensWithLastAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogensWithLastAlcoholUse",
+            "description": "Indicates if the respondent used hallucinogens with their last alcohol use."
+        },
+        {
+            "relationship": "hasInhalantsWithLastAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantsWithLastAlcoholUse",
+            "description": "Indicates if the respondent used inhalants with their last alcohol use."
+        },
+        {
+            "relationship": "hasMethamphetamineWithLastAlcoholUse",
+            "source_entity": "Respondent",
+            "target_entity": "MethamphetamineWithLastAlcoholUse",
+            "description": "Indicates if the respondent used methamphetamine with their last alcohol use."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "UADFRD",
+            "predicate": "is assigned",
+            "object": "negative response if respondent indicated receiving most recent alcohol not from a friend"
+        },
+        {
+            "subject": "UADFRD",
+            "predicate": "is assigned",
+            "object": "value of 2 if the respondent has not used alcohol in the past month"
+        },
+        {
+            "subject": "CA6FRESP2",
+            "predicate": "obtained",
+            "object": "alcohol from a friend"
+        },
+        {
+            "subject": "CA6FRESP2",
+            "predicate": "obtained",
+            "object": "alcohol not from a friend"
+        },
+        {
+            "subject": "UADFRD",
+            "predicate": "assigned value",
+            "object": "3 if respondent did not indicate who gave them the last alcohol they drank"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "marijuana with last alcohol use"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "cocaine with last alcohol use"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "heroin with last alcohol use"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "hallucinogens with last alcohol use"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "inhalants with last alcohol use"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "used",
+            "object": "methamphetamine with last alcohol use"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "entities": [
+        {
+            "entity": "AmericanIndianReservations",
+            "description": "Federally-recognized American Indian reservations (AIRs) and off-reservation trust land areas\u2014areas that have been set aside by the U.S. for the use of American Indian tribes."
+        },
+        {
+            "entity": "StateRecognizedAmericanIndianReservations",
+            "description": "State-recognized American Indian Reservations (SAIRs)\u2014reservations established by some State governments for tribes recognized by the State."
+        },
+        {
+            "entity": "OklahomaTribalStatisticalAreas",
+            "description": "Oklahoma tribal statistical areas (OTSAs)\u2014areas intended to represent the former American Indian reservations that existed in Indian and Oklahoma territories prior to Oklahoma statehood in 1907."
+        },
+        {
+            "entity": "TribalDesignatedStatisticalAreas",
+            "description": "Tribal designated statistical areas (TDSAs)\u2014areas identified and delineated for federally-recognized American Indian tribes that do not currently have an AIR or off-reservation trust land."
+        },
+        {
+            "entity": "StateDesignatedTribalStatisticalAreas",
+            "description": "State designated tribal statistical areas (SDTSAs)\u2014areas identified and delineated for State-recognized tribes that are not federally-recognized and do not have an AIR or off-reservation trust land."
+        },
+        {
+            "entity": "MajoritySegmentIndicator",
+            "description": "A majority 'AIA' variable created by summarizing the total number of dwelling units within each of the AIAs within the segment and then assigning the AIA with the most dwelling units to that segment."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "includesArea",
+            "source_entity": "AmericanIndianReservations",
+            "target_entity": "OffReservationTrustLandAreas",
+            "description": "Indicates that American Indian reservations include areas and off-reservation trust land areas."
+        },
+        {
+            "relationship": "hasAuthority",
+            "source_entity": "StateRecognizedAmericanIndianReservations",
+            "target_entity": "State",
+            "description": "Indicates that State-recognized American Indian Reservations are established by State governments."
+        },
+        {
+            "relationship": "representsArea",
+            "source_entity": "OklahomaTribalStatisticalAreas",
+            "target_entity": "FormerAmericanIndianReservations",
+            "description": "Indicates that Oklahoma tribal statistical areas represent the former American Indian reservations."
+        },
+        {
+            "relationship": "isRecognizedBy",
+            "source_entity": "TribalDesignatedStatisticalAreas",
+            "target_entity": "FederallyRecognizedIndianTribes",
+            "description": "Indicates that Tribal designated statistical areas are recognized by federally-recognized American Indian tribes."
+        },
+        {
+            "relationship": "isDelineatedBy",
+            "source_entity": "StateDesignatedTribalStatisticalAreas",
+            "target_entity": "StateRecognizedTribes",
+            "description": "Indicates that State designated tribal statistical areas are delineated by State-recognized tribes."
+        },
+        {
+            "relationship": "hasSegment",
+            "source_entity": "Survey",
+            "target_entity": "MajoritySegmentIndicator",
+            "description": "Relates the survey segment to the majority American Indian area indicator."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Majority Segment Indicator",
+            "predicate": "Frequency",
+            "object": "875"
+        },
+        {
+            "subject": "Majority Segment Indicator",
+            "predicate": "Percentage",
+            "object": "1.48"
+        },
+        {
+            "subject": "Not in American Indian Area",
+            "predicate": "Frequency",
+            "object": "58194"
+        },
+        {
+            "subject": "Not in American Indian Area",
+            "predicate": "Percentage",
+            "object": "98.52"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "subject": "PaidForMarijuana",
+        "predicate": "response rate",
+        "object": "8670"
+    },
+    {
+        "subject": "PaidForMarijuana",
+        "predicate": "percentage",
+        "object": "14.68%"
+    },
+    {
+        "subject": "TradedForMarijuana",
+        "predicate": "response rate",
+        "object": "779"
+    },
+    {
+        "subject": "TradedForMarijuana",
+        "predicate": "percentage",
+        "object": "1.32%"
+    },
+    {
+        "subject": "GotMarijuanaForFree",
+        "predicate": "response rate",
+        "object": "8024"
+    },
+    {
+        "subject": "GotMarijuanaForFree",
+        "predicate": "percentage",
+        "object": "13.58%"
+    },
+    {
+        "subject": "GrewOwnMarijuana",
+        "predicate": "response rate",
+        "object": "588"
+    },
+    {
+        "subject": "GrewOwnMarijuana",
+        "predicate": "percentage",
+        "object": "1.00%"
+    }
+]

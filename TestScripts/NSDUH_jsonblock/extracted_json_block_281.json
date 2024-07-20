@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "MarijuanaUseMethod",
+            "description": "Different methods of using marijuana such as dabbing waxes, eating or drinking, and other modes."
+        },
+        {
+            "entity": "PeyoteUse",
+            "description": "Indicates whether the respondent has ever used peyote."
+        },
+        {
+            "entity": "MescalineUse",
+            "description": "Indicates whether the respondent has ever used mescaline."
+        },
+        {
+            "entity": "PsilocybinUse",
+            "description": "Indicates whether the respondent has ever used psilocybin (mushrooms)."
+        },
+        {
+            "entity": "AmylNitriteUse",
+            "description": "Indicates whether the respondent has ever inhaled amyl nitrite ('poppers', rush, etc.)."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usesMethod",
+            "source_entity": "MarijuanaUser",
+            "target_entity": "MarijuanaUseMethod",
+            "description": "Relates to the different methods a marijuana user may use marijuana."
+        },
+        {
+            "relationship": "hasPeyoteUse",
+            "source_entity": "Respondent",
+            "target_entity": "PeyoteUse",
+            "description": "Indicates if the respondent has ever used peyote."
+        },
+        {
+            "relationship": "hasMescalineUse",
+            "source_entity": "Respondent",
+            "target_entity": "MescalineUse",
+            "description": "Indicates if the respondent has ever used mescaline."
+        },
+        {
+            "relationship": "hasPsilocybinUse",
+            "source_entity": "Respondent",
+            "target_entity": "PsilocybinUse",
+            "description": "Indicates if the respondent has ever used psilocybin (mushrooms)."
+        },
+        {
+            "relationship": "hasAmylNitriteUse",
+            "source_entity": "Respondent",
+            "target_entity": "AmylNitriteUse",
+            "description": "Indicates if the respondent has ever inhaled amyl nitrite ('poppers', rush, etc.)."
+        }
+    ]
+}

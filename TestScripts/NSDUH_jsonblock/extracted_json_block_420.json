@@ -1,0 +1,128 @@
+{
+    "entities": [
+        {
+            "entity": "CocaineUseDisorderPastYear",
+            "description": "Indicates whether the respondent had a cocaine use disorder in the past year."
+        },
+        {
+            "entity": "HeroinUseDisorderPastYear",
+            "description": "Indicates whether the respondent had a heroin use disorder in the past year."
+        },
+        {
+            "entity": "HallucinogenUseDisorderPastYear",
+            "description": "Indicates whether the respondent had a hallucinogen use disorder in the past year."
+        },
+        {
+            "entity": "InhalantUseDisorderPastYear",
+            "description": "Indicates whether the respondent had an inhalant use disorder in the past year."
+        },
+        {
+            "entity": "FrequencyOfCocaineUseDisorderSurvey",
+            "description": "Frequency count and percentage of respondents having cocaine use disorder in the past year."
+        },
+        {
+            "entity": "FrequencyOfHeroinUseDisorderSurvey",
+            "description": "Frequency count and percentage of respondents having heroin use disorder in the past year."
+        },
+        {
+            "entity": "FrequencyOfHallucinogenUseDisorderSurvey",
+            "description": "Frequency count and percentage of respondents having hallucinogen use disorder in the past year."
+        },
+        {
+            "entity": "FrequencyOfInhalantUseDisorderSurvey",
+            "description": "Frequency count and percentage of respondents having inhalant use disorder in the past year."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCocaineUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineUseDisorderPastYear",
+            "description": "Relates the respondent to their cocaine use disorder status in the past year."
+        },
+        {
+            "relationship": "hasHeroinUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinUseDisorderPastYear",
+            "description": "Relates the respondent to their heroin use disorder status in the past year."
+        },
+        {
+            "relationship": "hasHallucinogenUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogenUseDisorderPastYear",
+            "description": "Relates the respondent to their hallucinogen use disorder status in the past year."
+        },
+        {
+            "relationship": "hasInhalantUseDisorder",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUseDisorderPastYear",
+            "description": "Relates the respondent to their inhalant use disorder status in the past year."
+        },
+        {
+            "relationship": "surveysCocaineUseDisorder",
+            "source_entity": "Survey",
+            "target_entity": "FrequencyOfCocaineUseDisorderSurvey",
+            "description": "Relates the survey to the frequency and percentage data for cocaine use disorder in the past year."
+        },
+        {
+            "relationship": "surveysHeroinUseDisorder",
+            "source_entity": "Survey",
+            "target_entity": "FrequencyOfHeroinUseDisorderSurvey",
+            "description": "Relates the survey to the frequency and percentage data for heroin use disorder in the past year."
+        },
+        {
+            "relationship": "surveysHallucinogenUseDisorder",
+            "source_entity": "Survey",
+            "target_entity": "FrequencyOfHallucinogenUseDisorderSurvey",
+            "description": "Relates the survey to the frequency and percentage data for hallucinogen use disorder in the past year."
+        },
+        {
+            "relationship": "surveysInhalantUseDisorder",
+            "source_entity": "Survey",
+            "target_entity": "FrequencyOfInhalantUseDisorderSurvey",
+            "description": "Relates the survey to the frequency and percentage data for inhalant use disorder in the past year."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Cocaine Use Disorder in the Past Year",
+            "predicate": "hasFrequency",
+            "object": "849"
+        },
+        {
+            "subject": "Cocaine Use Disorder in the Past Year",
+            "predicate": "hasPercentage",
+            "object": "1.44"
+        },
+        {
+            "subject": "Heroin Use Disorder in the Past Year",
+            "predicate": "hasFrequency",
+            "object": "147"
+        },
+        {
+            "subject": "Heroin Use Disorder in the Past Year",
+            "predicate": "hasPercentage",
+            "object": "0.25"
+        },
+        {
+            "subject": "Hallucinogen Use Disorder in the Past Year",
+            "predicate": "hasFrequency",
+            "object": "165"
+        },
+        {
+            "subject": "Hallucinogen Use Disorder in the Past Year",
+            "predicate": "hasPercentage",
+            "object": "0.28"
+        },
+        {
+            "subject": "Inhalant Use Disorder in the Past Year",
+            "predicate": "hasFrequency",
+            "object": "73"
+        },
+        {
+            "subject": "Inhalant Use Disorder in the Past Year",
+            "predicate": "hasPercentage",
+            "object": "0.13"
+        }
+    ]
+}

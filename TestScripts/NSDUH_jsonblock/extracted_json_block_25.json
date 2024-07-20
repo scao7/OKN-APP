@@ -1,0 +1,90 @@
+{
+    "entities": [
+        {
+            "entity": "ANALWT2",
+            "description": "Weight used in the full analytic dataset adjusted for various demographic variables."
+        },
+        {
+            "entity": "ANALWT2_C",
+            "description": "The final weight after calibration, product of ANALWTADJ and GEM weighting adjustment factor."
+        },
+        {
+            "entity": "DemographicVariables",
+            "description": "Variables used in the weight calibration in GEM that typically include demographic variables."
+        },
+        {
+            "entity": "UsableInterviews",
+            "description": "Interviews that meet the criteria for being retained for weighting and further analysis."
+        },
+        {
+            "entity": "LifetimeUse",
+            "description": "Respondent's reported lifetime use of one or more substances or drugs."
+        },
+        {
+            "entity": "GateQuestion",
+            "description": "Initial question used to determine lifetime use of a substance or category of substances."
+        },
+        {
+            "entity": "Substances",
+            "description": "List of substances for which detailed questions are asked if lifetime use is reported."
+        },
+        {
+            "entity": "CigaretteLifetimeUse",
+            "description": "Lifetime use of cigarettes as determined by the lifetime cigarette question CG01."
+        },
+        {
+            "entity": "AdditionalSubstances",
+            "description": "Additional substances including smokeless tobacco, cigars, alcohol, marijuana, cocaine, heroin, hallucinogens."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "isProductOf",
+            "source_entity": "ANALWT2_C",
+            "target_entity": "ANALWTADJ",
+            "description": "ANALWT2_C is the product of ANALWTADJ and the GEM weighting adjustment factor."
+        },
+        {
+            "relationship": "usesDemographicVariables",
+            "source_entity": "GEMWeighting",
+            "target_entity": "DemographicVariables",
+            "description": "GEM weighting calibration uses demographic variables."
+        },
+        {
+            "relationship": "hasGateQuestion",
+            "source_entity": "LifetimeUse",
+            "target_entity": "GateQuestion",
+            "description": "Lifetime use of a substance is initially determined by a gate question."
+        },
+        {
+            "relationship": "hasSubstanceList",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "Substances",
+            "description": "NSDUH survey includes a list of substances for which detailed questions are asked."
+        },
+        {
+            "relationship": "includesSubstance",
+            "source_entity": "Substances",
+            "target_entity": "AdditionalSubstances",
+            "description": "Substances list includes additional substances like smokeless tobacco, cigars, alcohol, marijuana, cocaine, heroin, hallucinogens."
+        },
+        {
+            "relationship": "hasCigaretteLifetimeUse",
+            "source_entity": "UsableInterviews",
+            "target_entity": "CigaretteLifetimeUse",
+            "description": "Usable interviews include respondent's lifetime use of cigarettes."
+        }
+    ],
+    "triple_relationships": [
+        {
+            "subject": "ANALWT2_C",
+            "predicate": "is equal to",
+            "object": "sum of ANALWT2 on the full analytic file"
+        },
+        {
+            "subject": "CigaretteLifetimeUse",
+            "predicate": "is determined by",
+            "object": "lifetime cigarette question CG01"
+        }
+    ]
+}

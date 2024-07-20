@@ -1,0 +1,168 @@
+{
+    "entities": [
+        {
+            "entity": "MarijuanaUseDisorder",
+            "description": "A classification for respondents who have met specific marijuana criteria in the past year."
+        },
+        {
+            "entity": "MildMarijuanaUseDisorder",
+            "description": "A classification where respondents meet two or three criteria for marijuana use disorder."
+        },
+        {
+            "entity": "ModerateMarijuanaUseDisorder",
+            "description": "A classification where respondents meet four or five criteria for marijuana use disorder."
+        },
+        {
+            "entity": "SevereMarijuanaUseDisorder",
+            "description": "A classification where respondents meet six or more criteria for marijuana use disorder."
+        },
+        {
+            "entity": "FrequentMarijuanaUse",
+            "description": "Using marijuana many times in larger amounts or for a longer time than intended."
+        },
+        {
+            "entity": "InabilityToQuitMarijuana",
+            "description": "Unable to cut down or stop using marijuana despite trying."
+        },
+        {
+            "entity": "MarijuanaTimeConsumption",
+            "description": "Spending a lot of time using, obtaining, or recovering from the effects of marijuana."
+        },
+        {
+            "entity": "MarijuanaUrges",
+            "description": "A strong desire or urge to use marijuana."
+        },
+        {
+            "entity": "MarijuanaRelatedProblems",
+            "description": "Issues caused by marijuana use affecting work, school, or home responsibilities."
+        },
+        {
+            "entity": "MarijuanaFamilyFriendProblems",
+            "description": "Problems with family or friends caused or worsened by marijuana use."
+        },
+        {
+            "entity": "MarijuanaSocialRecreationalNeglect",
+            "description": "Neglecting important social, occupational, or recreational activities due to marijuana use."
+        },
+        {
+            "entity": "MarijuanaPhysicalHarm",
+            "description": "Increased risk of physical harm due to marijuana use."
+        },
+        {
+            "entity": "MarijuanaContinuedUseDespiteProblems",
+            "description": "Continued use of marijuana despite emotional, mental, or physical problems it causes."
+        },
+        {
+            "entity": "IncreasedMarijuanaTolerance",
+            "description": "Needing more marijuana to get the desired effect or getting less effect with the same amount."
+        },
+        {
+            "entity": "MarijuanaWithdrawalSymptoms",
+            "description": "Showing withdrawal symptoms after cutting down or stopping marijuana use."
+        },
+        {
+            "entity": "MarijuanaIrritability",
+            "description": "Feeling irritable or angry during marijuana withdrawal."
+        },
+        {
+            "entity": "MarijuanaAnxiety",
+            "description": "Feeling anxious or nervous during marijuana withdrawal."
+        },
+        {
+            "entity": "MarijuanaSleepProblems",
+            "description": "Having trouble sleeping during marijuana withdrawal."
+        },
+        {
+            "entity": "MarijuanaAppetiteLoss",
+            "description": "Losing appetite or weight during marijuana withdrawal."
+        },
+        {
+            "entity": "MarijuanaRestlessness",
+            "description": "Feeling restless during marijuana withdrawal."
+        },
+        {
+            "entity": "MarijuanaDepression",
+            "description": "Feeling depressed during marijuana withdrawal."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasCriteria",
+            "source_entity": "MarijuanaUseDisorder",
+            "target_entity": "MarijuanaUseCriteria",
+            "description": "Defines the criteria for classifying marijuana use disorder."
+        },
+        {
+            "relationship": "classifiedAsMild",
+            "source_entity": "MarijuanaUseDisorder",
+            "target_entity": "MildMarijuanaUseDisorder",
+            "description": "Classified as a mild disorder if two or three criteria are met."
+        },
+        {
+            "relationship": "classifiedAsModerate",
+            "source_entity": "MarijuanaUseDisorder",
+            "target_entity": "ModerateMarijuanaUseDisorder",
+            "description": "Classified as a moderate disorder if four or five criteria are met."
+        },
+        {
+            "relationship": "classifiedAsSevere",
+            "source_entity": "MarijuanaUseDisorder",
+            "target_entity": "SevereMarijuanaUseDisorder",
+            "description": "Classified as a severe disorder if six or more criteria are met."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "MarijuanaUseDisorder",
+            "target_entity": "MarijuanaRelatedProblems",
+            "description": "Marijuana use disorder includes various marijuana-related problems."
+        },
+        {
+            "relationship": "leadsTo",
+            "source_entity": "MarijuanaUseDisorder",
+            "target_entity": "FrequentMarijuanaUse",
+            "description": "Leads to using marijuana many times in larger amounts or for a longer time than intended."
+        },
+        {
+            "relationship": "leadsTo",
+            "source_entity": "MarijuanaUseDisorder",
+            "target_entity": "MarijuanaWithdrawalSymptoms",
+            "description": "Leads to experiencing marijuana withdrawal symptoms."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MarijuanaWithdrawalSymptoms",
+            "target_entity": "MarijuanaIrritability",
+            "description": "Includes irritability or anger as a withdrawal symptom."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MarijuanaWithdrawalSymptoms",
+            "target_entity": "MarijuanaAnxiety",
+            "description": "Includes anxiety or nervousness as a withdrawal symptom."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MarijuanaWithdrawalSymptoms",
+            "target_entity": "MarijuanaSleepProblems",
+            "description": "Includes sleep problems as a withdrawal symptom."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MarijuanaWithdrawalSymptoms",
+            "target_entity": "MarijuanaAppetiteLoss",
+            "description": "Includes appetite loss or weight loss as a withdrawal symptom."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MarijuanaWithdrawalSymptoms",
+            "target_entity": "MarijuanaRestlessness",
+            "description": "Includes restlessness as a withdrawal symptom."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "MarijuanaWithdrawalSymptoms",
+            "target_entity": "MarijuanaDepression",
+            "description": "Includes depression as a withdrawal symptom."
+        }
+    ]
+}

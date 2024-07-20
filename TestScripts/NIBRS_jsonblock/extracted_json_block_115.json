@@ -1,0 +1,286 @@
+{
+    "entities": [
+        {
+            "entity": "Anti-Mormon",
+            "description": "Bias motivation against Mormons"
+        },
+        {
+            "entity": "Anti-Jehovah'sWitness",
+            "description": "Bias motivation against Jehovah's Witness"
+        },
+        {
+            "entity": "Anti-Arab",
+            "description": "Bias motivation against Arabs"
+        },
+        {
+            "entity": "Anti-HispanicOrLatino",
+            "description": "Bias motivation against Hispanic or Latino individuals"
+        },
+        {
+            "entity": "Anti-NotHispanicOrLatino",
+            "description": "Bias motivation against individuals who are not Hispanic or Latino"
+        },
+        {
+            "entity": "Anti-Gay",
+            "description": "Bias motivation against gay individuals"
+        },
+        {
+            "entity": "Anti-Lesbian",
+            "description": "Bias motivation against lesbians"
+        },
+        {
+            "entity": "Anti-LGBT",
+            "description": "Bias motivation against a mixed group of lesbian, gay, bisexual, or transgender individuals"
+        },
+        {
+            "entity": "Anti-Heterosexual",
+            "description": "Bias motivation against heterosexual individuals"
+        },
+        {
+            "entity": "Anti-Bisexual",
+            "description": "Bias motivation against bisexual individuals"
+        },
+        {
+            "entity": "Anti-PhysicalDisability",
+            "description": "Bias motivation against individuals with physical disabilities"
+        },
+        {
+            "entity": "Anti-MentalDisability",
+            "description": "Bias motivation against individuals with mental disabilities"
+        },
+        {
+            "entity": "Anti-Male",
+            "description": "Bias motivation against males"
+        },
+        {
+            "entity": "Anti-Female",
+            "description": "Bias motivation against females"
+        },
+        {
+            "entity": "Anti-Transgender",
+            "description": "Bias motivation against transgender individuals"
+        },
+        {
+            "entity": "Anti-GenderNon-Conforming",
+            "description": "Bias motivation against gender non-conforming individuals"
+        },
+        {
+            "entity": "Anti-Anti-EasternOrthodox",
+            "description": "Bias motivation against Eastern Orthodox individuals (Greek, Russian, etc.)"
+        },
+        {
+            "entity": "Anti-OtherChristian",
+            "description": "Bias motivation against other Christian individuals"
+        },
+        {
+            "entity": "Anti-Buddhist",
+            "description": "Bias motivation against Buddhist individuals"
+        },
+        {
+            "entity": "Anti-Hindu",
+            "description": "Bias motivation against Hindu individuals"
+        },
+        {
+            "entity": "Anti-Sikh",
+            "description": "Bias motivation against Sikh individuals"
+        },
+        {
+            "entity": "Anti-White",
+            "description": "Bias motivation against white individuals"
+        },
+        {
+            "entity": "Anti-BlackOrAfricanAmerican",
+            "description": "Bias motivation against black or African American individuals"
+        },
+        {
+            "entity": "Anti-AmericanIndianOrAlaskaNative",
+            "description": "Bias motivation against American Indian or Alaska Native individuals"
+        },
+        {
+            "entity": "Anti-Asian",
+            "description": "Bias motivation against Asian individuals"
+        },
+        {
+            "entity": "Anti-Multi-RacialGroup",
+            "description": "Bias motivation against multi-racial groups"
+        },
+        {
+            "entity": "None",
+            "description": "No bias motivation"
+        },
+        {
+            "entity": "Unknown",
+            "description": "Unknown bias motivation"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Mormon",
+            "description": "Respondent has a bias motivation against Mormons"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Jehovah'sWitness",
+            "description": "Respondent has a bias motivation against Jehovah's Witness"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Arab",
+            "description": "Respondent has a bias motivation against Arabs"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-HispanicOrLatino",
+            "description": "Respondent has a bias motivation against Hispanic or Latino individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-NotHispanicOrLatino",
+            "description": "Respondent has a bias motivation against individuals who are not Hispanic or Latino"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Gay",
+            "description": "Respondent has a bias motivation against gay individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Lesbian",
+            "description": "Respondent has a bias motivation against lesbians"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-LGBT",
+            "description": "Respondent has a bias motivation against a mixed group of lesbian, gay, bisexual, or transgender individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Heterosexual",
+            "description": "Respondent has a bias motivation against heterosexual individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Bisexual",
+            "description": "Respondent has a bias motivation against bisexual individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-PhysicalDisability",
+            "description": "Respondent has a bias motivation against individuals with physical disabilities"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-MentalDisability",
+            "description": "Respondent has a bias motivation against individuals with mental disabilities"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Male",
+            "description": "Respondent has a bias motivation against males"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Female",
+            "description": "Respondent has a bias motivation against females"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Transgender",
+            "description": "Respondent has a bias motivation against transgender individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-GenderNon-Conforming",
+            "description": "Respondent has a bias motivation against gender non-conforming individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Anti-EasternOrthodox",
+            "description": "Respondent has a bias motivation against Eastern Orthodox individuals (Greek, Russian, etc.)"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-OtherChristian",
+            "description": "Respondent has a bias motivation against other Christian individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Buddhist",
+            "description": "Respondent has a bias motivation against Buddhist individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Hindu",
+            "description": "Respondent has a bias motivation against Hindu individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Sikh",
+            "description": "Respondent has a bias motivation against Sikh individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-White",
+            "description": "Respondent has a bias motivation against white individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-BlackOrAfricanAmerican",
+            "description": "Respondent has a bias motivation against black or African American individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-AmericanIndianOrAlaskaNative",
+            "description": "Respondent has a bias motivation against American Indian or Alaska Native individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Asian",
+            "description": "Respondent has a bias motivation against Asian individuals"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Anti-Multi-RacialGroup",
+            "description": "Respondent has a bias motivation against multi-racial groups"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "None",
+            "description": "Respondent has no bias motivation"
+        },
+        {
+            "relationship": "hasBiasMotivation",
+            "source_entity": "Respondent",
+            "target_entity": "Unknown",
+            "description": "Respondent has unknown bias motivation"
+        }
+    ]
+}

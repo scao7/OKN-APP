@@ -1,0 +1,101 @@
+{
+    "entities": [
+        {
+            "entity": "RecodedVariable",
+            "description": "Variables that were created from one or more of the edited or recoded variables from the proceeding note."
+        },
+        {
+            "entity": "MajorDepressiveEpisode(MDE)",
+            "description": "A period characterized by a severely depressed mood or loss of interest or pleasure in daily activities."
+        },
+        {
+            "entity": "LifetimeMDE",
+            "description": "Having a major depressive episode at any time in one's life."
+        },
+        {
+            "entity": "PastYearMDE",
+            "description": "Having a major depressive episode in the past year."
+        },
+        {
+            "entity": "AdolescentRespondent",
+            "description": "Respondents aged 12 to 17 years who were assessed for major depressive episodes."
+        },
+        {
+            "entity": "AdultRespondent",
+            "description": "Respondents aged 18 years or older who were assessed for major depressive episodes."
+        },
+        {
+            "entity": "DSM-5Disorder",
+            "description": "A disorder classified under the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition."
+        },
+        {
+            "entity": "AlcoholUseDisorder",
+            "description": "A medical condition characterized by an impaired ability to stop or control alcohol use despite adverse social, occupational, or health consequences."
+        },
+        {
+            "entity": "HipWDSALG",
+            "description": "Respondents having issues related to hopelessness or being discouraged, one of the diagnostic criteria for MDE."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasRecodedVariable",
+            "source_entity": "NSDUH Survey",
+            "target_entity": "RecodedVariable",
+            "description": "Relates the NSDUH survey to the variables that were recoded for analysis."
+        },
+        {
+            "relationship": "hasMDE",
+            "source_entity": "AdolescentRespondent",
+            "target_entity": "MajorDepressiveEpisode(MDE)",
+            "description": "Indicates whether the adolescent respondent had a major depressive episode at any time."
+        },
+        {
+            "relationship": "hasLifetimeMDE",
+            "source_entity": "MajorDepressiveEpisode(MDE)",
+            "target_entity": "LifetimeMDE",
+            "description": "Defines the period during which the respondent experienced major depressive episodes."
+        },
+        {
+            "relationship": "hasPastYearMDE",
+            "source_entity": "MajorDepressiveEpisode(MDE)",
+            "target_entity": "PastYearMDE",
+            "description": "Specifies if the major depressive episode occurred in the past year."
+        },
+        {
+            "relationship": "assessedForMDE",
+            "source_entity": "AdolescentRespondent",
+            "target_entity": "MajorDepressiveEpisode(MDE)",
+            "description": "Indicates that the adolescent respondents were assessed for major depressive episodes."
+        },
+        {
+            "relationship": "classifiedUnder",
+            "source_entity": "AlcoholUseDisorder",
+            "target_entity": "DSM-5Disorder",
+            "description": "Classifies the alcohol use disorder under the DSM-5 disorders."
+        },
+        {
+            "relationship": "assessedForMDE",
+            "source_entity": "AdultRespondent",
+            "target_entity": "MajorDepressiveEpisode(MDE)",
+            "description": "Indicates that the adult respondents were assessed for major depressive episodes."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "YMDMDE",
+            "predicate": "is",
+            "object": "RC-YOUTH: LIFETIME MAJOR DEPRESSIVE EPISODE (MDE)"
+        },
+        {
+            "subject": "YMDEYR",
+            "predicate": "is",
+            "object": "RC-YOUTH: PAST YEAR MAJOR DEPRESSIVE EPISODE (MDE)"
+        },
+        {
+            "subject": "YMDEAU5DYR",
+            "predicate": "is",
+            "object": "RC-YOUTH: PAST YEAR MDE AND ALC USE DISORDER-DSM-5"
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "entities": [
+        {
+            "entity": "AdultDepression",
+            "description": "Questions related to the adult respondents about their experience with depression."
+        },
+        {
+            "entity": "Past30Days",
+            "description": "The time frame referenced in the survey relating to the past 30 days."
+        },
+        {
+            "entity": "SevereSadnessPeriod",
+            "description": "Period lasting several days or longer when felt sad, empty, or depressed."
+        },
+        {
+            "entity": "SeverelyDiscouragedPeriod",
+            "description": "Period lasting several days or longer when felt very discouraged about life."
+        },
+        {
+            "entity": "LostInterestPeriod",
+            "description": "Period lasting several days or longer when lost interest in most things usually enjoyed."
+        },
+        {
+            "entity": "DiscouragedAboutLife",
+            "description": "Feeling discouraged about life when sad, empty, or depressed."
+        },
+        {
+            "entity": "YesNoResponse",
+            "description": "Respondent's answer to the question, typically 'Yes' or 'No'."
+        },
+        {
+            "entity": "LegitimateSkipResponse",
+            "description": "Response type indicating respondent legitimately skipped the question."
+        },
+        {
+            "entity": "InvalidResponse",
+            "description": "Response type indicating an invalid answer like 'DONT KNOW', 'REFUSED', or 'BLANK (NO ANSWER)'."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "asksAboutDepression",
+            "source_entity": "Survey",
+            "target_entity": "AdultDepression",
+            "description": "Relates the survey to the section about adult depression questions."
+        },
+        {
+            "relationship": "hasTimeFrame",
+            "source_entity": "Survey",
+            "target_entity": "Past30Days",
+            "description": "Indicates that the survey includes questions referencing the past 30 days."
+        },
+        {
+            "relationship": "hasSevereSadnessPeriod",
+            "source_entity": "Respondent",
+            "target_entity": "SevereSadnessPeriod",
+            "description": "Indicates if the respondent had a period of several days or longer when they felt sad, empty, or depressed."
+        },
+        {
+            "relationship": "hasSeverelyDiscouragedPeriod",
+            "source_entity": "Respondent",
+            "target_entity": "SeverelyDiscouragedPeriod",
+            "description": "Indicates if the respondent had a period of several days or longer when they felt very discouraged about life."
+        },
+        {
+            "relationship": "hasLostInterestPeriod",
+            "source_entity": "Respondent",
+            "target_entity": "LostInterestPeriod",
+            "description": "Indicates if the respondent had a period of several days or longer when they lost interest in most things they usually enjoy."
+        },
+        {
+            "relationship": "hasDiscouragedFeeling",
+            "source_entity": "SevereSadnessPeriod",
+            "target_entity": "DiscouragedAboutLife",
+            "description": "Defines if during the severe sadness period, the respondent felt discouraged about life."
+        },
+        {
+            "relationship": "respondedWith",
+            "source_entity": "Respondent",
+            "target_entity": "YesNoResponse",
+            "description": "Indicates the respondent's yes or no answer to various survey questions."
+        },
+        {
+            "relationship": "respondedWith",
+            "source_entity": "Respondent",
+            "target_entity": "LegitimateSkipResponse",
+            "description": "Indicates the respondent's legitimate skip answer to various survey questions."
+        },
+        {
+            "relationship": "respondedWith",
+            "source_entity": "Respondent",
+            "target_entity": "InvalidResponse",
+            "description": "Indicates the respondent's invalid answer to various survey questions, such as 'DONT KNOW', 'REFUSED', or 'BLANK (NO ANSWER)'."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "ADDPRV",
+            "predicate": "Freq",
+            "object": "12658"
+        },
+        {
+            "subject": "ADDPRV",
+            "predicate": "Pet",
+            "object": "27.54"
+        },
+        {
+            "subject": "ADDSEV",
+            "predicate": "Freq",
+            "object": "281"
+        },
+        {
+            "subject": "ADDSEV",
+            "predicate": "Pet",
+            "object": "45.19"
+        },
+        {
+            "subject": "ADLOSEV",
+            "predicate": "Freq",
+            "object": "1110"
+        },
+        {
+            "subject": "ADLOSEV",
+            "predicate": "Pet",
+            "object": "43.30"
+        },
+        {
+            "subject": "ADDPDisc",
+            "predicate": "Freq",
+            "object": "15087"
+        },
+        {
+            "subject": "ADDPDisc",
+            "predicate": "Pet",
+            "object": "25.54"
+        }
+    ]
+}

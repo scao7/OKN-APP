@@ -1,0 +1,85 @@
+{
+    "entities": [
+        {
+            "entity": "PrevalenceRate",
+            "description": "The estimated proportion of a population with a particular characteristic at a specific time."
+        },
+        {
+            "entity": "SuppressionRule",
+            "description": "Criteria for suppressing data to maintain accuracy and reliability of estimates."
+        },
+        {
+            "entity": "SuppressionCriteria",
+            "description": "The specific conditions under which data suppression is applied."
+        },
+        {
+            "entity": "EffectiveSampleSize",
+            "description": "The adjusted sample size taking into account design effect and other factors to ensure reliable estimates."
+        },
+        {
+            "entity": "DesignEffect",
+            "description": "A factor that measures the extent to which the variance of an estimate is inflated due to the study design."
+        },
+        {
+            "entity": "RSE",
+            "description": "Relative standard error, a measure of the precision of an estimate."
+        },
+        {
+            "entity": "EstimatedNumber",
+            "description": "The estimated number associated with a given prevalence rate."
+        },
+        {
+            "entity": "EstimatedPrevalenceRate",
+            "description": "The estimated rate of prevalence within the specified criteria."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSuppressionRule",
+            "source_entity": "NSDUHSurvey",
+            "target_entity": "SuppressionRule",
+            "description": "Defines the rules applied for data suppression in the survey."
+        },
+        {
+            "relationship": "isBasedOn",
+            "source_entity": "SuppressionRule",
+            "target_entity": "SuppressionCriteria",
+            "description": "Indicates the criteria on which data suppression rules are based."
+        },
+        {
+            "relationship": "influences",
+            "source_entity": "DesignEffect",
+            "target_entity": "EffectiveSampleSize",
+            "description": "Indicates how the design effect impacts the effective sample size."
+        },
+        {
+            "relationship": "uses",
+            "source_entity": "PrevalenceRate",
+            "target_entity": "RSE",
+            "description": "Indicates that the prevalence rate uses relative standard error for precision."
+        },
+        {
+            "relationship": "hasEstimatedPrevalenceRate",
+            "source_entity": "EstimatedNumber",
+            "target_entity": "EstimatedPrevalenceRate",
+            "description": "Relates the estimated number to the estimated prevalence rate."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Prevalence Rate",
+            "predicate": "is suppressed if",
+            "object": "Prevalence rate < 0.00005 or > 0.99995"
+        },
+        {
+            "subject": "Prevalence Rate",
+            "predicate": "is suppressed if",
+            "object": "SE(Estimated prevalence rate)/Estimated prevalence rate > 0.175 when prevalence rate <= 0.5"
+        },
+        {
+            "subject": "Prevalence Rate",
+            "predicate": "is suppressed if",
+            "object": "Effective sample size < 68 or n < 100"
+        }
+    ]
+}

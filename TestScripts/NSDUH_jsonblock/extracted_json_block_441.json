@@ -1,0 +1,66 @@
+{
+    "entities": [
+        {
+            "entity": "MonthOfLastSmokelessTobaccoUse",
+            "description": "The month in which the respondent last used smokeless tobacco."
+        },
+        {
+            "entity": "AdjustedFrequencySmokelessTobacco",
+            "description": "Recode values and frequencies for the month of last smokeless tobacco use."
+        },
+        {
+            "entity": "AgeLastSmokedCigarCigarillo",
+            "description": "The age at which the respondent last smoked a cigar or cigarillo."
+        },
+        {
+            "entity": "AdjustedFrequencyCigarUse",
+            "description": "Recode values and frequencies for the last age smoked a cigar or cigarillo."
+        },
+        {
+            "entity": "YearOfLastCigarCigarilloUse",
+            "description": "The year in which the respondent last used a cigar or cigarillo."
+        },
+        {
+            "entity": "AdjustedFrequencyYearCigarUse",
+            "description": "Recode values and frequencies for the year of last cigar or cigarillo use."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMonthOfLastSmokelessTobaccoUse",
+            "source_entity": "Survey",
+            "target_entity": "MonthOfLastSmokelessTobaccoUse",
+            "description": "Relates the survey to the month in which the respondent last used smokeless tobacco."
+        },
+        {
+            "relationship": "hasAdjustedFrequencySmokelessTobacco",
+            "source_entity": "MonthOfLastSmokelessTobaccoUse",
+            "target_entity": "AdjustedFrequencySmokelessTobacco",
+            "description": "Indicates the recode values and frequencies for the month of last smokeless tobacco use."
+        },
+        {
+            "relationship": "hasAgeLastSmokedCigarCigarillo",
+            "source_entity": "Survey",
+            "target_entity": "AgeLastSmokedCigarCigarillo",
+            "description": "Relates the survey to the age at which the respondent last smoked a cigar or cigarillo."
+        },
+        {
+            "relationship": "hasAdjustedFrequencyCigarUse",
+            "source_entity": "AgeLastSmokedCigarCigarillo",
+            "target_entity": "AdjustedFrequencyCigarUse",
+            "description": "Indicates the recode values and frequencies for the last age smoked a cigar or cigarillo."
+        },
+        {
+            "relationship": "hasYearOfLastCigarCigarilloUse",
+            "source_entity": "Survey",
+            "target_entity": "YearOfLastCigarCigarilloUse",
+            "description": "Relates the survey to the year in which the respondent last used a cigar or cigarillo."
+        },
+        {
+            "relationship": "hasAdjustedFrequencyYearCigarUse",
+            "source_entity": "YearOfLastCigarCigarilloUse",
+            "target_entity": "AdjustedFrequencyYearCigarUse",
+            "description": "Indicates the recode values and frequencies for the year of last cigar or cigarillo use."
+        }
+    ]
+}

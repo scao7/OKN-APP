@@ -1,0 +1,118 @@
+{
+    "entities": [
+        {
+            "entity": "CensusBlockGroup",
+            "description": "Groups within selected census tracts used to form second-stage sampling units."
+        },
+        {
+            "entity": "Segment",
+            "description": "A segment can be either a field enumeration segment or an ABS segment, defined for sampling purposes."
+        },
+        {
+            "entity": "ABS Segment",
+            "description": "A segment with sufficient ABS coverage that can be identified using the SEGID variable."
+        },
+        {
+            "entity": "FieldEnumerationSegment",
+            "description": "Smaller geographic areas created by partitioning selected census block groups into smaller segments."
+        },
+        {
+            "entity": "SampleTract",
+            "description": "A division within a census tract, identified using the STATE, SSREGION, and SEGID variables."
+        },
+        {
+            "entity": "DU (Dwelling Unit)",
+            "description": "Selected units within segments used for survey sampling."
+        },
+        {
+            "entity": "PERSON",
+            "description": "Individuals selected within screened DUs based on age group composition."
+        },
+        {
+            "entity": "State",
+            "description": "A geographic variable used for classification and sampling."
+        },
+        {
+            "entity": "Age",
+            "description": "A person-level variable used to determine selection of individuals."
+        },
+        {
+            "entity": "COVID-19 Impact",
+            "description": "The effect of the COVID-19 pandemic on data collection and response rates."
+        },
+        {
+            "entity": "RTI Staff",
+            "description": "Staff members who directed and coordinated data collection efforts for NSDUH."
+        },
+        {
+            "entity": "InPersonDataCollection",
+            "description": "Field data collection method involving in-person activities."
+        },
+        {
+            "entity": "WebDataCollection",
+            "description": "Data collection method involving web-based activities."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasBlockGroup",
+            "source_entity": "SampleTract",
+            "target_entity": "CensusBlockGroup",
+            "description": "Indicates that a sample tract contains census block groups."
+        },
+        {
+            "relationship": "identifiedBy",
+            "source_entity": "CensusBlockGroup",
+            "target_entity": "State",
+            "description": "Indicates that census block groups can be identified using the STATE variable."
+        },
+        {
+            "relationship": "containsSegment",
+            "source_entity": "CensusBlockGroup",
+            "target_entity": "Segment",
+            "description": "Indicates that census block groups contain segments for sampling."
+        },
+        {
+            "relationship": "hasSufficientCoverage",
+            "source_entity": "ABS Segment",
+            "target_entity": "ABS",
+            "description": "Indicates that a segment has sufficient ABS coverage."
+        },
+        {
+            "relationship": "partitionedInto",
+            "source_entity": "CensusBlockGroup",
+            "target_entity": "FieldEnumerationSegment",
+            "description": "Shows that census block groups are partitioned into field enumeration segments."
+        },
+        {
+            "relationship": "basedOn",
+            "source_entity": "SelectionOfIndividuals",
+            "target_entity": "Age",
+            "description": "Indicates that the selection of individuals is based on age."
+        },
+        {
+            "relationship": "affectedBy",
+            "source_entity": "DataCollection",
+            "target_entity": "COVID-19",
+            "description": "Indicates the impact of COVID-19 on data collection processes."
+        },
+        {
+            "relationship": "coordinatedBy",
+            "source_entity": "DataCollectionEffort",
+            "target_entity": "RTI Staff",
+            "description": "Indicates that RTI staff coordinated the data collection efforts."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "InPersonDataCollection",
+            "target_entity": "FieldActivities",
+            "description": "Indicates that in-person data collection includes field activities."
+        },
+        {
+            "relationship": "includes",
+            "source_entity": "WebDataCollection",
+            "target_entity": "OnlineActivities",
+            "description": "Indicates that web data collection includes online activities."
+        }
+    ]
+}

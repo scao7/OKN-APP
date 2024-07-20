@@ -1,0 +1,68 @@
+{
+    "entities": [
+        {
+            "entity": "ParentalChoresRequirement",
+            "description": "Frequency with which parents required the respondent to perform work/chores in the past 12 months."
+        },
+        {
+            "entity": "ParentalTVTimeLimit",
+            "description": "Frequency with which parents limited the amount of TV time for the respondent in the past 12 months."
+        },
+        {
+            "entity": "ParentalOutingTimeLimit",
+            "description": "Frequency with which parents limited the time respondent went out with friends on school nights in the past 12 months."
+        },
+        {
+            "entity": "ParentalApproval",
+            "description": "Frequency with which parents let the respondent know they had done a good job in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasParentalChoresRequirement",
+            "source_entity": "Respondent",
+            "target_entity": "ParentalChoresRequirement",
+            "description": "Indicates how often the respondent's parents made them perform work or chores around the house in the past 12 months."
+        },
+        {
+            "relationship": "hasParentalTVTimeLimit",
+            "source_entity": "Respondent",
+            "target_entity": "ParentalTVTimeLimit",
+            "description": "Indicates how often the respondent's parents limited the amount of TV time in the past 12 months."
+        },
+        {
+            "relationship": "hasParentalOutingTimeLimit",
+            "source_entity": "Respondent",
+            "target_entity": "ParentalOutingTimeLimit",
+            "description": "Indicates how often the respondent's parents limited their time spent out with friends on school nights in the past 12 months."
+        },
+        {
+            "relationship": "hasParentalApproval",
+            "source_entity": "Respondent",
+            "target_entity": "ParentalApproval",
+            "description": "Indicates how often the respondent's parents let them know they had done a good job in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "Parents",
+            "predicate": "required",
+            "object": "Work/chores"
+        },
+        {
+            "subject": "Parents",
+            "predicate": "limited",
+            "object": "TVTime"
+        },
+        {
+            "subject": "Parents",
+            "predicate": "limited",
+            "object": "OutingTime"
+        },
+        {
+            "subject": "Parents",
+            "predicate": "approved",
+            "object": "GoodJob"
+        }
+    ]
+}

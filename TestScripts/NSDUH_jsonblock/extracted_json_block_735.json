@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "MentalHealthImpairmentScale",
+            "description": "A scale developed to measure mental health impairment using a nationally representative sample in the USA."
+        },
+        {
+            "entity": "DrugUseAndHealthSurvey",
+            "description": "A national survey that collects data on drug use and health, methodologically detailed to measure serious mental illness."
+        },
+        {
+            "entity": "NSDUH2008Results",
+            "description": "Results from the 2008 National Survey on Drug Use and Health, providing a 12-month analysis."
+        },
+        {
+            "entity": "SeriousMentalIllness",
+            "description": "A condition measured in the NSDUH survey using specific methodological resources."
+        },
+        {
+            "entity": "SubstanceAbuseAndMentalHealthServicesAdministration",
+            "description": "The organization responsible for the National Survey on Drug Use and Health."
+        },
+        {
+            "entity": "MethodologicalResourceBook",
+            "description": "A book detailing methodologies, specifically Section 16, used in the NSDUH survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "usedFor",
+            "source_entity": "MentalHealthImpairmentScale",
+            "target_entity": "NationallyRepresentativeSample",
+            "description": "Relates the mental health impairment scale to the use of a nationally representative sample."
+        },
+        {
+            "relationship": "conductedBy",
+            "source_entity": "DrugUseAndHealthSurvey",
+            "target_entity": "SubstanceAbuseAndMentalHealthServicesAdministration",
+            "description": "Indicates the organization that conducted the National Survey on Drug Use and Health."
+        },
+        {
+            "relationship": "containsResults",
+            "source_entity": "DrugUseAndHealthSurvey",
+            "target_entity": "NSDUH2008Results",
+            "description": "Indicates that the NSDUH survey contains results for the year 2008."
+        },
+        {
+            "relationship": "measures",
+            "source_entity": "DrugUseAndHealthSurvey",
+            "target_entity": "SeriousMentalIllness",
+            "description": "Describes the focus of the NSDUH survey on measuring serious mental illness."
+        },
+        {
+            "relationship": "documentedIn",
+            "source_entity": "SeriousMentalIllness",
+            "target_entity": "MethodologicalResourceBook",
+            "description": "Indicates that the measurement of serious mental illness is documented in a methodological resource book."
+        }
+    ]
+}

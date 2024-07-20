@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "TimeSinceLastUsedCocaine",
+            "description": "The time since the respondent last used cocaine."
+        },
+        {
+            "entity": "TotalDaysUsedCocainePast12Months",
+            "description": "The total number of days the respondent used cocaine in the past 12 months."
+        },
+        {
+            "entity": "EasiestWayToReportDaysUsedCocaine",
+            "description": "The respondent's preferred method to report the number of days they used cocaine."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTimeSinceLastUsedCocaine",
+            "source_entity": "Respondent",
+            "target_entity": "TimeSinceLastUsedCocaine",
+            "description": "Indicates the time since the respondent last used cocaine."
+        },
+        {
+            "relationship": "hasTotalDaysUsedCocainePast12Months",
+            "source_entity": "Respondent",
+            "target_entity": "TotalDaysUsedCocainePast12Months",
+            "description": "Indicates the total number of days the respondent used cocaine in the past 12 months."
+        },
+        {
+            "relationship": "hasEasiestWayToReportDaysUsedCocaine",
+            "source_entity": "Respondent",
+            "target_entity": "EasiestWayToReportDaysUsedCocaine",
+            "description": "Indicates the respondent's preferred method to report the number of days they used cocaine."
+        }
+    ]
+}

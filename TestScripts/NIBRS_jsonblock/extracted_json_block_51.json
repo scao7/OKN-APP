@@ -1,0 +1,36 @@
+{
+    "entities": [
+        {
+            "entity": "FIPSCountyCode",
+            "description": "A geographical identifier for counties and county equivalents in the United States."
+        },
+        {
+            "entity": "CaseCount",
+            "description": "The number of valid cases recorded for each FIPS county code."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The proportion of the total cases represented by each FIPS county code, expressed as a percentage."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasFIPSCountyCode",
+            "source_entity": "Survey",
+            "target_entity": "FIPSCountyCode",
+            "description": "Relates the survey data to the geographical identifier for counties."
+        },
+        {
+            "relationship": "hasCaseCount",
+            "source_entity": "FIPSCountyCode",
+            "target_entity": "CaseCount",
+            "description": "Indicates the number of valid cases recorded for each geographical identifier."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "FIPSCountyCode",
+            "target_entity": "Percentage",
+            "description": "Indicates the proportion of the total cases represented by each geographical identifier."
+        }
+    ]
+}

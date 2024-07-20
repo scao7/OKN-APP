@@ -1,0 +1,56 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency count of responses for each unique identifier or response option without any weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of each unique identifier or response option within the total responses."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The count of missing data entries for the particular variable."
+        },
+        {
+            "entity": "TotalCases",
+            "description": "The total number of cases or responses recorded for the variable."
+        },
+        {
+            "entity": "OffenderNumber",
+            "description": "The number assigned to an offender in the survey data."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyVariable",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the frequency count of responses for each unique identifier or response option within the survey variable."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "SurveyVariable",
+            "target_entity": "Percentage",
+            "description": "Indicates the percentage representation of each unique identifier or response option within the total responses for the survey variable."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "SurveyVariable",
+            "target_entity": "MissingData",
+            "description": "Represents the count of missing data entries for a particular survey variable."
+        },
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "SurveyVariable",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of cases or responses recorded for a survey variable."
+        },
+        {
+            "relationship": "hasOffenderNumber",
+            "source_entity": "SurveyVariable",
+            "target_entity": "OffenderNumber",
+            "description": "Indicates the number assigned to an offender as per the survey variable."
+        }
+    ]
+}

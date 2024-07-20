@@ -1,0 +1,12 @@
+{
+    "entities": [
+        {
+            "entity": "VictimRelation",
+            "description": "Describes the relationship of the victim to the offender or others."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "Number of occurrences of each victim-offender relationship in the survey data, without adjusting for sample weight."
+        }
+    ]
+}

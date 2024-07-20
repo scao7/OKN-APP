@@ -1,0 +1,70 @@
+{
+    "entities": [
+        {
+            "entity": "RXDEMEMIS",
+            "description": "Demerol Products Past Year Misuse."
+        },
+        {
+            "entity": "RXHYDMEMIS",
+            "description": "Hydromorphone Products Past Year Misuse."
+        },
+        {
+            "entity": "RXMTDMIS",
+            "description": "Methadone Products Past Year Misuse."
+        },
+        {
+            "entity": "OTHRPNRMIS",
+            "description": "Other Pain Reliever Products Past Year Misuse."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasMisuseReport",
+            "source_entity": "Respondent",
+            "target_entity": "RXDEMEMIS",
+            "description": "Indicates whether the respondent misused Demerol products in the past year."
+        },
+        {
+            "relationship": "hasMisuseReport",
+            "source_entity": "Respondent",
+            "target_entity": "RXHYDMEMIS",
+            "description": "Indicates whether the respondent misused Hydromorphone products in the past year."
+        },
+        {
+            "relationship": "hasMisuseReport",
+            "source_entity": "Respondent",
+            "target_entity": "RXMTDMIS",
+            "description": "Indicates whether the respondent misused Methadone products in the past year."
+        },
+        {
+            "relationship": "hasMisuseReport",
+            "source_entity": "Respondent",
+            "target_entity": "OTHRPNRMIS",
+            "description": "Indicates whether the respondent misused other pain reliever products in the past year."
+        },
+        {
+            "relationship": "measuredBy",
+            "source_entity": "RXDEMEMIS",
+            "target_entity": "PRNMRMYR",
+            "description": "The past year misuse of Demerol products measured by prescription pain relievers misuse recall."
+        },
+        {
+            "relationship": "measuredBy",
+            "source_entity": "RXHYDMEMIS",
+            "target_entity": "PRNMRMYR",
+            "description": "The past year misuse of Hydromorphone products measured by prescription pain relievers misuse recall."
+        },
+        {
+            "relationship": "measuredBy",
+            "source_entity": "RXMTDMIS",
+            "target_entity": "PRNMRMYR",
+            "description": "The past year misuse of Methadone products measured by prescription pain relievers misuse recall."
+        },
+        {
+            "relationship": "measuredBy",
+            "source_entity": "OTHRPNRMIS",
+            "target_entity": "PRNMRMYR",
+            "description": "The past year misuse of other pain reliever products measured by prescription pain relievers misuse recall."
+        }
+    ]
+}

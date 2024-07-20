@@ -1,0 +1,46 @@
+{
+    "entities": [
+        {
+            "entity": "SurveyDate",
+            "description": "The specific dates on which the survey responses were collected."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The count of actual survey responses collected on each survey date."
+        },
+        {
+            "entity": "ResponsePercentage",
+            "description": "The percentage of total survey responses collected on each survey date."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The count and percentage of survey responses that are missing from the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSurveyDate",
+            "source_entity": "Survey",
+            "target_entity": "SurveyDate",
+            "description": "Relates the survey to the specific dates on which data was collected."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "SurveyResponse",
+            "target_entity": "UnweightedFrequency",
+            "description": "Indicates the count of survey responses collected on each survey date."
+        },
+        {
+            "relationship": "hasResponsePercentage",
+            "source_entity": "SurveyResponse",
+            "target_entity": "ResponsePercentage",
+            "description": "Indicates the percentage of total survey responses collected on each survey date."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "Survey",
+            "target_entity": "MissingData",
+            "description": "Indicates the count and percentage of survey responses that are missing from the dataset."
+        }
+    ]
+}

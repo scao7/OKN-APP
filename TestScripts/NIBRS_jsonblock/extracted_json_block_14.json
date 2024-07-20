@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "NOffenderRecords",
+            "description": "The number of offender records for each ORI-incident number."
+        },
+        {
+            "entity": "ORIIncidentNumber",
+            "description": "An identifier for a specific incident in the database."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of responses for each offender record category."
+        },
+        {
+            "entity": "FrequencyPercentage",
+            "description": "The percentage representation of each offender record category based on the total."
+        },
+        {
+            "entity": "SummaryStatistics",
+            "description": "Statistical summary including mean, median, mode, minimum, maximum, and standard deviation."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSummaryStatistics",
+            "source_entity": "DataSet",
+            "target_entity": "SummaryStatistics",
+            "description": "Provides a summary of statistical measures for the dataset."
+        },
+        {
+            "relationship": "includesNOffenderRecords",
+            "source_entity": "ORIIncidentNumber",
+            "target_entity": "NOffenderRecords",
+            "description": "Indicates the number of offender records associated with a specific ORI-incident number."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "NOffenderRecords",
+            "target_entity": "UnweightedFrequency",
+            "description": "Shows the raw count of each N offender record category."
+        },
+        {
+            "relationship": "hasFrequencyPercentage",
+            "source_entity": "NOffenderRecords",
+            "target_entity": "FrequencyPercentage",
+            "description": "Shows the percentage of each N offender record category."
+        }
+    ]
+}

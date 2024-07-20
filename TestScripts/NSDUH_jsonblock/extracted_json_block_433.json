@@ -1,0 +1,128 @@
+{
+    "entities": [
+        {
+            "entity": "UDSTRQSQDANY",
+            "description": "Variable created using DSM-5 based SUD variables for prescription tranquilizers or sedatives - Past year users"
+        },
+        {
+            "entity": "UDSPYANY",
+            "description": "Variable created using DSM-5 based SUD variables for prescription drugs - Past year users"
+        },
+        {
+            "entity": "UDSIOPIANY",
+            "description": "Variable created using DSM-5 based SUD variables for prescription pain relievers - Past year users"
+        },
+        {
+            "entity": "UDSHPRNRANY",
+            "description": "Variable created using DSM-5 based SUD variables for prescription pain relievers - Detailed past year users"
+        },
+        {
+            "entity": "UDSSCNSANY",
+            "description": "Variable created using DSM-5 based SUD variables for prescription stimulants - Past year users"
+        },
+        {
+            "entity": "UDSILLANY",
+            "description": "Variable created using DSM-5 based SUD variables for prescription drugs - Past year users"
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasVariable",
+            "source_entity": "UDSTRQSQDANY",
+            "target_entity": "DSM-5 based SUD",
+            "description": "Tranquilizer or sedative use disorder for past year users."
+        },
+        {
+            "relationship": "hasVariable",
+            "source_entity": "UDSPYANY",
+            "target_entity": "DSM-5 based SUD",
+            "description": "Psychotherapeutic use disorder for past year users."
+        },
+        {
+            "relationship": "hasVariable",
+            "source_entity": "UDSIOPIANY",
+            "target_entity": "DSM-5 based SUD",
+            "description": "Opioid use disorder for past year users."
+        },
+        {
+            "relationship": "hasVariable",
+            "source_entity": "UDSHPRNRANY",
+            "target_entity": "DSM-5 based SUD",
+            "description": "Heroin/pain reliever use disorder for past year users."
+        },
+        {
+            "relationship": "hasVariable",
+            "source_entity": "UDSSCNSANY",
+            "target_entity": "DSM-5 based SUD",
+            "description": "CNS stimulant use disorder for past year users."
+        },
+        {
+            "relationship": "hasVariable",
+            "source_entity": "UDSILLANY",
+            "target_entity": "DSM-5 based SUD",
+            "description": "Drug use disorder for past year users."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "UDSTRQSQDANY",
+            "predicate": "hasFrequency",
+            "object": "58590"
+        },
+        {
+            "subject": "UDSTRQSQDANY",
+            "predicate": "hasPercentage",
+            "object": "99.19"
+        },
+        {
+            "subject": "UDSPYANY",
+            "predicate": "hasFrequency",
+            "object": "57411"
+        },
+        {
+            "subject": "UDSPYANY",
+            "predicate": "hasPercentage",
+            "object": "97.19"
+        },
+        {
+            "subject": "UDSIOPIANY",
+            "predicate": "hasFrequency",
+            "object": "57997"
+        },
+        {
+            "subject": "UDSIOPIANY",
+            "predicate": "hasPercentage",
+            "object": "98.19"
+        },
+        {
+            "subject": "UDSHPRNRANY",
+            "predicate": "hasFrequency",
+            "object": "94"
+        },
+        {
+            "subject": "UDSHPRNRANY",
+            "predicate": "hasPercentage",
+            "object": "0.16"
+        },
+        {
+            "subject": "UDSSCNSANY",
+            "predicate": "hasFrequency",
+            "object": "58002"
+        },
+        {
+            "subject": "UDSSCNSANY",
+            "predicate": "hasPercentage",
+            "object": "98.19"
+        },
+        {
+            "subject": "UDSILLANY",
+            "predicate": "hasFrequency",
+            "object": "52367"
+        },
+        {
+            "subject": "UDSILLANY",
+            "predicate": "hasPercentage",
+            "object": "88.65"
+        }
+    ]
+}

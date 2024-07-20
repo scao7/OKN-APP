@@ -1,0 +1,76 @@
+{
+    "entities": [
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The raw count of survey responses without any adjustments for weighting."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage representation of the unweighted frequency out of the total cases."
+        },
+        {
+            "entity": "SurveyCode",
+            "description": "The identifier code for different survey conditions or responses."
+        },
+        {
+            "entity": "SurveyDescription",
+            "description": "The detailed description of what each SurveyCode represents."
+        },
+        {
+            "entity": "ValidCases",
+            "description": "The number of survey responses considered valid out of the total cases."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of variable used in the survey (e.g., numeric)."
+        },
+        {
+            "entity": "Location",
+            "description": "The position of the variable in terms of starting point, width, and decimal places."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Survey",
+            "target_entity": "UnweightedFrequency",
+            "description": "Specifies the raw count of responses for each survey condition."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Survey",
+            "target_entity": "Percentage",
+            "description": "Specifies the percentage for each survey condition based on the unweighted frequency."
+        },
+        {
+            "relationship": "hasSurveyCode",
+            "source_entity": "SurveyCondition",
+            "target_entity": "SurveyCode",
+            "description": "Associates each survey condition with a specific identifier code."
+        },
+        {
+            "relationship": "hasSurveyDescription",
+            "source_entity": "SurveyCode",
+            "target_entity": "SurveyDescription",
+            "description": "Provides a description for each survey code to explain what it represents."
+        },
+        {
+            "relationship": "hasValidCases",
+            "source_entity": "Survey",
+            "target_entity": "ValidCases",
+            "description": "Indicates the total number of valid survey responses out of the total cases."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "SurveyMeasure",
+            "target_entity": "VariableType",
+            "description": "Defines the type of variable used in the survey."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "SurveyMeasure",
+            "target_entity": "Location",
+            "description": "Specifies the location details of the variable."
+        }
+    ]
+}

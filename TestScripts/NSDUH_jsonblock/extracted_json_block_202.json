@@ -1,0 +1,50 @@
+{
+    "entities": [
+        {
+            "entity": "PrescriptionPainRelieverUse",
+            "description": "Use of prescription pain relievers in any way a doctor did not direct."
+        },
+        {
+            "entity": "EverUsedPainRelieverNotDirectedByDr",
+            "description": "Ever used pain reliever not directed by a doctor."
+        },
+        {
+            "entity": "UsedOxyContinNotDirectedByDrPast12Mos",
+            "description": "Used OxyContin in the past 12 months in a way not directed by a doctor."
+        },
+        {
+            "entity": "AgeFirstUsedOxyContinNotDirectedByDr",
+            "description": "Age when first used OxyContin in a way not directed by a doctor."
+        },
+        {
+            "entity": "YearFirstUsedOxyContinNotDirectedByDr",
+            "description": "Year when first used OxyContin in a way not directed by a doctor."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasEverUsedPainRelieverNotDirectedByDr",
+            "source_entity": "PrescriptionPainRelieverUse",
+            "target_entity": "EverUsedPainRelieverNotDirectedByDr",
+            "description": "Indicates whether the respondent ever used a pain reliever not directed by a doctor."
+        },
+        {
+            "relationship": "hasUsedOxyContinNotDirectedByDrPast12Mos",
+            "source_entity": "PrescriptionPainRelieverUse",
+            "target_entity": "UsedOxyContinNotDirectedByDrPast12Mos",
+            "description": "Indicates whether the respondent used OxyContin in the past 12 months not directed by a doctor."
+        },
+        {
+            "relationship": "hasAgeFirstUsedOxyContinNotDirectedByDr",
+            "source_entity": "PrescriptionPainRelieverUse",
+            "target_entity": "AgeFirstUsedOxyContinNotDirectedByDr",
+            "description": "Records the age when the respondent first used OxyContin in a way not directed by a doctor."
+        },
+        {
+            "relationship": "hasYearFirstUsedOxyContinNotDirectedByDr",
+            "source_entity": "PrescriptionPainRelieverUse",
+            "target_entity": "YearFirstUsedOxyContinNotDirectedByDr",
+            "description": "Records the year when the respondent first used OxyContin in a way not directed by a doctor."
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "entities": [
+        {
+            "entity": "AdolescentDepression",
+            "description": "A mental health condition characterized by persistent feelings of sadness and loss of interest in activities among adolescents."
+        },
+        {
+            "entity": "TreatmentOrCounselingHelp",
+            "description": "The extent to which treatment or counseling has helped an individual over the past 12 months."
+        },
+        {
+            "entity": "NotAtAll",
+            "description": "The treatment or counseling did not help at all."
+        },
+        {
+            "entity": "ALittle",
+            "description": "The treatment or counseling helped a little."
+        },
+        {
+            "entity": "Some",
+            "description": "The treatment or counseling helped to some extent."
+        },
+        {
+            "entity": "ALot",
+            "description": "The treatment or counseling helped a lot."
+        },
+        {
+            "entity": "Extremely",
+            "description": "The treatment or counseling helped extremely."
+        },
+        {
+            "entity": "BadData",
+            "description": "Data logically assigned as bad."
+        },
+        {
+            "entity": "DontKnow",
+            "description": "Respondent does not know how much the treatment or counseling helped."
+        },
+        {
+            "entity": "Refused",
+            "description": "Respondent refused to answer."
+        },
+        {
+            "entity": "Blank",
+            "description": "No answer was provided."
+        },
+        {
+            "entity": "LegitimateSkip",
+            "description": "Legitimate skip of the question."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTreatmentEffect",
+            "source_entity": "AdolescentDepression",
+            "target_entity": "TreatmentOrCounselingHelp",
+            "description": "Relates adolescent depression to the extent to which treatment or counseling helped over the past 12 months."
+        },
+        {
+            "relationship": "hasEffectLevel",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "NotAtAll",
+            "description": "Indicates the level of effect where the treatment or counseling did not help at all."
+        },
+        {
+            "relationship": "hasEffectLevel",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "ALittle",
+            "description": "Indicates the level of effect where the treatment or counseling helped a little."
+        },
+        {
+            "relationship": "hasEffectLevel",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "Some",
+            "description": "Indicates the level of effect where the treatment or counseling helped to some extent."
+        },
+        {
+            "relationship": "hasEffectLevel",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "ALot",
+            "description": "Indicates the level of effect where the treatment or counseling helped a lot."
+        },
+        {
+            "relationship": "hasEffectLevel",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "Extremely",
+            "description": "Indicates the level of effect where the treatment or counseling helped extremely."
+        },
+        {
+            "relationship": "hasMissingDataReason",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "BadData",
+            "description": "Indicates the reason for missing data as logically assigned bad data."
+        },
+        {
+            "relationship": "hasMissingDataReason",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "DontKnow",
+            "description": "Indicates the reason for missing data as the respondent did not know."
+        },
+        {
+            "relationship": "hasMissingDataReason",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "Refused",
+            "description": "Indicates the reason for missing data as the respondent refused to answer."
+        },
+        {
+            "relationship": "hasMissingDataReason",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "Blank",
+            "description": "Indicates the reason for missing data as no answer was provided."
+        },
+        {
+            "relationship": "hasMissingDataReason",
+            "source_entity": "TreatmentOrCounselingHelp",
+            "target_entity": "LegitimateSkip",
+            "description": "Indicates the reason for missing data as a legitimate skip of the question."
+        }
+    ]
+}

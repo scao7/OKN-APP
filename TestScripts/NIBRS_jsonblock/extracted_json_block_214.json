@@ -1,0 +1,232 @@
+{
+    "entities": [
+        {
+            "entity": "PurseSnatching",
+            "description": "The act of forcefully snatching a purse from someone."
+        },
+        {
+            "entity": "Shoplifting",
+            "description": "The act of stealing goods while pretending to be a customer."
+        },
+        {
+            "entity": "TheftFromBuilding",
+            "description": "Theft occurring within premises of a building."
+        },
+        {
+            "entity": "TheftFromCoinOperatedMachineOrDevice",
+            "description": "Theft from a machine or device operated by coins."
+        },
+        {
+            "entity": "TheftFromMotorVehicle",
+            "description": "Theft of property from inside a motor vehicle."
+        },
+        {
+            "entity": "MotorVehiclePartsTheft",
+            "description": "Theft of parts or accessories attached to a motor vehicle."
+        },
+        {
+            "entity": "Larceny",
+            "description": "General term for theft of personal property."
+        },
+        {
+            "entity": "MotorVehicleTheft",
+            "description": "Theft or attempted theft of a motor vehicle."
+        },
+        {
+            "entity": "CounterfeitingForgery",
+            "description": "The use of false means or documents for unlawful profit."
+        },
+        {
+            "entity": "Fraud",
+            "description": "Wrongful or criminal deception intended to result in financial or personal gain."
+        },
+        {
+            "entity": "CreditCardATMCardFraud",
+            "description": "Theft and fraud committed using credit or ATM cards."
+        },
+        {
+            "entity": "Impersonation",
+            "description": "Pretending to be another person for the purpose of deception."
+        },
+        {
+            "entity": "WelfareFraud",
+            "description": "Fraud committed to gain welfare benefits unlawfully."
+        },
+        {
+            "entity": "WireFraud",
+            "description": "Fraud involving electronic communications."
+        },
+        {
+            "entity": "IdentityTheft",
+            "description": "The fraudulent acquisition and use of a person's private identifying information."
+        },
+        {
+            "entity": "ComputerHackingInvasion",
+            "description": "Unauthorized access to or manipulation of computer data."
+        },
+        {
+            "entity": "Embezzlement",
+            "description": "Theft or misappropriation of funds placed in one's trust."
+        },
+        {
+            "entity": "StolenPropertyOffenses",
+            "description": "Crimes involving the handling of stolen goods."
+        },
+        {
+            "entity": "DestructionDamageVandalismOfProperty",
+            "description": "Willful or malicious destruction or damage to property."
+        },
+        {
+            "entity": "DrugNarcoticViolations",
+            "description": "Violations involving illegal drugs or narcotics."
+        },
+        {
+            "entity": "DrugEquipmentViolations",
+            "description": "Violation involving the use or possession of drug equipment."
+        },
+        {
+            "entity": "Incest",
+            "description": "Sexual relations between people classed as being too closely related to marry each other."
+        },
+        {
+            "entity": "StatutoryRape",
+            "description": "Sexual activity with a minor below the age of consent."
+        },
+        {
+            "entity": "PornographyObsceneMaterial",
+            "description": "Illegal materials relating to obscene content."
+        },
+        {
+            "entity": "BettingWagering",
+            "description": "The practice of placing bets on events."
+        },
+        {
+            "entity": "GamblingPromotion",
+            "description": "The act of promoting gambling."
+        },
+        {
+            "entity": "GamblingEquipmentViolations",
+            "description": "Violations involving equipment used for gambling."
+        },
+        {
+            "entity": "SportsTampering",
+            "description": "Illicit interference with the outcome of sports events."
+        },
+        {
+            "entity": "Prostitution",
+            "description": "The practice of engaging in sexual activity for payment."
+        },
+        {
+            "entity": "ProstitutionPromotion",
+            "description": "The promotion or assistance of the practice of prostitution."
+        },
+        {
+            "entity": "PurchasingProstitution",
+            "description": "The act of engaging with sex services by payment."
+        },
+        {
+            "entity": "Bribery",
+            "description": "Offering, giving, receiving, or soliciting something of value for influence."
+        },
+        {
+            "entity": "WeaponLawViolations",
+            "description": "Crimes involving the illegal handling or possession of weapons."
+        },
+        {
+            "entity": "HumanTraffickingCommercialSexActs",
+            "description": "Trafficking persons for the purpose of commercial sex acts."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "PurseSnatching",
+            "description": "Purse snatching is a type of theft."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "Shoplifting",
+            "description": "Shoplifting is a type of theft."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "TheftFromBuilding",
+            "description": "Theft occurring inside a building is a type of theft."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "TheftFromCoinOperatedMachineOrDevice",
+            "description": "Theft from a coin-operated machine or device is a type of theft."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "TheftFromMotorVehicle",
+            "description": "Theft of property from inside a motor vehicle is a type of theft."
+        },
+        {
+            "relationship": "involves",
+            "source_entity": "Theft",
+            "target_entity": "MotorVehiclePartsTheft",
+            "description": "Theft of motor vehicle parts or accessories is a type of theft."
+        },
+        {
+            "relationship": "hasCategory",
+            "source_entity": "MotorVehicleTheft",
+            "target_entity": "MotorVehicle",
+            "description": "Motor vehicle theft involves the category of motor vehicles."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "CounterfeitingForgery",
+            "target_entity": "Fraud",
+            "description": "Counterfeiting and forgery are categorized under fraud."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "CreditCardATMCardFraud",
+            "target_entity": "Fraud",
+            "description": "Credit card and ATM card frauds are categorized under fraud."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "WelfareFraud",
+            "target_entity": "Fraud",
+            "description": "Fraud committed to gain welfare benefits unlawfully falls under the category of fraud."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "WireFraud",
+            "target_entity": "Fraud",
+            "description": "Fraud carried out via electronic communications falls under the category of fraud."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "IdentityTheft",
+            "target_entity": "Fraud",
+            "description": "Theft of someone's identity for use in fraud is categorized under fraud."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "ComputerHackingInvasion",
+            "target_entity": "Fraud",
+            "description": "Unauthorized access to or manipulation of data could lead to fraud."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "Embezzlement",
+            "target_entity": "Fraud",
+            "description": "Theft or misappropriation of funds placed in trust falls under the category of fraud."
+        },
+        {
+            "relationship": "categorizedBy",
+            "source_entity": "Impersonation",
+            "target_entity": "Fraud",
+            "description": "Pretending to be another person for deception falls under the category of fraud."
+        }
+    ]
+}

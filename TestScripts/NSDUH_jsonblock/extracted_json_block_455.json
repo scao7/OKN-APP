@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "entity": "InhalantTreatment",
+            "description": "Received outpatient treatment for inhalant use in the past 12 months."
+        },
+        {
+            "entity": "HallucinogenTreatment",
+            "description": "Received outpatient treatment for hallucinogen use in the past 12 months."
+        },
+        {
+            "entity": "CocaineTreatment",
+            "description": "Received outpatient treatment for cocaine or crack use in the past 12 months."
+        },
+        {
+            "entity": "HeroinTreatment",
+            "description": "Received outpatient treatment for heroin use in the past 12 months."
+        },
+        {
+            "entity": "InhalantUse",
+            "description": "Use of inhalants."
+        },
+        {
+            "entity": "HallucinogenUse",
+            "description": "Use of hallucinogens."
+        },
+        {
+            "entity": "CocaineUse",
+            "description": "Use of cocaine or crack."
+        },
+        {
+            "entity": "HeroinUse",
+            "description": "Use of heroin."
+        },
+        {
+            "entity": "AlcoholOrDrugUse",
+            "description": "Use of alcohol or other drugs."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasInhalantTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantTreatment",
+            "description": "Indicates that the respondent received outpatient treatment for inhalant use in the past 12 months."
+        },
+        {
+            "relationship": "hasHallucinogenTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogenTreatment",
+            "description": "Indicates that the respondent received outpatient treatment for hallucinogen use in the past 12 months."
+        },
+        {
+            "relationship": "hasCocaineTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineTreatment",
+            "description": "Indicates that the respondent received outpatient treatment for cocaine or crack use in the past 12 months."
+        },
+        {
+            "relationship": "hasHeroinTreatment",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinTreatment",
+            "description": "Indicates that the respondent received outpatient treatment for heroin use in the past 12 months."
+        },
+        {
+            "relationship": "usedInhalants",
+            "source_entity": "Respondent",
+            "target_entity": "InhalantUse",
+            "description": "Indicates that the respondent used inhalants."
+        },
+        {
+            "relationship": "usedHallucinogens",
+            "source_entity": "Respondent",
+            "target_entity": "HallucinogenUse",
+            "description": "Indicates that the respondent used hallucinogens."
+        },
+        {
+            "relationship": "usedCocaine",
+            "source_entity": "Respondent",
+            "target_entity": "CocaineUse",
+            "description": "Indicates that the respondent used cocaine or crack."
+        },
+        {
+            "relationship": "usedHeroin",
+            "source_entity": "Respondent",
+            "target_entity": "HeroinUse",
+            "description": "Indicates that the respondent used heroin."
+        },
+        {
+            "relationship": "usedAlcoholOrDrugs",
+            "source_entity": "Respondent",
+            "target_entity": "AlcoholOrDrugUse",
+            "description": "Indicates that the respondent used alcohol or other drugs."
+        }
+    ]
+}

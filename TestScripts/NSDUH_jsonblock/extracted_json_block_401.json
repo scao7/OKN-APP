@@ -1,0 +1,78 @@
+{
+    "entities": [
+        {
+            "entity": "HandsTremble",
+            "description": "Experiencing hands tremble as a symptom of drug withdrawal in the past 12 months."
+        },
+        {
+            "entity": "TroubleSleeping",
+            "description": "Having trouble sleeping as a symptom of drug withdrawal in the past 12 months."
+        },
+        {
+            "entity": "VomitingUpsetStomach",
+            "description": "Vomiting or having an upset stomach as a symptom of drug withdrawal in the past 12 months."
+        },
+        {
+            "entity": "SeeingHearingFeelingThings",
+            "description": "Seeing, hearing, or feeling things that weren't really there as a symptom of drug withdrawal in the past 12 months."
+        },
+        {
+            "entity": "TranqUseLast12Months",
+            "description": "Use of tranquilizers in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "DrugWithdrawal",
+            "target_entity": "HandsTremble",
+            "description": "Relation between drug withdrawal and experiencing hand tremble."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "DrugWithdrawal",
+            "target_entity": "TroubleSleeping",
+            "description": "Relation between drug withdrawal and having trouble sleeping."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "DrugWithdrawal",
+            "target_entity": "VomitingUpsetStomach",
+            "description": "Relation between drug withdrawal and vomiting or having an upset stomach."
+        },
+        {
+            "relationship": "hasSymptom",
+            "source_entity": "DrugWithdrawal",
+            "target_entity": "SeeingHearingFeelingThings",
+            "description": "Relation between drug withdrawal and seeing, hearing, or feeling things that weren't really there."
+        },
+        {
+            "relationship": "hasTranqUse",
+            "source_entity": "Respondent",
+            "target_entity": "TranqUseLast12Months",
+            "description": "Indicates the respondent's use of tranquilizers in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "HandsTremble",
+            "predicate": "isSymptomOf",
+            "object": "DrugWithdrawal"
+        },
+        {
+            "subject": "TroubleSleeping",
+            "predicate": "isSymptomOf",
+            "object": "DrugWithdrawal"
+        },
+        {
+            "subject": "VomitingUpsetStomach",
+            "predicate": "isSymptomOf",
+            "object": "DrugWithdrawal"
+        },
+        {
+            "subject": "SeeingHearingFeelingThings",
+            "predicate": "isSymptomOf",
+            "object": "DrugWithdrawal"
+        }
+    ]
+}

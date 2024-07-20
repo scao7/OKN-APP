@@ -1,0 +1,100 @@
+{
+    "entities": [
+        {
+            "entity": "TotalCases",
+            "description": "The total number of valid cases in the dataset."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The frequency of cases without applying any weighting adjustments."
+        },
+        {
+            "entity": "Percentage",
+            "description": "The percentage of total cases that fall into each category."
+        },
+        {
+            "entity": "Category",
+            "description": "Specific categories of cases, such as different offense segments or age groups."
+        },
+        {
+            "entity": "Statistic",
+            "description": "Various statistical measures calculated from the data, such as mean, median, mode, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "VariableType",
+            "description": "The type of variable, such as numeric."
+        },
+        {
+            "entity": "MissingValues",
+            "description": "Indicator of missing values in the dataset."
+        },
+        {
+            "entity": "Location",
+            "description": "The position of the data within the dataset, including its width and decimal specifics."
+        },
+        {
+            "entity": "OffenseSegments",
+            "description": "Specific segments related to offenses recorded in the survey."
+        },
+        {
+            "entity": "VictimSegments",
+            "description": "Specific segments related to victims recorded in the survey."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasTotalCases",
+            "source_entity": "Dataset",
+            "target_entity": "TotalCases",
+            "description": "Indicates the total number of valid cases in the dataset."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "Category",
+            "target_entity": "UnweightedFrequency",
+            "description": "Defines the unweighted frequency of cases for each category."
+        },
+        {
+            "relationship": "hasPercentage",
+            "source_entity": "Category",
+            "target_entity": "Percentage",
+            "description": "Defines the percentage of total cases for each category."
+        },
+        {
+            "relationship": "hasStatistic",
+            "source_entity": "Dataset",
+            "target_entity": "Statistic",
+            "description": "Includes various statistical measures related to the dataset."
+        },
+        {
+            "relationship": "hasVariableType",
+            "source_entity": "Dataset",
+            "target_entity": "VariableType",
+            "description": "Defines the type of variables in the dataset."
+        },
+        {
+            "relationship": "hasMissingValues",
+            "source_entity": "Dataset",
+            "target_entity": "MissingValues",
+            "description": "Indicates the presence of and details about missing values in the dataset."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "Dataset",
+            "target_entity": "Location",
+            "description": "Provides the location details of the data within the dataset."
+        },
+        {
+            "relationship": "hasOffenseSegments",
+            "source_entity": "Survey",
+            "target_entity": "OffenseSegments",
+            "description": "Indicates segments related to offenses in the survey."
+        },
+        {
+            "relationship": "hasVictimSegments",
+            "source_entity": "Survey",
+            "target_entity": "VictimSegments",
+            "description": "Indicates segments related to victims in the survey."
+        }
+    ]
+}

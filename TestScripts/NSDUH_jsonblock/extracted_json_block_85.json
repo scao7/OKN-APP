@@ -1,0 +1,48 @@
+{
+    "entities": [
+        {
+            "entity": "ArrestedAndBooked",
+            "description": "Indication of whether the respondent was ever arrested and booked for breaking the law."
+        },
+        {
+            "entity": "TimesArrestedAndBooked",
+            "description": "Number of times the respondent was arrested and booked for breaking the law in the past 12 months."
+        },
+        {
+            "entity": "ArrestedForMotorVehicleTheft",
+            "description": "Indication of whether the respondent was arrested and booked for motor vehicle theft in the past 12 months."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasArrestedAndBooked",
+            "source_entity": "Respondent",
+            "target_entity": "ArrestedAndBooked",
+            "description": "Indicates if the respondent was ever arrested and booked for breaking the law."
+        },
+        {
+            "relationship": "hasCount",
+            "source_entity": "ArrestedAndBooked",
+            "target_entity": "TimesArrestedAndBooked",
+            "description": "Defines the number of times the respondent was arrested and booked for breaking the law in the past 12 months."
+        },
+        {
+            "relationship": "hasArrestedForMotorVehicleTheft",
+            "source_entity": "Respondent",
+            "target_entity": "ArrestedForMotorVehicleTheft",
+            "description": "Indicates if the respondent was arrested and booked for motor vehicle theft in the past 12 months."
+        }
+    ],
+    "triplets": [
+        {
+            "subject": "TimesArrestedAndBooked",
+            "predicate": "isAssociatedWith",
+            "object": "ArrestedForMotorVehicleTheft"
+        },
+        {
+            "subject": "Respondent",
+            "predicate": "hasExperienceWith",
+            "object": "ArrestedAndBooked"
+        }
+    ]
+}

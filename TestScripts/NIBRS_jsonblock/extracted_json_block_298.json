@@ -1,0 +1,60 @@
+{
+    "entities": [
+        {
+            "entity": "OffenderFrequency",
+            "description": "The frequency count for each number of offenders."
+        },
+        {
+            "entity": "OffenderNumber",
+            "description": "Number of offenders under analysis."
+        },
+        {
+            "entity": "UnweightedFrequency",
+            "description": "The number of respondents in each category before weighting."
+        },
+        {
+            "entity": "Statistics",
+            "description": "Statistical data including mean, median, mode, minimum, maximum, and standard deviation."
+        },
+        {
+            "entity": "Location",
+            "description": "The location information related to the variable type and range of missing values."
+        },
+        {
+            "entity": "MissingData",
+            "description": "The number of missing values in the dataset."
+        }
+    ],
+    "relationships": [
+        {
+            "relationship": "hasOffenderFrequency",
+            "source_entity": "OffenderNumber",
+            "target_entity": "OffenderFrequency",
+            "description": "Relates the number of offenders to their count frequency."
+        },
+        {
+            "relationship": "hasUnweightedFrequency",
+            "source_entity": "OffenderNumber",
+            "target_entity": "UnweightedFrequency",
+            "description": "Relates the number of offenders to their unweighted frequency."
+        },
+        {
+            "relationship": "hasStatistics",
+            "source_entity": "OffenderNumber",
+            "target_entity": "Statistics",
+            "description": "Relates the number of offenders to their statistical data."
+        },
+        {
+            "relationship": "hasLocation",
+            "source_entity": "VariableType",
+            "target_entity": "Location",
+            "description": "Relates the variable type to its location information."
+        },
+        {
+            "relationship": "hasMissingData",
+            "source_entity": "OffenderNumber",
+            "target_entity": "MissingData",
+            "description": "Relates the number of offenders to the missing data count."
+        }
+    ]
+}
