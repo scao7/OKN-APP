@@ -9,8 +9,9 @@ openai.apikey.txt
 Reference/
 data/
 gittoken.txt
-# TestScripts/
+TestScripts/
 
+.env
 # Ignore OS-generated files
 .DS_Store
 Thumbs.db

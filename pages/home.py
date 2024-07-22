@@ -204,20 +204,20 @@ def create_home():
                             style={"marginLeft": "10px"},
                             className="border rounded",
                             ),
-                    dbc.Col([
-                            create_radarplot()
-                            ],
+                    # dbc.Col([
+                    #         create_radarplot()
+                    #         ],
                            
-                            style={"marginLeft": "10px"},
-                            className="border rounded",
-                            ),  
-                    dbc.Col([
-                            create_radarplot()
-                            ],
+                    #         style={"marginLeft": "10px"},
+                    #         className="border rounded",
+                    #         ),  
+                    # dbc.Col([
+                    #         create_radarplot()
+                    #         ],
                            
-                            style={"marginLeft": "10px"},
-                            className="border rounded",
-                            ),                      
+                    #         style={"marginLeft": "10px"},
+                    #         className="border rounded",
+                    #         ),                      
                     
                 ]
                 

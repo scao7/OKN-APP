@@ -12,11 +12,13 @@ from sqlalchemy.orm import sessionmaker,declarative_base
 from sqlalchemy import create_engine, text, Column, Integer, String, Sequence
 from getfacilities import get_facility_website
 import os 
+import dotenv
+dotenv.load_dotenv()
 password = os.environ["okn_database"]
 google_api_key=os.environ.get("GoogleMAP_API")
-engine = create_engine(f'postgresql+psycopg2://postgres:{password}@127.0.0.1:5432/ONTO')
+engine = create_engine(f'postgresql+psycopg2://saillab:{password}@127.0.0.1:5432/postgres')
 def create_map(data_scatter=None):	
-	counties = json.load(open(r"Datasets\geojson-counties-fips.json",'r'))
+	counties = json.load(open("Datasets/geojson-counties-fips.json",'r'))
 	# df = pd.read_sql("SELECT rural_urban.rural_urban_code, rural_urban.rucc FROM public.rural_urban ORDER BY rural_urban_id ASC", engine)
 	df = pd.read_sql("SELECT rural_urban.county_fips, rural_urban.rucc FROM public.rural_urban ORDER BY rural_urban_id ASC", engine)
 	# Try to connect and execute a simple query
