@@ -19,5 +19,6 @@ layout = html.Div([
         Whitfield Regional Hospital IPF	Gerpsych/Adult Psych	105 Highway 80 East		Demopolis	AL	36732
 
         ''')
+
 ])
 

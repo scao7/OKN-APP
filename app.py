@@ -25,8 +25,9 @@ from sidebar import create_sidebar
 from pages.home import create_home
 from pages.search import create_searchpage
 import dotenv 
+import networkx as nx
+import numpy as np
 dotenv.load_dotenv()
-
 app = dash.Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP],
     # these meta_tags ensure content is scaled correctly on different devices
@@ -37,12 +38,12 @@ app = dash.Dash(
     suppress_callback_exceptions=True
 )
 
+# preload datase
 sidebar = create_sidebar()
 home_page = create_home()
 search_page = create_searchpage()
 title_banner = html.Div(dbc.Row(dbc.Col(html.H1("OKN-A Cross-Domain Knowledge Graph to Integrate Health and Justice for Rural Resilience",className = "h1",style={'background-color': '#8B0000', 'padding': '10px', 'color': 'white'}))))
 
-# home = create_home()
 content = html.Div(id="page-content")
 
 app.layout = html.Div([dcc.Location(id="url"), sidebar,content])
