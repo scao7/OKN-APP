@@ -4,6 +4,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 from openai import OpenAI
 from db_models import *
+import dotenv
+dotenv.load_dotenv()
+password = os.environ["okn_database"]
 class ResourcesLoader:
     def __init__(self, env_file='.env'):
         self.env_file = env_file
@@ -24,8 +27,6 @@ class ResourcesLoader:
         self.embedding_model = 'text-embedding-3-small'
 
     def initialize_database(self):
-        password = os.environ["okn_database"]
-        # self.engine = create_engine('postgresql+psycopg2://xiaoming:11111111@127.0.0.1:5432/okndb')
         self.engine = create_engine(f'postgresql+psycopg2://saillab:{password}@127.0.0.1:5432/okn')
         self.Session = sessionmaker(bind=self.engine)
         self.session = self.Session()

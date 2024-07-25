@@ -67,7 +67,7 @@ def create_map(data_scatter=None):
 		fig.add_trace(scatter_trace)
 		fig.update_layout(
 			mapbox_center={"lat": data_scatter[0]['lat'], "lon": data_scatter[0]['lon']},
-    		mapbox_zoom=11
+    		mapbox_zoom=6
 		)
 
 	# Define the layout
@@ -136,9 +136,10 @@ def query_clinic(location):
 		
 	return data_scatter
 
-def query_clinic_by_id(tp_ids):
+def query_clinic_by_id(tp_ids,service_ids):
 	# read the clinic list 
 	df = pd.read_sql(f'''SELECT 
+		mh_treatment_provider.tp_id, 
 		mh_treatment_provider.tp_name,
 		mh_treatment_provider.tp_name_sub,
 		mh_treatment_provider.address_line_1,
@@ -162,10 +163,17 @@ def query_clinic_by_id(tp_ids):
 	state_list = df['state_code'].tolist()
 	lon_list = df['longitude'].tolist()
 	lat_list = df['latitude'].tolist()
+	provider_id_list = df['tp_id'].tolist()
 	data_scatter =[]
 
-	for name1,name2,street1,street2,city,state, la,lo in zip(tp_name_list, tp_name_sub_list,address_line_1_list,address_line_2_list,city_name_list,state_list,lat_list,lon_list):
+	for name1,name2,street1,street2,city,state, la,lo,provider_id in zip(tp_name_list, tp_name_sub_list,address_line_1_list,address_line_2_list,city_name_list,state_list,lat_list,lon_list,provider_id_list):
 		try:
+			df = pd.read_sql(f'''select s.mhs_id, s.mhs_name, tp.tp_id, s.mhs_description
+				from tp_services tp
+				join mh_service s on s.mhs_id = tp.mhs_id and tp.tp_id={provider_id}and tp.mhs_id in {tuple(service_ids)}
+				''',engine)
+			mhs_name = df['mhs_name'].tolist()
+
 			print(name1 + ','+ name2 + ',' + street1 + ','+ city + ',' + state)
 			# la,lo = get_la_lo( street1+ ','+street2 + ','+ city + ',' + state)
 			search_adress = name1 if name1!="NaN" else ""+ \
@@ -178,7 +186,8 @@ def query_clinic_by_id(tp_ids):
 			# web_info  =get_facility_website(google_api_key,search_adress)
 			# la = web_info['result']['geometry']['location']['lat']
 			# lo = web_info['result']['geometry']['location']['lng']
-			data_scatter.append({'lat':la,'lon':lo,'name':name1,'info':search_adress})
+
+			data_scatter.append({'lat':la,'lon':lo,'name':name1,'info':search_adress,'mhs_name':mhs_name})
 		except:
 			print("Not find the location")
 		

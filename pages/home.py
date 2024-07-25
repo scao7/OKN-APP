@@ -236,8 +236,6 @@ def create_home():
             ]
 	)
 
-
-
     # chatbox
     @dash.callback(
         Output("display-conversation", "children"), [Input("store-conversation", "data")]
@@ -299,7 +297,7 @@ def create_home():
         chat_history += f"You: {user_input}<split>{name}:"
 
         model_input = prompt + chat_history.replace("<split>", "\n")
-
+         # answer from openai 
         response = client.chat.completions.create(
             messages=[
             {
@@ -309,23 +307,34 @@ def create_home():
             ],
             model="gpt-3.5-turbo",
         )
-        model_output = response.choices[0].message.content.strip()
+       
+        # model_output = response.choices[0].message.content.strip()
 
         # I am from Jefferson County, Alabama and I am feeling very anxious after using cocaine. I don't know what to do. Can you help me? I also have eager to hit someone. I am feeling very aggressive.
         results = treatment_search.client_request(user_input)
         print(jsonify(results))
-        data_scatter = query_clinic_by_id(results['provider_ids'])
+        data_scatter = query_clinic_by_id(results['provider_ids'],results['service_ids'])
         model_output = results['answer']
         if data_scatter:
             openmapbox = create_map(data_scatter)
         else:
             openmapbox = create_map()
-        print(data_scatter)
+        print("ths data scatter is : ", data_scatter)
         button_styles = ["primary","secondary","success","warning","danger","info","light","dark"]
-        services =  html.Div(
-            [dbc.Button(button['name']+" " +button['info'] , color=button_styles[idx % 8], className="me-1",id={'type': 'dynamic-button', 'index': idx},style={"width":"100%"}) for idx, button in enumerate(data_scatter)],
-            id='button-container'
-        )
+        
+        dynamic_components = []
+        for idx, button in enumerate(data_scatter):
+                dynamic_components.append(dcc.Store(id={'type': 'stored-data', 'index': idx}, data=data_scatter[idx]['mhs_name']))
+                dynamic_components.append(dbc.Button(button['name']+" " +button['info'] , color=button_styles[idx % 8], className="me-1",id={'type': 'dynamic-button', 'index': idx},style={"width":"100%"}) )
+        
+        services = html.Div(dynamic_components)
+
+        
+        # services =  html.Div(
+        #     [dbc.Button(button['name']+" " +button['info'] , color=button_styles[idx % 8], className="me-1",id={'type': 'dynamic-button', 'index': idx},style={"width":"100%"}) for idx, button in enumerate(data_scatter)],
+        #     id='button-container',
+
+        # )
 
         chat_history += f"{model_output}<split>"
 
@@ -377,52 +386,64 @@ def create_home():
         Output('output-container', 'children'),
         [Input({'type': 'dynamic-button', 'index': ALL}, 'n_clicks')],
         [State({'type': 'dynamic-button', 'index': ALL}, 'id'),
-        State({'type': 'dynamic-button', 'index': ALL}, 'children')]
+        State({'type': 'dynamic-button', 'index': ALL}, 'children'),
+        State({'type': 'stored-data', 'index': ALL}, 'data')],
+        prevent_initial_call=True
     )
 
-    def dynamic_button_logic(n_clicks, button_ids,button_labels):
+    def dynamic_button_logic(n_clicks, button_ids,button_labels,stored_data):
         ctx = dash.callback_context
         if not ctx.triggered:
             return "No agency selected yet."
 
+        print("stored-data",stored_data)
         button_id_clicked_str = ctx.triggered[0]['prop_id'].split('.')[0]
         
         # Extract the index from the clicked button ID string using regular expression
         button_index = int(re.search(r'\d+', button_id_clicked_str).group())
         clicked_button_name = button_labels[button_index]
         address= clicked_button_name
-        print(address)
+
+        # print(address)
         
         web_info  =get_facility_website(google_api_key,address)
         json_string = json.dumps(web_info, indent=4)
         data_dict = json.loads(json_string)
-        print(data_dict)
+        # print(data_dict)
 
         try:
             data_dict['result']['rating']
         except:
             data_dict['result']['rating'] = "no rating"
 
+        try:
+            data_dict['result']['website']
+        except:
+            data_dict['result']['website'] = "no website"
+
+
+
+
         # lat, lng = get_coordinates(address, google_api_key)
         # place_id = get_place_id(lat, lng, google_api_key)
         # web_info = get_website(place_id,google_api_key)
-
+        if stored_data:
+            service  = "Sercies for this facility: "+','.join(stored_data[0])
+        else:
+            service="None"
         out_layout = html.Div(
             [html.H3(data_dict['result']['name']),
+            html.H5("the service we get from database for this service are"),
             html.P(data_dict['result']['rating']),
             html.P(data_dict['result']['formatted_address']),
             html.P(data_dict['result']['formatted_phone_number']),
             html.P(data_dict['result']['website']),
+            html.H3("Services from local database"),
+            html.P(service)
             # html.P(data_dict['result']['opening_hours']),
-            ]
+            ],
+
         )
         return out_layout
-        
-
-
-        
-        
-
-
     return home
     

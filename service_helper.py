@@ -13,6 +13,7 @@ class ServiceHelper:
         self.data = []
         self.resources = resources
         self._initialize_faiss_index_county()
+        self._initialize_faiss_index_service()
     
     def initialize(self, data):
         self.data = data
@@ -57,9 +58,19 @@ class ServiceHelper:
                     if provider_ids:
                         response_json["provider_ids"] = provider_ids
                         services_available = self.resources.session.query(TPServices).filter(TPServices.tp_id.in_(provider_ids)).all()
-
+                        top_services = self.find_top_services(client_question, services_available)
+                        print(top_services)
+                        service_list = self.extract_service_info(top_services)
+                        service_list_json = json.dumps(service_list)
+                        answer_res = self._answer_gen(client_question, service_list_json)
+                        print(answer_res)
+                        answer_res = self._clean_json_response(answer_res)
+                        answer_json = json.loads(answer_res)
+                        response_json["answer"] = answer_json["answer"]
+                        response_json["service_ids"] = answer_json["service_ids"]
                 else:
                     print("County not found")
+                print(response_json)
         return response_json
     
     # Initialize the Faiss index for county embeddings
@@ -74,6 +85,30 @@ class ServiceHelper:
         d = self.db_embeddings.shape[1]  # Dimension of the embeddings
         self.index_county = faiss.IndexFlatL2(d)  # Create a Faiss index for L2 (Euclidean) distance
         self.index_county.add(self.db_embeddings)  # Add the embeddings to the Faiss index
+
+    # Initialize the Faiss index for service embeddings
+    def _initialize_faiss_index_service(self):
+        # Load service embeddings from the database
+        session = self.resources.session
+        all_service_embeddings = session.query(MHServiceEmbedding).all()
+
+        # Check the dimensions of the individual embeddings
+        for embedding in all_service_embeddings:
+            assert len(embedding.mhs_name_embedding) == 1536, "Name embedding dimension mismatch"
+            assert len(embedding.mhs_description_embedding) == 1536, "Description embedding dimension mismatch"
+
+
+        # Concatenate the name and description embeddings
+        self.service_embeddings = np.array(
+            [(np.array(embedding.mhs_name_embedding) + np.array(embedding.mhs_description_embedding)) / 2
+             for embedding in all_service_embeddings], dtype=float)
+        self.service_ids = np.array([embedding.mhs_id for embedding in all_service_embeddings])
+
+        # Build the Faiss index
+        d = self.service_embeddings.shape[1]  # Dimension of the embeddings
+        self.index_service = faiss.IndexFlatL2(d)  # Create a Faiss index for L2 (Euclidean) distance
+        self.index_service.add(self.service_embeddings)  # Add the embeddings to the Faiss index
+
 
     
     def _request_type(self, client_question):
@@ -91,6 +126,25 @@ class ServiceHelper:
         chain = LLMChain(llm=llm, prompt=prompt_1, verbose=True)
         response_1 = chain.run(client_question)
         return response_1
+    
+    def _answer_gen(self, client_question, service_json):
+        llm = ChatOpenAI(temperature=0.0, model=self.resources.llm_model)
+        prompt_temp = ChatPromptTemplate.from_template(
+            "You are an expert on social science and are very familiar with domains like substance abuse,  \
+            mental health, and rural resilience. Please verify if the services provided by the treatment providers \
+            can help the user based on the user's question. Then, generate a treatment advice to answer the user's question.\
+            The question is: ({client_question}?) \
+            The service options are: ({service_json})\
+            There are two tasks to be finished:\
+            1. Verify each service option and generate the list of the service ID which can help the user;\
+            2. Based on the given information, generate an answer for the user. \
+            Please return the service ID list and the answer in the pure JSON format without any extra explanation or comment: \
+            {{'service_ids': [1, 3, 56], 'answer': 'Based on the given information, you can try the following services: Service A, Service B, Service C. \'}}",
+        )
+        messsage = prompt_temp.format_messages(client_question=client_question, service_json=service_json)
+        response_1 = llm(messsage)
+        print(response_1.content)
+        return response_1.content
     
     
     def _find_closest_county_faiss(self, county, state):
@@ -137,10 +191,53 @@ class ServiceHelper:
                 distances.append(distance)
 
         return nearby_providers, distances
+    
+    def find_top_services(self, client_question, services):
+        print(self.service_embeddings.shape[1])
+        # Get the embedding for the client question
+        client_embedding = self._get_embedding(client_question)
+        client_embedding = np.array(client_embedding).reshape(1, -1)
+
+        # Retrieve the service embeddings and their corresponding ids from the global Faiss index
+        service_ids = [service.mhs_id for service in services]
+        mask = np.isin(self.service_ids, service_ids)
+        subset_service_embeddings = self.service_embeddings[mask]
+        subset_service_ids = self.service_ids[mask]
+
+        # Ensure the dimensions match
+        print(subset_service_embeddings.shape[1])
+        print(client_embedding.shape[1])
+        # assert subset_service_embeddings.shape[1] == client_embedding.shape[1], "Dimension mismatch in embeddings"
+
+        # Create a temporary Faiss index for the subset of services
+        d = subset_service_embeddings.shape[1]
+        temp_index = faiss.IndexFlatL2(d)
+        temp_index.add(subset_service_embeddings)
+
+        # Search for the top 10 nearest services
+        _, indices = temp_index.search(client_embedding, 10)
+        top_service_ids = [int(subset_service_ids[idx]) for idx in indices[0]]
+
+        # Retrieve the top 10 services
+        top_services = self.resources.session.query(MHService).filter(MHService.mhs_id.in_(top_service_ids)).all()
+
+        return top_services
+    
+    def extract_service_info(self, top_services):
+        services_info = []
+        for service in top_services:
+            service_info = {
+                "id": service.mhs_id,
+                "name": service.mhs_name,
+                "description": service.mhs_description
+            }
+            services_info.append(service_info)
+        return services_info
+
 
 
     
 '''
 Test client_request:
-http://127.0.0.1:5000/client_request?query=I+am+from+Jefferson+County%2C+Alabama+and+I+am+feeling+very+anxious+after+using+cocaine.+I+don%27t+know+what+to+do.+Can+you+help+me%3F+I+also+have+eager+to+hit+someone.+I+am+feeling+very+aggressive.
+http://127.0.0.1:5000/client_request?query=I+am+from+Nashville+County%2C+Tennessee+and+I+am+feeling+very+anxious+after+using+cocaine.+I+don%27t+know+what+to+do.+Can+you+help+me%3F+I+also+have+eager+to+hit+someone.+I+am+feeling+very+aggressive.
 '''
