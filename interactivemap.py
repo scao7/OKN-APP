@@ -16,7 +16,8 @@ import dotenv
 dotenv.load_dotenv()
 password = os.environ["okn_database"]
 google_api_key=os.environ.get("GoogleMAP_API")
-engine = create_engine(f'postgresql+psycopg2://saillab:{password}@127.0.0.1:5432/postgres')
+engine = create_engine(f'postgresql+psycopg2://saillab:{password}@127.0.0.1:5432/okn')
+
 def create_map(data_scatter=None):	
 	counties = json.load(open("Datasets/geojson-counties-fips.json",'r'))
 	# df = pd.read_sql("SELECT rural_urban.rural_urban_code, rural_urban.rucc FROM public.rural_urban ORDER BY rural_urban_id ASC", engine)
@@ -105,6 +106,54 @@ def query_clinic(location):
 			public.city ON mh_treatment_provider.city_id = city.city_id
 		WHERE 
 			mh_treatment_provider.zip_code = '{location}';''',engine)
+	tp_name_list = df['tp_name'].tolist()
+	tp_name_sub_list = df['tp_name_sub'].tolist()
+	address_line_1_list= df['address_line_1'].tolist()
+	address_line_2_list =df['address_line_2'].tolist()
+	city_name_list = df['city_name'].tolist()
+	state_list = df['state_code'].tolist()
+	lon_list = df['longitude'].tolist()
+	lat_list = df['latitude'].tolist()
+	data_scatter =[]
+
+	for name1,name2,street1,street2,city,state, la,lo in zip(tp_name_list, tp_name_sub_list,address_line_1_list,address_line_2_list,city_name_list,state_list,lat_list,lon_list):
+		try:
+			print(name1 + ','+ name2 + ',' + street1 + ','+ city + ',' + state)
+			# la,lo = get_la_lo( street1+ ','+street2 + ','+ city + ',' + state)
+			search_adress = name1 if name1!="NaN" else ""+ \
+							name2 if name2!="NaN" else "" + \
+							street1 if street1!="NaN" else "" + \
+							street2 if street2!="NaN" else "" + \
+							city if city!="NaN" else "" + \
+							state if state!="NaN" else "" 
+			# commented used the the google api, uncommented part directly access lat and lon in databas
+			# web_info  =get_facility_website(google_api_key,search_adress)
+			# la = web_info['result']['geometry']['location']['lat']
+			# lo = web_info['result']['geometry']['location']['lng']
+			data_scatter.append({'lat':la,'lon':lo,'name':name1,'info':search_adress})
+		except:
+			print("Not find the location")
+		
+	return data_scatter
+
+def query_clinic_by_id(tp_ids):
+	# read the clinic list 
+	df = pd.read_sql(f'''SELECT 
+		mh_treatment_provider.tp_name,
+		mh_treatment_provider.tp_name_sub,
+		mh_treatment_provider.address_line_1,
+		mh_treatment_provider.address_line_2,
+		mh_treatment_provider.state_code,
+		city.city_name,
+		mh_treatment_provider.latitude,
+		mh_treatment_provider.longitude	  
+		FROM 
+			mh_treatment_provider
+		JOIN 
+			public.city ON mh_treatment_provider.city_id = city.city_id
+		WHERE 
+			mh_treatment_provider.tp_id 
+		IN  {tuple(tp_ids)};''',engine)
 	tp_name_list = df['tp_name'].tolist()
 	tp_name_sub_list = df['tp_name_sub'].tolist()
 	address_line_1_list= df['address_line_1'].tolist()

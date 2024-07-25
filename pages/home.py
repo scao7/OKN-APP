@@ -7,16 +7,27 @@ from textwrap import dedent
 import plotly.graph_objs as go
 import networkx as nx
 import os
-from interactivemap import create_map,query_clinic
+from interactivemap import create_map,query_clinic,query_clinic_by_id
 from getfacilities import get_facility_website
 from dash.exceptions import PreventUpdate
 import re
 import json
 from radarplot import create_radarplot
+
+from resources_loader import ResourcesLoader
+from service_helper import ServiceHelper
+from flask import Flask, request, jsonify
+# Initialize resources loader
+resources = ResourcesLoader()
+# Initialize the treatment service search helper class
+treatment_search = ServiceHelper(resources)
+
 google_api_key=os.environ.get("GoogleMAP_API")
 openmapbox = create_map()
 data_scatter = {}
 services=None 
+
+
 
 def create_home():
     def Header(name, app):
@@ -299,6 +310,22 @@ def create_home():
             model="gpt-3.5-turbo",
         )
         model_output = response.choices[0].message.content.strip()
+
+        # I am from Jefferson County, Alabama and I am feeling very anxious after using cocaine. I don't know what to do. Can you help me? I also have eager to hit someone. I am feeling very aggressive.
+        results = treatment_search.client_request(user_input)
+        print(jsonify(results))
+        data_scatter = query_clinic_by_id(results['provider_ids'])
+        model_output = results['answer']
+        if data_scatter:
+            openmapbox = create_map(data_scatter)
+        else:
+            openmapbox = create_map()
+        print(data_scatter)
+        button_styles = ["primary","secondary","success","warning","danger","info","light","dark"]
+        services =  html.Div(
+            [dbc.Button(button['name']+" " +button['info'] , color=button_styles[idx % 8], className="me-1",id={'type': 'dynamic-button', 'index': idx},style={"width":"100%"}) for idx, button in enumerate(data_scatter)],
+            id='button-container'
+        )
 
         chat_history += f"{model_output}<split>"
 
