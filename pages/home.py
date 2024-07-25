@@ -309,27 +309,30 @@ def create_home():
         )
        
         # model_output = response.choices[0].message.content.strip()
+        data_scatter=None
+        try:
+            # I am from Jefferson County, Alabama and I am feeling very anxious after using cocaine. I don't know what to do. Can you help me? I also have eager to hit someone. I am feeling very aggressive.
+            results = treatment_search.client_request(user_input)
+            print(jsonify(results))
+            data_scatter = query_clinic_by_id(results['provider_ids'],results['service_ids'])
+            model_output = results['answer']
+        except:
+            model_output = response.choices[0].message.content.strip()
 
-        # I am from Jefferson County, Alabama and I am feeling very anxious after using cocaine. I don't know what to do. Can you help me? I also have eager to hit someone. I am feeling very aggressive.
-        results = treatment_search.client_request(user_input)
-        print(jsonify(results))
-        data_scatter = query_clinic_by_id(results['provider_ids'],results['service_ids'])
-        model_output = results['answer']
         if data_scatter:
             openmapbox = create_map(data_scatter)
+            print("ths data scatter is : ", data_scatter)
+            button_styles = ["primary","secondary","success","warning","danger","info","light","dark"]
+            
+            dynamic_components = []
+            for idx, button in enumerate(data_scatter):
+                    dynamic_components.append(dcc.Store(id={'type': 'stored-data', 'index': idx}, data=data_scatter[idx]['mhs_name']))
+                    dynamic_components.append(dbc.Button(button['name']+" " +button['info'] , color=button_styles[idx % 8], className="me-1",id={'type': 'dynamic-button', 'index': idx},style={"width":"100%"}) )
+            
+            services = html.Div(dynamic_components)
         else:
             openmapbox = create_map()
-        print("ths data scatter is : ", data_scatter)
-        button_styles = ["primary","secondary","success","warning","danger","info","light","dark"]
-        
-        dynamic_components = []
-        for idx, button in enumerate(data_scatter):
-                dynamic_components.append(dcc.Store(id={'type': 'stored-data', 'index': idx}, data=data_scatter[idx]['mhs_name']))
-                dynamic_components.append(dbc.Button(button['name']+" " +button['info'] , color=button_styles[idx % 8], className="me-1",id={'type': 'dynamic-button', 'index': idx},style={"width":"100%"}) )
-        
-        services = html.Div(dynamic_components)
-
-        
+            services= None
         # services =  html.Div(
         #     [dbc.Button(button['name']+" " +button['info'] , color=button_styles[idx % 8], className="me-1",id={'type': 'dynamic-button', 'index': idx},style={"width":"100%"}) for idx, button in enumerate(data_scatter)],
         #     id='button-container',
