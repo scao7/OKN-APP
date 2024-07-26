@@ -27,6 +27,7 @@ from pages.search import create_searchpage
 import dotenv 
 import networkx as nx
 import numpy as np
+import os
 dotenv.load_dotenv()
 app = dash.Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP],
@@ -91,4 +92,5 @@ def toggle_collapse(n, is_open):
     return is_open
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    mac_ip =os.environ["MAC_IP"]
+    app.run_server(debug=True, host='10.116.34.83')
