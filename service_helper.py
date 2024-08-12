@@ -47,7 +47,33 @@ class ServiceHelper:
         substance_abuse_sympton = json_obj['substance_abuse_sympton']
         mental_health_sympton = json_obj['mental_health_sympton']
         if need_help or service_related:
-            if county and state:
+            if county or state:
+                cty_id = self._find_closest_county_faiss(county, state)
+                print(cty_id)
+                if cty_id:
+                    lat, lon = self.get_county_centroid(cty_id)
+                    nearby_providers, distances = self.find_providers_within_radius(lat, lon)
+                    provider_ids = [provider.tp_id for provider in nearby_providers]
+                    print(provider_ids)
+                    if provider_ids:
+                        response_json["provider_ids"] = provider_ids
+                        services_available = self.resources.session.query(TPServices).filter(TPServices.tp_id.in_(provider_ids)).all()
+                        top_services = self.find_top_services(client_question, services_available)
+                        print(top_services)
+                        service_list = self.extract_service_info(top_services)
+                        service_list_json = json.dumps(service_list)
+                        answer_res = self._answer_gen(client_question, service_list_json)
+                        print(answer_res)
+                        answer_res = self._clean_json_response(answer_res)
+                        answer_json = json.loads(answer_res)
+                        response_json["answer"] = answer_json["answer"]
+                        response_json["service_ids"] = answer_json["service_ids"]
+                else:
+                    print("County not found")
+                print(response_json)
+            else:
+                county="Jefferson County"
+                state="Alabama"
                 cty_id = self._find_closest_county_faiss(county, state)
                 print(cty_id)
                 if cty_id:

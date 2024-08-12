@@ -93,4 +93,4 @@ def toggle_collapse(n, is_open):
 
 if __name__ == "__main__":
     mac_ip =os.environ["MAC_IP"]
-    app.run_server(debug=True, host='10.116.34.83')
+    app.run_server(debug=True, host=mac_ip)

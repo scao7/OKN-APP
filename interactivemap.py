@@ -170,7 +170,7 @@ def query_clinic_by_id(tp_ids,service_ids):
 		try:
 			df = pd.read_sql(f'''select s.mhs_id, s.mhs_name, tp.tp_id, s.mhs_description
 				from tp_services tp
-				join mh_service s on s.mhs_id = tp.mhs_id and tp.tp_id={provider_id}and tp.mhs_id in {tuple(service_ids)}
+				join mh_service s on s.mhs_id = tp.mhs_id and tp.tp_id={provider_id} and tp.mhs_id in {tuple(service_ids)}
 				''',engine)
 			mhs_name = df['mhs_name'].tolist()
 
